@@ -2,6 +2,7 @@
 # GitHub Pages 用に公開ファイルだけを public_site/ に集約する。
 # 事前に python3 tools/sync_original_eisei1_500_to_data.py ・ python3 tools/csv_to_eisei1_master.py ・
 # python3 tools/build_question_pages.py ・ python3 tools/build_ichimon_pages.py を実行済みであること。
+# Actions の Bundle ステップで GA4_MEASUREMENT_ID / GOOGLE_SITE_VERIFICATION を渡すと index に反映される。
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 OUT="$ROOT/public_site"
@@ -91,6 +92,7 @@ if [[ -d "$ROOT/terms" ]]; then
     fi
   fi
 fi
+TARGET="$OUT/index.html" python3 "$ROOT/tools/inject_site_analytics_secrets.py"
 bash "$ROOT/tools/verify_supabase_url_in_html.sh" "$OUT/index.html"
 n="$(find "$OUT" -type f | wc -l | tr -d ' ')"
 echo "prepare_public_site.sh: $OUT に $n ファイルを配置しました。"
