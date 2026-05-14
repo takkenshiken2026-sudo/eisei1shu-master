@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-docs/eisei1_ichimon_itto_all_optimized.csv から
+docs/eisei1_ichimon_itto.csv から
   - SEO 用の静的ページ ichimon/（個別 URL）
   - アプリ用 eisei1-data-ichimon.js（ICHI_MON_ROWS）
   - sitemap-ichimon.xml
@@ -283,12 +283,12 @@ def main() -> None:
         "--csv",
         type=Path,
         default=None,
-        help="既定: docs/eisei1_ichimon_itto_all_optimized.csv",
+        help="既定: docs/eisei1_ichimon_itto.csv",
     )
     args = ap.parse_args()
 
     repo_root = Path(__file__).resolve().parent.parent
-    csv_path = args.csv or (repo_root / "docs" / "eisei1_ichimon_itto_all_optimized.csv")
+    csv_path = args.csv or (repo_root / "docs" / "eisei1_ichimon_itto.csv")
     if not csv_path.exists():
         print(f"CSV が見つかりません: {csv_path}", file=sys.stderr)
         sys.exit(1)
