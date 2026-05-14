@@ -828,6 +828,8 @@ details.rich-detail summary{display:none}
 .glos-card-head:hover{background:var(--bg3)}
 .glos-tag{padding:2px 8px;border-radius:10px;font-size:12px;font-weight:500;letter-spacing:.02em;flex-shrink:0}
 .glos-term{font-size:var(--fs-body);font-weight:600;flex:1;font-family:var(--font)}
+.glos-term-link{color:inherit;text-decoration:none;font-weight:inherit}
+.glos-term-link:hover{text-decoration:underline}
 .glos-reading{font-size:var(--fs-sub);color:var(--text3);margin-left:4px;font-weight:400}
 .glos-summary{font-size:14px;color:var(--text2);margin-left:auto;max-width:min(200px,28vw);text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border:none;padding:0}
 a.glos-head-article{flex-shrink:0;font-size:13px;font-weight:600;color:var(--ink);text-decoration:none;padding:5px 10px;border-radius:8px;border:1.5px solid var(--border2);background:var(--bg2);font-family:var(--font);white-space:nowrap;transition:background .15s,border-color .15s,color .15s}
@@ -2051,6 +2053,11 @@ function loadGlossaryArticleSlugMap(){
       console.warn('[glossary] 埋め込みJSONの解析に失敗:', err && err.message ? err.message : err);
     }
   }
+  if(typeof GLOSSARY_ARTICLE_SLUGS !== 'undefined' && GLOSSARY_ARTICLE_SLUGS && typeof GLOSSARY_ARTICLE_SLUGS === 'object'){
+    _glosArticleSlugMap = GLOSSARY_ARTICLE_SLUGS;
+    _glosArticleSlugPromise = Promise.resolve();
+    return _glosArticleSlugPromise;
+  }
   if(typeof location !== 'undefined' && location.protocol === 'file:'){
     _glosArticleSlugMap = _glosArticleSlugMap || {};
     _glosArticleSlugPromise = Promise.resolve();
@@ -2252,6 +2259,9 @@ function renderGlossaryList(){
     const readSpan = g.reading ? `<span class="glos-reading">（${glosEscapeHtml(g.reading)}）</span>` : '';
     const descHtml = glosEscapeHtml(g.desc).replace(/\n/g, '<br>');
     const artHref = glosArticleHref(g);
+    const termLabel = artHref
+      ? `<a class="glos-term-link" href="${glosEscapeHtml(artHref)}" onclick="event.stopPropagation()" target="_blank" rel="noopener noreferrer">${glosEscapeHtml(g.term)}</a>${readSpan}`
+      : `${glosEscapeHtml(g.term)}${readSpan}`;
     const headArticle = artHref
       ? `<a class="glos-head-article" href="${glosEscapeHtml(artHref)}" onclick="event.stopPropagation()" target="_blank" rel="noopener noreferrer">詳細記事へ</a>`
       : '';
@@ -2263,7 +2273,7 @@ function renderGlossaryList(){
     <div class="glos-card" id="gc-${g.id}">
       <div class="glos-card-head" onclick="toggleGlosCard('${g.id}')">
         <span class="glos-tag" style="background:var(--bg3);color:var(--text2)">${catLabel}</span>
-        <span class="glos-term">${glosEscapeHtml(g.term)}${readSpan}</span>
+        <span class="glos-term">${termLabel}</span>
         <span class="glos-summary">${glosEscapeHtml(g.summary)}</span>
         ${headArticle}
         <svg class="glos-chevron" viewBox="0 0 14 14"><path d="M4 5l3 4 3-4"/></svg>

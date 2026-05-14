@@ -3,6 +3,7 @@
 """
 docs/glossary-terms-checklist.csv から eisei1-data-glossary.js（埋め込み用）を生成する。
 HTTPでCSVを取れない環境（file:// 等）でも用語一覧が表示されるようにする。
+あわせて docs/glossary-article-slugs.json を埋め込み、用語名→記事HTMLの対応を fetch なしで使えるようにする。
 
   python3 tools/glossary_csv_to_embed_js.py
   python3 tools/glossary_csv_to_embed_js.py -o eisei1-data-glossary.js
@@ -48,10 +49,26 @@ def main() -> None:
     ap.add_argument(
         "-o", "--output", type=Path, default=Path("eisei1-data-glossary.js")
     )
+    ap.add_argument(
+        "--slug-json",
+        type=Path,
+        default=Path("docs/glossary-article-slugs.json"),
+        help="用語名→記事スラッグ（eisei1-data-glossary.js に埋め込み）",
+    )
     args = ap.parse_args()
     root = Path(__file__).resolve().parent.parent
     csv_path = args.input if args.input.is_absolute() else root / args.input
     out_path = args.output if args.output.is_absolute() else root / args.output
+    slug_path = args.slug_json if args.slug_json.is_absolute() else root / args.slug_json
+    slug_map: dict[str, str] = {}
+    if slug_path.is_file():
+        raw = json.loads(slug_path.read_text(encoding="utf-8"))
+        if isinstance(raw, dict):
+            slug_map = {str(k).strip(): str(v).strip() for k, v in raw.items() if str(k).strip() and str(v).strip()}
+        else:
+            print(f"警告: {slug_path} はオブジェクト形式ではありません（スラッグ埋め込みをスキップ）", file=sys.stderr)
+    else:
+        print(f"警告: {slug_path} がありません（スラッグ埋め込みは空です）", file=sys.stderr)
     if not csv_path.is_file():
         print(f"入力がありません: {csv_path}", file=sys.stderr)
         sys.exit(1)
@@ -86,6 +103,7 @@ def main() -> None:
         " * 再生成: python3 tools/glossary_csv_to_embed_js.py",
         " */",
         "let GLOSSARY_DATA = " + json.dumps(items, ensure_ascii=False, indent=2) + ";",
+        "let GLOSSARY_ARTICLE_SLUGS = " + json.dumps(slug_map, ensure_ascii=False, indent=2) + ";",
         "",
     ]
     out_path.write_text("\n".join(lines), encoding="utf-8")
