@@ -2,6 +2,7 @@
 # GitHub Pages 用に公開ファイルだけを public_site/ に集約する。
 # 事前に python3 tools/sync_original_eisei1_500_to_data.py ・ python3 tools/csv_to_eisei1_master.py ・
 # python3 tools/build_question_pages.py ・ python3 tools/build_ichimon_pages.py を実行済みであること。
+# サイトマップは過去問・一問一答・用語を merge_sitemap_xmls.py で 1 本化し、リポジトリ直下の sitemap.xml も更新する。
 # Actions の Bundle ステップで GA4_MEASUREMENT_ID / GOOGLE_SITE_VERIFICATION を渡すと index に反映される。
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
@@ -54,12 +55,6 @@ if [[ ! -f sitemap-ichimon.xml ]]; then
   exit 1
 fi
 cp sitemap-ichimon.xml "$OUT/"
-if [[ -f "$OUT/sitemap-ichimon.xml" ]] && [[ -f "$OUT/CNAME" ]]; then
-  host="$(tr -d '\r\n' <"$OUT/CNAME")"
-  if ! grep -q 'sitemap-ichimon.xml' "$OUT/robots.txt" 2>/dev/null; then
-    printf 'Sitemap: https://%s/sitemap-ichimon.xml\n' "$host" >>"$OUT/robots.txt"
-  fi
-fi
 if [[ -d "$ROOT/articles" ]]; then
   cp -R "$ROOT/articles" "$OUT/articles"
 else
@@ -84,14 +79,15 @@ if [[ -d "$ROOT/terms" ]]; then
     --terms-dir "$OUT/terms" \
     --out "$OUT/sitemap-terms.xml" \
     --base "https://eisei1shu-master.jp"
-  # 用語ページ用サイトマップを robots.txt に明示（CNAME のホストを利用）
-  if [[ -f "$OUT/sitemap-terms.xml" ]] && [[ -f "$OUT/CNAME" ]]; then
-    host="$(tr -d '\r\n' <"$OUT/CNAME")"
-    if ! grep -q 'sitemap-terms.xml' "$OUT/robots.txt" 2>/dev/null; then
-      printf 'Sitemap: https://%s/sitemap-terms.xml\n' "$host" >>"$OUT/robots.txt"
-    fi
-  fi
 fi
+# 過去問・一問一答・用語のサイトマップを 1 本に統合（公開物には sitemap.xml のみ残す）
+MERGE_ARGS=( "$OUT/sitemap.xml" "$OUT/sitemap-ichimon.xml" )
+if [[ -f "$OUT/sitemap-terms.xml" ]]; then
+  MERGE_ARGS+=( "$OUT/sitemap-terms.xml" )
+fi
+python3 "$ROOT/tools/merge_sitemap_xmls.py" --out "$OUT/sitemap.xml" "${MERGE_ARGS[@]}"
+rm -f "$OUT/sitemap-ichimon.xml" "$OUT/sitemap-terms.xml"
+cp "$OUT/sitemap.xml" "$ROOT/sitemap.xml"
 TARGET="$OUT/index.html" python3 "$ROOT/tools/inject_site_analytics_secrets.py"
 bash "$ROOT/tools/verify_supabase_url_in_html.sh" "$OUT/index.html"
 n="$(find "$OUT" -type f | wc -l | tr -d ' ')"

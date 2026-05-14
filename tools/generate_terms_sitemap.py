@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-terms/*.html から SEO 用 sitemap-terms.xml を生成する。
+terms/*.html から SEO 用の中間サイトマップを生成する（prepare_public_site で sitemap.xml にマージ）。
 eisei-articles/dist/sitemap.xml はホストがプレースホルダのため、そのままコピーしないでください。
 """
 from __future__ import annotations

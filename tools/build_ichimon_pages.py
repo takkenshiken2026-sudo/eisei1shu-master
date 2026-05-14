@@ -4,7 +4,7 @@
 docs/eisei1_ichimon_itto.csv から
   - SEO 用の静的ページ ichimon/（個別 URL）
   - アプリ用 eisei1-data-ichimon.js（ICHI_MON_ROWS）
-  - sitemap-ichimon.xml
+  - sitemap-ichimon.xml（prepare で sitemap.xml にマージするための中間ファイル）
 を生成する。
 
 例:
@@ -258,7 +258,7 @@ def write_hub(
 </main>
 <footer class="q-static-footer">
   <p><small>学習用サンプル。出題・法令の最新情報は公式で確認してください。</small></p>
-  <p><small><a href="/sitemap-ichimon.xml">サイトマップ（一問一答のみ）</a></small></p>
+  <p><small><a href="/sitemap.xml">サイトマップ（全ページ）</a></small></p>
 </footer>
 </body>
 </html>
@@ -425,7 +425,7 @@ def main() -> None:
     sm_lines.append("</urlset>")
     (repo_root / "sitemap-ichimon.xml").write_text("\n".join(sm_lines) + "\n", encoding="utf-8")
 
-    print(f"ichimon: {n} 件 + index.html + {js_path.name} + sitemap-ichimon.xml → {ichimon_root}")
+    print(f"ichimon: {n} 件 + index.html + {js_path.name} + sitemap-ichimon.xml（マージ用）→ {ichimon_root}")
 
 
 if __name__ == "__main__":
