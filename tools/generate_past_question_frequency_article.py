@@ -7,7 +7,7 @@ data/eisei1_past_questions.csv と docs/past_question_theme_keywords.json から
 分類ルール:
   - 各設問の「問」「解説」を連結したテキストに対し、当該科目の各テーマのキーワード一致数をスコアとして比較
   - 最大スコアのテーマに1問を割り当て（同点は JSON 記載順で先勝ち）
-  - 全テーマでスコア0の場合は「（キーワード未一致・要見直し）」に分類
+  - 全テーマでスコア0の場合は「その他」に分類
 """
 from __future__ import annotations
 
@@ -40,9 +40,9 @@ def classify_row(
     text: str,
     themes: list[dict],
 ) -> tuple[str, str, int]:
-    """(theme_id, theme_label, score) — スコア>0 のテーマのみ。全て0なら未一致。"""
+    """(theme_id, theme_label, score) — スコア>0 のテーマのみ。全て0ならその他。"""
     best_id = "__unmatched__"
-    best_label = "（キーワード未一致・辞書の見直し候補）"
+    best_label = "その他（分類に当てはまらなかった設問）"
     best = 0
     for t in themes:
         sid = t["id"]
@@ -83,7 +83,7 @@ def build_article(
     # theme_id -> stats
     theme_q_count: dict[str, int] = defaultdict(int)
     theme_sessions: dict[str, set[str]] = defaultdict(set)
-    theme_label: dict[str, str] = {"__unmatched__": "（キーワード未一致・辞書の見直し候補）"}
+    theme_label: dict[str, str] = {"__unmatched__": "その他（分類に当てはまらなかった設問）"}
     for sub, defs in theme_defs.items():
         for t in defs:
             theme_label[t["id"]] = t["label"]
@@ -108,8 +108,8 @@ def build_article(
     title = "第一種衛生管理者「過去問616問」から見る科目・テーマ別の出題傾向【14回分】"
     parts.append(f"<title>{esc(title)}</title>\n")
     desc = (
-        "一衛マスターに登録した第一種過去問616問（14回×44問）を、科目とキーワードベースの単元テーマに分類し、"
-        "出題数と試験回ごとの出現を集計しました。"
+        "第一種衛生管理者の過去問616問（14回分）を、科目とテーマ別に整理し、"
+        "出題数と試験回ごとの出現の傾向をまとめました。"
     )
     parts.append(f'<meta name="description" content="{esc(desc)}">\n')
     parts.append('<meta name="robots" content="index, follow">\n')
@@ -197,37 +197,32 @@ def build_article(
     parts.append('  <article class="article-body">\n')
 
     parts.append(
-        "<p>本記事は、<strong>一衛マスターに登録した第一種衛生管理者の過去問CSV</strong>に基づき、"
-        "設問テキストと解説から<strong>科目別・テーマ別の出題頻度</strong>を機械集計したものです。"
-        "試験の公式な「出題範囲の宣言」ではなく、登録データに対する<strong>傾向分析</strong>として読んでください。</p>\n"
+        "<p>本記事は、一衛マスターに掲載している<strong>第一種衛生管理者の過去問</strong>をもとに、"
+        "問題文と解説から<strong>科目別・テーマ別の出題傾向</strong>を整理したものです。"
+        "公式の出題範囲の宣言ではなく、<strong>掲載データに基づく傾向</strong>として参考にしてください。</p>\n"
     )
     parts.append(
         f"<h2>1. 対象データ</h2>\n<ul>\n"
         f"<li>設問数：<strong>{n_rows}問</strong>（各回44問×<strong>{n_sessions}回分</strong>）</li>\n"
-        "<li>科目区分：関係法令・労働衛生・労働生理（いずれも第一種の区分に相当）</li>\n"
-        "<li>単元テーマ：<code>docs/past_question_theme_keywords.json</code> のキーワードで推定（後述）</li>\n"
+        "<li>科目：関係法令・労働衛生・労働生理</li>\n"
+        "<li>テーマ分類：問題文と解説に現れる用語から、科目ごとのテーマに振り分けています</li>\n"
         "</ul>\n"
     )
 
-    parts.append("<h2>2. 集計方法（重要）</h2>\n")
+    parts.append("<h2>2. 集計の考え方</h2>\n")
     parts.append(
-        "<p>CSVには「単元」列がないため、各設問の<strong>「問」＋「解説」</strong>に含まれる語句を、"
-        "科目ごとに定義した<strong>キーワード辞書</strong>と照合しています。"
-        "一致キーワード数が最も多いテーマに、その設問を1件だけ割り当てています（同点は辞書の上から優先）。"
-        "キーワードに引っかからない設問は「未一致」欄にまとめます。</p>\n"
-    )
-    parts.append(
-        "<blockquote><p><strong>注意</strong>：語句マッチは人間の試験対策の軸目次とは一致しません。"
-        "未一致が多い場合は <code>docs/past_question_theme_keywords.json</code> に語句を足すことで改善できます。</p></blockquote>\n"
+        "<p>各設問は、問題文と解説の中で<strong>どのテーマの語句が最も多く当てはまるか</strong>で1つのテーマに分類しています。"
+        "複数テーマにまたがる問題は、当てはまりが最も大きい側にのみカウントしています。"
+        "どのテーマにも当てはまらなかった設問は、表の<strong>その他</strong>にまとめています。</p>\n"
     )
 
     parts.append("<h2>3. 科目別の設問数</h2>\n")
-    parts.append("<table><thead><tr><th>科目</th><th>設問数</th><th>備考</th></tr></thead><tbody>\n")
+    parts.append("<table><thead><tr><th>科目</th><th>設問数</th><th>対象</th></tr></thead><tbody>\n")
     for sub in ("関係法令", "労働衛生", "労働生理"):
         c = len(by_subject.get(sub, []))
         parts.append(
             f"<tr><td>{esc(sub)}</td><td>{c}</td>"
-            f"<td>{n_sessions}回の試験で、各回の当該科目の問数ぶん</td></tr>\n"
+            f"<td>過去{n_sessions}回分</td></tr>\n"
         )
     parts.append("</tbody></table>\n")
 
@@ -252,7 +247,7 @@ def build_article(
         for r, tid, _, _ in row_assignment:
             if (r.get("科目") or "").strip() == sub and tid == "__unmatched__":
                 um_sess.add(session_key(r))
-        stats_sub.append(("__unmatched__", "（キーワード未一致・辞書の見直し候補）", um, len(um_sess)))
+        stats_sub.append(("__unmatched__", "その他（分類に当てはまらなかった設問）", um, len(um_sess)))
 
         for tid, lab, qc, sc in sorted(stats_sub, key=lambda x: (-x[2], x[1])):
             rate = (100.0 * sc / n_sessions) if n_sessions else 0.0
@@ -261,10 +256,10 @@ def build_article(
             )
         parts.append("</tbody></table>\n")
 
-    parts.append(f"<h2>{sec}. 分析結果の使い方</h2>\n<ul>\n")
-    parts.append("<li>「試験回で出現」が高いテーマは、直近の登録データ上で<strong>繰り返し触れられている領域</strong>です。</li>\n")
-    parts.append("<li>実学習では、本記事と併せて<a href=\"/articles/shiken-kamoku.html\">試験科目・出題範囲</a>・<a href=\"/\">過去問モード</a>で体感を補正してください。</li>\n")
-    parts.append("<li>辞書の改善案はリポジトリの <code>docs/past_question_theme_keywords.json</code> に追記するのが最短です。</li>\n")
+    parts.append(f"<h2>{sec}. この表の読み方</h2>\n<ul>\n")
+    parts.append("<li>「試験回で出現」が高いテーマは、掲載している過去問の範囲で<strong>繰り返し出題されているテーマ</strong>です。</li>\n")
+    parts.append("<li>学習の優先度は、本記事に加えて<a href=\"/articles/shiken-kamoku.html\">試験科目・出題範囲</a>や、ご自身の苦手分野も合わせて決めるとよいです。</li>\n")
+    parts.append("<li>実際の演習は<a href=\"/\">学習トップの過去問</a>から進められます。</li>\n")
     parts.append("</ul>\n")
 
     parts.append('<div class="related-box">\n')

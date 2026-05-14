@@ -4,18 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>第一種衛生管理者「過去問616問」から見る科目・テーマ別の出題傾向【14回分】</title>
-<meta name="description" content="一衛マスターに登録した第一種過去問616問（14回×44問）を、科目とキーワードベースの単元テーマに分類し、出題数と試験回ごとの出現を集計しました。">
+<meta name="description" content="第一種衛生管理者の過去問616問（14回分）を、科目とテーマ別に整理し、出題数と試験回ごとの出現の傾向をまとめました。">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://eisei1shu-master.jp/articles/kakomon-theme-frequency.html">
 <meta property="og:title" content="第一種衛生管理者「過去問616問」から見る科目・テーマ別の出題傾向【14回分】">
-<meta property="og:description" content="一衛マスターに登録した第一種過去問616問（14回×44問）を、科目とキーワードベースの単元テーマに分類し、出題数と試験回ごとの出現を集計しました。">
+<meta property="og:description" content="第一種衛生管理者の過去問616問（14回分）を、科目とテーマ別に整理し、出題数と試験回ごとの出現の傾向をまとめました。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://eisei1shu-master.jp/articles/kakomon-theme-frequency.html">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:site_name" content="一衛マスター">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="第一種衛生管理者「過去問616問」から見る科目・テーマ別の出題傾向【14回分】">
-<meta name="twitter:description" content="一衛マスターに登録した第一種過去問616問（14回×44問）を、科目とキーワードベースの単元テーマに分類し、出題数と試験回ごとの出現を集計しました。">
+<meta name="twitter:description" content="第一種衛生管理者の過去問616問（14回分）を、科目とテーマ別に整理し、出題数と試験回ごとの出現の傾向をまとめました。">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -31,7 +31,7 @@
       "@type": "Article",
       "@id": "https://eisei1shu-master.jp/articles/kakomon-theme-frequency.html#article",
       "headline": "第一種衛生管理者「過去問616問」から見る科目・テーマ別の出題傾向【14回分】",
-      "description": "一衛マスターに登録した第一種過去問616問（14回×44問）を、科目とキーワードベースの単元テーマに分類し、出題数と試験回ごとの出現を集計しました。",
+      "description": "第一種衛生管理者の過去問616問（14回分）を、科目とテーマ別に整理し、出題数と試験回ごとの出現の傾向をまとめました。",
       "dateModified": "2026-05-14",
       "inLanguage": "ja",
       "isPartOf": {
@@ -162,21 +162,20 @@ body { font-family: var(--font); font-size: 16px; line-height: 1.8; background: 
   </div>
   <h1 class="article-title">第一種衛生管理者「過去問616問」から見る科目・テーマ別の出題傾向【14回分】</h1>
   <article class="article-body">
-<p>本記事は、<strong>一衛マスターに登録した第一種衛生管理者の過去問CSV</strong>に基づき、設問テキストと解説から<strong>科目別・テーマ別の出題頻度</strong>を機械集計したものです。試験の公式な「出題範囲の宣言」ではなく、登録データに対する<strong>傾向分析</strong>として読んでください。</p>
+<p>本記事は、一衛マスターに掲載している<strong>第一種衛生管理者の過去問</strong>をもとに、問題文と解説から<strong>科目別・テーマ別の出題傾向</strong>を整理したものです。公式の出題範囲の宣言ではなく、<strong>掲載データに基づく傾向</strong>として参考にしてください。</p>
 <h2>1. 対象データ</h2>
 <ul>
 <li>設問数：<strong>616問</strong>（各回44問×<strong>14回分</strong>）</li>
-<li>科目区分：関係法令・労働衛生・労働生理（いずれも第一種の区分に相当）</li>
-<li>単元テーマ：<code>docs/past_question_theme_keywords.json</code> のキーワードで推定（後述）</li>
+<li>科目：関係法令・労働衛生・労働生理</li>
+<li>テーマ分類：問題文と解説に現れる用語から、科目ごとのテーマに振り分けています</li>
 </ul>
-<h2>2. 集計方法（重要）</h2>
-<p>CSVには「単元」列がないため、各設問の<strong>「問」＋「解説」</strong>に含まれる語句を、科目ごとに定義した<strong>キーワード辞書</strong>と照合しています。一致キーワード数が最も多いテーマに、その設問を1件だけ割り当てています（同点は辞書の上から優先）。キーワードに引っかからない設問は「未一致」欄にまとめます。</p>
-<blockquote><p><strong>注意</strong>：語句マッチは人間の試験対策の軸目次とは一致しません。未一致が多い場合は <code>docs/past_question_theme_keywords.json</code> に語句を足すことで改善できます。</p></blockquote>
+<h2>2. 集計の考え方</h2>
+<p>各設問は、問題文と解説の中で<strong>どのテーマの語句が最も多く当てはまるか</strong>で1つのテーマに分類しています。複数テーマにまたがる問題は、当てはまりが最も大きい側にのみカウントしています。どのテーマにも当てはまらなかった設問は、表の<strong>その他</strong>にまとめています。</p>
 <h2>3. 科目別の設問数</h2>
-<table><thead><tr><th>科目</th><th>設問数</th><th>備考</th></tr></thead><tbody>
-<tr><td>関係法令</td><td>238</td><td>14回の試験で、各回の当該科目の問数ぶん</td></tr>
-<tr><td>労働衛生</td><td>238</td><td>14回の試験で、各回の当該科目の問数ぶん</td></tr>
-<tr><td>労働生理</td><td>140</td><td>14回の試験で、各回の当該科目の問数ぶん</td></tr>
+<table><thead><tr><th>科目</th><th>設問数</th><th>対象</th></tr></thead><tbody>
+<tr><td>関係法令</td><td>238</td><td>過去14回分</td></tr>
+<tr><td>労働衛生</td><td>238</td><td>過去14回分</td></tr>
+<tr><td>労働生理</td><td>140</td><td>過去14回分</td></tr>
 </tbody></table>
 <h2>4. テーマ別（関係法令）</h2>
 <table><thead><tr><th>テーマ</th><th>設問数</th><th>試験回で出現（/14回）</th><th>出現率</th></tr></thead><tbody>
@@ -189,13 +188,13 @@ body { font-family: var(--font); font-size: 16px; line-height: 1.8; background: 
 <tr><td>定期自主検査・機械等</td><td>10</td><td>8</td><td>57%</td></tr>
 <tr><td>作業環境測定・管理区分・評価</td><td>9</td><td>9</td><td>64%</td></tr>
 <tr><td>個人用保護具・規格・譲渡制限</td><td>7</td><td>6</td><td>43%</td></tr>
-<tr><td>（キーワード未一致・辞書の見直し候補）</td><td>3</td><td>3</td><td>21%</td></tr>
+<tr><td>その他（分類に当てはまらなかった設問）</td><td>3</td><td>3</td><td>21%</td></tr>
 <tr><td>年少者・妊産婦等</td><td>1</td><td>1</td><td>7%</td></tr>
 </tbody></table>
 <h2>5. テーマ別（労働衛生）</h2>
 <table><thead><tr><th>テーマ</th><th>設問数</th><th>試験回で出現（/14回）</th><th>出現率</th></tr></thead><tbody>
 <tr><td>化学物質と健康障害</td><td>83</td><td>14</td><td>100%</td></tr>
-<tr><td>（キーワード未一致・辞書の見直し候補）</td><td>36</td><td>13</td><td>93%</td></tr>
+<tr><td>その他（分類に当てはまらなかった設問）</td><td>36</td><td>13</td><td>93%</td></tr>
 <tr><td>保護具・局所排気・防毒</td><td>30</td><td>14</td><td>100%</td></tr>
 <tr><td>酸素欠乏・硫化水素等</td><td>20</td><td>10</td><td>71%</td></tr>
 <tr><td>人間工学・メンタル・VDT・快適職場</td><td>17</td><td>12</td><td>86%</td></tr>
@@ -216,13 +215,13 @@ body { font-family: var(--font); font-size: 16px; line-height: 1.8; background: 
 <tr><td>消化・吸収・肝臓</td><td>17</td><td>14</td><td>100%</td></tr>
 <tr><td>呼吸・ガス交換</td><td>13</td><td>13</td><td>93%</td></tr>
 <tr><td>腎・尿・体液</td><td>13</td><td>13</td><td>93%</td></tr>
-<tr><td>（キーワード未一致・辞書の見直し候補）</td><td>7</td><td>6</td><td>43%</td></tr>
+<tr><td>その他（分類に当てはまらなかった設問）</td><td>7</td><td>6</td><td>43%</td></tr>
 </tbody></table>
-<h2>7. 分析結果の使い方</h2>
+<h2>7. この表の読み方</h2>
 <ul>
-<li>「試験回で出現」が高いテーマは、直近の登録データ上で<strong>繰り返し触れられている領域</strong>です。</li>
-<li>実学習では、本記事と併せて<a href="/articles/shiken-kamoku.html">試験科目・出題範囲</a>・<a href="/">過去問モード</a>で体感を補正してください。</li>
-<li>辞書の改善案はリポジトリの <code>docs/past_question_theme_keywords.json</code> に追記するのが最短です。</li>
+<li>「試験回で出現」が高いテーマは、掲載している過去問の範囲で<strong>繰り返し出題されているテーマ</strong>です。</li>
+<li>学習の優先度は、本記事に加えて<a href="/articles/shiken-kamoku.html">試験科目・出題範囲</a>や、ご自身の苦手分野も合わせて決めるとよいです。</li>
+<li>実際の演習は<a href="/">学習トップの過去問</a>から進められます。</li>
 </ul>
 <div class="related-box">
   <div class="related-box-title">関連記事</div>
