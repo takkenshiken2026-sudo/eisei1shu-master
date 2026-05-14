@@ -5,8 +5,9 @@ eisei2shu-master の用語記事 HTML を第一種向けに置換し、eisei1shu
 docs/glossary-article-slugs.json に、docs/glossary-terms-checklist.csv の用語名でエントリを追加する。
 
 マッチング:
-  1) eisei2 の glossary-article-slugs.json のキーと CSV「用語」が完全一致
-  2) それ以外は、CSV「用語」が eisei2 のキーを部分文字列として含み、キー長が最長のものを採用
+  1) eisei1 の docs/glossary-article-slugs.json に「用語」キーがあり、値スラッグの HTML が eisei2/terms に存在する場合はそれを採用（手動追記・拡張スクリプトの結果を優先）
+  2) さもなければ eisei2 の glossary-article-slugs.json のキーと CSV「用語」が完全一致
+  3) それ以外は、CSV「用語」が eisei2 のキーを部分文字列として含み、キー長が最長のものを採用
 除外スラッグ: 第二種総まとめ・第二種資格記事のみなど（FIRST_CLASS_SKIP_SLUGS）
 """
 
@@ -105,21 +106,32 @@ def main() -> None:
             if term:
                 rows.append((cat, term))
 
+    slug_json_path = _REPO / "docs" / "glossary-article-slugs.json"
+    existing = json.loads(slug_json_path.read_text(encoding="utf-8"))
+    if not isinstance(existing, dict):
+        print("glossary-article-slugs.json がオブジェクト形式ではありません", file=sys.stderr)
+        sys.exit(1)
+
     term_to_slug: dict[str, str] = {}
     slug_sources: dict[str, set[str]] = {}
     for _cat, term in rows:
+        sl = existing.get(term)
+        if isinstance(sl, str):
+            sl = sl.strip()
+            if (
+                sl
+                and sl not in FIRST_CLASS_SKIP_SLUGS
+                and (e2_terms / f"{sl}.html").is_file()
+            ):
+                term_to_slug[term] = sl
+                slug_sources.setdefault(sl, set()).add(term)
+                continue
         k2 = best_eisei2_key(term, slug_map, e2_terms)
         if not k2:
             continue
         slug = slug_map[k2]
         term_to_slug[term] = slug
         slug_sources.setdefault(slug, set()).add(term)
-
-    slug_json_path = _REPO / "docs" / "glossary-article-slugs.json"
-    existing = json.loads(slug_json_path.read_text(encoding="utf-8"))
-    if not isinstance(existing, dict):
-        print("glossary-article-slugs.json がオブジェクト形式ではありません", file=sys.stderr)
-        sys.exit(1)
 
     out_terms_dir = _REPO / "terms"
     out_terms_dir.mkdir(parents=True, exist_ok=True)

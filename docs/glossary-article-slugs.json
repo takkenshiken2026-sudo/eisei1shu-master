@@ -38,5 +38,15 @@
   "局所排気装置（形式・制気速度・性能）": "kyokuho-haikisochi",
   "捕集分析法／直接読み取り式測定": "chokusetsu-yomitori-sokutei",
   "ストレスチェック制度（労働衛生上の目的）": "stress-check",
-  "リスクアセスメント（5ステップ）": "risk-assessment"
+  "リスクアセスメント（5ステップ）": "risk-assessment",
+  "安全衛生委員会への付議事項": "eisei-iinkai",
+  "特殊健康診断（電離放射線）": "denri-hoshasen",
+  "安全衛生委員会（兼任の可否）": "eisei-iinkai",
+  "衛生委員会の付議事項": "eisei-iinkai",
+  "衛生委員会の構成員": "eisei-iinkai",
+  "衛生委員会の開催頻度（月1回以上）": "eisei-iinkai",
+  "電離放射線（外部・内部被ばく・線量）": "denri-hoshasen",
+  "白内障（紫外・赤外・電離放射線）": "denri-hoshasen",
+  "騒音性難聴・外毛細胞・コキレア4000Hz落ち込み": "soonnsei-nacho",
+  "騒音性難聴（毛細胞・4000Hz）": "soonnsei-nacho"
 }
