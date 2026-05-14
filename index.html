@@ -2,7 +2,10 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<!-- GA: 本番では gtag.js を読み込み測定IDを設定 -->
+<!-- GA4: 空のままなら site-analytics.js の既定測定ID。デプロイ時に secrets.GA4_MEASUREMENT_ID で上書き -->
+<script>window.__GA4_MEASUREMENT_ID__="";</script>
+<!--SITE_VERIFICATION_META_INJECT-->
+<script defer src="/site-analytics.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>一衛マスター｜第一種衛生管理者試験 過去問・模擬試験・用語解説で合格を目指す無料学習サイト</title>
 

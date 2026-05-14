@@ -1,7 +1,14 @@
 // Google Analytics 4 (GA4) bootstrap for static site.
-// Measurement ID: G-NYDT6H7XR8
+// 1) index.html で window.__GA4_MEASUREMENT_ID__ を宣言するとそれを優先
+// 2) 未設定のときは下記の既定 ID（GitHub Actions の GA4_MEASUREMENT_ID で上書き可能）
 (function () {
-  var MID = "G-NYDT6H7XR8";
+  var raw = "";
+  try {
+    if (typeof window !== "undefined" && window.__GA4_MEASUREMENT_ID__) {
+      raw = String(window.__GA4_MEASUREMENT_ID__).trim();
+    }
+  } catch (_e) {}
+  var MID = /^G-[A-Z0-9]+$/.test(raw) ? raw : "G-NYDT6H7XR8";
   if (!MID || !/^G-[A-Z0-9]+$/.test(MID)) return;
 
   if (window.gtag && window.dataLayer) {
