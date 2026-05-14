@@ -11,6 +11,7 @@ cd "$ROOT"
 for f in \
   index.html \
   about.html \
+  related-sites.html \
   privacy-terms.html \
   site-pages.css \
   site-analytics.js \
@@ -52,6 +53,13 @@ if [[ -d "$ROOT/terms" ]]; then
     --csv "$ROOT/docs/glossary-terms-checklist.csv" \
     --terms-dir "$OUT/terms" \
     --out "$OUT/terms/index.html" \
+    --base "https://eisei1shu-master.jp"
+  # リポジトリ直下の terms/index.html も同一内容に更新（公開用コピーとズレないようにする）
+  python3 "$ROOT/tools/generate_terms_index_html.py" \
+    --slug-json "$ROOT/docs/glossary-article-slugs.json" \
+    --csv "$ROOT/docs/glossary-terms-checklist.csv" \
+    --terms-dir "$ROOT/terms" \
+    --out "$ROOT/terms/index.html" \
     --base "https://eisei1shu-master.jp"
   python3 "$ROOT/tools/generate_terms_sitemap.py" \
     --terms-dir "$OUT/terms" \
