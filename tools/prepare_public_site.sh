@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # GitHub Pages 用に公開ファイルだけを public_site/ に集約する。
-# 事前に python3 tools/csv_to_eisei1_master.py ・ python3 tools/build_question_pages.py ・
-# python3 tools/build_ichimon_pages.py を実行済みであること。
+# 事前に python3 tools/sync_original_eisei1_500_to_data.py ・ python3 tools/csv_to_eisei1_master.py ・
+# python3 tools/build_question_pages.py ・ python3 tools/build_ichimon_pages.py を実行済みであること。
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 OUT="$ROOT/public_site"

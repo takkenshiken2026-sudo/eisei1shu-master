@@ -212,6 +212,11 @@ def write_hub(
     css_href = rel_to_site_css(hub_rel)
     canonical = public_url(base_url, site_prefix, "ichimon/")
 
+    meta_desc = (
+        f"第一種衛生管理者試験向けの一問一答（○×）を静的ページとして掲載しています。全{total}件。"
+        " 検索・共有に使える個別URLです。"
+    )
+
     sections: list[str] = []
     for subj, items in grouped.items():
         lis = []
@@ -230,7 +235,7 @@ def write_hub(
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>一問一答一覧（静的ページ）｜一衛マスター</title>
-<meta name="description" content="第一種衛生管理者試験向けの一問一答（○×）を静的ページとして掲載しています。全{total}件。検索・共有に使える個別URLです。">
+<meta name="description" content="{html.escape(meta_desc)}">
 <link rel="canonical" href="{html.escape(canonical)}">
 <script defer src="/site-analytics.js"></script>
 <link rel="stylesheet" href="{html.escape(css_href)}">

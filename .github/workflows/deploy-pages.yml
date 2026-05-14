@@ -29,6 +29,7 @@ jobs:
 
       - name: Generate JS and static question pages
         run: |
+          python3 tools/sync_original_eisei1_500_to_data.py
           python3 tools/csv_to_eisei1_master.py -o eisei1-master-data.js
           python3 tools/glossary_csv_to_embed_js.py
           python3 tools/build_question_pages.py

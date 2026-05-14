@@ -78,7 +78,10 @@ def discover_pool_years(rows: list[dict]) -> tuple[dict[tuple[str, str], int], d
 
 
 def make_id(year: int, num: int, field: str, extended: bool) -> int:
-    return year * 1000 + FIELD_NUM[field] * 100 + num if extended else year * 100 + num
+    # オリジナルは分野×問番号の組み合わせが多いため、分野間で桁をずらして重複を避ける
+    if extended:
+        return year * 10000 + FIELD_NUM[field] * 1000 + num
+    return year * 100 + num
 
 
 def row_to_obj(row: dict, pool_year: dict[tuple[str, str], int]) -> dict:
