@@ -115,7 +115,8 @@ q/past/{era}/{session}/{field}/{qwidth}/index.html
 
 **例:**  
 `q/past/r07/koki/law/03/index.html`  
-公開URL例: `https://<user>.github.io/<repo>/q/past/r07/koki/law/03/`
+公開URL例（本番・カスタムドメイン）: `https://eisei1shu-master.jp/q/past/r07/koki/law/03/`  
+GitHub Pages 既定ホストの例: `https://takkenshiken2026-sudo.github.io/eisei1shu-master/q/past/r07/koki/law/03/`
 
 ### 7.2 オリジナル
 
@@ -134,7 +135,7 @@ q/orig/{pool}/{field}/{qwidth}/index.html
 
 ## 8. 正規URL（canonical）・OGP
 
-- **canonical** は本番ドメイン確定後、`https://<本番ドメイン>/q/.../` 形式（末尾 `/` 統一）。
+- **canonical** は本番で `https://eisei1shu-master.jp/q/.../` 形式（末尾 `/` 統一）。カスタムドメイン未設定時は `build_question_pages.py` の `--base-url` に合わせる。
 - **同一問の別表現**（クエリ付き・index.html 明示など）がある場合は、上記ディレクトリURLを canonical の正とする。
 
 ---

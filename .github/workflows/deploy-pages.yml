@@ -1,4 +1,5 @@
 # GitHub Pages（GitHub Actions）— リポジトリに q/ を載せずにデプロイする
+# リポジトリ: github.com/takkenshiken2026-sudo/eisei1shu-master ／ 本番 https://eisei1shu-master.jp/
 # リポジトリ Settings → Pages → Source を「GitHub Actions」にしてください。
 name: Deploy GitHub Pages
 
