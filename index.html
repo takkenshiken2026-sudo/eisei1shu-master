@@ -301,10 +301,6 @@ h2.section-label .tip-icon{width:13px;height:13px;font-size:9px}
 /* ===== 一問一答 ===== */
 .ichi-config{padding:4px 0 20px;margin-bottom:8px}
 .ichi-config-lead{font-size:var(--fs-sub);color:var(--text2);line-height:1.65;margin-bottom:14px}
-.ichi-static-link-line{font-size:13px;color:var(--text3);line-height:1.55;margin:-6px 0 14px}
-.ichi-static-link-line a{color:var(--text2);font-weight:600}
-.ichi-meta-static{font-size:12px;color:var(--text3);margin-top:4px}
-.ichi-meta-static a{color:var(--text2);font-weight:600;text-decoration:underline}
 .ichi-config #ichi-field-chips{margin-bottom:16px}
 .ichi-start-btn{width:100%;padding:13px;font-size:15px;font-weight:700}
 .ichi-play-wrap{display:block}
@@ -318,9 +314,6 @@ h2.section-label .tip-icon{width:13px;height:13px;font-size:9px}
 .ichi-card{background:#fff;border:1.5px solid var(--border2);border-radius:var(--r2);padding:24px 20px;box-shadow:var(--sh);margin-bottom:20px;min-height:140px;display:flex;flex-direction:column;justify-content:flex-start;gap:12px}
 .ichi-head{display:flex;align-items:center;justify-content:flex-start;gap:10px;margin-bottom:10px}
 .ichi-head .bookmark-btn{margin-left:auto;flex-shrink:0}
-.ichi-meta{display:flex;align-items:center;gap:14px;margin-bottom:10px;flex-wrap:wrap}
-.ichi-meta:empty{display:none;margin:0;padding:0;border:none}
-.ichi-head .ichi-meta{margin-bottom:0;flex:1;min-width:0}
 .ichi-meta-item{display:inline-flex;align-items:center;gap:4px}
 .ichi-meta-label{font-size:10px;color:var(--text3);font-weight:600;letter-spacing:.06em;white-space:nowrap}
 .ichi-field{font-size:10px;color:var(--text3);font-weight:700;letter-spacing:.06em;margin-bottom:12px}
@@ -942,10 +935,8 @@ a.glos-article-link:hover{color:var(--text);text-decoration-color:var(--ink)}
   #page-ichimondou{padding-bottom:calc(180px + env(safe-area-inset-bottom))}
   .ichi-card{padding:16px 14px;margin-bottom:12px;min-height:0}
   .ichi-head{margin-bottom:8px}
-  .ichi-meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 10px;margin-bottom:8px}
   .ichi-meta-item{padding:0;border:none;background:transparent;flex-wrap:nowrap;max-width:100%;min-width:0}
   .ichi-meta-label{line-height:1.25;flex:0 0 auto}
-  .ichi-meta .diff-stars,.ichi-meta .freq-stars{min-width:0;flex:0 0 auto}
   .ichi-field{margin-bottom:8px}
   .ichi-statement{font-size:14px;line-height:1.7;white-space:pre-line}
   .ichi-btns:not(.answered){position:fixed;left:14px;right:14px;bottom:calc(76px + env(safe-area-inset-bottom));z-index:44;gap:8px;margin-bottom:0}
@@ -1232,8 +1223,6 @@ body.is-solving .site-footer{display:none!important}
 .diff-star.on{color:var(--ink)}
 .diff-star.off{color:var(--bg4)}
 .diff-unknown{font-size:12px;font-weight:700;color:var(--text3);font-family:var(--mono);letter-spacing:.02em;white-space:nowrap;line-height:18px}
-.ichi-meta .ichi-diff-wrap .diff-inner{display:inline-flex;align-items:center;gap:4px}
-.ichi-meta .ichi-diff-wrap .diff-label{font-size:10px;color:var(--text3);font-weight:600;letter-spacing:.06em;width:auto;flex:0 0 auto}
 .freq-star.on{color:var(--ink)}
 .freq-star.off{color:var(--bg4)}
 /* Year tags in exp */
@@ -1260,7 +1249,6 @@ body.is-solving .site-footer{display:none!important}
   .q-meta-item.freq-item{flex:0 0 96px}
   .q-meta .freq-stars{width:49px;flex:0 0 49px}
   .diff-star,.freq-star{width:9px!important;height:9px!important;flex:0 0 9px}
-  .ichi-meta .diff-star{font-size:9px;line-height:1}
 }
 /* Streak display in exam banner */
 @media(max-width:600px){
@@ -1579,7 +1567,6 @@ body.is-solving .site-footer{display:none!important}
       </nav>
       <div id="ichi-config" class="ichi-config">
         <p class="ichi-config-lead">分野を選んで「開始」してください。記述が正しいときは○、誤りのときは×で答えます。</p>
-        <p class="ichi-static-link-line">設問ごとの静的ページ（検索・共有向け）は <a href="/ichimon/">一問一答一覧</a> から開けます。</p>
         <div class="field-chips" id="ichi-field-chips">
           <button type="button" class="chip on" data-field="" onclick="selectIchiField(this)">全分野</button>
           <button type="button" class="chip" data-field="law" onclick="selectIchiField(this)">関係法令</button>
@@ -1599,7 +1586,6 @@ body.is-solving .site-footer{display:none!important}
       </div>
       <div class="ichi-card">
         <div class="ichi-head">
-          <div class="ichi-meta" id="ichi-meta"></div>
           <div class="ichi-field" id="ichi-field"></div>
           <button class="bookmark-btn" id="ichi-bookmark-btn" onclick="toggleIchiBookmark()" aria-label="ブックマークに追加">
             <svg viewBox="0 0 16 16"><path d="M4 2.5h8v11L8 11l-4 2.5z"/></svg>
@@ -3862,14 +3848,6 @@ function showIchiQuestion() {
   const q = ichiState.questions[ichiState.idx];
   document.getElementById('ichi-field').textContent = FIELD_LABELS[q.field] || q.field;
   document.getElementById('ichi-statement').textContent = formatIchiStatementLead(q.statement);
-  const metaEl = document.getElementById('ichi-meta');
-  if (metaEl) {
-    if (q.publicPath) {
-      metaEl.innerHTML = '<div class="ichi-meta-static"><a href="' + escapeHTML(q.publicPath) + '">この設問の静的ページ</a></div>';
-    } else {
-      metaEl.innerHTML = '';
-    }
-  }
   updateBookmarkButton(q, 'ichi-bookmark-btn');
   document.getElementById('ichi-btn-maru').disabled = false;
   document.getElementById('ichi-btn-batu').disabled = false;
