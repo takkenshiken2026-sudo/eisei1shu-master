@@ -57,6 +57,13 @@ if [[ -d "$ROOT/terms" ]]; then
     --terms-dir "$OUT/terms" \
     --out "$OUT/sitemap-terms.xml" \
     --base "https://eisei1shu-master.jp"
+  # 用語ページ用サイトマップを robots.txt に明示（CNAME のホストを利用）
+  if [[ -f "$OUT/sitemap-terms.xml" ]] && [[ -f "$OUT/CNAME" ]]; then
+    host="$(tr -d '\r\n' <"$OUT/CNAME")"
+    if ! grep -q 'sitemap-terms.xml' "$OUT/robots.txt" 2>/dev/null; then
+      printf 'Sitemap: https://%s/sitemap-terms.xml\n' "$host" >>"$OUT/robots.txt"
+    fi
+  fi
 fi
 bash "$ROOT/tools/verify_supabase_url_in_html.sh" "$OUT/index.html"
 n="$(find "$OUT" -type f | wc -l | tr -d ' ')"
