@@ -1826,7 +1826,7 @@ body.is-solving .site-footer{display:none!important}
         </ol>
       </nav>
       <h2 class="page-title">オリジナル問題</h2>
-      <div class="page-sub">分野を選び、過去問と同じ形式で演習できます。</div>
+      <div class="page-sub">分野を選び、過去問と同じ形式で演習できます。出題順は毎回ランダムです。</div>
 
       <div class="orig-bottom-bar" style="margin-top:0;margin-bottom:16px;padding-top:0;border-top:none;border-bottom:1px solid var(--border);padding-bottom:16px">
         <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px">
@@ -1844,12 +1844,6 @@ body.is-solving .site-footer{display:none!important}
 
       <h2 class="section-label">分野を選ぶ</h2>
       <div class="field-chips" id="orig-field-chips"></div>
-
-      <h2 class="section-label">出題順</h2>
-      <div class="count-btns" style="margin-bottom:22px">
-        <button class="count-btn on" id="orig-order-seq" onclick="selOrigOrder('seq')">最初から解く</button>
-        <button class="count-btn" id="orig-order-rnd" onclick="selOrigOrder('rnd')">ランダムに解く</button>
-      </div>
 
     </div>
 
@@ -4517,7 +4511,7 @@ const ORIG_FIELD_LABELS = {law:'関係法令', rights:'労働衛生', limit:'労
 const ORIG_FIELD_COLORS = {law:'#1e4a8a', rights:'#1a5f4a', limit:'#8a5a1e'};
 
 
-let origState = {fields: ['law','rights','limit'], count: 10, order: 'seq'};
+let origState = {fields: ['law','rights','limit'], count: 10};
 function buildOrigFieldChips(){
   const el=document.getElementById('orig-field-chips');
   if(!el)return;
@@ -4539,13 +4533,6 @@ function toggleOrigChip(fid){
   }
   updateOrigSelSummary();
 }
-function selOrigOrder(o){
-  origState.order=o;
-  ['seq','rnd'].forEach(v=>{
-    const el=document.getElementById('orig-order-'+v);
-    if(el)el.classList.toggle('on',v===o);
-  });
-}
 function getCsvOrigPracticePool(){
   return QUESTIONS.filter(q=>isCsvOrigPoolQuestion(q)&&origState.fields.includes(q.field));
 }
@@ -4558,7 +4545,6 @@ function updateOrigSelSummary(){
 
 function renderOrigPage(){
   buildOrigFieldChips();
-  selOrigOrder(origState.order);
   updateOrigSelSummary();
 }
 
@@ -4576,7 +4562,7 @@ function beginOrigQuiz(){
     alert('条件に該当するオリジナル問題がありません。data/eisei1_original_questions.csv の取り込みと、分野の選択を確認してください。');
     return;
   }
-  const ordered=origState.order==='rnd'?[...pool].sort(()=>Math.random()-.5):[...pool];
+  const ordered = shuffleArray(pool.slice());
   quizState.queue=origState.count===0?ordered:ordered.slice(0,origState.count);
   quizState.idx=0;quizState.sessionResults=[];quizState.scoreReplayMode=false;
   quizState.mode='orig';
