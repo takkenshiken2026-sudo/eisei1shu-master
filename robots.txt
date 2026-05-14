@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eisei1shu-master.jp/sitemap.xml

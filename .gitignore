@@ -1,0 +1,6 @@
+# ビルド生成物（CI またはローカルで再生成）
+/q/
+/sitemap.xml
+/public_site/
+
+.DS_Store

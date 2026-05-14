@@ -1,0 +1,195 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+from __future__ import annotations
+
+"""
+過去問・オリジナル CSV（同一列形式）から、index.html が読み込む JS を生成します。
+
+入力（デフォルト）:
+  - data/eisei1_past_questions.csv
+  - data/eisei1_original_questions.csv
+
+出力（JS）:
+  - CSV_IMPORTED_YEAR_LABELS
+  - CSV_IMPORTED_ORIG_POOL_YEARS
+  - CSV_IMPORTED_QUESTIONS
+  - applyCsvImportedQuestions() 呼び出し
+"""
+
+import argparse
+import csv
+import json
+import re
+import sys
+from pathlib import Path
+
+_TOOLS_DIR = Path(__file__).resolve().parent
+if str(_TOOLS_DIR) not in sys.path:
+    sys.path.insert(0, str(_TOOLS_DIR))
+
+from question_slug_lib import FIELD_MAP, FIELD_NUM, month_key_for_pool, normalize_era
+
+
+def parse_era_western(開催年数: str) -> int | None:
+    era = normalize_era(開催年数)
+    if era == "オリジナル":
+        return None
+    m = re.match(r"令和(\d+)年", era)
+    if m:
+        return 2018 + int(m.group(1))
+    m = re.match(r"平成(\d+)年", era)
+    if m:
+        return 1988 + int(m.group(1))
+    m = re.match(r"昭和(\d+)年", era)
+    if m:
+        return 1925 + int(m.group(1))
+    raise ValueError(f"開催年数が未対応: {開催年数!r}")
+
+
+def era_western_label(開催年数: str, bucket: str) -> str:
+    raw = (開催年数 or "").strip()
+    if normalize_era(開催年数) == "オリジナル":
+        return raw + "・" + bucket
+    try:
+        y = parse_era_western(開催年数)
+    except ValueError:
+        return raw + "・" + bucket
+    return f"{raw}（{y}年）・{bucket}"
+
+
+def discover_pool_years(rows: list[dict]) -> tuple[dict[tuple[str, str], int], dict[int, str]]:
+    order: list[tuple[str, str]] = []
+    seen: set[tuple[str, str]] = set()
+    for row in rows:
+        era = normalize_era(row.get("開催年数") or "")
+        bk = month_key_for_pool(row)
+        key = (era, bk)
+        if key not in seen:
+            seen.add(key)
+            order.append(key)
+    pool_year: dict[tuple[str, str], int] = {}
+    labels: dict[int, str] = {}
+    y0 = 1990
+    for i, key in enumerate(order):
+        yr = y0 + i
+        pool_year[key] = yr
+        labels[yr] = era_western_label(key[0], key[1])
+    return pool_year, labels
+
+
+def make_id(year: int, num: int, field: str, extended: bool) -> int:
+    return year * 1000 + FIELD_NUM[field] * 100 + num if extended else year * 100 + num
+
+
+def row_to_obj(row: dict, pool_year: dict[tuple[str, str], int]) -> dict:
+    科目 = (row.get("科目") or "").strip()
+    field = FIELD_MAP.get(科目)
+    if not field:
+        raise ValueError(f"不明な科目: {科目!r}")
+
+    era = normalize_era(row.get("開催年数") or "")
+    bk = month_key_for_pool(row)
+    year = pool_year[(era, bk)]
+    num = int(str(row.get("問番号") or "").strip())
+
+    # オリジナルは科目ごとに問番号が繰り返すため、常に field 込みの拡張IDにする
+    ext = era == "オリジナル"
+    qid = make_id(year, num, field, ext)
+
+    opts = [(row.get(f"({i})") or "").strip() for i in range(1, 6)]
+    if not all(opts):
+        raise ValueError(f"選択肢欠け: id候補={qid}")
+
+    raw_ans = str(row.get("正答番号") or "").strip()
+    if not raw_ans:
+        raise ValueError(f"正答番号なし: id候補={qid}")
+    ans1 = int(raw_ans)
+    if not (1 <= ans1 <= 5):
+        raise ValueError(f"正答番号が1〜5以外: {ans1} (id={qid})")
+
+    text = (row.get("問") or "").strip()
+    if not text:
+        raise ValueError(f"問題文なし: id={qid}")
+
+    exp_raw = (row.get("解説") or "").strip()
+    exp = exp_raw if exp_raw else f"正解は選択肢{ans1}。解説テキストは CSV で未入力です。"
+
+    return {
+        "id": qid,
+        "year": year,
+        "num": num,
+        "field": field,
+        "text": text,
+        "opts": opts,
+        "ans": ans1 - 1,
+        "exp": exp,
+    }
+
+
+def load_rows(path: Path) -> list[dict]:
+    text = path.read_text(encoding="utf-8-sig")
+    return list(csv.DictReader(text.splitlines()))
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("-o", "--output", type=Path, required=True)
+    ap.add_argument("csv_files", nargs="*", type=Path)
+    args = ap.parse_args()
+
+    repo_root = Path(__file__).resolve().parent.parent
+    data_dir = repo_root / "data"
+    default_paths = [
+        data_dir / "eisei1_past_questions.csv",
+        data_dir / "eisei1_original_questions.csv",
+    ]
+    paths = args.csv_files or [p for p in default_paths if p.exists()]
+    if not paths:
+        print("入力CSVがありません。data/ にCSVを置いてください。", file=sys.stderr)
+        sys.exit(1)
+
+    rows: list[dict] = []
+    for p in paths:
+        if not p.exists():
+            continue
+        rows.extend(load_rows(p))
+
+    pool_year, year_labels = discover_pool_years(rows)
+    orig_pool_years = sorted({yr for (era, _bk), yr in pool_year.items() if era == "オリジナル"})
+
+    objs: list[dict] = []
+    for i, row in enumerate(rows):
+        try:
+            objs.append(row_to_obj(row, pool_year))
+        except Exception as e:
+            print(f"行 {i+2}: {e}", file=sys.stderr)
+            sys.exit(1)
+
+    seen: set[int] = set()
+    for o in objs:
+        if o["id"] in seen:
+            print(f"重複 id: {o['id']}", file=sys.stderr)
+            sys.exit(1)
+        seen.add(o["id"])
+
+    lines = [
+        "// AUTO-GENERATED by tools/csv_to_eisei1_master.py — data/*.csv を編集し再生成",
+        "const CSV_IMPORTED_YEAR_LABELS = " + json.dumps(year_labels, ensure_ascii=False) + ";",
+        "const CSV_IMPORTED_ORIG_POOL_YEARS = " + json.dumps(orig_pool_years) + ";",
+        "const CSV_IMPORTED_QUESTIONS = [",
+    ]
+    for o in objs:
+        lines.append("  " + json.dumps(o, ensure_ascii=False) + ",")
+    lines.append("];")
+    lines.append("")
+    lines.append("if (typeof applyCsvImportedQuestions === 'function') {")
+    lines.append("  applyCsvImportedQuestions();")
+    lines.append("}")
+    lines.append("")
+
+    args.output.write_text("\n".join(lines), encoding="utf-8")
+
+
+if __name__ == "__main__":
+    main()
+

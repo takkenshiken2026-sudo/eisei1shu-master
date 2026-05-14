@@ -1,0 +1,72 @@
+# GitHub Pages（GitHub Actions）— リポジトリに q/ を載せずにデプロイする
+# リポジトリ Settings → Pages → Source を「GitHub Actions」にしてください。
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate JS and static question pages
+        run: |
+          python3 tools/csv_to_eisei1_master.py -o eisei1-master-data.js
+          python3 tools/glossary_csv_to_embed_js.py
+          python3 tools/build_question_pages.py
+
+      - name: Bundle public files
+        run: bash tools/prepare_public_site.sh
+
+      # 新プロジェクトに切り替えるとき: GitHub リポジトリ → Settings → Secrets and variables → Actions で
+      # SUPABASE_URL（https://....supabase.co）と SUPABASE_KEY（publishable または anon）を設定すると、
+      # デプロイ時に public_site/index.html の2行を上書きします。未設定ならリポジトリ内の index.html のまま。
+      - name: Inject Supabase URL and key from secrets (optional)
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: |
+          if [ -n "${SUPABASE_URL}" ] && [ -n "${SUPABASE_KEY}" ]; then
+            TARGET=public_site/index.html python3 tools/inject_supabase_into_html.py
+          else
+            echo "SUPABASE_URL / SUPABASE_KEY が未設定のため、リポジトリの index.html をそのまま公開します。"
+          fi
+
+      - name: Verify Supabase URL in public_site/index.html
+        run: bash tools/verify_supabase_url_in_html.sh public_site/index.html
+
+      - uses: actions/configure-pages@v4
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public_site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
