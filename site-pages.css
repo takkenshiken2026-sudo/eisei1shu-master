@@ -331,3 +331,22 @@ a:hover {
   color: var(--text3);
   font-size: 12px;
 }
+
+/* 一問一答静的ページ（tools/build_ichimon_pages.py） */
+.ichi-nav-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  margin: 0 0 16px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.ichi-hub-ul {
+  font-size: 14px;
+  margin: 8px 0 0 1.15em;
+  line-height: 1.55;
+}
+.ichi-hub-ul li {
+  margin-bottom: 5px;
+}

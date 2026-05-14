@@ -1,6 +1,9 @@
 # ビルド生成物（CI またはローカルで再生成）
 /q/
+/ichimon/
 /sitemap.xml
+/sitemap-ichimon.xml
+/eisei1-data-ichimon.js
 /public_site/
 
 .DS_Store

@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # GitHub Pages 用に公開ファイルだけを public_site/ に集約する。
-# 事前に python3 tools/csv_to_eisei1_master.py と python3 tools/build_question_pages.py を実行済みであること。
+# 事前に python3 tools/csv_to_eisei1_master.py ・ python3 tools/build_question_pages.py ・
+# python3 tools/build_ichimon_pages.py を実行済みであること。
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 OUT="$ROOT/public_site"
@@ -21,7 +22,8 @@ for f in \
   .nojekyll \
   eisei1-master-data.js \
   eisei1-data-glossary.js \
-  eisei1-data-original.js
+  eisei1-data-original.js \
+  eisei1-data-ichimon.js
 do
   if [[ ! -e "$f" ]]; then
     echo "prepare_public_site.sh: 必須ファイルがありません: $f" >&2
@@ -41,6 +43,22 @@ if [[ ! -d q ]]; then
   exit 1
 fi
 cp -R q "$OUT/"
+if [[ ! -d ichimon ]]; then
+  echo "prepare_public_site.sh: ichimon/ がありません。先に python3 tools/build_ichimon_pages.py を実行してください。" >&2
+  exit 1
+fi
+cp -R ichimon "$OUT/"
+if [[ ! -f sitemap-ichimon.xml ]]; then
+  echo "prepare_public_site.sh: sitemap-ichimon.xml がありません。先に python3 tools/build_ichimon_pages.py を実行してください。" >&2
+  exit 1
+fi
+cp sitemap-ichimon.xml "$OUT/"
+if [[ -f "$OUT/sitemap-ichimon.xml" ]] && [[ -f "$OUT/CNAME" ]]; then
+  host="$(tr -d '\r\n' <"$OUT/CNAME")"
+  if ! grep -q 'sitemap-ichimon.xml' "$OUT/robots.txt" 2>/dev/null; then
+    printf 'Sitemap: https://%s/sitemap-ichimon.xml\n' "$host" >>"$OUT/robots.txt"
+  fi
+fi
 if [[ -d "$ROOT/articles" ]]; then
   cp -R "$ROOT/articles" "$OUT/articles"
 else

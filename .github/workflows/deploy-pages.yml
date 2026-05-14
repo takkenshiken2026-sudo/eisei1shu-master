@@ -32,6 +32,7 @@ jobs:
           python3 tools/csv_to_eisei1_master.py -o eisei1-master-data.js
           python3 tools/glossary_csv_to_embed_js.py
           python3 tools/build_question_pages.py
+          python3 tools/build_ichimon_pages.py
 
       - name: Bundle public files
         run: bash tools/prepare_public_site.sh
