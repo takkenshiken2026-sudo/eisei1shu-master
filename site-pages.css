@@ -8,6 +8,10 @@
   --ink: #333333;
   --text2: #555555;
   --text3: #999999;
+  --bg3: #ececee;
+  --fs-caption: 12px;
+  --fs-sub: 14px;
+  --sel: #333333;
   --green: #1a7a40;
   --r: 6px;
   --r2: 10px;
@@ -330,6 +334,100 @@ a:hover {
   text-align: center;
   color: var(--text3);
   font-size: 12px;
+}
+.q-static-footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 12px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+.q-static-footer-nav a {
+  color: var(--text2);
+  text-decoration: none;
+  font-weight: 500;
+}
+.q-static-footer-nav a:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+.q-static-footer-nav a[aria-current="page"] {
+  color: var(--text);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* 過去問一覧 q/index.html（宅建マスター q と同型のトークン） */
+.glos-cat-section {
+  margin-bottom: 20px;
+}
+.glos-cat-heading {
+  font-size: var(--fs-caption);
+  font-weight: 700;
+  color: var(--text3);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+.glos-cat-heading--ja {
+  text-transform: none;
+  letter-spacing: 0.06em;
+  font-size: var(--fs-sub);
+  color: var(--ink);
+}
+.q-year-section .q-year-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 8px 14px;
+}
+.q-year-section .q-year-list a {
+  display: block;
+  padding: 8px 12px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  box-shadow: var(--sh);
+}
+.q-year-section .q-year-list a:hover {
+  border-color: var(--border2);
+  background: var(--bg2);
+}
+.q-index-intro {
+  margin-top: 4px;
+}
+.glos-static-intro {
+  font-size: var(--fs-sub);
+  line-height: 1.65;
+  color: var(--text2);
+  margin-bottom: 14px;
+  padding: 12px 14px;
+  background: var(--bg3);
+  border-radius: var(--r);
+  border: 1px solid var(--border);
+}
+.glos-static-intro a {
+  color: var(--sel);
+  font-weight: 600;
+  text-decoration: underline;
+}
+.q-session-field {
+  margin-bottom: 16px;
+}
+.q-field-subhead {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 8px;
 }
 
 /* 一問一答静的ページ（tools/build_ichimon_pages.py） */
