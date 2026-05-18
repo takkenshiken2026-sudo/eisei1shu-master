@@ -95,6 +95,37 @@ body { font-family: var(--font); font-size: 16px; line-height: 1.8; background: 
 .site-footer { border-top: 1px solid var(--border); padding: 24px 20px; text-align: center; font-size: 12px; color: var(--text3); background: var(--bg); margin-top: 40px; }
 .site-footer a { color: var(--text3); text-decoration: none; }
 .site-footer a:hover { color: var(--text); }
+
+/* ===== ARTICLE TYPOGRAPHY NORMALIZATION ===== */
+.article-body,
+.article-body p,
+.article-body li,
+.article-body td,
+.article-body th,
+.article-body blockquote,
+.article-body details,
+.article-body summary,
+.article-body .faq-item div,
+.article-body .profile-note,
+.article-body .definition,
+.article-body .note-box {
+  font-size: 16px;
+}
+.article-body table {
+  font-size: 16px;
+}
+.article-body a,
+.article-body a:visited {
+  color: var(--ink);
+  text-decoration-color: currentColor;
+}
+.article-body a:hover {
+  color: var(--text);
+}
+.related-link,
+.related-link:visited {
+  color: var(--ink);
+}
 </style>
 <script defer src="/site-analytics.js"></script>
 </head>

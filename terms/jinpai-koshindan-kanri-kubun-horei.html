@@ -230,6 +230,38 @@ a:hover { opacity: 0.88; }
 .related-link::after { content: "›"; flex-shrink: 0; color: var(--text3); font-weight: 700; }
 .related-link:hover { background: var(--bg2); }
 
+
+
+/* ===== ARTICLE TYPOGRAPHY NORMALIZATION ===== */
+.article-body,
+.article-body p,
+.article-body li,
+.article-body td,
+.article-body th,
+.article-body blockquote,
+.article-body details,
+.article-body summary,
+.article-body .faq-item div,
+.article-body .profile-note,
+.article-body .definition,
+.article-body .note-box {
+  font-size: 16px;
+}
+.article-body table {
+  font-size: 16px;
+}
+.article-body a,
+.article-body a:visited {
+  color: var(--ink);
+  text-decoration-color: currentColor;
+}
+.article-body a:hover {
+  color: var(--text);
+}
+.related-link,
+.related-link:visited {
+  color: var(--ink);
+}
 </style>
 
 <script defer src="/site-analytics.js"></script>
