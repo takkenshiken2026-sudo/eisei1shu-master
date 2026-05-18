@@ -31,6 +31,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/acid-base-balance-concept.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/acrylamide-ethylene-oxide.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -43,13 +49,37 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/acute-radiation-syndrome-hematopoietic-system-gastrointestinal-tract-central-nervous-s.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/acute-toxicity-chronic-toxicity-accumulation-concept.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/aed.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/aging-medical-history-comorbidity-occupational-risk-assessment.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/airflow-visualization-tracer.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/allergy-sensitization-respiratory-system-skin.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -109,6 +139,24 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/aromatic-amine-bladder-cancer-concept.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/asbestos-related-disease-pleural-line-malignant-tumor.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/asbestos-related-disease-pleural-thickening-mesothelioma-lung-cancer.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/asbestos-seni-chinchaku-gan.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -145,6 +193,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/benzene-hematopoietic-disease-leukemia-concept.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/benzene-toluene-xylene-styrene.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -152,6 +206,12 @@
   </url>
   <url>
     <loc>https://eisei1shu-master.jp/terms/beryllium-kagobutsu.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/beryllium-lung-granuloma-concept.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -169,6 +229,36 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/blood-brain-barrier-concept.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/blood-brain-barrier-placental-barrier-milk-transfer.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/blood-coagulation-fibrinolysis-concept.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/blood-gas-acid-base-balance-electrolyte-abnormality.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/blood-oxygen-transport-hemoglobin-cohb.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/bls-basic-life-support.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -181,7 +271,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/bone-joint-cartilage-concept.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/botulinum-food-poisoning.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/brain-heart-disease-workers-compensation-criteria.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -199,6 +301,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/cadmium-nephropathy-osteomalacia-itai-itai-disease.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/campylobacter-food-poisoning.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -206,6 +314,18 @@
   </url>
   <url>
     <loc>https://eisei1shu-master.jp/terms/carbon-monoxide-mechanism.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/carcinogenesis-initiation-promotion-latency.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/cardiovascular-system-cardiac-output-blood-pressure-blood-volume.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -253,7 +373,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/chemical-substance-absorption-distribution-metabolism-excretion-adme.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/chemical-toxicity.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/chest-compression-depth-speed.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -277,6 +409,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/chromosomal-aberration-micronucleus-structural-aberration-concept.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/chronic-lead-poisoning-abdominal-colic-anemia-peripheral-neuropathy.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/cleanroom-biosafety-cabinet.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -284,6 +428,12 @@
   </url>
   <url>
     <loc>https://eisei1shu-master.jp/terms/cmr-carcinogenic-mutagenic-reproductive.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/coagulation-fibrinolysis-platelet-dic-concept.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -349,13 +499,37 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/dislocation-sprain-first-aid.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/dispersion-particle-size.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/dna-repair-cell-cycle-checkpoint-concept.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/doryoku-press-sagyo-shuninsha.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/dust-collection-exhaust-gas-treatment.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/dust-exposure-copd-interstitial-pneumonia-differential-axis.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -397,7 +571,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/electrolyte-abnormality-sodium-potassium.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/electromagnetic-field-elf-rf.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/electromagnetic-field-high-frequency-low-frequency-concept.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -415,7 +601,25 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/endocrine-disruption-thyroid-gonadal-hormone-concept.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/endocrine-disruptors.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/endocrine-immune-stress-inflammation.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/enzyme-induction-concept.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -428,6 +632,18 @@
   </url>
   <url>
     <loc>https://eisei1shu-master.jp/terms/explosion-proof-grounding-static.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/eye-optics-accommodation-vdt-concept.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/fatigue-sleep-wakefulness-biological-rhythm.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -451,6 +667,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/food-poisoning-classification.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/food-poisoning-toxin-type-infectious-type.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/formaldehyde-acrylaldehyde.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -458,6 +686,12 @@
   </url>
   <url>
     <loc>https://eisei1shu-master.jp/terms/formaldehyde-tokkasoku.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/fracture-first-aid-fixation.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -512,6 +746,12 @@
   </url>
   <url>
     <loc>https://eisei1shu-master.jp/terms/gc-lc-concept.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/genotoxicity-mutation-chromosomal-aberration.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -595,13 +835,37 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/health-supervisor-workplace-patrol-weekly.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/heat-cramp-dehydration-child-adult-difference-concept.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/heat-stress-metabolic-rate-clothing.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/heatstroke-clinical-type-dehydration-electrolyte-central-symptoms.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/heatstroke-first-aid.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/heavy-metal-accumulation-lead-mercury-cadmium.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -643,7 +907,25 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/hepatic-lobule-biliary-excretion-enzyme-induction-cyp-concept.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/hepatitis-b-c-needlestick.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/high-altitude-hypoxia-extreme-temperature-environment-physiological-response.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/high-stress-worker-interview-guidance.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -673,6 +955,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/homeostasis-body-temperature-water-balance-electrolyte.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/hoshasen-toriatsukai-shuninsha.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -697,6 +985,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/hypothermia-frostbite-peripheral-coldness-concept.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/icp-ms-aas.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -715,6 +1009,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/immune-cell-ige-allergy.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/immune-response-allergy-inflammation.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/index.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -722,6 +1028,18 @@
   </url>
   <url>
     <loc>https://eisei1shu-master.jp/terms/infection-routes.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/infectious-disease-basic-principles-infection-route-latency.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/inflammation-cytokine-storm-concept.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -877,6 +1195,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/karoshi-prevention-act.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/keikaku-todokede.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -938,6 +1262,18 @@
   </url>
   <url>
     <loc>https://eisei1shu-master.jp/terms/kensaku-toishi-tokubetsu-kyoiku.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/kidney-function-glomerular-filtration-renal-tubule-excretion-accumulation.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/kidney-urine-formation-glomerular-filtration-reabsorption.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1045,6 +1381,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/liver-biotransformation-detoxification-enzyme-induction.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/low-back-pain-prevention-guideline.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/man-made-mineral-fiber-rockwool.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -1052,6 +1400,30 @@
   </url>
   <url>
     <loc>https://eisei1shu-master.jp/terms/man-made-mineral-fiber.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/manganese-poisoning-parkinsonism.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/manual-handling-nursing-care-care-burden-concept.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/manual-handling-standard.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/measles-rubella-workplace-measures.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1105,6 +1477,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/methylmercury-central-nervous-system-disorder-minamata-disease.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/mokuzai-kakoyo-kikai-shuninsha.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -1118,6 +1496,24 @@
   </url>
   <url>
     <loc>https://eisei1shu-master.jp/terms/motokata-jigyosha-sochi.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/multistage-carcinogenesis-promoter-initiator.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/muscle-skeletal-system-intervertebral-disc-postural-muscle-fatigue-concept.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/muscle-skeletal-system-muscle-contraction-energy-metabolism.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1148,6 +1544,12 @@
   </url>
   <url>
     <loc>https://eisei1shu-master.jp/terms/nano-particles-ultrafine-exposure.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/natural-toxin-food-poisoning.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1196,6 +1598,12 @@
   </url>
   <url>
     <loc>https://eisei1shu-master.jp/terms/nenshosha-shugyo-seigen.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/nervous-system-central-peripheral-neurotransmission.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1261,6 +1669,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/occupational-respiratory-disease-chronic-obstructive.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/office-illumination-standard.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -1268,6 +1682,18 @@
   </url>
   <url>
     <loc>https://eisei1shu-master.jp/terms/okunai-sagyoba-eisei-kijun.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/older-worker-health-safety-consideration.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/overwork-health-disorder-prevention.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1309,13 +1735,61 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/pharmacokinetics-half-life-volume-of-distribution-concept.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/placental-barrier-milk-transfer-concept.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/pneumoconiosis-dust-deposition-pathophysiology-concept.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/pneumoconiosis-pneumoconiosis-progressive-massive-fibrosis.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/poisoning-asphyxiation-solvent-metal-pesticide.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/power-harassment-boshi-ho.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/pregnancy-fetal-sensitivity-period-occupational-exposure.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/protective-clothing-gloves-skin.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/psychological-factor-hpa-axis-autonomic-nervous-system-chronic-stress.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/psychological-factor-stress.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1333,7 +1807,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/radiation-cell-tissue-effect-deterministic-effect.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/radiation-controlled-area-dose-rate.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/radiation-stochastic-effect-deterministic-effect-tissue-sensitivity.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1357,6 +1843,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/reactive-oxygen-species-oxidative-stress-antioxidant-defense.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/reproductive-toxicity-developmental-toxicity-concept.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/rescue-breathing-airway.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -1364,6 +1862,18 @@
   </url>
   <url>
     <loc>https://eisei1shu-master.jp/terms/respiratory-protection-fit-test.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/respiratory-system-ventilation-diffusion-alveolar-air-work-rate.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/return-to-work-support-rework.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1585,6 +2095,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/sensory-organ-vision-hearing-vestibular.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/sensuishi-genatsuhyo.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -1645,6 +2161,30 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/silica-coal-dust-concept.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/skin-barrier-dermal-absorption-irritant-allergic-contact-dermatitis.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/skin-barrier-dermal-absorption.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/sleep-wakefulness-shift-work-circadian-clock.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/smoking-room-standards.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -1670,6 +2210,18 @@
   </url>
   <url>
     <loc>https://eisei1shu-master.jp/terms/standard-precautions.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/staphylococcus-aureus-food-poisoning.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/stiff-shoulder-low-back-pain-work-related-msd.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1718,6 +2270,12 @@
   </url>
   <url>
     <loc>https://eisei1shu-master.jp/terms/tensha-anzen-eisei-kanrisha.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/thermoregulation-sweating-vasomotor-metabolism.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1825,6 +2383,24 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/tuberculosis-opportunistic-infection-immunodeficiency-concept.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/tuberculosis-workplace-measures.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/ultraviolet-infrared-injury-concept.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/uv-laser-infrared-injury.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -1843,13 +2419,49 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/vibration-disorder-peripheral.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/vibration-white-finger-raynaud-phenomenon-peripheral-neuropathy.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/vibration-white-finger-raynaud-phenomenon.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/vibration-whole-local-frequency.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/vibrio-parahaemolyticus-food-poisoning.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/vinyl-chloride-hepatic-angiosarcoma.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/vinyl-chloride-pvc-fume.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/viral-hepatitis-needlestick-blood-exposure-concept.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1885,6 +2497,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://eisei1shu-master.jp/terms/workplace-cancer-screening.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://eisei1shu-master.jp/terms/wound-first-aid.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -1910,6 +2528,12 @@
   </url>
   <url>
     <loc>https://eisei1shu-master.jp/terms/zentai-kanki-sochi.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eisei1shu-master.jp/terms/zoonosis-legionella-brucella-concept.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

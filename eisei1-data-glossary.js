@@ -1791,8 +1791,8 @@ let GLOSSARY_DATA = [
     "cat": "rightsH",
     "term": "化学物質の毒性（急性・慢性・蓄積・感作）",
     "reading": "",
-    "summary": "「化学物質の毒性」は、急性（24時間以内・単回曝露・LD50/LC50）、亜急性（28日以内）、亜慢性（90日以内）、慢性（90日超・長期…",
-    "desc": "「化学物質の毒性」は、急性（24時間以内・単回曝露・LD50/LC50）、亜急性（28日以内）、亜慢性（90日以内）、慢性（90日超・長期反復・NOAEL/LOAEL）、感作性（IV型アレルギー・繰返し曝露で発症）、蓄積性（脂溶性・骨蓄積等）に分類されます。まず、管理は安全係数100程度で許容濃度・ばく露濃度基準を設定します。"
+    "summary": "「化学物質の毒性」は、急性（24時間以内・単回ばく露・LD50/LC50）、亜急性（28日以内）、亜慢性（90日以内）、慢性（90日超・長期…",
+    "desc": "「化学物質の毒性」は、急性（24時間以内・単回ばく露・LD50/LC50）、亜急性（28日以内）、亜慢性（90日以内）、慢性（90日超・長期反復・NOAEL/LOAEL）、感作性（IV型アレルギー・繰返しばく露で発症）、蓄積性（脂溶性・骨蓄積等）に分類されます。まず、管理は安全係数100程度で許容濃度・ばく露濃度基準を設定します。"
   },
   {
     "id": "csv-224",
@@ -1824,7 +1824,7 @@ let GLOSSARY_DATA = [
     "term": "局所振動・チェーンソー・グラインダー・チッピングハンマー",
     "reading": "",
     "summary": "「局所振動・チェーンソー・グラインダー・チッピングハンマー」とは、有害因子のばく露と防止策に関する労働衛生の説明において、「局所振動、チェ…",
-    "desc": "「局所振動・チェーンソー・グラインダー・チッピングハンマー」とは、有害因子のばく露と防止策に関する労働衛生の説明において、「局所振動、チェーンソー、グラインダー、チッピングハンマー」とは、日曝露時間および加速度の評価を手がかりに、ばく露評価・対策の優先順位・管理区分などを説明するときに使う語です。まず、有害環境と対策・管理の対応を語るときに位置づけられます。"
+    "desc": "「局所振動・チェーンソー・グラインダー・チッピングハンマー」とは、有害因子のばく露と防止策に関する労働衛生の説明において、「局所振動、チェーンソー、グラインダー、チッピングハンマー」とは、日ばく露時間および加速度の評価を手がかりに、ばく露評価・対策の優先順位・管理区分などを説明するときに使う語です。まず、有害環境と対策・管理の対応を語るときに位置づけられます。"
   },
   {
     "id": "csv-228",
@@ -1845,10 +1845,10 @@ let GLOSSARY_DATA = [
   {
     "id": "csv-230",
     "cat": "rightsH",
-    "term": "微生物気溶胶・バイオセーフティ（概念）",
+    "term": "微生物エアロゾル・バイオセーフティ（概念）",
     "reading": "",
-    "summary": "「微生物気溶胶・バイオセーフティ（概念）」とは、有害因子のばく露と防止策に関する労働衛生の説明において、「微生物気溶胶、バイオセーフティ（…",
-    "desc": "「微生物気溶胶・バイオセーフティ（概念）」とは、有害因子のばく露と防止策に関する労働衛生の説明において、「微生物気溶胶、バイオセーフティ（概念）」とは、感染症対策、バイオハザードに関する基本的な論点を手がかりに、ばく露評価・対策の優先順位・管理区分などを説明するときに使う語です。まず、有害環境と対策・管理の対応を語るときに位置づけられます。"
+    "summary": "「微生物エアロゾル・バイオセーフティ（概念）」とは、有害因子のばく露と防止策に関する労働衛生の説明において、「微生物エアロゾル、バイオセーフティ（…",
+    "desc": "「微生物エアロゾル・バイオセーフティ（概念）」とは、有害因子のばく露と防止策に関する労働衛生の説明において、「微生物エアロゾル、バイオセーフティ（概念）」とは、感染症対策、バイオハザードに関する基本的な論点を手がかりに、ばく露評価・対策の優先順位・管理区分などを説明するときに使う語です。まず、有害環境と対策・管理の対応を語るときに位置づけられます。"
   },
   {
     "id": "csv-231",
@@ -2064,7 +2064,7 @@ let GLOSSARY_DATA = [
     "term": "電磁界（ELF・RF）と人体（概念）",
     "reading": "",
     "summary": "「電磁界（ELF・RF）と人体（概念）」とは、有害因子のばく露と防止策に関する労働衛生の説明において、「電磁界（ELF、RF）と人体（概念…",
-    "desc": "「電磁界（ELF・RF）と人体（概念）」とは、有害因子のばく露と防止策に関する労働衛生の説明において、「電磁界（ELF、RF）と人体（概念）」とは、曝露評価および指南値レベルの理解を手がかりに、ばく露評価・対策の優先順位・管理区分などを説明するときに使う語です。まず、有害環境と対策・管理の対応を語るときに位置づけられます。"
+    "desc": "「電磁界（ELF・RF）と人体（概念）」とは、有害因子のばく露と防止策に関する労働衛生の説明において、「電磁界（ELF、RF）と人体（概念）」とは、ばく露評価および指南値レベルの理解を手がかりに、ばく露評価・対策の優先順位・管理区分などを説明するときに使う語です。まず、有害環境と対策・管理の対応を語るときに位置づけられます。"
   },
   {
     "id": "csv-258",
@@ -2120,7 +2120,7 @@ let GLOSSARY_DATA = [
     "term": "B型・C型肝炎（針刺し事故）",
     "reading": "",
     "summary": "「B型・C型肝炎の針刺し事故」は、医療従事者等の血液媒介感染リスクで、HBVは感染力が高く（HBe抗原陽性血で約30%）、HCVは約2%、…",
-    "desc": "「B型・C型肝炎の針刺し事故」は、医療従事者等の血液媒介感染リスクで、HBVは感染力が高く（HBe抗原陽性血で約30%）、HCVは約2%、HIVは約0.3%とされます。まず、事故時は流水洗浄、所属長・産業医報告、HBV免疫グロブリン（HBIG）と能動免疫の併用（HBs抗体陰性者）、HCVはフォロー検査、HIVは曝露後予防内服（72時間以内）が標準です。"
+    "desc": "「B型・C型肝炎の針刺し事故」は、医療従事者等の血液媒介感染リスクで、HBVは感染力が高く（HBe抗原陽性血で約30%）、HCVは約2%、HIVは約0.3%とされます。まず、事故時は流水洗浄、所属長・産業医報告、HBV免疫グロブリン（HBIG）と能動免疫の併用（HBs抗体陰性者）、HCVはフォロー検査、HIVはばく露後予防内服（72時間以内）が標準です。"
   },
   {
     "id": "csv-265",
@@ -2135,8 +2135,8 @@ let GLOSSARY_DATA = [
     "cat": "rightsN",
     "term": "HIV感染（針刺し事故）",
     "reading": "",
-    "summary": "「HIV感染（針刺し事故）」では、針刺しからの感染リスクは平均0.3%、粘膜曝露で0.09%程度とされます。",
-    "desc": "「HIV感染（針刺し事故）」では、針刺しからの感染リスクは平均0.3%、粘膜曝露で0.09%程度とされます。まず、曝露後予防内服（PEP）は事故後2時間以内の開始が望ましく、72時間以内に開始し4週間継続します。次に、事故後3か月・6か月の抗体検査でフォローします。"
+    "summary": "「HIV感染（針刺し事故）」では、針刺しからの感染リスクは平均0.3%、粘膜ばく露で0.09%程度とされます。",
+    "desc": "「HIV感染（針刺し事故）」では、針刺しからの感染リスクは平均0.3%、粘膜ばく露で0.09%程度とされます。まず、ばく露後予防内服（PEP）は事故後2時間以内の開始が望ましく、72時間以内に開始し4週間継続します。次に、事故後3か月・6か月の抗体検査でフォローします。"
   },
   {
     "id": "csv-267",
@@ -2255,8 +2255,8 @@ let GLOSSARY_DATA = [
     "cat": "rightsN",
     "term": "ボツリヌス菌食中毒",
     "reading": "",
-    "summary": "「ボツリヸス菌食中毒」は、Clostridium botulinumが産生する神経毒（ボツリヌス毒素）による毒素型食中毒です。",
-    "desc": "「ボツリヸス菌食中毒」は、Clostridium botulinumが産生する神経毒（ボツリヌス毒素）による毒素型食中毒です。まず、潜伏期間は8〜36時間で、複視・眼瞼下垂・嚥下障害・呼吸困難等の神経症状が中心です。次に、毒素は熱に弱く（80℃ 30分以上または100℃数分で失活）、芽胞は120℃ 4分以上のレトルト殺菌が必要です。さらに、乳児ボツリヌス症予防のため1歳未満に蜂蜜を与えません。"
+    "summary": "「ボツリヌス菌食中毒」は、Clostridium botulinumが産生する神経毒（ボツリヌス毒素）による毒素型食中毒です。",
+    "desc": "「ボツリヌス菌食中毒」は、Clostridium botulinumが産生する神経毒（ボツリヌス毒素）による毒素型食中毒です。まず、潜伏期間は8〜36時間で、複視・眼瞼下垂・嚥下障害・呼吸困難等の神経症状が中心です。次に、毒素は熱に弱く（80℃ 30分以上または100℃数分で失活）、芽胞は120℃ 4分以上のレトルト殺菌が必要です。さらに、乳児ボツリヌス症予防のため1歳未満に蜂蜜を与えません。"
   },
   {
     "id": "csv-282",
@@ -2312,7 +2312,7 @@ let GLOSSARY_DATA = [
     "term": "一酸化炭素（障害と機序）",
     "reading": "",
     "summary": "「一酸化炭素（障害と機序）」は、一酸化炭素が酸素の運搬と組織での利用をどう乱すかを扱う論点です。",
-    "desc": "「一酸化炭素（障害と機序）」は、一酸化炭素が酸素の運搬と組織での利用をどう乱すかを扱う論点です。一酸化炭素はヘモグロビンの酸素結合部位に結合し、酸素よりもはるかに強く結合するため、一般に酸素に対する親和性はおよそ200〜250倍と説明されます（ハルデーン係数の整理）。その結果、カルボキシヘモグロビン（COHb）が増えると酸素運搬能が低下し、残存する酸素の解離も妨げられやすく、組織レベルでは細胞性窒息に近い状態が生じます。急性高濃度曝露では頭痛や嘔吐から意識障害へ進行しやすく、急性中毒後に遅れて神経精神症状が出る遅発性脳症も鑑別の要点です。職場対策では、発生源の遮断、換気、測定、救助体制の確保が中心になります。"
+    "desc": "「一酸化炭素（障害と機序）」は、一酸化炭素が酸素の運搬と組織での利用をどう乱すかを扱う論点です。一酸化炭素はヘモグロビンの酸素結合部位に結合し、酸素よりもはるかに強く結合するため、一般に酸素に対する親和性はおよそ200〜250倍と説明されます（ハルデーン係数の整理）。その結果、カルボキシヘモグロビン（COHb）が増えると酸素運搬能が低下し、残存する酸素の解離も妨げられやすく、組織レベルでは細胞性窒息に近い状態が生じます。急性高濃度ばく露では頭痛や嘔吐から意識障害へ進行しやすく、急性中毒後に遅れて神経精神症状が出る遅発性脳症も鑑別の要点です。職場対策では、発生源の遮断、換気、測定、救助体制の確保が中心になります。"
   },
   {
     "id": "csv-289",
@@ -2581,10 +2581,10 @@ let GLOSSARY_DATA = [
   {
     "id": "csv-322",
     "cat": "rightsN",
-    "term": "正己烷（末梢神経障害）",
+    "term": "n-ヘキサン（末梢神経障害）",
     "reading": "",
-    "summary": "「正己烷（末梢神経障害）」とは、作業環境、職場の健康課題に関する労働衛生の説明において、「正己烷（末梢神経障害）」とは、溶媒障害の典型例を…",
-    "desc": "「正己烷（末梢神経障害）」とは、作業環境、職場の健康課題に関する労働衛生の説明において、「正己烷（末梢神経障害）」とは、溶媒障害の典型例を手がかりに、ばく露評価・対策の優先順位・管理区分などを説明するときに使う語です。まず、有害環境と対策・管理の対応を語るときに位置づけられます。"
+    "summary": "「n-ヘキサン（末梢神経障害）」とは、作業環境、職場の健康課題に関する労働衛生の説明において、「n-ヘキサン（末梢神経障害）」とは、溶媒障害の典型例を…",
+    "desc": "「n-ヘキサン（末梢神経障害）」とは、作業環境、職場の健康課題に関する労働衛生の説明において、「n-ヘキサン（末梢神経障害）」とは、溶媒障害の典型例を手がかりに、ばく露評価・対策の優先順位・管理区分などを説明するときに使う語です。まず、有害環境と対策・管理の対応を語るときに位置づけられます。"
   },
   {
     "id": "csv-323",
@@ -2901,7 +2901,7 @@ let GLOSSARY_DATA = [
   {
     "id": "csv-362",
     "cat": "limit",
-    "term": "アスベスト関連疾患（胸膜線・悪性腫瘍）",
+    "term": "アスベスト関連疾患（胸膜病変・悪性腫瘍）",
     "reading": "",
     "summary": "「アスベスト関連疾患」は、石綿肺（潜伏10〜20年・じん肺の一型）、肺がん（潜伏15〜40年・喫煙との相乗）、悪性中皮腫（潜伏20〜50年…",
     "desc": "「アスベスト関連疾患」は、石綿肺（潜伏10〜20年・じん肺の一型）、肺がん（潜伏15〜40年・喫煙との相乗）、悪性中皮腫（潜伏20〜50年）、良性胸膜疾患（プラーク・胸膜肥厚・胸水）を含みます。まず、石綿則特殊健診（6か月以内ごと）・個人票40年保存・健康管理手帳交付（粉じん・石綿）で管理します。"
@@ -2935,8 +2935,8 @@ let GLOSSARY_DATA = [
     "cat": "limit",
     "term": "カドミウム腎症・骨軟化（イタイイタイ病）",
     "reading": "",
-    "summary": "「カドミウム腎症」は、慢性カドミウム曝露（腎皮質に蓄積、半減期20〜30年）により近位尿細管障害（β2-ミクログロブリン・低分子たん白尿）…",
-    "desc": "「カドミウム腎症」は、慢性カドミウム曝露（腎皮質に蓄積、半減期20〜30年）により近位尿細管障害（β2-ミクログロブリン・低分子たん白尿）が生じ、進行で骨軟化症・骨粗鬆症（イタイイタイ病）を発症します。まず、尿中β2-ミクログロブリン濃度が早期診断指標で、慢性肺障害（肺気腫）も生じます。"
+    "summary": "「カドミウム腎症」は、慢性カドミウムばく露（腎皮質に蓄積、半減期20〜30年）により近位尿細管障害（β2-ミクログロブリン・低分子たん白尿）…",
+    "desc": "「カドミウム腎症」は、慢性カドミウムばく露（腎皮質に蓄積、半減期20〜30年）により近位尿細管障害（β2-ミクログロブリン・低分子たん白尿）が生じ、進行で骨軟化症・骨粗鬆症（イタイイタイ病）を発症します。まず、尿中β2-ミクログロブリン濃度が早期診断指標で、慢性肺障害（肺気腫）も生じます。"
   },
   {
     "id": "csv-367",
@@ -2967,8 +2967,8 @@ let GLOSSARY_DATA = [
     "cat": "limit",
     "term": "マンガン中毒・パーキンソニズム様症状",
     "reading": "",
-    "summary": "「マンガン中毒」は、慢性曝露（鉱山・精錬・溶接ヒューム）で大脳基底核（特に淡蒼球）に蓄積し、パーキンソニズム様症状（筋固縮・無動・歩行障害…",
-    "desc": "「マンガン中毒」は、慢性曝露（鉱山・精錬・溶接ヒューム）で大脳基底核（特に淡蒼球）に蓄積し、パーキンソニズム様症状（筋固縮・無動・歩行障害・仮面様顔貌・微細手の震戦）を発症します。まず、L-DOPAへの反応は乏しく、進行性で不可逆です。次に、MRI T1強調像で淡蒼球の高信号が特徴的です。"
+    "summary": "「マンガン中毒」は、慢性ばく露（鉱山・精錬・溶接ヒューム）で大脳基底核（特に淡蒼球）に蓄積し、パーキンソニズム様症状（筋固縮・無動・歩行障害…",
+    "desc": "「マンガン中毒」は、慢性ばく露（鉱山・精錬・溶接ヒューム）で大脳基底核（特に淡蒼球）に蓄積し、パーキンソニズム様症状（筋固縮・無動・歩行障害・仮面様顔貌・微細手の震戦）を発症します。まず、L-DOPAへの反応は乏しく、進行性で不可逆です。次に、MRI T1強調像で淡蒼球の高信号が特徴的です。"
   },
   {
     "id": "csv-371",
@@ -3071,8 +3071,8 @@ let GLOSSARY_DATA = [
     "cat": "limit",
     "term": "塩化ビニルと肝血管肉腫",
     "reading": "",
-    "summary": "「塩化ビニル」は、PVC原料の単量体で、長期高濃度曝露により肝血管肉腫（潜伏期15〜30年）を起こす特異な発がん性が知られます。",
-    "desc": "「塩化ビニル」は、PVC原料の単量体で、長期高濃度曝露により肝血管肉腫（潜伏期15〜30年）を起こす特異な発がん性が知られます。まず、末端骨溶解症（指端骨融解）、レイノー現象、肝線維症・肝硬変も代表的所見で、IARC発がん性分類1・特化則第2類（特別管理物質）です。"
+    "summary": "「塩化ビニル」は、PVC原料の単量体で、長期高濃度ばく露により肝血管肉腫（潜伏期15〜30年）を起こす特異な発がん性が知られます。",
+    "desc": "「塩化ビニル」は、PVC原料の単量体で、長期高濃度ばく露により肝血管肉腫（潜伏期15〜30年）を起こす特異な発がん性が知られます。まず、末端骨溶解症（指端骨融解）、レイノー現象、肝線維症・肝硬変も代表的所見で、IARC発がん性分類1・特化則第2類（特別管理物質）です。"
   },
   {
     "id": "csv-384",
@@ -3119,8 +3119,8 @@ let GLOSSARY_DATA = [
     "cat": "limit",
     "term": "急性毒性・慢性毒性・蓄積（基本概念）",
     "reading": "",
-    "summary": "「急性毒性」は単回または短時間（24時間以内）の曝露での毒性で、LD50（半数致死量）やLC50で評価されます。",
-    "desc": "「急性毒性」は単回または短時間（24時間以内）の曝露での毒性で、LD50（半数致死量）やLC50で評価されます。まず、「慢性毒性」は長期反復曝露での毒性で、無毒性量（NOAEL）と最小毒性量（LOAEL）から評価し、安全係数100倍程度で許容曝露量を設定します。次に、脂溶性物質は脂肪組織に蓄積し、生物学的半減期が長くなります。"
+    "summary": "「急性毒性」は単回または短時間（24時間以内）のばく露での毒性で、LD50（半数致死量）やLC50で評価されます。",
+    "desc": "「急性毒性」は単回または短時間（24時間以内）のばく露での毒性で、LD50（半数致死量）やLC50で評価されます。まず、「慢性毒性」は長期反復ばく露での毒性で、無毒性量（NOAEL）と最小毒性量（LOAEL）から評価し、安全係数100倍程度で許容ばく露量を設定します。次に、脂溶性物質は脂肪組織に蓄積し、生物学的半減期が長くなります。"
   },
   {
     "id": "csv-390",
@@ -3159,16 +3159,16 @@ let GLOSSARY_DATA = [
     "cat": "limit",
     "term": "振動白ろう・レイノー現象",
     "reading": "",
-    "summary": "「振動白ろう・レイノー現象」は、局所振動工具の長期使用による手指血管攣縮で、寒冷曝露時に白→紫→赤の三相変化を示す発作性循環障害です。",
-    "desc": "「振動白ろう・レイノー現象」は、局所振動工具の長期使用による手指血管攣縮で、寒冷曝露時に白→紫→赤の三相変化を示す発作性循環障害です。まず、振動工具の1日2時間以内、連続2時間以内・10分以上の休止、防振手袋使用、温熱管理、特殊健診（6か月以内ごと）で予防・早期発見します。"
+    "summary": "「振動白ろう・レイノー現象」は、局所振動工具の長期使用による手指血管攣縮で、寒冷ばく露時に白→紫→赤の三相変化を示す発作性循環障害です。",
+    "desc": "「振動白ろう・レイノー現象」は、局所振動工具の長期使用による手指血管攣縮で、寒冷ばく露時に白→紫→赤の三相変化を示す発作性循環障害です。まず、振動工具の1日2時間以内、連続2時間以内・10分以上の休止、防振手袋使用、温熱管理、特殊健診（6か月以内ごと）で予防・早期発見します。"
   },
   {
     "id": "csv-395",
     "cat": "limit",
     "term": "振動白ろう・レイノー現象・末梢神経障害",
     "reading": "",
-    "summary": "「振動白ろう・レイノー現象」は、局所振動（チェーンソー・グラインダー等）の長期曝露で、寒冷時に手指の血管が攣縮し、白色変→紫色→赤色の三相…",
-    "desc": "「振動白ろう・レイノー現象」は、局所振動（チェーンソー・グラインダー等）の長期曝露で、寒冷時に手指の血管が攣縮し、白色変→紫色→赤色の三相変化を示す発作性の循環障害です。まず、進行すると末梢神経障害（しびれ・感覚低下）、骨関節障害も伴います。次に、振動工具1日2時間以内、5分以上の連続作業を避ける、防振手袋使用が予防の柱です。"
+    "summary": "「振動白ろう・レイノー現象」は、局所振動（チェーンソー・グラインダー等）の長期ばく露で、寒冷時に手指の血管が攣縮し、白色変→紫色→赤色の三相…",
+    "desc": "「振動白ろう・レイノー現象」は、局所振動（チェーンソー・グラインダー等）の長期ばく露で、寒冷時に手指の血管が攣縮し、白色変→紫色→赤色の三相変化を示す発作性の循環障害です。まず、進行すると末梢神経障害（しびれ・感覚低下）、骨関節障害も伴います。次に、振動工具1日2時間以内、5分以上の連続作業を避ける、防振手袋使用が予防の柱です。"
   },
   {
     "id": "csv-396",
@@ -3176,7 +3176,7 @@ let GLOSSARY_DATA = [
     "term": "振動障害（末梢神経・血管）",
     "reading": "",
     "summary": "「振動障害」は、局所振動による末梢循環障害（振動白ろう・レイノー現象）、末梢神経障害（しびれ・感覚鈍麻）、骨関節障害（肘・手関節）の総称です。",
-    "desc": "「振動障害」は、局所振動による末梢循環障害（振動白ろう・レイノー現象）、末梢神経障害（しびれ・感覚鈍麻）、骨関節障害（肘・手関節）の総称です。まず、振動加速度（m/s²）と曝露時間で評価され、ISO 5349では振動量（A(8)）4 m/s²以上で対策、5 m/s²以上で曝露低減を求めます。"
+    "desc": "「振動障害」は、局所振動による末梢循環障害（振動白ろう・レイノー現象）、末梢神経障害（しびれ・感覚鈍麻）、骨関節障害（肘・手関節）の総称です。まず、振動加速度（m/s²）とばく露時間で評価され、ISO 5349では振動量（A(8)）4 m/s²以上で対策、5 m/s²以上でばく露低減を求めます。"
   },
   {
     "id": "csv-397",
@@ -3277,18 +3277,18 @@ let GLOSSARY_DATA = [
   {
     "id": "csv-409",
     "cat": "limit",
-    "term": "皮膚の屏障・経皮吸収",
+    "term": "皮膚バリア・経皮吸収",
     "reading": "",
-    "summary": "「皮膚の屏障・経皮吸収」では、角質層（厚さ約20μm）がバリアの主体で、有機溶剤・油溶性物質・脂溶性化学物質（ニトログリセリン・農薬・有機…",
-    "desc": "「皮膚の屏障・経皮吸収」では、角質層（厚さ約20μm）がバリアの主体で、有機溶剤・油溶性物質・脂溶性化学物質（ニトログリセリン・農薬・有機リン等）は経皮吸収されやすく、特にアセトン・トルエン・キシレン等は皮膚透過性が高いです。まず、皮膚障害は刺激性接触皮膚炎（即時）と感作性接触皮膚炎（数日後・IV型アレルギー）に大別されます。"
+    "summary": "「皮膚バリア・経皮吸収」では、角質層（厚さ約20μm）がバリアの主体で、有機溶剤・油溶性物質・脂溶性化学物質（ニトログリセリン・農薬・有機…",
+    "desc": "「皮膚バリア・経皮吸収」では、角質層（厚さ約20μm）がバリアの主体で、有機溶剤・油溶性物質・脂溶性化学物質（ニトログリセリン・農薬・有機リン等）は経皮吸収されやすく、特にアセトン・トルエン・キシレン等は皮膚透過性が高いです。まず、皮膚障害は刺激性接触皮膚炎（即時）と感作性接触皮膚炎（数日後・IV型アレルギー）に大別されます。"
   },
   {
     "id": "csv-410",
     "cat": "limit",
-    "term": "皮膚屏障・経皮吸収・刺激性・感作性接触皮膚炎",
+    "term": "皮膚バリア・経皮吸収・刺激性・感作性接触皮膚炎",
     "reading": "",
-    "summary": "「皮膚屏障・経皮吸収」では、角質層が主バリアで、有機溶剤・油溶性物質・農薬は経皮吸収されやすい。",
-    "desc": "「皮膚屏障・経皮吸収」では、角質層が主バリアで、有機溶剤・油溶性物質・農薬は経皮吸収されやすい。まず、刺激性接触皮膚炎は化学物質や物理刺激で即時に紅斑・水疱を生じ、感作性接触皮膚炎（IV型遅延型アレルギー）はクロム・ニッケル・コバルト・ホルムアルデヒド等で2回目以降の接触後24〜72時間で発症します。"
+    "summary": "「皮膚バリア・経皮吸収」では、角質層が主バリアで、有機溶剤・油溶性物質・農薬は経皮吸収されやすい。",
+    "desc": "「皮膚バリア・経皮吸収」では、角質層が主バリアで、有機溶剤・油溶性物質・農薬は経皮吸収されやすい。まず、刺激性接触皮膚炎は化学物質や物理刺激で即時に紅斑・水疱を生じ、感作性接触皮膚炎（IV型遅延型アレルギー）はクロム・ニッケル・コバルト・ホルムアルデヒド等で2回目以降の接触後24〜72時間で発症します。"
   },
   {
     "id": "csv-411",
@@ -3325,18 +3325,18 @@ let GLOSSARY_DATA = [
   {
     "id": "csv-415",
     "cat": "limit",
-    "term": "筋骨格系・椎間板・姿势筋疲労（概念）",
+    "term": "筋骨格系・椎間板・姿勢筋疲労（概念）",
     "reading": "",
-    "summary": "「筋骨格系・椎間板・姿势筋疲労（概念）」とは、人体の機能や有害因子の作用、病態に関する説明において、「筋骨格系、椎間板および姿势筋疲労（概…",
-    "desc": "「筋骨格系・椎間板・姿势筋疲労（概念）」とは、人体の機能や有害因子の作用、病態に関する説明において、「筋骨格系、椎間板および姿势筋疲労（概念）」とは、エルゴノミクスと生理学的負荷に関してからだのしくみや変化、疾患の成り立ちを説明するときに使う語です。まず、解剖・生理・病態のどこに焦点があるかで語の意味が決まります。"
+    "summary": "「筋骨格系・椎間板・姿勢筋疲労（概念）」とは、人体の機能や有害因子の作用、病態に関する説明において、「筋骨格系、椎間板および姿勢筋疲労（概…",
+    "desc": "「筋骨格系・椎間板・姿勢筋疲労（概念）」とは、人体の機能や有害因子の作用、病態に関する説明において、「筋骨格系、椎間板および姿勢筋疲労（概念）」とは、エルゴノミクスと生理学的負荷に関してからだのしくみや変化、疾患の成り立ちを説明するときに使う語です。まず、解剖・生理・病態のどこに焦点があるかで語の意味が決まります。"
   },
   {
     "id": "csv-416",
     "cat": "limit",
-    "term": "粉じん暴露とCOPD・間質性肺炎の鑑別軸",
+    "term": "粉じんばく露とCOPD・間質性肺炎の鑑別軸",
     "reading": "",
-    "summary": "「粉じん曝露とCOPD・間質性肺炎の鑑別」では、職業歴・曝露物質・潜伏期・画像所見・肺機能で鑑別します。",
-    "desc": "「粉じん曝露とCOPD・間質性肺炎の鑑別」では、職業歴・曝露物質・潜伏期・画像所見・肺機能で鑑別します。まず、COPDは末梢気道・肺胞破壊（喫煙・粉じん）で1秒率70%未満が典型、間質性肺炎は両側びまん性網状影と拘束性換気障害、じん肺は粒状影・大陰影とけい肺結節が特徴です。"
+    "summary": "「粉じんばく露とCOPD・間質性肺炎の鑑別」では、職業歴・ばく露物質・潜伏期・画像所見・肺機能で鑑別します。",
+    "desc": "「粉じんばく露とCOPD・間質性肺炎の鑑別」では、職業歴・ばく露物質・潜伏期・画像所見・肺機能で鑑別します。まず、COPDは末梢気道・肺胞破壊（喫煙・粉じん）で1秒率70%未満が典型、間質性肺炎は両側びまん性網状影と拘束性換気障害、じん肺は粒状影・大陰影とけい肺結節が特徴です。"
   },
   {
     "id": "csv-417",
@@ -3373,7 +3373,7 @@ let GLOSSARY_DATA = [
   {
     "id": "csv-421",
     "cat": "limit",
-    "term": "肝小叶・胆汁排泄・酵素誘導（CYPの概念）",
+    "term": "肝小葉・胆汁排泄・酵素誘導（CYPの概念）",
     "reading": "",
     "summary": "「肝小葉・胆汁排泄・酵素誘導」では、肝臓の構造単位は肝小葉（六角形・中心静脈・門脈3つ組）で、肝細胞は第I相（CYP450：CYP1A2・…",
     "desc": "「肝小葉・胆汁排泄・酵素誘導」では、肝臓の構造単位は肝小葉（六角形・中心静脈・門脈3つ組）で、肝細胞は第I相（CYP450：CYP1A2・2D6・2E1・3A4等）と第II相反応で化学物質を代謝します。まず、胆汁中排泄（脂溶性物質・分子量300以上）と尿中排泄（水溶性物質）に振り分けられ、酵素誘導は1〜2週間で発現します。"
@@ -3389,10 +3389,10 @@ let GLOSSARY_DATA = [
   {
     "id": "csv-423",
     "cat": "limit",
-    "term": "胎盤屏障・乳汁移行（概念）",
+    "term": "胎盤バリア・乳汁移行（概念）",
     "reading": "",
-    "summary": "「胎盤屏障・乳汁移行（概念）」とは、人体の機能や有害因子の作用、病態に関する説明において、「胎盤屏障および乳汁移行（概念）」とは、妊産婦お…",
-    "desc": "「胎盤屏障・乳汁移行（概念）」とは、人体の機能や有害因子の作用、病態に関する説明において、「胎盤屏障および乳汁移行（概念）」とは、妊産婦および授乳の論点に関してからだのしくみや変化、疾患の成り立ちを説明するときに使う語です。まず、解剖・生理・病態のどこに焦点があるかで語の意味が決まります。"
+    "summary": "「胎盤バリア・乳汁移行（概念）」とは、人体の機能や有害因子の作用、病態に関する説明において、「胎盤バリアおよび乳汁移行（概念）」とは、妊産婦お…",
+    "desc": "「胎盤バリア・乳汁移行（概念）」とは、人体の機能や有害因子の作用、病態に関する説明において、「胎盤バリアおよび乳汁移行（概念）」とは、妊産婦および授乳の論点に関してからだのしくみや変化、疾患の成り立ちを説明するときに使う語です。まず、解剖・生理・病態のどこに焦点があるかで語の意味が決まります。"
   },
   {
     "id": "csv-424",
@@ -3786,7 +3786,7 @@ let GLOSSARY_ARTICLE_SLUGS = {
   "塩化ビニルモノマー・PVC加工ヒューム": "vinyl-chloride-pvc-fume",
   "局所振動・チェーンソー・グラインダー・チッピングハンマー": "hand-arm-vibration-tools",
   "引火点・発火点・爆発範囲・粉じん爆発": "flash-point-explosion-range",
-  "微生物気溶胶・バイオセーフティ（概念）": "bioaerosol-biosafety",
+  "微生物エアロゾル・バイオセーフティ（概念）": "bioaerosol-biosafety",
   "振動（全身・局所・加速度・周波数重み付け）": "vibration-whole-local-frequency",
   "放射性物質取扱い（閉そく・開そくの概念）": "radioactive-material-handling",
   "放射線の種類（α・β・γ・中性子）と遮蔽の考え方": "radiation-types-shielding",
@@ -3873,7 +3873,7 @@ let GLOSSARY_ARTICLE_SLUGS = {
   "検知管・直読式の原理と限界": "detector-tube-direct-reading-limitations",
   "標準予防策（スタンダードプリコーション）": "standard-precautions",
   "止血法（直接圧迫・間接圧迫）": "hemostasis-methods",
-  "正己烷（末梢神経障害）": "n-hexane-peripheral-neuropathy",
+  "n-ヘキサン（末梢神経障害）": "n-hexane-peripheral-neuropathy",
   "治療と仕事の両立支援": "treatment-work-balance-support",
   "治療と仕事の両立支援ガイドライン": "treatment-work-balance-guideline",
   "照度基準（一般事務）": "office-illumination-standard",
@@ -3886,5 +3886,109 @@ let GLOSSARY_ARTICLE_SLUGS = {
   "産業医面接指導と就業上の措置": "occupational-physician-interview-measures",
   "病原性大腸菌（O157等）": "pathogenic-e-coli-o157",
   "硫化水素（急性中毒・臭気麻痺）": "hydrogen-sulfide-acute-poisoning",
-  "精神障害の労災認定基準": "mental-disorder-workers-compensation"
+  "精神障害の労災認定基準": "mental-disorder-workers-compensation",
+  "紫外線・赤外線障害（概念）": "ultraviolet-infrared-injury-concept",
+  "結核の職場対策": "tuberculosis-workplace-measures",
+  "職場におけるがん検診": "workplace-cancer-screening",
+  "職場復帰支援（リワーク）": "return-to-work-support-rework",
+  "胸骨圧迫（深さ・速さ）": "chest-compression-depth-speed",
+  "脱臼・捻挫の応急手当": "dislocation-sprain-first-aid",
+  "脳・心臓疾患の労災認定基準": "brain-heart-disease-workers-compensation-criteria",
+  "腰痛予防対策指針": "low-back-pain-prevention-guideline",
+  "腸炎ビブリオ食中毒": "vibrio-parahaemolyticus-food-poisoning",
+  "自然毒食中毒": "natural-toxin-food-poisoning",
+  "衛生管理者の職場巡視（週1回）": "health-supervisor-workplace-patrol-weekly",
+  "過労死等防止対策推進法": "karoshi-prevention-act",
+  "過重労働による健康障害防止": "overwork-health-disorder-prevention",
+  "重量物取扱いの基準（指針）": "manual-handling-standard",
+  "重量物取扱い・ナーシングケア・介護負荷（概念）": "manual-handling-nursing-care-care-burden-concept",
+  "除じん・排ガス処理（性能・保守）": "dust-collection-exhaust-gas-treatment",
+  "電磁界（高周波・低周波の概念）": "electromagnetic-field-high-frequency-low-frequency-concept",
+  "食中毒（分類）": "food-poisoning-classification",
+  "骨折の応急手当（固定）": "fracture-first-aid-fixation",
+  "高ストレス者面接指導": "high-stress-worker-interview-guidance",
+  "高年齢労働者の健康・安全配慮": "older-worker-health-safety-consideration",
+  "麻疹・風疹の職場対策": "measles-rubella-workplace-measures",
+  "黄色ブドウ球菌食中毒": "staphylococcus-aureus-food-poisoning",
+  "DNA修復・細胞周期チェックポイント（概念）": "dna-repair-cell-cycle-checkpoint-concept",
+  "じん肺・塵肺・進行性大量線維症": "pneumoconiosis-pneumoconiosis-progressive-massive-fibrosis",
+  "じん肺・粉じん沈着の病態（概念）": "pneumoconiosis-dust-deposition-pathophysiology-concept",
+  "アスベスト関連疾患（胸膜病変・悪性腫瘍）": "asbestos-related-disease-pleural-line-malignant-tumor",
+  "アスベスト関連疾患（胸膜肥厚・中皮腫・肺癌）": "asbestos-related-disease-pleural-thickening-mesothelioma-lung-cancer",
+  "アレルギー・感作（呼吸器・皮膚）": "allergy-sensitization-respiratory-system-skin",
+  "ウイルス性肝炎・針刺し・血液ばく露（概念）": "viral-hepatitis-needlestick-blood-exposure-concept",
+  "カドミウム腎症・骨軟化（イタイイタイ病）": "cadmium-nephropathy-osteomalacia-itai-itai-disease",
+  "シリカ・コールダスト（概念）": "silica-coal-dust-concept",
+  "ベリリウム肺・肉芽腫（概念）": "beryllium-lung-granuloma-concept",
+  "ベンゼンと造血器疾患・白血病（概念）": "benzene-hematopoietic-disease-leukemia-concept",
+  "マンガン中毒・パーキンソニズム様症状": "manganese-poisoning-parkinsonism",
+  "メチル水銀・中枢神経障害（水俣病）": "methylmercury-central-nervous-system-disorder-minamata-disease",
+  "中毒（窒息・溶媒・金属・農薬等の素地）": "poisoning-asphyxiation-solvent-metal-pesticide",
+  "人畜共通感染症・レジオネラ・ブルセラ（概念）": "zoonosis-legionella-brucella-concept",
+  "低体温・凍傷・末梢冷え（概念）": "hypothermia-frostbite-peripheral-coldness-concept",
+  "体温調節（発汗・血管運動・代謝）": "thermoregulation-sweating-vasomotor-metabolism",
+  "免疫応答（アレルギー・炎症）": "immune-response-allergy-inflammation",
+  "免疫細胞・IgE・アレルギー発症機序": "immune-cell-ige-allergy",
+  "内分泌かく乱・甲状腺・性腺ホルモン（概念）": "endocrine-disruption-thyroid-gonadal-hormone-concept",
+  "内分泌・免疫（ストレス・炎症）": "endocrine-immune-stress-inflammation",
+  "凝固線溶・血小板・DIC（概念）": "coagulation-fibrinolysis-platelet-dic-concept",
+  "化学物質の吸収・分布・代謝・排泄（ADME）": "chemical-substance-absorption-distribution-metabolism-excretion-adme",
+  "呼吸器（換気・拡散・肺胞気・仕事率）": "respiratory-system-ventilation-diffusion-alveolar-air-work-rate",
+  "塩化ビニルと肝血管肉腫": "vinyl-chloride-hepatic-angiosarcoma",
+  "妊娠・胎児感受期・職業ばく露の配慮": "pregnancy-fetal-sensitivity-period-occupational-exposure",
+  "循環器（心拍出量・血圧・循環血液量）": "cardiovascular-system-cardiac-output-blood-pressure-blood-volume",
+  "心理的要因・HPA軸・自律神経・慢性ストレス": "psychological-factor-hpa-axis-autonomic-nervous-system-chronic-stress",
+  "心理的要因（ストレス反応・メンタルヘルス）": "psychological-factor-stress",
+  "急性放射線症候群・造血器・消化管・中枢神経型": "acute-radiation-syndrome-hematopoietic-system-gastrointestinal-tract-central-nervous-s",
+  "急性毒性・慢性毒性・蓄積（基本概念）": "acute-toxicity-chronic-toxicity-accumulation-concept",
+  "恒常性（体温・水分・電解質）": "homeostasis-body-temperature-water-balance-electrolyte",
+  "感染症の基本原理（感染経路・潜伏期）": "infectious-disease-basic-principles-infection-route-latency",
+  "感覚器（視覚・聴覚・前庭）": "sensory-organ-vision-hearing-vestibular",
+  "慢性鉛中毒・腹部疝痛・貧血・末梢神経障害": "chronic-lead-poisoning-abdominal-colic-anemia-peripheral-neuropathy",
+  "振動白ろう・レイノー現象": "vibration-white-finger-raynaud-phenomenon",
+  "振動白ろう・レイノー現象・末梢神経障害": "vibration-white-finger-raynaud-phenomenon-peripheral-neuropathy",
+  "振動障害（末梢神経・血管）": "vibration-disorder-peripheral",
+  "放射線の確率的効果・確定的効果・組織感受性": "radiation-stochastic-effect-deterministic-effect-tissue-sensitivity",
+  "放射線の細胞・組織影響（確率的・確定的効果）": "radiation-cell-tissue-effect-deterministic-effect",
+  "染色体異常・微小核・構造異常（概念）": "chromosomal-aberration-micronucleus-structural-aberration-concept",
+  "活性酸素・酸化ストレス・抗酸化防御": "reactive-oxygen-species-oxidative-stress-antioxidant-defense",
+  "炎症・サイトカインストーム（概念）": "inflammation-cytokine-storm-concept",
+  "熱けいれん・脱水の小児成人差（概念）": "heat-cramp-dehydration-child-adult-difference-concept",
+  "熱中症の病型・脱水・電解質・中枢症状": "heatstroke-clinical-type-dehydration-electrolyte-central-symptoms",
+  "生殖毒性・発育毒性（概念）": "reproductive-toxicity-developmental-toxicity-concept",
+  "疲労・睡眠・覚醒（生物学的リズム）": "fatigue-sleep-wakefulness-biological-rhythm",
+  "発がん多段階説・プロモーター・開始因子": "multistage-carcinogenesis-promoter-initiator",
+  "発がん（開始・促進・潜伏期）": "carcinogenesis-initiation-promotion-latency",
+  "皮膚バリア・経皮吸収": "skin-barrier-dermal-absorption",
+  "皮膚バリア・経皮吸収・刺激性・感作性接触皮膚炎": "skin-barrier-dermal-absorption-irritant-allergic-contact-dermatitis",
+  "眼の光学・調節・VDT（概念）": "eye-optics-accommodation-vdt-concept",
+  "睡眠・覚醒・シフトワーク・体内時計": "sleep-wakefulness-shift-work-circadian-clock",
+  "神経系（中枢・末梢・神経伝達）": "nervous-system-central-peripheral-neurotransmission",
+  "筋・骨格系（筋収縮・エネルギー代謝）": "muscle-skeletal-system-muscle-contraction-energy-metabolism",
+  "筋骨格系・椎間板・姿勢筋疲労（概念）": "muscle-skeletal-system-intervertebral-disc-postural-muscle-fatigue-concept",
+  "粉じんばく露とCOPD・間質性肺炎の鑑別軸": "dust-exposure-copd-interstitial-pneumonia-differential-axis",
+  "結核・日和見感染・免疫不全（概念）": "tuberculosis-opportunistic-infection-immunodeficiency-concept",
+  "老齢化・既往・併存疾患と職業リスク評価": "aging-medical-history-comorbidity-occupational-risk-assessment",
+  "職業性呼吸器疾患（慢性閉塞性等の入口）": "occupational-respiratory-disease-chronic-obstructive",
+  "肝・生物変換（解毒・酵素誘導）": "liver-biotransformation-detoxification-enzyme-induction",
+  "肝小葉・胆汁排泄・酵素誘導（CYPの概念）": "hepatic-lobule-biliary-excretion-enzyme-induction-cyp-concept",
+  "肩こり・腰痛（Work-related MSD）": "stiff-shoulder-low-back-pain-work-related-msd",
+  "胎盤バリア・乳汁移行（概念）": "placental-barrier-milk-transfer-concept",
+  "腎・尿生成（糸球体濾過・再吸収）": "kidney-urine-formation-glomerular-filtration-reabsorption",
+  "腎機能・糸球体濾過・尿細管（排泄と蓄積）": "kidney-function-glomerular-filtration-renal-tubule-excretion-accumulation",
+  "芳香族アミンと膀胱がん（概念）": "aromatic-amine-bladder-cancer-concept",
+  "薬物動態（半減期・分布容積の概念）": "pharmacokinetics-half-life-volume-of-distribution-concept",
+  "血液ガス・酸塩基平衡・電解質異常": "blood-gas-acid-base-balance-electrolyte-abnormality",
+  "血液・酸素運搬（ヘモグロビン・COHb）": "blood-oxygen-transport-hemoglobin-cohb",
+  "血液凝固・線溶（概念）": "blood-coagulation-fibrinolysis-concept",
+  "血脳関門・胎盤関門・乳汁移行": "blood-brain-barrier-placental-barrier-milk-transfer",
+  "血脳関門（概念）": "blood-brain-barrier-concept",
+  "遺伝毒性（変異・染色体異常）": "genotoxicity-mutation-chromosomal-aberration",
+  "酵素誘導・阻害（概念）": "enzyme-induction-concept",
+  "酸塩基平衡（概念）": "acid-base-balance-concept",
+  "重金属蓄積（鉛・水銀・カドミウム）": "heavy-metal-accumulation-lead-mercury-cadmium",
+  "電解質異常（ナトリウム・カリウム）": "electrolyte-abnormality-sodium-potassium",
+  "食中毒・感染（毒素型・感染型）": "food-poisoning-toxin-type-infectious-type",
+  "骨・関節・軟骨（概念）": "bone-joint-cartilage-concept",
+  "高所・低酸素・温度極端環境の生理反応": "high-altitude-hypoxia-extreme-temperature-environment-physiological-response"
 };
