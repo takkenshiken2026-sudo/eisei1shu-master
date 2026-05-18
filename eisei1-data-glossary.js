@@ -3548,7 +3548,6 @@ let GLOSSARY_DATA = [
   }
 ];
 let GLOSSARY_ARTICLE_SLUGS = {
-  "用語解説（プレースホルダー）": "dai1shu-placeholder",
   "じん肺健康診断・管理区分（法令）": "jinpai-koshindan-kanri-kubun-horei",
   "WBGT・熱中症・暑熱順化": "wbgt-necchu-jyunka",
   "じん肺管理区分（管理1〜4）": "jinpai-kanri-kubun",
