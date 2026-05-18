@@ -75,7 +75,7 @@
   --border: rgba(0,0,0,0.10);
   --font: 'Noto Sans JP', sans-serif;
   --green: #1a7a40;
-  --max-w: 720px;
+  --max-w: 840px;
 }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -190,6 +190,45 @@ a:hover { opacity: 0.88; }
 .article-body table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 14px; }
 .article-body th { background: #f8fafc; color: #1f2937; width: 150px; padding: 10px 12px; border: 1px solid var(--border); text-align: left; vertical-align: top; }
 .article-body td { padding: 10px 12px; border: 1px solid var(--border); vertical-align: top; }
+
+.related-box {
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 28px 0 0;
+}
+.related-box-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: .04em;
+  margin-bottom: 12px;
+}
+.related-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+.related-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 44px;
+  padding: 10px 12px;
+  background: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.55;
+  border: 1px solid var(--border);
+}
+.related-link::after { content: "›"; flex-shrink: 0; color: var(--text3); font-weight: 700; }
+.related-link:hover { background: var(--bg2); }
 
 </style>
 
@@ -309,13 +348,13 @@ a:hover { opacity: 0.88; }
   </article>
 
 
-  <section class="article-body" aria-labelledby="related-terms-title">
-    <h2 id="related-terms-title">関連して押さえたい用語</h2>
-    <ul>
-      <li><a href="/terms/jinpai-kanri-kubun.html">じん肺管理区分とは</a></li>
-      <li><a href="/terms/funzin-shogai-boshi.html">粉じん障害防止規則とは</a></li>
-      <li><a href="/terms/tokutei-gyo-mu-kenko-shindan.html">特定業務従事者の健康診断とは</a></li>
-    </ul>
+  <section class="related-box" aria-labelledby="related-terms-title">
+    <div class="related-box-title" id="related-terms-title">関連して押さえたい用語</div>
+    <div class="related-links">
+    <a class="related-link" href="/terms/jinpai-kanri-kubun.html">じん肺管理区分とは</a>
+    <a class="related-link" href="/terms/funzin-shogai-boshi.html">粉じん障害防止規則とは</a>
+    <a class="related-link" href="/terms/tokutei-gyo-mu-kenko-shindan.html">特定業務従事者の健康診断とは</a>
+    </div>
   </section>
 
   <div class="footer-links">

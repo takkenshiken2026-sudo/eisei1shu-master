@@ -96,7 +96,7 @@
   --r: 6px;
   --r2: 10px;
   --sh: 0 1px 3px rgba(0,0,0,0.07);
-  --max-w: 1160px;
+  --max-w: 840px;
 }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: var(--font); font-size: 16px; line-height: 1.8; background: #f0f0f1; color: var(--text); -webkit-font-smoothing: antialiased; }
@@ -280,41 +280,48 @@ body { font-family: var(--font); font-size: 16px; line-height: 1.8; background: 
   margin: 36px 0;
 }
 
-/* ===== 関連過去問リンクセクション ===== */
+/* ===== RELATED TERMS ===== */
 .related-box {
-  background: var(--bg);
-  border: 1px solid var(--border2);
+  background: #f8fafc;
+  border: 1px solid var(--border);
   border-radius: var(--r2);
   padding: 20px;
-  margin-top: 48px;
+  margin: 32px 0 0;
 }
 .related-box-title {
   font-size: 13px;
   font-weight: 700;
-  color: var(--text3);
-  letter-spacing: .06em;
+  color: var(--text);
+  letter-spacing: .04em;
   margin-bottom: 12px;
 }
 .related-links {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  margin: 0;
+  padding: 0;
 }
 .related-link {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 14px;
-  background: var(--bg2);
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 44px;
+  padding: 10px 12px;
+  background: #ffffff;
   border-radius: var(--r);
   text-decoration: none;
-  color: var(--text);
+  color: var(--ink);
   font-size: 14px;
+  line-height: 1.55;
   border: 1px solid var(--border);
-  transition: all .15s;
+  transition: background .15s, border-color .15s;
 }
-.related-link:hover { background: var(--bg3); border-color: var(--border2); }
-.related-link svg { width: 14px; height: 14px; stroke: var(--text3); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+.related-link::after { content: "›"; flex-shrink: 0; color: var(--text3); font-weight: 700; }
+.related-link:hover { background: var(--bg2); border-color: var(--border2); }
+.related-link svg { display: none; }
+
 
 /* ===== SEO ARTICLE PARTS ===== */
 .article-lead {
