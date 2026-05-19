@@ -85,6 +85,10 @@ MERGE_ARGS=( "$OUT/sitemap.xml" "$OUT/sitemap-ichimon.xml" )
 if [[ -f "$OUT/sitemap-terms.xml" ]]; then
   MERGE_ARGS+=( "$OUT/sitemap-terms.xml" )
 fi
+if [[ -f "$ROOT/sitemap-articles.xml" ]]; then
+  cp "$ROOT/sitemap-articles.xml" "$OUT/sitemap-articles.xml"
+  MERGE_ARGS+=( "$OUT/sitemap-articles.xml" )
+fi
 python3 "$ROOT/tools/merge_sitemap_xmls.py" --out "$OUT/sitemap.xml" "${MERGE_ARGS[@]}"
 rm -f "$OUT/sitemap-ichimon.xml" "$OUT/sitemap-terms.xml"
 cp "$OUT/sitemap.xml" "$ROOT/sitemap.xml"
