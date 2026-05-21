@@ -60,7 +60,7 @@ INDEX_ENTRIES: list[tuple[str, str]] = [
     ("stress-check-taisaku", "第一種衛生管理者・ストレスチェックの試験対策【メンタルヘルス】"),
     ("netchu-wbgt-guide", "第一種衛生管理者・温熱・WBGT・暑熱順化【労働生理と法令】"),
     ("shukkin-dokugaku-jikan", "仕事しながら第一種衛生管理者を目指す【時間の作り方・学習習慣】"),
-    ("orig-mondai-guide", "第一種衛生管理者・オリジナル問題の使い方【本番前の実力チェック】"),
+    ("orig-mondai-guide", "第一種衛生管理者・実践演習の使い方【本番前の実力チェック】"),
     ("sangyoui-senmon-eisei", "産業医と衛生管理者の違い【試験範囲と職場での役割】"),
     ("horei-kaisei-benkyou", "第一種衛生管理者・法令改正の追い方【最新版テキストの見方】"),
     ("shiken-tojitsu-mochimono", "第一種衛生管理者 試験当日の持ち物・注意事項・会場での過ごし方"),
@@ -822,19 +822,19 @@ def article_meta(slug: str) -> dict:
             ],
         },
         "orig-mondai-guide": {
-            "title": "第一種衛生管理者・オリジナル問題の使い方【本番前の実力チェック】",
-            "description": "一衛マスターのオリジナル問題演習の活用法。過去問との違い、いつ解くべきかを解説します。",
+            "title": "第一種衛生管理者・実践演習の使い方【本番前の実力チェック】",
+            "description": "一衛マスターの実践演習の活用法。過去問との違い、いつ解くべきかを解説します。",
             "category": "勉強法",
             "body": """
-<p>過去問に加え、<strong>オリジナル問題</strong>で「見たことのない切り口」を試すと、本番での応用力が身につきやすくなります。一衛マスターでは学習トップのオリジナルモードから利用できます。</p>
+<p>過去問に加え、<strong>実践演習</strong>で「見たことのない切り口」を試すと、本番での応用力が身につきやすくなります。一衛マスターでは学習トップの実践演習から利用できます。</p>
 <h2>過去問との使い分け</h2>
-<table><thead><tr><th></th><th>過去問</th><th>オリジナル</th></tr></thead><tbody>
+<table><thead><tr><th></th><th>過去問</th><th>実践演習</th></tr></thead><tbody>
 <tr><td>目的</td><td>出題傾向・形式の把握</td><td>理解度の確認・応用</td></tr>
 <tr><td>タイミング</td><td>学習の中心（複数周）</td><td>1周目後〜直前の弱点補強</td></tr>
 </tbody></table>
 <h2>おすすめの進め方</h2>
 <ol>
-<li>過去問1周後、苦手科目だけオリジナルを20〜30問</li>
+<li>過去問1周後、苦手科目だけ実践演習を20〜30問</li>
 <li>正答率が安定したら本番形式の模擬へ</li>
 </ol>
 <p><a href="/articles/kakomon-kakaikata.html">過去問の回し方</a>、静的ページは<a href="/q/index.html">過去問一覧</a>。</p>

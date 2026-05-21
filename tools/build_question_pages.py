@@ -981,7 +981,7 @@ def write_q_past_index(
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>過去問一覧｜一衛マスター（第一種衛生管理者試験）</title>
-<meta name="description" content="第一種衛生管理者試験の過去問を開催回・科目別の静的ページで一覧しています。過去問 {n_past} 問収録。オリジナル問題 {n_orig} 問は学習アプリから利用できます。">
+<meta name="description" content="第一種衛生管理者試験の過去問を開催回・科目別の静的ページで一覧しています。過去問 {n_past} 問収録。実践演習 {n_orig} 問は学習アプリから利用できます。">
 {meta_robots}
 <link rel="canonical" href="{html.escape(canonical)}">
 <script defer src="/site-analytics.js"></script>
@@ -999,8 +999,8 @@ def write_q_past_index(
 </header>
 <main class="q-static-main">
   <h1 class="q-h1">過去問一覧</h1>
-  <p class="q-meta">過去問 <strong>{n_past}</strong> 問（静的）・オリジナル <strong>{n_orig}</strong> 問（アプリ）</p>
-  <p class="glos-static-intro q-index-intro">開催回・科目ごとの静的ページです。<strong><a href="{html.escape(root_idx)}#past">アプリで過去問</a></strong>では開催年・科目の絞り込みや学習記録が使えます。オリジナル問題は <strong><a href="{html.escape(root_idx)}#orig">アプリのオリジナル</a></strong>から。</p>
+  <p class="q-meta">過去問 <strong>{n_past}</strong> 問（静的）・実践演習 <strong>{n_orig}</strong> 問（アプリ）</p>
+  <p class="glos-static-intro q-index-intro">開催回・科目ごとの静的ページです。<strong><a href="{html.escape(root_idx)}#past">アプリで過去問</a></strong>では開催年・科目の絞り込みや学習記録が使えます。実践演習は <strong><a href="{html.escape(root_idx)}#orig">アプリの実践演習</a></strong>から。</p>
   <p class="q-meta"><a href="{sitemap_href}">サイトマップ（全ページ）</a></p>
   {era_nav}
   {body_sections}
