@@ -1019,7 +1019,11 @@ def main() -> None:
     if past_csv.is_file():
         import subprocess
 
-        for script in ("apply_site_config.py", "build_past_question_pages.py"):
+        for script in (
+            "apply_site_config.py",
+            "build_past_question_pages.py",
+            "build_sitemap.py",
+        ):
             subprocess.run(
                 [sys.executable, f"tools/{script}"],
                 cwd=repo_root,
