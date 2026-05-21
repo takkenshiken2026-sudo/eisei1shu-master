@@ -1,98 +1,48 @@
 #!/usr/bin/env bash
-# GitHub Pages 用に公開ファイルだけを public_site/ に集約する。
-# 事前に python3 tools/sync_original_eisei1_500_to_data.py ・ python3 tools/csv_to_eisei1_master.py ・
-# python3 tools/build_question_pages.py ・ python3 tools/build_ichimon_pages.py を実行済みであること。
-# サイトマップは過去問・一問一答・用語を merge_sitemap_xmls.py で 1 本化し、リポジトリ直下の sitemap.xml も更新する。
-# Actions の Bundle ステップで GA4_MEASUREMENT_ID / GOOGLE_SITE_VERIFICATION を渡すと index に反映される。
+# GitHub Pages 用: SPA（index.html）＋生成済みデータ・静的ページを public_site/ に配置する。
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 OUT="$ROOT/public_site"
 rm -rf "$OUT"
 mkdir -p "$OUT"
-mkdir -p "$OUT/docs"
 cd "$ROOT"
 for f in \
   index.html \
   about.html \
+  privacy.html \
   related-sites.html \
-  privacy-terms.html \
+  site-config.json \
+  site-config.js \
   site-pages.css \
+  site-theme.css \
+  site-q-index.js \
+  site-terms-index.js \
   site-analytics.js \
   CNAME \
   robots.txt \
   sitemap.xml \
   .nojekyll \
-  eisei1-master-data.js \
-  eisei1-data-glossary.js \
-  eisei1-data-original.js \
-  eisei1-data-ichimon.js
+  exam-site-data-past.js \
+  exam-site-data-practice.js \
+  exam-site-data-ichimondou.js
 do
   if [[ ! -e "$f" ]]; then
     echo "prepare_public_site.sh: 必須ファイルがありません: $f" >&2
+    echo "先に python3 tools/csv_to_exam_site_past_js.py と各生成スクリプトを実行してください。" >&2
     exit 1
   fi
   cp "$f" "$OUT/"
 done
-for f in docs/glossary-article-slugs.json docs/glossary-terms-checklist.csv docs/dai1shu-glossary-terms-master.csv; do
-  if [[ ! -e "$f" ]]; then
-    echo "prepare_public_site.sh: 必須ファイルがありません: $f" >&2
-    exit 1
+for d in articles q terms; do
+  if [[ -d "$ROOT/$d" ]]; then
+    cp -R "$ROOT/$d" "$OUT/"
   fi
-  cp "$f" "$OUT/docs/"
 done
-if [[ ! -d q ]]; then
-  echo "prepare_public_site.sh: q/ がありません。先に python3 tools/build_question_pages.py を実行してください。" >&2
-  exit 1
-fi
-cp -R q "$OUT/"
-if [[ ! -d ichimon ]]; then
-  echo "prepare_public_site.sh: ichimon/ がありません。先に python3 tools/build_ichimon_pages.py を実行してください。" >&2
-  exit 1
-fi
-cp -R ichimon "$OUT/"
-if [[ ! -f sitemap-ichimon.xml ]]; then
-  echo "prepare_public_site.sh: sitemap-ichimon.xml がありません。先に python3 tools/build_ichimon_pages.py を実行してください。" >&2
-  exit 1
-fi
-cp sitemap-ichimon.xml "$OUT/"
-if [[ -d "$ROOT/articles" ]]; then
-  cp -R "$ROOT/articles" "$OUT/articles"
-else
-  echo "prepare_public_site.sh: 警告: articles/ がありません（試験ガイドが公開されません）。" >&2
-fi
-if [[ -d "$ROOT/terms" ]]; then
-  cp -R "$ROOT/terms" "$OUT/terms"
-  python3 "$ROOT/tools/generate_terms_index_html.py" \
-    --slug-json "$ROOT/docs/glossary-article-slugs.json" \
-    --csv "$ROOT/docs/glossary-terms-checklist.csv" \
-    --terms-dir "$OUT/terms" \
-    --out "$OUT/terms/index.html" \
-    --base "https://eisei1shu-master.jp"
-  # リポジトリ直下の terms/index.html も同一内容に更新（公開用コピーとズレないようにする）
-  python3 "$ROOT/tools/generate_terms_index_html.py" \
-    --slug-json "$ROOT/docs/glossary-article-slugs.json" \
-    --csv "$ROOT/docs/glossary-terms-checklist.csv" \
-    --terms-dir "$ROOT/terms" \
-    --out "$ROOT/terms/index.html" \
-    --base "https://eisei1shu-master.jp"
-  python3 "$ROOT/tools/generate_terms_sitemap.py" \
-    --terms-dir "$OUT/terms" \
-    --out "$OUT/sitemap-terms.xml" \
-    --base "https://eisei1shu-master.jp"
-fi
-# 過去問・一問一答・用語のサイトマップを 1 本に統合（公開物には sitemap.xml のみ残す）
-MERGE_ARGS=( "$OUT/sitemap.xml" "$OUT/sitemap-ichimon.xml" )
-if [[ -f "$OUT/sitemap-terms.xml" ]]; then
-  MERGE_ARGS+=( "$OUT/sitemap-terms.xml" )
-fi
-if [[ -f "$ROOT/sitemap-articles.xml" ]]; then
-  cp "$ROOT/sitemap-articles.xml" "$OUT/sitemap-articles.xml"
-  MERGE_ARGS+=( "$OUT/sitemap-articles.xml" )
-fi
-python3 "$ROOT/tools/merge_sitemap_xmls.py" --out "$OUT/sitemap.xml" "${MERGE_ARGS[@]}"
-rm -f "$OUT/sitemap-ichimon.xml" "$OUT/sitemap-terms.xml"
-cp "$OUT/sitemap.xml" "$ROOT/sitemap.xml"
-TARGET="$OUT/index.html" python3 "$ROOT/tools/inject_site_analytics_secrets.py"
-bash "$ROOT/tools/verify_supabase_url_in_html.sh" "$OUT/index.html"
+# サイト固有 SPA データ（例: 賃管マスターの eisei1-*.js）。無ければスキップ。
+for f in eisei1-*.js; do
+  if [[ -f "$ROOT/$f" ]]; then
+    cp "$ROOT/$f" "$OUT/"
+  fi
+done
 n="$(find "$OUT" -type f | wc -l | tr -d ' ')"
 echo "prepare_public_site.sh: $OUT に $n ファイルを配置しました。"

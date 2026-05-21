@@ -1,0 +1,2 @@
+question_no,type,category,tags,stem,choice_1,choice_2,choice_3,choice_4,correct,explanation
+1,single,関係法令（有害業務）,演習,第一種衛生管理者の学習用サンプル問題（関係法令）です。,正しい選択肢の例です。,誤りの選択肢の例です。,誤りの選択肢の例です。,誤りの選択肢の例です。,1,テンプレ移行用の最小行です。本番の実践演習は eisei1-master-data.js を参照してください。

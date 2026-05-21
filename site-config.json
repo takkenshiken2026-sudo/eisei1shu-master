@@ -1,0 +1,102 @@
+{
+  "brandName": "一衛マスター",
+  "brandMark": "一衛",
+  "examName": "第一種衛生管理者試験",
+  "siteOrigin": "https://eisei1shu-master.jp",
+  "contactUrl": "https://forms.gle/3pD7fZ8TdppzAWR37",
+  "ga4MeasurementId": "",
+  "copyright": "",
+  "footerDisclaimer": "学習用のコンテンツです。出題・法令の正確な内容は安全衛生技術試験協会などの公式情報で必ず確認してください。",
+  "officialOrganization": "安全衛生技術試験協会",
+  "learningNavLabelOverrides": {
+    "tnav-orig": "オリジナル問題"
+  },
+  "theme": {
+    "accent": "#333333",
+    "accentText": "#ffffff",
+    "background": "#f0f0f1",
+    "surface": "#ffffff",
+    "surfaceAlt": "#f4f4f5",
+    "text": "#111111",
+    "textMuted": "#555555",
+    "border": "rgba(0, 0, 0, 0.09)",
+    "radius": "10px",
+    "navWidth": "1160px",
+    "contentWidth": "1160px"
+  },
+  "navigation": {
+    "header": [
+      {"label": "トップ", "href": "index.html", "key": "top"},
+      {"label": "このサイトについて", "href": "about.html", "key": "about"},
+      {"label": "過去問一覧", "href": "q/index.html", "key": "q"},
+      {"label": "用語解説", "href": "terms/index.html", "key": "terms"},
+      {"label": "試験ガイド", "href": "articles/index.html", "key": "articles"},
+      {"label": "関連リンク", "href": "related-sites.html", "key": "related"},
+      {"label": "プライバシー", "href": "privacy.html", "key": "privacy"}
+    ],
+    "footer": [
+      {"label": "トップ", "href": "index.html", "key": "top"},
+      {"label": "このサイトについて", "href": "about.html", "key": "about"},
+      {"label": "過去問一覧", "href": "q/index.html", "key": "q"},
+      {"label": "用語解説", "href": "terms/index.html", "key": "terms"},
+      {"label": "試験ガイド", "href": "articles/index.html", "key": "articles"},
+      {"label": "関連リンク", "href": "related-sites.html", "key": "related"},
+      {"label": "プライバシー", "href": "privacy.html", "key": "privacy"},
+      {"label": "お問い合わせ", "href": "__CONTACT__", "key": "contact"}
+    ]
+  },
+  "guideArticleGenres": [
+    {"id": "overview", "label": "試験概要", "phase": "制度を知る", "style": "overview", "hint": "試験の全体像・公式情報の見方"},
+    {"id": "application", "label": "受験・申込", "phase": "制度を知る", "style": "institution", "hint": "受験資格・日程・申込"},
+    {"id": "pass-stats", "label": "合格・難易度", "phase": "制度を知る", "style": "institution", "hint": "合格率・合格点・難易度"},
+    {"id": "exam-scope", "label": "出題・形式", "phase": "制度を知る", "style": "institution", "hint": "出題範囲・科目構成"},
+    {"id": "study-plan", "label": "学習計画", "phase": "学習を設計する", "style": "study", "hint": "学習期間・週間表"},
+    {"id": "self-study", "label": "独学対策", "phase": "学習を設計する", "style": "study", "hint": "独学の進め方・教材"},
+    {"id": "past-questions", "label": "過去問活用", "phase": "演習と定着", "style": "practice", "hint": "過去問・一問一答"},
+    {"id": "field-study", "label": "分野別対策", "phase": "演習と定着", "style": "practice", "hint": "分野ごとの重点"},
+    {"id": "glossary-study", "label": "用語整理", "phase": "演習と定着", "style": "practice", "hint": "用語集の使い方"},
+    {"id": "review-weak", "label": "復習・苦手克服", "phase": "演習と定着", "style": "practice", "hint": "復習・間違いノート"},
+    {"id": "final-prep", "label": "直前・当日", "phase": "直前と当日", "style": "final", "hint": "直前期・当日"},
+    {"id": "cautions", "label": "注意点・更新", "phase": "横断", "style": "meta", "hint": "制度変更・誤解"},
+    {"id": "legacy-guide", "label": "試験ガイド", "phase": "移行中（既存）", "style": "overview", "hint": "移行後は試験概要へ統合"}
+  ],
+  "fields": [
+    {
+      "id": "law-harm",
+      "name": "関係法令（有害業務）",
+      "aliases": ["関係法令（有害業務）", "関係法令", "関係法令（有害業務に係るもの）"]
+    },
+    {
+      "id": "law-other",
+      "name": "関係法令（有害以外）",
+      "aliases": ["関係法令（有害以外）", "関係法令（有害業務に係るもの以外のもの）"]
+    },
+    {
+      "id": "eisei-harm",
+      "name": "労働衛生（有害業務）",
+      "aliases": ["労働衛生（有害業務）", "労働衛生", "労働衛生（有害業務に係るもの）"]
+    },
+    {
+      "id": "eisei-other",
+      "name": "労働衛生（有害以外）",
+      "aliases": ["労働衛生（有害以外）", "労働衛生（有害業務に係るもの以外のもの）"]
+    },
+    {
+      "id": "physio",
+      "name": "労働生理",
+      "aliases": ["労働生理"]
+    }
+  ],
+  "externalLinks": [
+    {
+      "url": "https://www.exam.or.jp/",
+      "label": "安全衛生技術試験協会（公式）",
+      "description": "試験日程・要項・合格発表の公式情報"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/bunya/roudoukijun/anzeneisei12/",
+      "label": "厚生労働省 労働基準・安全衛生",
+      "description": "安全衛生法・ストレスチェック等の背景理解"
+    }
+  ]
+}
