@@ -1014,6 +1014,19 @@ def write_q_past_index(
 
 
 def main() -> None:
+    repo_root = Path(__file__).resolve().parent.parent
+    past_csv = repo_root / "data" / "past_questions.csv"
+    if past_csv.is_file():
+        import subprocess
+
+        for script in ("apply_site_config.py", "build_past_question_pages.py"):
+            subprocess.run(
+                [sys.executable, f"tools/{script}"],
+                cwd=repo_root,
+                check=True,
+            )
+        return
+
     ap = argparse.ArgumentParser(description="CSV から静的問題ページ q/ を生成")
     ap.add_argument(
         "--base-url",
