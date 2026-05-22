@@ -1736,11 +1736,12 @@ a.site-page-brand:hover {
   padding-bottom: 40px;
 }
 .terms-index-page .terms-idx-page-title {
-  font-size: 1.25rem;
+  font-size: var(--fs-title);
   font-weight: 800;
   letter-spacing: -0.02em;
   margin: 0;
   line-height: 1.3;
+  color: var(--text);
 }
 .terms-idx-crumb {
   margin: 0 0 8px;
@@ -2477,7 +2478,7 @@ html:not(.js) .terms-idx-seo-fallback .terms-idx-seo-list a {
 .terms-idx-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: var(--fs-caption);
+  font-size: var(--fs-body);
   table-layout: fixed;
   border: none;
   background: var(--bg);
@@ -2764,6 +2765,7 @@ html:not(.js) .terms-idx-seo-fallback .terms-idx-seo-list a {
 }
 
 @media (max-width: 599px) {
+  .terms-index-page .site-page-main > h1,
   .terms-index-page .terms-idx-page-title {
     font-size: var(--fs-h2);
   }
@@ -4356,9 +4358,25 @@ html:not(.js) .terms-idx-seo-fallback .terms-idx-seo-list a {
 .terms-index-page {
   color: var(--ink);
 }
+.terms-index-page .site-page-main > h1,
 .terms-index-page .terms-idx-page-title {
   font-size: var(--fs-title);
+  font-weight: 800;
   color: var(--text);
+  letter-spacing: -0.02em;
+}
+.terms-index-page .site-page-lead {
+  font-size: var(--fs-body);
+  color: var(--ink);
+  font-weight: 500;
+}
+.terms-index-page .terms-index-head h2 {
+  font-size: var(--fs-h2);
+  color: var(--text);
+}
+.terms-index-page .terms-index-head p {
+  font-size: var(--fs-body);
+  color: var(--ink);
 }
 .terms-index-page .terms-idx-lead,
 .terms-index-page .terms-idx-crumb,
@@ -4372,13 +4390,54 @@ html:not(.js) .terms-idx-seo-fallback .terms-idx-seo-list a {
   font-size: var(--fs-sub);
 }
 .terms-index-page .meta-updated,
-.terms-index-page .terms-idx-hit {
-  color: var(--text3);
+.terms-index-page .terms-index-hit {
+  color: var(--text2);
   font-size: var(--fs-caption);
+}
+.terms-index-page .terms-index-search {
+  font-size: var(--fs-small);
+  color: var(--text);
+}
+.terms-index-page .terms-index-search input,
+.terms-index-page .terms-idx-search-control input {
+  font-size: var(--fs-body);
+  color: var(--ink);
+}
+.terms-index-page .terms-idx-chip {
+  font-size: var(--fs-small);
+  color: var(--ink);
+}
+.terms-index-page .terms-idx-chip.on {
+  color: var(--accent-emphasis);
+}
+.terms-index-page .terms-idx-table {
+  font-size: var(--fs-body);
+}
+.terms-index-page .terms-idx-table thead th {
+  font-size: var(--fs-small);
+  color: var(--on-dark);
+}
+.terms-index-page .terms-idx-td-term a {
+  font-size: var(--fs-body);
+  font-weight: 600;
+  color: var(--text);
+}
+.terms-index-page .terms-idx-td-cat {
+  font-size: var(--fs-sub);
+  color: var(--text2);
+}
+.terms-index-page .terms-idx-td-snippet {
+  font-size: var(--fs-sub);
+  color: var(--text2);
+  line-height: 1.65;
 }
 .terms-index-page .terms-idx-list a {
   color: var(--ink);
   font-size: var(--fs-body);
+}
+.terms-index-page .terms-idx-cat-head h2 {
+  font-size: var(--fs-h2);
+  color: var(--text);
 }
 .terms-index-page .site-page-header-crumb {
   font-size: var(--fs-small);
@@ -4508,6 +4567,7 @@ html:not(.js) .terms-idx-seo-fallback .terms-idx-seo-list a {
 }
 
 @media (max-width: 599px) {
+  .terms-index-page .site-page-main > h1,
   .terms-index-page .terms-idx-page-title {
     font-size: var(--fs-h2);
   }

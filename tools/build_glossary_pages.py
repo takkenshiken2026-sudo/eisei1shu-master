@@ -197,7 +197,7 @@ def split_semicolon(s: str) -> list[str]:
     return [x.strip() for x in (s or "").split(";") if x.strip()]
 
 
-TERMS_INDEX_CSS_VER = "20260521-terms-tools-fix"
+TERMS_INDEX_CSS_VER = "20260522-terms-type"
 TERMS_INDEX_JS_VER = "20260521-terms-snippet"
 TERMS_INDEX_SEARCH_PLACEHOLDER = "例：ストレスチェック、ラインケア、うつ病…"
 
@@ -1119,7 +1119,7 @@ def build_terms_index(entries: list[dict], base_url: str) -> str:
 {terms_header}
 <main class="site-page-main">
   {page_breadcrumb}
-  <h1>用語解説</h1>
+  <h1 class="terms-idx-page-title">用語解説</h1>
   <p class="site-page-lead">{html.escape(lead)}</p>
   <section class="terms-index-panel" aria-labelledby="terms-index-heading">
     <div class="terms-index-head">
