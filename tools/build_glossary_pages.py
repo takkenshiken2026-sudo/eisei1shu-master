@@ -629,7 +629,15 @@ def build_term_html(
         paras = [p.strip() for p in re.split(r"\n{2,}", body.strip()) if p.strip()]
         if not paras:
             paras = [body.strip()]
-        return "\n".join(f"<p>{html.escape(p).replace(chr(10), '<br>')}</p>" for p in paras)
+        chunks: list[str] = []
+        for p in paras:
+            if p.lstrip().startswith("<table"):
+                chunks.append(p)
+            else:
+                chunks.append(
+                    f"<p>{html.escape(p).replace(chr(10), '<br>')}</p>"
+                )
+        return "\n".join(chunks)
 
     def article_section(sec_id: str, label: str, body_html: str, number: int | None = None) -> str:
         if not body_html.strip():
@@ -1209,8 +1217,8 @@ def sync_index_glossary_slug_map(entries: list[dict]) -> None:
 def load_glossary_rows() -> list[dict]:
     if not GLOSSARY_CSV.is_file():
         raise FileNotFoundError(str(GLOSSARY_CSV))
-    text = GLOSSARY_CSV.read_text(encoding="utf-8-sig")
-    return list(csv.DictReader(text.splitlines()))
+    with GLOSSARY_CSV.open(encoding="utf-8-sig", newline="") as f:
+        return list(csv.DictReader(f))
 
 
 def main() -> int:
