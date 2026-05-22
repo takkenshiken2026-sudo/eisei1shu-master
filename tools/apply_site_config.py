@@ -111,10 +111,27 @@ def ensure_theme_link(text: str, rel_path: Path) -> str:
     return text
 
 
+STATIC_BODY_CLASS = {
+    ROOT / "about.html": "site-static-page",
+    ROOT / "privacy.html": "site-static-page",
+    ROOT / "related-sites.html": "site-static-page",
+}
+
+
+def ensure_static_body_class(text: str, path: Path) -> str:
+    body_class = STATIC_BODY_CLASS.get(path)
+    if not body_class:
+        return text
+    if re.search(r"<body\s+class=", text):
+        return text
+    return text.replace("<body>", f'<body class="{body_class}">', 1)
+
+
 def replace_static_chrome(text: str, path: Path) -> str:
     current = STATIC_PAGE_CURRENTS.get(path)
     if not current:
         return text
+    text = ensure_static_body_class(text, path)
     rel_path = path.relative_to(ROOT)
     text = re.sub(
         r'\s*<header class="(?:site-page-header(?: site-page-header--wide)?|topnav site-shell-header(?: site-shell-header--wide)?)">.*?</header>',

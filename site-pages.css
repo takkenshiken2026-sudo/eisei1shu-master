@@ -608,7 +608,7 @@ a.site-page-brand:hover {
   cursor: default;
 }
 /* 静的問題ページ（tools/build_question_pages.py 生成） */
-.q-static-body {
+.q-static-page {
   font-family: var(--font);
   font-size: var(--fs-body);
   line-height: 1.75;
@@ -4334,5 +4334,376 @@ html:not(.js) .terms-idx-seo-fallback .terms-idx-seo-list a {
     flex: 1 1 auto;
     justify-content: center;
     min-width: calc(50% - 4px);
+  }
+}
+
+/* =============================================================================
+   用語・過去問（4ページ種のみ）タイポグラフィ・文字色
+   site-theme.css 読込後も body クラス配下で --text を #121212 に固定
+   ============================================================================= */
+.terms-index-page,
+.term-article-page,
+.q-index-page,
+.q-static-page {
+  --text: #121212;
+  --ink: #333333;
+  --text2: #555555;
+  --text3: #999999;
+  --on-dark: #ffffff;
+}
+
+/* 用語解説一覧 */
+.terms-index-page {
+  color: var(--ink);
+}
+.terms-index-page .terms-idx-page-title {
+  font-size: var(--fs-title);
+  color: var(--text);
+}
+.terms-index-page .terms-idx-lead,
+.terms-index-page .terms-idx-crumb,
+.terms-index-page .terms-idx-seo-note {
+  color: var(--ink);
+  font-size: var(--fs-body);
+}
+.terms-index-page .terms-idx-seo-note,
+.terms-index-page .terms-idx-toolbar-note {
+  color: var(--text2);
+  font-size: var(--fs-sub);
+}
+.terms-index-page .meta-updated,
+.terms-index-page .terms-idx-hit {
+  color: var(--text3);
+  font-size: var(--fs-caption);
+}
+.terms-index-page .terms-idx-list a {
+  color: var(--ink);
+  font-size: var(--fs-body);
+}
+.terms-index-page .site-page-header-crumb {
+  font-size: var(--fs-small);
+  color: var(--text2);
+}
+.terms-index-page .site-page-header-crumb a {
+  color: var(--ink);
+}
+
+/* 用語詳細 */
+.term-article-page {
+  color: var(--ink);
+}
+.term-article-page .article-title {
+  font-size: var(--fs-title);
+  color: var(--text);
+}
+.term-article-page .article-lead,
+.term-article-page .article-body p,
+.term-article-page .article-body li,
+.term-article-page .article-body ul,
+.term-article-page .article-body ol {
+  color: var(--ink);
+  font-size: var(--fs-body);
+}
+.term-article-page .article-body h2,
+.term-article-page .seo-toc h2 {
+  font-size: var(--fs-h2);
+  color: var(--text);
+}
+.term-article-page .article-body h3 {
+  font-size: var(--fs-body);
+  color: var(--ink);
+}
+.term-article-page .meta-updated {
+  color: var(--text3);
+  font-size: var(--fs-caption);
+}
+.term-article-page .article-body th {
+  color: var(--on-dark);
+}
+.term-article-page .article-body td {
+  color: var(--text);
+  font-size: var(--fs-body);
+}
+.term-article-page .site-page-header-crumb {
+  font-size: var(--fs-small);
+  color: var(--text2);
+}
+.term-article-page .site-page-header-crumb a {
+  color: var(--ink);
+}
+.term-article-page .related-box-title {
+  color: var(--text3);
+  font-size: var(--fs-small);
+}
+.term-article-page .related-link {
+  color: var(--text);
+  font-size: var(--fs-sub);
+}
+
+/* 過去問一覧 */
+.q-index-page {
+  color: var(--ink);
+}
+.q-index-page .q-h1 {
+  font-size: var(--fs-title);
+  color: var(--text);
+}
+.q-index-page .q-index-lead,
+.q-index-page .q-index-filter-opt,
+.q-index-page .q-year-table td {
+  color: var(--ink);
+  font-size: var(--fs-body);
+}
+.q-index-page .q-index-hit,
+.q-index-page .q-index-page-info {
+  color: var(--text2);
+  font-size: var(--fs-caption);
+}
+.q-index-page .q-index-empty,
+.q-index-page .q-index-toolbar-note {
+  color: var(--text2);
+  font-size: var(--fs-sub);
+}
+.q-index-page .site-page-header-crumb {
+  font-size: var(--fs-small);
+  color: var(--text2);
+}
+.q-index-page .site-page-header-crumb a {
+  color: var(--ink);
+}
+
+/* 過去問静的 */
+.q-static-page {
+  color: var(--ink);
+}
+.q-static-page .q-h1 {
+  font-size: var(--fs-title);
+  color: var(--text);
+}
+.q-static-page .q-page-lead,
+.q-static-page .q-block,
+.q-static-page .q-text,
+.q-static-page .q-meta-line {
+  color: var(--ink);
+  font-size: var(--fs-body);
+}
+.q-static-page .q-h2 {
+  font-size: var(--fs-h2);
+  color: var(--text);
+}
+.q-static-page .q-meta,
+.q-static-page .q-breadcrumb {
+  color: var(--text2);
+  font-size: var(--fs-small);
+}
+.q-static-page .q-breadcrumb a {
+  color: var(--ink);
+}
+.q-static-page .site-page-header-crumb {
+  font-size: var(--fs-small);
+  color: var(--text2);
+}
+.q-static-page .site-page-header-crumb a {
+  color: var(--ink);
+}
+
+@media (max-width: 599px) {
+  .terms-index-page .terms-idx-page-title {
+    font-size: var(--fs-h2);
+  }
+  .q-static-page .q-h1,
+  .q-index-page .q-h1 {
+    font-size: var(--fs-h2);
+  }
+}
+
+/* =============================================================================
+   追加ページ種 — タイポグラフィ・文字色（exam-site-shell）
+   ============================================================================= */
+.guide-article-page,
+.guide-index-page,
+.terms-field-hub-page,
+.site-static-page {
+  --text: #121212;
+  --ink: #333333;
+  --text2: #555555;
+  --text3: #999999;
+  --on-dark: #ffffff;
+}
+
+/* 試験ガイド記事 */
+.guide-article-page {
+  color: var(--ink);
+}
+.guide-article-page .article-title {
+  font-size: var(--fs-title);
+  color: var(--text);
+}
+.guide-article-page .article-lead,
+.guide-article-page .article-body p,
+.guide-article-page .article-body li,
+.guide-article-page .article-body ul,
+.guide-article-page .article-body ol,
+.guide-article-page .seo-toc li,
+.guide-article-page .seo-toc a {
+  color: var(--ink);
+  font-size: var(--fs-body);
+}
+.guide-article-page .article-body h2,
+.guide-article-page .seo-toc h2 {
+  font-size: var(--fs-h2);
+  color: var(--text);
+}
+.guide-article-page .article-body h3 {
+  font-size: var(--fs-body);
+  color: var(--ink);
+}
+.guide-article-page .meta-updated {
+  color: var(--text3);
+  font-size: var(--fs-caption);
+}
+.guide-article-page .article-body th {
+  color: var(--on-dark);
+}
+.guide-article-page .article-body td,
+.guide-article-page .seo-info-table td {
+  color: var(--text);
+  font-size: var(--fs-body);
+}
+.guide-article-page .site-page-header-crumb {
+  font-size: var(--fs-small);
+  color: var(--text2);
+}
+.guide-article-page .site-page-header-crumb a {
+  color: var(--ink);
+}
+.guide-article-page .related-box-title {
+  color: var(--text3);
+  font-size: var(--fs-small);
+}
+.guide-article-page .related-link {
+  color: var(--text);
+  font-size: var(--fs-sub);
+}
+
+/* 試験ガイド一覧 */
+.guide-index-page {
+  color: var(--ink);
+}
+.guide-index-page .site-page-main h1 {
+  font-size: var(--fs-title);
+  color: var(--text);
+}
+.guide-index-page .site-page-lead {
+  font-size: var(--fs-body);
+  color: var(--ink);
+}
+.guide-index-page .article-index-head h2 {
+  font-size: var(--fs-h2);
+  color: var(--text);
+}
+.guide-index-page .article-index-head p,
+.guide-index-page .article-index-card p {
+  color: var(--ink);
+  font-size: var(--fs-sub);
+}
+.guide-index-page .article-index-hit {
+  font-size: var(--fs-caption);
+  color: var(--text2);
+}
+.guide-index-page .article-index-search {
+  color: var(--text);
+  font-size: var(--fs-small);
+}
+.guide-index-page .article-index-search input {
+  color: var(--ink);
+  font-size: var(--fs-body);
+}
+.guide-index-page .article-index-chip {
+  font-size: var(--fs-caption);
+  color: var(--ink);
+}
+.guide-index-page .article-index-card h2 {
+  font-size: var(--fs-body);
+  color: var(--text);
+}
+.guide-index-page .article-index-card-tags {
+  color: var(--text2);
+  font-size: var(--fs-caption);
+}
+.guide-index-page .article-index-empty {
+  color: var(--text2);
+  font-size: var(--fs-sub);
+}
+.guide-index-page .site-page-header-crumb {
+  font-size: var(--fs-small);
+  color: var(--text2);
+}
+.guide-index-page .site-page-header-crumb a {
+  color: var(--ink);
+}
+
+/* 用語分野ハブ */
+.terms-field-hub-page {
+  color: var(--ink);
+}
+.terms-field-hub-page .terms-idx-page-title {
+  font-size: var(--fs-title);
+  color: var(--text);
+}
+.terms-field-hub-page .terms-idx-lead,
+.terms-field-hub-page .terms-idx-list a {
+  color: var(--ink);
+  font-size: var(--fs-body);
+}
+.terms-field-hub-page .site-page-header-crumb {
+  font-size: var(--fs-small);
+  color: var(--text2);
+}
+.terms-field-hub-page .site-page-header-crumb a {
+  color: var(--ink);
+}
+
+/* 静的ページ（about / privacy / related-sites） */
+.site-static-page {
+  color: var(--ink);
+}
+.site-static-page .site-page-main h1 {
+  font-size: var(--fs-title);
+  color: var(--text);
+}
+.site-static-page .site-page-lead {
+  font-size: var(--fs-body);
+  color: var(--ink);
+}
+.site-static-page .site-page-section h2 {
+  font-size: var(--fs-h2);
+  color: var(--text);
+}
+.site-static-page .site-page-section p,
+.site-static-page .site-page-section li {
+  color: var(--ink);
+  font-size: var(--fs-body);
+}
+.site-static-page .site-page-section th {
+  color: var(--on-dark);
+}
+.site-static-page .site-page-section td {
+  color: var(--text);
+  font-size: var(--fs-body);
+}
+.site-static-page .site-page-note {
+  color: var(--text2);
+  font-size: var(--fs-small);
+}
+
+@media (max-width: 599px) {
+  .guide-index-page .site-page-main h1,
+  .terms-field-hub-page .terms-idx-page-title,
+  .site-static-page .site-page-main h1 {
+    font-size: var(--fs-h2);
+  }
+  .guide-article-page .article-title {
+    font-size: var(--fs-h2);
   }
 }

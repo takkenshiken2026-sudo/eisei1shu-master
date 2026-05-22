@@ -163,7 +163,7 @@ def build_detail_html(
 {json.dumps(json_ld, ensure_ascii=False, indent=2)}
 </script>
 </head>
-<body class="q-static-body">
+<body class="q-static-page">
 <header class="q-static-header">
   <p class="q-static-brand"><a href="{html.escape(root_idx)}">一衛マスター</a>（第一種衛生管理者試験）</p>
   <nav aria-label="パンくず">
@@ -240,7 +240,7 @@ def write_hub(
 <script defer src="/site-analytics.js"></script>
 <link rel="stylesheet" href="{html.escape(css_href)}">
 </head>
-<body class="q-static-body">
+<body class="q-static-page">
 <header class="q-static-header">
   <p class="q-static-brand"><a href="{html.escape(root_idx)}">一衛マスター</a>（第一種衛生管理者試験）</p>
   <nav aria-label="パンくず">
