@@ -1020,6 +1020,7 @@ def main() -> None:
         import subprocess
 
         for script in (
+            "import_eisei1_original_to_practice_csv.py",
             "apply_site_config.py",
             "csv_to_exam_site_past_js.py",
             "csv_to_exam_site_ichimondou_js.py",
