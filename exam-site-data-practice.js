@@ -16,7 +16,7 @@ const PRACTICE_QUESTIONS = {
       ],
       "ans": 0,
       "exp": "テンプレ移行用の最小行です。本番の実践演習は eisei1-master-data.js を参照してください。",
-      "level": 1
+      "publicPath": "q/practice/p001/index.html"
     }
   ],
   "2": [],
