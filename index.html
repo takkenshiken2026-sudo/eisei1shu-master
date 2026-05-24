@@ -224,6 +224,9 @@ body{font-family:var(--font);font-size:var(--fs-body);background:#f0f0f1;color:v
 
 /* ===== APP LAYOUT ===== */
 #app{display:block;min-height:100vh}
+.spa-data-loading{position:fixed;inset:0;z-index:500;display:flex;align-items:center;justify-content:center;background:var(--bg);color:var(--text2);font-size:14px}
+.spa-data-loading[hidden]{display:none}
+.spa-data-loading-text{margin:0;font-weight:500}
 /* ---- top header ---- */
 .topnav{position:sticky;top:0;z-index:30;background:#ffffff;border-bottom:1px solid var(--border)}
 .topnav-inner{max-width:1080px;margin:0 auto;padding:0 20px;height:54px;display:flex;align-items:center;gap:0}
@@ -1345,8 +1348,13 @@ body.is-solving .site-footer{display:none!important}
 </script>
   <link rel="preload" href="site-theme.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="site-theme.css"></noscript>
+<script>window.__SPA_ASSET_V__="";</script>
 </head>
 <body>
+
+<div id="spa-data-loading" class="spa-data-loading" role="status" aria-live="polite" aria-busy="true">
+  <p class="spa-data-loading-text">学習データを読み込んでいます…</p>
+</div>
 
 <!-- AUTH -->
 <div id="toast-wrap"></div>
@@ -1992,13 +2000,27 @@ function applyCsvImportedQuestions() {
   YEARS = Array.from(yset).sort(function (a, b) { return b - a; });
 }
 </script>
-<script src="eisei1-data-glossary.js"></script>
-<script src="eisei1-data-original.js"></script>
-<script src="eisei1-master-data.js"></script>
-<script src="eisei1-data-ichimon.js"></script>
+<script>
+window.__spaDataReady=(function(){
+  var file='eisei1-data-bundle.js';
+  var ver=window.__SPA_ASSET_V__||'';
+  function src(){return ver?file+'?v='+encodeURIComponent(ver):file;}
+  return new Promise(function(resolve,reject){
+    function load(){
+      var s=document.createElement('script');
+      s.src=src();
+      s.onload=function(){resolve();};
+      s.onerror=function(){reject(new Error('failed: '+s.src));};
+      document.head.appendChild(s);
+    }
+    if('requestIdleCallback' in window) requestIdleCallback(load,{timeout:2500});
+    else setTimeout(load,1);
+  });
+})();
+</script>
 <script>
 
-(function enrichGlossaryPlaceholderDesc(){
+function enrichGlossaryPlaceholderDesc(){
   const PLACEHOLDER_SNIPPET='試験の頻出論点です。定義・比較表・具体例を公開サイトの解説記事で詳しく確認できます。';
   const CAT_HINT={
     lawH:'関係法令（有害業務）：粉じん・有機溶剤・特定化学物質・放射線・鉛・酸欠など、特化則と選任・記録の対応づけを整理します。',
@@ -2028,7 +2050,7 @@ function applyCsvImportedQuestions() {
       '※カードを開くと、データがある項目は表・比較・フローなどの図解が表示されます。'
     ].join('\n');
   });
-})();
+}
 
 // ===== GLOSSARY UI（既定: eisei1-data-glossary.js。成功時は docs/glossary-terms-checklist.csv で上書き）=====
 let glosActiveCat = 'all';
@@ -3040,7 +3062,10 @@ function buildYearHistoryHTML(q){
 
 // ===== STATE =====
 let currentUser = null, db = {};
-let quizState = {mode:'past',fields:FIELDS.map(f=>f.id),years:[...YEARS],count:10,order:'seq',queue:[],idx:0,startTime:0,sessionResults:[],scoreReplayMode:false};
+let quizState = {mode:'past',fields:FIELDS.map(f=>f.id),years:[],count:10,order:'seq',queue:[],idx:0,startTime:0,sessionResults:[],scoreReplayMode:false};
+function syncQuizStateYearsFromData(){
+  if(typeof YEARS!=='undefined'&&Array.isArray(YEARS)&&YEARS.length) quizState.years=[...YEARS];
+}
 
 // Storage: localStorage (works in real browsers / GitHub Pages)
 var _memStore = {};
@@ -5145,8 +5170,10 @@ function showNextBtn(show, cb, label){
     const isMobile = window.matchMedia && window.matchMedia('(max-width: 700px)').matches;
     el.textContent = isMobile ? (label || '次へ →') : `${label || '次へ →'}  Enter`;
     el.classList.add('show');
-    // re-trigger animation
-    el.style.animation='none'; el.offsetHeight; el.style.animation='';
+    el.style.animation='none';
+    requestAnimationFrame(function(){
+      requestAnimationFrame(function(){ el.style.animation=''; });
+    });
   } else {
     el.classList.remove('show');
     _nextFloatCallback = null;
@@ -6864,16 +6891,32 @@ function openPremium(){document.getElementById('premium-modal').classList.add('o
 function closePremium(){document.getElementById('premium-modal').classList.remove('open')}
 function mockUpgrade(){const u=getUserData();u.plan='premium';saveUser(u);closePremium();gotoPage('dash')}
 
-loadDB();
-// ゲストとしてまず入場
-(function(){
+function setSpaDataLoadingVisible(show){
+  const el=document.getElementById('spa-data-loading');
+  if(!el) return;
+  if(show){el.removeAttribute('hidden');el.setAttribute('aria-busy','true');}
+  else{el.setAttribute('hidden','');el.setAttribute('aria-busy','false');}
+}
+function bootEisei1SpaAfterData(){
+  enrichGlossaryPlaceholderDesc();
+  syncQuizStateYearsFromData();
+  loadDB();
   const guestEmail='__guest__';
-  if(!db[guestEmail]){db[guestEmail]={name:'ゲスト',plan:'free',answers:{},sessions:[],streak:0};saveDB();}
+  if(!db[guestEmail]){db[guestEmail]={name:'ゲスト',plan:'free',answers:{},sessions:[],bookmarks:{},streak:0};saveDB();}
   currentUser={email:guestEmail,name:'ゲスト'};
   enterApp();
   renderOrigPage();
   gotoPage('quiz-start');
-})();
+}
+setSpaDataLoadingVisible(true);
+window.__spaDataReady.then(function(){
+  setSpaDataLoadingVisible(false);
+  bootEisei1SpaAfterData();
+}).catch(function(err){
+  console.error('[spa-data]',err);
+  setSpaDataLoadingVisible(false);
+  bootEisei1SpaAfterData();
+});
 // 用語ページが表示されたまま JS の初期化順で一覧が描画されなかった場合の再試行
 window.addEventListener('load', function(){
   var gp = document.getElementById('page-glossary');
@@ -7057,16 +7100,24 @@ window.addEventListener('load', function(){
     el.textContent=box.textContent;
     el.style.display='block';
   });
+  var tipMoveRaf=0, tipMoveEvt=null;
   document.addEventListener('mousemove',function(e){
     if(el.style.display==='none') return;
-    const x=e.clientX, y=e.clientY;
-    const w=el.offsetWidth, h=el.offsetHeight;
-    const vw=window.innerWidth, vh=window.innerHeight;
-    let left=x+12, top=y-h-10;
-    if(left+w>vw-8) left=x-w-12;
-    if(top<8) top=y+16;
-    el.style.left=left+'px';
-    el.style.top=top+'px';
+    tipMoveEvt=e;
+    if(tipMoveRaf) return;
+    tipMoveRaf=requestAnimationFrame(function(){
+      tipMoveRaf=0;
+      const ev=tipMoveEvt;
+      if(!ev||el.style.display==='none') return;
+      const x=ev.clientX, y=ev.clientY;
+      const w=el.offsetWidth, h=el.offsetHeight;
+      const vw=window.innerWidth, vh=window.innerHeight;
+      let left=x+12, top=y-h-10;
+      if(left+w>vw-8) left=x-w-12;
+      if(top<8) top=y+16;
+      el.style.left=left+'px';
+      el.style.top=top+'px';
+    });
   });
   document.addEventListener('mouseout',function(e){
     if(e.target.closest('.tip-icon')) el.style.display='none';

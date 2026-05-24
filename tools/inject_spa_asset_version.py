@@ -15,6 +15,9 @@ ASSET_RE = re.compile(
     r"""(?P<attr>href|src)=(?P<q>["'])(?P<path>(?:/)?(?:eisei1-|site-(?:theme|analytics|pages|config|q-index|terms-index))[^"'?]+\.(?:js|css))(?P=q)""",
     re.IGNORECASE,
 )
+SPA_ASSET_V_RE = re.compile(
+    r'window\.__SPA_ASSET_V__\s*=\s*""',
+)
 
 
 def version_from_env() -> str:
@@ -34,6 +37,10 @@ def inject(text: str, version: str) -> str:
     return ASSET_RE.sub(repl, text)
 
 
+def inject_spa_asset_version_var(text: str, version: str) -> str:
+    return SPA_ASSET_V_RE.sub(f'window.__SPA_ASSET_V__="{version}"', text, count=1)
+
+
 def main() -> int:
     target = Path(os.environ.get("TARGET", str(DEFAULT_TARGET)))
     if not target.is_file():
@@ -41,7 +48,7 @@ def main() -> int:
         return 1
     ver = version_from_env()
     original = target.read_text(encoding="utf-8")
-    updated = inject(original, ver)
+    updated = inject_spa_asset_version_var(inject(original, ver), ver)
     if updated != original:
         target.write_text(updated, encoding="utf-8")
         print(f"inject_spa_asset_version.py: {target.name} に ?v={ver} を付与しました。")

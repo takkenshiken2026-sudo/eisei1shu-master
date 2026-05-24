@@ -40,8 +40,11 @@ for d in articles q terms; do
   fi
 done
 # サイト固有 SPA データ（eisei1 / eisei2 など）。無ければスキップ。
+if [[ -f "$ROOT/eisei1-data-bundle.js" ]]; then
+  cp "$ROOT/eisei1-data-bundle.js" "$OUT/"
+fi
 for f in eisei1-*.js eisei2-*.js; do
-  if [[ -f "$ROOT/$f" ]]; then
+  if [[ -f "$ROOT/$f" ]] && [[ "$f" != "eisei1-data-bundle.js" ]]; then
     cp "$ROOT/$f" "$OUT/"
   fi
 done

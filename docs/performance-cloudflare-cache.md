@@ -29,6 +29,7 @@ GitHub Pages の静的ファイルは **Cache-Control: max-age=600（10分）** 
 
 `index.html` では次を実施済みです。
 
-- 大容量データ JS・Supabase を **`defer`**（`</body>` 直前）
-- アプリ本体は **`DOMContentLoaded`** 後に起動
+- 用語・過去問・一問一答データは **`eisei1-data-bundle.js` 1本**（`tools/bundle_spa_data_js.py` で生成）
+- バンドルは **`requestIdleCallback` 後**に読み込み、読み込み完了後にアプリ起動（初回描画をブロックしない）
+- Supabase は **ログイン・セッション復元時のみ**遅延読み込み
 - `site-theme.css` は **preload + onload** で非ブロッキング読み込み
