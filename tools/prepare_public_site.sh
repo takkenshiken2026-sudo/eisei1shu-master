@@ -58,5 +58,8 @@ if [[ -f "$ROOT/docs/glossary-article-slugs.json" ]]; then
   mkdir -p "$OUT/docs"
   cp "$ROOT/docs/glossary-article-slugs.json" "$OUT/docs/"
 fi
+if [[ -f "$OUT/index.html" ]] && [[ -f "$ROOT/tools/inject_spa_asset_version.py" ]]; then
+  TARGET="$OUT/index.html" python3 "$ROOT/tools/inject_spa_asset_version.py"
+fi
 n="$(find "$OUT" -type f | wc -l | tr -d ' ')"
 echo "prepare_public_site.sh: $OUT に $n ファイルを配置しました。"
