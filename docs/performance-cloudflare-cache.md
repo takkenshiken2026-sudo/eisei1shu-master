@@ -2,6 +2,13 @@
 
 GitHub Pages の静的ファイルは **Cache-Control: max-age=600（10分）** が既定で、リポジトリからヘッダーを変更できません。PageSpeed の「効率的なキャッシュ保存期間を使用する」は、主にこの制限が原因です。
 
+**現状:** `eisei1shu-master.jp` はムームードメイン → GitHub Pages 直結で、**Cloudflare は未使用**です。キャッシュ TTL を改善するには DNS を Cloudflare 経由にする必要があります。
+
+**手順書（DNS 切替〜ルール設定）:** [cloudflare-setup-eisei1shu-master.md](./cloudflare-setup-eisei1shu-master.md)
+
+**確認コマンド:** `bash tools/verify_cache_headers.sh`  
+**API でルール適用:** `python3 tools/cloudflare_apply_cache_rules.py`（`CLOUDFLARE_API_TOKEN` 必須）
+
 ## 推奨：Cloudflare プロキシ（オレンジ雲）でエッジキャッシュ
 
 `eisei1shu-master.jp` を Cloudflare 経由で GitHub Pages に向けている場合、**キャッシュルール**で JS/CSS のブラウザ TTL を延ばします。
@@ -19,7 +26,7 @@ GitHub Pages の静的ファイルは **Cache-Control: max-age=600（10分）** 
 
 ## デプロイ時の `?v=`（キャッシュ更新）
 
-`.github/workflows/deploy-pages.yml` の `inject_spa_asset_version.py` が、ビルドの Git SHA 短縮版を `eisei1-*.js` / `site-theme.css` 等の URL に付与します。Cloudflare で長期キャッシュしても、デプロイごとに URL が変わるため古いバンドルが残りにくくなります。
+`prepare_public_site.sh` 実行時の `inject_spa_asset_version.py` が、ビルドの Git SHA 短縮版を `eisei1-*.js` / `site-theme.css` 等の URL に付与します。Cloudflare で長期キャッシュしても、デプロイごとに URL が変わるため古いバンドルが残りにくくなります。
 
 ## Cloudflare Pages に移行する場合
 
