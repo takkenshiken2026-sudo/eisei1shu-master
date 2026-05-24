@@ -564,7 +564,7 @@ def faq_section_html(items: list[dict[str, str]]) -> str:
 
 def custom_faq_items(entry: dict, fallback: list[dict[str, str]]) -> list[dict[str, str]]:
     items: list[dict[str, str]] = []
-    for idx in range(1, 4):
+    for idx in range(1, 5):
         q = norm(entry.get(f"faq_{idx}_question"))
         a = norm(entry.get(f"faq_{idx}_answer"))
         if q and a:
@@ -604,6 +604,7 @@ def build_term_html(
     exam_points = norm(entry.get("exam_points"))
     common_mistakes = norm(entry.get("common_mistakes"))
     memory_tip = norm(entry.get("memory_tip"))
+    summary_body = norm(entry.get("summary_body"))
     example_question = norm(entry.get("example_question"))
     example_answer = norm(entry.get("example_answer"))
 
@@ -694,7 +695,14 @@ def build_term_html(
         points_html = '<ol class="term-point-list">' + "".join(f"<li>{html.escape(p)}</li>" for p in points) + "</ol>"
     detail_html = text_paragraphs(term_detail_body or definition)
     mistakes_html = text_paragraphs(common_mistakes)
-    memory_html = f"<blockquote><p>{html.escape(memory_tip)}</p></blockquote>" if memory_tip else ""
+    if memory_tip:
+        mem_paras = [p.strip() for p in re.split(r"\n{2,}|\n", memory_tip.strip()) if p.strip()]
+        memory_html = "".join(
+            f"<p>{html.escape(p)}</p>" for p in mem_paras
+        )
+    else:
+        memory_html = ""
+    summary_html = text_paragraphs(summary_body) if summary_body else text_paragraphs(short_def)
     example_html = ""
     if example_question or example_answer:
         example_html = (
@@ -773,7 +781,7 @@ def build_term_html(
     content_sections: list[str] = []
     body_toc_items: list[tuple[str, str]] = []
     for sec_id, label, body_html in [
-        ("summary", "まず押さえる要点", text_paragraphs(short_def)),
+        ("summary", "まず押さえる要点", summary_html),
         ("points", "試験で押さえるポイント", points_html),
         ("definition", "定義と基本理解", detail_html),
         ("legal", "法令・根拠", legal_basis_html(legal)),
@@ -1264,6 +1272,7 @@ def main() -> int:
                 "exam_points": norm(row.get("exam_points")),
                 "common_mistakes": norm(row.get("common_mistakes")),
                 "memory_tip": norm(row.get("memory_tip")),
+                "summary_body": norm(row.get("summary_body")),
                 "example_question": norm(row.get("example_question")),
                 "example_answer": norm(row.get("example_answer")),
                 "faq_1_question": norm(row.get("faq_1_question")),
@@ -1272,6 +1281,8 @@ def main() -> int:
                 "faq_2_answer": norm(row.get("faq_2_answer")),
                 "faq_3_question": norm(row.get("faq_3_question")),
                 "faq_3_answer": norm(row.get("faq_3_answer")),
+                "faq_4_question": norm(row.get("faq_4_question")),
+                "faq_4_answer": norm(row.get("faq_4_answer")),
                 "slug_file": slug_file,
                 "field_hub": field_hub_slug(norm(row.get("category"))),
             }

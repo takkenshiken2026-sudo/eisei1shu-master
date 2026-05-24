@@ -372,7 +372,7 @@ class Validator:
                     label, url = [x.strip() for x in item.split("|", 1)]
                     if not label or not url.startswith(("http://", "https://")):
                         self.warn(path, idx, f"primary_sources は ラベル|URL 形式を推奨します: {item}")
-            for n in range(1, 4):
+            for n in range(1, 5):
                 q = self.norm(row.get(f"faq_{n}_question"))
                 a = self.norm(row.get(f"faq_{n}_answer"))
                 if bool(q) != bool(a):

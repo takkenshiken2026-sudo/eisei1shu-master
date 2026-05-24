@@ -46,6 +46,7 @@ for _slug, _patch in ENRICHMENTS.items():
             term=_item.get("term") or _slug,
             category=_item.get("category") or "",
             core=_item.get("core") or "",
+            definition=_patch.get("definition") or _item.get("definition") or "",
         )
 
 

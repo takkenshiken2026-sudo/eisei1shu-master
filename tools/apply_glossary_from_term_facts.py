@@ -19,23 +19,16 @@ GLOSSARY_CSV = ROOT / "data" / "glossary_terms.csv"
 
 sys.path.insert(0, str(ROOT / "tools"))
 from glossary_body_pad import pad_term_detail_body  # noqa: E402
+from glossary_derive_content import (  # noqa: E402
+    derive_exam_points,
+    derive_lead,
+    derive_mistakes,
+    derive_memory_tip,
+)
 from glossary_enrich_a_rank_content import _ep, _tbl  # noqa: E402
 from rewrite_with_numbers import TERM_FACTS  # noqa: E402
 
-# slug -> TERM_FACTS のキー（用語名が一致しない場合）
-SLUG_TO_FACT: dict[str, str] = {
-    "sagyo-kankyo-sokutei": "作業環境測定（義務・頻度・評価・記録）",
-    "eisei-iinkai": "衛生委員会／安全衛生委員会",
-    "rodo-anzen-eisei-ho": "労働安全衛生法（総則・事業者の義務）",
-    "anzen-eisei-kyoiku": "安全衛生教育／特別教育／職長教育／技能講習",
-    "risk-assessment": "リスクアセスメント（5ステップ）",
-    "soonnsei-nacho": "騒音性難聴（毛細胞・4000Hz）",
-    "anzen-eisei-kanri-taisei": "安全衛生管理体制（総括／衛生管理者／産業医）",
-    "choujikan-rodo-mensetu": "長時間労働者面接指導（月80時間・本人申出）",
-    "rodosha-teigi": "労働者（定義）",
-    "denri-hoshasen": "電離放射線（外部・内部被ばく・線量）",
-    "kyokuho-haikisochi": "局所排気装置（形式・制御速度・性能）",
-}
+from glossary_fact_lookup import SLUG_TO_FACT, resolve_fact_key  # noqa: E402
 
 EXAM_BY_SLUG: dict[str, str] = {
     "sagyo-kankyo-sokutei": _ep(
@@ -188,24 +181,19 @@ def build_patch(row: dict, fact_key: str) -> dict[str, str]:
     category = (row.get("category") or "").strip()
     table = TABLE_BY_SLUG.get(slug, "")
     body = _body_from_fact(fact, table)
-    body = pad_term_detail_body(body, term=term, category=category, core=fact_key)
-    lead = f"{term}は第一種試験の頻出テーマです。数値・頻度・保存年限・手続の違いが選択肢で入れ替えられます。"
-    exam = EXAM_BY_SLUG.get(slug) or _ep(
-        f"「{term}は試験非出題」→ 誤り",
-        f"「定義だけで十分」→ 数値・手続のセット出題",
-        f"「関連制度と無関係」→ 関連用語と対比が必要",
-        f"「努力義務のみ」→ 義務・記録の有無を確認",
-        f"「保存年限は1年」→ 法令ごとに異なる",
+    body = pad_term_detail_body(
+        body, term=term, category=category, core=fact_key, definition=fact
     )
+    lead = derive_lead(term, fact)
+    category = (row.get("category") or "").strip()
+    exam = EXAM_BY_SLUG.get(slug) or derive_exam_points(term, fact, category)
     return {
         "definition": fact,
         "article_lead": lead,
         "term_detail_body": body,
         "exam_points": exam,
-        "common_mistakes": (
-            f"「{term}」は単語の意味だけでなく、誰が・いつ・何年保存するかまで"
-            "セットで問われます。関連用語と比較表を自作すると定着しやすくなります。"
-        ),
+        "common_mistakes": derive_mistakes(term, fact, category),
+        "memory_tip": derive_memory_tip(term, fact),
         "explanation": exam,
     }
 
@@ -222,7 +210,7 @@ def main() -> int:
     updated = 0
     for row in rows:
         slug = (row.get("slug") or "").strip()
-        fact_key = SLUG_TO_FACT.get(slug) or (row.get("term") or "").strip()
+        fact_key = resolve_fact_key((row.get("term") or "").strip(), slug) or ""
         if fact_key not in TERM_FACTS:
             continue
         if not _is_placeholder(row):
