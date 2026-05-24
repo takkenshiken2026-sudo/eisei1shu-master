@@ -5,7 +5,6 @@
 <!-- GA4: 空のままなら site-analytics.js の既定測定ID。デプロイ時に secrets.GA4_MEASUREMENT_ID で上書き -->
 <script>window.__GA4_MEASUREMENT_ID__="";</script>
 <!--SITE_VERIFICATION_META_INJECT-->
-<script defer src="/site-analytics.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>一衛マスター｜第一種衛生管理者試験 過去問・模擬試験・用語解説で合格を目指す無料学習サイト</title>
 
@@ -86,10 +85,9 @@
 
 <meta name="format-detection" content="telephone=no">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;display=swap" media="print" onload="this.media='all';this.onload=null;">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;display=swap"></noscript>
 <style>
 :root {
   --bg:    #ffffff;
@@ -2009,6 +2007,8 @@ window.__spaDataReady=(function(){
     function load(){
       var s=document.createElement('script');
       s.src=src();
+      s.async=false;
+      if('fetchPriority' in s) s.fetchPriority='low';
       s.onload=function(){resolve();};
       s.onerror=function(){reject(new Error('failed: '+s.src));};
       document.head.appendChild(s);
@@ -4455,7 +4455,9 @@ function renderDash(){
 }
 function renderTrendChart(svgId,sessions){
   const svg=document.getElementById(svgId); if(!svg)return;
-  const W=svg.parentElement.offsetWidth||700,H=220;
+  const parent=svg.parentElement;
+  const draw=function(){
+  const W=parent?(parent.clientWidth||700):700,H=220;
   svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
   svg.setAttribute('preserveAspectRatio','none');
   if(!sessions.length){svg.innerHTML=`<text x="${W/2}" y="${H/2}" text-anchor="middle" fill="var(--text3)" font-size="14" font-family="var(--font)">データなし</text>`;return}
@@ -4491,6 +4493,8 @@ function renderTrendChart(svgId,sessions){
   ${pts.map(p=>`<circle cx="${p.x}" cy="${p.y}" r="4" fill="#fff" stroke="#333" stroke-width="2"/>`).join('')}
   ${dataLabels}
   ${dateLabels}`;
+  };
+  requestAnimationFrame(draw);
 }
 
 // ===== QUIZ START =====
@@ -6927,25 +6931,54 @@ window.addEventListener('load', function(){
     renderGlossary();
   }
 });
-// Supabaseセッションがあればログイン済みユーザーに切り替え（supabase-js は必要時のみ遅延読み込み）
-(async function(){
-  const sb=await ensureSupabaseClient();
-  if(!sb) return;
-  const {data:{session}}=await sb.auth.getSession();
-  const hash = location.hash || '';
-  if(hash.includes('type=recovery') || hash.includes('access_token=')){
-    showPasswordResetForm();
+// Supabaseセッション復元（supabase-js はログイン操作またはアイドル時のみ読み込み）
+function restoreSupabaseSessionIfAny(){
+  (async function(){
+    const sb=await ensureSupabaseClient();
+    if(!sb) return;
+    const {data:{session}}=await sb.auth.getSession();
+    const hash=location.hash||'';
+    if(hash.includes('type=recovery')||hash.includes('access_token=')){
+      showPasswordResetForm();
+    }
+    if(session){
+      const e=session.user.email;
+      const u=normalizeUserData(db[e]||{name:e,plan:'free',answers:{},sessions:[],bookmarks:{},streak:0});
+      if(!db[e]){db[e]=u;saveDB();}
+      currentUser={id:session.user.id,email:e,name:u.name};
+      await loadAnswersFromSupabase();
+      await loadMergeUserLearningSyncFromSupabase();
+      await syncUserLearningToSupabaseNow();
+      enterApp();
+    }
+  })();
+}
+(function scheduleSupabaseSessionRestore(){
+  const hash=location.hash||'';
+  const urgent=hash.includes('type=recovery')||hash.includes('access_token=');
+  if(urgent){ restoreSupabaseSessionIfAny(); return; }
+  const run=()=>restoreSupabaseSessionIfAny();
+  if('requestIdleCallback' in window) requestIdleCallback(run,{timeout:8000});
+  else setTimeout(run,4000);
+})();
+// GA4（測定IDがあるときだけアイドル後に読み込み）
+(function scheduleSiteAnalytics(){
+  function start(){
+    var id='';
+    try{
+      if(window.__GA4_MEASUREMENT_ID__!=null) id=String(window.__GA4_MEASUREMENT_ID__).trim();
+      if(!id&&window.SITE_CONFIG&&window.SITE_CONFIG.ga4MeasurementId!=null) id=String(window.SITE_CONFIG.ga4MeasurementId).trim();
+    }catch(_e){}
+    if(!/^G-[A-Za-z0-9]+$/.test(id)) return;
+    var s=document.createElement('script');
+    var v=window.__SPA_ASSET_V__||'';
+    s.src='/site-analytics.js'+(v?'?v='+encodeURIComponent(v):'');
+    s.defer=true;
+    if('fetchPriority' in s) s.fetchPriority='low';
+    document.head.appendChild(s);
   }
-  if(session){
-    const e=session.user.email;
-    const u=normalizeUserData(db[e]||{name:e,plan:'free',answers:{},sessions:[],bookmarks:{},streak:0});
-    if(!db[e]){db[e]=u;saveDB();}
-    currentUser={id:session.user.id,email:e,name:u.name};
-    await loadAnswersFromSupabase();
-    await loadMergeUserLearningSyncFromSupabase();
-    await syncUserLearningToSupabaseNow();
-    enterApp();
-  }
+  if('requestIdleCallback' in window) requestIdleCallback(start,{timeout:6000});
+  else window.addEventListener('load',function(){ setTimeout(start,1); });
 })();
 // ===== EXAM COUNTDOWN =====
 (function(){
