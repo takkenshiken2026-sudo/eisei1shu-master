@@ -28,6 +28,7 @@ if str(ROOT) not in sys.path:
 from tools.html_footer import (
     ROBOTS_INDEX_FOLLOW,
     breadcrumb_html,
+    shell_body_class,
     site_page_footer,
     site_page_header,
     site_page_wrap_close,
@@ -197,7 +198,7 @@ def split_semicolon(s: str) -> list[str]:
     return [x.strip() for x in (s or "").split(";") if x.strip()]
 
 
-TERMS_INDEX_CSS_VER = "20260522-terms-type"
+TERMS_INDEX_CSS_VER = "20260525-responsive-h1"
 TERMS_INDEX_JS_VER = "20260521-terms-snippet"
 TERMS_INDEX_SEARCH_PLACEHOLDER = "例：ストレスチェック、ラインケア、うつ病…"
 
@@ -630,15 +631,7 @@ def build_term_html(
         paras = [p.strip() for p in re.split(r"\n{2,}", body.strip()) if p.strip()]
         if not paras:
             paras = [body.strip()]
-        chunks: list[str] = []
-        for p in paras:
-            if p.lstrip().startswith("<table"):
-                chunks.append(p)
-            else:
-                chunks.append(
-                    f"<p>{html.escape(p).replace(chr(10), '<br>')}</p>"
-                )
-        return "\n".join(chunks)
+        return "\n".join(f"<p>{html.escape(p).replace(chr(10), '<br>')}</p>" for p in paras)
 
     def article_section(sec_id: str, label: str, body_html: str, number: int | None = None) -> str:
         if not body_html.strip():
@@ -900,7 +893,7 @@ def build_term_html(
 <link rel="stylesheet" href="{html.escape(css_href)}">
 <link rel="stylesheet" href="{html.escape(theme_href)}">
 </head>
-<body class="term-article-page">
+<body class="{shell_body_class('term-article-page')}">
 {site_page_wrap_open()}
 {page_header}
 <main class="seo-article-main">
@@ -1000,7 +993,7 @@ def build_field_hub_html(
 <link rel="stylesheet" href="{html.escape(rel_css(rel_path))}">
 <link rel="stylesheet" href="{html.escape(rel_theme_css(rel_path))}">
 </head>
-<body class="terms-field-hub-page">
+<body class="{shell_body_class('terms-field-hub-page')}">
 {site_page_wrap_open()}
 {page_header}
 <main class="site-page-main terms-idx-main">
@@ -1122,12 +1115,12 @@ def build_terms_index(entries: list[dict], base_url: str) -> str:
 <link rel="stylesheet" href="../site-theme.css">
 <script>document.documentElement.classList.add("js");</script>
 </head>
-<body class="terms-index-page" data-terms-total="{n_terms}">
+<body class="{shell_body_class('terms-index-page')}" data-terms-total="{n_terms}">
 {site_page_wrap_open()}
 {terms_header}
 <main class="site-page-main">
   {page_breadcrumb}
-  <h1 class="terms-idx-page-title">用語解説</h1>
+  <h1>用語解説</h1>
   <p class="site-page-lead">{html.escape(lead)}</p>
   <section class="terms-index-panel" aria-labelledby="terms-index-heading">
     <div class="terms-index-head">
@@ -1135,13 +1128,15 @@ def build_terms_index(entries: list[dict], base_url: str) -> str:
         <h2 id="terms-index-heading">用語一覧</h2>
         <p>全{n_terms}語・{n_cats}分野。キーワード検索と分野で絞り込めます。</p>
       </div>
-      <span id="terms-idx-hit" class="terms-index-hit" aria-live="polite">{n_terms} / {n_terms} 語</span>
     </div>
     <div class="terms-index-tools">
+      <div class="terms-index-tools-primary">
       <label class="terms-index-search" for="terms-idx-q">
-        <span>用語検索</span>
+        <span class="u-visually-hidden">用語検索</span>
         <input id="terms-idx-q" type="search" inputmode="search" autocomplete="off" placeholder="{html.escape(TERMS_INDEX_SEARCH_PLACEHOLDER, quote=True)}">
       </label>
+      <span id="terms-idx-hit" class="terms-index-hit" aria-live="polite">{n_terms} / {n_terms} 語</span>
+      </div>
       <div class="terms-idx-chips" aria-label="分野フィルタ">
 {chips_html}
       </div>
@@ -1225,8 +1220,8 @@ def sync_index_glossary_slug_map(entries: list[dict]) -> None:
 def load_glossary_rows() -> list[dict]:
     if not GLOSSARY_CSV.is_file():
         raise FileNotFoundError(str(GLOSSARY_CSV))
-    with GLOSSARY_CSV.open(encoding="utf-8-sig", newline="") as f:
-        return list(csv.DictReader(f))
+    text = GLOSSARY_CSV.read_text(encoding="utf-8-sig")
+    return list(csv.DictReader(text.splitlines()))
 
 
 def main() -> int:

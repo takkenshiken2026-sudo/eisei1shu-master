@@ -6,7 +6,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ABO式血液型は、白血球による血液型分類の一つで、A型血液の血清は抗A抗体をもつ。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問38-選択肢5/index.html"
   },
   {
     "id": "平成30年_4月_問35_選択肢5",
@@ -14,7 +14,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ABO式血液型は、赤血球による血液型分類の一つで、A型血液の血清は抗B抗体をもつ。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問35-選択肢5/index.html"
   },
   {
     "id": "令和2年_4月_問41_選択肢5",
@@ -22,7 +22,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ABO式血液型は、赤血球の血液型分類の一つで、A型の血清は抗B抗体をもつ。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問41-選択肢5/index.html"
   },
   {
     "id": "令和2年_4月_問37_選択肢5",
@@ -30,7 +30,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "エネルギー代謝率の値は、体格、性別などの個人差による影響は少なく、同じ作業であれば、ほぼ同じ値となる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問37-選択肢5/index.html"
   },
   {
     "id": "令和4年_4月_問43_選択肢4",
@@ -38,7 +38,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "エネルギー代謝率は、一定時間中に体内で消費された酸素と排出された二酸化炭素の容積比である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「エネルギー代謝率は、動的筋作業の強度を表すことができるが、静的筋作業には適用できない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問43-選択肢4/index.html"
   },
   {
     "id": "令和2年_4月_問37_選択肢4",
@@ -46,7 +46,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "エネルギー代謝率は、一定時間中に体内で消費された酸素と排出された二酸化炭素の容積比で表される。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「エネルギー代謝率の値は、体格、性別などの個人差による影響は少なく、同じ作業であれば、ほぼ同じ値となる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問37-選択肢4/index.html"
   },
   {
     "id": "令和3年_10月_問40_選択肢5",
@@ -54,7 +54,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "エネルギー代謝率は、動的筋作業の強度を表すことができるが、精神的作業や静的筋作業には適用できない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問40-選択肢5/index.html"
   },
   {
     "id": "令和4年_4月_問43_選択肢5",
@@ -62,7 +62,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "エネルギー代謝率は、動的筋作業の強度を表すことができるが、静的筋作業には適用できない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問43-選択肢5/index.html"
   },
   {
     "id": "令和3年_4月_問43_選択肢5",
@@ -70,7 +70,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "エネルギー代謝率は、生理的負担だけでなく、精神的及び感覚的な側面をも考慮した作業強度を表す指標としても用いられる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「基礎代謝は、心臓の拍動、呼吸運動、体温保持などに必要な代謝で、基礎代謝量は、覚醒、横臥が、安静時の測定値で表される。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問43-選択肢5/index.html"
   },
   {
     "id": "令和元年_10月_問43_選択肢5",
@@ -78,7 +78,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "エネルギー代謝率は、生理的負担だけでなく、精神的作業や静的筋作業の強度を表す指標としても用いられる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「基礎代謝は、心臓の拍動、呼吸運動、体温保持などに必要な代謝で、基礎代謝量は、覚醒・横臥が・安静時の測定値で表される。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問43-選択肢5/index.html"
   },
   {
     "id": "令和3年_10月_問44_選択肢3",
@@ -86,7 +86,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "コルチゾールは、血糖値の調節などの働きをするホルモンで、通常、その分泌量は明け方から増加し始め、起床前後で最大となる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問44-選択肢3/index.html"
   },
   {
     "id": "令和4年_10月_問43_選択肢1",
@@ -94,7 +94,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "コレステロールを合成する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問43-選択肢1/index.html"
   },
   {
     "id": "平成29年_10月_問43_選択肢3",
@@ -102,7 +102,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ストレスにより、発汗、手足の震えなど自律神経系の障害が生じることがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問43-選択肢3/index.html"
   },
   {
     "id": "令和6年_4月_問43_選択肢5",
@@ -110,7 +110,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ストレスにより、高血圧症、狭心症、十二指腸潰瘍などの疾患が生じることがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問43-選択肢5/index.html"
   },
   {
     "id": "令和6年_4月_問43_選択肢2",
@@ -118,7 +118,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ストレスに伴う心身の反応には、ノルアドレナリン、アドレナリンなどのカテコールアミンや副腎皮質ホルモンが深く関与している。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問43-選択肢2/index.html"
   },
   {
     "id": "令和4年_10月_問35_選択肢4",
@@ -126,7 +126,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "チェーンストークス呼吸とは、肺機能の低下により呼吸数が増加した状態をいい、喫煙が原因となることが多い。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「成人の呼吸数は、通常、1分間に16〜20回であるが、食事、入浴、発熱などによって増加する。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問35-選択肢4/index.html"
   },
   {
     "id": "令和6年_10月_問44_選択肢1",
@@ -134,7 +134,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ネフロン(腎単位)は、尿を生成する単位構造で、1個の腎小体とそれに続く1本の尿細管から成り、1個の腎臓中に約100万個ある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問44-選択肢1/index.html"
   },
   {
     "id": "令和元年_4月_問41_選択肢2",
@@ -142,7 +142,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ヒトの眼は、硝子体の厚さを変えることにより焦点距離を調節して網膜の上に像を結ぶようにしている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問41-選択肢2/index.html"
   },
   {
     "id": "平成30年_10月_問41_選択肢5",
@@ -150,7 +150,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ヒトの眼をカメラに例えると、虹彩は、しぼりの働きをする。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問41-選択肢5/index.html"
   },
   {
     "id": "令和4年_10月_問43_選択肢3",
@@ -158,7 +158,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ビリルビンを分解する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問43-選択肢3/index.html"
   },
   {
     "id": "令和6年_10月_問38_選択肢1",
@@ -166,7 +166,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ブドウ糖とアミノ酸は、小腸の絨毛の毛細血管に吸収され、門脈を通って肝臓に運ばれる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問38-選択肢1/index.html"
   },
   {
     "id": "令和3年_10月_問37_選択肢4",
@@ -174,7 +174,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ペプシノーゲンは、胃酸によってペプシンという消化酵素になり、蛋白質を分解する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問37-選択肢4/index.html"
   },
   {
     "id": "令和元年_10月_問38_選択肢4",
@@ -182,7 +182,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ペプシノーゲンは、胃酸によってペプシンという消化酵素になり、蛋白質を消化する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問38-選択肢4/index.html"
   },
   {
     "id": "令和6年_10月_問42_選択肢5",
@@ -190,7 +190,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "メッツ(METs)は、身体活動の強度を示す指標で、座位安静時の酸素消費量に対する運動時の酸素消費量で表される。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問42-選択肢5/index.html"
   },
   {
     "id": "令和3年_10月_問44_選択肢5",
@@ -198,7 +198,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "メラトニンは、睡眠に関与しているホルモンである。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問44-選択肢5/index.html"
   },
   {
     "id": "令和6年_10月_問43_選択肢5",
@@ -206,7 +206,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "リンパ球には、血液中の抗体を作るTリンパ球と、細胞性免疫の作用を持つBリンパ球がある。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問43-選択肢5/index.html"
   },
   {
     "id": "令和元年_4月_問38_選択肢4",
@@ -214,7 +214,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "リンパ球は、白血球の約30%を占め、Tリンパ球やBリンパ球などの種類があり、免疫反応に関与している。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問38-選択肢4/index.html"
   },
   {
     "id": "令和3年_10月_問44_選択肢4",
@@ -222,7 +222,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "レム睡眠は、安らかな眠りで、この間に脳は休んだ状態になっている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問44-選択肢4/index.html"
   },
   {
     "id": "令和3年_4月_問38_選択肢1",
@@ -230,7 +230,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "三大栄養素のうち糖質はブドウ糖などに、蛋白質はアミノ酸に、脂肪は脂肪酸とエチレングリコールに、酵素により分解されて吸収される。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問38-選択肢1/index.html"
   },
   {
     "id": "令和3年_10月_問37_選択肢1",
@@ -238,7 +238,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "三大栄養素のうち糖質はブドウ糖などに、蛋白質はアミノ酸に、脂肪は脂肪酸とグリセリンに、酵素により分解されて吸収される。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問37-選択肢1/index.html"
   },
   {
     "id": "令和2年_10月_問38_選択肢1",
@@ -246,7 +246,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "三大栄養素のうち、糖質はブドウ糖などに、蛋白質はアミノ酸に、脂肪は脂肪酸とグリセリンに、酵素により分解され、吸収される。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問38-選択肢1/index.html"
   },
   {
     "id": "令和3年_4月_問41_選択肢5",
@@ -254,7 +254,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "中耳にある鼓室は、耳管によって咽頭に通じており、その内圧は外気圧と等しく保たれている。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問41-選択肢5/index.html"
   },
   {
     "id": "令和6年_10月_問41_選択肢5",
@@ -262,7 +262,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "交感神経と副交感神経は、同一器官に分布していても、その作用はほぼ正反対であり、例えば、交感神経は心拍数を増加し、消化管の運動を抑制するが、副交感神経は心拍数を減少し、消化管の運動を亢進する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問41-選択肢5/index.html"
   },
   {
     "id": "平成29年_4月_問37_選択肢5",
@@ -270,7 +270,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "交感神経と副交感神経は、同一器官に分布していても、ほぼ相反する作用をする。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問37-選択肢5/index.html"
   },
   {
     "id": "平成29年_10月_問41_選択肢4",
@@ -278,7 +278,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "交感神経系と副交感神経系は、各種臓器において双方の神経が分布し、相反する作用を有している。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問41-選択肢4/index.html"
   },
   {
     "id": "令和3年_10月_問35_選択肢4",
@@ -286,7 +286,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "交感神経系と副交感神経系は、各種臓器において双方の神経線維が分布し、相反する作用を有している。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問35-選択肢4/index.html"
   },
   {
     "id": "令和4年_10月_問41_選択肢5",
@@ -294,7 +294,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "交感神経系は、心拍数を増加し、消化管の運動を亢進する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問41-選択肢5/index.html"
   },
   {
     "id": "令和3年_4月_問35_選択肢5",
@@ -302,7 +302,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "交感神経系は、身体の機能をより活動的に調節する働きがあり、心拍数を増加させたり、消化管の運動を亢進する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問35-選択肢5/index.html"
   },
   {
     "id": "令和3年_10月_問35_選択肢5",
@@ -310,7 +310,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "交感神経系は、身体の機能をより活動的に調節する働きがあり、心拍数を増加させたり、消化管の運動を高める。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問35-選択肢5/index.html"
   },
   {
     "id": "平成30年_10月_問37_選択肢4",
@@ -318,7 +318,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "交感神経系は、身体の機能をより活動的に調節する働きがあり、心拍数を増加したり、消化管の運動を抑制する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問37-選択肢4/index.html"
   },
   {
     "id": "平成29年_10月_問41_選択肢5",
@@ -326,7 +326,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "交感神経系は、身体の機能をより活動的に調節する働きがあり、心拍数を増加したり、消化管の運動を高める。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問41-選択肢5/index.html"
   },
   {
     "id": "令和元年_4月_問37_選択肢5",
@@ -334,7 +334,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "人間は発汗のほかに、常時、呼気や皮膚表面からも水分を蒸発させており、この蒸発のことを不感蒸泄という。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問37-選択肢5/index.html"
   },
   {
     "id": "令和2年_4月_問37_選択肢2",
@@ -342,7 +342,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "代謝において、体内に摂取された栄養素が、種々の化学反応によって、ATPに蓄えられたエネルギーを用いて、細胞を構成する蛋白質などの生体に必要な物質に合成されることを異化という。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「エネルギー代謝率の値は、体格、性別などの個人差による影響は少なく、同じ作業であれば、ほぼ同じ値となる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問37-選択肢2/index.html"
   },
   {
     "id": "令和4年_4月_問43_選択肢2",
@@ -350,7 +350,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "代謝において、体内に摂取された栄養素が、種々の化学反応によって、細胞を構成する蛋白質などの生体に必要な物質に合成されることを異化という。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「エネルギー代謝率は、動的筋作業の強度を表すことができるが、静的筋作業には適用できない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問43-選択肢2/index.html"
   },
   {
     "id": "令和2年_4月_問37_選択肢1",
@@ -358,7 +358,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "代謝において、細胞に取り入れられた体脂肪やグリコーゲンなどが分解されてエネルギーを発生し、ATPが合成されることを同化という。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「エネルギー代謝率の値は、体格、性別などの個人差による影響は少なく、同じ作業であれば、ほぼ同じ値となる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問37-選択肢1/index.html"
   },
   {
     "id": "令和元年_10月_問43_選択肢1",
@@ -366,7 +366,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "代謝において、細胞に取り入れられた体脂肪やグリコーゲンなどが分解されてエネルギーを発生し、ATPが生産されることを同化という。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「基礎代謝は、心臓の拍動、呼吸運動、体温保持などに必要な代謝で、基礎代謝量は、覚醒・横臥が・安静時の測定値で表される。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問43-選択肢1/index.html"
   },
   {
     "id": "令和3年_10月_問40_選択肢1",
@@ -374,7 +374,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "代謝において、細胞に取り入れられた体脂肪、グリコーゲンなどが分解されてエネルギーを発生し、ATPが合成されることを同化という。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「エネルギー代謝率は、動的筋作業の強度を表すことができるが、精神的作業や静的筋作業には適用できない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問40-選択肢1/index.html"
   },
   {
     "id": "令和4年_4月_問43_選択肢1",
@@ -382,7 +382,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "代謝において、細胞に取り入れられた体脂肪、グリコーゲンなどが分解されてエネルギーを発生する過程を同化という。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「エネルギー代謝率は、動的筋作業の強度を表すことができるが、静的筋作業には適用できない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問43-選択肢1/index.html"
   },
   {
     "id": "令和4年_4月_問36_選択肢2",
@@ -390,7 +390,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "体循環では、血液は左心室から大動脈に入り、静脈血となって右心房に戻ってくる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問36-選択肢2/index.html"
   },
   {
     "id": "令和2年_10月_問36_選択肢2",
@@ -398,7 +398,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "体循環は、左心室から大動脈に入り、毛細血管を経て静脈血となり右心房に戻ってくる血液の循環である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問36-選択肢2/index.html"
   },
   {
     "id": "令和4年_10月_問41_選択肢4",
@@ -406,7 +406,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "体性神経には感覚器官からの情報を中枢に伝える感覚神経と、中枢からの命令を運動器官に伝える運動神経がある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問41-選択肢4/index.html"
   },
   {
     "id": "令和元年_10月_問37_選択肢5",
@@ -414,7 +414,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "体性神経には、感覚器官からの情報を中枢神経に伝える感覚神経と、中枢神経からの命令を運動器官に伝える運動神経がある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問37-選択肢5/index.html"
   },
   {
     "id": "令和3年_10月_問35_選択肢2",
@@ -422,7 +422,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "体性神経は、運動及び感覚に関与し、自律神経は、呼吸、循環などに関与する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問35-選択肢2/index.html"
   },
   {
     "id": "令和3年_10月_問43_選択肢3",
@@ -430,7 +430,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "体温調節にみられるように、外部環境などが変化しても身体内部の状態を一定に保とうとする性質を恒常性(ホメオスタシス)という。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問43-選択肢3/index.html"
   },
   {
     "id": "令和2年_10月_問39_選択肢3",
@@ -438,7 +438,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "体温調節のように、外部環境が変化しても身体内部の状態を一定に保つ生体の仕組みを同調性といい、筋肉と神経系により調整されている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「熱の放散は、ふく射(放射)、伝導、蒸発などの物理的な過程で行われ、蒸発によるものには、発汗と不感蒸泄がある。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問39-選択肢3/index.html"
   },
   {
     "id": "令和2年_10月_問39_選択肢4",
@@ -446,7 +446,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "体温調節中枢は、小脳にあり、熱の産生と放散とのバランスを維持し体温を一定に保つよう機能している。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「熱の放散は、ふく射(放射)、伝導、蒸発などの物理的な過程で行われ、蒸発によるものには、発汗と不感蒸泄がある。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問39-選択肢4/index.html"
   },
   {
     "id": "令和6年_10月_問39_選択肢4",
@@ -454,7 +454,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "体温調節中枢は、小脳にあり、熱の産生と放散のバランスを維持し体温を一定に保つよう機能している。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「甲状腺ホルモンの分泌により、代謝が亢進し、体温は上昇する。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問39-選択肢4/index.html"
   },
   {
     "id": "平成29年_10月_問39_選択肢1",
@@ -462,7 +462,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "体温調節中枢は、小脳にあり、産熱と放熱とのバランスを維持し体温を一定に保つよう機能している。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「発汗のほかに皮膚及び呼気から水分が失われる現象を不感蒸泄という。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問39-選択肢1/index.html"
   },
   {
     "id": "平成29年_4月_問42_選択肢3",
@@ -470,7 +470,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "作業の各局面で生じる疲労を後へ持ち越いようにすることは、産業疲労の対策として大切なことである。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問42-選択肢3/index.html"
   },
   {
     "id": "平成29年_10月_問43_選択肢1",
@@ -478,7 +478,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "個人の能力や感性に適合しないストレッサーは、心理的には不安、焦燥感、抑うつ感などを、身体的には疲労を生じることがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問43-選択肢1/index.html"
   },
   {
     "id": "平成29年_4月_問35_選択肢4",
@@ -486,7 +486,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "全身の毛細血管中の血液が各組織細胞に酸素を渡して二酸化炭素を受け取るガス交換を内呼吸又は組織呼吸という。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問35-選択肢4/index.html"
   },
   {
     "id": "令和3年_10月_問38_選択肢4",
@@ -494,7 +494,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "全身の毛細血管中の血液が各組織細胞に酸素を渡して二酸化炭素を受け取るガス交換を、組織呼吸又は内呼吸という。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問38-選択肢4/index.html"
   },
   {
     "id": "平成29年_10月_問43_選択肢2",
@@ -502,7 +502,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "典型的なストレス反応として、副腎皮質ホルモンの分泌の著しい減少がある。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問43-選択肢2/index.html"
   },
   {
     "id": "令和6年_10月_問40_選択肢4",
@@ -510,7 +510,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "内耳に伝わった音の振動は、蝸牛の中のリンパ液を介して有毛細胞に伝わり、この時、音の振幅の大きさによって異なる部位の有毛細胞が振動することによって音の高さの違いが伝えられる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問40-選択肢4/index.html"
   },
   {
     "id": "令和4年_10月_問40_選択肢3",
@@ -518,7 +518,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "内耳は、前庭、半規管及び蝸牛(うずまき管)の三つの部位からなり、前庭と半規管が平衡感覚、蝸牛が聴覚をそれぞれ分担している。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問40-選択肢3/index.html"
   },
   {
     "id": "令和2年_10月_問42_選択肢3",
@@ -526,7 +526,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "内耳は、前庭、半規管及び蝸牛の三つの部位からなり、前庭と半規管が平衡感覚、蝸牛が聴覚を分担している。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問42-選択肢3/index.html"
   },
   {
     "id": "令和3年_10月_問41_選択肢3",
@@ -534,7 +534,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "内耳は、前庭、半規管、蝸牛(うずまき管)の三つの部位からなり、前庭と半規管が平衡感覚、蝸牛が聴覚を分担している。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問41-選択肢3/index.html"
   },
   {
     "id": "令和2年_10月_問42_選択肢4",
@@ -542,7 +542,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "前庭は、体の回転の方向や速度を感じ、半規管は、体の傾きの方向や大きさを感じる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問42-選択肢4/index.html"
   },
   {
     "id": "令和6年_4月_問36_選択肢3",
@@ -550,7 +550,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "副交感神経系は、身体の機能を回復に向けて働く神経系で、休息や睡眠状態で活動が高まり、心拍数を減少し、消化管の運動を亢進する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問36-選択肢3/index.html"
   },
   {
     "id": "平成30年_4月_問44_選択肢3",
@@ -558,7 +558,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "副甲状腺から分泌されるパラソルモンは、睡眠と覚醒のリズムの調節を行う。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「副腎皮質から分泌されるコルチゾールは、血糖値を上昇させる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問44-選択肢3/index.html"
   },
   {
     "id": "平成30年_4月_問44_選択肢1",
@@ -566,7 +566,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "副腎皮質から分泌されるコルチゾールは、血糖値を上昇させる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問44-選択肢1/index.html"
   },
   {
     "id": "平成30年_4月_問44_選択肢2",
@@ -574,7 +574,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "副腎髄質から分泌されるアドレナリンは、血糖値を低下させる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「副腎皮質から分泌されるコルチゾールは、血糖値を上昇させる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問44-選択肢2/index.html"
   },
   {
     "id": "令和3年_10月_問36_選択肢5",
@@ -582,7 +582,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "動脈硬化とは、コレステロールの蓄積などにより、動脈壁が肥厚・硬化して弾力性を失った状態であり、進行すると血管の狭窄や閉塞を招き、臓器への酸素や栄養分の供給が妨げられる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問36-選択肢5/index.html"
   },
   {
     "id": "令和3年_10月_問41_選択肢4",
@@ -590,7 +590,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "半規管は、体の傾きの方向や大きさを感じ、前庭は、体の回転の方向や速度を感じる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問41-選択肢4/index.html"
   },
   {
     "id": "令和2年_4月_問39_選択肢5",
@@ -598,7 +598,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "原尿中に濾し出された水分の大部分は、そのまま尿として排出される。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「血中のグルコースは、糸球体からボウマン嚢に濾し出される。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問39-選択肢5/index.html"
   },
   {
     "id": "令和2年_4月_問39_選択肢4",
@@ -606,7 +606,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "原尿中に濾し出された電解質の多くは、ボウマン嚢から血中に再吸収される。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「血中のグルコースは、糸球体からボウマン嚢に濾し出される。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問39-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問38_選択肢5",
@@ -614,7 +614,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "吸収された栄養分は、血液やリンパによって組織に運搬されてエネルギー源などとして利用される。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問38-選択肢5/index.html"
   },
   {
     "id": "平成29年_10月_問38_選択肢4",
@@ -622,7 +622,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "呼吸に関与する筋肉は、延髄にある呼吸中枢によって支配されている。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問38-選択肢4/index.html"
   },
   {
     "id": "令和6年_10月_問37_選択肢2",
@@ -630,7 +630,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "呼吸に関与する筋肉は、間脳の視床下部にある呼吸中枢によって支配されている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「肺胞内の空気と肺胞を取り巻く毛細血管中の血液との間で行われるガス交換は、外呼吸である。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問37-選択肢2/index.html"
   },
   {
     "id": "令和4年_4月_問35_選択肢5",
@@ -638,7 +638,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "呼吸のリズムをコントロールしているのは、間脳の視床下部である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問35-選択肢5/index.html"
   },
   {
     "id": "令和4年_10月_問35_選択肢1",
@@ -646,7 +646,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "呼吸は、胸膜が運動することで胸腔内の圧力を変化させ、肺を受動的に伸縮させることにより行われる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「成人の呼吸数は、通常、1分間に16〜20回であるが、食事、入浴、発熱などによって増加する。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問35-選択肢1/index.html"
   },
   {
     "id": "平成29年_10月_問38_選択肢5",
@@ -654,7 +654,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "呼吸中枢がその興奮性を維持するためには、常に一定量以上の一酸化炭素が血液中に含まれていることが必要である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問38-選択肢5/index.html"
   },
   {
     "id": "令和4年_4月_問35_選択肢4",
@@ -662,7 +662,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "呼吸数は、通常、1分間に16〜20回で、成人の安静時の1回呼吸量は、約500mLである。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問35-選択肢4/index.html"
   },
   {
     "id": "令和元年_4月_問35_選択肢1",
@@ -670,7 +670,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "呼吸運動は、主として肋間筋と横隔膜の協調運動によって胸郭内容積を周期的に増減し、それに伴って肺を伸縮させることにより行われる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問35-選択肢1/index.html"
   },
   {
     "id": "平成30年_10月_問35_選択肢1",
@@ -678,7 +678,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "呼吸運動は、主として肋間筋、横隔膜などの呼吸筋によって胸郭内容積を周期的に増減し、それに伴って肺を伸縮させることにより行われる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問35-選択肢1/index.html"
   },
   {
     "id": "令和元年_10月_問35_選択肢1",
@@ -686,7 +686,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "呼吸運動は、呼吸筋が収縮と弛緩をすることによって胸郭内容積を周期的に増減し、それに伴って肺を伸縮させることにより行われる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問35-選択肢1/index.html"
   },
   {
     "id": "平成29年_10月_問38_選択肢1",
@@ -694,7 +694,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "呼吸運動は、横隔膜、肋間筋などの呼吸筋が収縮と弛緩をすることで胸腔内の圧力を変化させ、肺を受動的に伸縮させることにより行われる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問38-選択肢1/index.html"
   },
   {
     "id": "令和2年_10月_問37_選択肢1",
@@ -702,7 +702,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "呼吸運動は、横隔膜、肋間筋などの呼吸筋が収縮と弛緩をすることにより行われる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問37-選択肢1/index.html"
   },
   {
     "id": "令和3年_10月_問38_選択肢1",
@@ -710,7 +710,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "呼吸運動は、気管と胸膜の協調運動によって、胸郭内容積を周期的に増減させて行われる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問38-選択肢1/index.html"
   },
   {
     "id": "令和3年_4月_問41_選択肢2",
@@ -718,7 +718,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "嗅覚と味覚は化学感覚ともいわれ、物質の化学的性質を認知する感覚である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問41-選択肢2/index.html"
   },
   {
     "id": "令和2年_4月_問37_選択肢3",
@@ -726,7 +726,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "基礎代謝は、心臓の拍動、呼吸運動、体温保持などに必要な代謝で、基礎代謝量は、睡眠・横臥が・安静時の測定値で表される。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「エネルギー代謝率の値は、体格、性別などの個人差による影響は少なく、同じ作業であれば、ほぼ同じ値となる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問37-選択肢3/index.html"
   },
   {
     "id": "令和3年_4月_問43_選択肢3",
@@ -734,7 +734,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "基礎代謝は、心臓の拍動、呼吸運動、体温保持などに必要な代謝で、基礎代謝量は、覚醒、横臥が、安静時の測定値で表される。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問43-選択肢3/index.html"
   },
   {
     "id": "令和3年_10月_問40_選択肢3",
@@ -742,7 +742,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "基礎代謝量は、安静時における心臓の拍動、呼吸、体温保持などに必要な代謝量で、睡眠中の測定値で表される。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「エネルギー代謝率は、動的筋作業の強度を表すことができるが、精神的作業や静的筋作業には適用できない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問40-選択肢3/index.html"
   },
   {
     "id": "令和6年_4月_問43_選択肢1",
@@ -750,7 +750,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "外部からの刺激であるストレッサーは、その形態や程度にかかわらず、自律神経系と内分泌系を介して、心身の活動を抑圧する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問43-選択肢1/index.html"
   },
   {
     "id": "令和2年_10月_問43_選択肢4",
@@ -758,7 +758,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "夜間に働いた後の昼間に睡眠する場合は、一般に、就寝から入眠までの時間が長くなり、睡眠時間が短縮し、睡眠の質も低下する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問43-選択肢4/index.html"
   },
   {
     "id": "令和4年_4月_問36_選択肢1",
@@ -766,7 +766,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "大動脈及び肺動脈を流れる血液は、酸素に富む動脈血である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問36-選択肢1/index.html"
   },
   {
     "id": "令和2年_10月_問36_選択肢5",
@@ -774,7 +774,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "大動脈及び肺静脈を流れる血液は、酸素に富む動脈血である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問36-選択肢5/index.html"
   },
   {
     "id": "令和3年_10月_問36_選択肢3",
@@ -782,7 +782,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "大動脈を流れる血液は動脈血であるが、肺動脈を流れる血液は静脈血である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問36-選択肢3/index.html"
   },
   {
     "id": "令和4年_10月_問41_選択肢3",
@@ -790,7 +790,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "大脳では、内側の髄質が白質であり、外側の皮質が灰白質である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問41-選択肢3/index.html"
   },
   {
     "id": "令和元年_10月_問37_選択肢2",
@@ -798,7 +798,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "大脳の内側の髄質は神経細胞の細胞体が集合した灰白質で、感覚、運動、思考などの作用を支配する中枢として機能する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問37-選択肢2/index.html"
   },
   {
     "id": "令和6年_4月_問36_選択肢2",
@@ -806,7 +806,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "大脳の外側の皮質は、神経細胞の細胞体が集合した灰白質で、感覚、運動、思考などの作用を支配する中枢として機能する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問36-選択肢2/index.html"
   },
   {
     "id": "令和3年_10月_問35_選択肢3",
@@ -814,7 +814,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "大脳の皮質は、神経細胞の細胞体が集まっている灰白質で、感覚、思考などの作用を支配する中枢として機能する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問35-選択肢3/index.html"
   },
   {
     "id": "平成30年_10月_問37_選択肢2",
@@ -822,7 +822,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "大脳の髄質は、神経細胞の細胞体が集合した灰白質で、感覚、運動、思考などの作用を支配する中枢として機能する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問37-選択肢2/index.html"
   },
   {
     "id": "平成30年_4月_問39_選択肢3",
@@ -830,7 +830,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "大脳皮質は、神経細胞の細胞体が集合した灰白質で、感覚、運動、思考などの作用を支配する中枢である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問39-選択肢3/index.html"
   },
   {
     "id": "平成30年_4月_問35_選択肢3",
@@ -838,7 +838,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "好中球は、偽足を出してアメーバ様運動を行い、体内に侵入してきた細菌などを貪食する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問35-選択肢3/index.html"
   },
   {
     "id": "令和6年_10月_問43_選択肢4",
@@ -846,7 +846,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "好中球は白血球の一種であり、偽足を出してアメーバ様運動を行い、体内に侵入してきた細菌などを貪食する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問43-選択肢4/index.html"
   },
   {
     "id": "令和2年_4月_問41_選択肢3",
@@ -854,7 +854,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "好中球は、白血球の約60%を占め、偽足を出してアメーバ様運動を行い、体内に侵入してきた細菌などを貪食する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問41-選択肢3/index.html"
   },
   {
     "id": "令和3年_10月_問43_選択肢1",
@@ -862,7 +862,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "寒冷な環境においては、皮膚の血管が収縮して血流量が減って、熱の放散が減少する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問43-選択肢1/index.html"
   },
   {
     "id": "令和2年_10月_問39_選択肢1",
@@ -870,7 +870,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "寒冷な環境においては、皮膚の血管が拡張して血流量を増し、皮膚温を上昇させる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「熱の放散は、ふく射(放射)、伝導、蒸発などの物理的な過程で行われ、蒸発によるものには、発汗と不感蒸泄がある。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問39-選択肢1/index.html"
   },
   {
     "id": "平成29年_10月_問39_選択肢3",
@@ -878,7 +878,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "寒冷にさらされ体温が正常より低くなると、皮膚の血管が拡張して血流量を増し、皮膚温を上昇させる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「発汗のほかに皮膚及び呼気から水分が失われる現象を不感蒸泄という。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問39-選択肢3/index.html"
   },
   {
     "id": "平成29年_4月_問44_選択肢1",
@@ -886,7 +886,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "寒冷にさらされ体温が正常以下になると、皮膚の血管が収縮して血流量が減って、放熱が減少する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問44-選択肢1/index.html"
   },
   {
     "id": "平成30年_4月_問43_選択肢3",
@@ -894,7 +894,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "寒冷にさらされ体温が正常以下になると、皮膚の血管が拡張して血流量を増し、皮膚温を上昇させる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「体温調節中枢は、間脳の視床下部にある。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問43-選択肢3/index.html"
   },
   {
     "id": "令和6年_10月_問41_選択肢2",
@@ -902,7 +902,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "小脳は、随意運動、平衡機能などの調整に関与しており、小脳が侵されると運動失調が生じる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問41-選択肢2/index.html"
   },
   {
     "id": "令和3年_10月_問37_選択肢5",
@@ -910,7 +910,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "小腸の表面は、ビロード状の絨毛という小突起で覆われており、栄養素の吸収の効率を上げるために役立っている。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問37-選択肢5/index.html"
   },
   {
     "id": "令和3年_4月_問38_選択肢5",
@@ -918,7 +918,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "小腸は、胃に続く全長6〜7mの管状の器官で、十二指腸、空腸及び回腸に分けられる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問38-選択肢5/index.html"
   },
   {
     "id": "令和3年_10月_問39_選択肢4",
@@ -926,7 +926,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "尿の生成・排出により、体内の水分の量やナトリウムなどの電解質の濃度を調節するとともに、生命活動によって生じた不要な物質を排出する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問39-選択肢4/index.html"
   },
   {
     "id": "平成30年_4月_問40_選択肢3",
@@ -934,7 +934,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "尿の生成・排出により、体内の水分の量やナトリウムなどの電解質の濃度を調節するとともに、生命活動によって生じた不要な物質を排泄する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問40-選択肢3/index.html"
   },
   {
     "id": "平成30年_4月_問40_選択肢4",
@@ -942,7 +942,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "尿の約95%は水分で、約5%が固形物であり、その成分は全身の健康状態をよく反映するので、尿検査は健康診断などで広く行われている。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問40-選択肢4/index.html"
   },
   {
     "id": "令和3年_10月_問39_選択肢5",
@@ -950,7 +950,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "尿の約95%は水分で、約5%が固形物であるが、その成分が全身の健康状態をよく反映するので、尿を採取して尿素窒素の検査が広く行われている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問39-選択肢5/index.html"
   },
   {
     "id": "平成29年_10月_問40_選択肢5",
@@ -958,7 +958,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "尿の約95%は水分で、約5%が固形物であるが、その成分が全身の健康状態をよく反映するので、尿検査は健康診断などで広く行われている。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問40-選択肢5/index.html"
   },
   {
     "id": "令和3年_10月_問39_選択肢3",
@@ -966,7 +966,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "尿は淡黄色の液体で、固有の臭気を有し、通常、弱酸性である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問39-選択肢3/index.html"
   },
   {
     "id": "令和4年_10月_問43_選択肢2",
@@ -974,7 +974,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "尿素を合成する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問43-選択肢2/index.html"
   },
   {
     "id": "平成30年_4月_問40_選択肢2",
@@ -982,7 +982,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "尿細管では、原尿に含まれる大部分の水分、電解質、栄養分などが血液中に再吸収される。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問40-選択肢2/index.html"
   },
   {
     "id": "令和2年_4月_問36_選択肢5",
@@ -990,7 +990,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "平衡感覚に関係する器官である前庭及び半規管は、中耳にあって、体の傾きや回転の方向を知覚する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「網膜の錐状体は明るい所で働き色を感じ、杆状体は暗い所で働き弱い光、明暗を感じる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問36-選択肢5/index.html"
   },
   {
     "id": "令和元年_4月_問43_選択肢2",
@@ -998,7 +998,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "強い力を必要とする運動を続けていても、筋肉を構成する個々の筋線維の太さは変わらないが、その数が増えることによって筋肉が太くなり筋力が増強する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問43-選択肢2/index.html"
   },
   {
     "id": "令和2年_10月_問41_選択肢4",
@@ -1006,7 +1006,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "強い力を必要とする運動を続けていると、筋肉を構成する個々の筋線維の太さは変わらないが、その数が増えることによって筋肉が太くなり筋力が増強する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「筋肉は、収縮しようとする瞬間に最も大きい力を出す。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問41-選択肢4/index.html"
   },
   {
     "id": "令和6年_10月_問36_選択肢3",
@@ -1014,7 +1014,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "心拍数は、左心房に存在する洞結節からの電気刺激によってコントロールされている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問36-選択肢3/index.html"
   },
   {
     "id": "令和4年_10月_問36_選択肢5",
@@ -1022,7 +1022,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "心筋は不随意筋であるが、骨格筋と同様に横紋筋に分類される。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問36-選択肢5/index.html"
   },
   {
     "id": "令和4年_4月_問36_選択肢3",
@@ -1030,7 +1030,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "心筋は人間の意思によって動かすことができない不随意筋であるが、随意筋である骨格筋と同じ横紋筋に分類される。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問36-選択肢3/index.html"
   },
   {
     "id": "平成29年_10月_問36_選択肢5",
@@ -1038,7 +1038,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "心筋は、意志と無関係に動く不随意筋であるが、平滑筋に分類される。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問36-選択肢5/index.html"
   },
   {
     "id": "平成30年_4月_問37_選択肢3",
@@ -1046,7 +1046,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "心臓から拍出された血液を送る血管を動脈といい、心臓に戻る血液を送る血管を静脈という。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問37-選択肢3/index.html"
   },
   {
     "id": "令和2年_4月_問44_選択肢5",
@@ -1054,7 +1054,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "心臓に対しては、交感神経の亢進は心拍数を増加させ、副交感神経の亢進は心拍数を減少させる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問44-選択肢5/index.html"
   },
   {
     "id": "令和2年_10月_問36_選択肢1",
@@ -1062,7 +1062,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "心臓の中にある洞結節(洞房結節)で発生した刺激が、刺激伝導系を介して心筋に伝わることにより、心臓は規則正しく収縮と拡張を繰り返す。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問36-選択肢1/index.html"
   },
   {
     "id": "令和3年_10月_問36_選択肢4",
@@ -1070,7 +1070,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "心臓の拍動による動脈圧の変動を末梢の動脈で触知したものを脈拍といい、一般に、手首の橈骨動脈で触知する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問36-選択肢4/index.html"
   },
   {
     "id": "令和3年_10月_問36_選択肢1",
@@ -1078,7 +1078,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "心臓は、自律神経の中枢で発生した刺激が刺激伝導系を介して心筋に伝わることにより、規則正しく収縮と拡張を繰り返す。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問36-選択肢1/index.html"
   },
   {
     "id": "令和元年_4月_問35_選択肢3",
@@ -1086,7 +1086,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "成人の呼吸数は、通常、1分間に16〜20回であるが、食事、入浴及び発熱によって減少する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「呼吸運動は、主として肋間筋と横隔膜の協調運動によって胸郭内容積を周期的に増減し、それに伴って肺を伸縮させることにより行われる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問35-選択肢3/index.html"
   },
   {
     "id": "令和4年_10月_問35_選択肢3",
@@ -1094,7 +1094,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "成人の呼吸数は、通常、1分間に16〜20回であるが、食事、入浴、発熱などによって増加する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問35-選択肢3/index.html"
   },
   {
     "id": "令和6年_10月_問43_選択肢3",
@@ -1102,7 +1102,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "抗体とは、体内に入ってきた抗原に対して体液性免疫において作られる免疫グロブリンと呼ばれる蛋白質のことである。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問43-選択肢3/index.html"
   },
   {
     "id": "令和6年_10月_問43_選択肢1",
@@ -1110,7 +1110,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "抗原とは、免疫に関係する細胞によって異物として認識される物質のことである。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問43-選択肢1/index.html"
   },
   {
     "id": "平成29年_4月_問44_選択肢5",
@@ -1118,7 +1118,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "放熱は、ふく射(放射)、伝導、蒸発などの物理的な過程で行われ、蒸発には、発汗と不感蒸泄によるものがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問44-選択肢5/index.html"
   },
   {
     "id": "令和6年_4月_問43_選択肢3",
@@ -1126,7 +1126,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "昇進、転勤、配置替えなどがストレスの原因となることがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問43-選択肢3/index.html"
   },
   {
     "id": "令和4年_4月_問41_選択肢5",
@@ -1134,7 +1134,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "明るいところから急に暗いところに入ると、初めは見えにくいが徐々に見えやすくなることを明順応という。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問41-選択肢5/index.html"
   },
   {
     "id": "令和元年_10月_問41_選択肢5",
@@ -1142,7 +1142,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "明るいところから急に暗いところに入ると、初めは見えにくいが暗順応によって徐々に見えるようになる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問41-選択肢5/index.html"
   },
   {
     "id": "令和2年_10月_問39_選択肢2",
@@ -1150,7 +1150,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "暑熱な環境においては、内臓の血流量が増加し体内の代謝活動が亢進することにより、人体からの熱の放散が促進される。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「熱の放散は、ふく射(放射)、伝導、蒸発などの物理的な過程で行われ、蒸発によるものには、発汗と不感蒸泄がある。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問39-選択肢2/index.html"
   },
   {
     "id": "平成29年_4月_問37_選択肢4",
@@ -1158,7 +1158,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "末梢神経系において神経細胞の細胞体が集合している部分を神経節という。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問37-選択肢4/index.html"
   },
   {
     "id": "平成30年_4月_問44_選択肢4",
@@ -1166,7 +1166,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "松果体から分泌されるメラトニンは、体内のカルシウムバランスの調整を行う。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「副腎皮質から分泌されるコルチゾールは、血糖値を上昇させる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問44-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問41_選択肢1",
@@ -1174,7 +1174,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "横紋筋は、骨に付着して身体の運動の原動力となる筋肉で意志によって動かすことができるが、平滑筋は、心筋などの内臓に存在する筋肉で意志によって動かすことができない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「筋肉は、収縮しようとする瞬間に最も大きい力を出す。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問41-選択肢1/index.html"
   },
   {
     "id": "平成29年_10月_問38_選択肢2",
@@ -1182,7 +1182,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "横隔膜が下がり、胸腔の内圧が低くなるにつれ、鼻腔、気管などの気道を経て肺内へ流れ込む空気が吸気である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問38-選択肢2/index.html"
   },
   {
     "id": "令和6年_10月_問37_選択肢1",
@@ -1190,7 +1190,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "横隔膜が下がり、胸郭内の内圧が低くなるにつれ、気道を経て肺内へ流れ込む空気が呼気である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「肺胞内の空気と肺胞を取り巻く毛細血管中の血液との間で行われるガス交換は、外呼吸である。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問37-選択肢1/index.html"
   },
   {
     "id": "令和2年_4月_問44_選択肢4",
@@ -1198,7 +1198,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "消化管に対しては、交感神経の亢進は運動を促進させ、副交感神経の亢進は運動を抑制させる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問44-選択肢4/index.html"
   },
   {
     "id": "令和3年_4月_問41_選択肢4",
@@ -1206,7 +1206,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "深部感覚は、内臓の動きや炎症などを感じて、内臓痛を認識する感覚である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問41-選択肢4/index.html"
   },
   {
     "id": "令和6年_4月_問40_選択肢4",
@@ -1214,7 +1214,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "深部感覚は、筋肉や腱にある受容器から得られる身体各部の位置、運動などを認識する感覚である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問40-選択肢4/index.html"
   },
   {
     "id": "令和3年_4月_問41_選択肢3",
@@ -1222,7 +1222,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "温度感覚は、皮膚のほか口腔などの粘膜にも存在し、一般に冷覚の方が温覚よりも鋭敏である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問41-選択肢3/index.html"
   },
   {
     "id": "平成30年_4月_問43_選択肢5",
@@ -1230,7 +1230,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "温熱性発汗は、全身でみられるが、特に足の裏で多い。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「体温調節中枢は、間脳の視床下部にある。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問43-選択肢5/index.html"
   },
   {
     "id": "令和2年_10月_問38_選択肢2",
@@ -1238,7 +1238,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "無機塩及びビタミン類は、酵素による分解を受けないでそのまま吸収される。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問38-選択肢2/index.html"
   },
   {
     "id": "令和元年_4月_問39_選択肢2",
@@ -1246,7 +1246,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "無機塩やビタミン類は、酵素による分解を受けないでそのまま吸収される。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問39-選択肢2/index.html"
   },
   {
     "id": "令和3年_4月_問38_選択肢2",
@@ -1254,7 +1254,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "無機塩、ビタミン類は、酵素による分解を受けないでそのまま吸収される。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問38-選択肢2/index.html"
   },
   {
     "id": "令和4年_4月_問37_選択肢5",
@@ -1262,7 +1262,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "熱の放散は、ふく射(放射)、伝導、蒸発などの物理的な過程で行われ、蒸発には、発汗と不感蒸泄によるものがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問37-選択肢5/index.html"
   },
   {
     "id": "令和2年_10月_問39_選択肢5",
@@ -1270,7 +1270,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "熱の放散は、ふく射(放射)、伝導、蒸発などの物理的な過程で行われ、蒸発によるものには、発汗と不感蒸泄がある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問39-選択肢5/index.html"
   },
   {
     "id": "令和2年_4月_問43_選択肢5",
@@ -1278,7 +1278,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "熱の放散は、放射(ふく射)、伝導、蒸発などの物理的な過程で行われ、蒸発には、発汗と不感蒸泄によるものがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問43-選択肢5/index.html"
   },
   {
     "id": "令和3年_10月_問43_選択肢5",
@@ -1286,7 +1286,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "熱の放散は、輻射(放射)、伝導、蒸発などの物理的な過程で行われ、蒸発には、発汗と不感蒸泄によるものがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問43-選択肢5/index.html"
   },
   {
     "id": "令和2年_4月_問36_選択肢1",
@@ -1294,7 +1294,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "物理化学的な刺激の量と人間が意識する感覚の強度とは、直線的な比例関係にある。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「網膜の錐状体は明るい所で働き色を感じ、杆状体は暗い所で働き弱い光、明暗を感じる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問36-選択肢1/index.html"
   },
   {
     "id": "平成29年_4月_問42_選択肢2",
@@ -1302,7 +1302,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "産業疲労は、生体に対する労働負荷が大きすぎることによって引き起こされるが、その回復や蓄積は日常生活ともかかわっている。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問42-選択肢2/index.html"
   },
   {
     "id": "平成29年_4月_問42_選択肢1",
@@ -1310,7 +1310,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "産業疲労は、疲労徴候の現れ方により、急性疲労、慢性疲労、日周性疲労などに分類することができる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問42-選択肢1/index.html"
   },
   {
     "id": "令和6年_10月_問39_選択肢5",
@@ -1318,7 +1318,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "甲状腺ホルモンの分泌により、代謝が亢進し、体温は上昇する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問39-選択肢5/index.html"
   },
   {
     "id": "令和2年_10月_問43_選択肢2",
@@ -1326,7 +1326,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "甲状腺ホルモンは、夜間に分泌が上昇するホルモンで、睡眠と覚醒のリズムの調節に関与している。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問43-選択肢2/index.html"
   },
   {
     "id": "平成29年_10月_問39_選択肢5",
@@ -1334,7 +1334,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "発汗のほかに皮膚及び呼気から水分が失われる現象を不感蒸泄という。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問39-選択肢5/index.html"
   },
   {
     "id": "令和4年_10月_問37_選択肢5",
@@ -1342,7 +1342,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "発汗のほかに、皮膚及び呼気から水分を蒸発させている現象を不感蒸泄という。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問37-選択肢5/index.html"
   },
   {
     "id": "令和4年_10月_問42_選択肢3",
@@ -1350,7 +1350,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "白血球のうち、好中球には、体内に侵入してきた細菌や異物を貪食する働きがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問42-選択肢3/index.html"
   },
   {
     "id": "令和2年_4月_問36_選択肢2",
@@ -1358,7 +1358,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "皮膚感覚には、触圧覚、痛覚、温度感覚(温覚・冷覚)などがあり、これらのうち冷覚を感じる冷覚点の密度は他の感覚点に比べて高い。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「網膜の錐状体は明るい所で働き色を感じ、杆状体は暗い所で働き弱い光、明暗を感じる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問36-選択肢2/index.html"
   },
   {
     "id": "令和4年_4月_問41_選択肢1",
@@ -1366,7 +1366,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "眼は、周りの明るさによって瞳孔の大きさが変化して眼に入る光量が調節され、暗い場合には瞳孔が広がる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問41-選択肢1/index.html"
   },
   {
     "id": "令和元年_10月_問41_選択肢2",
@@ -1374,7 +1374,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "眼は、硝子体の厚さを変えることにより焦点距離を調節して網膜の上に像を結ぶようにしている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問41-選択肢2/index.html"
   },
   {
     "id": "令和元年_10月_問41_選択肢1",
@@ -1382,7 +1382,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "眼をカメラに例えると、虹彩はしぼりの働きをする。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問41-選択肢1/index.html"
   },
   {
     "id": "令和4年_4月_問41_選択肢2",
@@ -1390,7 +1390,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "眼軸が短すぎることなどにより、平行光線が網膜の後方で像を結ぶものを遠視という。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問41-選択肢2/index.html"
   },
   {
     "id": "令和3年_4月_問41_選択肢1",
@@ -1398,7 +1398,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "眼軸が短過ぎるために、平行光線が網膜の後方で像を結ぶものを遠視という。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問41-選択肢1/index.html"
   },
   {
     "id": "令和2年_4月_問36_選択肢4",
@@ -1406,7 +1406,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "眼軸が短過ぎるために、平行光線が網膜の後方で像を結ぶ状態は近視である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「網膜の錐状体は明るい所で働き色を感じ、杆状体は暗い所で働き弱い光、明暗を感じる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問36-選択肢4/index.html"
   },
   {
     "id": "令和3年_10月_問44_選択肢1",
@@ -1414,7 +1414,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "睡眠と覚醒のリズムのように、約1日の周期で繰り返される生物学的リズムをサーカディアンリズムといい、このリズムの乱れは、疲労や睡眠障害の原因となる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問44-選択肢1/index.html"
   },
   {
     "id": "令和2年_10月_問43_選択肢3",
@@ -1422,7 +1422,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "睡眠と食事は深く関係しているため、就寝直前の過食は、肥満のほか不眠を招くことになる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問43-選択肢3/index.html"
   },
   {
     "id": "令和2年_10月_問43_選択肢1",
@@ -1430,7 +1430,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "睡眠は、睡眠中の目の動きなどによって、レム睡眠とノンレム睡眠に分類される。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問43-選択肢1/index.html"
   },
   {
     "id": "令和2年_10月_問43_選択肢5",
@@ -1438,7 +1438,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "睡眠中には、体温の低下、心拍数の減少などがみられる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問43-選択肢5/index.html"
   },
   {
     "id": "令和6年_10月_問19_選択肢5",
@@ -1446,7 +1446,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "2種類以上の有害ガスが混在している場合には、そのうち最も毒性の強いガス用の防毒マスクを使用する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「呼吸用保護具は、計算により求めた要求防護係数よりも大きな値の指定防護係数をもつものを選択する。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問19-選択肢5/index.html"
   },
   {
     "id": "平成30年_4月_問19_選択肢4",
@@ -1454,7 +1454,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "A測定とB測定を併せて行う場合は、A測定の測定値を用いて求めた第一評価値及び第二評価値とB測定の測定値に基づき、単位作業場所を第一管理区分から第三管理区分までのいずれかに区分する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問19-選択肢4/index.html"
   },
   {
     "id": "令和4年_4月_問12_選択肢5",
@@ -1462,7 +1462,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "A測定においては、得られた測定値の算術平均値及び算術標準偏差を、また、B測定においてはその測定値そのものを評価に用いる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「A測定の第二評価値とは、単位作業場所における気中有害物質の算術平均濃度の推定値である。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問12-選択肢5/index.html"
   },
   {
     "id": "令和4年_4月_問12_選択肢1",
@@ -1470,7 +1470,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "A測定における測定点の高さの範囲は、床上100cm以上150cm以下である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「A測定の第二評価値とは、単位作業場所における気中有害物質の算術平均濃度の推定値である。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問12-選択肢1/index.html"
   },
   {
     "id": "平成30年_10月_問18_選択肢4",
@@ -1478,7 +1478,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "A測定の第二評価値及びB測定の測定値がいずれも管理濃度に満たない単位作業場所は、A測定の第一評価値に関係なく第一管理区分になる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問18-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問12_選択肢4",
@@ -1486,7 +1486,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "A測定の第二評価値及びB測定の測定値がいずれも管理濃度に満たない単位作業場所は、第一管理区分となる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「管理濃度は、有害物質に関する作業環境の状態を単位作業場所の作業環境測定結果から評価するための指標として設定されたものである。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問12-選択肢4/index.html"
   },
   {
     "id": "令和2年_4月_問18_選択肢4",
@@ -1494,7 +1494,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "A測定の第二評価値及びB測定の測定値がいずれも管理濃度に満たない単位作業場所は、第一管理区分になる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「管理濃度は、有害物質に関する作業環境の状態を単位作業場所の作業環境測定結果から評価するための指標として設定されたものである。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問18-選択肢4/index.html"
   },
   {
     "id": "令和元年_4月_問12_選択肢5",
@@ -1502,7 +1502,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "A測定の第二評価値が管理濃度を超えている単位作業場所の管理区分は、B測定の結果に関係なく第三管理区分となる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問12-選択肢5/index.html"
   },
   {
     "id": "令和6年_4月_問12_選択肢4",
@@ -1510,7 +1510,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "A測定の第二評価値が管理濃度を超えている単位作業場所の管理区分は、B測定の結果に関係なく第三管理区分になる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問12-選択肢4/index.html"
   },
   {
     "id": "平成29年_10月_問18_選択肢4",
@@ -1518,7 +1518,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "A測定の第二評価値が管理濃度を超えている単位作業場所は、B測定の結果に関係なく第三管理区分に区分される。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問18-選択肢4/index.html"
   },
   {
     "id": "令和4年_4月_問12_選択肢3",
@@ -1526,7 +1526,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "A測定の第二評価値とは、単位作業場所における気中有害物質の算術平均濃度の推定値である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問12-選択肢3/index.html"
   },
   {
     "id": "令和元年_4月_問12_選択肢4",
@@ -1534,7 +1534,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "A測定の第二評価値は、単位作業場所における気中有害物質の幾何平均濃度の推定値である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問12-選択肢4/index.html"
   },
   {
     "id": "令和6年_4月_問12_選択肢2",
@@ -1542,7 +1542,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "A測定は、単位作業場所における有害物質の気中濃度の平均的な分布を知るために行う測定である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問12-選択肢2/index.html"
   },
   {
     "id": "令和2年_10月_問12_選択肢2",
@@ -1550,7 +1550,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "A測定は、原材料を反応槽へ投入する場合など、間欠的に大量の有害物質の発散を伴う作業における最高濃度を知るために行う測定である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「管理濃度は、有害物質に関する作業環境の状態を単位作業場所の作業環境測定結果から評価するための指標として設定されたものである。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問12-選択肢2/index.html"
   },
   {
     "id": "平成29年_4月_問17_選択肢5",
@@ -1558,7 +1558,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "B測定の測定値が管理濃度の1.5倍を超えている単位作業場所の管理区分は、A測定の結果に関係なく第三管理区分となる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問17-選択肢5/index.html"
   },
   {
     "id": "令和2年_10月_問12_選択肢5",
@@ -1566,7 +1566,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "B測定の測定値が管理濃度を超えている単位作業場所の管理区分は、A測定の結果に関係なく第三管理区分となる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「管理濃度は、有害物質に関する作業環境の状態を単位作業場所の作業環境測定結果から評価するための指標として設定されたものである。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問12-選択肢5/index.html"
   },
   {
     "id": "令和6年_4月_問12_選択肢5",
@@ -1574,7 +1574,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "B測定の測定値が管理濃度を超えている単位作業場所の管理区分は、A測定の結果に関係なく第三管理区分になる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問12-選択肢5/index.html"
   },
   {
     "id": "令和3年_10月_問18_選択肢5",
@@ -1582,7 +1582,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "B測定の測定値が管理濃度を超えている単位作業場所は、A測定の結果に関係なく第三管理区分に区分される。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「管理濃度は、有害物質に関する作業環境の状態を単位作業場所の作業環境測定結果から評価するための指標として設定されたものである。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問18-選択肢5/index.html"
   },
   {
     "id": "令和2年_10月_問12_選択肢3",
@@ -1590,7 +1590,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "B測定は、単位作業場所における気中有害物質濃度の平均的な分布を知るために行う測定である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「管理濃度は、有害物質に関する作業環境の状態を単位作業場所の作業環境測定結果から評価するための指標として設定されたものである。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問12-選択肢3/index.html"
   },
   {
     "id": "平成29年_10月_問18_選択肢3",
@@ -1598,7 +1598,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "B測定は、単位作業場所中の有害物質の発散源から遠い場所で作業が行われる場合等において、作業者の位置における有害物質の濃度を知るために行う測定である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「A測定の第二評価値が管理濃度を超えている単位作業場所は、B測定の結果に関係なく第三管理区分に区分される。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問18-選択肢3/index.html"
   },
   {
     "id": "令和元年_4月_問12_選択肢3",
@@ -1606,7 +1606,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "B測定は、単位作業場所中の有害物質の発散源に近接する場所で作業が行われる場合において、有害物質の気中濃度の最高値を知るために行う測定である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問12-選択肢3/index.html"
   },
   {
     "id": "令和6年_4月_問12_選択肢3",
@@ -1614,7 +1614,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "B測定は、単位作業場所中の有害物質の発散源に近接する場所で作業が行われる場合において、空気中の有害物質の最高濃度を知るために行う測定である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問12-選択肢3/index.html"
   },
   {
     "id": "平成30年_10月_問18_選択肢3",
@@ -1622,7 +1622,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "B測定は、有害物の発散源に近接する場所において作業が行われる場合に、有害物の濃度が最も高くなると思われる時間に、その作業が行われる位置において行う測定である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問18-選択肢3/index.html"
   },
   {
     "id": "令和3年_10月_問15_選択肢4",
@@ -1630,7 +1630,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ILOの化学物質リスク簡易評価法(コントロール・バンディング)を用いる方法",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問15-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問17_選択肢3",
@@ -1638,7 +1638,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "N,N-ジメチルホルムアミドによる健康障害では、頭痛、肝機能障害などがみられる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問17-選択肢3/index.html"
   },
   {
     "id": "令和6年_4月_問15_選択肢5",
@@ -1646,7 +1646,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "N,N-ジメチルホルムアミドによる障害として顕著なものには、視力低下を伴う視神経障害がある。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「二硫化炭素は、動脈硬化を進行させたり、精神障害を生じさせることがある。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問15-選択肢5/index.html"
   },
   {
     "id": "令和2年_4月_問16_選択肢2",
@@ -1654,7 +1654,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "けい肺は、遊離けい酸の粉じんを吸入することにより起こるじん肺であり、その自覚症状は、進行してから、咳や痰が始まり、やがて呼吸困難に陥る。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問16-選択肢2/index.html"
   },
   {
     "id": "令和6年_10月_問18_選択肢3",
@@ -1662,7 +1662,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "けい肺は、鉄、アルミニウムなどの金属粉じんを吸入することによって発症するじん肺である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問18-選択肢3/index.html"
   },
   {
     "id": "令和3年_4月_問16_選択肢5",
@@ -1670,7 +1670,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "じん肺がある程度進行しても、粉じんへのばく露を中止すれば、症状が更に進行することはない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「じん肺は、続発性気管支炎、肺結核などを合併することがある。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問16-選択肢5/index.html"
   },
   {
     "id": "令和2年_4月_問16_選択肢5",
@@ -1678,7 +1678,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "じん肺がある程度進行すると、粉じんへのばく露を中止しても肺の病変が進行する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問16-選択肢5/index.html"
   },
   {
     "id": "令和6年_10月_問18_選択肢2",
@@ -1686,7 +1686,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "じん肺がある程度進行すると、粉じんへのばく露を中止しても肺の線維化が進行する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問18-選択肢2/index.html"
   },
   {
     "id": "令和2年_10月_問14_選択肢3",
@@ -1694,7 +1694,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "じん肺の合併症には、間質性肺炎、慢性閉塞性肺疾患(COPD)などがある。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問14-選択肢3/index.html"
   },
   {
     "id": "令和2年_10月_問14_選択肢2",
@@ -1702,7 +1702,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "じん肺の自覚症状は、初期にはあまりみられないが、進行すると咳せき、痰たん、呼吸困難などがみられる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問14-選択肢2/index.html"
   },
   {
     "id": "令和元年_4月_問15_選択肢2",
@@ -1710,7 +1710,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "じん肺は、ある程度進行すると、粉じんへのばく露を中止しても肺に生じた病変は治らず、更に進行することがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問15-選択肢2/index.html"
   },
   {
     "id": "令和2年_4月_問16_選択肢1",
@@ -1718,7 +1718,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "じん肺は、粉じんを吸入することによって肺に生じた炎症性病変を主体とする疾病で、けい肺、間質性肺炎などがある。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問16-選択肢1/index.html"
   },
   {
     "id": "令和3年_4月_問16_選択肢1",
@@ -1726,7 +1726,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "じん肺は、粉じんを吸入することによって肺に生じた炎症性病変を主体とする疾病で、その種類には、けい肺、間質性肺炎、慢性閉塞性肺疾患(COPD)などがある。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「じん肺は、続発性気管支炎、肺結核などを合併することがある。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問16-選択肢1/index.html"
   },
   {
     "id": "令和2年_10月_問14_選択肢1",
@@ -1734,7 +1734,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "じん肺は、粉じんを吸入することによって肺に生じた線維増殖性変化を主体とする疾病である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問14-選択肢1/index.html"
   },
   {
     "id": "令和6年_10月_問18_選択肢1",
@@ -1742,7 +1742,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "じん肺は、粉じんを吸入することによって肺に生じた線維増殖性変化を主体とする疾病で、けい肺、石綿肺などがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問18-選択肢1/index.html"
   },
   {
     "id": "令和元年_4月_問15_選択肢5",
@@ -1750,7 +1750,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "じん肺は、続発性気管支炎や肺結核を合併することがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問15-選択肢5/index.html"
   },
   {
     "id": "令和2年_4月_問16_選択肢3",
@@ -1758,7 +1758,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "じん肺は、続発性気管支炎、肺結核などを合併することがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問16-選択肢3/index.html"
   },
   {
     "id": "令和4年_10月_問13_選択肢2",
@@ -1766,7 +1766,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "じん肺は、肺結核のほか、続発性気管支炎、続発性気胸、原発性肺がんなどを合併することがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問13-選択肢2/index.html"
   },
   {
     "id": "令和2年_10月_問13_選択肢5",
@@ -1774,7 +1774,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "アクリロニトリルは、常温・常圧の空気中で蒸気として存在する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問13-選択肢5/index.html"
   },
   {
     "id": "令和6年_4月_問16_選択肢1",
@@ -1782,7 +1782,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "アセトンは、常温・常圧の空気中でガスとして存在する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問16-選択肢1/index.html"
   },
   {
     "id": "令和2年_4月_問12_選択肢5",
@@ -1790,7 +1790,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "アセトンは、常温・常圧の空気中で蒸気として存在する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問12-選択肢5/index.html"
   },
   {
     "id": "令和4年_10月_問13_選択肢3",
@@ -1798,7 +1798,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "アルミニウムやその化合物によってじん肺を起こすことがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問13-選択肢3/index.html"
   },
   {
     "id": "令和4年_4月_問15_選択肢5",
@@ -1806,7 +1806,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "アルミニウムやその化合物によるじん肺は、アルミニウム肺と呼ばれている。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問15-選択肢5/index.html"
   },
   {
     "id": "令和2年_4月_問16_選択肢4",
@@ -1814,7 +1814,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "アルミニウムやその化合物によるじん肺をアルミニウム肺という。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問16-選択肢4/index.html"
   },
   {
     "id": "令和元年_4月_問15_選択肢4",
@@ -1822,7 +1822,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "アルミニウムを含む粉じんや炭素を含む粉じんも、じん肺を起こすことがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問15-選択肢4/index.html"
   },
   {
     "id": "平成30年_10月_問12_選択肢2",
@@ -1830,7 +1830,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "アンモニアは、常温・常圧の空気中でガスとして存在する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問12-選択肢2/index.html"
   },
   {
     "id": "令和2年_4月_問12_選択肢3",
@@ -1838,7 +1838,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "アンモニアは、常温・常圧の空気中で蒸気として存在する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「アセトン」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問12-選択肢3/index.html"
   },
   {
     "id": "令和4年_10月_問17_選択肢5",
@@ -1846,7 +1846,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "エアラインマスクは、清浄な空気をボンベに詰めたものを空気源として供給する呼吸用保護具で、自給式呼吸器の一種である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「防じんマスクは作業に適したものを選択し、高濃度の粉じんのばく露のおそれがあるときは、できるだけ粉じんの捕集効率が高く、かつ、排気弁の動的漏れ率が低いものを選ぶ。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問17-選択肢5/index.html"
   },
   {
     "id": "令和3年_10月_問17_選択肢3",
@@ -1854,7 +1854,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "エックス線は、紫外線より波長の長い電磁波である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問17-選択肢3/index.html"
   },
   {
     "id": "令和3年_10月_問17_選択肢2",
@@ -1862,7 +1862,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "エックス線は、通常、エックス線装置を用いて発生させる人工の電離放射線であるが、放射性物質から放出されるガンマ線と同様に電磁波である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問17-選択肢2/index.html"
   },
   {
     "id": "平成29年_10月_問11_選択肢1",
@@ -1870,7 +1870,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "オルト-トリジンは、常温・常圧の空気中で蒸気として存在する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「アセトン」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問11-選択肢1/index.html"
   },
   {
     "id": "令和2年_10月_問20_選択肢1",
@@ -1878,7 +1878,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "カドミウム中毒では、上気道炎、肺炎、腎機能障害などがみられる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問20-選択肢1/index.html"
   },
   {
     "id": "平成30年_4月_問14_選択肢4",
@@ -1886,7 +1886,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "カドミウム中毒では、上気道炎、肺炎、腎障害などがみられる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問14-選択肢4/index.html"
   },
   {
     "id": "平成30年_10月_問14_選択肢2",
@@ -1894,7 +1894,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "カドミウム中毒では、感情不安定、幻覚などの精神障害や手指の震えなどの症状がみられる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「鉛中毒では、貧血、伸筋麻痺ひ、腹部の疝痛などの症状がみられる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問14-選択肢2/index.html"
   },
   {
     "id": "令和2年_4月_問20_選択肢1",
@@ -1902,7 +1902,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ガス又は蒸気状の有害物質が粉じんと混在している作業環境中で防毒マスクを使用するときは、防じん機能を有する防毒マスクを選択する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問20-選択肢1/index.html"
   },
   {
     "id": "令和3年_4月_問13_選択肢3",
@@ -1910,7 +1910,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "キシレンのばく露の生物学的モニタリングの指標としての尿中代謝物は、メチル馬尿酸である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問13-選択肢3/index.html"
   },
   {
     "id": "平成29年_4月_問12_選択肢3",
@@ -1918,7 +1918,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "キシレンのばく露の生物学的モニタリングの指標としての尿中代謝物は、馬尿酸である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「低濃度の有機溶剤の繰り返しばく露では、頭痛、めまい、記憶力減退、不眠などの不定愁訴がみられる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問12-選択肢3/index.html"
   },
   {
     "id": "令和2年_10月_問15_選択肢3",
@@ -1926,7 +1926,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "キシレンの生物学的モニタリング指標は、メチル馬尿酸である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問15-選択肢3/index.html"
   },
   {
     "id": "平成29年_10月_問19_選択肢4",
@@ -1934,7 +1934,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "キャノピー型フードは、発生源からの熱による上昇気流を利用して捕捉するもので、レシーバー式フードに分類される。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問19-選択肢4/index.html"
   },
   {
     "id": "令和4年_4月_問18_選択肢4",
@@ -1942,7 +1942,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "キャノピ型フードは、発生源からの熱による上昇気流を利用して捕捉するもので、レシーバ式フードに分類される。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問18-選択肢4/index.html"
   },
   {
     "id": "令和元年_10月_問15_選択肢4",
@@ -1950,7 +1950,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "クロム中毒では、低分子蛋白尿、歯への黄色の色素沈着、視野狭窄などの症状がみられる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「鉛中毒では、貧血、伸筋麻痺ひ、腹部の疝痛などの症状がみられる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問15-選択肢4/index.html"
   },
   {
     "id": "令和6年_10月_問15_選択肢3",
@@ -1958,7 +1958,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "クロム中毒では、指の骨の溶解、肝臓の血管肉腫などがみられる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問15-選択肢3/index.html"
   },
   {
     "id": "令和2年_10月_問20_選択肢5",
@@ -1966,7 +1966,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "クロム中毒では、肺がん、上気道がんなどがみられる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問20-選択肢5/index.html"
   },
   {
     "id": "令和6年_4月_問17_選択肢4",
@@ -1974,7 +1974,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "クロム酸により発症するおそれのある主たるがんは、大腸がんである。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「塩化ビニル：肝血管肉腫」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問17-選択肢4/index.html"
   },
   {
     "id": "令和元年_4月_問18_選択肢5",
@@ -1982,7 +1982,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "クロム酸により発症するおそれのある主たるがんは、皮膚がんである。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「塩化ビニル：肝血管肉腫」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問18-選択肢5/index.html"
   },
   {
     "id": "令和2年_4月_問12_選択肢4",
@@ -1990,7 +1990,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "クロム酸は、常温・常圧の空気中で蒸気として存在する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「アセトン」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問12-選択肢4/index.html"
   },
   {
     "id": "令和元年_4月_問18_選択肢4",
@@ -1998,7 +1998,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "コールタールにより発症するおそれのある主たるがんは、白血病である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「塩化ビニル：肝血管肉腫」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問18-選択肢4/index.html"
   },
   {
     "id": "令和2年_4月_問13_選択肢4",
@@ -2006,7 +2006,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "コールタールにより発症するおそれのある主たるがんは、肝血管肉腫である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ベンゼン：白血病」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問13-選択肢4/index.html"
   },
   {
     "id": "令和4年_10月_問16_選択肢2",
@@ -2014,7 +2014,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "シアン化水素による中毒では、細胞内での酸素利用の障害による呼吸困難、けいれんなどがみられる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問16-選択肢2/index.html"
   },
   {
     "id": "令和3年_4月_問17_選択肢2",
@@ -2022,7 +2022,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "シアン化水素による中毒では、細胞内での酸素利用の障害による呼吸困難、痙攣けいれんなどがみられる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問17-選択肢2/index.html"
   },
   {
     "id": "令和2年_4月_問12_選択肢2",
@@ -2030,7 +2030,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ジクロロベンジジンは、常温・常圧の空気中で蒸気として存在する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「アセトン」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問12-選択肢2/index.html"
   },
   {
     "id": "令和3年_4月_問20_選択肢2",
@@ -2038,7 +2038,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "スチレンの生物学的モニタリング指標は、メチルホルムアミドである。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問20-選択肢2/index.html"
   },
   {
     "id": "令和2年_10月_問15_選択肢2",
@@ -2046,7 +2046,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "スチレンの生物学的モニタリング指標は、馬尿酸である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問15-選択肢2/index.html"
   },
   {
     "id": "令和4年_10月_問19_選択肢4",
@@ -2054,7 +2054,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "スロット型フードは、作業面を除き周りが覆われているもので、囲い式フードに分類される。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「フード開口部の周囲にフランジがあると、フランジがないときに比べ、効率良く吸引することができる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問19-選択肢4/index.html"
   },
   {
     "id": "令和4年_4月_問18_選択肢3",
@@ -2062,7 +2062,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "スロット型フードは、発生源からの飛散速度を利用して捕捉するもので、レシーバ式フードに分類される。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「キャノピ型フードは、発生源からの熱による上昇気流を利用して捕捉するもので、レシーバ式フードに分類される。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問18-選択肢3/index.html"
   },
   {
     "id": "令和2年_4月_問11_選択肢1",
@@ -2070,7 +2070,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ダクトの形状には円形、角形などがあり、その断面積を大きくするほど、ダクトの圧力損失が増大する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ダクトは、曲がり部分をできるだけ少なくするように配管し、主ダクトと枝ダクトとの合流角度は45°を超えないようにする。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問11-選択肢1/index.html"
   },
   {
     "id": "令和2年_10月_問19_選択肢1",
@@ -2078,7 +2078,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ダクトの形状には円形、角形などがあるが、その断面積を大きくするほど、ダクトの圧力損失が増大する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「建築ブース型フードは、作業面を除き周りが覆われているもので、囲い式フードに分類される。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問19-選択肢1/index.html"
   },
   {
     "id": "令和2年_4月_問11_選択肢5",
@@ -2086,7 +2086,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ダクトは、曲がり部分をできるだけ少なくするように配管し、主ダクトと枝ダクトとの合流角度は45°を超えないようにする。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問11-選択肢5/index.html"
   },
   {
     "id": "令和2年_10月_問19_選択肢5",
@@ -2094,7 +2094,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ダクトは、曲がり部分をできるだけ少なくするように配管し、主ダクトと枝ダクトとの合流角度は60°を超えないようにする。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「建築ブース型フードは、作業面を除き周りが覆われているもので、囲い式フードに分類される。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問19-選択肢5/index.html"
   },
   {
     "id": "令和4年_4月_問14_選択肢4",
@@ -2102,7 +2102,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "テトラクロロエチレンのばく露の生物学的モニタリングの指標としての尿中代謝物には、トリクロロ酢酸がある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問14-選択肢4/index.html"
   },
   {
     "id": "令和6年_4月_問16_選択肢3",
@@ -2110,7 +2110,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "テトラクロロエチレンは、常温・常圧の空気中で蒸気として存在する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問16-選択肢3/index.html"
   },
   {
     "id": "令和2年_10月_問15_選択肢5",
@@ -2118,7 +2118,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "トリクロロエチレンの生物学的モニタリング指標は、トリクロロ酢酸である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問15-選択肢5/index.html"
   },
   {
     "id": "令和3年_4月_問12_選択肢3",
@@ -2126,7 +2126,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "トリクロロエチレンは、常温・常圧の空気中で蒸気として存在する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問12-選択肢3/index.html"
   },
   {
     "id": "令和元年_4月_問13_選択肢3",
@@ -2134,7 +2134,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "トルエンのばく露の生物学的モニタリングの指標としての尿中代謝物は、馬尿酸である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問13-選択肢3/index.html"
   },
   {
     "id": "令和3年_4月_問20_選択肢3",
@@ -2142,7 +2142,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "トルエンの生物学的モニタリング指標は、馬尿酸である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問20-選択肢3/index.html"
   },
   {
     "id": "令和2年_10月_問19_選択肢3",
@@ -2150,7 +2150,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ドラフトチェンバ型フードは、発生源からの飛散速度を利用して捕捉するもので、外付け式フードに分類される。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「建築ブース型フードは、作業面を除き周りが覆われているもので、囲い式フードに分類される。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問19-選択肢3/index.html"
   },
   {
     "id": "令和6年_4月_問16_選択肢4",
@@ -2158,7 +2158,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ナフタレンは、常温・常圧の空気中で蒸気として存在する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問16-選択肢4/index.html"
   },
   {
     "id": "令和6年_10月_問11_選択肢2",
@@ -2166,7 +2166,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ニッケルカルボニルは、常温・常圧の空気中で蒸気として存在する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問11-選択肢2/index.html"
   },
   {
     "id": "令和3年_4月_問17_選択肢1",
@@ -2174,7 +2174,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ノルマルヘキサンによる健康障害では、末梢神経障害がみられる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問17-選択肢1/index.html"
   },
   {
     "id": "令和2年_10月_問17_選択肢2",
@@ -2182,7 +2182,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ノルマルヘキサンによる健康障害では、末梢神経障害などがみられる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問17-選択肢2/index.html"
   },
   {
     "id": "平成30年_4月_問13_選択肢5",
@@ -2190,7 +2190,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ノルマルヘキサンによる障害として顕著なものには、白血病や皮膚がんがある。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「トルエンのばく露の生物学的モニタリングの指標としての尿中代謝物は、馬尿酸である。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問13-選択肢5/index.html"
   },
   {
     "id": "令和2年_4月_問14_選択肢3",
@@ -2198,7 +2198,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ノルマルヘキサンのばく露の生物学的モニタリングの指標としての尿中代謝物は、2,5-ヘキサンジオンである。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問14-選択肢3/index.html"
   },
   {
     "id": "令和2年_10月_問15_選択肢4",
@@ -2206,7 +2206,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ノルマルヘキサンの生物学的モニタリング指標は、2,5-ヘキサンジオンである。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問15-選択肢4/index.html"
   },
   {
     "id": "令和2年_4月_問15_選択肢2",
@@ -2214,7 +2214,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ハザードは、労働災害発生の可能性と負傷又は疾病の重大性(重篤度)の組合せであると定義される。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問15-選択肢2/index.html"
   },
   {
     "id": "令和元年_10月_問19_選択肢5",
@@ -2222,7 +2222,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ハロゲンガス用防毒マスクの吸収缶の色は、黄色である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「吸収缶が、除毒能力を喪失するまでの時間を破過時間という。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問19-選択肢5/index.html"
   },
   {
     "id": "令和6年_4月_問17_選択肢3",
@@ -2230,7 +2230,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ビス(クロロメチル)エーテルにより発症するおそれのある主たるがんは、膀胱ぼうこうがんである。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「塩化ビニル：肝血管肉腫」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問17-選択肢3/index.html"
   },
   {
     "id": "令和6年_4月_問16_選択肢5",
@@ -2238,7 +2238,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "フェノールは、常温・常圧の空気中で蒸気として存在する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問16-選択肢5/index.html"
   },
   {
     "id": "令和4年_10月_問19_選択肢2",
@@ -2246,7 +2246,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "フード開口部の周囲にフランジがあると、フランジがないときに比べ、効率良く吸引することができる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問19-選択肢2/index.html"
   },
   {
     "id": "令和2年_10月_問19_選択肢2",
@@ -2254,7 +2254,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "フード開口部の周囲にフランジがあると、フランジがないときに比べ、気流の整流作用が増し、大きな排風量が必要となる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「建築ブース型フードは、作業面を除き周りが覆われているもので、囲い式フードに分類される。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問19-選択肢2/index.html"
   },
   {
     "id": "令和4年_4月_問18_選択肢2",
@@ -2262,7 +2262,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "フード開口部の周囲にフランジがあると、フランジがないときに比べ、気流の整流作用が増すため、大きな排風量が必要となる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「キャノピ型フードは、発生源からの熱による上昇気流を利用して捕捉するもので、レシーバ式フードに分類される。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問18-選択肢2/index.html"
   },
   {
     "id": "令和2年_4月_問11_選択肢2",
@@ -2270,7 +2270,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "フード開口部の周囲にフランジがあると、フランジがないときに比べ、気流の整流作用が増すので、大きな排風量が必要となる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ダクトは、曲がり部分をできるだけ少なくするように配管し、主ダクトと枝ダクトとの合流角度は45°を超えないようにする。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問11-選択肢2/index.html"
   },
   {
     "id": "令和2年_10月_問20_選択肢4",
@@ -2278,7 +2278,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ベリリウム中毒では、溶血性貧血、尿の赤色化などの症状がみられる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問20-選択肢4/index.html"
   },
   {
     "id": "令和6年_4月_問17_選択肢2",
@@ -2286,7 +2286,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ベンジジンにより発症するおそれのある主たるがんは、皮膚がんである。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「塩化ビニル：肝血管肉腫」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問17-選択肢2/index.html"
   },
   {
     "id": "令和2年_4月_問13_選択肢2",
@@ -2294,7 +2294,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ベンジジンにより発症するおそれのある主たるがんは、胃がんである。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ベンゼン：白血病」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問13-選択肢2/index.html"
   },
   {
     "id": "令和2年_4月_問13_選択肢1",
@@ -2302,7 +2302,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ベンゼンにより発症するおそれのある主たるがんは、白血病である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問13-選択肢1/index.html"
   },
   {
     "id": "令和2年_10月_問17_選択肢5",
@@ -2310,7 +2310,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ベンゼンによる健康障害では、再生不良性貧血、白血病などがみられる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問17-選択肢5/index.html"
   },
   {
     "id": "令和元年_4月_問17_選択肢5",
@@ -2318,7 +2318,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ベンゼンによる健康障害では、長期間のばく露によって造血器障害が現れ、再生不良性貧血を生じる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問17-選択肢5/index.html"
   },
   {
     "id": "令和2年_4月_問13_選択肢3",
@@ -2326,7 +2326,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ベンゾトリクロリドにより発症するおそれのある主たるがんは、膀胱ぼうこうがんである。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ベンゼン：白血病」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問13-選択肢3/index.html"
   },
   {
     "id": "令和元年_4月_問18_選択肢3",
@@ -2334,7 +2334,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ベータ-ナフチルアミンにより発症するおそれのある主たるがんは、肺がんである。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「塩化ビニル：肝血管肉腫」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問18-選択肢3/index.html"
   },
   {
     "id": "令和2年_10月_問13_選択肢1",
@@ -2342,7 +2342,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ホルムアルデヒドは、常温・常圧の空気中でガスとして存在する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問13-選択肢1/index.html"
   },
   {
     "id": "令和3年_10月_問12_選択肢2",
@@ -2350,7 +2350,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ホルムアルデヒドは、常温・常圧の空気中で蒸気として存在する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「二硫化炭素」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問12-選択肢2/index.html"
   },
   {
     "id": "平成29年_10月_問17_選択肢1",
@@ -2358,7 +2358,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "マイクロ波は、赤外線より波長が短い電磁波で、照射部位の組織を加熱する作用がある。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「金属熱は、金属の溶融作業などで亜鉛、銅などのヒュームを吸入したときに発生し、悪寒、発熱、関節痛などの症状がみられる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問17-選択肢1/index.html"
   },
   {
     "id": "令和6年_4月_問11_選択肢4",
@@ -2366,7 +2366,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "マンガンを取り扱う業務に常時従事する労働者に対して行う特殊健康診断の項目として、握力の測定がある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問11-選択肢4/index.html"
   },
   {
     "id": "令和元年_10月_問15_選択肢3",
@@ -2374,7 +2374,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "マンガン中毒では、指の骨の溶解、皮膚の硬化などの症状がみられる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「鉛中毒では、貧血、伸筋麻痺ひ、腹部の疝痛などの症状がみられる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問15-選択肢3/index.html"
   },
   {
     "id": "令和4年_10月_問18_選択肢3",
@@ -2382,7 +2382,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "マンガン中毒では、指の骨の溶解、肝臓の血管肉腫などがみられる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問18-選択肢3/index.html"
   },
   {
     "id": "令和2年_10月_問20_選択肢3",
@@ -2390,7 +2390,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "マンガン中毒では、筋のこわばり、ふるえ、歩行困難などのパーキンソン病に似た症状がみられる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問20-選択肢3/index.html"
   },
   {
     "id": "令和3年_10月_問14_選択肢3",
@@ -2398,7 +2398,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "マンガン中毒では、筋のこわばり、震え、歩行困難などのパーキンソン病に似た症状がみられる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問14-選択肢3/index.html"
   },
   {
     "id": "令和2年_4月_問14_選択肢4",
@@ -2406,7 +2406,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "メタノールによる健康障害として顕著なものは、網膜細動脈瘤を伴う脳血管障害である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ノルマルヘキサンのばく露の生物学的モニタリングの指標としての尿中代謝物は、2,5-ヘキサンジオンである。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問14-選択肢4/index.html"
   },
   {
     "id": "令和4年_4月_問14_選択肢3",
@@ -2414,7 +2414,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "メタノールによる障害として顕著なものには、網膜の微細動脈瘤を伴う脳血管障害がある。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「テトラクロロエチレンのばく露の生物学的モニタリングの指標としての尿中代謝物には、トリクロロ酢酸がある。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問14-選択肢3/index.html"
   },
   {
     "id": "令和6年_10月_問13_選択肢4",
@@ -2422,7 +2422,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "メタノールによる障害として顕著なものは、網膜微細動脈瘤を伴う脳血管障害である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問13-選択肢4/index.html"
   },
   {
     "id": "令和3年_4月_問13_選択肢2",
@@ -2430,7 +2430,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "メタノールによる障害として顕著なものは、網膜細動脈瘤を伴う脳血管障害である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問13-選択肢2/index.html"
   },
   {
     "id": "令和3年_4月_問11_選択肢3",
@@ -2438,7 +2438,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "リスクの見積りは、化学物質等が当該業務に従事する労働者に危険を及ぼし、又は化学物質等により当該労働者の健康障害を生ずるおそれの程度(発生可能性)及び当該危険又は健康障害の程度(重篤度)を考慮して行う。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問11-選択肢3/index.html"
   },
   {
     "id": "令和2年_4月_問15_選択肢1",
@@ -2446,7 +2446,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "リスクアセスメントの基本的手順のうち最初に実施するのは、労働者の就業に係る化学物質等による危険性又は有害性を特定することである。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問15-選択肢1/index.html"
   },
   {
     "id": "令和3年_4月_問11_選択肢5",
@@ -2454,7 +2454,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "リスクアセスメントの実施に当たっては、化学物質等に係る安全データシート、作業標準、作業手順書、作業環境測定結果等の資料を入手し、その情報を活用する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問11-選択肢5/index.html"
   },
   {
     "id": "令和元年_4月_問14_選択肢1",
@@ -2462,7 +2462,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "リスクアセスメントは、化学物質等を原材料等として新規に採用し、又は変更するときのほか、化学物質等を製造し、又は取り扱う業務に係る作業の方法又は手順を新規に採用し、又は変更するときなどに実施する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問14-選択肢1/index.html"
   },
   {
     "id": "令和3年_4月_問11_選択肢1",
@@ -2470,7 +2470,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "リスクアセスメントは、化学物質等を原材料等として新規に採用し、又は変更するとき、化学物質等を製造し、又は取り扱う業務に係る作業の方法又は手順を新規に採用し、又は変更するときなどに実施する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問11-選択肢1/index.html"
   },
   {
     "id": "令和6年_10月_問12_選択肢5",
@@ -2478,7 +2478,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "リスクアセスメント対象物への労働者のばく露の程度及び当該物質による有害性の程度を相対的に尺度化し、それらを縦軸と横軸とし、あらかじめばく露の程度及び有害性の程度に応じてリスクが割り付けられた表を使用する方法",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問12-選択肢5/index.html"
   },
   {
     "id": "令和2年_10月_問18_選択肢5",
@@ -2486,7 +2486,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "一部の有機溶剤は、肝機能障害や腎機能障害を起こす。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問18-選択肢5/index.html"
   },
   {
     "id": "平成29年_4月_問15_選択肢1",
@@ -2494,7 +2494,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "一酸化炭素による中毒では、ヘモグロビン合成の障害による貧血、溶血などがみられる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問15-選択肢1/index.html"
   },
   {
     "id": "令和4年_4月_問13_選択肢2",
@@ -2502,7 +2502,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "一酸化炭素は、エンジンの排気ガス、たばこの煙などに含まれる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問13-選択肢2/index.html"
   },
   {
     "id": "令和4年_4月_問13_選択肢4",
@@ -2510,7 +2510,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "一酸化炭素は、炭素を含有する物が不完全燃焼した際に発生する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問13-選択肢4/index.html"
   },
   {
     "id": "令和4年_4月_問13_選択肢1",
@@ -2518,7 +2518,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "一酸化炭素は、無色・無臭の気体であるため、吸入しても気が付かないことが多い。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問13-選択肢1/index.html"
   },
   {
     "id": "令和4年_10月_問16_選択肢1",
@@ -2526,7 +2526,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "一酸化炭素は、赤血球中のヘモグロビンと強く結合し、体内組織の酸素欠乏状態を起こす。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問16-選択肢1/index.html"
   },
   {
     "id": "平成29年_10月_問13_選択肢4",
@@ -2534,7 +2534,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "一酸化炭素は、赤血球中のヘモグロビンに強く結合し、体内組織の酸素欠乏状態を起こす。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問13-選択肢4/index.html"
   },
   {
     "id": "令和4年_4月_問13_選択肢5",
@@ -2542,7 +2542,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "一酸化炭素中毒の後遺症として、健忘やパーキンソン症状がみられることがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問13-選択肢5/index.html"
   },
   {
     "id": "令和4年_4月_問13_選択肢3",
@@ -2550,7 +2550,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "一酸化炭素中毒は、血液中のグロブリンと一酸化炭素が強く結合し、体内の各組織が酸素欠乏状態を起こすことにより発生する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問13-選択肢3/index.html"
   },
   {
     "id": "令和6年_10月_問19_選択肢4",
@@ -2558,7 +2558,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "一酸化炭素用防毒マスクの吸収缶の色は、黄色である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「呼吸用保護具は、計算により求めた要求防護係数よりも大きな値の指定防護係数をもつものを選択する。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問19-選択肢4/index.html"
   },
   {
     "id": "令和2年_4月_問14_選択肢5",
@@ -2566,7 +2566,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "二硫化炭素による中毒では、メトヘモグロビン形成によるチアノーゼがみられる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ノルマルヘキサンのばく露の生物学的モニタリングの指標としての尿中代謝物は、2,5-ヘキサンジオンである。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問14-選択肢5/index.html"
   },
   {
     "id": "令和6年_4月_問15_選択肢4",
@@ -2574,7 +2574,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "二硫化炭素は、動脈硬化を進行させたり、精神障害を生じさせることがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問15-選択肢4/index.html"
   },
   {
     "id": "令和6年_10月_問11_選択肢3",
@@ -2582,7 +2582,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "二硫化炭素は、常温・常圧の空気中でガスとして存在する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問11-選択肢3/index.html"
   },
   {
     "id": "令和2年_10月_問13_選択肢3",
@@ -2590,7 +2590,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "二硫化炭素は、常温・常圧の空気中で蒸気として存在する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問13-選択肢3/index.html"
   },
   {
     "id": "令和元年_10月_問13_選択肢4",
@@ -2598,7 +2598,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "二硫化炭素は、精神障害や意識障害を起こすことがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問13-選択肢4/index.html"
   },
   {
     "id": "平成29年_10月_問20_選択肢1",
@@ -2606,7 +2606,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "二種類以上の有毒ガスが混在している場合には、そのうち最も毒性の強いガス用の防毒マスクを使用する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「有機ガス用の防毒マスクの吸収缶の色は、黒色である。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問20-選択肢1/index.html"
   },
   {
     "id": "令和6年_4月_問13_選択肢4",
@@ -2614,7 +2614,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "二酸化硫黄による慢性中毒では、慢性気管支炎、歯牙酸蝕症などがみられる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問13-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問13_選択肢4",
@@ -2622,7 +2622,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "二酸化硫黄は、常温・常圧の空気中で蒸気として存在する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問13-選択肢4/index.html"
   },
   {
     "id": "令和6年_4月_問13_選択肢5",
@@ -2630,7 +2630,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "二酸化窒素による中毒では、末梢神経障害などがみられる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問13-選択肢5/index.html"
   },
   {
     "id": "令和6年_10月_問17_選択肢3",
@@ -2638,7 +2638,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "人が聴くことができる音の周波数は、およそ20〜20,000Hzである。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問17-選択肢3/index.html"
   },
   {
     "id": "平成29年_4月_問13_選択肢1",
@@ -2646,7 +2646,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "人が聴くことのできる音の周波数は10Hzから30,000Hz程度までで、会話音域は2,000Hzから4,000Hz程度までである。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「騒音性難聴は、音を神経に伝達する内耳の蝸牛の中の有毛細胞が変性することにより起こる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問13-選択肢1/index.html"
   },
   {
     "id": "令和2年_4月_問17_選択肢4",
@@ -2654,7 +2654,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "低体温症は、低温下の作業で全身が冷やされ、体の中心部の温度が35°C程度以下に低下した状態をいい、意識消失、筋の硬直などの症状がみられる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問17-選択肢4/index.html"
   },
   {
     "id": "令和元年_10月_問16_選択肢4",
@@ -2662,7 +2662,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "低体温症は、低温下の作業で、全身が冷やされ体内温度が35°C程度以下に低下した状態をいい、意識消失、筋の硬直などの症状がみられる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問16-選択肢4/index.html"
   },
   {
     "id": "令和4年_10月_問15_選択肢1",
@@ -2670,7 +2670,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "低温の環境下では、手や足の指などの末梢部において組織の凍結を伴わない凍瘡を起こすことがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問15-選択肢1/index.html"
   },
   {
     "id": "令和3年_4月_問13_選択肢5",
@@ -2678,7 +2678,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "低濃度の有機溶剤の繰り返しばく露では、頭痛、めまい、物忘れ、不眠などの不定愁訴がみられる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問13-選択肢5/index.html"
   },
   {
     "id": "令和6年_10月_問13_選択肢3",
@@ -2686,7 +2686,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "低濃度の有機溶剤の繰り返しばく露では、頭痛、めまい、記憶力減退、不眠などの不定愁訴がみられる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問13-選択肢3/index.html"
   },
   {
     "id": "令和2年_10月_問18_選択肢3",
@@ -2694,7 +2694,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "低濃度の繰り返しばく露による慢性中毒では、頭痛、めまい、記憶力減退、不眠などの不定愁訴がみられる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問18-選択肢3/index.html"
   },
   {
     "id": "令和4年_4月_問20_選択肢3",
@@ -2702,7 +2702,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "体内に取り込まれた鉛の生物学的半減期は、数時間と短いので、鉛健康診断における採尿及び採血の時期は、厳重にチェックする必要がある。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「特殊健康診断における生物学的モニタリングによる検査は、有害物の体内摂取量や有害物による健康影響の程度を把握するための検査である。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問20-選択肢3/index.html"
   },
   {
     "id": "平成30年_4月_問19_選択肢1",
@@ -2710,7 +2710,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "作業環境測定を実施する場合の単位作業場所は、労働者の作業中の行動範囲、有害物の分布の状況などに基づいて設定する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問19-選択肢1/index.html"
   },
   {
     "id": "令和6年_4月_問20_選択肢4",
@@ -2718,7 +2718,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "使い捨て式防じんマスクは、粒径1μm程度のヒュームには使用できない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問20-選択肢4/index.html"
   },
   {
     "id": "令和3年_4月_問18_選択肢4",
@@ -2726,7 +2726,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "使い捨て式防じんマスクは、面体ごとに、型式検定合格標章の付されたものを使用する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問18-選択肢4/index.html"
   },
   {
     "id": "令和4年_10月_問17_選択肢1",
@@ -2734,7 +2734,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "保護めがねは、紫外線などの有害光線による眼の障害を防ぐ目的で使用するもので、飛散粒子、薬品の飛沫などによる障害を防ぐ目的で使用するものではない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「防じんマスクは作業に適したものを選択し、高濃度の粉じんのばく露のおそれがあるときは、できるだけ粉じんの捕集効率が高く、かつ、排気弁の動的漏れ率が低いものを選ぶ。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問17-選択肢1/index.html"
   },
   {
     "id": "平成29年_4月_問16_選択肢4",
@@ -2742,7 +2742,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "保護クリームは、作業中に有害な物質が直接皮膚に付着しないようにする目的で塗布するものである。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問16-選択肢4/index.html"
   },
   {
     "id": "令和4年_10月_問17_選択肢2",
@@ -2750,7 +2750,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "保護クリームは、皮膚の露出部に塗布して、作業中に有害な物質が直接皮膚に付着しないようにする目的で使用するものであるので、有害性の強い化学物質を直接素手で取り扱うときには、必ず使用する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「防じんマスクは作業に適したものを選択し、高濃度の粉じんのばく露のおそれがあるときは、できるだけ粉じんの捕集効率が高く、かつ、排気弁の動的漏れ率が低いものを選ぶ。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問17-選択肢2/index.html"
   },
   {
     "id": "令和元年_4月_問14_選択肢3",
@@ -2758,7 +2758,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "健康障害に係るリスクの見積りは、「化学物質等により当該労働者の健康障害を生ずるおそれの程度(発生可能性)」及び「当該健康障害の程度(重篤度)」を考慮して行う方法がある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問14-選択肢3/index.html"
   },
   {
     "id": "令和4年_4月_問16_選択肢1",
@@ -2766,7 +2766,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "全身振動障害では、レイノー現象などの末梢循環障害や手指のしびれ感などの末梢神経障害がみられ、局所振動障害では、関節痛などの筋骨格系障害がみられる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「減圧症は、潜函作業者、潜水作業者などに発症するもので、高圧下作業からの減圧に伴い、血液中や組織中に溶け込んでいた窒素の気泡化が関与して発生し、皮膚のかゆみ、関節痛、神経の麻痺などの症状がみられる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問16-選択肢1/index.html"
   },
   {
     "id": "令和3年_10月_問13_選択肢5",
@@ -2774,7 +2774,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "凍瘡は、皮膚組織の凍結壊死を伴うしもやけのことで、0°C以下の寒冷にばく露することによって発生する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「振動障害は、チェーンソーなどの振動工具によって生じる障害で、手のしびれなどの末梢神経障害やレイノー現象などの末梢循環障害がみられる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問13-選択肢5/index.html"
   },
   {
     "id": "令和元年_4月_問14_選択肢4",
@@ -2782,7 +2782,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "化学物質等による健康障害に係るリスクについては、化学物質等への労働者のばく露濃度を測定し、測定結果を厚生労働省の「作業環境評価基準」に示されている「管理濃度」と比較することにより見積もる方法が確実性が高い。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問14-選択肢4/index.html"
   },
   {
     "id": "令和3年_4月_問11_選択肢2",
@@ -2790,7 +2790,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "化学物質等による危険性又は有害性の特定は、リスクアセスメント等の対象となる業務を洗い出した上で、原則として国連勧告の「化学品の分類及び表示に関する世界調和システム(GHS)」などで示されている危険性又は有害性の分類等に即して行う。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問11-選択肢2/index.html"
   },
   {
     "id": "令和元年_4月_問14_選択肢2",
@@ -2798,7 +2798,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "化学物質等による危険性又は有害性の特定は、化学物質等について、リスクアセスメント等の対象となる業務を洗い出した上で、国連勧告の「化学品の分類及び表示に関する世界調和システム(GHS)」等に示されている危険性又は有害性の分類に則して行う。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問14-選択肢2/index.html"
   },
   {
     "id": "令和3年_4月_問11_選択肢4",
@@ -2806,7 +2806,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "化学物質等による疾病のリスクについては、化学物質等への労働者のばく露濃度等を測定し、測定結果を厚生労働省の「作業環境評価基準」に示されている「管理濃度」と比較することにより見積もる方法が確実性が高い。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問11-選択肢4/index.html"
   },
   {
     "id": "令和6年_4月_問18_選択肢3",
@@ -2814,7 +2814,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "化学物質等による疾病のリスク低減措置の検討では、化学物質等の有害性に応じた有効な保護具の使用よりも作業手順の改善、立入禁止等の管理的対策を優先する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問18-選択肢3/index.html"
   },
   {
     "id": "平成29年_4月_問20_選択肢3",
@@ -2822,7 +2822,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "化学物質等による疾病のリスク低減措置の検討では、化学物質等の有害性に応じた有効な保護具の使用よりも局所排気装置の設置等の工学的対策を優先する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問20-選択肢3/index.html"
   },
   {
     "id": "令和2年_4月_問15_選択肢3",
@@ -2830,7 +2830,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "化学物質等による疾病のリスク低減措置の検討では、化学物質等の有害性に応じた有効な保護具の使用よりも局所排気装置の設置等の衛生工学的対策を優先する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問15-選択肢3/index.html"
   },
   {
     "id": "令和2年_4月_問15_選択肢4",
@@ -2838,7 +2838,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "化学物質等による疾病のリスク低減措置の検討では、法令に定められた事項を除けば、危険性又は有害性のより低い物質への代替等を最優先する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問15-選択肢4/index.html"
   },
   {
     "id": "令和6年_4月_問18_選択肢5",
@@ -2846,7 +2846,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "化学物質等による疾病のリスク低減措置の検討に当たっては、より優先順位の高い措置を実施することにした場合であって、当該措置により十分にリスクが低減される場合には、当該措置よりも優先順位の低い措置の検討は必要ない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問18-選択肢5/index.html"
   },
   {
     "id": "平成30年_10月_問11_選択肢4",
@@ -2854,7 +2854,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "化学物質等への労働者のばく露の程度及び当該化学物質等による有害性を相対的に尺度化し、それらを縦軸と横軸とし、あらかじめばく露の程度及び有害性の程度に応じてリスクが割り付けられた表を使用する方法",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「化学物質等への労働者のばく露濃度を測定し、測定結果を厚生労働省の「作業環境評価基準」に示されている当該化学物質の管理濃度と比較する方法」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問11-選択肢4/index.html"
   },
   {
     "id": "平成30年_10月_問11_選択肢5",
@@ -2862,7 +2862,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "化学物質等への労働者のばく露濃度を測定し、測定結果を厚生労働省の「作業環境評価基準」に示されている当該化学物質の管理濃度と比較する方法",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問11-選択肢5/index.html"
   },
   {
     "id": "令和3年_10月_問18_選択肢3",
@@ -2870,7 +2870,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "単位作業場所における気中有害物質濃度の平均的な分布は、B測定の結果により評価される。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「管理濃度は、有害物質に関する作業環境の状態を単位作業場所の作業環境測定結果から評価するための指標として設定されたものである。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問18-選択肢3/index.html"
   },
   {
     "id": "平成30年_10月_問18_選択肢2",
@@ -2878,7 +2878,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "単位作業場所は、作業場の区域のうち労働者の作業中の行動範囲、有害物の分布等の状況等に基づき定められる作業環境測定のために必要な区域をいう。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問18-選択肢2/index.html"
   },
   {
     "id": "令和3年_10月_問18_選択肢2",
@@ -2886,7 +2886,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "原材料を反応槽へ投入する場合など、間欠的に有害物質の発散を伴う作業による気中有害物質の最高濃度は、A測定の結果により評価される。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「管理濃度は、有害物質に関する作業環境の状態を単位作業場所の作業環境測定結果から評価するための指標として設定されたものである。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問18-選択肢2/index.html"
   },
   {
     "id": "令和6年_10月_問12_選択肢4",
@@ -2894,7 +2894,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "取り扱うリスクアセスメント対象物の年間の取扱量及び作業時間を一定の尺度によりそれぞれ数値化し、それらを加算又は乗算等する方法",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問12-選択肢4/index.html"
   },
   {
     "id": "令和3年_10月_問15_選択肢2",
@@ -2902,7 +2902,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "取り扱う化学物質等の年間の取扱量及び作業時間を一定の尺度によりそれぞれ数値化し、それらを加算又は乗算等する方法",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問15-選択肢2/index.html"
   },
   {
     "id": "令和元年_10月_問19_選択肢4",
@@ -2910,7 +2910,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "吸収缶が、除毒能力を喪失するまでの時間を破過時間という。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問19-選択肢4/index.html"
   },
   {
     "id": "令和6年_10月_問19_選択肢1",
@@ -2918,7 +2918,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "呼吸用保護具は、計算により求めた要求防護係数よりも大きな値の指定防護係数をもつものを選択する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問19-選択肢1/index.html"
   },
   {
     "id": "令和3年_4月_問14_選択肢3",
@@ -2926,7 +2926,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "囲い式ドラフトチェンバ型>外付け式ルーバ型>囲い式カバー型",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「囲い式カバー型>囲い式建築ブース型>外付け式ルーバ型」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問14-選択肢3/index.html"
   },
   {
     "id": "令和6年_4月_問19_選択肢3",
@@ -2934,7 +2934,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "囲い式フードの排気効果を型別に比較すると、ドラフトチェンバ型は、カバー型より排気効果が大きい。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「キャノピ型フードは、発生源からの熱による上昇気流を利用して捕捉するもので、レシーバ式フードに分類される。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問19-選択肢3/index.html"
   },
   {
     "id": "令和3年_4月_問14_選択肢2",
@@ -2942,7 +2942,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "囲い式建築ブース型>囲い式グローブボックス型>外付け式ルーバ型",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「囲い式カバー型>囲い式建築ブース型>外付け式ルーバ型」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問14-選択肢2/index.html"
   },
   {
     "id": "平成29年_10月_問20_選択肢3",
@@ -2950,7 +2950,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "型式検定合格標章のある防じんマスクでも、ヒュームに対しては無効である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「有機ガス用の防毒マスクの吸収缶の色は、黒色である。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問20-選択肢3/index.html"
   },
   {
     "id": "令和6年_10月_問19_選択肢2",
@@ -2958,7 +2958,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "型式検定合格標章のある防じんマスクでも、ヒュームのような微細な粒子に対しては使用してはならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「呼吸用保護具は、計算により求めた要求防護係数よりも大きな値の指定防護係数をもつものを選択する。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問19-選択肢2/index.html"
   },
   {
     "id": "令和4年_4月_問19_選択肢3",
@@ -2966,7 +2966,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "型式検定合格標章のある防じんマスクでも、ヒュームのような微細な粒子に対しては効果がない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「防じん機能を有する防毒マスクには、吸収缶のろ過材がある部分に白線が入れてある。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問19-選択肢3/index.html"
   },
   {
     "id": "令和3年_10月_問20_選択肢3",
@@ -2974,7 +2974,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "型式検定合格標章のある防じんマスクでも、ヒュームのような微細な粒子に対して使用してはならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「高濃度の有害ガスに対しては、防毒マスクではなく、送気マスクか自給式呼吸器を使用する。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問20-選択肢3/index.html"
   },
   {
     "id": "令和6年_4月_問17_選択肢1",
@@ -2982,7 +2982,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "塩化ビニルにより発症するおそれのある主たるがんは、肝血管肉腫である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問17-選択肢1/index.html"
   },
   {
     "id": "令和4年_10月_問16_選択肢4",
@@ -2990,7 +2990,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "塩化ビニルによる慢性中毒では、慢性気管支炎、歯牙酸蝕症などがみられる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問16-選択肢4/index.html"
   },
   {
     "id": "令和3年_4月_問17_選択肢4",
@@ -2998,7 +2998,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "塩化ビニルによる慢性中毒では、気管支炎、歯牙酸蝕症などがみられる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問17-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問13_選択肢2",
@@ -3006,7 +3006,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "塩化ビニルは、常温・常圧の空気中でガスとして存在する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問13-選択肢2/index.html"
   },
   {
     "id": "令和3年_10月_問12_選択肢1",
@@ -3014,7 +3014,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "塩化ビニルは、常温・常圧の空気中で蒸気として存在する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「二硫化炭素」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問12-選択肢1/index.html"
   },
   {
     "id": "平成29年_10月_問13_選択肢5",
@@ -3022,7 +3022,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "塩素による健康障害では、再生不良性貧血、溶血などがみられる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問13-選択肢5/index.html"
   },
   {
     "id": "令和6年_4月_問16_選択肢2",
@@ -3030,7 +3030,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "塩素は、常温・常圧の空気中でガスとして存在する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問16-選択肢2/index.html"
   },
   {
     "id": "令和2年_4月_問12_選択肢1",
@@ -3038,7 +3038,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "塩素は、常温・常圧の空気中で蒸気として存在する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「アセトン」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問12-選択肢1/index.html"
   },
   {
     "id": "令和3年_4月_問14_選択肢4",
@@ -3046,7 +3046,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "外付け式ルーバ型>囲い式ドラフトチェンバ型>囲い式カバー型",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「囲い式カバー型>囲い式建築ブース型>外付け式ルーバ型」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問14-選択肢4/index.html"
   },
   {
     "id": "令和3年_4月_問14_選択肢5",
@@ -3054,7 +3054,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "外付け式ルーバ型>囲い式建築ブース型>囲い式グローブボックス型",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「囲い式カバー型>囲い式建築ブース型>外付け式ルーバ型」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問14-選択肢5/index.html"
   },
   {
     "id": "令和2年_10月_問11_選択肢4",
@@ -3062,7 +3062,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "対象の化学物質等への労働者のばく露の程度及び当該化学物質等による有害性を相対的に尺度化し、それらを縦軸と横軸とし、あらかじめばく露の程度及び有害性の程度に応じてリスクが割り付けられた表を使用する方法",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問11-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問19_選択肢4",
@@ -3070,7 +3070,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "建築ブース型フードは、作業面を除き周りが覆われているもので、囲い式フードに分類される。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問19-選択肢4/index.html"
   },
   {
     "id": "令和2年_4月_問11_選択肢4",
@@ -3078,7 +3078,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "建築ブース型フードは、作業面を除き周りが覆われているもので、外付け式フードに分類される。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ダクトは、曲がり部分をできるだけ少なくするように配管し、主ダクトと枝ダクトとの合流角度は45°を超えないようにする。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問11-選択肢4/index.html"
   },
   {
     "id": "令和元年_4月_問17_選択肢4",
@@ -3086,7 +3086,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "弗化水素による中毒では、脳神経細胞が侵され、幻覚、錯乱などの精神障害などがみられる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問17-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問17_選択肢4",
@@ -3094,7 +3094,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "弗化水素による健康障害では、貧血、溶血、メトヘモグロビン形成によるチアノーゼなどがみられる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問17-選択肢4/index.html"
   },
   {
     "id": "令和3年_4月_問17_選択肢5",
@@ -3102,7 +3102,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "弗化水素による慢性中毒では、骨の硬化、斑状歯などがみられる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問17-選択肢5/index.html"
   },
   {
     "id": "令和4年_4月_問20_選択肢5",
@@ -3110,7 +3110,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "情報機器作業に係る健康診断では、眼科学的検査などとともに、上肢及び下肢の運動機能の検査を行う。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「特殊健康診断における生物学的モニタリングによる検査は、有害物の体内摂取量や有害物による健康影響の程度を把握するための検査である。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問20-選択肢5/index.html"
   },
   {
     "id": "令和4年_4月_問20_選択肢4",
@@ -3118,7 +3118,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "振動工具の取扱い業務に係る健康診断において、振動障害の有無を評価するためには、夏季における実施が適している。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「特殊健康診断における生物学的モニタリングによる検査は、有害物の体内摂取量や有害物による健康影響の程度を把握するための検査である。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問20-選択肢4/index.html"
   },
   {
     "id": "令和3年_10月_問13_選択肢4",
@@ -3126,7 +3126,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "振動障害は、チェーンソーなどの振動工具によって生じる障害で、手のしびれなどの末梢神経障害やレイノー現象などの末梢循環障害がみられる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問13-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問16_選択肢5",
@@ -3134,7 +3134,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "振動障害は、チェーンソー、削岩機などの振動工具によって生じる障害で、手のしびれなどの末梢神経障害やレイノー現象などの末梢循環障害がみられる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問16-選択肢5/index.html"
   },
   {
     "id": "平成29年_4月_問20_選択肢5",
@@ -3142,7 +3142,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "新たに化学物質等の譲渡又は提供を受ける場合には、その化学物質を譲渡し、又は提供する者から、その化学物質等のSDS(安全データシート)を入手する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問20-選択肢5/index.html"
   },
   {
     "id": "令和2年_4月_問15_選択肢5",
@@ -3150,7 +3150,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "新たに化学物質等の譲渡又は提供を受ける場合には、その化学物質等を譲渡し、又は提供る者から、その化学物質等のSDS(安全データシート)を入手する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問15-選択肢5/index.html"
   },
   {
     "id": "令和6年_4月_問11_選択肢1",
@@ -3158,7 +3158,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有害業務への配置替えの際に行う特殊健康診断には、業務適性の判断と、その後の業務による影響を調べるための基礎資料を得るという目的がある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問11-選択肢1/index.html"
   },
   {
     "id": "平成29年_4月_問19_選択肢1",
@@ -3166,7 +3166,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有害業務への配置替えの際に行う特殊健康診断には、業務適性の判断と、その後の業務の影響を調べるための基礎資料を得るという目的がある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問19-選択肢1/index.html"
   },
   {
     "id": "令和4年_4月_問20_選択肢1",
@@ -3174,7 +3174,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有害物質による健康障害は、多くの場合、諸検査の異常などの他覚的所見より、自覚症状が先に出現するため、特殊健康診断では問診の重要性が高い。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「特殊健康診断における生物学的モニタリングによる検査は、有害物の体内摂取量や有害物による健康影響の程度を把握するための検査である。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問20-選択肢1/index.html"
   },
   {
     "id": "平成29年_10月_問20_選択肢2",
@@ -3182,7 +3182,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有機ガス用の防毒マスクの吸収缶の色は、黒色である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問20-選択肢2/index.html"
   },
   {
     "id": "令和元年_4月_問20_選択肢1",
@@ -3190,7 +3190,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有機ガス用防毒マスクの吸収缶の色は黒色であり、シアン化水素用防毒マスクの吸収缶の色は青色である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問20-選択肢1/index.html"
   },
   {
     "id": "令和3年_4月_問18_選択肢1",
@@ -3198,7 +3198,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有機ガス用防毒マスクの吸収缶の色は黒色であり、一酸化炭素用防毒マスクの吸収缶の色は赤色である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問18-選択肢1/index.html"
   },
   {
     "id": "令和3年_4月_問13_選択肢4",
@@ -3206,7 +3206,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有機溶剤による皮膚又は粘膜の症状としては、皮膚の角化、結膜炎などがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問13-選択肢4/index.html"
   },
   {
     "id": "令和6年_10月_問13_選択肢2",
@@ -3214,7 +3214,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有機溶剤による障害のうち、皮膚や粘膜の症状には、皮膚の角化、結膜炎などがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問13-選択肢2/index.html"
   },
   {
     "id": "令和4年_4月_問14_選択肢2",
@@ -3222,7 +3222,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有機溶剤は、全て脂溶性を有するが、脳などの神経系には入りにくい。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「テトラクロロエチレンのばく露の生物学的モニタリングの指標としての尿中代謝物には、トリクロロ酢酸がある。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問14-選択肢2/index.html"
   },
   {
     "id": "令和3年_4月_問13_選択肢1",
@@ -3230,7 +3230,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有機溶剤は、呼吸器から吸収されやすいが、皮膚から吸収されるものもある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問13-選択肢1/index.html"
   },
   {
     "id": "令和2年_4月_問14_選択肢2",
@@ -3238,7 +3238,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有機溶剤は、揮発性が高いため呼吸器から吸収されやすいが、皮膚から吸収されることはない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ノルマルヘキサンのばく露の生物学的モニタリングの指標としての尿中代謝物は、2,5-ヘキサンジオンである。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問14-選択肢2/index.html"
   },
   {
     "id": "令和元年_4月_問13_選択肢2",
@@ -3246,7 +3246,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有機溶剤は、揮発性が高いため呼吸器から吸収されやすく、皮膚から吸収されることはない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「トルエンのばく露の生物学的モニタリングの指標としての尿中代謝物は、馬尿酸である。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問13-選択肢2/index.html"
   },
   {
     "id": "平成29年_4月_問12_選択肢1",
@@ -3254,7 +3254,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有機溶剤は、水溶性と脂溶性をともに有し、その蒸気は空気より軽い。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「低濃度の有機溶剤の繰り返しばく露では、頭痛、めまい、記憶力減退、不眠などの不定愁訴がみられる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問12-選択肢1/index.html"
   },
   {
     "id": "令和2年_4月_問14_選択肢1",
@@ -3262,7 +3262,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有機溶剤は、水溶性と脂溶性を共に有し、その蒸気は空気より軽い。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ノルマルヘキサンのばく露の生物学的モニタリングの指標としての尿中代謝物は、2,5-ヘキサンジオンである。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問14-選択肢1/index.html"
   },
   {
     "id": "平成29年_4月_問19_選択肢5",
@@ -3270,7 +3270,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有機溶剤は、生物学的半減期が短いので、有機溶剤等健康診断における尿中の代謝物の量の検査のための採尿の時刻は、厳重にチェックする必要がある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問19-選択肢5/index.html"
   },
   {
     "id": "令和6年_4月_問11_選択肢5",
@@ -3278,7 +3278,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有機溶剤は、生物学的半減期が短いので、有機溶剤等健康診断における尿中の代謝物の量の検査のための採尿の時刻は、厳重に管理する必要がある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問11-選択肢5/index.html"
   },
   {
     "id": "令和6年_4月_問15_選択肢2",
@@ -3286,7 +3286,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有機溶剤は、脂溶性が低いため、脂肪の多い脳などには入りにくい。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「二硫化炭素は、動脈硬化を進行させたり、精神障害を生じさせることがある。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問15-選択肢2/index.html"
   },
   {
     "id": "平成29年_10月_問20_選択肢5",
@@ -3294,7 +3294,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有毒ガスの濃度が高い場合には、電動ファン付き呼吸用保護具を使用する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「有機ガス用の防毒マスクの吸収缶の色は、黒色である。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問20-選択肢5/index.html"
   },
   {
     "id": "令和6年_10月_問18_選択肢5",
@@ -3302,7 +3302,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "木材の粉じんを吸入することによって、ぜんそくを起こすことがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問18-選択肢5/index.html"
   },
   {
     "id": "令和4年_10月_問15_選択肢5",
@@ -3310,7 +3310,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "減圧症は、潜函作業者や潜水作業者が高圧下作業からの減圧に伴い、血液中や組織中に溶け込んでいた炭酸ガスの気泡化が関与して発生し、皮膚のかゆみ、関節痛、神経の麻痺などの症状がみられる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「低温の環境下では、手や足の指などの末梢部において組織の凍結を伴わない凍瘡を起こすことがある。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問15-選択肢5/index.html"
   },
   {
     "id": "令和3年_10月_問33_選択肢4",
@@ -3318,7 +3318,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "1日の情報機器作業の作業時間が4時間未満である労働者については、自覚症状を訴える者についてのみ、情報機器作業に係る定期健康診断の対象としている。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問33-選択肢4/index.html"
   },
   {
     "id": "平成29年_4月_問34_選択肢5",
@@ -3326,7 +3326,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "45°C程度の熱源への長時間接触による低温熱傷は、一見、軽症にみえても熱傷深度は深く難治性の場合が多い。次の科目が免除されている方は、問35~問44は解答しないでください。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問34-選択肢5/index.html"
   },
   {
     "id": "令和元年_4月_問30_選択肢5",
@@ -3334,7 +3334,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "AEDを用いた場合、心電図の自動解析の結果「ショックは不要です」などのメッセージが流れたときには、胸骨圧迫を開始し心肺蘇生を続ける。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問30-選択肢5/index.html"
   },
   {
     "id": "平成30年_10月_問31_選択肢5",
@@ -3342,7 +3342,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "AEDを用いた場合、電気ショックを行った後や電気ショックは不要とメッセージがあったときには、胸骨圧迫を再開し心肺蘇生を続ける。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問31-選択肢5/index.html"
   },
   {
     "id": "平成29年_4月_問30_選択肢5",
@@ -3350,7 +3350,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "AEDを用いた場合、電気ショックを行った後や電気ショックは不要と判断されたときには、音声メッセージに従い、胸骨圧迫を再開し心肺蘇生を続ける。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問30-選択肢5/index.html"
   },
   {
     "id": "令和3年_4月_問32_選択肢5",
@@ -3358,7 +3358,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "AED(自動体外式除細動器)による心電図の自動解析の結果、「ショックは不要です」などのメッセージが流れた場合には、すぐに胸骨圧迫を再開し心肺蘇生を続ける。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問32-選択肢5/index.html"
   },
   {
     "id": "令和2年_4月_問30_選択肢5",
@@ -3366,7 +3366,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "AED(自動体外式除細動器)を用いた場合、電気ショックを行った後や電気ショックは不要と判断されたときには、音声メッセージに従い、胸骨圧迫を再開し心肺蘇生を続ける。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問30-選択肢5/index.html"
   },
   {
     "id": "令和6年_4月_問34_選択肢5",
@@ -3374,7 +3374,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "BMIによる肥満度の判定基準には、男性の方が女性より大きな数値が用いられる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「BMIは肥満や低体重(痩せ)の判定に用いられる指数で、この数値が大きいほど肥満の傾向があり、小さいほど痩せの傾向がある。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問34-選択肢5/index.html"
   },
   {
     "id": "令和6年_4月_問34_選択肢1",
@@ -3382,7 +3382,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "BMIは肥満や低体重(痩せ)の判定に用いられる指数で、この数値が大きいほど肥満の傾向があり、小さいほど痩せの傾向がある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問34-選択肢1/index.html"
   },
   {
     "id": "令和6年_4月_問34_選択肢3",
@@ -3390,7 +3390,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "BMIを算出するには、体脂肪率の値が必要である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「BMIは肥満や低体重(痩せ)の判定に用いられる指数で、この数値が大きいほど肥満の傾向があり、小さいほど痩せの傾向がある。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問34-選択肢3/index.html"
   },
   {
     "id": "令和6年_4月_問34_選択肢2",
@@ -3398,7 +3398,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "BMIを算出するには、腹囲の値が必要である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「BMIは肥満や低体重(痩せ)の判定に用いられる指数で、この数値が大きいほど肥満の傾向があり、小さいほど痩せの傾向がある。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問34-選択肢2/index.html"
   },
   {
     "id": "令和4年_10月_問34_選択肢3",
@@ -3406,7 +3406,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "O-157は、ベロ毒素を産生する大腸菌で、腹痛や出血を伴う水様性の下痢などを起こす。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問34-選択肢3/index.html"
   },
   {
     "id": "令和4年_4月_問33_選択肢3",
@@ -3414,7 +3414,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "O-157は、腸管出血性大腸菌の一種で、加熱不足の食肉などから摂取され、潜伏期間は3〜5日である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問33-選択肢3/index.html"
   },
   {
     "id": "平成29年_10月_問33_選択肢1",
@@ -3422,7 +3422,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "O-157やO-111は、ベロ毒素を産生する大腸菌で、これらによる食中毒は、腹痛、出血を伴う水様性の下痢などの症状を呈する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問33-選択肢1/index.html"
   },
   {
     "id": "平成30年_10月_問33_選択肢3",
@@ -3430,7 +3430,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "O-157やO-111は、ベロ毒素を産生する大腸菌で、腹痛や出血を伴う水様性の下痢などを起こす。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問33-選択肢3/index.html"
   },
   {
     "id": "令和元年_4月_問29_選択肢5",
@@ -3438,7 +3438,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "VDT作業健康診断では、原則として、視力検査、上肢及び下肢の運動機能検査などを行う。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問29-選択肢5/index.html"
   },
   {
     "id": "令和元年_10月_問30_選択肢5",
@@ -3446,7 +3446,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "VDT作業健康診断では、視力検査などの眼科学的検査のほか、上肢の運動機能などの筋骨格系に関する検査も行っている。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問30-選択肢5/index.html"
   },
   {
     "id": "平成29年_10月_問30_選択肢5",
@@ -3454,7 +3454,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "VDT作業健康診断は、一般健康診断を実施する際に、併せて実施してもよい。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問30-選択肢5/index.html"
   },
   {
     "id": "令和4年_10月_問33_選択肢1",
@@ -3462,7 +3462,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ある事象と健康事象との間に、統計上、一方が多いと他方も多いというような相関関係が認められたとしても、それらの間に因果関係があるとは限らない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問33-選択肢1/index.html"
   },
   {
     "id": "令和3年_10月_問28_選択肢5",
@@ -3470,7 +3470,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ある事象と健康事象との間に、統計上、一方が多いと他方も多いというような相関関係が認められても、それらの間に因果関係がないこともある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問28-選択肢5/index.html"
   },
   {
     "id": "令和6年_4月_問31_選択肢3",
@@ -3478,7 +3478,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "くも膜下出血は、通常、脳動脈瘤が破れて数日後に発症し、激しい頭痛を伴う。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問31-選択肢3/index.html"
   },
   {
     "id": "令和3年_10月_問34_選択肢3",
@@ -3486,7 +3486,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "このシステムでは、事業者は、事業場における安全衛生水準の向上を図るための安全衛生に関する基本的考え方を示すものとして、安全衛生方針を表明し、労働者及び関係請負人その他の関係者に周知させる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問34-選択肢3/index.html"
   },
   {
     "id": "令和3年_10月_問34_選択肢4",
@@ -3494,7 +3494,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "このシステムでは、事業者は、安全衛生方針に基づき設定した安全衛生目標を達成するため、事業場における危険性又は有害性等の調査の結果等に基づき、一定の期間を限り、安全衛生計画を作成する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問34-選択肢4/index.html"
   },
   {
     "id": "令和3年_10月_問34_選択肢2",
@@ -3502,7 +3502,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "このシステムは、生産管理等事業実施に係る管理と一体となって運用されるものである。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問34-選択肢2/index.html"
   },
   {
     "id": "令和3年_10月_問34_選択肢1",
@@ -3510,7 +3510,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "この指針は、労働安全衛生法の規定に基づき機械、設備、化学物質等による危険又は健康障害を防止するため事業者が講ずべき具体的な措置を定めるものではない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問34-選択肢1/index.html"
   },
   {
     "id": "令和4年_4月_問34_選択肢5",
@@ -3518,7 +3518,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "インフルエンザウイルスにはA型、B型及びC型の三つの型があるが、流行の原因となるのは、主として、A型及びB型である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問34-選択肢5/index.html"
   },
   {
     "id": "令和6年_10月_問32_選択肢3",
@@ -3526,7 +3526,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "インフルエンザ発症後のウイルスの排出期間は、一般的に7日間程度であるが、この間、排出されるウイルスの量は、解熱してもほとんど変化しない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問32-選択肢3/index.html"
   },
   {
     "id": "令和2年_10月_問33_選択肢5",
@@ -3534,7 +3534,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ウェルシュ菌、セレウス菌及びカンピロバクターは、いずれも細菌性食中毒の原因菌である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問33-選択肢5/index.html"
   },
   {
     "id": "令和元年_10月_問33_選択肢5",
@@ -3542,7 +3542,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "エンテロトキシンは、フグ毒の主成分で、手足のしびれや呼吸麻痺を起こす。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ボツリヌス菌は、缶詰、真空パック食品など、酸素のない食品中で増殖し、毒性の強い神経毒を産生する。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問33-選択肢5/index.html"
   },
   {
     "id": "令和元年_10月_問33_選択肢4",
@@ -3550,7 +3550,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "カンピロバクターは、カビの産生する毒素で、腹痛や下痢を起こす。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ボツリヌス菌は、缶詰、真空パック食品など、酸素のない食品中で増殖し、毒性の強い神経毒を産生する。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問33-選択肢4/index.html"
   },
   {
     "id": "令和3年_10月_問32_選択肢4",
@@ -3558,7 +3558,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "サルモネラ菌による食中毒は、食品に付着した細菌が食品中で増殖した際に生じる毒素により発症する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問32-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問33_選択肢1",
@@ -3566,7 +3566,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "サルモネラ菌による食中毒は、食品に付着した菌が食品中で増殖した際に生じる毒素により発症する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問33-選択肢1/index.html"
   },
   {
     "id": "平成30年_4月_問29_選択肢5",
@@ -3574,7 +3574,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "「セルフケア」とは、労働者自身がストレスや心の健康について理解し、自らのストレスを予防、軽減することである。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問29-選択肢5/index.html"
   },
   {
     "id": "平成29年_4月_問28_選択肢4",
@@ -3582,7 +3582,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "「セルフケア」とは、労働者自身がストレスや心の健康について理解し、自らのストレスを予防、軽減する、またはこれに対処することである。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問28-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問28_選択肢4",
@@ -3590,7 +3590,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "「セルフケア」、「ラインによるケア」、「事業場内産業保健スタッフ等によるケア」及び「事業場外資源によるケア」の四つのケアを継続的かつ計画的に行う。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問28-選択肢4/index.html"
   },
   {
     "id": "令和2年_4月_問33_選択肢5",
@@ -3598,7 +3598,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "セレウス菌及びカンピロバクターは、いずれも細菌性食中毒の原因菌である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問33-選択肢5/index.html"
   },
   {
     "id": "令和3年_10月_問33_選択肢3",
@@ -3606,7 +3606,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ディスプレイは、おおむね30cm以内の視距離が確保できるようにし、画面の上端を眼の高さよりもやや下になるように設置している。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問33-選択肢3/index.html"
   },
   {
     "id": "令和元年_4月_問29_選択肢3",
@@ -3614,7 +3614,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ディスプレイは、おおむね40cm以上の視距離が確保できるようにし、画面の上端が眼と同じ高さか、やや下になるようにする。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問29-選択肢3/index.html"
   },
   {
     "id": "令和元年_10月_問30_選択肢3",
@@ -3622,7 +3622,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ディスプレイは、おおむね50cm程度の視距離が確保できるようにしている。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問30-選択肢3/index.html"
   },
   {
     "id": "令和3年_10月_問33_選択肢2",
@@ -3630,7 +3630,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ディスプレイ画面の位置、前後の傾き、左右の向き等を調整してグレアを防止している。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問33-選択肢2/index.html"
   },
   {
     "id": "令和3年_10月_問33_選択肢1",
@@ -3638,7 +3638,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ディスプレイ画面上における照度は、500ルクス以下となるようにしている。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問33-選択肢1/index.html"
   },
   {
     "id": "令和元年_4月_問29_選択肢1",
@@ -3646,7 +3646,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ディスプレイ画面上における照度は、500ルクス以下になるようにする。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問29-選択肢1/index.html"
   },
   {
     "id": "令和元年_10月_問30_選択肢1",
@@ -3654,7 +3654,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ディスプレイ画面上における照度は、書類上及びキーボード上における照度とほぼ同じ明るさとし、400ルクス程度としている。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問30-選択肢1/index.html"
   },
   {
     "id": "令和4年_4月_問33_選択肢5",
@@ -3662,7 +3662,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ノロウイルスによる食中毒は、ウイルスに汚染された食品を摂取することにより発症し、夏季に集団食中毒として発生することが多い。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「O-157は、腸管出血性大腸菌の一種で、加熱不足の食肉などから摂取され、潜伏期間は3〜5日である。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問33-選択肢5/index.html"
   },
   {
     "id": "令和4年_10月_問34_選択肢4",
@@ -3670,7 +3670,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ノロウイルスによる食中毒は、冬季に集団食中毒として発生することが多く、潜伏期間は、1〜2日間である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問34-選択肢4/index.html"
   },
   {
     "id": "平成30年_10月_問33_選択肢4",
@@ -3678,7 +3678,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ノロウイルスの殺菌には、エタノールはあまり効果がなく、煮沸消毒又は塩素系の消毒剤が効果的である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問33-選択肢4/index.html"
   },
   {
     "id": "平成29年_10月_問33_選択肢2",
@@ -3686,7 +3686,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ノロウイルスは、手指、食品などを介して経口で感染し、腸管で増殖して、嘔吐、下痢、腹痛などの急性胃腸炎を起こすもので、冬季に集団食中毒として発生することが多い。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問33-選択肢2/index.html"
   },
   {
     "id": "令和6年_4月_問28_選択肢5",
@@ -3694,7 +3694,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "プライバシー保護の観点から、衛生委員会や安全衛生委員会において、ストレスチェック制度に関する調査審議とメンタルヘルスケアに関する調査審議を関連付けて行うことは避ける。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問28-選択肢5/index.html"
   },
   {
     "id": "令和2年_10月_問33_選択肢2",
@@ -3702,7 +3702,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ボツリヌス菌による毒素は、神経毒である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問33-選択肢2/index.html"
   },
   {
     "id": "令和4年_4月_問33_選択肢4",
@@ -3710,7 +3710,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ボツリヌス菌は、缶詰や真空パックなど酸素のない密封食品中でも増殖するが、熱には弱く、60°C、10分間程度の加熱で殺菌することができる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「O-157は、腸管出血性大腸菌の一種で、加熱不足の食肉などから摂取され、潜伏期間は3〜5日である。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問33-選択肢4/index.html"
   },
   {
     "id": "令和元年_4月_問33_選択肢4",
@@ -3718,7 +3718,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ボツリヌス菌は、缶詰や真空パックなど酸素のない密封食品中でも増殖するが、熱には弱く、80°C程度で殺菌することができる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「O-157は、腸管出血性大腸菌の一種で、加熱不足の食肉などから摂取され、潜伏期間は3〜5日である。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問33-選択肢4/index.html"
   },
   {
     "id": "平成29年_10月_問33_選択肢3",
@@ -3726,7 +3726,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ボツリヌス菌は、缶詰、真空パック食品など酸素のない食品中で増殖して毒性の強い神経毒を産生し、筋肉の麻痺症状を起こす。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問33-選択肢3/index.html"
   },
   {
     "id": "令和元年_10月_問33_選択肢3",
@@ -3734,7 +3734,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ボツリヌス菌は、缶詰、真空パック食品など、酸素のない食品中で増殖し、毒性の強い神経毒を産生する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問33-選択肢3/index.html"
   },
   {
     "id": "令和元年_10月_問28_選択肢5",
@@ -3742,7 +3742,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "メンタルヘルスケアに関する専門的な知識を有する事業場外の機関及び専門家を活用し支援を受ける事業場外資源によるケア",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問28-選択肢5/index.html"
   },
   {
     "id": "平成29年_4月_問28_選択肢5",
@@ -3750,7 +3750,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "メンタルヘルスケアは、「セルフケア」、「家族によるケア」及び「事業場内産業保健スタッフ等によるケア」の三つのケアを継続的かつ計画的に行うことが重要である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問28-選択肢5/index.html"
   },
   {
     "id": "平成30年_4月_問29_選択肢1",
@@ -3758,7 +3758,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "メンタルヘルスケアを中長期的視点に立って継続的かつ計画的に行うため策定する「心の健康づくり計画」は、各事業場における労働安全衛生に関する計画の中に位置付ける。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問29-選択肢1/index.html"
   },
   {
     "id": "平成29年_4月_問28_選択肢1",
@@ -3766,7 +3766,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "メンタルヘルスケアを中長期的視点に立って継続的かつ計画的に行うため策定する「心の健康づくり計画」は、各事業場における労働安全衛生に関する計画の中に位置付けることが望ましい。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問28-選択肢1/index.html"
   },
   {
     "id": "令和2年_10月_問28_選択肢5",
@@ -3774,7 +3774,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "メンタルヘルスケアを推進するに当たって、労働者の個人情報を主治医等の医療職や家族から取得する際には、あらかじめこれらの情報を取得する目的を労働者に明らかにして承諾を得るとともに、これらの情報は労働者本人から提出を受けることが望ましい。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問28-選択肢5/index.html"
   },
   {
     "id": "令和2年_4月_問29_選択肢5",
@@ -3782,7 +3782,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "メンタルヘルスケアを推進するに当たって、労働者の個人情報を主治医等の医療職や家族から取得する際には、あらかじめこれらの情報を取得する目的を労働者に明らかにして承諾を得るとともに、これらの情報は労働者本人から提出を受けることが望ましい。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「心の健康づくり計画の実施に当たっては、メンタルヘルス不調を早期に発見する「一次予防」、適切な措置を行う「二次予防」及びメンタルヘルス不調となった労働者の職場復帰支援を行う「三次予防」が円滑に行われるようにする必要がある。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問29-選択肢5/index.html"
   },
   {
     "id": "令和2年_4月_問30_選択肢2",
@@ -3790,7 +3790,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "一次救命処置は、できる限り単独で行うことは避ける。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問30-選択肢2/index.html"
   },
   {
     "id": "令和元年_10月_問32_選択肢4",
@@ -3798,7 +3798,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "不完全骨折では、変形や骨折端どうしが擦れ合う軋轢あつれき音が認められる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「骨にひびが入った状態は、単純骨折である。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問32-選択肢4/index.html"
   },
   {
     "id": "令和6年_4月_問32_選択肢3",
@@ -3806,7 +3806,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "不完全骨折では、骨折端どうしが擦れ合う軋轢あつれき音や変形などが認められる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「骨折に対する処置として、副子を手や足に当てるときは、骨折部分の上下の関節まで固定できる長さで、かつ、幅の広いものを用いる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問32-選択肢3/index.html"
   },
   {
     "id": "平成29年_10月_問28_選択肢1",
@@ -3814,7 +3814,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業場内健康保持増進体制の整備に関することは、健康保持増進計画で定める事項に含まれない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「喫煙及び飲酒に関する指導及び教育を行うことは、産業保健指導担当者が行う保健指導の内容に含まれる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問28-選択肢1/index.html"
   },
   {
     "id": "平成29年_4月_問28_選択肢3",
@@ -3822,7 +3822,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者がメンタルヘルスケアを積極的に推進する旨の表明に関することは、「心の健康づくり計画」で定めるべき事項に含まれる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問28-選択肢3/index.html"
   },
   {
     "id": "平成30年_4月_問29_選択肢3",
@@ -3830,7 +3830,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者がメンタルヘルスケアを積極的に推進する旨を表明することは、「心の健康づくり計画」で定めるべき事項に含まれる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問29-選択肢3/index.html"
   },
   {
     "id": "令和3年_10月_問34_選択肢5",
@@ -3838,7 +3838,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者は、このシステムに従って行う措置が適切に実施されているかどうかについて調査及び評価を行うため、外部の機関による監査を受けなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問34-選択肢5/index.html"
   },
   {
     "id": "令和元年_10月_問34_選択肢3",
@@ -3846,7 +3846,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "人工呼吸が可能な場合、心肺蘇生は、胸骨圧迫30回に人工呼吸2回を繰り返して行う。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問34-選択肢3/index.html"
   },
   {
     "id": "令和4年_4月_問34_選択肢1",
@@ -3854,7 +3854,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "人間の抵抗力が低下した場合は、通常、多くの人には影響を及ぼさない病原体が病気を発症させることがあり、これを不顕性感染という。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問34-選択肢1/index.html"
   },
   {
     "id": "令和6年_10月_問29_選択肢2",
@@ -3862,7 +3862,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "介護・看護作業に常時従事する労働者に対しては、当該作業に配置する際及びその後6か月以内ごとに1回、定期に、医師による腰痛の健康診断を行う。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問29-選択肢2/index.html"
   },
   {
     "id": "平成29年_10月_問31_選択肢4",
@@ -3870,7 +3870,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "体内の全血液量の3分の1程度が急激に失われると、生命が危険な状態となる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問31-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問34_選択肢1",
@@ -3878,7 +3878,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "体内の全血液量は、体重の13分の1程度で、その約3分の1を短時間に失うと生命が危険な状態となる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問34-選択肢1/index.html"
   },
   {
     "id": "令和3年_10月_問30_選択肢1",
@@ -3886,7 +3886,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "体内の全血液量は、体重の約13分の1で、その約3分の1を短時間に失うと生命が危険な状態となる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問30-選択肢1/index.html"
   },
   {
     "id": "令和6年_10月_問34_選択肢1",
@@ -3894,7 +3894,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "体内の全血液量は、体重の約8%で、その約3分の1を短時間に失うと生命が危険な状態となる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問34-選択肢1/index.html"
   },
   {
     "id": "令和4年_4月_問30_選択肢1",
@@ -3902,7 +3902,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "作業動作、作業姿勢についての作業標準の策定は、その作業に従事する全ての労働者に一律な作業をさせることになり、個々の労働者の腰痛の発生要因の排除又は低減ができないため、腰痛の予防対策としては適切ではない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「重量物取扱い作業の場合、満18歳以上の女性労働者が人力のみにより取り扱う物の重量は、男性が取り扱うことのできる重量の60%位までとする。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問30-選択肢1/index.html"
   },
   {
     "id": "令和元年_10月_問30_選択肢2",
@@ -3910,7 +3910,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "作業室内には、間接照明等のグレア防止用照明器具を用いている。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問30-選択肢2/index.html"
   },
   {
     "id": "平成29年_10月_問28_選択肢5",
@@ -3918,7 +3918,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "健康保持増進措置を実施するためのスタッフは、いかなる場合でもその事業場内で確保するべきであり、外部の機関に委託してその職務を実施させてはならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「喫煙及び飲酒に関する指導及び教育を行うことは、産業保健指導担当者が行う保健指導の内容に含まれる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問28-選択肢5/index.html"
   },
   {
     "id": "令和2年_4月_問28_選択肢5",
@@ -3926,7 +3926,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "健康測定における全身持久性の測定種目は、最大酸素摂取量である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問28-選択肢5/index.html"
   },
   {
     "id": "令和2年_4月_問28_選択肢3",
@@ -3934,7 +3934,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "健康測定における平衡性の測定種目は、閉眼(又は開眼)片足立ちである。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問28-選択肢3/index.html"
   },
   {
     "id": "令和2年_4月_問28_選択肢4",
@@ -3942,7 +3942,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "健康測定における敏しょう性の測定種目は、全身反応時間である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問28-選択肢4/index.html"
   },
   {
     "id": "令和6年_4月_問29_選択肢4",
@@ -3950,7 +3950,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "健康測定における敏しょう性の測定種目は、踏み台昇降である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問29-選択肢4/index.html"
   },
   {
     "id": "令和2年_4月_問28_選択肢2",
@@ -3958,7 +3958,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "健康測定における柔軟性の測定種目は、上体起こしである。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問28-選択肢2/index.html"
   },
   {
     "id": "令和6年_4月_問29_選択肢2",
@@ -3966,7 +3966,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "健康測定における柔軟性の測定種目は、座位体前屈である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問29-選択肢2/index.html"
   },
   {
     "id": "令和2年_4月_問28_選択肢1",
@@ -3974,7 +3974,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "健康測定における筋力の測定種目は、握力である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問28-選択肢1/index.html"
   },
   {
     "id": "令和6年_4月_問29_選択肢3",
@@ -3982,7 +3982,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "健康測定における筋持久力の測定種目は、上体起こしである。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問29-選択肢3/index.html"
   },
   {
     "id": "平成30年_4月_問30_選択肢3",
@@ -3990,7 +3990,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "健康管理統計において、ある時点での検査における有所見者の出現割合を有所見率といい、一定期間に有所見とされた者の割合を発生率としている。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問30-選択肢3/index.html"
   },
   {
     "id": "令和3年_10月_問28_選択肢3",
@@ -3998,7 +3998,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "健康管理統計において、ある時点での検査における有所見者の割合を有所見率といい、このようなデータを静態データという。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問28-選択肢3/index.html"
   },
   {
     "id": "令和4年_10月_問33_選択肢3",
@@ -4006,7 +4006,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "健康管理統計において、ある時点での検査における有所見者の割合を有所見率といい、一定期間において有所見とされた人の割合を発生率という。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問33-選択肢3/index.html"
   },
   {
     "id": "令和3年_10月_問28_選択肢4",
@@ -4014,7 +4014,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "健康診断において、対象人数、受診者数などのデータを計数データといい、身長、体重などのデータを計量データという。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問28-選択肢4/index.html"
   },
   {
     "id": "平成30年_4月_問30_選択肢5",
@@ -4022,7 +4022,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "健康診断における各検査において、スクリーニングレベルを高く設定すると偽陽性率は低くなるが、偽陰性率は高くなる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問30-選択肢5/index.html"
   },
   {
     "id": "令和2年_4月_問30_選択肢1",
@@ -4030,7 +4030,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "傷病者に反応がある場合は、回復体位をとらせて安静にして、経過を観察する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問30-選択肢1/index.html"
   },
   {
     "id": "平成30年_10月_問31_選択肢2",
@@ -4038,7 +4038,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "傷病者に反応がなく、周囲に協力者がいる場合は、119番通報やAEDの手配を依頼する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問31-選択肢2/index.html"
   },
   {
     "id": "令和元年_4月_問30_選択肢1",
@@ -4046,7 +4046,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "傷病者の反応がない場合は、その場で大声で叫んで周囲の注意を喚起し、協力者を確保する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問30-選択肢1/index.html"
   },
   {
     "id": "平成29年_4月_問30_選択肢1",
@@ -4054,7 +4054,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "傷病者の反応がない場合は、大声で叫んで周囲に注意喚起し、協力者を確保する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問30-選択肢1/index.html"
   },
   {
     "id": "令和元年_10月_問34_選択肢1",
@@ -4062,7 +4062,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "傷病者の肩を軽くたたきながら「大丈夫ですか?」と呼びかけて、反応がない場合は、その場で大声で叫んで周囲の注意を喚起し、応援を呼ぶ。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問34-選択肢1/index.html"
   },
   {
     "id": "令和2年_10月_問34_選択肢4",
@@ -4070,7 +4070,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "内出血は、胸腔くう、腹腔などの体腔内や皮下などの軟部組織への出血で、血液が体外に流出しないものである。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問34-選択肢4/index.html"
   },
   {
     "id": "令和6年_10月_問31_選択肢1",
@@ -4078,7 +4078,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "出血性の脳血管障害は、脳表面のくも膜下腔に出血するくも膜下出血、脳実質内に出血する脳出血などに分類される。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問31-選択肢1/index.html"
   },
   {
     "id": "令和2年_4月_問29_選択肢4",
@@ -4086,7 +4086,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働者の心の健康は、職場のストレス要因のみならず、家庭・個人生活などの職場外のストレス要因の影響を受けている場合も多いことに留意する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「心の健康づくり計画の実施に当たっては、メンタルヘルス不調を早期に発見する「一次予防」、適切な措置を行う「二次予防」及びメンタルヘルス不調となった労働者の職場復帰支援を行う「三次予防」が円滑に行われるようにする必要がある。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問29-選択肢4/index.html"
   },
   {
     "id": "令和3年_4月_問28_選択肢4",
@@ -4094,7 +4094,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働者の心の健康は、職場のストレス要因のみならず、家庭・個人生活などの職場外のストレス要因の影響を受けている場合も多いことに留意する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問28-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問28_選択肢3",
@@ -4102,7 +4102,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働者の心の健康は、職場配置、人事異動、職場の組織などの要因によって影響を受けるため、メンタルヘルスケアは、人事労務管理と連携しなければ、適切に進まない場合が多いことに留意する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問28-選択肢3/index.html"
   },
   {
     "id": "令和2年_4月_問29_選択肢3",
@@ -4110,7 +4110,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働者の心の健康は、職場配置、人事異動、職場の組織などの要因によって影響を受けるため、メンタルヘルスケアは、人事労務管理と連携しなければ、適切に進まない場合が多いことに留意する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「心の健康づくり計画の実施に当たっては、メンタルヘルス不調を早期に発見する「一次予防」、適切な措置を行う「二次予防」及びメンタルヘルス不調となった労働者の職場復帰支援を行う「三次予防」が円滑に行われるようにする必要がある。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問29-選択肢3/index.html"
   },
   {
     "id": "令和6年_4月_問28_選択肢4",
@@ -4118,7 +4118,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働者の心の健康は、職場配置、人事異動、職場の組織等の要因によって影響を受ける可能性があるため、人事労務管理部門と連携するようにする。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問28-選択肢4/index.html"
   },
   {
     "id": "令和元年_10月_問28_選択肢1",
@@ -4126,7 +4126,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働者自身がストレスや心の健康について理解し、自らのストレスの予防や対処を行うセルフケア",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問28-選択肢1/index.html"
   },
   {
     "id": "平成29年_10月_問31_選択肢3",
@@ -4134,7 +4134,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "動脈性出血は、傷口からゆっくり持続的に湧き出るような出血である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問31-選択肢3/index.html"
   },
   {
     "id": "令和2年_10月_問34_選択肢2",
@@ -4142,7 +4142,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "動脈性出血は、鮮紅色を呈する拍動性の出血で、出血量が多いため、早急に、細いゴムひもなどを止血帯として用いて止血する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問34-選択肢2/index.html"
   },
   {
     "id": "平成29年_10月_問30_選択肢4",
@@ -4150,7 +4150,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "単純入力型及び拘束型に該当するVDT作業については、一連続作業時間が1時間を超えないようにし、次の連続作業までの間に5分間の作業休止時間を設け、かつ、一連続作業時間内において1〜2回程度の小休止を設けるようにする。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問30-選択肢4/index.html"
   },
   {
     "id": "令和元年_10月_問30_選択肢4",
@@ -4158,7 +4158,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "単純入力型及び拘束型に該当するVDT作業については、一連続作業時間を1時間とし、次の連続作業までの間に5分の作業休止時間を設けている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問30-選択肢4/index.html"
   },
   {
     "id": "令和元年_4月_問29_選択肢4",
@@ -4166,7 +4166,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "単純入力型又は拘束型に該当するVDT作業については、一連続作業時間が1時間を超えないようにし、次の連続作業までの間に10〜15分の作業休止時間を設け、かつ、一連続作業時間内において1〜2回程度の小休止を設けるようにする。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問29-選択肢4/index.html"
   },
   {
     "id": "令和元年_10月_問34_選択肢2",
@@ -4174,7 +4174,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "反応はないが普段どおりの呼吸をしている傷病者は、回復体位をとらせて安静にして、経過を観察する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問34-選択肢2/index.html"
   },
   {
     "id": "令和3年_4月_問34_選択肢2",
@@ -4182,7 +4182,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "取り扱う物の重量をできるだけ明示し、著しく重心の偏っている荷物は、その旨を明示する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問34-選択肢2/index.html"
   },
   {
     "id": "令和元年_10月_問29_選択肢2",
@@ -4190,7 +4190,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "取り扱う物の重量をできるだけ明示する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問29-選択肢2/index.html"
   },
   {
     "id": "令和元年_4月_問30_選択肢3",
@@ -4198,7 +4198,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "口対口人工呼吸は、傷病者の気道を確保してから鼻をつまみ、1回の吹き込みに約3秒かけて傷病者の胸の盛り上がりが見える程度まで吹き込む。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問30-選択肢3/index.html"
   },
   {
     "id": "平成30年_4月_問28_選択肢3",
@@ -4206,7 +4206,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "口対口人工呼吸は、傷病者の鼻をつまみ、1回の吹き込みに3秒かけて傷病者の胸の盛り上がりが見える程度まで吹き込む。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問28-選択肢3/index.html"
   },
   {
     "id": "令和3年_4月_問32_選択肢3",
@@ -4214,7 +4214,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "口対口人工呼吸は、傷病者の鼻をつまみ、1回の吹き込みに3秒以上かけて傷病者の胸の盛り上がりが見える程度まで吹き込む。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問32-選択肢3/index.html"
   },
   {
     "id": "令和2年_10月_問32_選択肢5",
@@ -4222,7 +4222,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "口対口人工呼吸は、傷病者の鼻をつまみ、1回の吹き込みに3秒以上かけて行う。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「気道が確保されていない状態で人工呼吸を行うと、吹き込んだ息が胃に流入し、胃が膨張して内容物が口の方に逆流し気道閉塞を招くことがある。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問32-選択肢5/index.html"
   },
   {
     "id": "令和元年_10月_問34_選択肢4",
@@ -4230,7 +4230,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "口対口人工呼吸は、傷病者の鼻をつまみ、1回の吹き込みに約3秒かけて傷病者の胸の盛り上がりが確認できる程度まで吹き込む。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問34-選択肢4/index.html"
   },
   {
     "id": "令和2年_4月_問30_選択肢3",
@@ -4238,7 +4238,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "口対口人工呼吸は、傷病者の鼻をつまみ、1回の吹き込みに約3秒かけて傷病者の胸の盛り上がりが見える程度まで吹き込む。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問30-選択肢3/index.html"
   },
   {
     "id": "令和元年_4月_問30_選択肢2",
@@ -4246,7 +4246,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "周囲に協力者がいる場合は、119番通報やAED(自動体外式除細動器)の手配を依頼する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問30-選択肢2/index.html"
   },
   {
     "id": "令和2年_10月_問32_選択肢1",
@@ -4254,7 +4254,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "呼吸を確認して普段どおりの息(正常な呼吸)がない場合や約1分間観察しても判断できない場合は、心肺停止とみなし、心肺蘇生を開始する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「気道が確保されていない状態で人工呼吸を行うと、吹き込んだ息が胃に流入し、胃が膨張して内容物が口の方に逆流し気道閉塞を招くことがある。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問32-選択肢1/index.html"
   },
   {
     "id": "平成29年_4月_問33_選択肢4",
@@ -4262,7 +4262,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "喫煙及び飲酒に関することは、産業保健指導担当者が行う保健指導の内容に含まれる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問33-選択肢4/index.html"
   },
   {
     "id": "平成29年_10月_問28_選択肢4",
@@ -4270,7 +4270,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "喫煙及び飲酒に関する指導及び教育を行うことは、産業保健指導担当者が行う保健指導の内容に含まれる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問28-選択肢4/index.html"
   },
   {
     "id": "令和4年_10月_問28_選択肢2",
@@ -4278,7 +4278,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "喫煙専用室のたばこの煙が室内から室外に流出しないよう、喫煙専用室は、壁、天井等によって区画されていること。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「喫煙専用室の出入口における室外から室内に流入する空気の気流について、6か月以内ごとに1回、定期に測定すること。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問28-選択肢2/index.html"
   },
   {
     "id": "令和4年_10月_問28_選択肢4",
@@ -4286,7 +4286,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "喫煙専用室のたばこの煙が屋外又は外部の場所に排気されていること。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「喫煙専用室の出入口における室外から室内に流入する空気の気流について、6か月以内ごとに1回、定期に測定すること。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問28-選択肢4/index.html"
   },
   {
     "id": "令和4年_10月_問28_選択肢1",
@@ -4294,7 +4294,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "喫煙専用室の出入口において、室外から室内に流入する空気の気流が、0.2m/s以上であること。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「喫煙専用室の出入口における室外から室内に流入する空気の気流について、6か月以内ごとに1回、定期に測定すること。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問28-選択肢1/index.html"
   },
   {
     "id": "令和4年_10月_問28_選択肢3",
@@ -4302,7 +4302,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "喫煙専用室の出入口における室外から室内に流入する空気の気流について、6か月以内ごとに1回、定期に測定すること。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問28-選択肢3/index.html"
   },
   {
     "id": "令和4年_10月_問28_選択肢5",
@@ -4310,7 +4310,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "喫煙専用室の出入口の見やすい箇所に必要事項を記載した標識を掲示すること。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「喫煙専用室の出入口における室外から室内に流入する空気の気流について、6か月以内ごとに1回、定期に測定すること。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問28-選択肢5/index.html"
   },
   {
     "id": "令和6年_10月_問29_選択肢5",
@@ -4318,7 +4318,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "床面などから荷物を持ち上げる場合には、片足を少し前に出し、膝を曲げ、腰を十分に降ろして当該荷物をかかえ、膝を伸ばすことによって立ち上がるようにする。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問29-選択肢5/index.html"
   },
   {
     "id": "令和4年_4月_問34_選択肢3",
@@ -4326,7 +4326,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "微生物を含む飛沫の水分が蒸発して、5μm以下の小粒子として長時間空気中に浮遊し、空調などを通じて感染することを空気感染という。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問34-選択肢3/index.html"
   },
   {
     "id": "平成30年_4月_問29_選択肢4",
@@ -4334,7 +4334,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "「心の健康づくり計画」では、「セルフケア」、「家族によるケア」、「ラインによるケア」及び「事業場外資源によるケア」の四つのケアを効果的に推進する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問29-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問28_選択肢2",
@@ -4342,7 +4342,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "心の健康づくり計画の実施に当たっては、メンタルヘルス不調を早期に発見する「一次予防」、適切な措置を行う「二次予防」及びメンタルヘルス不調となった労働者の職場復帰支援を行う「三次予防」が円滑に行われるようにする必要がある。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問28-選択肢2/index.html"
   },
   {
     "id": "令和2年_4月_問29_選択肢2",
@@ -4350,7 +4350,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "心の健康づくり計画の実施に当たっては、メンタルヘルス不調を早期に発見する「一次予防」、適切な措置を行う「二次予防」及びメンタルヘルス不調となった労働者の職場復帰支援を行う「三次予防」が円滑に行われるようにする必要がある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問29-選択肢2/index.html"
   },
   {
     "id": "令和6年_4月_問28_選択肢1",
@@ -4358,7 +4358,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "「心の健康づくり計画」の策定に当たっては、衛生委員会又は安全衛生委員会において十分調査審議を行う。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問28-選択肢1/index.html"
   },
   {
     "id": "平成30年_4月_問29_選択肢2",
@@ -4366,7 +4366,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "「心の健康づくり計画」の策定は、衛生委員会又は安全衛生委員会において十分調査審議する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問29-選択肢2/index.html"
   },
   {
     "id": "令和2年_10月_問28_選択肢1",
@@ -4374,7 +4374,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "心の健康については、客観的な測定方法が十分確立しておらず、また、心の健康問題の発生過程には個人差が大きく、そのプロセスの把握が難しいという特性がある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問28-選択肢1/index.html"
   },
   {
     "id": "令和2年_4月_問29_選択肢1",
@@ -4382,7 +4382,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "心の健康については、客観的な測定方法が十分確立しておらず、また、心の健康問題の発生過程には個人差が大きく、そのプロセスの把握が難しいという特性がある。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「心の健康づくり計画の実施に当たっては、メンタルヘルス不調を早期に発見する「一次予防」、適切な措置を行う「二次予防」及びメンタルヘルス不調となった労働者の職場復帰支援を行う「三次予防」が円滑に行われるようにする必要がある。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問29-選択肢1/index.html"
   },
   {
     "id": "令和6年_10月_問31_選択肢4",
@@ -4390,7 +4390,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "心筋梗塞では、突然激しい胸痛が起こり、「締め付けられるように痛い」、「胸が苦しい」などの症状が、1時間以上続くこともある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問31-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問31_選択肢4",
@@ -4398,7 +4398,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "心筋梗塞では、突然激しい胸痛が起こり、「締め付けられるように痛い」、「胸が苦しい」などの症状が長時間続き、1時間以上になることもある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問31-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問32_選択肢2",
@@ -4406,7 +4406,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "心肺蘇生は、胸骨圧迫のみではなく、必ず胸骨圧迫と人工呼吸を組み合わせて行う。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「気道が確保されていない状態で人工呼吸を行うと、吹き込んだ息が胃に流入し、胃が膨張して内容物が口の方に逆流し気道閉塞を招くことがある。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問32-選択肢2/index.html"
   },
   {
     "id": "令和3年_10月_問33_選択肢5",
@@ -4414,7 +4414,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "情報機器作業に係る定期健康診断を、1年以内ごとに1回、定期に実施している。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問33-選択肢5/index.html"
   },
   {
     "id": "令和4年_4月_問34_選択肢2",
@@ -4422,7 +4422,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "感染が成立し、症状が現れるまでの人をキャリアといい、感染したことに気付かずに病原体をばらまく感染源になることがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問34-選択肢2/index.html"
   },
   {
     "id": "平成29年_10月_問33_選択肢5",
@@ -4430,7 +4430,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "感染型食中毒は、食物に付着した細菌そのものの感染によって起こる食中毒で、サルモネラ菌などによるものがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問33-選択肢5/index.html"
   },
   {
     "id": "令和4年_10月_問34_選択肢2",
@@ -4438,7 +4438,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "感染型食中毒は、食物に付着した細菌そのものの感染によって起こる食中毒で、サルモネラ菌によるものがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問34-選択肢2/index.html"
   },
   {
     "id": "令和元年_10月_問33_選択肢2",
@@ -4446,7 +4446,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "感染型食中毒は、食物に付着した細菌そのものの感染によって起こる食中毒で、代表的なものとして黄色ブドウ球菌によるものがある。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ボツリヌス菌は、缶詰、真空パック食品など、酸素のない食品中で増殖し、毒性の強い神経毒を産生する。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問33-選択肢2/index.html"
   },
   {
     "id": "令和4年_4月_問33_選択肢2",
@@ -4454,7 +4454,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "感染型食中毒は、食物に付着した細菌そのものの感染によって起こる食中毒で、黄色ブドウ球菌によるものがある。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「O-157は、腸管出血性大腸菌の一種で、加熱不足の食肉などから摂取され、潜伏期間は3〜5日である。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問33-選択肢2/index.html"
   },
   {
     "id": "平成30年_10月_問33_選択肢2",
@@ -4462,7 +4462,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "感染型食中毒は、食物に付着している細菌そのものの感染によって起こる食中毒でサルモネラ菌によるものなどがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問33-選択肢2/index.html"
   },
   {
     "id": "令和3年_4月_問30_選択肢2",
@@ -4470,7 +4470,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "書類上及びキーボード上における照度は、300ルクス以上となるようにしている。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問30-選択肢2/index.html"
   },
   {
     "id": "令和元年_4月_問29_選択肢2",
@@ -4478,7 +4478,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "書類上及びキーボード上における照度は、300ルクス以上になるようにする。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問29-選択肢2/index.html"
   },
   {
     "id": "令和元年_4月_問32_選択肢5",
@@ -4486,7 +4486,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "止血を行うときは、処置者の感染防止のため、ビニール手袋を着用したりビニール袋を活用したりして、受傷者の血液に直接触れないようにする。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問32-選択肢5/index.html"
   },
   {
     "id": "令和6年_10月_問34_選択肢3",
@@ -4494,7 +4494,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "止血を行うときは、受傷者の血液による処置者への感染防止のため、ビニール手袋を着用したりビニール袋を活用するようにする。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問34-選択肢3/index.html"
   },
   {
     "id": "平成29年_10月_問31_選択肢5",
@@ -4502,7 +4502,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "止血処置を行うときは、感染防止のため、ビニール手袋を着用したりビニール袋を活用したりして、血液に直接触れないようにする。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問31-選択肢5/index.html"
   },
   {
     "id": "令和元年_10月_問31_選択肢4",
@@ -4510,7 +4510,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "止血帯を施した後、受傷者を医師に引き継ぐまでに1時間以上かかる場合には、止血帯を施してから1時間ごとに1〜2分間、出血部から血液がにじんでくる程度まで結び目をゆるめる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問31-選択肢4/index.html"
   },
   {
     "id": "令和3年_10月_問30_選択肢5",
@@ -4518,7 +4518,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "止血帯を施した後、受傷者を医師に引き継ぐまでに30分以上かかる場合には、止血帯を施してから30分ごとに1〜2分間、出血部から血液がにじんでくる程度まで結び目をゆるめる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問30-選択肢5/index.html"
   },
   {
     "id": "令和3年_10月_問30_選択肢3",
@@ -4526,7 +4526,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "止血法には、直接圧迫法、間接圧迫法などがあるが、一般人が行う応急手当としては直接圧迫法が推奨されている。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問30-選択肢3/index.html"
   },
   {
     "id": "平成30年_4月_問32_選択肢2",
@@ -4534,7 +4534,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "止血法には、直接圧迫法、間接圧迫法などがあるが、応急手当としては直接圧迫法が推奨されている。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問32-選択肢2/index.html"
   },
   {
     "id": "令和元年_10月_問33_選択肢1",
@@ -4542,7 +4542,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "毒素型食中毒は、食物に付着した細菌が増殖する際に産生した毒素によって起こる食中毒で、代表的なものとしてサルモネラ菌によるものがある。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ボツリヌス菌は、缶詰、真空パック食品など、酸素のない食品中で増殖し、毒性の強い神経毒を産生する。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問33-選択肢1/index.html"
   },
   {
     "id": "平成29年_10月_問33_選択肢4",
@@ -4550,7 +4550,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "毒素型食中毒は、食物に付着した細菌が増殖する際に産生した毒素によって起こる食中毒で、腸炎ビブリオ菌などによるものがある。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問33-選択肢4/index.html"
   },
   {
     "id": "令和4年_4月_問33_選択肢1",
@@ -4558,7 +4558,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "毒素型食中毒は、食物に付着した細菌により産生された毒素によって起こる食中毒で、サルモネラ菌によるものがある。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「O-157は、腸管出血性大腸菌の一種で、加熱不足の食肉などから摂取され、潜伏期間は3〜5日である。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問33-選択肢1/index.html"
   },
   {
     "id": "令和4年_10月_問34_選択肢1",
@@ -4566,7 +4566,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "毒素型食中毒は、食物に付着した細菌により産生された毒素によって起こる食中毒で、ボツリヌス菌によるものがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問34-選択肢1/index.html"
   },
   {
     "id": "平成30年_10月_問33_選択肢1",
@@ -4574,7 +4574,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "毒素型食中毒は、食物に付着した細菌により産生された毒素によって起こる食中毒で、ボツリヌス菌によるものなどがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問33-選択肢1/index.html"
   },
   {
     "id": "令和元年_4月_問33_選択肢1",
@@ -4582,7 +4582,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "毒素型食中毒は、食物に付着した細菌により産生された毒素によって起こる食中毒で、代表的なものとしてサルモネラ菌によるものがある。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「O-157は、腸管出血性大腸菌の一種で、加熱不足の食肉などから摂取され、潜伏期間は3〜5日である。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問33-選択肢1/index.html"
   },
   {
     "id": "令和3年_4月_問31_選択肢4",
@@ -4590,7 +4590,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "毛細血管性出血は、浅い切り傷のときにみられ、傷口からゆっくり持続的に湧き出るような出血である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問31-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問32_選択肢4",
@@ -4598,7 +4598,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "気道が確保されていない状態で人工呼吸を行うと、吹き込んだ息が胃に流入し、胃が膨張して内容物が口の方に逆流し気道閉塞を招くことがある。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問32-選択肢4/index.html"
   },
   {
     "id": "平成29年_4月_問34_選択肢2",
@@ -4606,7 +4606,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "水疱ができたときは、周囲に広がらないように水疱を破って清潔なガーゼや布で軽く覆う。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問34-選択肢2/index.html"
   },
   {
     "id": "令和2年_4月_問34_選択肢1",
@@ -4614,7 +4614,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "満18歳以上の男子労働者が人力のみで取り扱う物の重量は、体重のおおむね50%以下となるようにする。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「腰掛け作業での作業姿勢は、椅子に深く腰を掛けて、背もたれで体幹を支え、履物の足裏全体が床に接する姿勢を基本とする。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問34-選択肢1/index.html"
   },
   {
     "id": "平成29年_10月_問10_選択肢2",
@@ -4622,7 +4622,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "10kgの重量物を断続的に取り扱う業務は、満18歳未満の者を就かせてはならない業務に該当する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問10-選択肢2/index.html"
   },
   {
     "id": "令和4年_10月_問10_選択肢2",
@@ -4630,7 +4630,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "20kgの重量物を断続的に取り扱う業務",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問10-選択肢2/index.html"
   },
   {
     "id": "令和2年_10月_問10_選択肢3",
@@ -4638,7 +4638,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "20kgの重量物を継続作業として取り扱う業務",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問10-選択肢3/index.html"
   },
   {
     "id": "令和元年_4月_問10_選択肢1",
@@ -4646,7 +4646,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "20kg以上の重量物を継続的に取り扱う業務",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問10-選択肢1/index.html"
   },
   {
     "id": "令和3年_10月_問1_選択肢5",
@@ -4654,7 +4654,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "2人以上の衛生管理者を選任すべき事業場では、そのうち1人については、その事業場に専属でない労働衛生コンサルタントのうちから選任することができる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「常時600人の労働者を使用し、そのうち多量の低温物体を取り扱う業務に常時35人の労働者を従事させる事業場では、選任する衛生管理者のうち少なくとも1人を衛生工学衛生管理者免許を受けた者のうちから選任しなければならない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問1-選択肢5/index.html"
   },
   {
     "id": "令和4年_4月_問1_選択肢2",
@@ -4662,7 +4662,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "2人以上の衛生管理者を選任すべき事業場では、そのうち1人については、その事業場に専属でない労働衛生コンサルタントのうちから選任することができる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問1-選択肢2/index.html"
   },
   {
     "id": "令和2年_10月_問10_選択肢4",
@@ -4670,7 +4670,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "さく岩機、鋲打機等身体に著しい振動を与える機械器具を用いて行う業務",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「20kgの重量物を継続作業として取り扱う業務」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問10-選択肢4/index.html"
   },
   {
     "id": "平成29年_10月_問10_選択肢1",
@@ -4678,7 +4678,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "さく岩機、鋲打機等身体に著しい振動を与える機械器具を用いて行う業務は、満18歳未満の者を就かせてはならない業務に該当する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問10-選択肢1/index.html"
   },
   {
     "id": "令和2年_10月_問7_選択肢1",
@@ -4686,7 +4686,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "し尿を入れたことのあるポンプを修理する場合で、これを分解する作業に労働者を従事させるときは、指揮者を選任し、作業を指揮させなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問7-選択肢1/index.html"
   },
   {
     "id": "令和4年_10月_問7_選択肢4",
@@ -4694,7 +4694,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "じん肺管理区分が管理四と決定された者は、療養を要する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問7-選択肢4/index.html"
   },
   {
     "id": "令和3年_4月_問2_選択肢3",
@@ -4702,7 +4702,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ろ過材及び面体を有する防じんマスクは、厚生労働大臣が定める規格を具備しなければ、譲渡・貸与・設置してはならない機械等に該当する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問2-選択肢3/index.html"
   },
   {
     "id": "令和2年_10月_問4_選択肢5",
@@ -4710,7 +4710,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "アルファ-ナフチルアミン及びその塩は、製造に厚生労働大臣の許可が必要である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問4-選択肢5/index.html"
   },
   {
     "id": "令和3年_10月_問4_選択肢5",
@@ -4718,7 +4718,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "アルファ-ナフチルアミンは、製造に厚生労働大臣の許可が必要である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問4-選択肢5/index.html"
   },
   {
     "id": "平成30年_10月_問2_選択肢4",
@@ -4726,7 +4726,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "アンモニアを使用する作業場所に設けたプッシュプル型換気装置",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「屋内の、フライアッシュを袋詰めする箇所に設けたプッシュプル型換気装置」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問2-選択肢4/index.html"
   },
   {
     "id": "令和3年_10月_問2_選択肢5",
@@ -4734,7 +4734,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "アンモニアを使用する屋内の作業場所に設けたプッシュプル型換気装置",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「フェノールを取り扱う特定化学設備」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問2-選択肢5/index.html"
   },
   {
     "id": "令和6年_10月_問4_選択肢3",
@@ -4742,7 +4742,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "アンモニア用防毒マスクは、厚生労働大臣が定める規格を具備しなければ、譲渡・貸与・設置してはならない機械等に該当する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問4-選択肢3/index.html"
   },
   {
     "id": "令和3年_10月_問2_選択肢3",
@@ -4750,7 +4750,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "アーク溶接を行う屋内の作業場所に設けた全体換気装置",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「フェノールを取り扱う特定化学設備」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問2-選択肢3/index.html"
   },
   {
     "id": "平成30年_10月_問2_選択肢2",
@@ -4758,7 +4758,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "アーク溶接を行う屋内作業場に設けた全体換気装置",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「屋内の、フライアッシュを袋詰めする箇所に設けたプッシュプル型換気装置」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問2-選択肢2/index.html"
   },
   {
     "id": "令和4年_4月_問4_選択肢1",
@@ -4766,7 +4766,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "インジウム化合物は、製造に厚生労働大臣の許可が必要である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問4-選択肢1/index.html"
   },
   {
     "id": "令和6年_4月_問3_選択肢3",
@@ -4774,7 +4774,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "エタノールを使用する作業場所に設けた局所排気装置",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「トルエンを重量の10%含有する塗料を用いて塗装する屋内の作業場所に設けた局所排気装置」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問3-選択肢3/index.html"
   },
   {
     "id": "令和2年_4月_問4_選択肢3",
@@ -4782,7 +4782,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "エチレンイミンは、製造にあらかじめ厚生労働大臣の許可が必要である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ジアニシジン」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問4-選択肢3/index.html"
   },
   {
     "id": "令和2年_10月_問4_選択肢1",
@@ -4790,7 +4790,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "エチレンオキシドは、製造に厚生労働大臣の許可が必要である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問4-選択肢1/index.html"
   },
   {
     "id": "令和2年_10月_問2_選択肢2",
@@ -4798,7 +4798,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "エックス線回折装置を用いて行う分析の業務は、法令に基づく特別の教育を行わなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「チェーンソーを用いて行う造材の業務」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問2-選択肢2/index.html"
   },
   {
     "id": "令和2年_4月_問9_選択肢5",
@@ -4806,7 +4806,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "エックス線装置を用いて行う透過写真の撮影の業務は、法令に基づく特別の教育を行わなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問9-選択肢5/index.html"
   },
   {
     "id": "平成30年_4月_問2_選択肢4",
@@ -4814,7 +4814,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "エックス線装置を用いて行う透過写真撮影の業務は、法令に基づく特別の教育を行わなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問2-選択肢4/index.html"
   },
   {
     "id": "令和4年_10月_問2_選択肢1",
@@ -4822,7 +4822,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "オルト-トリジンは、製造に厚生労働大臣の許可が必要である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問2-選択肢1/index.html"
   },
   {
     "id": "令和3年_10月_問4_選択肢3",
@@ -4830,7 +4830,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "オルト-フタロジニトリルは、製造に厚生労働大臣の許可が必要である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問4-選択肢3/index.html"
   },
   {
     "id": "令和元年_4月_問3_選択肢4",
@@ -4838,7 +4838,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ガンマ線照射装置を用いて行う透過写真の撮影の業務は、法令に基づく特別の教育を行わなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問3-選択肢4/index.html"
   },
   {
     "id": "令和2年_4月_問4_選択肢1",
@@ -4846,7 +4846,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "クロロメチルメチルエーテルは、製造にあらかじめ厚生労働大臣の許可が必要である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ジアニシジン」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問4-選択肢1/index.html"
   },
   {
     "id": "平成29年_10月_問5_選択肢1",
@@ -4854,7 +4854,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "シアン化ナトリウムを取り扱う業務に10年従事した者",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ビス(クロロメチル)エーテルを取り扱う業務に3年以上従事した者」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問5-選択肢1/index.html"
   },
   {
     "id": "令和2年_10月_問4_選択肢3",
@@ -4862,7 +4862,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ジアニシジン及びその塩は、製造に厚生労働大臣の許可が必要である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問4-選択肢3/index.html"
   },
   {
     "id": "令和2年_4月_問4_選択肢5",
@@ -4870,7 +4870,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ジアニシジンは、製造にあらかじめ厚生労働大臣の許可が必要である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問4-選択肢5/index.html"
   },
   {
     "id": "令和3年_10月_問4_選択肢4",
@@ -4878,7 +4878,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ジアニシジンは、製造に厚生労働大臣の許可が必要である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問4-選択肢4/index.html"
   },
   {
     "id": "令和6年_10月_問8_選択肢1",
@@ -4886,7 +4886,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ジアニシジンを取り扱う業務に3か月以上従事した者",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「水銀を取り扱う業務に5年以上従事した者」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問8-選択肢1/index.html"
   },
   {
     "id": "平成29年_10月_問2_選択肢5",
@@ -4894,7 +4894,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "セメントを袋詰めする屋内の作業箇所に設置した局所排気装置に設けた除じん装置",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「塩化水素を取り扱う特定化学設備」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問2-選択肢5/index.html"
   },
   {
     "id": "令和3年_4月_問4_選択肢4",
@@ -4902,7 +4902,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "セメント製造工程においてセメントを袋詰めする作業",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「製造工程において硝酸を用いて行う洗浄の作業」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問4-選択肢4/index.html"
   },
   {
     "id": "令和6年_4月_問4_選択肢4",
@@ -4910,7 +4910,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "セメント製造工程においてセメントを袋詰めする作業は、法令上、作業主任者の選任が義務付けられている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「製造工程において硝酸を用いて行う洗浄の作業」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問4-選択肢4/index.html"
   },
   {
     "id": "令和元年_10月_問8_選択肢4",
@@ -4918,7 +4918,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "タンクの内部その他通風が不十分な場所において、アルゴン等を使用して行う溶接の作業に労働者を従事させるときは、作業を行う場所の空気中の酸素の濃度を18%以上に保つように換気し、又は労働者に空気呼吸器等を使用させなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問8-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問7_選択肢4",
@@ -4926,7 +4926,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "タンクの内部その他通風が不十分な場所において、アルゴン等を使用して行う溶接の作業に労働者を従事させるときは、作業を行う場所の空気中の酸素の濃度を18%以上に保つように換気し、又は労働者に空気呼吸器、酸素呼吸器若しくは送気マスクを使用させなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問7-選択肢4/index.html"
   },
   {
     "id": "令和6年_4月_問7_選択肢3",
@@ -4934,7 +4934,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "タンクの内部において有機溶剤業務に労働者が従事するときは、退避設備の整備等法定の措置が講じられていることを確認すること。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「第一種有機溶剤等又は第二種有機溶剤等に係る有機溶剤業務を行う屋内作業場について、作業環境測定を実施すること。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問7-選択肢3/index.html"
   },
   {
     "id": "令和元年_4月_問6_選択肢5",
@@ -4942,7 +4942,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "タンクの内部において、金属をアーク溶接する作業",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「屋内において、フライアッシュを袋詰めする箇所における作業」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問6-選択肢5/index.html"
   },
   {
     "id": "平成29年_4月_問9_選択肢5",
@@ -4950,7 +4950,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "タンクの内部において、金属をアーク溶接する箇所は、特定粉じん発生源に該当する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「屋内において、フライアッシュを袋詰めする箇所」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問9-選択肢5/index.html"
   },
   {
     "id": "令和6年_4月_問4_選択肢2",
@@ -4958,7 +4958,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "チェーンソーを用いて行う立木の伐木の作業は、法令上、作業主任者の選任が義務付けられている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「製造工程において硝酸を用いて行う洗浄の作業」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問4-選択肢2/index.html"
   },
   {
     "id": "令和2年_10月_問2_選択肢1",
@@ -4966,7 +4966,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "チェーンソーを用いて行う造材の業務は、法令に基づく特別の教育を行わなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問2-選択肢1/index.html"
   },
   {
     "id": "令和2年_4月_問6_選択肢1",
@@ -4974,7 +4974,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "チッパーによりチップする業務を行い著しい騒音を発する屋内作業場における等価騒音レベルの測定は、作業環境測定士に測定を実施させなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「有機溶剤等を製造する工程で有機溶剤等の混合の業務を行う屋内作業場における空気中のトルエン濃度の測定」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問6-選択肢1/index.html"
   },
   {
     "id": "平成30年_10月_問9_選択肢2",
@@ -4982,7 +4982,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "チッパーによりチップする業務を行う屋内作業場における等価騒音レベルの測定の測定頻度は、1年以内ごとに1回である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問9-選択肢2/index.html"
   },
   {
     "id": "令和3年_4月_問3_選択肢2",
@@ -4990,7 +4990,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "チッパーによりチップする業務を行う屋内作業場における等価騒音レベルの測定の測定頻度は、6か月以内ごとに1回である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問3-選択肢2/index.html"
   },
   {
     "id": "平成29年_10月_問2_選択肢2",
@@ -4998,7 +4998,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "トルエンを用いて洗浄を行う屋内の作業場所に設置したプッシュプル型換気装置",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「塩化水素を取り扱う特定化学設備」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問2-選択肢2/index.html"
   },
   {
     "id": "令和6年_4月_問3_選択肢4",
@@ -5006,7 +5006,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "トルエンを重量の10%含有する塗料を用いて塗装する屋内の作業場所に設けた局所排気装置",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問3-選択肢4/index.html"
   },
   {
     "id": "令和6年_4月_問6_選択肢3",
@@ -5014,7 +5014,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ドライアイスを使用して冷凍を行う冷凍庫の内部における作業は、酸素欠乏症等防止規則である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問6-選択肢3/index.html"
   },
   {
     "id": "平成29年_4月_問8_選択肢5",
@@ -5022,7 +5022,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ドライアイスを使用して冷蔵を行っている保冷貨物自動車の内部における作業は、第二種酸素欠乏危険作業に該当する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「海水が滞留したことのあるピットの内部における作業」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問8-選択肢5/index.html"
   },
   {
     "id": "令和6年_10月_問2_選択肢1",
@@ -5030,7 +5030,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ドライアイスを使用して冷蔵を行っている冷蔵庫の内部における作業は、法令上、作業主任者の選任が義務付けられている。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問2-選択肢1/index.html"
   },
   {
     "id": "令和元年_10月_問3_選択肢2",
@@ -5038,7 +5038,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ハロゲンガス用防毒マスクは、厚生労働大臣が定める規格を具備しなければ、譲渡・貸与・設置してはならない機械等に該当する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問3-選択肢2/index.html"
   },
   {
     "id": "令和2年_4月_問4_選択肢4",
@@ -5046,7 +5046,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "パラ-ニトロクロルベンゼンは、製造にあらかじめ厚生労働大臣の許可が必要である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ジアニシジン」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問4-選択肢4/index.html"
   },
   {
     "id": "令和6年_10月_問7_選択肢5",
@@ -5054,7 +5054,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "パルプ液を入れたことのある槽の内部における作業については、酸素欠乏危険作業主任者技能講習を修了した者のうちから、酸素欠乏危険作業主任者を選任しなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問7-選択肢5/index.html"
   },
   {
     "id": "令和2年_4月_問6_選択肢2",
@@ -5062,7 +5062,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "パルプ液を入れてある槽の内部における空気中の酸素及び硫化水素の濃度の測定は、作業環境測定士に測定を実施させなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「有機溶剤等を製造する工程で有機溶剤等の混合の業務を行う屋内作業場における空気中のトルエン濃度の測定」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問6-選択肢2/index.html"
   },
   {
     "id": "令和元年_10月_問9_選択肢1",
@@ -5070,7 +5070,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ビス(クロロメチル)エーテルを取り扱う業務に3年以上従事した者",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問9-選択肢1/index.html"
   },
   {
     "id": "令和3年_10月_問2_選択肢4",
@@ -5078,7 +5078,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "フェノールを取り扱う特定化学設備",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問2-選択肢4/index.html"
   },
   {
     "id": "令和3年_4月_問8_選択肢2",
@@ -5086,7 +5086,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ヘリウム、アルゴン等の不活性の気体を入れたことのあるタンクの内部における作業は、第二種酸素欠乏危険作業に該当する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「汚水その他腐敗しやすい物質を入れたことのある暗きょの内部における作業」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問8-選択肢2/index.html"
   },
   {
     "id": "令和2年_10月_問4_選択肢4",
@@ -5094,7 +5094,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ベリリウム及びその化合物は、製造に厚生労働大臣の許可が必要である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問4-選択肢4/index.html"
   },
   {
     "id": "令和3年_10月_問4_選択肢2",
@@ -5102,7 +5102,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ベリリウムは、製造に厚生労働大臣の許可が必要である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問4-選択肢2/index.html"
   },
   {
     "id": "令和6年_10月_問8_選択肢3",
@@ -5110,7 +5110,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ベンジジンを取り扱う業務に3か月以上従事した者",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「水銀を取り扱う業務に5年以上従事した者」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問8-選択肢3/index.html"
   },
   {
     "id": "令和元年_10月_問9_選択肢4",
@@ -5118,7 +5118,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ベンゼンを取り扱う業務に10年以上従事した者",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ビス(クロロメチル)エーテルを取り扱う業務に3年以上従事した者」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問9-選択肢4/index.html"
   },
   {
     "id": "平成29年_10月_問5_選択肢4",
@@ -5126,7 +5126,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ベンゼンを取り扱う業務に5年以上従事した者",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ビス(クロロメチル)エーテルを取り扱う業務に3年以上従事した者」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問5-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問4_選択肢2",
@@ -5134,7 +5134,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ベンゾトリクロリドは、製造に厚生労働大臣の許可が必要である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問4-選択肢2/index.html"
   },
   {
     "id": "令和6年_10月_問8_選択肢2",
@@ -5142,7 +5142,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ベータ-ナフチルアミンを取り扱う業務に3か月以上従事した者",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「水銀を取り扱う業務に5年以上従事した者」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問8-選択肢2/index.html"
   },
   {
     "id": "令和2年_4月_問4_選択肢2",
@@ -5150,7 +5150,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ベータ-プロピオラクトンは、製造にあらかじめ厚生労働大臣の許可が必要である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ジアニシジン」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問4-選択肢2/index.html"
   },
   {
     "id": "令和6年_4月_問6_選択肢1",
@@ -5158,7 +5158,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ホルムアルデヒドを取り扱う作業は、有機溶剤中毒予防規則である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ドライアイスを使用して冷凍を行う冷凍庫の内部における作業：酸素欠乏症等防止規則」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問6-選択肢1/index.html"
   },
   {
     "id": "令和元年_10月_問7_選択肢1",
@@ -5166,7 +5166,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ボイラー製造等強烈な騒音を発する場所",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問7-選択肢1/index.html"
   },
   {
     "id": "令和元年_4月_問9_選択肢4",
@@ -5174,7 +5174,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "メタノールを取り扱う業務に10年以上従事した者",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ビス(クロロメチル)エーテルを取り扱う業務に3年以上従事した者」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問9-選択肢4/index.html"
   },
   {
     "id": "令和6年_4月_問6_選択肢2",
@@ -5182,7 +5182,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "レーザー光線による金属の加工の作業は、電離放射線障害防止規則である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ドライアイスを使用して冷凍を行う冷凍庫の内部における作業：酸素欠乏症等防止規則」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問6-選択肢2/index.html"
   },
   {
     "id": "令和2年_10月_問3_選択肢3",
@@ -5190,7 +5190,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "レーザー光線による金属加工の作業は、法令上、作業主任者の選任が義務付けられている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「製造工程において硝酸を用いて行う洗浄の作業」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問3-選択肢3/index.html"
   },
   {
     "id": "令和3年_4月_問2_選択肢2",
@@ -5198,7 +5198,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "一酸化炭素用防毒マスクは、厚生労働大臣が定める規格を具備しなければ、譲渡・貸与・設置してはならない機械等に該当する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問2-選択肢2/index.html"
   },
   {
     "id": "令和4年_10月_問7_選択肢5",
@@ -5206,7 +5206,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者は、じん肺健康診断に関する記録及びエックス線写真を5年間保存しなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問7-選択肢5/index.html"
   },
   {
     "id": "令和4年_10月_問7_選択肢2",
@@ -5214,7 +5214,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者は、常時粉じん作業に従事する労働者で、じん肺管理区分が管理一であるものについては、3年以内ごとに1回、定期的に、じん肺健康診断を行わなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問7-選択肢2/index.html"
   },
   {
     "id": "令和4年_10月_問7_選択肢3",
@@ -5222,7 +5222,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者は、常時粉じん作業に従事する労働者で、じん肺管理区分が管理二又は管理三であるものについては、1年以内ごとに1回、定期的に、じん肺健康診断を行わなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問7-選択肢3/index.html"
   },
   {
     "id": "令和元年_4月_問3_選択肢3",
@@ -5230,7 +5230,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "人力により重量物を取り扱う業務は、法令に基づく特別の教育を行わなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ガンマ線照射装置を用いて行う透過写真の撮影の業務」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問3-選択肢3/index.html"
   },
   {
     "id": "令和2年_4月_問5_選択肢4",
@@ -5238,7 +5238,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "作業に常時従事する労働者に対し、1年以内ごとに1回、定期に、有機溶剤等健康診断を行う。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「作業場所に設けたプッシュプル型換気装置について、1年を超える期間使用しない場合を除き、1年以内ごとに1回、定期に、自主検査を行う。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問5-選択肢4/index.html"
   },
   {
     "id": "令和3年_4月_問7_選択肢4",
@@ -5246,7 +5246,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "作業に常時従事する労働者に対し、6か月以内ごとに1回、定期に、特別の項目について医師による健康診断を行い、その結果に基づき作成した有機溶剤等健康診断個人票を5年間保存する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問7-選択肢4/index.html"
   },
   {
     "id": "令和6年_4月_問7_選択肢1",
@@ -5254,7 +5254,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "作業に従事する労働者が有機溶剤により汚染され、又はこれを吸入しないように、作業の方法を決定し、労働者を指揮すること。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「第一種有機溶剤等又は第二種有機溶剤等に係る有機溶剤業務を行う屋内作業場について、作業環境測定を実施すること。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問7-選択肢1/index.html"
   },
   {
     "id": "令和2年_4月_問5_選択肢2",
@@ -5262,7 +5262,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "作業中の労働者が有機溶剤等の区分を容易に知ることができるよう容器に赤色の表示をする。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「作業場所に設けたプッシュプル型換気装置について、1年を超える期間使用しない場合を除き、1年以内ごとに1回、定期に、自主検査を行う。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問5-選択肢2/index.html"
   },
   {
     "id": "令和3年_10月_問7_選択肢2",
@@ -5270,7 +5270,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "作業中の労働者が有機溶剤等の区分を容易に知ることができるよう、容器に青色の表示をする。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「作業場所に設けたプッシュプル型換気装置について、1年を超える期間使用しない場合を除き、1年以内ごとに1回、定期に、自主検査を行う。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問7-選択肢2/index.html"
   },
   {
     "id": "令和2年_4月_問5_選択肢3",
@@ -5278,7 +5278,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "作業場における空気中の有機溶剤の濃度を、1年以内ごとに1回、定期に、測定する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「作業場所に設けたプッシュプル型換気装置について、1年を超える期間使用しない場合を除き、1年以内ごとに1回、定期に、自主検査を行う。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問5-選択肢3/index.html"
   },
   {
     "id": "令和3年_4月_問7_選択肢3",
@@ -5286,7 +5286,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "作業場における空気中の有機溶剤の濃度を、6か月以内ごとに1回、定期に測定し、その測定結果等の記録を3年間保存する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問7-選択肢3/index.html"
   },
   {
     "id": "令和2年_4月_問5_選択肢5",
@@ -5294,7 +5294,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "作業場所に設けたプッシュプル型換気装置について、1年を超える期間使用しない場合を除き、1年以内ごとに1回、定期に、自主検査を行う。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問5-選択肢5/index.html"
   },
   {
     "id": "令和3年_4月_問7_選択肢5",
@@ -5302,7 +5302,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "作業場所に設けたプッシュプル型換気装置について、原則として、1年以内ごとに1回、定期に、自主検査を行い、その検査の結果等の記録を3年間保存する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問7-選択肢5/index.html"
   },
   {
     "id": "令和3年_4月_問7_選択肢1",
@@ -5310,7 +5310,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "作業場所に設けた局所排気装置について、外付け式フードの場合は0.4m/sの制御風速を出し得る能力を有するものにする。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問7-選択肢1/index.html"
   },
   {
     "id": "令和2年_4月_問5_選択肢1",
@@ -5318,7 +5318,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "作業場所に設ける局所排気装置について、外付け式フードの場合は0.4m/sの制御風速を出し得る能力を有するものにする。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「作業場所に設けたプッシュプル型換気装置について、1年を超える期間使用しない場合を除き、1年以内ごとに1回、定期に、自主検査を行う。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問5-選択肢1/index.html"
   },
   {
     "id": "令和3年_10月_問7_選択肢1",
@@ -5326,7 +5326,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "作業場所に設ける局所排気装置について、外付け式フードの場合は最大で0.4m/sの制御風速を出し得る能力を有するものにする。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「作業場所に設けたプッシュプル型換気装置について、1年を超える期間使用しない場合を除き、1年以内ごとに1回、定期に、自主検査を行う。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問7-選択肢1/index.html"
   },
   {
     "id": "平成29年_10月_問3_選択肢4",
@@ -5334,7 +5334,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "作業場所に設置した局所排気装置で空気清浄装置を設けていないものの排気口の高さを、屋根から2mとしている。これは、法令違反である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「第三種有機溶剤等を用いて吹付けによる塗装作業を行う場所に、全体換気装置を設け有効に稼働させているが、作業者に送気マスクも有機ガス用防毒マスクも使用させていない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問3-選択肢4/index.html"
   },
   {
     "id": "令和6年_4月_問7_選択肢2",
@@ -5342,7 +5342,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "保護具の使用状況を監視すること。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「第一種有機溶剤等又は第二種有機溶剤等に係る有機溶剤業務を行う屋内作業場について、作業環境測定を実施すること。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問7-選択肢2/index.html"
   },
   {
     "id": "令和6年_4月_問2_選択肢5",
@@ -5350,7 +5350,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "再圧室は、厚生労働大臣が定める規格を具備しなければ、譲渡・貸与・設置してはならない機械等に該当する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問2-選択肢5/index.html"
   },
   {
     "id": "令和3年_4月_問5_選択肢5",
@@ -5358,7 +5358,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "削岩機、チッピングハンマー等チェーンソー以外の振動工具を取り扱う業務は、法令に基づく特別の教育を行わなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「チェーンソーを用いて行う造材の業務」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問5-選択肢5/index.html"
   },
   {
     "id": "平成30年_4月_問10_選択肢4",
@@ -5366,7 +5366,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "削岩機、鋲打機等身体に著しい振動を与える機械器具を用いて行う業務",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「20kgの重量物を継続作業として取り扱う業務」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問10-選択肢4/index.html"
   },
   {
     "id": "平成29年_10月_問8_選択肢5",
@@ -5374,7 +5374,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働者が酸素欠乏症等にかかったときは、遅滞なく、その旨を当該作業を行う場所を管轄する労働基準監督署長に報告しなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問8-選択肢5/index.html"
   },
   {
     "id": "令和2年_10月_問5_選択肢2",
@@ -5382,7 +5382,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "化学防護服は、厚生労働大臣が定める規格を具備しなければ、譲渡・貸与・設置してはならない機械等に該当する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「特定エックス線装置」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問5-選択肢2/index.html"
   },
   {
     "id": "令和6年_10月_問9_選択肢5",
@@ -5390,7 +5390,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "土石、岩石又は鉱物に係る特定粉じん作業を常時行う屋内作業場について、法令に基づき空気中の粉じんの濃度の測定を行うときは、当該土石、岩石又は鉱物中の遊離けい酸の含有率が明らかな場合を除き、当該粉じん中の遊離けい酸の含有率を測定しなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問9-選択肢5/index.html"
   },
   {
     "id": "令和4年_10月_問10_選択肢5",
@@ -5398,7 +5398,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "土石、獣毛等のじんあい又は粉末を著しく飛散する場所における業務",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問10-選択肢5/index.html"
   },
   {
     "id": "令和4年_4月_問7_選択肢1",
@@ -5406,7 +5406,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "坑内における気温は、原則として、37°C以下にしなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問7-選択肢1/index.html"
   },
   {
     "id": "平成29年_10月_問2_選択肢3",
@@ -5414,7 +5414,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "塩化水素を取り扱う特定化学設備",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問2-選択肢3/index.html"
   },
   {
     "id": "令和3年_10月_問2_選択肢2",
@@ -5422,7 +5422,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "塩酸を使用する屋内の作業場所に設けた局所排気装置",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「フェノールを取り扱う特定化学設備」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問2-選択肢2/index.html"
   },
   {
     "id": "令和3年_4月_問3_選択肢5",
@@ -5430,7 +5430,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "多量のドライアイスを取り扱う業務を行う屋内作業場における気温及び湿度の測定の測定頻度は、1か月以内ごとに1回である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問3-選択肢5/index.html"
   },
   {
     "id": "令和2年_10月_問8_選択肢2",
@@ -5438,7 +5438,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "多量のドライアイスを取り扱う業務を行う屋内作業場における気温及び湿度の測定の測定頻度は、2か月以内ごとに1回である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問8-選択肢2/index.html"
   },
   {
     "id": "令和元年_4月_問8_選択肢5",
@@ -5446,7 +5446,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "多量のドライアイスを取り扱う業務を行う屋内作業場における気温及び湿度の測定の測定頻度は、半月以内ごとに1回である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問8-選択肢5/index.html"
   },
   {
     "id": "平成30年_10月_問9_選択肢5",
@@ -5454,7 +5454,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "多量のドライアイスを取り扱う業務を行う屋内作業場における気温及湿度の測定の測定頻度は、半月以内ごとに1回である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問9-選択肢5/index.html"
   },
   {
     "id": "令和2年_10月_問6_選択肢4",
@@ -5462,7 +5462,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "多量の低温物体を取り扱う場所には、関係者以外の者が立ち入ることを禁止し、かつ、その旨を見やすい箇所に表示しなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「炭酸ガス(二酸化炭素)濃度が0.15%を超える場所には、関係者以外の者が立ち入ることを禁止し、かつ、その旨を見やすい箇所に表示しなければならない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問6-選択肢4/index.html"
   },
   {
     "id": "令和元年_10月_問7_選択肢4",
@@ -5470,7 +5470,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "多量の高熱物体を取り扱う場所",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問7-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問10_選択肢2",
@@ -5478,7 +5478,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "多量の高熱物体を取り扱う業務",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「20kgの重量物を継続作業として取り扱う業務」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問10-選択肢2/index.html"
   },
   {
     "id": "令和4年_10月_問10_選択肢3",
@@ -5486,7 +5486,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "多量の高熱物体を取り扱う業務",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問10-選択肢3/index.html"
   },
   {
     "id": "令和4年_4月_問10_選択肢3",
@@ -5494,7 +5494,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "多量の高熱物体を取り扱う業務は、満18歳未満の者を就かせてはならない業務に該当する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問10-選択肢3/index.html"
   },
   {
     "id": "平成30年_10月_問10_選択肢1",
@@ -5502,7 +5502,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "妊娠中の女性は、異常気圧下における業務に就かせてはならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問10-選択肢1/index.html"
   },
   {
     "id": "令和3年_10月_問6_選択肢2",
@@ -5510,7 +5510,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "定期に行う特定化学物質健康診断",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問6-選択肢2/index.html"
   },
   {
     "id": "令和6年_4月_問7_選択肢4",
@@ -5518,7 +5518,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "局所排気装置、プッシュプル型換気装置又は全体換気装置を1か月を超えない期間ごとに点検すること。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「第一種有機溶剤等又は第二種有機溶剤等に係る有機溶剤業務を行う屋内作業場について、作業環境測定を実施すること。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問7-選択肢4/index.html"
   },
   {
     "id": "令和6年_10月_問2_選択肢2",
@@ -5526,7 +5526,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "屋内で粉状のアルミニウムを袋詰めする作業は、法令上、作業主任者の選任が義務付けられている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ドライアイスを使用して冷蔵を行っている冷蔵庫の内部における作業」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問2-選択肢2/index.html"
   },
   {
     "id": "令和元年_4月_問6_選択肢4",
@@ -5534,7 +5534,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "屋内において、フライアッシュを袋詰めする箇所における作業",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問6-選択肢4/index.html"
   },
   {
     "id": "平成29年_4月_問9_選択肢4",
@@ -5542,7 +5542,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "屋内において、フライアッシュを袋詰めする箇所は、特定粉じん発生源に該当する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問9-選択肢4/index.html"
   },
   {
     "id": "令和元年_4月_問6_選択肢3",
@@ -5550,7 +5550,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "屋内において、研磨材を用いて手持式動力工具により金属を研磨する箇所における作業",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「屋内において、フライアッシュを袋詰めする箇所における作業」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問6-選択肢3/index.html"
   },
   {
     "id": "平成29年_4月_問9_選択肢3",
@@ -5558,7 +5558,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "屋内において、研磨材を用いて手持式動力工具により金属を研磨する箇所は、特定粉じん発生源に該当する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「屋内において、フライアッシュを袋詰めする箇所」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問9-選択肢3/index.html"
   },
   {
     "id": "令和元年_4月_問6_選択肢1",
@@ -5566,7 +5566,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "屋内のガラスを製造する工程において、原料を溶解炉に投げ入れる作業",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「屋内において、フライアッシュを袋詰めする箇所における作業」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問6-選択肢1/index.html"
   },
   {
     "id": "令和3年_4月_問9_選択肢1",
@@ -5574,7 +5574,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "屋内の、ガラスを製造する工程において、原料を溶解炉に投げ入れる箇所は、特定粉じん発生源に該当する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「屋内の、粉状のアルミニウムを袋詰めする箇所」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問9-選択肢1/index.html"
   },
   {
     "id": "平成30年_10月_問2_選択肢5",
@@ -5582,7 +5582,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "屋内の、フライアッシュを袋詰めする箇所に設けたプッシュプル型換気装置",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問2-選択肢5/index.html"
   },
   {
     "id": "令和3年_10月_問9_選択肢1",
@@ -5590,7 +5590,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "屋内の特定粉じん発生源については、その区分に応じて密閉する設備、局所排気装置、プッシュプル型換気装置若しくは湿潤な状態に保つための設備の設置又はこれらと同等以上の措置を講じなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問9-選択肢1/index.html"
   },
   {
     "id": "令和6年_10月_問9_選択肢1",
@@ -5598,7 +5598,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "屋内の特定粉じん発生源については、発生源の区分に応じて、密閉する設備、局所排気装置、プッシュプル型換気装置若しくは湿潤な状態に保つための設備の設置又はこれらと同等以上の措置を講じなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問9-選択肢1/index.html"
   },
   {
     "id": "令和3年_4月_問9_選択肢3",
@@ -5606,7 +5606,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "屋内の、研磨材を用いて手持式動力工具により金属を研磨する箇所は、特定粉じん発生源に該当する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「屋内の、粉状のアルミニウムを袋詰めする箇所」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問9-選択肢3/index.html"
   },
   {
     "id": "令和3年_4月_問9_選択肢4",
@@ -5614,7 +5614,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "屋内の、粉状のアルミニウムを袋詰めする箇所は、特定粉じん発生源に該当する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問9-選択肢4/index.html"
   },
   {
     "id": "令和3年_4月_問9_選択肢2",
@@ -5622,7 +5622,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "屋内の、耐火物を用いた炉を解体する箇所は、特定粉じん発生源に該当する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「屋内の、粉状のアルミニウムを袋詰めする箇所」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問9-選択肢2/index.html"
   },
   {
     "id": "令和3年_4月_問9_選択肢5",
@@ -5630,7 +5630,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "屋内の、金属をアーク溶接する箇所は、特定粉じん発生源に該当する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「屋内の、粉状のアルミニウムを袋詰めする箇所」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問9-選択肢5/index.html"
   },
   {
     "id": "令和4年_10月_問9_選択肢3",
@@ -5638,7 +5638,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "屋内作業場で、第二種有機溶剤等が付着している物の乾燥の業務に労働者を従事させるとき、その作業場所に最大0.4m/sの制御風速を出し得る能力を有する側方吸引型外付け式フードの局所排気装置を設け、かつ、作業に従事する労働者に有機ガス用防毒マスクを使用させている。これは、法令違反である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問9-選択肢3/index.html"
   },
   {
     "id": "令和元年_4月_問5_選択肢1",
@@ -5646,7 +5646,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "屋内作業場で、第二種有機溶剤等が付着している物の乾燥の業務に労働者を従事させるとき、その作業場所に設置した空気清浄装置を設けていない局所排気装置の排気口で、厚生労働大臣が定める濃度以上の有機溶剤を排出するものの高さを、屋根から1.5mとしている。これは、法令違反である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「屋内作業場で、第二種有機溶剤等が付着している物の乾燥の業務を労働者に行わせるとき、その作業場所に最大0.4m/sの制御風速を出し得る能力を有する側方吸引型外付け式フードの局所排気装置を設け、かつ、作業に従事する労働者に有機ガス用防毒マスクを使用させている。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問5-選択肢1/index.html"
   },
   {
     "id": "令和2年_10月_問9_選択肢1",
@@ -5654,7 +5654,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "屋内作業場で、第二種有機溶剤等が付着している物の乾燥の業務に労働者を従事させるとき、その作業場所の空気清浄装置を設けていない局所排気装置の排気口で、厚生労働大臣が定める濃度以上の有機溶剤を排出するものの高さを、屋根から2mとしている。これは、法令違反である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「有機溶剤業務に常時従事する労働者に対し、1年以内ごとに1回、定期に、有機溶剤等健康診断を行っている。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問9-選択肢1/index.html"
   },
   {
     "id": "令和元年_4月_問5_選択肢3",
@@ -5662,7 +5662,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "屋内作業場で、第二種有機溶剤等が付着している物の乾燥の業務を労働者に行わせるとき、その作業場所に最大0.4m/sの制御風速を出し得る能力を有する側方吸引型外付け式フードの局所排気装置を設け、かつ、作業に従事する労働者に有機ガス用防毒マスクを使用させている。これは、法令違反である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問5-選択肢3/index.html"
   },
   {
     "id": "令和2年_10月_問9_選択肢4",
@@ -5670,7 +5670,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "屋内作業場で、第二種有機溶剤等を用いる試験の業務に労働者を従事させるとき、有機溶剤作業主任者を選任していない。これは、法令違反である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「有機溶剤業務に常時従事する労働者に対し、1年以内ごとに1回、定期に、有機溶剤等健康診断を行っている。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問9-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問3_選択肢1",
@@ -5678,7 +5678,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "屋内作業場におけるアーク溶接の作業は、法令上、作業主任者の選任が義務付けられている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「製造工程において硝酸を用いて行う洗浄の作業」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問3-選択肢1/index.html"
   },
   {
     "id": "令和2年_10月_問6_選択肢3",
@@ -5686,7 +5686,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "屋内作業場に多量の熱を放散する溶融炉があるときは、加熱された空気を直接屋外に排出し、又はその放射するふく射熱から労働者を保護する措置を講じなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「炭酸ガス(二酸化炭素)濃度が0.15%を超える場所には、関係者以外の者が立ち入ることを禁止し、かつ、その旨を見やすい箇所に表示しなければならない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問6-選択肢3/index.html"
   },
   {
     "id": "令和4年_4月_問7_選択肢2",
@@ -5694,7 +5694,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "屋内作業場に多量の熱を放散する溶融炉があるときは、加熱された空気を直接屋外に排出し、又はその放射するふく射熱から労働者を保護する措置を講じなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問7-選択肢2/index.html"
   },
   {
     "id": "平成30年_4月_問5_選択肢4",
@@ -5702,7 +5702,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "工業用ガンマ線照射装置は、厚生労働大臣が定める規格を具備しなければ、譲渡・貸与・設置してはならない機械等に該当する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問5-選択肢4/index.html"
   },
   {
     "id": "令和3年_10月_問1_選択肢3",
@@ -5710,7 +5710,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "常時3,300人の労働者を使用する事業場では、2人以上の産業医を選任しなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「常時600人の労働者を使用し、そのうち多量の低温物体を取り扱う業務に常時35人の労働者を従事させる事業場では、選任する衛生管理者のうち少なくとも1人を衛生工学衛生管理者免許を受けた者のうちから選任しなければならない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問1-選択肢3/index.html"
   },
   {
     "id": "令和4年_4月_問1_選択肢5",
@@ -5718,7 +5718,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "常時3,300人の労働者を使用する事業場では、2人以上の産業医を選任しなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問1-選択肢5/index.html"
   },
   {
     "id": "令和3年_10月_問1_選択肢1",
@@ -5726,7 +5726,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "常時500人を超える労働者を使用し、そのうち多量の高熱物体を取り扱う業務に常時30人以上の労働者を従事させる事業場では、選任する衛生管理者のうち少なくとも1人を専任の衛生管理者としなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「常時600人の労働者を使用し、そのうち多量の低温物体を取り扱う業務に常時35人の労働者を従事させる事業場では、選任する衛生管理者のうち少なくとも1人を衛生工学衛生管理者免許を受けた者のうちから選任しなければならない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問1-選択肢1/index.html"
   },
   {
     "id": "令和3年_10月_問1_選択肢4",
@@ -5734,7 +5734,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "常時600人の労働者を使用し、そのうち多量の低温物体を取り扱う業務に常時35人の労働者を従事させる事業場では、選任する衛生管理者のうち少なくとも1人を衛生工学衛生管理者免許を受けた者のうちから選任しなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問1-選択肢4/index.html"
   },
   {
     "id": "令和4年_4月_問1_選択肢4",
@@ -5742,7 +5742,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "常時600人の労働者を使用し、そのうち多量の低温物体を取り扱う業務に常時35人の労働者を従事させる事業場では、選任する衛生管理者のうち少なくとも1人を衛生工学衛生管理者免許を受けた者のうちから選任しなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問1-選択肢4/index.html"
   },
   {
     "id": "令和4年_4月_問1_選択肢1",
@@ -5750,7 +5750,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "常時60人の労働者を使用する医療業の事業場では、第一種衛生管理者免許若しくは衛生工学衛生管理者免許を有する者、医師、歯科医師又は労働衛生コンサルタントのうちから衛生管理者を選任することができる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問1-選択肢1/index.html"
   },
   {
     "id": "令和3年_10月_問9_選択肢2",
@@ -5758,7 +5758,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "常時特定粉じん作業を行う屋内作業場については、6か月以内ごとに1回、定期に、空気中の粉じんの濃度の測定を行い、その測定結果等を記録して、これを7年間保存しなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問9-選択肢2/index.html"
   },
   {
     "id": "平成29年_10月_問9_選択肢2",
@@ -5766,7 +5766,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "常時特定粉じん作業を行う屋内作業場については、6か月以内ごとに1回、定期に、空気中の粉じんの濃度の測定を行い、測定結果等を記録して、これを5年間保存しなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問9-選択肢2/index.html"
   },
   {
     "id": "平成30年_10月_問6_選択肢1",
@@ -5774,7 +5774,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "常時特定粉じん作業を行う屋内作業場については、6か月以内ごとに1回、定期に、空気中の粉じんの濃度の測定を行い、測定結果等を記録して、これを7年間保存しなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問6-選択肢1/index.html"
   },
   {
     "id": "令和2年_4月_問9_選択肢4",
@@ -5782,7 +5782,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "廃棄物の焼却施設において焼却灰を取り扱う業務は、法令に基づく特別の教育を行わなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問9-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問6_選択肢2",
@@ -5790,7 +5790,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "廃棄物の焼却施設において焼却灰を取り扱う業務(設備の解体等に伴うものを除く。)を行う作業場については、6か月以内ごとに1回、定期に、当該作業場における空気中のダイオキシン類の濃度を測定しなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「炭酸ガス(二酸化炭素)濃度が0.15%を超える場所には、関係者以外の者が立ち入ることを禁止し、かつ、その旨を見やすい箇所に表示しなければならない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問6-選択肢2/index.html"
   },
   {
     "id": "令和4年_4月_問7_選択肢5",
@@ -5798,7 +5798,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "廃棄物の焼却施設において焼却灰を取り扱う業務(設備の解体等に伴うものを除く。)を行う作業場については、6か月以内ごとに1回、定期に、当該作業場における空気中のダイオキシン類の濃度を測定しなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問7-選択肢5/index.html"
   },
   {
     "id": "平成29年_10月_問2_選択肢4",
@@ -5806,7 +5806,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "弗化水素を含有する気体を排出する製造設備の排気筒に設置した排ガス処理装置",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「塩化水素を取り扱う特定化学設備」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問2-選択肢4/index.html"
   },
   {
     "id": "令和3年_4月_問4_選択肢2",
@@ -5814,7 +5814,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "強烈な騒音を発する場所における作業",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「製造工程において硝酸を用いて行う洗浄の作業」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問4-選択肢2/index.html"
   },
   {
     "id": "令和元年_4月_問3_選択肢2",
@@ -5822,7 +5822,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "強烈な騒音を発する場所における作業に係る業務は、法令に基づく特別の教育を行わなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ガンマ線照射装置を用いて行う透過写真の撮影の業務」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問3-選択肢2/index.html"
   },
   {
     "id": "令和6年_4月_問4_選択肢5",
@@ -5830,7 +5830,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "強烈な騒音を発する場所における作業は、法令上、作業主任者の選任が義務付けられている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「製造工程において硝酸を用いて行う洗浄の作業」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問4-選択肢5/index.html"
   },
   {
     "id": "平成30年_4月_問10_選択肢5",
@@ -5838,7 +5838,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "強烈な騒音を発する場所における業務",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「20kgの重量物を継続作業として取り扱う業務」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問10-選択肢5/index.html"
   },
   {
     "id": "令和4年_4月_問10_選択肢5",
@@ -5846,7 +5846,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "強烈な騒音を発する場所における業務は、満18歳未満の者を就かせてはならない業務に該当する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問10-選択肢5/index.html"
   },
   {
     "id": "平成29年_4月_問4_選択肢3",
@@ -5854,7 +5854,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "強烈な騒音を発生する場所における作業は、法令上、作業主任者の選任が義務付けられている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「酒類を入れたことのある醸造槽の内部における作業」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問4-選択肢3/index.html"
   },
   {
     "id": "令和4年_10月_問5_選択肢5",
@@ -5862,7 +5862,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "排気量40cm3以上の内燃機関を内蔵するチェーンソーは、厚生労働大臣が定める規格を具備しなければ、譲渡・貸与・設置してはならない機械等に該当する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問5-選択肢5/index.html"
   },
   {
     "id": "令和6年_10月_問5_選択肢1",
@@ -5870,7 +5870,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "接着のためにする有機溶剤等の塗布の業務",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問5-選択肢1/index.html"
   },
   {
     "id": "令和3年_4月_問2_選択肢4",
@@ -5878,7 +5878,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "放射性物質による汚染を防止するための防護服は、厚生労働大臣が定める規格を具備しなければ、譲渡・貸与・設置してはならない機械等に該当する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問2-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問8_選択肢1",
@@ -5886,7 +5886,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "放射性物質取扱作業室における空気中の放射性物質の濃度の測定の測定頻度は、1か月以内ごとに1回である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問8-選択肢1/index.html"
   },
   {
     "id": "令和4年_4月_問9_選択肢2",
@@ -5894,7 +5894,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "放射線業務の特殊健康診断項目には、尿中の潜血の有無の検査が含まれる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「潜水業務：四肢の運動機能の検査」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問9-選択肢2/index.html"
   },
   {
     "id": "令和2年_10月_問5_選択肢4",
@@ -5902,7 +5902,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "放射線測定器は、厚生労働大臣が定める規格を具備しなければ、譲渡・貸与・設置してはならない機械等に該当する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「特定エックス線装置」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問5-選択肢4/index.html"
   },
   {
     "id": "令和4年_10月_問5_選択肢4",
@@ -5910,7 +5910,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "放射線装置室は、厚生労働大臣が定める規格を具備しなければ、譲渡・貸与・設置してはならない機械等に該当する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「排気量40cm3以上の内燃機関を内蔵するチェーンソー」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問5-選択肢4/index.html"
   },
   {
     "id": "令和3年_10月_問7_選択肢3",
@@ -5918,7 +5918,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有機溶剤作業主任者に、有機溶剤業務を行う屋内作業場について、作業環境測定を実施させる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「作業場所に設けたプッシュプル型換気装置について、1年を超える期間使用しない場合を除き、1年以内ごとに1回、定期に、自主検査を行う。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問7-選択肢3/index.html"
   },
   {
     "id": "令和6年_10月_問5_選択肢5",
@@ -5926,7 +5926,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有機溶剤含有物で塗装した建築物又は工作物の解体若しくは破砕の業務",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問5-選択肢5/index.html"
   },
   {
     "id": "令和6年_10月_問5_選択肢3",
@@ -5934,7 +5934,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有機溶剤含有物を用いて行う印刷の業務",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問5-選択肢3/index.html"
   },
   {
     "id": "令和6年_10月_問5_選択肢4",
@@ -5942,7 +5942,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有機溶剤含有物を用いて行う文字の書込み又は描画の業務",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問5-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問9_選択肢3",
@@ -5950,7 +5950,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有機溶剤業務に常時従事する労働者に対し、1年以内ごとに1回、定期に、有機溶剤等健康診断を行っている。これは、法令違反である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問9-選択肢3/index.html"
   },
   {
     "id": "令和4年_4月_問9_選択肢1",
@@ -5958,7 +5958,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有機溶剤業務の特殊健康診断項目には、尿中のデルタアミノレブリン酸の量の検査が含まれる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「潜水業務：四肢の運動機能の検査」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問9-選択肢1/index.html"
   },
   {
     "id": "平成30年_10月_問3_選択肢2",
@@ -5966,7 +5966,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有機溶剤業務の特殊健康診断項目には、赤血球中のプロトポルフィリンの量の検査が含まれる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「鉛業務：尿中のデルタアミノレブリン酸の量の検査」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問3-選択肢2/index.html"
   },
   {
     "id": "平成30年_4月_問4_選択肢5",
@@ -5974,7 +5974,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有機溶剤業務を行う屋内作業場についての作業環境測定を、有機溶剤作業主任者に実施させる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「法令に基づき作業場所に設ける局所排気装置について、囲い式フードの場合は0.4m/sの制御風速を出し得る能力を有するものにする。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問4-選択肢5/index.html"
   },
   {
     "id": "令和3年_4月_問7_選択肢2",
@@ -5982,7 +5982,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有機溶剤等の区分の色分けによる表示を黄色で行う。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問7-選択肢2/index.html"
   },
   {
     "id": "令和2年_10月_問2_選択肢4",
@@ -5990,7 +5990,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有機溶剤等を入れたことがあるタンクの内部における業務は、法令に基づく特別の教育を行わなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「チェーンソーを用いて行う造材の業務」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問2-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問9_選択肢5",
@@ -5998,7 +5998,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有機溶剤等を入れてあった空容器で有機溶剤の蒸気が発散するおそれのあるものを、屋外の一定の場所に集積している。これは、法令違反である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「有機溶剤業務に常時従事する労働者に対し、1年以内ごとに1回、定期に、有機溶剤等健康診断を行っている。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問9-選択肢5/index.html"
   },
   {
     "id": "令和元年_4月_問5_選択肢5",
@@ -6006,7 +6006,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有機溶剤等を入れてあった空容器の処理として、有機溶剤の蒸気が発散するおそれのある空容器を屋外の一定の場所に集積している。これは、法令違反である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「屋内作業場で、第二種有機溶剤等が付着している物の乾燥の業務を労働者に行わせるとき、その作業場所に最大0.4m/sの制御風速を出し得る能力を有する側方吸引型外付け式フードの局所排気装置を設け、かつ、作業に従事する労働者に有機ガス用防毒マスクを使用させている。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問5-選択肢5/index.html"
   },
   {
     "id": "令和2年_4月_問6_選択肢3",
@@ -6014,7 +6014,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有機溶剤等を製造する工程で有機溶剤等の混合の業務を行う屋内作業場における空気中のトルエン濃度の測定は、作業環境測定士に測定を実施させなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問6-選択肢3/index.html"
   },
   {
     "id": "令和3年_10月_問2_選択肢1",
@@ -6022,7 +6022,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "木工用丸のこ盤を使用する屋内の作業場所に設けた局所排気装置",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「フェノールを取り扱う特定化学設備」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問2-選択肢1/index.html"
   },
   {
     "id": "平成30年_10月_問2_選択肢1",
@@ -6030,7 +6030,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "木材加工用丸のこ盤を使用する作業場所に設けた局所排気装置",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「屋内の、フライアッシュを袋詰めする箇所に設けたプッシュプル型換気装置」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問2-選択肢1/index.html"
   },
   {
     "id": "令和6年_4月_問3_選択肢1",
@@ -6038,7 +6038,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "木材加工用丸のこ盤を使用する屋内の作業場所に設けた局所排気装置",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「トルエンを重量の10%含有する塗料を用いて塗装する屋内の作業場所に設けた局所排気装置」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問3-選択肢1/index.html"
   },
   {
     "id": "令和3年_4月_問8_選択肢3",
@@ -6046,7 +6046,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "果菜の熟成のために使用している倉庫の内部における作業は、第二種酸素欠乏危険作業に該当する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「汚水その他腐敗しやすい物質を入れたことのある暗きょの内部における作業」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問8-選択肢3/index.html"
   },
   {
     "id": "平成29年_4月_問3_選択肢5",
@@ -6054,7 +6054,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "検知管方式による一酸化炭素検定器は、厚生労働大臣が定める規格を具備しなければ、譲渡・貸与・設置してはならない機械等に該当する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「電動ファン付き呼吸用保護具」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問3-選択肢5/index.html"
   },
   {
     "id": "令和6年_4月_問4_選択肢1",
@@ -6062,7 +6062,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "水深10m以上の場所における潜水の作業は、法令上、作業主任者の選任が義務付けられている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「製造工程において硝酸を用いて行う洗浄の作業」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問4-選択肢1/index.html"
   },
   {
     "id": "平成30年_4月_問2_選択肢2",
@@ -6070,7 +6070,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "水深10m以上の場所における潜水業務は、法令に基づく特別の教育を行わなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「エックス線装置を用いて行う透過写真撮影の業務」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問2-選択肢2/index.html"
   },
   {
     "id": "平成30年_4月_問8_選択肢5",
@@ -6078,7 +6078,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "水銀を取り扱う業務に3年以上従事した者",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ビス(クロロメチル)エーテルを取り扱う業務に3年以上従事した者」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問8-選択肢5/index.html"
   },
   {
     "id": "令和6年_10月_問8_選択肢4",
@@ -6086,7 +6086,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "水銀を取り扱う業務に5年以上従事した者",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問8-選択肢4/index.html"
   },
   {
     "id": "令和3年_4月_問8_選択肢5",
@@ -6094,7 +6094,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "汚水その他腐敗しやすい物質を入れたことのある暗きょの内部における作業は、第二種酸素欠乏危険作業に該当する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問8-選択肢5/index.html"
   },
   {
     "id": "令和2年_10月_問7_選択肢2",
@@ -6102,7 +6102,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "汚水を入れたことのあるピットの内部における清掃作業の業務に労働者を就かせるときは、第一種酸素欠乏危険作業に係る特別の教育を行わなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問7-選択肢2/index.html"
   },
   {
     "id": "令和4年_10月_問8_選択肢1",
@@ -6110,7 +6110,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "汚水を入れたことのあるポンプを修理する場合で、これを分解する作業に労働者を従事させるときは、硫化水素中毒の防止について必要な知識を有する者のうちから指揮者を選任し、作業を指揮させなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問8-選択肢1/index.html"
   },
   {
     "id": "平成30年_4月_問4_選択肢1",
@@ -6118,7 +6118,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "法令に基づき作業場所に設ける局所排気装置について、囲い式フードの場合は0.4m/sの制御風速を出し得る能力を有するものにする。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問4-選択肢1/index.html"
   },
   {
     "id": "平成30年_10月_問6_選択肢4",
@@ -6126,7 +6126,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "法令に基づき局所排気装置に設ける除じん装置は、ヒュームとヒューム以外の粉じんに応じて、除じん方式が定められている。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問6-選択肢4/index.html"
   },
   {
     "id": "令和2年_4月_問8_選択肢3",
@@ -6134,7 +6134,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "海水が滞留したことのあるピットの内部における作業については、酸素欠乏危険作業主任者技能講習を修了した者のうちから、酸素欠乏危険作業主任者を選任しなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問8-選択肢3/index.html"
   },
   {
     "id": "平成29年_4月_問8_選択肢1",
@@ -6142,7 +6142,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "海水が滞留したことのあるピットの内部における作業は、第二種酸素欠乏危険作業に該当する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問8-選択肢1/index.html"
   },
   {
     "id": "令和3年_10月_問1_選択肢2",
@@ -6150,7 +6150,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "深夜業を含む業務に常時550人の労働者を従事させる事業場では、その事業場に専属の産業医を選任しなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「常時600人の労働者を使用し、そのうち多量の低温物体を取り扱う業務に常時35人の労働者を従事させる事業場では、選任する衛生管理者のうち少なくとも1人を衛生工学衛生管理者免許を受けた者のうちから選任しなければならない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問1-選択肢2/index.html"
   },
   {
     "id": "令和4年_4月_問1_選択肢3",
@@ -6158,7 +6158,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "深夜業を含む業務に常時550人の労働者を従事させる事業場では、その事業場に専属の産業医を選任しなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問1-選択肢3/index.html"
   },
   {
     "id": "平成30年_10月_問10_選択肢4",
@@ -6166,7 +6166,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "満18歳以上で産後1年を経過した女性から、20kgの重量物を継続作業で取り扱う業務に従事したい旨の申出があった場合には、当該業務に就かせることができる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問10-選択肢4/index.html"
   },
   {
     "id": "平成30年_10月_問10_選択肢3",
@@ -6174,7 +6174,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "満18歳以上で産後8週間を経過したが1年を経過しない女性から、さく岩機、鋲打機等身体に著しい振動を与える機械器具を用いる業務に従事したい旨の申出があった場合でも、当該業務に就かせてはならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問10-選択肢3/index.html"
   },
   {
     "id": "平成30年_10月_問10_選択肢2",
@@ -6182,7 +6182,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "満18歳以上で産後8週間を経過したが1年を経過しない女性から、著しく寒冷な場所における業務に従事しない旨の申出があった場合には、当該業務に就かせてはならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問10-選択肢2/index.html"
   },
   {
     "id": "平成30年_10月_問10_選択肢5",
@@ -6190,7 +6190,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "満18歳未満の者は、土石、獣毛等のじんあい又は粉末を著しく飛散する場所における業務に就かせてはならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問10-選択肢5/index.html"
   },
   {
     "id": "令和6年_4月_問5_選択肢3",
@@ -6198,7 +6198,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "溶融ガラスからガラス製品を成型する業務を行う屋内作業場における気温、湿度及びふく射熱の測定の測定頻度は、1か月以内ごとに1回である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問5-選択肢3/index.html"
   },
   {
     "id": "令和2年_4月_問6_選択肢4",
@@ -6206,7 +6206,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "溶融ガラスからガラス製品を成型する業務を行う屋内作業場における気温、湿度及びふく射熱の測定は、作業環境測定士に測定を実施させなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「有機溶剤等を製造する工程で有機溶剤等の混合の業務を行う屋内作業場における空気中のトルエン濃度の測定」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問6-選択肢4/index.html"
   },
   {
     "id": "令和2年_4月_問9_選択肢2",
@@ -6214,7 +6214,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "潜水作業者への送気の調節を行うためのバルブ又はコックを操作する業務は、法令に基づく特別の教育を行わなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問9-選択肢2/index.html"
   },
   {
     "id": "令和2年_4月_問2_選択肢5",
@@ -6222,7 +6222,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "潜水器からの給気を受けて行う潜水の作業",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「鉛蓄電池を解体する工程において人力で鉛等を運搬する業務に係る作業」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問2-選択肢5/index.html"
   },
   {
     "id": "令和3年_4月_問2_選択肢1",
@@ -6230,7 +6230,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "潜水器は、厚生労働大臣が定める規格を具備しなければ、譲渡・貸与・設置してはならない機械等に該当する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問2-選択肢1/index.html"
   },
   {
     "id": "令和元年_4月_問2_選択肢5",
@@ -6238,7 +6238,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "潜水器を用いボンベからの給気を受けて行う潜水作業",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「鉛蓄電池を解体する工程において人力で鉛等を運搬する業務に係る作業」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問2-選択肢5/index.html"
   },
   {
     "id": "令和2年_10月_問3_選択肢5",
@@ -6246,7 +6246,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "潜水器を用いボンベからの給気を受けて行う潜水作業は、法令上、作業主任者の選任が義務付けられている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「製造工程において硝酸を用いて行う洗浄の作業」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問3-選択肢5/index.html"
   },
   {
     "id": "令和4年_4月_問9_選択肢5",
@@ -6254,7 +6254,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "潜水業務の特殊健康診断項目には、四肢の運動機能の検査が含まれる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問9-選択肢5/index.html"
   },
   {
     "id": "平成30年_10月_問3_選択肢4",
@@ -6262,7 +6262,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "潜水業務の特殊健康診断項目には、血液中の尿酸の量の検査が含まれる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「鉛業務：尿中のデルタアミノレブリン酸の量の検査」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問3-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問6_選択肢1",
@@ -6270,7 +6270,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "炭酸ガス(二酸化炭素)濃度が0.15%を超える場所には、関係者以外の者が立ち入ることを禁止し、かつ、その旨を見やすい箇所に表示しなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問6-選択肢1/index.html"
   },
   {
     "id": "令和4年_4月_問7_選択肢3",
@@ -6278,7 +6278,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "炭酸ガス(二酸化炭素)濃度が0.15%を超える場所には、関係者以外の者が立ち入ることを禁止し、かつ、その旨を見やすい箇所に表示しなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問7-選択肢3/index.html"
   },
   {
     "id": "令和2年_10月_問7_選択肢3",
@@ -6286,7 +6286,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "爆発、酸化等を防止するため、酸素欠乏危険作業を行う場所の換気を行うことができない場合には、空気呼吸器、酸素呼吸器又は送気マスクを備え、労働者に使用させなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問7-選択肢3/index.html"
   },
   {
     "id": "令和2年_10月_問5_選択肢5",
@@ -6294,7 +6294,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "特定エックス線装置は、厚生労働大臣が定める規格を具備しなければ、譲渡・貸与・設置してはならない機械等に該当する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問5-選択肢5/index.html"
   },
   {
     "id": "令和4年_10月_問26_選択肢2",
@@ -6302,7 +6302,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "1か月単位の変形労働時間制を採用している場合であっても、妊産婦が請求した場合には、管理監督者等の場合を除き、1週40時間、1日8時間を超えて労働させてはならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問26-選択肢2/index.html"
   },
   {
     "id": "令和元年_4月_問26_選択肢2",
@@ -6310,7 +6310,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "1か月単位の変形労働時間制を採用している場合であっても、妊産婦が請求した場合には、管理監督者等の場合を除き、1週40時間及び1日8時間を超えて労働させてはならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問26-選択肢2/index.html"
   },
   {
     "id": "令和2年_4月_問27_選択肢2",
@@ -6318,7 +6318,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "1か月単位の変形労働時間制を採用している場合であって、妊産婦が請求した場合には、管理監督者等の場合を除き、1週40時間、1日8時間を超えて労働させてはならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問27-選択肢2/index.html"
   },
   {
     "id": "令和4年_10月_問26_選択肢3",
@@ -6326,7 +6326,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "1年単位の変形労働時間制を採用している場合であっても、妊産婦が請求した場合には、管理監督者等の場合を除き、1週40時間、1日8時間を超えて労働させてはならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問26-選択肢3/index.html"
   },
   {
     "id": "令和元年_4月_問26_選択肢3",
@@ -6334,7 +6334,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "1年単位の変形労働時間制を採用している場合であっても、妊産婦が請求した場合には、管理監督者等の場合を除き、1週40時間及び1日8時間を超えて労働させてはならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問26-選択肢3/index.html"
   },
   {
     "id": "令和2年_4月_問27_選択肢4",
@@ -6342,7 +6342,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "1年単位の変形労働時間制を採用している場合であって、妊産婦が請求した場合には、管理監督者等の場合を除き、1週40時間、1日8時間を超えて労働させてはならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問27-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問26_選択肢1",
@@ -6350,7 +6350,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "1日8時間を超えて労働させることができるのは、時間外労働の労使協定を締結し、これを所轄労働基準監督署長に届け出た場合に限られている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「監視又は断続的労働に従事する労働者であって、所轄労働基準監督署長の許可を受けたものについては、労働時間、休憩及び休日に関する規定は適用されない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問26-選択肢1/index.html"
   },
   {
     "id": "令和3年_10月_問26_選択肢1",
@@ -6358,7 +6358,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "1日8時間を超えて労働させることができるのは、時間外労働の協定を締結し、これを所轄労働基準監督署長に届け出た場合に限られている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「機密の事務を取り扱う労働者については、所轄労働基準監督署長の許可を受けなくても労働時間に関する規定は適用されない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問26-選択肢1/index.html"
   },
   {
     "id": "令和4年_4月_問24_選択肢3",
@@ -6366,7 +6366,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "60人の労働者を常時就業させている屋内作業場の気積が、設備の占める容積及び床面から4mを超える高さにある空間を除き、500m3となっている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労働衛生上の有害業務を有しない事業場において、窓その他の開口部の直接外気に向かって開放することができる部分の面積が、常時床面積の15分の1である屋内作業場に、換気設備を設けていない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問24-選択肢3/index.html"
   },
   {
     "id": "令和元年_10月_問25_選択肢4",
@@ -6374,7 +6374,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "60人の労働者を常時就業させている屋内作業場の気積を、設備の占める容積及び床面から3mを超える高さにある空間を除き600m3としている。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問25-選択肢4/index.html"
   },
   {
     "id": "平成29年_10月_問26_選択肢1",
@@ -6382,7 +6382,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "6年6か月継続勤務し、直近の1年間に、全労働日の8割以上出勤した労働者に新たに与えなければならない年次有給休暇の日数は、18日である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労使協定により、時間単位で年次有給休暇を与える対象労働者の範囲、その日数(5日以内に限る。)等を定めた場合において、対象労働者が請求したときは、年次有給休暇の日数のうち当該協定で定める日数について時間単位で与えることができる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問26-選択肢1/index.html"
   },
   {
     "id": "平成29年_10月_問24_選択肢1",
@@ -6390,7 +6390,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "すべての事業者は、常時使用する労働者に対し、1年以内ごとに1回、定期に、ストレスチェックを行わなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労働者に対するストレスチェックの事項は、「当該労働者の心理的な負担の原因」、「当該労働者の心理的な負担による心身の自覚症状」及び「他の労働者による当該労働者への支援」に関する項目である。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問24-選択肢1/index.html"
   },
   {
     "id": "令和2年_10月_問25_選択肢2",
@@ -6398,7 +6398,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ねずみ、昆虫等の発生場所、生息場所及び侵入経路並びにねずみ、昆虫等による被害の状況について、6か月以内ごとに1回、定期に、統一的に調査を実施し、その調査結果に基づき、必要な措置を講じている。これは、法令違反である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「常時50人の労働者を就業させている屋内作業場の気積が、設備の占める容積及び床面から4mを超える高さにある空間を除き400m3となっている。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問25-選択肢2/index.html"
   },
   {
     "id": "令和2年_10月_問24_選択肢5",
@@ -6406,7 +6406,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ストレスチェックと面接指導の実施状況について、面接指導を受けた労働者数が50人以上の場合に限り、労働基準監督署長へ報告しなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労働者に対するストレスチェックの事項は、「職場における当該労働者の心理的な負担の原因」、「当該労働者の心理的な負担による心身の自覚症状」及び「職場における他の労働者による当該労働者への支援」に関する項目である。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問24-選択肢5/index.html"
   },
   {
     "id": "令和6年_10月_問24_選択肢4",
@@ -6414,7 +6414,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ストレスチェックを受ける労働者について解雇、昇進又は異動に関して直接の権限を持つ監督的地位にある者は、ストレスチェックの実施の事務に従事してはならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問24-選択肢4/index.html"
   },
   {
     "id": "令和6年_10月_問24_選択肢2",
@@ -6422,7 +6422,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "ストレスチェックを行うために必要な知識についての研修であって厚生労働大臣が定めるものを修了した労働衛生コンサルタントは、ストレスチェックの実施者となることができる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「ストレスチェックを受ける労働者について解雇、昇進又は異動に関して直接の権限を持つ監督的地位にある者は、ストレスチェックの実施の事務に従事してはならない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問24-選択肢2/index.html"
   },
   {
     "id": "令和2年_10月_問26_選択肢5",
@@ -6430,7 +6430,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "フレックスタイム制の清算期間は、6か月以内の期間に限られる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「監視又は断続的労働に従事する労働者であって、所轄労働基準監督署長の許可を受けたものについては、労働時間、休憩及び休日に関する規定は適用されない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問26-選択肢5/index.html"
   },
   {
     "id": "令和4年_4月_問27_選択肢4",
@@ -6438,7 +6438,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "フレックスタイム制を採用している場合であっても、妊産婦が請求した場合には、管理監督者等の場合を除き、1週40時間、1日8時間を超えて労働させてはならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問27-選択肢4/index.html"
   },
   {
     "id": "令和元年_4月_問26_選択肢4",
@@ -6446,7 +6446,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "フレックスタイム制を採用している場合であっても、妊産婦が請求した場合には、管理監督者等の場合を除き、フレックスタイム制による労働をさせてはならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問26-選択肢4/index.html"
   },
   {
     "id": "令和2年_4月_問27_選択肢3",
@@ -6454,7 +6454,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "フレックスタイム制を採用している場合には、1週40時間、1日8時間を超えて労働させることができる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問27-選択肢3/index.html"
   },
   {
     "id": "平成30年_10月_問27_選択肢5",
@@ -6462,7 +6462,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "一週間の所定労働時間が25時間で、一週間の所定労働日数が4日である労働者であって、雇入れの日から起算して3年6か月間継続勤務し、直近の1年間に、全労働日の8割以上出勤したものには、継続し、又は分割した10労働日の休暇を新たに与えなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問27-選択肢5/index.html"
   },
   {
     "id": "令和4年_10月_問25_選択肢1",
@@ -6470,7 +6470,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "中央管理方式の空気調和設備を設けた建築物内の事務室については、空気中の一酸化炭素及び二酸化炭素の含有率を、6か月以内ごとに1回、定期に、測定しなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問25-選択肢1/index.html"
   },
   {
     "id": "令和4年_10月_問25_選択肢4",
@@ -6478,7 +6478,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事務室において使用する機械による換気のための設備については、2か月以内ごとに1回、定期に、異常の有無を点検しなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問25-選択肢4/index.html"
   },
   {
     "id": "令和4年_10月_問25_選択肢2",
@@ -6486,7 +6486,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事務室の建築、大規模の修繕又は大規模の模様替を行ったときは、その事務室における空気中のホルムアルデヒドの濃度を、その事務室の使用を開始した日以後所定の時期に1回、測定しなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問25-選択肢2/index.html"
   },
   {
     "id": "令和2年_10月_問22_選択肢4",
@@ -6494,7 +6494,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業場において実施した定期健康診断の結果、健康診断項目に異常所見があると診断された労働者については、健康を保持するために必要な措置について、健康診断が行われた日から3か月以内に、医師から意見聴取を行っている。これは、法令違反である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「雇入時の健康診断の項目のうち、聴力の検査は、35歳及び40歳の者並びに45歳以上の者に対しては、1,000Hz及び4,000Hzの音について行っているが、その他の者に対しては、医師が適当と認めるその他の方法により行っている。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問22-選択肢4/index.html"
   },
   {
     "id": "令和4年_4月_問23_選択肢3",
@@ -6502,7 +6502,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業場において実施した雇入時の健康診断の項目に異常の所見があると診断された労働者については、その結果に基づき、健康を保持するために必要な措置について、健康診断が行われた日から3か月以内に、医師の意見を聴かなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問23-選択肢3/index.html"
   },
   {
     "id": "平成30年_4月_問25_選択肢4",
@@ -6510,7 +6510,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業場において実施した雇入時の健康診断の項目に異常の所見があると診断された労働者については、その結果に基づき、健康を保持するために必要な措置について、健康診断実施日から3か月以内に、医師の意見を聴いている。これは、法令違反である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「雇入時の健康診断において、35歳未満の者については、医師の意見を聴いて、貧血検査及び心電図検査を省略している。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問25-選択肢4/index.html"
   },
   {
     "id": "平成29年_10月_問22_選択肢3",
@@ -6518,7 +6518,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業場に専属ではないが、衛生管理者として選任している労働衛生コンサルタントを、衛生委員会の委員として指名することができる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問22-選択肢3/index.html"
   },
   {
     "id": "平成30年_10月_問25_選択肢1",
@@ -6526,7 +6526,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業場に附属する炊事場の入口には、土足のまま立ち入ることができるように、洗浄剤を含浸させたマットを設置している。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「常時、男性20人、女性25人の労働者を使用している事業場で、休憩の設備を設けているが、労働者が臥床することのできる休養室又は休養所を男女別に設けていない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問25-選択肢1/index.html"
   },
   {
     "id": "令和元年_10月_問25_選択肢1",
@@ -6534,7 +6534,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業場に附属する食堂の床面積を、食事の際の1人について、0.5m2としている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「60人の労働者を常時就業させている屋内作業場の気積を、設備の占める容積及び床面から3mを超える高さにある空間を除き600m3としている。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問25-選択肢1/index.html"
   },
   {
     "id": "令和3年_10月_問25_選択肢4",
@@ -6542,7 +6542,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業場に附属する食堂の床面積を、食事の際の1人について、0.8m2としている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労働衛生上の有害業務を有しない事業場において、窓その他の開口部の直接外気に向かって開放することができる部分の面積が、常時床面積の15分の1である屋内作業場に、換気設備を設けていない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問25-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問25_選択肢4",
@@ -6550,7 +6550,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業場に附属する食堂の床面積を、食事の際の1人について、1.1m2となるようにしている。これは、法令違反である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「常時50人の労働者を就業させている屋内作業場の気積が、設備の占める容積及び床面から4mを超える高さにある空間を除き400m3となっている。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問25-選択肢4/index.html"
   },
   {
     "id": "平成30年_10月_問25_選択肢3",
@@ -6558,7 +6558,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業場に附属する食堂の炊事従業員について、専用の便所を設けているが、休憩室は一般従業員と共用のもののみを設けている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「常時、男性20人、女性25人の労働者を使用している事業場で、休憩の設備を設けているが、労働者が臥床することのできる休養室又は休養所を男女別に設けていない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問25-選択肢3/index.html"
   },
   {
     "id": "平成29年_10月_問25_選択肢5",
@@ -6566,7 +6566,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業場に附属する食堂の炊事従業員について、専用の便所を設けているが、専用の休憩室は設けていない。これは、法令違反である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問25-選択肢5/index.html"
   },
   {
     "id": "令和元年_4月_問25_選択肢3",
@@ -6574,7 +6574,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業場に附属する食堂の炊事従業員について、専用の便所を設けているほか、一般の労働者と共用の休憩室を備えている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「男性20人、女性25人の労働者を常時使用している事業場で、労働者が臥床することのできる休養室又は休養所を、男性用と女性用に区別して設けていない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問25-選択肢3/index.html"
   },
   {
     "id": "平成30年_4月_問24_選択肢3",
@@ -6582,7 +6582,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業場に附属する食堂の炊事従業員について、専用の便所を設けているほか、一般の労働者と共用の休憩室を設けている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「精密な作業を常時行う場所の作業面の照度を350ルクスとしている。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問24-選択肢3/index.html"
   },
   {
     "id": "令和元年_10月_問25_選択肢3",
@@ -6590,7 +6590,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業場に附属する食堂の炊事従業員について、専用の便所を設けているほか、一般従業員と共用の休憩室を設けている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「60人の労働者を常時就業させている屋内作業場の気積を、設備の占める容積及び床面から3mを超える高さにある空間を除き600m3としている。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問25-選択肢3/index.html"
   },
   {
     "id": "令和3年_4月_問22_選択肢5",
@@ -6598,7 +6598,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者が産業医に付与すべき権限には、労働者の健康管理等を実施するために必要な情報を労働者から収集することが含まれる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問22-選択肢5/index.html"
   },
   {
     "id": "令和元年_10月_問21_選択肢2",
@@ -6606,7 +6606,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者に対して行う労働者の健康管理等についての必要な勧告に関すること。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問21-選択肢2/index.html"
   },
   {
     "id": "令和3年_10月_問24_選択肢2",
@@ -6614,7 +6614,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者は、ストレスチェックの結果が、衛生管理者及びストレスチェックを受けた労働者に通知されるようにしなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労働者に対するストレスチェックの事項は、「職場における当該労働者の心理的な負担の原因」、「当該労働者の心理的な負担による心身の自覚症状」及び「職場における他の労働者による当該労働者への支援」に関する項目である。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問24-選択肢2/index.html"
   },
   {
     "id": "令和3年_4月_問24_選択肢3",
@@ -6622,7 +6622,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者は、ストレスチェックの結果、心理的な負担の程度が高い労働者であって、面接指導を受ける必要があると当該ストレスチェックを行った医師等が認めたものが面接指導を受けることを希望する旨を申し出たときは、当該申出をした労働者に対し、面接指導を行わなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問24-選択肢3/index.html"
   },
   {
     "id": "令和3年_10月_問24_選択肢4",
@@ -6630,7 +6630,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者は、ストレスチェックの結果、心理的な負担の程度が高い労働者全員に対し、医師による面接指導を行わなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労働者に対するストレスチェックの事項は、「職場における当該労働者の心理的な負担の原因」、「当該労働者の心理的な負担による心身の自覚症状」及び「職場における他の労働者による当該労働者への支援」に関する項目である。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問24-選択肢4/index.html"
   },
   {
     "id": "令和6年_10月_問23_選択肢3",
@@ -6638,7 +6638,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者は、労働時間の状況等が一定の要件に該当する労働者から申出があったときは、3か月以内に、面接指導を行わなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「事業者は、面接指導を実施するため、タイムカードによる記録等の客観的な方法その他の適切な方法により、労働者の労働時間の状況を把握し、その記録を作成して3年間保存するための必要な措置を講じなければならない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問23-選択肢3/index.html"
   },
   {
     "id": "平成29年_10月_問24_選択肢5",
@@ -6646,7 +6646,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者は、医師による面接指導の結果に基づき、当該面接指導の結果の記録を作成し、これを3年間保存しなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労働者に対するストレスチェックの事項は、「当該労働者の心理的な負担の原因」、「当該労働者の心理的な負担による心身の自覚症状」及び「他の労働者による当該労働者への支援」に関する項目である。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問24-選択肢5/index.html"
   },
   {
     "id": "令和3年_10月_問24_選択肢5",
@@ -6654,7 +6654,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者は、医師による面接指導の結果に基づき、当該面接指導の結果の記録を作成して、これを3年間保存しなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労働者に対するストレスチェックの事項は、「職場における当該労働者の心理的な負担の原因」、「当該労働者の心理的な負担による心身の自覚症状」及び「職場における他の労働者による当該労働者への支援」に関する項目である。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問24-選択肢5/index.html"
   },
   {
     "id": "令和4年_10月_問22_選択肢4",
@@ -6662,7 +6662,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者は、専属の産業医が旅行、疾病、事故その他やむを得ない事由によって職務を行うことができないときは、代理者を選任しなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問22-選択肢4/index.html"
   },
   {
     "id": "令和3年_10月_問22_選択肢5",
@@ -6670,7 +6670,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者は、産業医から労働者の健康管理等について勧告を受けたときは、当該勧告の内容及び当該勧告を踏まえて講じた措置の内容(措置を講じない場合にあっては、その旨及びその理由)を記録し、これを3年間保存しなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問22-選択肢5/index.html"
   },
   {
     "id": "令和3年_4月_問22_選択肢4",
@@ -6678,7 +6678,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者は、産業医が旅行、疾病、事故その他やむを得ない事由によって職務を行うことができないときは、代理者を選任しなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問22-選択肢4/index.html"
   },
   {
     "id": "令和3年_4月_問22_選択肢3",
@@ -6686,7 +6686,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者は、産業医が辞任したとき又は産業医を解任したときは、遅滞なく、その旨及びその理由を衛生委員会又は安全衛生委員会に報告しなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問22-選択肢3/index.html"
   },
   {
     "id": "平成30年_10月_問22_選択肢3",
@@ -6694,7 +6694,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者は、選任した産業医に、労働者の健康管理等を行わせなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問22-選択肢3/index.html"
   },
   {
     "id": "令和6年_4月_問23_選択肢2",
@@ -6702,7 +6702,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者は、面接指導の対象となる労働者の要件に該当する労働者から申出があったときは、申出の日から3か月以内に、面接指導を行わなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「常時50人以上の労働者を使用する事業者は、1年以内ごとに1回、定期に、心理的な負担の程度を把握するための検査結果等報告書を所轄労働基準監督署長に提出しなければならない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問23-選択肢2/index.html"
   },
   {
     "id": "令和3年_4月_問24_選択肢4",
@@ -6710,7 +6710,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者は、面接指導の対象となる要件に該当する労働者から申出があったときは、申出の日から3か月以内に、面接指導を行わなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「事業者は、ストレスチェックの結果、心理的な負担の程度が高い労働者であって、面接指導を受ける必要があると当該ストレスチェックを行った医師等が認めたものが面接指導を受けることを希望する旨を申し出たときは、当該申出をした労働者に対し、面接指導を行わなければならない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問24-選択肢4/index.html"
   },
   {
     "id": "平成30年_10月_問24_選択肢5",
@@ -6718,7 +6718,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者は、面接指導の結果に基づき、その記録を作成し、3年間保存しなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問24-選択肢5/index.html"
   },
   {
     "id": "令和4年_10月_問24_選択肢4",
@@ -6726,7 +6726,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者は、面接指導の結果に基づき、労働者の健康を保持するために必要な措置について、原則として、面接指導が行われた日から3か月以内に、医師の意見を聴かなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「事業者は、面接指導を実施するため、タイムカードによる記録等の客観的な方法その他の適切な方法により、労働者の労働時間の状況を把握しなければならない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問24-選択肢4/index.html"
   },
   {
     "id": "平成29年_4月_問24_選択肢4",
@@ -6734,7 +6734,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者は、面接指導の結果に基づき、労働者の健康を保持するため必要な措置について、面接指導が行われた後、遅滞なく、医師の意見を聴かなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問24-選択肢4/index.html"
   },
   {
     "id": "平成30年_10月_問24_選択肢4",
@@ -6742,7 +6742,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者は、面接指導の結果に基づき、当該労働者の健康を保持するため必要な措置について、面接指導が行われた後、遅滞なく、医師の意見を聴かなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問24-選択肢4/index.html"
   },
   {
     "id": "令和3年_4月_問24_選択肢5",
@@ -6750,7 +6750,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者は、面接指導の結果に基づき、当該労働者の健康を保持するため必要な措置について、面接指導が行われた日から3か月以内に、医師の意見を聴かなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「事業者は、ストレスチェックの結果、心理的な負担の程度が高い労働者であって、面接指導を受ける必要があると当該ストレスチェックを行った医師等が認めたものが面接指導を受けることを希望する旨を申し出たときは、当該申出をした労働者に対し、面接指導を行わなければならない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問24-選択肢5/index.html"
   },
   {
     "id": "令和4年_10月_問24_選択肢5",
@@ -6758,7 +6758,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者は、面接指導の結果に基づき、当該面接指導の結果の記録を作成して、これを3年間保存しなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「事業者は、面接指導を実施するため、タイムカードによる記録等の客観的な方法その他の適切な方法により、労働者の労働時間の状況を把握しなければならない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問24-選択肢5/index.html"
   },
   {
     "id": "令和6年_10月_問23_選択肢2",
@@ -6766,7 +6766,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者は、面接指導を実施するため、タイムカードによる記録等の客観的な方法その他の適切な方法により、労働者の労働時間の状況を把握し、その記録を作成して3年間保存するための必要な措置を講じなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問23-選択肢2/index.html"
   },
   {
     "id": "令和4年_10月_問24_選択肢2",
@@ -6774,7 +6774,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者は、面接指導を実施するため、タイムカードによる記録等の客観的な方法その他の適切な方法により、労働者の労働時間の状況を把握しなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問24-選択肢2/index.html"
   },
   {
     "id": "令和6年_4月_問23_選択肢3",
@@ -6782,7 +6782,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "事業者は、面接指導を行った場合は、当該面接指導の結果を当該事業場の当該部署に所属する労働者の集団その他の一定規模の集団ごとに集計し、その結果について分析しなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「常時50人以上の労働者を使用する事業者は、1年以内ごとに1回、定期に、心理的な負担の程度を把握するための検査結果等報告書を所轄労働基準監督署長に提出しなければならない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問23-選択肢3/index.html"
   },
   {
     "id": "平成30年_10月_問27_選択肢2",
@@ -6790,7 +6790,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "休暇の期間については、原則として、最低賃金又は平均賃金の100分の60の額の手当を支払わなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「一週間の所定労働時間が25時間で、一週間の所定労働日数が4日である労働者であって、雇入れの日から起算して3年6か月間継続勤務し、直近の1年間に、全労働日の8割以上出勤したものには、継続し、又は分割した10労働日の休暇を新たに与えなければならない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問27-選択肢2/index.html"
   },
   {
     "id": "平成30年_10月_問27_選択肢4",
@@ -6798,7 +6798,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "休暇の請求権は、これを1年間行使しなければ時効によって消滅する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「一週間の所定労働時間が25時間で、一週間の所定労働日数が4日である労働者であって、雇入れの日から起算して3年6か月間継続勤務し、直近の1年間に、全労働日の8割以上出勤したものには、継続し、又は分割した10労働日の休暇を新たに与えなければならない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問27-選択肢4/index.html"
   },
   {
     "id": "令和6年_4月_問24_選択肢2",
@@ -6806,7 +6806,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "作業の管理に関すること。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「安全衛生に関する方針の表明に関すること。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問24-選択肢2/index.html"
   },
   {
     "id": "令和元年_4月_問22_選択肢2",
@@ -6814,7 +6814,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "作業環境の維持管理に関すること。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「安全衛生に関する方針の表明に関すること。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問22-選択肢2/index.html"
   },
   {
     "id": "令和2年_10月_問23_選択肢5",
@@ -6822,7 +6822,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "作業環境測定を作業環境測定機関に委託している場合、衛生委員会の委員として、当該機関に所属する作業環境測定士を指名しなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「当該事業場の労働者で、衛生に関し経験を有するものを衛生委員会の委員として指名することができる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問23-選択肢5/index.html"
   },
   {
     "id": "令和2年_10月_問21_選択肢5",
@@ -6830,7 +6830,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "健康診断の実施その他健康の保持増進のための措置に関すること。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問21-選択肢5/index.html"
   },
   {
     "id": "令和3年_4月_問21_選択肢1",
@@ -6838,7 +6838,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "健康診断の実施その他健康の保持増進のための措置に関すること。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労働者の健康を確保するため必要があると認めるとき、事業者に対し、労働者の健康管理等について必要な勧告をすること。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問21-選択肢1/index.html"
   },
   {
     "id": "平成29年_10月_問21_選択肢2",
@@ -6846,7 +6846,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "健康診断の実施その他健康の保持増進のための措置に関する業務のうち、衛生に係る技術的事項を管理すること。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労働者の健康を確保するため必要があると認めるとき、事業者に対し、労働者の健康管理等について必要な勧告をすること。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問21-選択肢2/index.html"
   },
   {
     "id": "平成30年_4月_問21_選択肢2",
@@ -6854,7 +6854,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "健康診断の実施その他健康の保持増進のための措置に関する業務のうち、衛生に係る技術的事項を管理すること。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問21-選択肢2/index.html"
   },
   {
     "id": "令和6年_4月_問24_選択肢3",
@@ -6862,7 +6862,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "健康診断の実施に関すること。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「安全衛生に関する方針の表明に関すること。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問24-選択肢3/index.html"
   },
   {
     "id": "平成29年_10月_問26_選択肢2",
@@ -6870,7 +6870,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労使協定により、時間単位で年次有給休暇を与える対象労働者の範囲、その日数(5日以内に限る。)等を定めた場合において、対象労働者が請求したときは、年次有給休暇の日数のうち当該協定で定める日数について時間単位で与えることができる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問26-選択肢2/index.html"
   },
   {
     "id": "令和3年_10月_問26_選択肢3",
@@ -6878,7 +6878,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働時間が8時間を超える場合においては、少なくとも45分の休憩時間を労働時間の途中に与えなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「機密の事務を取り扱う労働者については、所轄労働基準監督署長の許可を受けなくても労働時間に関する規定は適用されない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問26-選択肢3/index.html"
   },
   {
     "id": "令和2年_10月_問26_選択肢2",
@@ -6886,7 +6886,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働時間に関する規定の適用については、事業場を異にする場合は労働時間を通算しない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「監視又は断続的労働に従事する労働者であって、所轄労働基準監督署長の許可を受けたものについては、労働時間、休憩及び休日に関する規定は適用されない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問26-選択肢2/index.html"
   },
   {
     "id": "令和2年_10月_問21_選択肢4",
@@ -6894,7 +6894,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働災害の原因の調査及び再発防止対策に関すること。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問21-選択肢4/index.html"
   },
   {
     "id": "令和3年_4月_問21_選択肢2",
@@ -6902,7 +6902,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働災害の原因の調査及び再発防止対策に関すること。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労働者の健康を確保するため必要があると認めるとき、事業者に対し、労働者の健康管理等について必要な勧告をすること。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問21-選択肢2/index.html"
   },
   {
     "id": "平成29年_10月_問21_選択肢4",
@@ -6910,7 +6910,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働災害の原因の調査及び再発防止対策に関する業務のうち、衛生に係る技術的事項を管理すること。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労働者の健康を確保するため必要があると認めるとき、事業者に対し、労働者の健康管理等について必要な勧告をすること。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問21-選択肢4/index.html"
   },
   {
     "id": "平成30年_4月_問21_選択肢4",
@@ -6918,7 +6918,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働災害の原因の調査及び再発防止対策に関する業務のうち、衛生に係る技術的事項を管理すること。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問21-選択肢4/index.html"
   },
   {
     "id": "令和4年_4月_問25_選択肢3",
@@ -6926,7 +6926,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働者に対して行うストレスチェックの事項は、「職場における当該労働者の心理的な負担の原因」、「当該労働者の心理的な負担による心身の自覚症状」及び「職場における他の労働者による当該労働者への支援」に関する項目である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問25-選択肢3/index.html"
   },
   {
     "id": "平成29年_10月_問24_選択肢3",
@@ -6934,7 +6934,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働者に対するストレスチェックの事項は、「当該労働者の心理的な負担の原因」、「当該労働者の心理的な負担による心身の自覚症状」及び「他の労働者による当該労働者への支援」に関する項目である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問24-選択肢3/index.html"
   },
   {
     "id": "令和2年_10月_問24_選択肢3",
@@ -6942,7 +6942,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働者に対するストレスチェックの事項は、「職場における当該労働者の心理的な負担の原因」、「当該労働者の心理的な負担による心身の自覚症状」及び「職場における他の労働者による当該労働者への支援」に関する項目である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問24-選択肢3/index.html"
   },
   {
     "id": "令和3年_4月_問21_選択肢5",
@@ -6950,7 +6950,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働者の健康を確保するため必要があると認めるとき、事業者に対し、労働者の健康管理等について必要な勧告をすること。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問21-選択肢5/index.html"
   },
   {
     "id": "平成30年_4月_問21_選択肢5",
@@ -6958,7 +6958,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働者の健康を確保するため必要があると認めるとき、事業者に対し、労働者の健康管理等について必要な勧告をすること。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問21-選択肢5/index.html"
   },
   {
     "id": "令和2年_10月_問21_選択肢2",
@@ -6966,7 +6966,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働者の健康管理等について、事業者に対して行う必要な勧告に関すること。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問21-選択肢2/index.html"
   },
   {
     "id": "令和6年_4月_問24_選択肢5",
@@ -6974,7 +6974,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働者の健康障害の原因の調査及び再発防止のための措置に関すること。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「安全衛生に関する方針の表明に関すること。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問24-選択肢5/index.html"
   },
   {
     "id": "平成29年_10月_問21_選択肢3",
@@ -6982,7 +6982,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働者の安全又は衛生のための教育の実施に関する業務のうち、衛生に係る技術的事項を管理すること。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労働者の健康を確保するため必要があると認めるとき、事業者に対し、労働者の健康管理等について必要な勧告をすること。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問21-選択肢3/index.html"
   },
   {
     "id": "平成30年_4月_問21_選択肢3",
@@ -6990,7 +6990,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働者の安全又は衛生のための教育の実施に関する業務のうち、衛生に係る技術的事項を管理すること。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問21-選択肢3/index.html"
   },
   {
     "id": "令和6年_4月_問22_選択肢3",
@@ -6998,7 +6998,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働者の衛生のための教育の実施に関すること。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労働者の健康を確保するため必要があると認めるとき、事業者に対し、労働者の健康管理等について必要な勧告をすること。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問22-選択肢3/index.html"
   },
   {
     "id": "平成29年_4月_問21_選択肢4",
@@ -7006,7 +7006,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働者の衛生のための教育の実施に関すること。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問21-選択肢4/index.html"
   },
   {
     "id": "平成30年_10月_問27_選択肢3",
@@ -7014,7 +7014,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働者の過半数で組織する労働組合(その労働組合がない場合は労働者の過半数を代表する者)と使用者との書面による協定により休暇を与える時季に関する定めをした場合は、休暇のうち3日を超える部分については、その定めにより休暇を与えることができる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「一週間の所定労働時間が25時間で、一週間の所定労働日数が4日である労働者であって、雇入れの日から起算して3年6か月間継続勤務し、直近の1年間に、全労働日の8割以上出勤したものには、継続し、又は分割した10労働日の休暇を新たに与えなければならない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問27-選択肢3/index.html"
   },
   {
     "id": "平成29年_4月_問23_選択肢5",
@@ -7022,7 +7022,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働者を常時就業させる場所の作業面の照度を、精密な作業については350ルクス、粗な作業については150ルクスとしている。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問23-選択肢5/index.html"
   },
   {
     "id": "令和6年_10月_問25_選択肢5",
@@ -7030,7 +7030,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働者を常時就業させる場所の作業面の照度を、精密な作業については500ルクス、粗な作業については100ルクスとしている。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問25-選択肢5/index.html"
   },
   {
     "id": "令和2年_10月_問25_選択肢5",
@@ -7038,7 +7038,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働者を常時就業させる場所の作業面の照度を、精密な作業については750ルクス、粗な作業については200ルクスとしている。これは、法令違反である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「常時50人の労働者を就業させている屋内作業場の気積が、設備の占める容積及び床面から4mを超える高さにある空間を除き400m3となっている。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問25-選択肢5/index.html"
   },
   {
     "id": "平成30年_4月_問24_選択肢1",
@@ -7046,7 +7046,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働者を常時就業させる屋内作業場に、換気が十分行われる設備を設けたので、労働者1人当たりの気積を8m3としている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「精密な作業を常時行う場所の作業面の照度を350ルクスとしている。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問24-選択肢1/index.html"
   },
   {
     "id": "令和3年_10月_問25_選択肢5",
@@ -7054,7 +7054,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働衛生上の有害業務を有しない事業場において、窓その他の開口部の直接外気に向かって開放することができる部分の面積が、常時床面積の15分の1である屋内作業場に、換気設備を設けていない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問25-選択肢5/index.html"
   },
   {
     "id": "令和元年_4月_問25_選択肢5",
@@ -7062,7 +7062,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "労働衛生上の有害業務を有しない事業場において、窓その他の開口部の直接外気に向って開放することができる部分の面積が、常時床面積の25分の1である屋内作業場に、換気設備を設けていない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「男性20人、女性25人の労働者を常時使用している事業場で、労働者が臥床することのできる休養室又は休養所を、男性用と女性用に区別して設けていない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問25-選択肢5/index.html"
   },
   {
     "id": "令和6年_4月_問22_選択肢1",
@@ -7070,7 +7070,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "化学物質等による危険性又は有害性等の調査及びその結果に基づき講ずる措置に関すること。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労働者の健康を確保するため必要があると認めるとき、事業者に対し、労働者の健康管理等について必要な勧告をすること。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問22-選択肢1/index.html"
   },
   {
     "id": "令和4年_4月_問23_選択肢1",
@@ -7078,7 +7078,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "医師による健康診断を受けた後3か月を経過しない者を雇い入れる場合、その健康診断の結果を証明する書面の提出があったときは、その健康診断の項目に相当する雇入時の健康診断の項目は省略することができる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問23-選択肢1/index.html"
   },
   {
     "id": "令和元年_4月_問23_選択肢1",
@@ -7086,7 +7086,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "医師による健康診断を受けた後、3か月を経過しない者を雇い入れる場合、その健康診断の結果を証明する書面の提出があったときは、その健康診断の項目に相当する雇入時の健康診断の項目を省略することができる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問23-選択肢1/index.html"
   },
   {
     "id": "平成29年_4月_問24_選択肢3",
@@ -7094,7 +7094,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "医師は、対象となる労働者の面接指導を行うに当たり、勤務の状況、疲労の蓄積の状況の他、心身の状況について確認を行う。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問24-選択肢3/index.html"
   },
   {
     "id": "令和4年_10月_問21_選択肢5",
@@ -7102,7 +7102,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "危険性又は有害性等の調査及びその結果に基づき講ずる措置に関することは、総括安全衛生管理者が統括管理する業務のうちの一つである。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問21-選択肢5/index.html"
   },
   {
     "id": "令和3年_10月_問25_選択肢3",
@@ -7110,7 +7110,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "坑内等特殊な作業場以外の作業場において、男性用小便所の箇所数は、同時に就業する男性労働者50人以内ごとに1個以上としている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労働衛生上の有害業務を有しない事業場において、窓その他の開口部の直接外気に向かって開放することができる部分の面積が、常時床面積の15分の1である屋内作業場に、換気設備を設けていない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問25-選択肢3/index.html"
   },
   {
     "id": "令和4年_4月_問27_選択肢2",
@@ -7118,7 +7118,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "妊娠中の女性が請求した場合においては、他の軽易な業務に転換させなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問27-選択肢2/index.html"
   },
   {
     "id": "令和4年_10月_問26_選択肢4",
@@ -7126,7 +7126,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "妊娠中の女性が請求した場合には、管理監督者等の場合を除き、他の軽易な業務に転換させなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問26-選択肢4/index.html"
   },
   {
     "id": "令和元年_4月_問26_選択肢5",
@@ -7134,7 +7134,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "妊産婦が請求した場合には、管理監督者等の場合であっても、深夜業をさせてはならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問26-選択肢5/index.html"
   },
   {
     "id": "令和2年_4月_問27_選択肢5",
@@ -7142,7 +7142,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "妊産婦が請求した場合には、管理監督者等の場合を除き、深夜業をさせてはならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問27-選択肢5/index.html"
   },
   {
     "id": "令和4年_4月_問27_選択肢1",
@@ -7150,7 +7150,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "妊産婦とは、妊娠中の女性及び産後1年を経過しない女性をいう。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問27-選択肢1/index.html"
   },
   {
     "id": "令和2年_10月_問21_選択肢1",
@@ -7158,7 +7158,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "安全衛生に関する方針の表明に関すること。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問21-選択肢1/index.html"
   },
   {
     "id": "令和3年_4月_問21_選択肢3",
@@ -7166,7 +7166,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "安全衛生に関する方針の表明に関すること。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労働者の健康を確保するため必要があると認めるとき、事業者に対し、労働者の健康管理等について必要な勧告をすること。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問21-選択肢3/index.html"
   },
   {
     "id": "平成29年_10月_問21_選択肢1",
@@ -7174,7 +7174,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "安全衛生に関する方針の表明に関する業務のうち、衛生に係る技術的事項を管理すること。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労働者の健康を確保するため必要があると認めるとき、事業者に対し、労働者の健康管理等について必要な勧告をすること。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問21-選択肢1/index.html"
   },
   {
     "id": "平成30年_4月_問21_選択肢1",
@@ -7182,7 +7182,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "安全衛生に関する方針の表明に関する業務のうち、衛生に係る技術的事項を管理すること。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問21-選択肢1/index.html"
   },
   {
     "id": "令和2年_10月_問21_選択肢3",
@@ -7190,7 +7190,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "安全衛生に関する計画の作成、実施、評価及び改善に関すること。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問21-選択肢3/index.html"
   },
   {
     "id": "令和6年_4月_問22_選択肢5",
@@ -7198,7 +7198,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "少なくとも毎週1回作業場等を巡視し、衛生状態に有害のおそれがあるときは、直ちに、労働者の健康障害を防止するため必要な措置を講じること。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労働者の健康を確保するため必要があると認めるとき、事業者に対し、労働者の健康管理等について必要な勧告をすること。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問22-選択肢5/index.html"
   },
   {
     "id": "令和3年_4月_問21_選択肢4",
@@ -7206,7 +7206,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "少なくとも毎週1回作業場等を巡視し、衛生状態に有害のおそれがあるときは、直ちに、労働者の健康障害を防止するため必要な措置を講ずること。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労働者の健康を確保するため必要があると認めるとき、事業者に対し、労働者の健康管理等について必要な勧告をすること。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問21-選択肢4/index.html"
   },
   {
     "id": "平成29年_10月_問23_選択肢3",
@@ -7214,7 +7214,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "尿検査は、定期健康診断で省略することができる項目に該当する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問23-選択肢3/index.html"
   },
   {
     "id": "平成30年_10月_問22_選択肢4",
@@ -7222,7 +7222,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "常時3,000人を超える労働者を使用する事業場では、2人以上の産業医を選任しなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問22-選択肢4/index.html"
   },
   {
     "id": "令和3年_4月_問23_選択肢5",
@@ -7230,7 +7230,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "常時40人の労働者を使用する事業場において、定期健康診断の結果について、所轄労働基準監督署長に報告を行っていない。これは、法令違反である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「雇入時の健康診断の項目のうち、聴力の検査は、35歳及び40歳の者並びに45歳以上の者に対しては、1,000Hz及び4,000Hzの音について行っているが、その他の年齢の者に対しては、医師が適当と認めるその他の方法により行っている。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問23-選択肢5/index.html"
   },
   {
     "id": "令和2年_10月_問22_選択肢5",
@@ -7238,7 +7238,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "常時50人の労働者を使用する事業場において、定期健康診断の結果については、遅滞なく、所轄労働基準監督署長に報告を行っているが、雇入時の健康診断の結果については報告を行っていない。これは、法令違反である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「雇入時の健康診断の項目のうち、聴力の検査は、35歳及び40歳の者並びに45歳以上の者に対しては、1,000Hz及び4,000Hzの音について行っているが、その他の者に対しては、医師が適当と認めるその他の方法により行っている。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問22-選択肢5/index.html"
   },
   {
     "id": "令和3年_4月_問23_選択肢4",
@@ -7246,7 +7246,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "常時50人の労働者を使用する事業場において、雇入時の健康診断の結果について、所轄労働基準監督署長に報告を行っていない。これは、法令違反である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「雇入時の健康診断の項目のうち、聴力の検査は、35歳及び40歳の者並びに45歳以上の者に対しては、1,000Hz及び4,000Hzの音について行っているが、その他の年齢の者に対しては、医師が適当と認めるその他の方法により行っている。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問23-選択肢4/index.html"
   },
   {
     "id": "平成29年_4月_問23_選択肢1",
@@ -7254,7 +7254,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "常時50人の労働者を就業させている屋内作業場の気積が、設備の占める容積及び床面から4mを超える高さにある空間を除き400m3となっている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労働者を常時就業させる場所の作業面の照度を、精密な作業については350ルクス、粗な作業については150ルクスとしている。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問23-選択肢1/index.html"
   },
   {
     "id": "令和2年_10月_問25_選択肢1",
@@ -7262,7 +7262,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "常時50人の労働者を就業させている屋内作業場の気積が、設備の占める容積及び床面から4mを超える高さにある空間を除き400m3となっている。これは、法令違反である。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問25-選択肢1/index.html"
   },
   {
     "id": "令和4年_4月_問23_選択肢5",
@@ -7270,7 +7270,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "常時50人以上の労働者を使用する事業場であっても、雇入時の健康診断の結果については、所轄労働基準監督署長に報告する必要はない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問23-選択肢5/index.html"
   },
   {
     "id": "令和3年_10月_問24_選択肢1",
@@ -7278,7 +7278,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "常時50人以上の労働者を使用する事業場においては、6か月以内ごとに1回、定期に、ストレスチェックを行わなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労働者に対するストレスチェックの事項は、「職場における当該労働者の心理的な負担の原因」、「当該労働者の心理的な負担による心身の自覚症状」及び「職場における他の労働者による当該労働者への支援」に関する項目である。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問24-選択肢1/index.html"
   },
   {
     "id": "令和6年_4月_問23_選択肢1",
@@ -7286,7 +7286,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "常時50人以上の労働者を使用する事業者は、1年以内ごとに1回、定期に、心理的な負担の程度を把握するための検査結果等報告書を所轄労働基準監督署長に提出しなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問23-選択肢1/index.html"
   },
   {
     "id": "平成29年_10月_問25_選択肢1",
@@ -7294,7 +7294,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "常時60人の労働者を就業させている屋内作業場の気積が、設備の占める容積及び床面から4mを超える高さにある空間を除き600m3となっている。これは、法令違反である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「事業場に附属する食堂の炊事従業員について、専用の便所を設けているが、専用の休憩室は設けていない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問25-選択肢1/index.html"
   },
   {
     "id": "令和4年_10月_問22_選択肢1",
@@ -7302,7 +7302,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "常時使用する労働者数が50人以上の事業場において、厚生労働大臣の指定する者が行う産業医研修の修了者等の所定の要件を備えた医師であっても、当該事業場においてその事業の実施を統括管理する者は、産業医として選任することはできない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問22-選択肢1/index.html"
   },
   {
     "id": "令和3年_4月_問22_選択肢1",
@@ -7310,7 +7310,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "常時使用する労働者数が50人以上の事業場において、厚生労働大臣の指定する者が行う産業医研修の修了者等の所定の要件を備えた医師であっても、当該事業場においてその事業を統括管理する者は、産業医として選任することはできない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問22-選択肢1/index.html"
   },
   {
     "id": "平成30年_10月_問25_選択肢2",
@@ -7318,7 +7318,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "常時、男性20人、女性25人の労働者を使用している事業場で、休憩の設備を設けているが、労働者が臥床することのできる休養室又は休養所を男女別に設けていない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問25-選択肢2/index.html"
   },
   {
     "id": "平成30年_4月_問24_選択肢2",
@@ -7326,7 +7326,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "常時男性5人及び女性35人の労働者を使用している事業場で、男女共用の休憩室のほかに、女性用の臥床することのできる休養室を設けているが、男性用の休養室や休養所は設けていない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「精密な作業を常時行う場所の作業面の照度を350ルクスとしている。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問24-選択肢2/index.html"
   },
   {
     "id": "令和2年_10月_問25_選択肢3",
@@ -7334,7 +7334,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "常時男性5人と女性25人の労働者が就業している事業場で、女性用の臥床できる休養室を設けているが、男性用には、休養室の代わりに休憩設備を利用させている。これは、法令違反である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「常時50人の労働者を就業させている屋内作業場の気積が、設備の占める容積及び床面から4mを超える高さにある空間を除き400m3となっている。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問25-選択肢3/index.html"
   },
   {
     "id": "平成29年_4月_問23_選択肢3",
@@ -7342,7 +7342,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "常時男性5人、女性30人の労働者を使用している事業場で、労働者が臥床することのできる休養室又は休養所を男女別に設けていない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労働者を常時就業させる場所の作業面の照度を、精密な作業については350ルクス、粗な作業については150ルクスとしている。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問23-選択肢3/index.html"
   },
   {
     "id": "平成29年_10月_問26_選択肢5",
@@ -7350,7 +7350,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "年次有給休暇の期間については、原則として、最低賃金又は平均貸金の100分の60の額の手当を支払わなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労使協定により、時間単位で年次有給休暇を与える対象労働者の範囲、その日数(5日以内に限る。)等を定めた場合において、対象労働者が請求したときは、年次有給休暇の日数のうち当該協定で定める日数について時間単位で与えることができる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問26-選択肢5/index.html"
   },
   {
     "id": "平成29年_10月_問26_選択肢4",
@@ -7358,7 +7358,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "年次有給休暇の請求権は、これを1年間行使しなければ時効によって消滅する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労使協定により、時間単位で年次有給休暇を与える対象労働者の範囲、その日数(5日以内に限る。)等を定めた場合において、対象労働者が請求したときは、年次有給休暇の日数のうち当該協定で定める日数について時間単位で与えることができる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問26-選択肢4/index.html"
   },
   {
     "id": "令和6年_10月_問21_選択肢4",
@@ -7366,7 +7366,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "当該事業場の労働者で、作業環境測定を実施している作業環境測定士を衛生委員会の委員として指名することができる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問21-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問23_選択肢4",
@@ -7374,7 +7374,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "当該事業場の労働者で、衛生に関し経験を有するものを衛生委員会の委員として指名することができる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問23-選択肢4/index.html"
   },
   {
     "id": "令和4年_10月_問23_選択肢4",
@@ -7382,7 +7382,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "心電図検査は、定期健康診断で省略することができる項目に該当する。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問23-選択肢4/index.html"
   },
   {
     "id": "令和2年_10月_問26_選択肢3",
@@ -7390,7 +7390,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "所定労働時間が7時間30分である事業場において、延長する労働時間が1時間であるときは、少なくとも45分の休憩時間を労働時間の途中に与えなければならない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「監視又は断続的労働に従事する労働者であって、所轄労働基準監督署長の許可を受けたものについては、労働時間、休憩及び休日に関する規定は適用されない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問26-選択肢3/index.html"
   },
   {
     "id": "令和6年_4月_問25_選択肢1",
@@ -7398,7 +7398,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "既往歴及び業務歴の調査は、定期健康診断で省略することができる項目に該当する。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-4月-問25-選択肢1/index.html"
   },
   {
     "id": "平成30年_10月_問25_選択肢5",
@@ -7406,7 +7406,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "日常行う清掃のほか、1年ごとに1回、定期に、大掃除を行っている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「常時、男性20人、女性25人の労働者を使用している事業場で、休憩の設備を設けているが、労働者が臥床することのできる休養室又は休養所を男女別に設けていない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問25-選択肢5/index.html"
   },
   {
     "id": "令和元年_10月_問25_選択肢5",
@@ -7414,7 +7414,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "日常行う清掃のほか、1年ごとに1回、定期に、統一的に大掃除を行っている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「60人の労働者を常時就業させている屋内作業場の気積を、設備の占める容積及び床面から3mを超える高さにある空間を除き600m3としている。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問25-選択肢5/index.html"
   },
   {
     "id": "平成29年_4月_問23_選択肢2",
@@ -7422,7 +7422,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "日常行う清掃のほか、1年に1回、定期に大掃除を行っている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労働者を常時就業させる場所の作業面の照度を、精密な作業については350ルクス、粗な作業については150ルクスとしている。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問23-選択肢2/index.html"
   },
   {
     "id": "令和3年_10月_問25_選択肢1",
@@ -7430,7 +7430,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "日常行う清掃のほか、1年に1回、定期に、統一的に大掃除を行っている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労働衛生上の有害業務を有しない事業場において、窓その他の開口部の直接外気に向かって開放することができる部分の面積が、常時床面積の15分の1である屋内作業場に、換気設備を設けていない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問25-選択肢1/index.html"
   },
   {
     "id": "令和4年_4月_問24_選択肢1",
@@ -7438,7 +7438,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "日常行う清掃のほか、1年以内ごとに1回、定期に、統一的に大掃除を行っている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労働衛生上の有害業務を有しない事業場において、窓その他の開口部の直接外気に向かって開放することができる部分の面積が、常時床面積の15分の1である屋内作業場に、換気設備を設けていない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-4月-問24-選択肢1/index.html"
   },
   {
     "id": "令和6年_10月_問25_選択肢1",
@@ -7446,7 +7446,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "日常行う清掃のほか、大掃除を、1年に1回、定期に、統一的に行っている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労働者を常時就業させる場所の作業面の照度を、精密な作業については500ルクス、粗な作業については100ルクスとしている。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問25-選択肢1/index.html"
   },
   {
     "id": "令和元年_4月_問25_選択肢1",
@@ -7454,7 +7454,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "日常行う清掃のほか、大掃除を、1年以内ごとに1回、定期に、統一的に行っている。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「男性20人、女性25人の労働者を常時使用している事業場で、労働者が臥床することのできる休養室又は休養所を、男性用と女性用に区別して設けていない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-4月-問25-選択肢1/index.html"
   },
   {
     "id": "令和元年_10月_問26_選択肢1",
@@ -7462,7 +7462,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "時間外・休日労働に関する労使協定を締結し、これを所轄労働基準監督署長に届け出ている場合であっても、妊産婦が請求した場合には、管理監督者等の場合を除き、時間外・休日労働をさせてはならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問26-選択肢1/index.html"
   },
   {
     "id": "令和2年_4月_問27_選択肢1",
@@ -7470,7 +7470,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "時間外・休日労働に関する労使協定を締結し、これを所轄労働基準監督署長に届け出ている場合であって、妊産婦が請求した場合には、管理監督者等の場合を除き、時間外・休日労働をさせてはならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問27-選択肢1/index.html"
   },
   {
     "id": "令和4年_10月_問26_選択肢1",
@@ -7478,7 +7478,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "時間外・休日労働に関する協定を締結し、これを所轄労働基準監督署長に届け出ている場合であっても、妊産婦が請求した場合には、管理監督者等の場合を除き、時間外・休日労働をさせてはならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問26-選択肢1/index.html"
   },
   {
     "id": "平成30年_4月_問24_選択肢5",
@@ -7486,7 +7486,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有害業務を行っていない事業場において、窓その他の開口部の直接外気に向って開放することができる部分の面積が、常時床面積の25分の1である屋内作業場に、換気設備を設けていない。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「精密な作業を常時行う場所の作業面の照度を350ルクスとしている。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問24-選択肢5/index.html"
   },
   {
     "id": "平成29年_10月_問25_選択肢4",
@@ -7494,7 +7494,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "有害業務を行っていない屋内作業場で、窓その他の開口部の直接外気に向かって開放することができる部分の面積が、常時床面積の1/15であるものに、換気設備を設けていない。これは、法令違反である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「事業場に附属する食堂の炊事従業員について、専用の便所を設けているが、専用の休憩室は設けていない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問25-選択肢4/index.html"
   },
   {
     "id": "令和3年_10月_問26_選択肢4",
@@ -7502,7 +7502,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "機密の事務を取り扱う労働者については、所轄労働基準監督署長の許可を受けなくても労働時間に関する規定は適用されない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-10月-問26-選択肢4/index.html"
   },
   {
     "id": "平成30年_10月_問27_選択肢1",
@@ -7510,7 +7510,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "法令に基づく育児休業又は介護休業で休業した期間は、出勤率の算定に当たっては、全労働日から除外して算出することができる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「一週間の所定労働時間が25時間で、一週間の所定労働日数が4日である労働者であって、雇入れの日から起算して3年6か月間継続勤務し、直近の1年間に、全労働日の8割以上出勤したものには、継続し、又は分割した10労働日の休暇を新たに与えなければならない。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-10月-問27-選択肢1/index.html"
   },
   {
     "id": "平成29年_10月_問26_選択肢3",
@@ -7518,7 +7518,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "法令に基づく育児休業又は介護休業で休業した期間は、出勤率の算定に当たっては、出勤しなかったものとして算出することができる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「労使協定により、時間単位で年次有給休暇を与える対象労働者の範囲、その日数(5日以内に限る。)等を定めた場合において、対象労働者が請求したときは、年次有給休暇の日数のうち当該協定で定める日数について時間単位で与えることができる。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-10月-問26-選択肢3/index.html"
   },
   {
     "id": "令和3年_4月_問23_選択肢3",
@@ -7526,7 +7526,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "海外に6か月以上派遣して帰国した労働者について、国内の業務に就かせるとき、一時的な就業の場合を除いて、海外派遣労働者健康診断を行っている。これは、法令違反である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「雇入時の健康診断の項目のうち、聴力の検査は、35歳及び40歳の者並びに45歳以上の者に対しては、1,000Hz及び4,000Hzの音について行っているが、その他の年齢の者に対しては、医師が適当と認めるその他の方法により行っている。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和3年-4月-問23-選択肢3/index.html"
   },
   {
     "id": "令和2年_10月_問22_選択肢3",
@@ -7534,7 +7534,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "深夜業を含む業務に常時従事する労働者に対し、6か月以内ごとに1回、定期に、健康診断を行っているが、胸部エックス線検査については、1年以内ごとに1回、定期に、行っている。これは、法令違反である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「雇入時の健康診断の項目のうち、聴力の検査は、35歳及び40歳の者並びに45歳以上の者に対しては、1,000Hz及び4,000Hzの音について行っているが、その他の者に対しては、医師が適当と認めるその他の方法により行っている。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問22-選択肢3/index.html"
   },
   {
     "id": "令和2年_4月_問22_選択肢3",
@@ -7542,7 +7542,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "深夜業を含む業務に常時従事する労働者に対し、6か月以内ごとに1回、定期に、健康診断を行っているが、胸部エックス線検査は、1年以内ごとに1回、定期に、行っている。これは、法令違反である。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。同じ元設問で○となる記述は「雇入時の健康診断の項目のうち、聴力の検査は、35歳及び40歳の者並びに45歳以上の者に対しては、1,000Hz及び4,000Hzの音について行っているが、その他の年齢の者に対しては、医師が適当と認めるその他の方法により行っている。」です。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-4月-問22-選択肢3/index.html"
   },
   {
     "id": "令和4年_10月_問25_選択肢3",
@@ -7550,7 +7550,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "燃焼器具を使用するときは、発熱量が著しく少ないものを除き、毎日、異常の有無を点検しなければならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問25-選択肢3/index.html"
   },
   {
     "id": "令和6年_10月_問26_選択肢1",
@@ -7558,7 +7558,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "生後満1年に達しない生児を育てる労働者は、男性、女性共に育児時間を請求することができる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和6年-10月-問26-選択肢1/index.html"
   },
   {
     "id": "平成29年_4月_問27_選択肢1",
@@ -7566,7 +7566,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "生後満1年に達しない生児を育てる女性労働者は、育児時間を請求できる。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成29年-4月-問27-選択肢1/index.html"
   },
   {
     "id": "令和2年_10月_問27_選択肢1",
@@ -7574,7 +7574,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "生後満1年を超え、満2年に達しない生児を育てる女性労働者は、育児時間を請求することができる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和2年-10月-問27-選択肢1/index.html"
   },
   {
     "id": "平成30年_4月_問26_選択肢1",
@@ -7582,7 +7582,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "生後満1年を超え、満2年に達しない生児を育てる女性労働者は、育児時間を請求できる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/平成30年-4月-問26-選択肢1/index.html"
   },
   {
     "id": "令和元年_10月_問27_選択肢1",
@@ -7590,7 +7590,7 @@ window.ICHIMONDOU_ROWS = [
     "statement": "生後満2年に達しない生児を育てる女性労働者は、育児時間を請求することができる。",
     "correctAnswer": false,
     "exp": "×。この記述は誤りです。元の5択では、この記述が誤っているものとして扱われています。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和元年-10月-問27-選択肢1/index.html"
   },
   {
     "id": "令和4年_10月_問26_選択肢5",
@@ -7598,6 +7598,6 @@ window.ICHIMONDOU_ROWS = [
     "statement": "生理日の就業が著しく困難な女性が休暇を請求したときは、その者を生理日に就業させてはならない。",
     "correctAnswer": true,
     "exp": "○。この記述は正しい内容です。元の5択では、誤りとして選ぶ選択肢ではありません。",
-    "publicPath": ""
+    "publicPath": "q/ichimon/s/令和4年-10月-問26-選択肢5/index.html"
   }
 ];
