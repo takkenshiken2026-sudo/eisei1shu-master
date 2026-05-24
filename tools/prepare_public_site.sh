@@ -19,6 +19,7 @@ for f in \
   site-terms-index.js \
   site-analytics.js \
   CNAME \
+  _headers \
   robots.txt \
   sitemap.xml \
   .nojekyll \
