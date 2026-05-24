@@ -6,6 +6,9 @@ OUT="$ROOT/public_site"
 rm -rf "$OUT"
 mkdir -p "$OUT"
 cd "$ROOT"
+if [[ -f "$ROOT/tools/bundle_spa_data_js.py" ]]; then
+  python3 "$ROOT/tools/bundle_spa_data_js.py"
+fi
 for f in \
   index.html \
   about.html \
