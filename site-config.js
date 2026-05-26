@@ -4,7 +4,7 @@ window.SITE_CONFIG = {
   "examName": "第一種衛生管理者試験",
   "siteOrigin": "https://eisei1shu-master.jp",
   "contactUrl": "https://forms.gle/3pD7fZ8TdppzAWR37",
-  "ga4MeasurementId": "",
+  "ga4MeasurementId": "G-2WG5ES7LVQ",
   "theme": {
     "accent": "#333333",
     "accentText": "#ffffff",

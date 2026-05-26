@@ -294,8 +294,6 @@ def compose_handmade_body(
             "試験では、類似条文・省令名・条番号の入れ替えに注意してください。"
         )
 
-    parts.append(_study_flow_paragraph(term, category))
-
     body = "\n\n".join(p.strip() for p in parts if p.strip())
     plain_len = len(re.sub(r"<[^>]+>", "", body))
     if plain_len < 900:

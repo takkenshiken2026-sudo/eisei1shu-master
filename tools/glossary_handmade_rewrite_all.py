@@ -19,17 +19,22 @@ ROOT = Path(__file__).resolve().parent.parent
 GLOSSARY_CSV = ROOT / "data" / "glossary_terms.csv"
 
 sys.path.insert(0, str(ROOT / "tools"))
-from glossary_body_pad import pad_term_detail_body  # noqa: E402
 from glossary_enrich_a_rank_content import ENRICHMENTS as A_ENRICHMENTS  # noqa: E402
 from glossary_enrich_a_rank_finish import FINISH as A_FINISH  # noqa: E402
 from glossary_enrich_b_rank_content import ENRICHMENTS as B_ENRICHMENTS  # noqa: E402
 from glossary_enrich_priority_content import ENRICHMENTS as P_ENRICHMENTS  # noqa: E402
 from glossary_handmade_builder import (  # noqa: E402
-    _past_exam_paragraph,
-    _study_flow_paragraph,
     build_handmade_patch,
     compose_handmade_body,
     best_source_text,
+)
+from glossary_pro_writer import (  # noqa: E402
+    _exam_strategy,
+    _expert_perspective,
+    _strip_boilerplate_body,
+    _workplace_narrative,
+    build_pro_patch,
+    ensure_pro_body_length,
 )
 
 
@@ -61,47 +66,6 @@ def _merge_bodies(primary: str, secondary: str) -> str:
     return "\n\n".join(parts)
 
 
-def _ensure_min_body(body: str, term: str, category: str, source: str) -> str:
-    text = (body or "").strip()
-    short = term.split("（")[0].strip()
-    append_blocks = [
-        _past_exam_paragraph(term, category, source),
-        _study_flow_paragraph(term, category),
-        (
-            f"復習では、{short}の定義を声に出し、続けて本文の表の項目を"
-            "閉じた目で言えるか確認します。頻出ポイントは「誤りの型」として"
-            "（数値違い・主体違い・期限違い）に分類すると覚えやすくなります。"
-        ),
-        (
-            f"{short}は、{category}の他の用語とセットで出題されることが多いです。"
-            "関連用語リンクから1つずつ違いを書き足し、過去問で接続を確認してください。"
-        ),
-        (
-            f"受験直前は、{short}の数値・期限・主体だけをカード化し、"
-            "毎日5分で見直すと効率がよいです。公式情報で改正がないかも確認してください。"
-        ),
-    ]
-    for block in append_blocks:
-        if len(re.sub(r"<[^>]+>", "", text)) >= 900:
-            break
-        key = re.sub(r"\s+", "", block)[:40]
-        if block and key not in re.sub(r"\s+", "", text):
-            text = (text + "\n\n" + block).strip()
-
-    short = term.split("（")[0].strip()
-    n = 0
-    while len(re.sub(r"<[^>]+>", "", text)) < 900 and n < 6:
-        text = (
-            text
-            + "\n\n"
-            + (
-                f"【復習の補足{n + 1}】{short}では、{category}の文脈で定義・数値・主体・手続が"
-                "セットで問われます。本文と頻出ポイントを往復し、過去問では誤りの理由"
-                "（どの数値・主体・期限が違うか）まで確認してください。"
-            )
-        ).strip()
-        n += 1
-    return text
 
 
 def apply_patch(row: dict[str, str], patch: dict[str, str], manual: bool) -> None:
@@ -123,25 +87,45 @@ def apply_patch(row: dict[str, str], patch: dict[str, str], manual: bool) -> Non
                 continue
             if v and str(v).strip():
                 built[k] = v
-        if patch.get("term_detail_body"):
-            built["term_detail_body"] = pad_term_detail_body(
-                patch["term_detail_body"].strip(),
-                term=term,
-                category=category,
-                core=patch.get("core") or "",
-                definition=built.get("definition") or "",
-            )
         patch = built
     elif not manual:
         patch = build_handmade_patch(row)
 
+    slug = (row.get("slug") or "").strip()
     source = (patch.get("definition") or source_text or "").strip()
-    patch["term_detail_body"] = _ensure_min_body(
-        patch.get("term_detail_body") or "",
-        term,
-        category,
-        source,
-    )
+    kept_detail = (patch.get("term_detail_body") or "").strip() if manual else ""
+    pro = build_pro_patch(row)
+    for k, v in pro.items():
+        if k == "core":
+            continue
+        if manual and k == "term_detail_body":
+            continue
+        if v and str(v).strip():
+            patch[k] = v
+    if manual and kept_detail:
+        exam = patch.get("exam_points") or ""
+        extras = "\n\n".join(
+            [
+                _expert_perspective(term, category, source),
+                _workplace_narrative(term, category, source),
+                _exam_strategy(term, category, exam),
+            ]
+        )
+        patch["term_detail_body"] = ensure_pro_body_length(
+            _strip_boilerplate_body(kept_detail + "\n\n" + extras),
+            term,
+            category,
+            source,
+            slug,
+        )
+    else:
+        patch["term_detail_body"] = ensure_pro_body_length(
+            patch.get("term_detail_body") or "",
+            term,
+            category,
+            source,
+            slug,
+        )
 
     for k, v in patch.items():
         if k == "core":
@@ -179,16 +163,11 @@ def main() -> int:
         w.writerows(rows)
 
     print(
-        f"全件リライト完了 -> {GLOSSARY_CSV}\n"
+        f"全件プロ品質リライト完了 -> {GLOSSARY_CSV}\n"
         f"  手動リライト維持: {stats['manual']}\n"
         f"  手作り組立: {stats['built']}"
     )
-
-    # 読みやすい文体・要点具体例・覚え方・FAQ4件
-    from apply_glossary_reader_friendly import main as apply_reader  # noqa: E402
-
-    print("\n--- 読みやすさ・要点・覚え方・FAQ を反映 ---")
-    return apply_reader()
+    return 0
 
 
 if __name__ == "__main__":

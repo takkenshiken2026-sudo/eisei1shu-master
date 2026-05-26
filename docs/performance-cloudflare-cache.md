@@ -40,3 +40,5 @@ GitHub Pages の静的ファイルは **Cache-Control: max-age=600（10分）** 
 - バンドルは **`requestIdleCallback` 後**に読み込み、読み込み完了後にアプリ起動（初回描画をブロックしない）
 - Supabase は **ログイン・セッション復元時のみ**遅延読み込み
 - `site-theme.css` は **preload + onload** で非ブロッキング読み込み
+- Google Fonts は **400/700 のみ・非ブロッキング読み込み**（JetBrains Mono は廃止）
+- GA4 / Supabase は **測定ID・ログインが必要なときだけ**アイドル後に読み込み

@@ -95,7 +95,9 @@
 - **まず押さえる要点**: `summary_body` に、定義の一文＋分野に応じた【具体例】を含める（表示のみ `short_def` とは別列）。
 - **覚え方・整理のコツ**: `memory_tip` はキーワード・1枚メモ・直前の見直しなど複数段落で書く。
 - **よくある質問**: `faq_1`〜`faq_4` の **4件**（質問と回答のペア必須）。
-- 文体は誰が読んでも追えるよう、専門用語は定義とセットで書く。一括反映は `tools/apply_glossary_reader_friendly.py`、ビルド前に `tools/migrate_glossary_csv_columns.py` で列を揃える。
+- 文体は誰が読んでも追えるよう、専門用語は定義とセットで書く。一括反映は `tools/glossary_handmade_rewrite_all.py`（プロ品質）と `tools/apply_glossary_reader_friendly.py`、ビルド前に `tools/migrate_glossary_csv_columns.py` で列を揃える。
+
+試験ガイド（`guide_articles.csv`）では、各記事 **5〜7セクション**・**FAQ4件**・関連ガイドへの内部リンクを標準とします。一括反映は `tools/apply_guide_pro_writer.py`。
 
 AIに依頼するときは、元記事URLだけでなく、対象資格名、対象分野、検索意図、必ず確認する公式情報、使ってよい内部リンクを一緒に渡します。元記事の見出しと説明順は参考にしてよいですが、本文は対象資格に合わせて独自に書き直します。
 
