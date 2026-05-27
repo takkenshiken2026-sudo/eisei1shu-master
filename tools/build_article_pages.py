@@ -165,6 +165,22 @@ def faq_html(items: list[dict[str, str]]) -> str:
     return f'<section class="seo-article-section" aria-labelledby="article-sec-faq"><h2 id="article-sec-faq">よくある質問</h2>{body}</section>'
 
 
+def split_related_link_token(item: str) -> tuple[str, str]:
+    """Parse ``slug:label`` or ``https://...:label`` (label suffix has no URL path chars)."""
+    item = item.strip()
+    if not item:
+        return "", ""
+    if item.startswith(("http://", "https://")):
+        parts = item.rsplit(":", 1)
+        if len(parts) == 2 and parts[1] and "/" not in parts[1] and "?" not in parts[1]:
+            return parts[0].strip(), parts[1].strip()
+        return item, item
+    if ":" in item:
+        target, label = [x.strip() for x in item.split(":", 1)]
+        return target, label
+    return item, item
+
+
 def parse_related_links(
     value: str,
     by_slug: dict[str, dict[str, str]],
@@ -173,9 +189,7 @@ def parse_related_links(
     links: list[str] = []
     seen: set[str] = set()
     for item in split_semicolon(value):
-        target, label = item, item
-        if ":" in item:
-            target, label = [x.strip() for x in item.split(":", 1)]
+        target, label = split_related_link_token(item)
         if not target:
             continue
         if target in by_slug and target not in seen:
@@ -186,7 +200,8 @@ def parse_related_links(
         elif target.startswith(("http://", "https://")):
             text_label = label or target
             links.append(
-                f'<a class="related-link" href="{html.escape(target)}" target="_blank" rel="noopener noreferrer">{html.escape(apply_vars(text_label))}</a>'
+                f'<a class="related-link" href="{html.escape(target)}" target="_blank" '
+                f'rel="nofollow sponsored noopener noreferrer">{html.escape(apply_vars(text_label))}</a>'
             )
     if len(links) < 2 and article:
         genre = apply_vars(article.get("genre", ""))

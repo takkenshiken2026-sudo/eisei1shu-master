@@ -387,9 +387,10 @@ class Validator:
             related = self.norm(row.get("related_links"))
             if related:
                 for item in split_semicolon(related):
-                    target = item.split(":", 1)[0].strip()
-                    if target.startswith(("http://", "https://")):
+                    token = item.strip()
+                    if token.startswith(("http://", "https://")):
                         continue
+                    target = token.split(":", 1)[0].strip()
                     if not target:
                         continue
                     if not re.fullmatch(r"[a-z0-9][a-z0-9-]*", target):
