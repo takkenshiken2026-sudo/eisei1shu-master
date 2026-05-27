@@ -5146,6 +5146,87 @@ html:not(.js) .terms-idx-seo-fallback .terms-idx-seo-list a {
   font-size: var(--fs-sub);
 }
 
+/* === アフィリエイト講座カード（試験ガイド） === */
+.guide-article-page .affiliate-course-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 1.25rem 0 1.5rem;
+}
+.guide-article-page .affiliate-course-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  box-shadow: var(--sh);
+}
+.guide-article-page .affiliate-course-card-media {
+  display: block;
+  overflow: hidden;
+  background: var(--bg2);
+  line-height: 0;
+}
+.guide-article-page .affiliate-course-card-media img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.guide-article-page .affiliate-course-card-body {
+  padding: 1rem 1.1rem 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  flex: 1;
+}
+.guide-article-page .affiliate-course-card-title {
+  font-size: var(--fs-body);
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.45;
+}
+.guide-article-page .affiliate-course-card-vendor,
+.guide-article-page .affiliate-course-card-meta {
+  font-size: var(--fs-caption);
+  color: var(--text2);
+  margin: 0;
+}
+.guide-article-page .affiliate-course-card-price {
+  font-size: var(--fs-sub);
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+.guide-article-page .affiliate-course-card-points {
+  margin: 0.25rem 0 0;
+  padding-left: 1.2rem;
+  font-size: var(--fs-sub);
+  color: var(--ink);
+}
+.guide-article-page .affiliate-course-card-points li {
+  margin-bottom: 0.35rem;
+}
+.guide-article-page .affiliate-course-card-cta {
+  display: inline-block;
+  margin-top: auto;
+  padding: 0.55rem 0.85rem;
+  background: var(--table-head-bg);
+  color: #ffffff !important;
+  font-size: var(--fs-sub);
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+.guide-article-page .affiliate-course-card-cta:hover {
+  background: var(--accent-emphasis);
+  color: #ffffff !important;
+}
+@media (max-width: 760px) {
+  .guide-article-page .affiliate-course-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* === 試験ガイド一覧（articles-index-page）タイポグラフィ・文字色 === */
 .articles-index-page .site-page-main > h1 {
   color: var(--text);

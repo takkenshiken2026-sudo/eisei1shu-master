@@ -42,6 +42,9 @@ for d in articles q terms; do
     cp -R "$ROOT/$d" "$OUT/"
   fi
 done
+if [[ -d "$ROOT/images" ]]; then
+  cp -R "$ROOT/images" "$OUT/"
+fi
 # サイト固有 SPA データ（eisei1 / eisei2 など）。無ければスキップ。
 if [[ -f "$ROOT/eisei1-data-bundle.js" ]]; then
   cp "$ROOT/eisei1-data-bundle.js" "$OUT/"

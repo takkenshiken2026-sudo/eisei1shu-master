@@ -26,6 +26,7 @@ from tools.html_footer import (  # noqa: E402
     site_page_wrap_close,
     site_page_wrap_open,
 )
+from tools.affiliate_article_blocks import article_body_html  # noqa: E402
 from tools.site_config import (  # noqa: E402
     brand_name,
     clean_origin,
@@ -101,10 +102,17 @@ def section_html(article: dict[str, str], idx: int, display_num: int) -> str:
     if not heading or not norm(body):
         return ""
     sid = f"article-sec-{idx}"
+    slug = article.get("slug", "")
+    tags = split_semicolon(apply_vars(article.get("tags", "")))
+    body_markup = (
+        article_body_html(body, slug)
+        if "アフィリエイト" in tags or "[[" in body or "[[affiliate-" in body
+        else list_or_paragraph(body)
+    )
     return (
         f'<section class="seo-article-section" aria-labelledby="{sid}">'
         f'<h2 id="{sid}"><span class="section-heading-num">{display_num}</span>{html.escape(heading)}</h2>'
-        f"{list_or_paragraph(body)}</section>"
+        f"{body_markup}</section>"
     )
 
 
@@ -621,7 +629,8 @@ def build_index_html(articles: list[dict[str, str]]) -> str:
 def load_articles() -> list[dict[str, str]]:
     if not ARTICLES_CSV.is_file():
         raise FileNotFoundError(str(ARTICLES_CSV))
-    rows = list(csv.DictReader(ARTICLES_CSV.read_text(encoding="utf-8-sig").splitlines()))
+    with ARTICLES_CSV.open(encoding="utf-8-sig", newline="") as f:
+        rows = list(csv.DictReader(f))
     return sorted(rows, key=lambda x: int(norm(x.get("priority")) or 9999))
 
 
