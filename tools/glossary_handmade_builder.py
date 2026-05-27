@@ -178,11 +178,15 @@ def _commentary_for_sentence(sent: str, term: str) -> str:
 
 
 def _numeric_detail_paragraph(text: str, term: str) -> str:
+    """定義文から数値・期限を抽出し、文脈切れのない箇条書きにする。"""
     items: list[str] = []
+    seen: set[str] = set()
     for m in _NUM_VAL.finditer(text):
         val = m.group(1) + m.group(2)
-        ctx = text[max(0, m.start() - 18) : m.end() + 8].replace("\n", "")
-        items.append(f"・{val}（{ctx.strip('、。')}）")
+        if val in seen:
+            continue
+        seen.add(val)
+        items.append(f"・{val}")
     if len(items) < 2:
         return ""
     short = _term_short(term)
