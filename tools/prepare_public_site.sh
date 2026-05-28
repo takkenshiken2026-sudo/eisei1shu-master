@@ -6,6 +6,9 @@ OUT="$ROOT/public_site"
 rm -rf "$OUT"
 mkdir -p "$OUT"
 cd "$ROOT"
+if [[ -f "$ROOT/tools/bundle_spa_data_js.py" ]]; then
+  python3 "$ROOT/tools/bundle_spa_data_js.py"
+fi
 for f in \
   index.html \
   about.html \
@@ -22,6 +25,7 @@ for f in \
   site-priority-index.js \
   site-analytics.js \
   CNAME \
+  _headers \
   robots.txt \
   sitemap.xml \
   .nojekyll \
@@ -41,9 +45,15 @@ for d in articles q terms; do
     cp -R "$ROOT/$d" "$OUT/"
   fi
 done
+if [[ -d "$ROOT/images" ]]; then
+  cp -R "$ROOT/images" "$OUT/"
+fi
 # サイト固有 SPA データ（eisei1 / eisei2 など）。無ければスキップ。
+if [[ -f "$ROOT/eisei1-data-bundle.js" ]]; then
+  cp "$ROOT/eisei1-data-bundle.js" "$OUT/"
+fi
 for f in eisei1-*.js eisei2-*.js; do
-  if [[ -f "$ROOT/$f" ]]; then
+  if [[ -f "$ROOT/$f" ]] && [[ "$f" != "eisei1-data-bundle.js" ]]; then
     cp "$ROOT/$f" "$OUT/"
   fi
 done
@@ -53,6 +63,9 @@ fi
 if [[ -f "$ROOT/docs/glossary-article-slugs.json" ]]; then
   mkdir -p "$OUT/docs"
   cp "$ROOT/docs/glossary-article-slugs.json" "$OUT/docs/"
+fi
+if [[ -f "$OUT/index.html" ]] && [[ -f "$ROOT/tools/inject_spa_asset_version.py" ]]; then
+  TARGET="$OUT/index.html" python3 "$ROOT/tools/inject_spa_asset_version.py"
 fi
 n="$(find "$OUT" -type f | wc -l | tr -d ' ')"
 echo "prepare_public_site.sh: $OUT に $n ファイルを配置しました。"

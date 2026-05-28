@@ -368,7 +368,7 @@ class Validator:
                     label, url = [x.strip() for x in item.split("|", 1)]
                     if not label or not url.startswith(("http://", "https://")):
                         self.warn(path, idx, f"primary_sources は ラベル|URL 形式を推奨します: {item}")
-            for n in range(1, 4):
+            for n in range(1, 5):
                 q = self.norm(row.get(f"faq_{n}_question"))
                 a = self.norm(row.get(f"faq_{n}_answer"))
                 if bool(q) != bool(a):
@@ -387,9 +387,10 @@ class Validator:
             related = self.norm(row.get("related_links"))
             if related:
                 for item in split_semicolon(related):
-                    target = item.split(":", 1)[0].strip()
-                    if target.startswith(("http://", "https://")):
+                    token = item.strip()
+                    if token.startswith(("http://", "https://")):
                         continue
+                    target = token.split(":", 1)[0].strip()
                     if not target:
                         continue
                     if not re.fullmatch(r"[a-z0-9][a-z0-9-]*", target):

@@ -101,10 +101,17 @@ def section_html(article: dict[str, str], idx: int, display_num: int) -> str:
     if not heading or not norm(body):
         return ""
     sid = f"article-sec-{idx}"
+    slug = article.get("slug", "")
+    tags = split_semicolon(apply_vars(article.get("tags", "")))
+    body_markup = (
+        article_body_html(body, slug)
+        if "アフィリエイト" in tags or "[[" in body or "[[affiliate-" in body
+        else list_or_paragraph(body)
+    )
     return (
         f'<section class="seo-article-section" aria-labelledby="{sid}">'
         f'<h2 id="{sid}"><span class="section-heading-num">{display_num}</span>{html.escape(heading)}</h2>'
-        f"{list_or_paragraph(body)}</section>"
+        f"{body_markup}</section>"
     )
 
 
@@ -144,7 +151,7 @@ def toc_html(article: dict[str, str], has_faq: bool) -> str:
 
 def faq_items(article: dict[str, str]) -> list[dict[str, str]]:
     items: list[dict[str, str]] = []
-    for idx in range(1, 4):
+    for idx in range(1, 5):
         q = apply_vars(article.get(f"faq_{idx}_question", ""))
         a = apply_vars(article.get(f"faq_{idx}_answer", ""))
         if q and a:
@@ -165,6 +172,22 @@ def faq_html(items: list[dict[str, str]]) -> str:
     return f'<section class="seo-article-section" aria-labelledby="article-sec-faq"><h2 id="article-sec-faq">よくある質問</h2>{body}</section>'
 
 
+def split_related_link_token(item: str) -> tuple[str, str]:
+    """Parse ``slug:label`` or ``https://...:label`` (label suffix has no URL path chars)."""
+    item = item.strip()
+    if not item:
+        return "", ""
+    if item.startswith(("http://", "https://")):
+        parts = item.rsplit(":", 1)
+        if len(parts) == 2 and parts[1] and "/" not in parts[1] and "?" not in parts[1]:
+            return parts[0].strip(), parts[1].strip()
+        return item, item
+    if ":" in item:
+        target, label = [x.strip() for x in item.split(":", 1)]
+        return target, label
+    return item, item
+
+
 def parse_related_links(
     value: str,
     by_slug: dict[str, dict[str, str]],
@@ -173,9 +196,7 @@ def parse_related_links(
     links: list[str] = []
     seen: set[str] = set()
     for item in split_semicolon(value):
-        target, label = item, item
-        if ":" in item:
-            target, label = [x.strip() for x in item.split(":", 1)]
+        target, label = split_related_link_token(item)
         if not target:
             continue
         if target in by_slug and target not in seen:
@@ -186,7 +207,8 @@ def parse_related_links(
         elif target.startswith(("http://", "https://")):
             text_label = label or target
             links.append(
-                f'<a class="related-link" href="{html.escape(target)}" target="_blank" rel="noopener noreferrer">{html.escape(apply_vars(text_label))}</a>'
+                f'<a class="related-link" href="{html.escape(target)}" target="_blank" '
+                f'rel="nofollow sponsored noopener noreferrer">{html.escape(apply_vars(text_label))}</a>'
             )
     if len(links) < 2 and article:
         genre = apply_vars(article.get("genre", ""))
@@ -606,7 +628,8 @@ def build_index_html(articles: list[dict[str, str]]) -> str:
 def load_articles() -> list[dict[str, str]]:
     if not ARTICLES_CSV.is_file():
         raise FileNotFoundError(str(ARTICLES_CSV))
-    rows = list(csv.DictReader(ARTICLES_CSV.read_text(encoding="utf-8-sig").splitlines()))
+    with ARTICLES_CSV.open(encoding="utf-8-sig", newline="") as f:
+        rows = list(csv.DictReader(f))
     return sorted(rows, key=lambda x: int(norm(x.get("priority")) or 9999))
 
 
