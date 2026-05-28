@@ -17,6 +17,9 @@ for f in \
   site-theme.css \
   site-q-index.js \
   site-terms-index.js \
+  site-compare-index.js \
+  site-knowledge-hub-index.js \
+  site-priority-index.js \
   site-analytics.js \
   CNAME \
   robots.txt \
