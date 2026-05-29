@@ -11,7 +11,6 @@ comparisons.csv,comparisons.csv,similar,0.880,lead-management-compare-s37,asbest
 comparisons.csv,comparisons.csv,similar,0.929,improvement-plan-compare-s37,improvement-plan-directive-compare-s42,改善計画の比較（試験頻出）,改善計画指示の比較（試験頻出）
 comparisons.csv,comparisons.csv,similar,0.938,asbestos-removal-compare-s38,asbestos-mgmt-compare-s43,石綿除去管理の比較（判例・ガイド）,石綿管理の比較（判例・ガイド）
 comparisons.csv,comparisons.csv,similar,0.897,lead-management-compare-s38,asbestos-mgmt-compare-s43,鉛管理の比較（判例・ガイド）,石綿管理の比較（判例・ガイド）
-comparisons.csv,mistakes.csv,similar,0.885,organic-first-class-compare-s38,organic-first-class-mis-s38,有機溶剤第一種管理：有機溶剤の比較（判例・ガイド）,有機溶剤第一種管理：有機溶剤の典型誤答（判例・ガイド）
 comparisons.csv,comparisons.csv,similar,0.938,improvement-plan-compare-s38,improvement-plan-directive-compare-s43,改善計画の比較（判例・ガイド）,改善計画指示の比較（判例・ガイド）
 comparisons.csv,comparisons.csv,similar,0.929,asbestos-removal-compare-s39,asbestos-mgmt-compare-s44,石綿除去管理の比較（横断総合）,石綿管理の比較（横断総合）
 comparisons.csv,comparisons.csv,similar,0.880,lead-management-compare-s39,asbestos-mgmt-compare-s44,鉛管理の比較（横断総合）,石綿管理の比較（横断総合）
