@@ -193,20 +193,18 @@ def load_compare_rows() -> list[dict]:
 
 def compare_index_item_dict(entry: dict) -> dict:
     tags = parse_term_tags(entry.get("tags") or "")
-    subjects = " / ".join(entry.get("col_labels") or [])
+    summary = entry.get("summary") or entry.get("article_lead") or ""
     search_bits = [
         entry["title"],
         entry.get("category") or "",
-        entry.get("summary") or "",
-        subjects,
+        summary,
         *tags,
     ]
     return {
         "title": entry["title"],
         "category": entry.get("category") or "",
         "tags": tags,
-        "summary": entry.get("summary") or "",
-        "subjects": subjects,
+        "summary": summary,
         "href": compare_index_href(entry["slug_file"]),
         "search": " ".join(x for x in search_bits if x),
     }
@@ -218,17 +216,16 @@ def render_compare_index_tbody(entries: list[dict]) -> str:
     for item in items:
         href = html.escape(compare_index_href(item["slug_file"]))
         href_attr = f' data-entry-href="{href}"'
-        summary = html.escape(item.get("summary") or "")
-        subjects = html.escape(" / ".join(item.get("col_labels") or []))
+        summary = html.escape(item.get("summary") or item.get("article_lead") or "")
         rows.append(
             "<tr class=\"terms-idx-table-row compare-idx-table-row\">"
-            f'<td class="terms-idx-td-term compare-idx-td-title" data-label="比較"{href_attr} tabindex="0">'
+            f'<td class="terms-idx-td-term compare-idx-td-title" data-label="項目"{href_attr} tabindex="0">'
             f'<div class="terms-idx-term-cell"><a href="{href}">{html.escape(item["title"])}</a>'
             f"</div></td>"
             f'<td class="terms-idx-td-cat" data-label="分野"{href_attr}>'
             f'{html.escape(item.get("category") or "")}</td>'
-            f'<td class="terms-idx-td-snippet compare-idx-td-subjects" data-label="比較対象"{href_attr}>'
-            f"{subjects}</td>"
+            f'<td class="terms-idx-td-snippet compare-idx-td-summary" data-label="概要"{href_attr}>'
+            f"{summary}</td>"
             "</tr>"
         )
     return "\n".join(rows)
@@ -609,9 +606,9 @@ def build_compare_index(entries: list[dict], base_url: str) -> str:
       <div class="terms-idx-table-wrap">
         <table class="terms-idx-table compare-idx-table">
           <thead><tr>
-            <th scope="col" class="terms-idx-th-term">比較</th>
+            <th scope="col" class="terms-idx-th-term">項目</th>
             <th scope="col" class="terms-idx-th-cat">分野</th>
-            <th scope="col" class="terms-idx-th-def">比較対象</th>
+            <th scope="col" class="terms-idx-th-def">概要</th>
           </tr></thead>
           <tbody id="compare-idx-flat-body">
 {tbody_html}
