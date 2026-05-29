@@ -144,7 +144,7 @@ def toc_html(article: dict[str, str], has_faq: bool) -> str:
 
 def faq_items(article: dict[str, str]) -> list[dict[str, str]]:
     items: list[dict[str, str]] = []
-    for idx in range(1, 5):
+    for idx in range(1, 4):
         q = apply_vars(article.get(f"faq_{idx}_question", ""))
         a = apply_vars(article.get(f"faq_{idx}_answer", ""))
         if q and a:
@@ -165,22 +165,6 @@ def faq_html(items: list[dict[str, str]]) -> str:
     return f'<section class="seo-article-section" aria-labelledby="article-sec-faq"><h2 id="article-sec-faq">よくある質問</h2>{body}</section>'
 
 
-def split_related_link_token(item: str) -> tuple[str, str]:
-    """Parse ``slug:label`` or ``https://...:label`` (label suffix has no URL path chars)."""
-    item = item.strip()
-    if not item:
-        return "", ""
-    if item.startswith(("http://", "https://")):
-        parts = item.rsplit(":", 1)
-        if len(parts) == 2 and parts[1] and "/" not in parts[1] and "?" not in parts[1]:
-            return parts[0].strip(), parts[1].strip()
-        return item, item
-    if ":" in item:
-        target, label = [x.strip() for x in item.split(":", 1)]
-        return target, label
-    return item, item
-
-
 def parse_related_links(
     value: str,
     by_slug: dict[str, dict[str, str]],
@@ -189,7 +173,9 @@ def parse_related_links(
     links: list[str] = []
     seen: set[str] = set()
     for item in split_semicolon(value):
-        target, label = split_related_link_token(item)
+        target, label = item, item
+        if ":" in item:
+            target, label = [x.strip() for x in item.split(":", 1)]
         if not target:
             continue
         if target in by_slug and target not in seen:
@@ -200,8 +186,7 @@ def parse_related_links(
         elif target.startswith(("http://", "https://")):
             text_label = label or target
             links.append(
-                f'<a class="related-link" href="{html.escape(target)}" target="_blank" '
-                f'rel="nofollow sponsored noopener noreferrer">{html.escape(apply_vars(text_label))}</a>'
+                f'<a class="related-link" href="{html.escape(target)}" target="_blank" rel="noopener noreferrer">{html.escape(apply_vars(text_label))}</a>'
             )
     if len(links) < 2 and article:
         genre = apply_vars(article.get("genre", ""))
@@ -550,7 +535,7 @@ def build_index_html(articles: list[dict[str, str]]) -> str:
 </script>"""
     canonical = public_url("articles/index.html")
     title = f"試験ガイド｜{brand_name()}（{exam_name()}）"
-    desc = f"{exam_name()}の試験概要、受験・申込、学習計画、過去問活用、用語整理などの記事一覧です。"
+    desc = f"{exam_name()}の受験フェーズ別ガイド（制度・学習計画・演習・直前・再受験）一覧です。用語の定義は用語解説（知識ハブ）をご覧ください。"
     item_list = [
         {"@type": "ListItem", "position": i, "name": apply_vars(a["title"]), "item": public_url(f"articles/{a['slug']}/")}
         for i, a in enumerate(articles, start=1)
@@ -586,7 +571,7 @@ def build_index_html(articles: list[dict[str, str]]) -> str:
 <main class="site-page-main">
   {breadcrumb_html(rel_path, [("トップ", "index.html"), ("試験ガイド", None)])}
   <h1>試験ガイド</h1>
-  <p class="site-page-lead">{html.escape(exam_name())}の制度理解から学習計画・演習・直前対策まで、受験フェーズ別の記事をまとめています。検索とジャンル絞り込みで目的の記事を探せます。</p>
+  <p class="site-page-lead">{html.escape(exam_name())}の制度理解から学習計画・演習・直前対策まで、受験フェーズ別の<strong>進め方</strong>をまとめています。用語の意味・比較・数値は<a href="../terms/index.html">用語解説（知識ハブ）</a>、問題演習は<a href="../q/index.html">過去問一覧</a>からどうぞ。</p>
   <section class="article-index-panel" aria-labelledby="article-index-heading">
     <div class="article-index-head">
       <div>
@@ -621,8 +606,7 @@ def build_index_html(articles: list[dict[str, str]]) -> str:
 def load_articles() -> list[dict[str, str]]:
     if not ARTICLES_CSV.is_file():
         raise FileNotFoundError(str(ARTICLES_CSV))
-    with ARTICLES_CSV.open(encoding="utf-8-sig", newline="") as f:
-        rows = list(csv.DictReader(f))
+    rows = list(csv.DictReader(ARTICLES_CSV.read_text(encoding="utf-8-sig").splitlines()))
     return sorted(rows, key=lambda x: int(norm(x.get("priority")) or 9999))
 
 
