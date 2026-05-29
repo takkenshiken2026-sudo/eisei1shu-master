@@ -101,17 +101,10 @@ def section_html(article: dict[str, str], idx: int, display_num: int) -> str:
     if not heading or not norm(body):
         return ""
     sid = f"article-sec-{idx}"
-    slug = article.get("slug", "")
-    tags = split_semicolon(apply_vars(article.get("tags", "")))
-    body_markup = (
-        article_body_html(body, slug)
-        if "アフィリエイト" in tags or "[[" in body or "[[affiliate-" in body
-        else list_or_paragraph(body)
-    )
     return (
         f'<section class="seo-article-section" aria-labelledby="{sid}">'
         f'<h2 id="{sid}"><span class="section-heading-num">{display_num}</span>{html.escape(heading)}</h2>'
-        f"{body_markup}</section>"
+        f"{list_or_paragraph(body)}</section>"
     )
 
 
