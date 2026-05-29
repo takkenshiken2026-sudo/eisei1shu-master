@@ -1,5 +1,5 @@
 /**
- * 用語集一覧 terms/index.html — 3列・1語1行（横スクロールなし・全件表示）
+ * 用語集一覧 terms/index.html — 4区分・3列（横スクロールなし・全件表示）
  * 再生成: python3 tools/build_glossary_pages.py
  */
 (() => {
@@ -11,10 +11,15 @@
   const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
   const dataEl = document.getElementById('terms-index-data');
+  const sectionsEl = document.getElementById('terms-index-sections');
   const ITEMS = dataEl ? JSON.parse(dataEl.textContent || '[]') : [];
+  const SECTIONS = sectionsEl
+    ? JSON.parse(sectionsEl.textContent || '[]')
+    : [{ id: 'term', label: '用語解説', itemCol: '用語', detailCol: '定義' }];
 
   const q = document.getElementById('terms-idx-q');
   const chips = $$('.terms-idx-chip[data-cat]');
+  const sectionTabs = $$('.terms-idx-section-tab[data-section]');
   const hit = document.getElementById('terms-idx-hit');
   const empty = document.getElementById('terms-idx-empty');
   const toolbarReset = document.getElementById('terms-idx-reset');
@@ -23,12 +28,16 @@
   const toolbar = document.querySelector('.terms-index-tools');
   const topBtn = document.getElementById('terms-idx-top');
   const flatBody = document.getElementById('terms-idx-flat-body');
+  const tableHead = document.getElementById('terms-idx-thead');
   const TERMS_INDEX_BASE = '/terms/';
 
   let activeCat = 'all';
+  let activeSection = 'term';
   let urlSyncTimer = null;
   const DEBOUNCE_MS = 150;
   let inputDebounceTimer = null;
+
+  const sectionMap = Object.fromEntries(SECTIONS.map((s) => [s.id, s]));
 
   const norm = (s) => (s || '').toString().trim().toLowerCase();
 
@@ -50,14 +59,30 @@
     return true;
   }
 
+  function itemInSection(item) {
+    const sections = Array.isArray(item.sections) ? item.sections : ['term'];
+    return sections.includes(activeSection);
+  }
+
   function itemVisible(item) {
     const tokens = parseSearchTokens(q?.value || '');
     const catOk = activeCat === 'all' || item.category === activeCat;
-    return catOk && matchesSearch(item, tokens);
+    return catOk && itemInSection(item) && matchesSearch(item, tokens);
+  }
+
+  function sectionTotal(sectionId) {
+    return ITEMS.filter((item) => {
+      const sections = Array.isArray(item.sections) ? item.sections : ['term'];
+      return sections.includes(sectionId);
+    }).length;
+  }
+
+  function sectionUnit() {
+    return activeSection === 'term' ? '語' : '件';
   }
 
   function hasActiveFilters() {
-    return !!(q?.value || '').trim() || activeCat !== 'all';
+    return !!(q?.value || '').trim() || activeCat !== 'all' || activeSection !== 'term';
   }
 
   function escapeHtml(s) {
@@ -118,13 +143,34 @@
     return `${TERMS_INDEX_BASE}${String(href).replace(/^\.\//, '')}`;
   }
 
-  function rowHtml(item, query) {
+  function detailText(item) {
+    if (activeSection === 'term') {
+      return item.shortDef || item.definition || '';
+    }
+    return item.summary || item.shortDef || item.definition || '';
+  }
+
+  function rowHtml(item, query, section) {
+    const meta = sectionMap[section] || sectionMap.term;
+    const itemLabel = meta.itemCol || '用語';
+    const detailLabel = meta.detailCol || '定義';
     const href = resolveEntryHref(item.href);
     const hrefAttr = ` data-entry-href="${escapeHtml(href)}"`;
+    const detail = detailText(item);
     return `<tr class="terms-idx-table-row">
-<td class="terms-idx-td-term" data-label="用語"${hrefAttr} tabindex="0"><div class="terms-idx-term-cell"><a href="${escapeHtml(href)}">${highlightText(item.term, query)}</a></div></td>
+<td class="terms-idx-td-term" data-label="${escapeHtml(itemLabel)}"${hrefAttr} tabindex="0"><div class="terms-idx-term-cell"><a href="${escapeHtml(href)}">${highlightText(item.term, query)}</a></div></td>
 <td class="terms-idx-td-cat" data-label="分野"${hrefAttr}>${escapeHtml(item.category)}</td>
-<td class="terms-idx-td-snippet" data-label="定義（抜粋）"${hrefAttr}>${(item.shortDef || item.definition) ? highlightText(item.shortDef || item.definition, query) : ''}</td>
+<td class="terms-idx-td-snippet" data-label="${escapeHtml(detailLabel)}"${hrefAttr}>${detail ? highlightText(detail, query) : ''}</td>
+</tr>`;
+  }
+
+  function updateTableHead() {
+    if (!tableHead) return;
+    const meta = sectionMap[activeSection] || sectionMap.term;
+    tableHead.innerHTML = `<tr>
+<th scope="col" class="terms-idx-th-term">${escapeHtml(meta.itemCol || '用語')}</th>
+<th scope="col" class="terms-idx-th-cat">分野</th>
+<th scope="col" class="terms-idx-th-def">${escapeHtml(meta.detailCol || '定義')}</th>
 </tr>`;
   }
 
@@ -167,7 +213,11 @@
     if (!activeFilters) return;
     const tags = [];
     const query = (q?.value || '').trim();
+    const sectionLabel = sectionMap[activeSection]?.label;
     if (query) tags.push({ type: 'q', label: `検索: ${query}` });
+    if (activeSection !== 'term' && sectionLabel) {
+      tags.push({ type: 'section', label: sectionLabel });
+    }
     if (activeCat !== 'all') tags.push({ type: 'cat', label: activeCat });
     if (!tags.length) {
       activeFilters.classList.add('hide');
@@ -190,6 +240,9 @@
           activeCat = 'all';
           chips.forEach((b) => b.classList.toggle('on', (b.dataset.cat || 'all') === 'all'));
         }
+        if (btn.dataset.remove === 'section') {
+          setActiveSection('term', false);
+        }
         syncClear();
         apply();
       });
@@ -203,6 +256,7 @@
       const query = (q?.value || '').trim();
       if (query) params.set('q', query);
       if (activeCat !== 'all') params.set('cat', activeCat);
+      if (activeSection !== 'term') params.set('section', activeSection);
       const qs = params.toString();
       const next = qs ? `${TERMS_INDEX_BASE}?${qs}` : TERMS_INDEX_BASE;
       history.replaceState(null, '', next);
@@ -214,6 +268,19 @@
     if (params.has('q') && q) q.value = params.get('q') || '';
     activeCat = params.get('cat') || 'all';
     chips.forEach((b) => b.classList.toggle('on', (b.dataset.cat || 'all') === activeCat));
+    const section = params.get('section') || 'term';
+    setActiveSection(sectionMap[section] ? section : 'term', false);
+  }
+
+  function setActiveSection(sectionId, syncUrlFlag = true) {
+    activeSection = sectionMap[sectionId] ? sectionId : 'term';
+    sectionTabs.forEach((btn) => {
+      const on = (btn.dataset.section || 'term') === activeSection;
+      btn.classList.toggle('on', on);
+      btn.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    updateTableHead();
+    if (syncUrlFlag) apply();
   }
 
   function visibleItems() {
@@ -222,19 +289,20 @@
 
   function renderTable(visible, query) {
     if (!flatBody) return;
-    flatBody.innerHTML = visible.map((item) => rowHtml(item, query)).join('');
+    flatBody.innerHTML = visible.map((item) => rowHtml(item, query, activeSection)).join('');
     bindRows();
   }
 
   function apply(syncUrlFlag = true) {
     const query = q?.value || '';
     const visible = visibleItems();
-    const total = ITEMS.length;
+    const total = sectionTotal(activeSection);
     const shown = visible.length;
+    const unit = sectionUnit();
 
     renderTable(visible, query);
 
-    if (hit) hit.textContent = `${shown} / ${total} 語`;
+    if (hit) hit.textContent = `${shown} / ${total} ${unit}`;
     if (empty) {
       const hideEmpty = shown !== 0;
       empty.classList.toggle('hide', hideEmpty);
@@ -259,6 +327,7 @@
     if (q) q.value = '';
     activeCat = 'all';
     chips.forEach((b) => b.classList.toggle('on', (b.dataset.cat || 'all') === 'all'));
+    setActiveSection('term', false);
     syncClear();
     apply();
     q?.focus();
@@ -292,6 +361,12 @@
       btn.classList.add('on');
       activeCat = btn.dataset.cat || 'all';
       apply();
+    });
+  });
+
+  sectionTabs.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      setActiveSection(btn.dataset.section || 'term');
     });
   });
 
@@ -334,6 +409,7 @@
   );
 
   readUrl();
+  updateTableHead();
   syncClear();
   apply(false);
 })();

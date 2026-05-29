@@ -2600,6 +2600,36 @@ a.q-hub-tab-label:hover {
   border-color: var(--ink);
   color: #fff;
 }
+.terms-idx-section-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.terms-idx-section-tab {
+  border: 1px solid var(--border);
+  background: var(--bg);
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-size: var(--fs-caption);
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--text2);
+}
+.terms-idx-section-tab:hover {
+  border-color: color-mix(in srgb, var(--ink) 25%, var(--border));
+  color: var(--ink);
+}
+.terms-idx-section-tab.on {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #fff;
+}
+.terms-idx-section-tab b {
+  margin-left: 6px;
+  font-size: 10px;
+  font-weight: 800;
+  opacity: 0.9;
+}
 .terms-idx-chip b {
   margin-left: 4px;
   font-size: 10px;

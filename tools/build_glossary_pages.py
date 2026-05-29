@@ -215,9 +215,17 @@ def split_semicolon(s: str) -> list[str]:
     return [x.strip() for x in (s or "").split(";") if x.strip()]
 
 
-TERMS_INDEX_CSS_VER = "20260525-responsive-h1"
-TERMS_INDEX_JS_VER = "20260521-terms-snippet"
+TERMS_INDEX_CSS_VER = "20260529-sections"
+TERMS_INDEX_JS_VER = "20260529-sections"
 TERMS_INDEX_SEARCH_PLACEHOLDER = "例：ストレスチェック、ラインケア、うつ病…"
+
+# 用語一覧の4区分（id, 表示名, 第1列見出し, 第3列見出し）
+TERMS_INDEX_SECTIONS: tuple[tuple[str, str, str, str], ...] = (
+    ("term", "用語解説", "用語", "定義"),
+    ("compare", "比較・整理表", "項目", "概要"),
+    ("numbers", "数値・期限早見表", "項目", "概要"),
+    ("mistakes", "よくある誤答", "項目", "概要"),
+)
 
 # CSV enrich 時の分野テンプレ（一覧の定義抜粋には出さない）
 _GENERIC_SNIPPET_SUFFIXES = (
@@ -258,6 +266,53 @@ def _is_generic_index_snippet(text: str, term: str) -> bool:
     if not t or not term or not t.startswith(term):
         return False
     return any(t.endswith(suffix) for suffix in _GENERIC_SNIPPET_SUFFIXES)
+
+
+def terms_index_summary(entry: dict) -> str:
+    """比較・数値・誤答タブ用の概要（記事サマリの抜粋）。"""
+    raw = (
+        (entry.get("summary_body") or "").strip()
+        or (entry.get("article_lead") or "").strip()
+        or (entry.get("short_def") or "").strip()
+    )
+    if not raw:
+        return ""
+    raw = re.sub(r"^この記事で最初に押さえたいのは、次の一文です。", "", raw)
+    raw = re.sub(r"一言で言うと、[^。]+。", "", raw).strip()
+    parts: list[str] = []
+    length = 0
+    for part in re.split(r"(?<=[。！？])", raw):
+        part = part.strip()
+        if not part:
+            continue
+        if length + len(part) > 220 and parts:
+            break
+        parts.append(part)
+        length += len(part)
+        if length >= 140:
+            break
+    summary = "".join(parts).strip()
+    if len(summary) > 220:
+        summary = summary[:219].rstrip() + "…"
+    return summary
+
+
+def terms_index_sections(entry: dict) -> list[str]:
+    """一覧タブへの掲載区分。用語解説は全件、他は内容に応じて追加。"""
+    sections = ["term"]
+    term = (entry.get("term") or "").strip()
+    slug = (entry.get("slug_file") or "").lower()
+    body = entry.get("term_detail_body") or ""
+    expl = entry.get("explanation") or ""
+    exam_points = entry.get("exam_points") or ""
+
+    if "比較" in term or "hikaku" in slug or ("／" in term and len(term) > 6):
+        sections.append("compare")
+    if "押さえる数値" in body:
+        sections.append("numbers")
+    if "→ 誤り" in expl or "→ 誤り" in exam_points or "誤り選択肢" in expl:
+        sections.append("mistakes")
+    return sections
 
 
 def terms_index_snippet(entry: dict) -> str:
@@ -303,7 +358,7 @@ def render_terms_index_tbody(entries: list[dict]) -> str:
             f"</div></td>"
             f'<td class="terms-idx-td-cat" data-label="分野"{href_attr}>'
             f'{html.escape(item.get("category") or "")}</td>'
-            f'<td class="terms-idx-td-snippet" data-label="定義（抜粋）"{href_attr}>'
+            f'<td class="terms-idx-td-snippet" data-label="定義"{href_attr}>'
             f"{short_def}</td>"
             "</tr>"
         )
@@ -313,10 +368,12 @@ def render_terms_index_tbody(entries: list[dict]) -> str:
 def terms_index_item_dict(entry: dict) -> dict:
     tags = parse_term_tags(entry.get("tags") or "")
     snippet = terms_index_snippet(entry)
+    summary = terms_index_summary(entry)
     search_bits = [
         entry["term"],
         entry.get("category") or "",
         snippet,
+        summary,
         *tags,
     ]
     return {
@@ -324,6 +381,9 @@ def terms_index_item_dict(entry: dict) -> dict:
         "category": entry.get("category") or "",
         "tags": tags,
         "shortDef": snippet,
+        "definition": snippet,
+        "summary": summary,
+        "sections": terms_index_sections(entry),
         "href": terms_index_href(entry["slug_file"]),
         "fieldHub": entry.get("field_hub") or "",
         "search": " ".join(x for x in search_bits if x),
@@ -1099,6 +1159,11 @@ def build_terms_index(entries: list[dict], base_url: str) -> str:
     n_terms = len(entries)
     n_cats = len(cat_keys)
 
+    section_counts = {sec_id: 0 for sec_id, *_ in TERMS_INDEX_SECTIONS}
+    for e in entries:
+        for sec_id in terms_index_sections(e):
+            section_counts[sec_id] = section_counts.get(sec_id, 0) + 1
+
     seo_links: list[str] = []
     for cat in cat_keys:
         for e in by_cat[cat]:
@@ -1124,6 +1189,20 @@ def build_terms_index(entries: list[dict], base_url: str) -> str:
             f"{html.escape(cat)}<b>{count}</b></button>"
         )
     chips_html = "\n".join(chip_lines)
+
+    section_tab_lines: list[str] = []
+    for i, (sec_id, label, *_rest) in enumerate(TERMS_INDEX_SECTIONS):
+        count = section_counts.get(sec_id, 0)
+        selected = "true" if i == 0 else "false"
+        on_cls = " on" if i == 0 else ""
+        section_tab_lines.append(
+            "    "
+            f'<button type="button" class="terms-idx-section-tab{on_cls}" role="tab" '
+            f'data-section="{html.escape(sec_id, quote=True)}" '
+            f'aria-selected="{selected}" id="terms-idx-tab-{html.escape(sec_id, quote=True)}">'
+            f"{html.escape(label)}<b>{count}</b></button>"
+        )
+    section_tabs_html = "\n".join(section_tab_lines)
 
     list_items_ld: list[dict] = []
     pos = 1
@@ -1151,6 +1230,13 @@ def build_terms_index(entries: list[dict], base_url: str) -> str:
         [terms_index_item_dict(e) for e in entries], ensure_ascii=False
     )
     tbody_html = render_terms_index_tbody(entries)
+    sections_meta = json.dumps(
+        [
+            {"id": sec_id, "label": label, "itemCol": item_col, "detailCol": detail_col}
+            for sec_id, label, item_col, detail_col in TERMS_INDEX_SECTIONS
+        ],
+        ensure_ascii=False,
+    )
 
     idx_path = Path("terms/index.html")
     terms_header = site_page_header(idx_path, current="terms", wide=True)
@@ -1160,12 +1246,12 @@ def build_terms_index(entries: list[dict], base_url: str) -> str:
     canonical = public_url(base_url, "terms/index.html")
     title = f"用語解説｜{brand_name()}（{exam_name()}）"
     desc = (
-        f"{exam_name()}の重要用語を一覧し、各用語の解説記事へリンクします。"
+        f"{exam_name()}の重要用語・比較表・数値早見・よくある誤答を一覧し、各解説記事へリンクします。"
         "分野別に整理し、検索と絞り込みで目的の語句を探せます。"
     )
     lead = (
-        f"{exam_name()}の試験で押さえたい重要用語を、分野別にまとめています。"
-        "検索と分野の絞り込みで目的の用語を探し、各解説記事で意味や試験での使い方を確認できます。"
+        f"{exam_name()}の試験対策用語を、用語解説・比較整理表・数値期限早見・よくある誤答の4種類で探せます。"
+        "検索と分野の絞り込みで絞り込み、各記事で詳しい解説を確認できます。"
     )
     return f"""<!DOCTYPE html>
 <html lang="ja">
@@ -1200,8 +1286,8 @@ def build_terms_index(entries: list[dict], base_url: str) -> str:
   <section class="terms-index-panel" aria-labelledby="terms-index-heading">
     <div class="terms-index-head">
       <div>
-        <h2 id="terms-index-heading">用語一覧</h2>
-        <p>全{n_terms}語・{n_cats}分野。キーワード検索と分野で絞り込めます。</p>
+        <h2 id="terms-index-heading">用語・整理表一覧</h2>
+        <p>全{n_terms}語・{n_cats}分野。種類の切替・キーワード検索・分野で絞り込めます。</p>
       </div>
     </div>
     <div class="terms-index-tools">
@@ -1212,6 +1298,9 @@ def build_terms_index(entries: list[dict], base_url: str) -> str:
       </label>
       <span id="terms-idx-hit" class="terms-index-hit" aria-live="polite">{n_terms} / {n_terms} 語</span>
       </div>
+      <div class="terms-idx-section-tabs" role="tablist" aria-label="一覧の種類">
+{section_tabs_html}
+      </div>
       <div class="terms-idx-chips" aria-label="分野フィルタ">
 {chips_html}
       </div>
@@ -1219,17 +1308,17 @@ def build_terms_index(entries: list[dict], base_url: str) -> str:
       <div class="terms-idx-active-filters hide" id="terms-idx-active-filters" aria-live="polite"></div>
     </div>
     <div class="terms-idx-empty-panel hide" id="terms-idx-empty" role="status" hidden>
-      <p class="terms-idx-empty-title">条件に一致する用語がありません</p>
+      <p class="terms-idx-empty-title">条件に一致する項目がありません</p>
       <p class="terms-idx-empty-hint">検索語を短くするか、分野を「すべて」に戻してお試しください。</p>
       <button type="button" class="terms-idx-reset" id="terms-idx-empty-reset">条件をクリア</button>
     </div>
     <div class="terms-idx-layout" aria-label="用語一覧">
       <div class="terms-idx-table-wrap">
         <table class="terms-idx-table">
-          <thead><tr>
+          <thead id="terms-idx-thead"><tr>
             <th scope="col" class="terms-idx-th-term">用語</th>
             <th scope="col" class="terms-idx-th-cat">分野</th>
-            <th scope="col" class="terms-idx-th-def">定義（抜粋）</th>
+            <th scope="col" class="terms-idx-th-def">定義</th>
           </tr></thead>
           <tbody id="terms-idx-flat-body">
 {tbody_html}
@@ -1245,6 +1334,7 @@ def build_terms_index(entries: list[dict], base_url: str) -> str:
 {terms_footer}
 {site_page_wrap_close()}
 <button type="button" class="terms-idx-top" id="terms-idx-top" aria-label="ページ上部へ">↑</button>
+<script type="application/json" id="terms-index-sections">{sections_meta}</script>
 <script type="application/json" id="terms-index-data">{json_data}</script>
 <script defer src="../site-terms-index.js?v={TERMS_INDEX_JS_VER}"></script>
 </body>
