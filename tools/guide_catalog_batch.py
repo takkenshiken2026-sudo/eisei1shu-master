@@ -73,6 +73,8 @@ GARBAGE_FAQ3 = re.compile(
     r"^[。\s]*(?:対象資格の最新情報に照合してください。[\s]*)+$"
 )
 
+SLUG_LEAK_IN_TITLE_RE = re.compile(r"[a-z]{2,}(?:-[a-z0-9]+)+")
+
 FIELD_SUFFIX_TOPIC = {
     "basics": "基礎の押さえ方",
     "frequent-topics": "頻出論点",
@@ -286,6 +288,72 @@ def title_has_exam(title: str) -> bool:
     return any(alias in t for alias in exam_title_aliases())
 
 
+def _parse_field_article_slug(slug: str) -> tuple[str, str] | None:
+    """field-{field_id}-{suffix} を分解。field_id は law-harm のようにハイフンを含む。"""
+    if not slug.startswith("field-"):
+        return None
+    rest = slug[len("field-") :]
+    field_ids = sorted(
+        (f["id"] for f in exam_fields() if f.get("id") and f["id"] != "guide"),
+        key=len,
+        reverse=True,
+    )
+    for fid in field_ids:
+        prefix = f"{fid}-"
+        if rest == fid:
+            return fid, ""
+        if rest.startswith(prefix):
+            suffix = rest[len(prefix) :]
+            if suffix:
+                return fid, suffix
+    return None
+
+
+def legacy_broken_field_topic(slug: str) -> str | None:
+    """旧 slug_topic（parts[1] + parts[2:]）が本文に残った英語フレーズ。"""
+    if not slug.startswith("field-"):
+        return None
+    parts = slug.split("-")
+    if len(parts) >= 3:
+        return f"{parts[1]}の{'-'.join(parts[2:])}"
+    return None
+
+
+def legacy_broken_field_english_label(slug: str) -> str | None:
+    """旧テンプレートが field_id・suffix をスペース区切り英語で埋め込んだフレーズ。"""
+    parsed = _parse_field_article_slug(slug)
+    if not parsed:
+        return None
+    field_id, suffix = parsed
+    label = field_id.replace("-", " ")
+    if suffix:
+        label = f"{label} {suffix.replace('-', ' ')}"
+    return label.strip()
+
+
+def legacy_broken_field_english_variants(slug: str) -> list[str]:
+    """旧 slug 分割で本文に混入しうるスペース区切り英語（長い順）。"""
+    if not slug.startswith("field-"):
+        return []
+    parts = slug.split("-")[1:]
+    variants: set[str] = set()
+    for start in range(len(parts)):
+        for end in range(start + 2, len(parts) + 1):
+            variants.add(" ".join(parts[start:end]))
+    single = legacy_broken_field_english_label(slug)
+    if single:
+        variants.add(single)
+    return sorted(variants, key=len, reverse=True)
+
+
+def field_name_for_slug(slug: str) -> str:
+    parsed = _parse_field_article_slug(slug)
+    if not parsed:
+        return ""
+    field_id, _ = parsed
+    return next((f["name"] for f in exam_fields() if f["id"] == field_id), field_id)
+
+
 def canonical_title(slug: str) -> str:
     return f"{title_exam_prefix()}の{slug_topic(slug)}"
 
@@ -317,6 +385,14 @@ def normalize_title(row: dict[str, str]) -> bool:
     if not slug:
         return False
     old = (row.get("title") or "").strip()
+    broken = legacy_broken_field_topic(slug)
+    if slug.startswith("field-") and (
+        (broken and broken in old) or SLUG_LEAK_IN_TITLE_RE.search(old)
+    ):
+        new_title = canonical_title(slug)
+        if new_title != old:
+            row["title"] = new_title
+            return True
     if not title_needs_exam_name(slug, old):
         return False
     if slug in SLUG_TITLE_TOPIC or slug.startswith("field-"):
@@ -327,13 +403,12 @@ def normalize_title(row: dict[str, str]) -> bool:
 
 
 def slug_topic(slug: str) -> str:
-    if slug.startswith("field-"):
-        parts = slug.split("-")
-        if len(parts) >= 3:
-            field_id = parts[1]
-            suffix = "-".join(parts[2:])
-            field_name = next((f["name"] for f in exam_fields() if f["id"] == field_id), field_id)
-            return f"{field_name}の{FIELD_SUFFIX_TOPIC.get(suffix, suffix)}"
+    parsed = _parse_field_article_slug(slug)
+    if parsed:
+        field_id, suffix = parsed
+        field_name = next((f["name"] for f in exam_fields() if f["id"] == field_id), field_id)
+        suffix_label = FIELD_SUFFIX_TOPIC.get(suffix, suffix.replace("-", "・"))
+        return f"{field_name}の{suffix_label}"
     if slug in SLUG_TITLE_TOPIC:
         return SLUG_TITLE_TOPIC[slug]
     mapping = {
@@ -357,6 +432,8 @@ def topic_from_row(row: dict[str, str]) -> str:
     slug = (row.get("slug") or "").strip()
     if slug in SLUG_TITLE_TOPIC:
         return SLUG_TITLE_TOPIC[slug]
+    if slug.startswith("field-"):
+        return slug_topic(slug)
     title = (row.get("title") or "").strip()
     if title and not placeholder_hits(title):
         t = re.sub(r"^【[^】]+】", "", title)
