@@ -25,7 +25,6 @@ def field_hub_page_exists(category: str) -> bool:
     hub = field_hub_slug(category)
     return (ROOT / "terms" / hub / "index.html").is_file()
 
-from tools.seo_body_markup import seo_section_body_html, strip_inline_seo_tables  # noqa: E402
 from tools.glossary_past_questions import (  # noqa: E402
     find_past_questions_for_term,
     past_questions_section_html,
@@ -159,7 +158,7 @@ def faq_items_html(items: list[dict[str, str]]) -> str:
     return "".join(
         '<details class="term-faq-item" open>'
         f'<summary>{html.escape(item["question"])}</summary>'
-        f'<div>{seo_section_body_html(strip_inline_seo_tables(item["answer"]))}</div>'
+        f'<div>{html.escape(item["answer"])}</div>'
         "</details>"
         for item in items
     )

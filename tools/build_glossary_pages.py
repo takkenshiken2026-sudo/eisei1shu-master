@@ -42,7 +42,7 @@ from tools.seo_utils import (
     robots_meta_for_slug,
 )
 from tools.term_diagram import diagram_body_html
-from tools.seo_body_markup import seo_section_body_html, strip_inline_seo_tables  # noqa: E402
+from tools.seo_body_markup import seo_section_body_html  # noqa: E402
 from tools.site_config import (
     brand_name,
     category_order,
@@ -1031,7 +1031,7 @@ def build_term_html(
       <span class="meta-updated">{meta_line}</span>
     </div>
     <h1 class="article-title">{html.escape(article_title or term + 'とは？意味・根拠・試験ポイントを整理')}</h1>
-    <p class="article-lead"><strong>{html.escape(term)}</strong>について、定義・根拠・試験での押さえ方をまとめます。{html.escape(strip_inline_seo_tables(article_lead or lead))}</p>
+    <p class="article-lead"><strong>{html.escape(term)}</strong>について、定義・根拠・試験での押さえ方をまとめます。{html.escape(article_lead or lead)}</p>
     {key_points_html}
     {toc_html}
     {quality_html}
