@@ -13,7 +13,15 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+from tools.guide_catalog_batch import SLUG_LEAK_IN_TITLE_RE, legacy_broken_field_topic  # noqa: E402
 from tools.seo_utils import is_noindex_html, is_sitemap_excluded_rel  # noqa: E402
+
+# field-eisei-harm-* を eisei + harm-* と誤分割した旧タイトル等
+FIELD_TOPIC_ENGLISH_LEAK = re.compile(
+    r"[a-z]{2,}の[a-z]{2,}(?:-[a-z0-9]+)+|"
+    r"試験の[a-z]{2,}(?:-[a-z0-9]+)+"
+)
+ARTICLE_SLUG_MARKER_RE = re.compile(r"（記事:[a-z0-9-]+）|（[a-z]{2,}(?:-[a-z0-9]+)+）")
 
 
 @dataclass
@@ -54,6 +62,35 @@ class GeneratedSeoValidator:
                 self.error(path, f"公開ページの表に {internal_row} を表示しないでください")
         if re.search(r'href="https://example\.com/?', text):
             self.warn(path, "本番サイトでは example.com の公式リンクを実URLに差し替えてください")
+
+    def validate_guide_english_leak(self, path: Path, text: str) -> None:
+        rel = path.relative_to(ROOT).as_posix()
+        if rel == "articles/index.html":
+            for m in re.finditer(r"<h2>([^<]+)</h2>", text):
+                headline = m.group(1)
+                if FIELD_TOPIC_ENGLISH_LEAK.search(headline) or SLUG_LEAK_IN_TITLE_RE.search(
+                    headline
+                ):
+                    self.error(
+                        path,
+                        f"試験ガイド一覧に英語スラッグが残っています: {headline[:80]}",
+                    )
+            return
+        if not path.match("articles/field-*/index.html"):
+            return
+        slug = path.parent.name
+        broken = legacy_broken_field_topic(slug)
+        if broken and broken in text:
+            self.error(path, f"旧英語トピック「{broken}」が本文に残っています")
+        m = re.search(r'<h1 class="article-title">([^<]+)</h1>', text)
+        if m:
+            title = m.group(1)
+            if (
+                (broken and broken in title)
+                or FIELD_TOPIC_ENGLISH_LEAK.search(title)
+                or SLUG_LEAK_IN_TITLE_RE.search(title)
+            ):
+                self.error(path, f"記事タイトルに英語スラッグが残っています: {title[:80]}")
 
     def validate_full_seo_page(self, path: Path, *, require_fact_checked: bool) -> None:
         text = self.text(path)
@@ -108,7 +145,12 @@ class GeneratedSeoValidator:
         if "quality-source-list" not in text:
             self.error(path, "主な参照元は quality-source-list のリストで表示してください")
 
+        if path.match("articles/*/index.html") and ARTICLE_SLUG_MARKER_RE.search(text):
+            m = ARTICLE_SLUG_MARKER_RE.search(text)
+            self.error(path, f"本文に内部 slug 参照が残っています: {m.group(0) if m else ''}")
+
         self.validate_common_leaks(path, text)
+        self.validate_guide_english_leak(path, text)
 
     def validate_hub_detail_page(self, path: Path) -> None:
         text = self.text(path)
@@ -130,6 +172,8 @@ class GeneratedSeoValidator:
         rel = path.relative_to(ROOT).as_posix()
         if is_sitemap_excluded_rel(rel) or is_noindex_html(path):
             return None
+        if path.match("articles/index.html"):
+            return "guide_index"
         if path.match("articles/*/index.html") and path.parent.name != "chapters":
             return "full"
         if path.match("terms/g-*.html"):
@@ -142,6 +186,7 @@ class GeneratedSeoValidator:
 
     def pages(self) -> list[Path]:
         patterns = (
+            "articles/index.html",
             "articles/*/index.html",
             "terms/g-*.html",
             "terms/compare/c-*.html",
@@ -165,6 +210,8 @@ class GeneratedSeoValidator:
             validated += 1
             if profile == "full":
                 self.validate_full_seo_page(path, require_fact_checked=True)
+            elif profile == "guide_index":
+                self.validate_guide_english_leak(path, self.text(path))
             elif profile == "term":
                 self.validate_full_seo_page(path, require_fact_checked=False)
             elif profile == "hub":

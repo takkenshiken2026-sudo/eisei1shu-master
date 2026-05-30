@@ -49,6 +49,9 @@ INTERNAL_TOKEN_RE = re.compile(
 )
 
 FIELD_SLUG_MARKER_RE = re.compile(r"（記事:field-[a-z0-9-]+）|（field-[a-z0-9-]+）")
+# 編集パイプラインが残した内部参照（field-* 以外の試験ガイド slug 含む）
+ARTICLE_SLUG_MARKER_RE = re.compile(r"（記事:[a-z0-9-]+）")
+SLUG_PAREN_RE_CACHE: dict[str, re.Pattern[str]] = {}
 
 USER_INTENT_TEMPLATE = re.compile(
     r"本記事を読むと、.+について、公式情報で確認すべき点と、このサイトでの学習の進め方が分かります。"
@@ -81,11 +84,22 @@ def clean_revision_note(text: str) -> str:
     return out
 
 
-def strip_field_slug_markers(text: str) -> str:
+def slug_paren_marker_re(slug: str) -> re.Pattern[str]:
+    if slug not in SLUG_PAREN_RE_CACHE:
+        SLUG_PAREN_RE_CACHE[slug] = re.compile(rf"（{re.escape(slug)}）")
+    return SLUG_PAREN_RE_CACHE[slug]
+
+
+def strip_article_slug_markers(text: str, slug: str = "") -> str:
     if not text:
         return text
-    out = FIELD_SLUG_MARKER_RE.sub("", text)
+    out = ARTICLE_SLUG_MARKER_RE.sub("", text)
+    out = FIELD_SLUG_MARKER_RE.sub("", out)
+    if slug:
+        out = slug_paren_marker_re(slug).sub("", out)
     out = re.sub(r"（記事:）", "", out)
+    out = re.sub(r"[ \t　]{2,}", " ", out)
+    out = re.sub(r"\n{3,}", "\n\n", out)
     return out
 
 
@@ -104,7 +118,7 @@ def replace_topic_phrases(text: str, slug: str, topic: str) -> str:
         out = out.replace(f"{eng_label}では", f"{field_name}では")
         out = out.replace(eng_label, field_name)
     out = out.replace("action_items", "行動チェックリスト")
-    return strip_field_slug_markers(out)
+    return strip_article_slug_markers(out, slug)
 
 
 def fix_user_intent(row: dict[str, str], topic: str) -> str:
@@ -122,19 +136,35 @@ def fix_meta_description(row: dict[str, str], topic: str) -> str:
     )[:165]
 
 
+def text_has_slug_marker(val: str, slug: str) -> bool:
+    if ARTICLE_SLUG_MARKER_RE.search(val) or FIELD_SLUG_MARKER_RE.search(val):
+        return True
+    if slug and f"（{slug}）" in val:
+        return True
+    return False
+
+
 def field_text_has_leak(val: str, slug: str, eng: str) -> bool:
     broken = legacy_broken_field_topic(slug)
     if (
         bool(INTERNAL_TOKEN_RE.search(val))
         or eng in val.lower()
         or (broken is not None and broken in val)
-        or FIELD_SLUG_MARKER_RE.search(val)
+        or text_has_slug_marker(val, slug)
     ):
         return True
     for eng_label in legacy_broken_field_english_variants(slug):
         if eng_label in val:
             return True
     return bool(re.search(r"[a-z]{2,}(?:\s+[a-z]{2,})+", val))
+
+
+def generic_text_has_leak(val: str, slug: str, eng: str) -> bool:
+    return (
+        bool(INTERNAL_TOKEN_RE.search(val))
+        or eng in val.lower()
+        or text_has_slug_marker(val, slug)
+    )
 
 
 def fix_row(row: dict[str, str]) -> bool:
@@ -157,19 +187,17 @@ def fix_row(row: dict[str, str]) -> bool:
         if not val:
             continue
 
+        cleaned = strip_article_slug_markers(replace_topic_phrases(val, slug, topic), slug)
+        if cleaned != val:
+            row[col] = cleaned
+            changed = True
+            val = cleaned
+
         has_leak = (
             field_text_has_leak(val, slug, eng)
             if is_field
-            else bool(INTERNAL_TOKEN_RE.search(val)) or eng in val.lower()
+            else generic_text_has_leak(val, slug, eng)
         )
-
-        if is_field:
-            cleaned = replace_topic_phrases(val, slug, topic)
-            if cleaned != val:
-                row[col] = cleaned
-                changed = True
-                val = cleaned
-                has_leak = field_text_has_leak(val, slug, eng)
 
         if col == "user_intent" and (has_leak or USER_INTENT_TEMPLATE.search(val)):
             new_val = fix_user_intent(row, topic)
