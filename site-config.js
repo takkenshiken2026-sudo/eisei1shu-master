@@ -106,7 +106,8 @@ window.SITE_CONFIG = {
       "aliases": [
         "関係法令（有害業務）",
         "関係法令",
-        "関係法令（有害業務に係るもの）"
+        "関係法令（有害業務に係るもの）",
+        "法令・制度"
       ],
       "legacyGlossaryCat": "law-harm"
     },
@@ -134,7 +135,8 @@ window.SITE_CONFIG = {
       "name": "労働衛生（有害以外）",
       "aliases": [
         "労働衛生（有害以外）",
-        "労働衛生（有害業務に係るもの以外のもの）"
+        "労働衛生（有害業務に係るもの以外のもの）",
+        "契約・実務"
       ],
       "legacyGlossaryCat": "eisei-other"
     },
@@ -142,7 +144,8 @@ window.SITE_CONFIG = {
       "id": "physio",
       "name": "労働生理",
       "aliases": [
-        "労働生理"
+        "労働生理",
+        "設備・その他"
       ],
       "legacyGlossaryCat": "physio"
     }

@@ -200,11 +200,23 @@
 
 ## 公開前コマンド
 
+内部参照・英語 slug の一括除去からビルドまで:
+
 ```bash
+python3 tools/run_public_text_cleanup.py
+```
+
+個別に実行する場合:
+
+```bash
+python3 tools/fix_guide_leaked_tokens.py
+python3 tools/guide_catalog_batch.py --fix-titles
+python3 tools/fix_hub_public_leaks.py --apply
 python3 tools/validate_csv.py
 python3 tools/audit_editorial_quality.py
 python3 tools/audit_glossary_article_quality.py   # 用語: 演習連動・定型検出
 python3 tools/build_all.py
+bash tools/prepare_public_site.sh   # ローカル public_site/ プレビュー用
 ```
 
 本番ゲート（WARN も失敗）:

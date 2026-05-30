@@ -16,7 +16,6 @@ if str(ROOT) not in sys.path:
 from tools.guide_catalog_batch import SLUG_LEAK_IN_TITLE_RE, legacy_broken_field_topic  # noqa: E402
 from tools.seo_utils import is_noindex_html, is_sitemap_excluded_rel  # noqa: E402
 
-# field-eisei-harm-* を eisei + harm-* と誤分割した旧タイトル等
 FIELD_TOPIC_ENGLISH_LEAK = re.compile(
     r"[a-z]{2,}の[a-z]{2,}(?:-[a-z0-9]+)+|"
     r"試験の[a-z]{2,}(?:-[a-z0-9]+)+"
@@ -77,6 +76,9 @@ class GeneratedSeoValidator:
                     )
             return
         if not path.match("articles/field-*/index.html"):
+            if path.match("articles/*/index.html") and ARTICLE_SLUG_MARKER_RE.search(text):
+                m = ARTICLE_SLUG_MARKER_RE.search(text)
+                self.error(path, f"本文に内部 slug 参照が残っています: {m.group(0) if m else ''}")
             return
         slug = path.parent.name
         broken = legacy_broken_field_topic(slug)
@@ -144,10 +146,6 @@ class GeneratedSeoValidator:
 
         if "quality-source-list" not in text:
             self.error(path, "主な参照元は quality-source-list のリストで表示してください")
-
-        if path.match("articles/*/index.html") and ARTICLE_SLUG_MARKER_RE.search(text):
-            m = ARTICLE_SLUG_MARKER_RE.search(text)
-            self.error(path, f"本文に内部 slug 参照が残っています: {m.group(0) if m else ''}")
 
         self.validate_common_leaks(path, text)
         self.validate_guide_english_leak(path, text)
