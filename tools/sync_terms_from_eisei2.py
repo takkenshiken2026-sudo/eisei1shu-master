@@ -84,7 +84,7 @@ def main() -> None:
         "--eisei2-root",
         type=Path,
         default=_EISEI2_DEFAULT,
-        help="eisei2shu-master のルート（既定: ~/Desktop/eisei2shu-master）",
+        help="eisei2shu-master のルート（既定: ~/Projects/eisei2shu-master）",
     )
     ap.add_argument("--dry-run", action="store_true", help="書き込まず件数のみ表示")
     args = ap.parse_args()
