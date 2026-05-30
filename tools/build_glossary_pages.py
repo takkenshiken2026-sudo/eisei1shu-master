@@ -16,7 +16,6 @@ import shutil
 import json
 import re
 import sys
-from datetime import date
 from pathlib import Path
 from xml.sax.saxutils import escape as xml_escape
 
@@ -35,10 +34,15 @@ from tools.html_footer import (
     site_page_wrap_open,
 )
 from tools.knowledge_hub_tabs import knowledge_hub_tab_hrefs, knowledge_hub_tabs_html
-from tools.seo_editorial_chrome import (  # noqa: E402
-    seo_editorial_head_fonts,
-    seo_editorial_stylesheet_links,
+from tools.seo_utils import (
+    content_date_from_row,
+    json_ld_date_modified,
+    latest_content_date,
+    meta_updated_html,
+    robots_meta_for_slug,
 )
+from tools.term_diagram import diagram_body_html
+from tools.seo_body_markup import seo_section_body_html  # noqa: E402
 from tools.site_config import (
     brand_name,
     category_order,
@@ -51,9 +55,11 @@ from tools.site_config import (
     primary_external_link,
 )
 
-HEAD_FONTS = """<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">"""
+from tools.seo_editorial_chrome import (  # noqa: E402
+    seo_editorial_article_class,
+    seo_editorial_head_fonts,
+    seo_editorial_stylesheet_links,
+)
 
 PRESERVED_TERM_SUBDIRS = frozenset({"compare", "numbers", "mistakes", "priority", "samples", "diagram-samples"})
 PRESERVED_TERM_HTML = frozenset({"index.html", "g-writing-sample.html", "g-diagram-sample.html"})
@@ -138,9 +144,17 @@ def term_alias_variants(term: str) -> set[str]:
     return {v for v in variants if v}
 
 
-def term_slug(term: str, used: dict[str, str]) -> str:
-    """用語名で安定したスラッグ。衝突時は連番を付与。"""
-    base = term.strip()
+def term_slug(term: str, reading: str | dict[str, str] = "", used: dict[str, str] | None = None) -> str:
+    """用語+読みで安定したスラッグ。衝突時は連番を付与。
+
+    テンプレ互換: term_slug(term, used_slugs) も可（reading 省略）。
+    """
+    if isinstance(reading, dict):
+        used = reading
+        reading = ""
+    if used is None:
+        used = {}
+    base = f"{term.strip()}|{str(reading).strip()}"
     h = hashlib.sha256(base.encode("utf-8")).hexdigest()[:16]
     s = f"g-{h}"
     if s not in used:
@@ -153,6 +167,7 @@ def term_slug(term: str, used: dict[str, str]) -> str:
             used[cand] = base
             return cand
         n += 1
+
 def slug_file_for_glossary_row(row: dict, used_slugs: dict[str, str]) -> str:
     """build_glossary_pages とハブ lookup で同一 slug を使う。"""
     term = norm(row.get("term"))
@@ -162,7 +177,8 @@ def slug_file_for_glossary_row(row: dict, used_slugs: dict[str, str]) -> str:
     if legacy_slug:
         slug_file = f"{legacy_slug}.html"
     else:
-        slug_file = term_slug(term, used_slugs) + ".html"
+        reading = norm(row.get("reading"))
+        slug_file = term_slug(term, reading, used_slugs) + ".html"
     used_slugs[slug_file] = term
     return slug_file
 
@@ -191,6 +207,7 @@ def rel_editorial_css(rel_file: Path) -> str:
     return seo_editorial_stylesheet_links(rel_file, site_pages_ver=TERMS_INDEX_CSS_VER)
 
 
+# 後方互換（他スクリプトが HEAD_FONTS を import する場合）
 HEAD_FONTS = seo_editorial_head_fonts()
 
 
@@ -226,8 +243,8 @@ def split_semicolon(s: str) -> list[str]:
     return [x.strip() for x in (s or "").split(";") if x.strip()]
 
 
-TERMS_INDEX_CSS_VER = "20260529-hub-columns"
-TERMS_INDEX_JS_VER = "20260529-hub-columns"
+TERMS_INDEX_CSS_VER = "20260524-terms-table-14px"
+TERMS_INDEX_JS_VER = "20260521-terms-snippet"
 TERMS_INDEX_SEARCH_PLACEHOLDER = "例：ストレスチェック、ラインケア、うつ病…"
 
 # CSV enrich 時の分野テンプレ（一覧の定義抜粋には出さない）
@@ -335,7 +352,6 @@ def terms_index_item_dict(entry: dict) -> dict:
         "category": entry.get("category") or "",
         "tags": tags,
         "shortDef": snippet,
-        "definition": snippet,
         "href": terms_index_href(entry["slug_file"]),
         "fieldHub": entry.get("field_hub") or "",
         "search": " ".join(x for x in search_bits if x),
@@ -461,19 +477,6 @@ GUIDE_LINK_FALLBACK_SLUGS = (
 )
 
 
-
-
-def multi_paragraph_html(value: str, css_class: str = "article-lead") -> str:
-    """改行2つ区切りで複数段落の HTML を返す。"""
-    text = norm(value)
-    if not text:
-        return ""
-    paras = [p.strip() for p in re.split(r"\n\s*\n", text) if p.strip()]
-    if len(paras) <= 1:
-        return f'<p class="{css_class}">{html.escape(text)}</p>'
-    return "".join(f'<p class="{css_class}">{html.escape(p)}</p>' for p in paras)
-
-
 def guide_related_link_items(
     category: str,
     guides: list[dict[str, str]],
@@ -518,7 +521,11 @@ def next_links_html(
     field_hub: str | None,
     category: str,
     guide_links: list[str],
+    *,
+    rel_path: Path,
 ) -> str:
+    from tools.internal_links import term_next_hub_links
+
     links = [
         '<a class="related-link" href="index.html">用語解説一覧へ戻る</a>',
     ]
@@ -527,6 +534,8 @@ def next_links_html(
             f'<a class="related-link" href="{html.escape(field_hub)}/index.html">'
             f"{html.escape(category)}の用語一覧</a>"
         )
+    for href, label in term_next_hub_links(rel_path):
+        links.append(f'<a class="related-link" href="{html.escape(href)}">{html.escape(label)}</a>')
     links.append(f'<a class="related-link" href="{html.escape(root_idx)}#past">過去問演習で確認する</a>')
     links.extend(guide_links)
     return (
@@ -544,31 +553,15 @@ def related_terms_html(
     entries: list[dict],
     limit: int = 6,
 ) -> str:
-    items: list[str] = []
-    seen: set[str] = set()
-    for label in split_semicolon(related):
-        href = term_lookup.get(label) or term_lookup.get(lookup_key(label))
-        if href and href not in seen:
-            seen.add(href)
-            items.append(f'<a class="related-link" href="{html.escape(href)}">{html.escape(label)}</a>')
-        elif label and label not in {e["term"] for e in entries}:
-            items.append(f'<span class="related-link related-link-static">{html.escape(label)}</span>')
-    if len(items) < 2:
-        category = current.get("category") or ""
-        for e in entries:
-            if e["slug_file"] == current.get("slug_file"):
-                continue
-            if category and e.get("category") != category:
-                continue
-            href = e["slug_file"]
-            if href in seen:
-                continue
-            seen.add(href)
-            items.append(f'<a class="related-link" href="{html.escape(href)}">{html.escape(e["term"])}</a>')
-            if len(items) >= limit:
-                break
-    if not items:
-        return ""
+    from tools.internal_links import collect_related_term_link_items
+
+    items = collect_related_term_link_items(
+        related,
+        term_lookup,
+        entries=entries,
+        current=current,
+        limit=limit,
+    )
     return "".join(items)
 
 
@@ -598,17 +591,9 @@ def faq_items_for_term(term: str, short_def: str, definition: str, explanation: 
 
 
 def faq_section_html(items: list[dict[str, str]]) -> str:
-    if not items:
-        return ""
-    body = []
-    for item in items:
-        body.append(
-            '<details class="term-faq-item" open>'
-            f'<summary>{html.escape(item["question"])}</summary>'
-            f'<div>{html.escape(item["answer"])}</div>'
-            "</details>"
-        )
-    return "".join(body)
+    from tools.knowledge_hub_seo import faq_items_html
+
+    return faq_items_html(items)
 
 
 def custom_faq_items(entry: dict, fallback: list[dict[str, str]]) -> list[dict[str, str]]:
@@ -621,14 +606,22 @@ def custom_faq_items(entry: dict, fallback: list[dict[str, str]]) -> list[dict[s
     return items or fallback
 
 
+def multi_paragraph_html(value: str, css_class: str = "article-lead") -> str:
+    """改行2つ区切りで複数段落の HTML を返す。"""
+    text = norm(value)
+    if not text:
+        return ""
+    paras = [p.strip() for p in re.split(r"\n\s*\n", text) if p.strip()]
+    if len(paras) <= 1:
+        return f'<p class="{css_class}">{html.escape(text)}</p>'
+    return "".join(f'<p class="{css_class}">{html.escape(p)}</p>' for p in paras)
+
+
 def semicolon_list_html(value: str) -> str:
     items = split_semicolon(value)
     if not items:
         return ""
     return '<ol class="term-point-list">' + "".join(f"<li>{html.escape(item)}</li>" for item in items) + "</ol>"
-
-
-
 
 
 def semicolon_field_html(value: str) -> str:
@@ -640,6 +633,35 @@ def semicolon_field_html(value: str) -> str:
     return ""
 
 
+def peer_comparison_table_html(
+    term: str,
+    related: str,
+    by_term: dict[str, dict],
+) -> str:
+    peer_names = [x for x in split_semicolon(related) if x and x != term][:4]
+    if len(peer_names) < 2:
+        return ""
+    rows: list[tuple[str, str]] = [(term, by_term.get(term, {}).get("short_def") or "—")]
+    for name in peer_names:
+        snippet = by_term.get(name, {}).get("short_def") or "関連用語ページで定義を確認"
+        rows.append((name, snippet))
+    body = "".join(
+        "<tr>"
+        f"<th>{html.escape(label)}</th>"
+        f"<td>{html.escape(snippet.rstrip('。'))}</td>"
+        "</tr>"
+        for label, snippet in rows
+    )
+    return (
+        '<h3 class="term-subheading">混同しやすい用語との違い（一覧）</h3>'
+        '<table class="seo-info-table term-compare-table"><thead><tr>'
+        "<th>用語</th><th>押さえる要点</th>"
+        "</tr></thead><tbody>"
+        f"{body}</tbody></table>"
+        '<p class="term-compare-note">数値・手続の正誤は演習と公式テキストで必ず確認してください。</p>'
+    )
+
+
 def build_term_html(
     entry: dict,
     rel_path: Path,
@@ -647,6 +669,8 @@ def build_term_html(
     term_lookup: dict[str, str],
     entries: list[dict],
     guides: list[dict[str, str]],
+    *,
+    by_term: dict[str, dict] | None = None,
 ) -> str:
     term = entry["term"]
     category = entry["category"]
@@ -664,7 +688,6 @@ def build_term_html(
     exam_points = norm(entry.get("exam_points"))
     common_mistakes = norm(entry.get("common_mistakes"))
     memory_tip = norm(entry.get("memory_tip"))
-    summary_body = norm(entry.get("summary_body"))
     example_question = norm(entry.get("example_question"))
     example_answer = norm(entry.get("example_answer"))
 
@@ -675,7 +698,6 @@ def build_term_html(
     canonical = public_url(base_url, f"terms/{slug_file}")
     root_idx = rel_to_root(rel_path)
     css_links = rel_editorial_css(rel_path)
-    theme_href = rel_theme_css(rel_path)
 
     tags_list = split_semicolon(tags)
     field_hub = entry.get("field_hub") or ""
@@ -685,29 +707,7 @@ def build_term_html(
     guide_links = guide_related_link_items(category, guides)
 
     def text_paragraphs(body: str) -> str:
-        if not body.strip():
-            return ""
-        paras = [p.strip() for p in re.split(r"\n{2,}", body.strip()) if p.strip()]
-        if not paras:
-            paras = [body.strip()]
-        return "\n".join(f"<p>{html.escape(p).replace(chr(10), '<br>')}</p>" for p in paras)
-
-    def rich_body_html(body: str) -> str:
-        """本文段落。手作り生成の <table> はそのまま出力する。"""
-        if not body.strip():
-            return ""
-        paras = [p.strip() for p in re.split(r"\n{2,}", body.strip()) if p.strip()]
-        if not paras:
-            paras = [body.strip()]
-        chunks: list[str] = []
-        for p in paras:
-            if p.lstrip().startswith("<table"):
-                chunks.append(p)
-            else:
-                chunks.append(
-                    f"<p>{html.escape(p).replace(chr(10), '<br>')}</p>"
-                )
-        return "\n".join(chunks)
+        return seo_section_body_html(body)
 
     def article_section(sec_id: str, label: str, body_html: str, number: int | None = None) -> str:
         if not body_html.strip():
@@ -715,6 +715,8 @@ def build_term_html(
         hid = f"term-sec-{sec_id}"
         num_html = f'<span class="section-heading-num">{number}</span>' if number is not None else ""
         section_class = "seo-article-section term-definition-section" if sec_id == "definition" else "seo-article-section"
+        if sec_id == "diagram":
+            section_class = "seo-article-section term-diagram-section"
         return (
             f'<section class="{section_class}" aria-labelledby="{hid}">'
             f'<h2 id="{hid}">{num_html}{html.escape(label)}</h2>'
@@ -767,16 +769,17 @@ def build_term_html(
     points_html = glossary_exam_points_body_html(entry)
     if not points_html and points:
         points_html = hub_prose_html([p for p in points])
-    detail_html = rich_body_html(term_detail_body or definition)
-    mistakes_html = text_paragraphs(common_mistakes)
-    if memory_tip:
-        mem_paras = [p.strip() for p in re.split(r"\n{2,}|\n", memory_tip.strip()) if p.strip()]
-        memory_html = "".join(
-            f"<p>{html.escape(p)}</p>" for p in mem_paras
-        )
-    else:
-        memory_html = ""
-    summary_html = text_paragraphs(summary_body) if summary_body else text_paragraphs(short_def)
+    entries_by_term = by_term or {e["term"]: e for e in entries}
+    compare_html = peer_comparison_table_html(term, related, entries_by_term)
+    detail_html = text_paragraphs(term_detail_body or definition)
+    if compare_html:
+        detail_html = (detail_html + compare_html) if detail_html else compare_html
+    diagram_id = norm(entry.get("diagram_id"))
+    diagram_html = diagram_body_html(diagram_id) if diagram_id else ""
+    mistakes_html = glossary_mistakes_body_html(entry)
+    if not mistakes_html and common_mistakes:
+        mistakes_html = text_paragraphs(common_mistakes)
+    memory_html = glossary_memory_body_html(entry)
     example_html = ""
     if example_question or example_answer:
         example_html = (
@@ -786,6 +789,25 @@ def build_term_html(
         )
     faq_items = custom_faq_items(entry, faq_items_for_term(term, short_def, definition, explanation))
     faq_html = faq_section_html(faq_items)
+
+    key_points_source = split_semicolon(exam_points)[:5]
+    if not key_points_source:
+        key_points_source = points[:3]
+    if not key_points_source:
+        key_points_source = [
+            f"{term}の定義と位置づけを確認する",
+            "試験で問われやすい条件や表現を整理する",
+            "頻出の誤り選択肢や混同しやすい点を復習する",
+        ]
+    if not any("過去問" in item for item in key_points_source):
+        key_points_source = [*key_points_source, "関連する用語解説や過去問へ進む"]
+    from tools.knowledge_hub_seo import seo_key_points_box_html
+
+    key_points_intro = f"この記事では、{term}の意味と試験での見方を、問題の解説に沿って整理します。"
+    key_points_html = seo_key_points_box_html(
+        key_points_source[:5],
+        intro=key_points_intro,
+    )
 
     badge_html = glossary_field_badge_html(category)
     meta_bits: list[str] = ['<span class="q-id">用語</span>']
@@ -810,7 +832,8 @@ def build_term_html(
         **knowledge_hub_tab_hrefs(here="terms"),
     )
 
-    updated = date.today().isoformat()
+    updated = content_date_from_row(entry)
+    robots_meta = robots_meta_for_slug(slug_file)
 
     quality_html = (
         '<section class="seo-quality-panel" aria-labelledby="quality-panel-title">'
@@ -818,8 +841,9 @@ def build_term_html(
         '<table class="seo-info-table"><tbody>'
         f"<tr><th>執筆</th><td>{html.escape(brand_name())}編集部（学習用語、過去問の復習導線、試験ガイドを整理する編集チーム）</td></tr>"
         f"<tr><th>確認</th><td>{html.escape(brand_name())}編集部（公開前に公式情報、法令情報、サイト内の関連ページとの整合性を確認）</td></tr>"
-        f"<tr><th>事実確認日</th><td>{html.escape(updated)}</td></tr>"
     )
+    if updated:
+        quality_html += f"<tr><th>事実確認日</th><td>{html.escape(updated)}</td></tr>"
 
     official_links = external_links() or [primary_external_link()]
     quality_source_items = "".join(
@@ -844,47 +868,53 @@ def build_term_html(
         "</p></blockquote></section>"
     )
 
-    key_points_source = split_semicolon(exam_points)[:5]
-    if not key_points_source:
-        key_points_source = points[:3]
-    if not key_points_source:
-        key_points_source = [
-            f"{term}の定義と位置づけを確認する",
-            "試験で問われやすい条件や表現を整理する",
-            "頻出の誤り選択肢や混同しやすい点を復習する",
-        ]
-    if not any("過去問" in item for item in key_points_source):
-        key_points_source = [*key_points_source, "関連する用語解説や過去問へ進む"]
-    from tools.knowledge_hub_seo import seo_key_points_box_html
-
-    key_points_intro = f"この記事では、{term}の意味と試験での見方を、問題の解説に沿って整理します。"
-    key_points_html = seo_key_points_box_html(
-        key_points_source[:5],
-        intro=key_points_intro,
-    )
-
     content_sections: list[str] = []
     body_toc_items: list[tuple[str, str]] = []
-    for sec_id, label, body_html in [
-        ("summary", "まず押さえる要点", summary_html),
+    section_plan: list[tuple[str, str, str]] = [
+        ("summary", "まず押さえる要点", text_paragraphs(short_def)),
         ("points", "試験で押さえるポイント", points_html),
         ("definition", "定義と基本理解", detail_html),
-        ("legal", "法令・根拠", legal_basis_html(legal)),
-        ("exam", "選択肢で問われやすい点", text_paragraphs(explanation)),
-        ("mistakes", "よくある誤解・注意点", mistakes_html),
-        ("memory", "覚え方・整理のコツ", memory_html),
-        ("example", "例題で確認", example_html),
-    ]:
+    ]
+    if diagram_html:
+        section_plan.append(("diagram", "図解で理解する", diagram_html))
+    section_plan.extend(
+        [
+            ("legal", "法令・根拠", legal_basis_html(legal)),
+            ("exam", "選択肢で問われやすい点", text_paragraphs(explanation)),
+            ("mistakes", "よくある誤解・注意点", mistakes_html),
+            ("memory", "覚え方・整理のコツ", memory_html),
+            ("example", "例題で確認", example_html),
+        ]
+    )
+    for sec_id, label, body_html in section_plan:
         html_text = article_section(sec_id, label, body_html, len(content_sections) + 1)
         if html_text:
             content_sections.append(html_text)
             body_toc_items.append((f"term-sec-{sec_id}", label))
     content_sections_html = "\n    ".join(content_sections)
 
+    from tools.glossary_past_questions import find_past_questions_for_term, past_questions_section_html
+
+    past_hits = find_past_questions_for_term(
+        term,
+        related_terms=related,
+        legal_basis=legal,
+        limit=3,
+    )
+    past_section = past_questions_section_html(
+        past_hits,
+        rel_path,
+        section_num=len(content_sections) + 1,
+    )
+    if past_section:
+        content_sections_html = (
+            f"{content_sections_html}\n    {past_section}" if content_sections_html else past_section
+        )
+        body_toc_items.append(("term-past-title", "関連する過去問"))
+
     toc_items: list[tuple[str, str]] = [
         ("key-points-title", "この記事の要点"),
         ("quality-panel-title", "この記事の信頼性について"),
-        
         *body_toc_items,
         ("term-sec-faq", "よくある質問"),
         ("article-info-title", "記事の基本情報"),
@@ -900,7 +930,7 @@ def build_term_html(
         f"<ol>{toc_links}</ol></nav>"
     )
 
-    next_links = next_links_html(root_idx, field_hub or None, category, guide_links)
+    next_links = next_links_html(root_idx, field_hub or None, category, guide_links, rel_path=rel_path)
 
     official_links_ld = external_links() or [primary_external_link()]
     defined_term: dict = {
@@ -910,7 +940,7 @@ def build_term_html(
         "description": desc,
         "url": canonical,
         "inDefinedTermSet": public_url(base_url, "terms/index.html"),
-        "dateModified": updated,
+        **json_ld_date_modified(updated),
     }
     if category:
         defined_term["category"] = category
@@ -943,7 +973,7 @@ def build_term_html(
             "name": title,
             "description": desc,
             "inLanguage": "ja-JP",
-            "dateModified": updated,
+            **json_ld_date_modified(updated),
             "mainEntity": {"@id": canonical + "#term"},
         },
         {"@type": "BreadcrumbList", "itemListElement": breadcrumb_items},
@@ -972,7 +1002,7 @@ def build_term_html(
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(desc)}">
-{ROBOTS_INDEX_FOLLOW}
+{robots_meta}
 <link rel="canonical" href="{html.escape(canonical)}">
 <meta property="og:type" content="article">
 <meta property="og:title" content="{html.escape(title)}">
@@ -982,9 +1012,8 @@ def build_term_html(
 <script type="application/ld+json">
 {json.dumps(json_ld, ensure_ascii=False, indent=2)}
 </script>
-{HEAD_FONTS}
+{seo_editorial_head_fonts()}
 {css_links}
-<link rel="stylesheet" href="{html.escape(theme_href)}">
 </head>
 <body class="{shell_body_class('term-article-page')}">
 {site_page_wrap_open()}
@@ -992,19 +1021,19 @@ def build_term_html(
 <main class="seo-article-main">
   {page_breadcrumb}
   {hub_tabs}
-  <article class="seo-article-card article-body">
+  <article class="{seo_editorial_article_class()}">
     <div class="article-meta">
       <span class="meta-category">用語解説</span>
-      <span class="meta-updated">更新日：{html.escape(updated)}</span>
+      {meta_updated_html(updated)}
       <span class="meta-updated">{meta_line}</span>
     </div>
     <h1 class="article-title">{html.escape(article_title or term + 'とは？意味・根拠・試験ポイントを整理')}</h1>
     <p class="article-lead"><strong>{html.escape(term)}</strong>について、定義・根拠・試験での押さえ方をまとめます。{html.escape(article_lead or lead)}</p>
-    {toc_html}
     {key_points_html}
+    {toc_html}
     {quality_html}
     {content_sections_html}
-    {article_section("faq", "よくある質問", faq_html)}
+    {article_section("faq", "よくある質問", faq_html, len(content_sections) + 1) if faq_html else ""}
     {info_table}
     {official_html}
     {rel_section}
@@ -1026,7 +1055,7 @@ def build_field_hub_html(
     base_url: str,
 ) -> str:
     rel_path = Path("terms") / field_slug / "index.html"
-    updated = date.today().isoformat()
+    updated = latest_content_date(cat_entries)
     canonical = public_url(base_url, f"terms/{field_slug}/index.html")
     title = f"{category}の用語一覧｜{brand_name()}（{exam_name()}）"
     desc = meta_description(
@@ -1046,7 +1075,7 @@ def build_field_hub_html(
     page_breadcrumb = breadcrumb_html(rel_path, crumb_items)
     page_footer = site_page_footer(rel_path, current="terms")
     hub_tabs = knowledge_hub_tabs_html(
-        current="terms",
+        current="field",
         **knowledge_hub_tab_hrefs(here="field"),
     )
     ld = {
@@ -1058,7 +1087,7 @@ def build_field_hub_html(
                 "name": title,
                 "description": desc,
                 "url": canonical,
-                "dateModified": updated,
+                **json_ld_date_modified(updated),
                 "inLanguage": "ja-JP",
             },
             {
@@ -1320,8 +1349,8 @@ def sync_index_glossary_slug_map(entries: list[dict]) -> None:
 def load_glossary_rows() -> list[dict]:
     if not GLOSSARY_CSV.is_file():
         raise FileNotFoundError(str(GLOSSARY_CSV))
-    with GLOSSARY_CSV.open(encoding="utf-8-sig", newline="") as f:
-        return list(csv.DictReader(f))
+    text = GLOSSARY_CSV.read_text(encoding="utf-8-sig")
+    return list(csv.DictReader(text.splitlines()))
 
 
 def load_glossary_entries(*, strict: bool = True) -> list[dict]:
@@ -1344,7 +1373,8 @@ def load_glossary_entries(*, strict: bool = True) -> list[dict]:
                 raise ValueError(f"line {i}: slug が重複しています: {legacy_slug}")
             used_slugs[slug_file] = term
         else:
-            slug_file = term_slug(term, used_slugs) + ".html"
+            reading = norm(row.get("reading"))
+            slug_file = term_slug(term, reading, used_slugs) + ".html"
         entries.append(
             {
                 "term": term,
@@ -1372,10 +1402,12 @@ def load_glossary_entries(*, strict: bool = True) -> list[dict]:
                 "faq_3_answer": norm(row.get("faq_3_answer")),
                 "faq_4_question": norm(row.get("faq_4_question")),
                 "faq_4_answer": norm(row.get("faq_4_answer")),
+                "diagram_id": norm(row.get("diagram_id")),
                 "slug_file": slug_file,
                 "field_hub": field_hub_slug(norm(row.get("category"))),
                 "fact_checked_at": norm(row.get("fact_checked_at")),
                 "last_reviewed_at": norm(row.get("last_reviewed_at")),
+                "source_checked_at": norm(row.get("source_checked_at")),
             }
         )
     return entries
@@ -1391,6 +1423,7 @@ def main() -> int:
 
     entries = load_glossary_entries()
     term_lookup = make_term_lookup(entries)
+    entries_by_term = {e["term"]: e for e in entries}
     guides = load_guide_slugs()
 
     TERMS_DIR.mkdir(parents=True, exist_ok=True)
@@ -1405,7 +1438,12 @@ def main() -> int:
         out_file = TERMS_DIR / e["slug_file"]
         rel_path = out_file.relative_to(ROOT)
         out_file.parent.mkdir(parents=True, exist_ok=True)
-        out_file.write_text(build_term_html(e, rel_path, base, term_lookup, entries, guides), encoding="utf-8")
+        out_file.write_text(
+            build_term_html(
+                e, rel_path, base, term_lookup, entries, guides, by_term=entries_by_term
+            ),
+            encoding="utf-8",
+        )
 
     by_cat: dict[str, list[dict]] = {}
     for e in entries:
@@ -1422,6 +1460,24 @@ def main() -> int:
         hub_count += 1
 
     (TERMS_DIR / "index.html").write_text(build_terms_index(entries, base), encoding="utf-8")
+
+    from tools.build_compare_pages import build_all as build_compare_pages
+    from tools.build_numbers_mistakes_pages import build_all as build_numbers_mistakes_pages
+
+    build_compare_pages(base_url=base)
+    build_numbers_mistakes_pages(base_url=base)
+
+    from tools.build_priority_pages import build_all as build_priority_redirects
+
+    build_priority_redirects()
+
+    from tools.build_knowledge_hub_sample_pages import build_all as build_knowledge_hub_samples
+
+    build_knowledge_hub_samples(base_url=base)
+
+    from tools.build_term_diagram_sample_pages import build_all as build_term_diagram_samples
+
+    build_term_diagram_samples(base_url=base)
 
     write_glossary_article_slug_map(entries)
     sync_index_glossary_slug_map(entries)
