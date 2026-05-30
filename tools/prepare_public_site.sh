@@ -6,9 +6,6 @@ OUT="$ROOT/public_site"
 rm -rf "$OUT"
 mkdir -p "$OUT"
 cd "$ROOT"
-if [[ -f "$ROOT/tools/bundle_spa_data_js.py" ]]; then
-  python3 "$ROOT/tools/bundle_spa_data_js.py"
-fi
 for f in \
   index.html \
   about.html \
@@ -25,7 +22,6 @@ for f in \
   site-priority-index.js \
   site-analytics.js \
   CNAME \
-  _headers \
   robots.txt \
   sitemap.xml \
   .nojekyll \
@@ -45,27 +41,32 @@ for d in articles q terms; do
     cp -R "$ROOT/$d" "$OUT/"
   fi
 done
-if [[ -d "$ROOT/images" ]]; then
-  cp -R "$ROOT/images" "$OUT/"
-fi
 # サイト固有 SPA データ（eisei1 / eisei2 など）。無ければスキップ。
-if [[ -f "$ROOT/eisei1-data-bundle.js" ]]; then
-  cp "$ROOT/eisei1-data-bundle.js" "$OUT/"
-fi
 for f in eisei1-*.js eisei2-*.js; do
-  if [[ -f "$ROOT/$f" ]] && [[ "$f" != "eisei1-data-bundle.js" ]]; then
+  if [[ -f "$ROOT/$f" ]]; then
     cp "$ROOT/$f" "$OUT/"
   fi
 done
 if [[ -f "$ROOT/privacy-terms.html" ]]; then
   cp "$ROOT/privacy-terms.html" "$OUT/"
 fi
+# SPA トップ（index.html）用。CSS/JS を index から分離したサイト向け。
+for f in site-spa.css site-spa-fields.js; do
+  if [[ -f "$ROOT/$f" ]]; then
+    cp "$ROOT/$f" "$OUT/"
+  fi
+done
 if [[ -f "$ROOT/docs/glossary-article-slugs.json" ]]; then
   mkdir -p "$OUT/docs"
   cp "$ROOT/docs/glossary-article-slugs.json" "$OUT/docs/"
 fi
-if [[ -f "$OUT/index.html" ]] && [[ -f "$ROOT/tools/inject_spa_asset_version.py" ]]; then
-  TARGET="$OUT/index.html" python3 "$ROOT/tools/inject_spa_asset_version.py"
-fi
 n="$(find "$OUT" -type f | wc -l | tr -d ' ')"
+if grep -q 'site-spa.css' "$OUT/index.html" 2>/dev/null && [[ ! -f "$OUT/site-spa.css" ]]; then
+  echo "prepare_public_site.sh: index.html が site-spa.css を参照していますが public_site にありません。" >&2
+  exit 1
+fi
+if grep -q 'site-spa-fields.js' "$OUT/index.html" 2>/dev/null && [[ ! -f "$OUT/site-spa-fields.js" ]]; then
+  echo "prepare_public_site.sh: index.html が site-spa-fields.js を参照していますが public_site にありません。" >&2
+  exit 1
+fi
 echo "prepare_public_site.sh: $OUT に $n ファイルを配置しました。"

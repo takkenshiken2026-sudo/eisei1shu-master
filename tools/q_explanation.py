@@ -398,27 +398,6 @@ def build_choice_commentary(page: dict, row: dict) -> list[tuple[int, str, str]]
     return items
 
 
-def correct_section_heading(page: dict, row: dict) -> str:
-    stem = norm(page.get("stem_plain") or page.get("stem") or row.get("stem"))
-    if question_ask_mode(stem) == "least_appropriate":
-        return "正答の解説"
-    return "正解の理由"
-
-
-def least_appropriate_framing(page: dict, row: dict) -> str:
-    """「誤っているもの」形式で、正答肢＝誤記述である旨を先に示す。"""
-    stem = norm(page.get("stem_plain") or page.get("stem") or row.get("stem"))
-    if question_ask_mode(stem) != "least_appropriate":
-        return ""
-    correct = page.get("correct")
-    if not correct:
-        return ""
-    return (
-        f"本問は「誤っているもの」を選ぶ形式です。"
-        f"（{correct}）の記述内容が誤っているため、正答は（{correct}）です。"
-    )
-
-
 def build_explanation_html(page: dict, row: dict) -> str:
     base = norm(row.get("explanation")) or "（解説は未入力です。）"
     if page.get("is_invalidated") or page.get("correct") is None:
@@ -440,14 +419,10 @@ def build_explanation_html(page: dict, row: dict) -> str:
     correct = page.get("correct")
     if correct and not page.get("is_invalidated"):
         opt_text = page["opts"][correct - 1] if 1 <= correct <= len(page["opts"]) else ""
-        section_h = correct_section_heading(page, row)
         parts.append(
             '<section class="q-exp-section" aria-labelledby="q-exp-correct-h">'
-            f'<h3 id="q-exp-correct-h" class="q-exp-h3">{html.escape(section_h)}</h3>'
+            '<h3 id="q-exp-correct-h" class="q-exp-h3">正解の理由</h3>'
         )
-        framing = least_appropriate_framing(page, row)
-        if framing:
-            parts.append(f'<p class="q-exp-mode-note">{text_to_html(framing)}</p>')
         if correct_body:
             parts.append(f"<p>{text_to_html(correct_body)}</p>")
         if opt_text:
