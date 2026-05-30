@@ -27,6 +27,8 @@ FORBIDDEN_SNIPPETS: list[tuple[str, str]] = [
     ("guide_articles.csv", "CSV運用の説明"),
     ("related_terms に", "CSV列名の説明（FAQ・本文）"),
     ("term_detail_body、", "CSV列名の説明"),
+    ("&lt;table class=&quot;seo-info-table", "本文にエスケープされた table タグ（CSV の生 HTML を除去）"),
+    ('<table class="seo-info-table"><thead><tr><th>観点</th>', "定義本文中の重複テンプレ表（CSV から除去）"),
 ]
 
 ARTICLE_INDEX_FORBIDDEN = [

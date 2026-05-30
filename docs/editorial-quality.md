@@ -212,6 +212,7 @@ python3 tools/run_public_text_cleanup.py
 python3 tools/fix_guide_leaked_tokens.py
 python3 tools/guide_catalog_batch.py --fix-titles
 python3 tools/fix_hub_public_leaks.py --apply
+python3 tools/strip_glossary_inline_html_tables.py   # 用語 CSV 内の生 <table> 除去
 python3 tools/validate_csv.py
 python3 tools/audit_editorial_quality.py
 python3 tools/audit_glossary_article_quality.py   # 用語: 演習連動・定型検出

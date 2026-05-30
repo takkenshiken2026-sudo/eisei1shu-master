@@ -73,6 +73,11 @@ def main() -> int:
         [py, "tools/fix_hub_public_leaks.py"] + (["--dry-run"] if args.dry_run else ["--apply"]),
         dry_run=False,
     )
+    run_cmd(
+        [py, "tools/strip_glossary_inline_html_tables.py"]
+        + (["--dry-run"] if args.dry_run else []),
+        dry_run=False,
+    )
 
     after = audit_guide_csv()
     print("guide_articles.csv leak rows (after):", {k: v for k, v in after.items() if v})

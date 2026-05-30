@@ -24,6 +24,14 @@ _GENERIC_ENUM = re.compile(
     r"(?:です|。|であり|と)",
 )
 
+# CSV 本文に混入した <table class="seo-info-table">…</table>（エスケープされて露出する）
+INLINE_SEO_TABLE_RE = re.compile(
+    r'<table\s+class=["\']seo-info-table(?:\s+term-compare-table)?["\'][^>]*>.*?</table>',
+    re.IGNORECASE | re.DOTALL,
+)
+_DANGEROUS_TAG_RE = re.compile(r"<(script|iframe|object|embed|style|link)\b", re.IGNORECASE)
+_CELL_RE = re.compile(r"<t([hd])[^>]*>(.*?)</t\1>", re.IGNORECASE | re.DOTALL)
+
 
 def split_semicolon(value: str) -> list[str]:
     return [x.strip() for x in (value or "").split(";") if x.strip()]
@@ -108,6 +116,85 @@ def inject_comma_sentence_list(text: str) -> str:
     return "\n\n".join(out)
 
 
+def strip_inline_seo_tables(text: str) -> str:
+    """本文中の seo-info-table ブロックを除去（重複テンプレ表・エスケープ露出防止）。"""
+    if not text or "<table" not in text.lower():
+        return text
+    out = INLINE_SEO_TABLE_RE.sub("", text)
+    return re.sub(r"\n{3,}", "\n\n", out).strip()
+
+
+def _cell_plain(html_fragment: str) -> str:
+    plain = re.sub(r"<[^>]+>", "", html_fragment)
+    return html.unescape(plain).strip()
+
+
+def inline_seo_table_to_html(fragment: str) -> str:
+    """許可タグのみで表を再構築（CSV 由来の属性・不正タグを落とす）。"""
+    if _DANGEROUS_TAG_RE.search(fragment):
+        return ""
+    rows: list[list[tuple[str, str]]] = []
+    for tr in re.finditer(r"<tr[^>]*>(.*?)</tr>", fragment, re.IGNORECASE | re.DOTALL):
+        cells: list[tuple[str, str]] = []
+        for m in _CELL_RE.finditer(tr.group(1)):
+            tag = m.group(1).lower()
+            text = _cell_plain(m.group(2))
+            if text:
+                cells.append((tag, text))
+        if cells:
+            rows.append(cells)
+    if not rows:
+        return ""
+    thead = ""
+    tbody_rows: list[str] = []
+    first = rows[0]
+    if first and all(tag == "th" for tag, _ in first):
+        thead = (
+            "<thead><tr>"
+            + "".join(f"<th>{html.escape(label)}</th>" for _, label in first)
+            + "</tr></thead>"
+        )
+        data_rows = rows[1:]
+    else:
+        data_rows = rows
+    for cells in data_rows:
+        tbody_rows.append(
+            "<tr>"
+            + "".join(
+                (
+                    f"<th>{html.escape(text)}</th>"
+                    if tag == "th"
+                    else f"<td>{html.escape(text)}</td>"
+                )
+                for tag, text in cells
+            )
+            + "</tr>"
+        )
+    if not thead and not tbody_rows:
+        return ""
+    body = "".join(tbody_rows)
+    return (
+        '<table class="seo-info-table">'
+        f"{thead}<tbody>{body}</tbody></table>"
+    )
+
+
+def _split_text_and_tables(text: str) -> list[tuple[str, str]]:
+    """('text'|'table', chunk) の順序付き分割。"""
+    if not text:
+        return []
+    parts: list[tuple[str, str]] = []
+    last = 0
+    for match in INLINE_SEO_TABLE_RE.finditer(text):
+        if match.start() > last:
+            parts.append(("text", text[last : match.start()]))
+        parts.append(("table", match.group(0)))
+        last = match.end()
+    if last < len(text):
+        parts.append(("text", text[last:]))
+    return parts or [("text", text)]
+
+
 def inject_enumeration_lists(text: str) -> str:
     """既存 CSV 本文から列挙句を検出し `- ` 行のブロックを挿入する。"""
     if not text.strip() or "\n-" in text:
@@ -171,6 +258,21 @@ def _render_block(
     )
 
 
+def _seo_plain_body_html(
+    text: str,
+    *,
+    term_hrefs: dict[str, str] | None = None,
+    linked_terms: set[str] | None = None,
+) -> str:
+    body = inject_enumeration_lists(text.strip())
+    if not body:
+        return ""
+    blocks = [b.strip() for b in re.split(r"\n{2,}", body) if b.strip()] or [body]
+    return "".join(
+        _render_block(block, term_hrefs=term_hrefs, linked_terms=linked_terms) for block in blocks
+    )
+
+
 def seo_section_body_html(
     text: str,
     *,
@@ -178,12 +280,21 @@ def seo_section_body_html(
     term_hrefs: dict[str, str] | None = None,
     linked_terms: set[str] | None = None,
 ) -> str:
-    """セクション本文 HTML。`- ` 行・`;` 区切り・`###` 小見出しに対応。"""
+    """セクション本文 HTML。`- ` 行・`;` 区切り・`###` 小見出し・埋め込み seo-info-table に対応。"""
     body = (transform(text) if transform else text).strip()
     if not body:
         return ""
-    body = inject_enumeration_lists(body)
-    blocks = [b.strip() for b in re.split(r"\n{2,}", body) if b.strip()] or [body]
-    return "".join(
-        _render_block(block, term_hrefs=term_hrefs, linked_terms=linked_terms) for block in blocks
-    )
+    segments = _split_text_and_tables(body)
+    out: list[str] = []
+    for kind, chunk in segments:
+        if kind == "table":
+            table_html = inline_seo_table_to_html(chunk)
+            if table_html:
+                out.append(table_html)
+            continue
+        rendered = _seo_plain_body_html(
+            chunk, term_hrefs=term_hrefs, linked_terms=linked_terms
+        )
+        if rendered:
+            out.append(rendered)
+    return "".join(out)
