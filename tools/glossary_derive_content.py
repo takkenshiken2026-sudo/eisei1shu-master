@@ -96,36 +96,31 @@ def derive_positive_exam_points(
     core = sd
     if "とは、" in core:
         core = core.split("とは、", 1)[1]
-    core = core.strip().lstrip("「").rstrip("」").rstrip("。")
-    for clause in re.split(r"、", core):
-        clause = clause.strip()
-        if len(clause) >= 8:
-            add(clause)
+    core = core.strip().lstrip("「").rstrip("」")
+    core = re.sub(r"です$", "", core).strip()
+    if core:
+        add(core)
 
-    nums: list[str] = []
-    for m in _NUM_VAL.finditer(text):
-        val = m.group(1) + m.group(2)
-        if val not in nums:
-            nums.append(val)
-    if nums:
-        add(f"数値・期限：{'、'.join(nums[:3])}")
+    first_norm = sd.replace(" ", "")
+    for sent in _sentences(text)[1:]:
+        s = sent.rstrip("。").strip()
+        if len(s) < 12:
+            continue
+        s_norm = s.replace(" ", "")
+        if s_norm in first_norm or first_norm in s_norm:
+            continue
+        add(s)
+        if len(pts) >= 3:
+            break
 
-    for law in re.findall(r"（([^）]*(?:法|令|則)[^）]{0,35})）", text):
-        add(f"根拠：{law.strip()}")
-        break
-    if legal:
-        first = legal.split(";")[0].strip()
-        if first and not any(first in p for p in pts):
-            add(f"根拠：{first}")
-
-    if category and len(pts) < 3:
+    if category and len(pts) < 2:
         add(f"{category}分野で定義・数値・主体を条文とセットで確認")
 
     if not pts:
         short = term.split("（")[0].strip()
         add(f"{short}の定義と条文上の要件を確認")
 
-    return _ep(*pts[:4])
+    return _ep(*pts[:3])
 
 
 def derive_exam_points(term: str, text: str, category: str = "") -> str:
