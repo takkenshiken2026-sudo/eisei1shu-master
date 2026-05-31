@@ -1,14 +1,1 @@
-hub_a,hub_b,kind,similarity,slug_a,slug_b,title_a,title_b
-comparisons.csv,mistakes.csv,similar,0.880,sekininsha-iinkai,anzen-sekinin-kongou,安全衛生責任者と委員会,安全衛生責任者と委員会の混同
-comparisons.csv,comparisons.csv,similar,0.889,organic-first-class-compare-s35,organic-first-class-mgmt-compare-s40,有機溶剤第一種管理の比較（基礎整理）,有機溶剤第一種管理の比較（深化整理）
-comparisons.csv,comparisons.csv,similar,0.889,organic-first-class-compare-s39,organic-first-class-mgmt-compare-s44,有機溶剤第一種管理の比較（横断総合）,有機溶剤第一種管理の比較（直前総合）
-numbers.csv,numbers.csv,similar,0.900,organic-first-class-num-s35,organic-first-class-mgmt-num-s40,有機溶剤第一種管理の数値整理（基礎整理）,有機溶剤第一種管理の数値整理（深化整理）
-numbers.csv,numbers.csv,similar,0.884,organic-first-class-num-s38,organic-first-class-mgmt-num-s43,有機溶剤第一種管理の数値整理（判例・ガイド）,有機溶剤第一種管理の数値整理（ガイド更新）
-numbers.csv,numbers.csv,similar,0.900,organic-first-class-num-s39,organic-first-class-mgmt-num-s44,有機溶剤第一種管理の数値整理（横断総合）,有機溶剤第一種管理の数値整理（直前総合）
-numbers.csv,numbers.csv,similar,0.889,tokuka-first-class-detail-num-s40,tokuka-first-class-detail-num-s42,特定化学物質第一類詳細の数値整理（深化整理）,特定化学物質第一類詳細の数値整理（頻出再整理）
-numbers.csv,numbers.csv,similar,0.884,lead-tetra-alkyl-ops-num-s40,lead-tetra-alkyl-ops-num-s42,鉛・四アルキル鉛運用の数値整理（深化整理）,鉛・四アルキル鉛運用の数値整理（頻出再整理）
-mistakes.csv,mistakes.csv,similar,0.900,organic-first-class-mis-s35,organic-first-class-mgmt-mis-s40,有機溶剤第一種管理の典型誤答（基礎整理）,有機溶剤第一種管理の典型誤答（深化整理）
-mistakes.csv,mistakes.csv,similar,0.884,organic-first-class-mis-s38,organic-first-class-mgmt-mis-s43,有機溶剤第一種管理の典型誤答（判例・ガイド）,有機溶剤第一種管理の典型誤答（ガイド更新）
-mistakes.csv,mistakes.csv,similar,0.900,organic-first-class-mis-s39,organic-first-class-mgmt-mis-s44,有機溶剤第一種管理の典型誤答（横断総合）,有機溶剤第一種管理の典型誤答（直前総合）
-mistakes.csv,mistakes.csv,similar,0.889,tokuka-first-class-detail-mis-s40,tokuka-first-class-detail-mis-s42,特定化学物質第一類詳細の典型誤答（深化整理）,特定化学物質第一類詳細の典型誤答（頻出再整理）
-mistakes.csv,mistakes.csv,similar,0.884,lead-tetra-alkyl-ops-mis-s40,lead-tetra-alkyl-ops-mis-s42,鉛・四アルキル鉛運用の典型誤答（深化整理）,鉛・四アルキル鉛運用の典型誤答（頻出再整理）
+
