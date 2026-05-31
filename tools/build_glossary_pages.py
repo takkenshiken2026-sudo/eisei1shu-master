@@ -865,7 +865,7 @@ def build_term_html(
 
     content_sections: list[str] = []
     body_toc_items: list[tuple[str, str]] = []
-    from tools.knowledge_hub_seo import glossary_summary_body_html
+    from tools.knowledge_hub_seo import glossary_summary_body_html, glossary_legal_body_html
 
     section_plan: list[tuple[str, str, str]] = [
         ("summary", "まず押さえる要点", glossary_summary_body_html(short_def)),
@@ -876,7 +876,7 @@ def build_term_html(
         section_plan.append(("diagram", "図解で理解する", diagram_html))
     section_plan.extend(
         [
-            ("legal", "法令・根拠", legal_basis_html(legal)),
+            ("legal", "法令・根拠", glossary_legal_body_html(entry)),
             ("exam", "選択肢で問われやすい点", text_paragraphs(explanation)),
             ("mistakes", "よくある誤解・注意点", mistakes_html),
             ("memory", "覚え方・整理のコツ", memory_html),
