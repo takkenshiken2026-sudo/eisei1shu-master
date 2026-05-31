@@ -78,6 +78,56 @@ def _wrong_number(val: str) -> str | None:
     return None
 
 
+def derive_positive_exam_points(
+    term: str, text: str, category: str = "", legal: str = ""
+) -> str:
+    """定義・根拠から正しい学習要点を生成（誤答パターンではない）。"""
+    pts: list[str] = []
+    seen: set[str] = set()
+
+    def add(p: str) -> None:
+        p = p.strip().rstrip("。")
+        if not p or p in seen or len(p) < 6:
+            return
+        seen.add(p)
+        pts.append(p)
+
+    sd = short_def_from(text, term).rstrip("。")
+    core = sd
+    if "とは、" in core:
+        core = core.split("とは、", 1)[1]
+    core = core.strip().lstrip("「").rstrip("」").rstrip("。")
+    for clause in re.split(r"、", core):
+        clause = clause.strip()
+        if len(clause) >= 8:
+            add(clause)
+
+    nums: list[str] = []
+    for m in _NUM_VAL.finditer(text):
+        val = m.group(1) + m.group(2)
+        if val not in nums:
+            nums.append(val)
+    if nums:
+        add(f"数値・期限：{'、'.join(nums[:3])}")
+
+    for law in re.findall(r"（([^）]*(?:法|令|則)[^）]{0,35})）", text):
+        add(f"根拠：{law.strip()}")
+        break
+    if legal:
+        first = legal.split(";")[0].strip()
+        if first and not any(first in p for p in pts):
+            add(f"根拠：{first}")
+
+    if category and len(pts) < 3:
+        add(f"{category}分野で定義・数値・主体を条文とセットで確認")
+
+    if not pts:
+        short = term.split("（")[0].strip()
+        add(f"{short}の定義と条文上の要件を確認")
+
+    return _ep(*pts[:4])
+
+
 def derive_exam_points(term: str, text: str, category: str = "") -> str:
     """定義文の事実から誤り選択肢パターンを最大5件生成。"""
     pts: list[str] = []
