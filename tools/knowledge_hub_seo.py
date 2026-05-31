@@ -923,27 +923,53 @@ def hub_faq_items_resolved(
     return rebuilt
 
 
-def glossary_exam_points_body_html(entry: dict) -> str:
-    """用語ページの試験ポイントを段落化（正しい学習要点のみ）。"""
+def glossary_exam_points_items(entry: dict) -> list[str]:
+    """section 2 用。exam_points を要点としてそのまま使う（汎用パディングなし）。"""
     term = _norm(entry.get("term"))
-    paras: list[str] = []
-    for item in glossary_key_points_items(entry):
-        if "過去問" in item and "用語解説" in item:
-            if term:
-                paras.append(
-                    f"{term}は、関連する過去問で定義と数値の入れ替えに注意して復習する。"
-                )
-            continue
-        text = item.rstrip("。")
+    short_def = _norm(entry.get("short_def"))
+    legal = _norm(entry.get("legal_basis"))
+    exam_points = split_semicolon(_norm(entry.get("exam_points")))
+
+    if exam_points and not any(
+        any(marker in item for marker in _MISTAKE_POINT_MARKERS) for item in exam_points
+    ):
+        items = [item.strip() for item in exam_points if len(item.strip()) >= 8][:4]
+    else:
+        items = []
+        core = short_def
+        if term:
+            quoted = f"「{term}」とは、"
+            if core.startswith(quoted):
+                core = core[len(quoted) :]
+            elif "とは、" in core:
+                core = core.split("とは、", 1)[1]
+        core = core.strip().lstrip("「").rstrip("。")
+        for clause in re.split(r"、", core):
+            clause = clause.strip()
+            if len(clause) >= 8:
+                items.append(clause)
+            if len(items) >= 3:
+                break
+
+    legal_first = split_semicolon(legal)[0].strip() if legal else ""
+    if legal_first and not any(legal_first in item for item in items):
+        items.append(f"根拠：{legal_first}")
+    return items[:5]
+
+
+def glossary_exam_points_body_html(entry: dict) -> str:
+    """用語ページの試験ポイント（exam_points を箇条書きでそのまま表示）。"""
+    items = glossary_exam_points_items(entry)
+    if not items:
+        return ""
+    lis: list[str] = []
+    for item in items:
+        text = item.rstrip("。").strip()
         if text.startswith("根拠："):
-            paras.append(f"{text}を条文とセットで確認する。")
-        elif len(text) >= 36 or text.endswith("）"):
-            paras.append(text + ("。" if not text.endswith("。") else ""))
-        elif term:
-            paras.append(f"{term}では、{text.rstrip('で')}を試験で押さえるポイントです。")
+            lis.append(f"{text}を条文とセットで確認する")
         else:
-            paras.append(text + "。")
-    return hub_prose_html(paras[:4])
+            lis.append(text)
+    return "<ul>" + "".join(f"<li>{html.escape(t)}</li>" for t in lis[:5]) + "</ul>"
 
 
 _DEFINITION_STRIP_RES = (
