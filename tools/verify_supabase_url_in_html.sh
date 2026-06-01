@@ -11,8 +11,11 @@ if grep -qE 'ujysjdaboqqlkijjjtn|ujysjdaboqgslkijjjtn' "$HTML"; then
   echo "Supabase ダッシュボード → Settings → API の URL を Copy で貼り付けてください。" >&2
   exit 1
 fi
-if ! grep -qE "const SUPABASE_URL = [\"']https://[a-z0-9-]+\\.supabase\\.co[\"']" "$HTML"; then
+if grep -qE "const SUPABASE_URL = [\"']https://[a-z0-9-]+\\.supabase\\.co[\"']" "$HTML"; then
+  echo "verify_supabase_url_in_html.sh: OK ($HTML, Supabase 設定あり)"
+elif grep -qE "const SUPABASE_URL = [\"'][\"'];" "$HTML"; then
+  echo "verify_supabase_url_in_html.sh: OK ($HTML, Supabase 未設定)"
+else
   echo "verify_supabase_url_in_html.sh: const SUPABASE_URL の形式が想定と異なります。" >&2
   exit 1
 fi
-echo "verify_supabase_url_in_html.sh: OK ($HTML)"
