@@ -66,6 +66,9 @@ if [[ -d "$ROOT/assets/brand" ]]; then
   mkdir -p "$OUT/assets"
   cp -R "$ROOT/assets/brand" "$OUT/assets/"
 fi
+if [[ -d "$ROOT/images" ]]; then
+  cp -R "$ROOT/images" "$OUT/"
+fi
 if [[ -f "$ROOT/favicon.ico" ]]; then
   cp "$ROOT/favicon.ico" "$OUT/favicon.ico"
 fi

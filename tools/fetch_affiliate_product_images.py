@@ -120,7 +120,7 @@ def fetch_product_image(product: dict, *, root: Path, force: bool) -> bool:
         if not image_url:
             asin = extract_asin(page_url)
             if asin:
-                image_url = f"https://m.media-amazon.com/images/P/{asin}.09._SL300_.jpg"
+                image_url = f"https://images-na.ssl-images-amazon.com/images/P/{asin}.09._SL500_.jpg"
     if not image_url:
         print(f"  skip: og:image 未取得 ({product.get('name')})")
         return False

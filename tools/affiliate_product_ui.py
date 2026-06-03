@@ -72,9 +72,7 @@ def image_href(rel_path: Path, image_file: str, *, site_root: Path) -> str | Non
         return None
     local = site_root / "images" / "affiliate" / name
     if local.is_file():
-        depth = len(rel_path.parent.parts)
-        prefix = "/".join([".."] * depth) + "/" if depth else ""
-        return f"{prefix}images/affiliate/{html.escape(name, quote=True)}"
+        return f"/images/affiliate/{html.escape(name, quote=True)}"
     image_url = norm(str(image_file))
     if image_url.lower().startswith(("http://", "https://")):
         return image_url

@@ -229,6 +229,23 @@ body.seo-editorial-preview-page .seo-editorial.seo-article-card {
   opacity: 1;
 }
 
+/* 本文中のアフィリエイト商品リンク（Amazon 等）は黒文字・通常ウェイト */
+.seo-editorial.seo-article-card .seo-article-section a[rel*="sponsored"],
+.seo-editorial.seo-article-card .term-faq-item a[rel*="sponsored"] {
+  color: var(--seo-text-body);
+  font-weight: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+  text-decoration-color: color-mix(in srgb, var(--seo-text-body) 35%, transparent);
+}
+
+.seo-editorial.seo-article-card .seo-article-section a[rel*="sponsored"]:hover,
+.seo-editorial.seo-article-card .term-faq-item a[rel*="sponsored"]:hover {
+  color: var(--seo-text-title);
+  text-decoration-color: var(--seo-text-title);
+}
+
 .seo-editorial.seo-article-card .seo-quality-panel .quality-source-list a {
   color: var(--seo-link-inline);
   font-weight: var(--seo-font-weight-heading);
