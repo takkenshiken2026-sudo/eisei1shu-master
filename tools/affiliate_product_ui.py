@@ -323,99 +323,89 @@ def affiliate_hub_toc_item(brief: dict[str, Any] | None) -> tuple[str, str] | No
     return ("affiliate-products", hub_title(brief))
 
 
-def key_points_thumb_html(
+def key_points_aside_cover_html(
     product: dict[str, Any],
     rel_path: Path,
     *,
     site_root: Path,
     brief: dict[str, Any] | None = None,
 ) -> str:
+    """要点ボックス右端用：1位商品の表紙のみ。"""
     offer_type = product_offer_type(product, brief)
     name = norm(str(product.get("name") or ""))
     image_file = norm(str(product.get("image_file") or ""))
     src = image_href(rel_path, image_file, site_root=site_root)
-    course_cls = " seo-key-points-thumb--course" if offer_type == "course" else ""
+    course_cls = " seo-key-points-aside-cover--course" if offer_type == "course" else ""
     alt = html.escape(f"{name} {'公式イメージ' if offer_type == 'course' else '表紙'}")
     if src:
+        inner = (
+            f'<img src="{html.escape(src)}" alt="{alt}" width="88" height="124" '
+            f'loading="lazy" decoding="async">'
+        )
+    else:
+        brand = norm(
+            str(
+                product.get("provider")
+                or product.get("publisher")
+                or product.get("brand")
+                or ("講座" if offer_type == "course" else "書籍")
+            )
+        )
+        short = html.escape(name[:16] + ("…" if len(name) > 16 else ""))
+        inner = (
+            f'<span class="seo-key-points-aside-placeholder-brand">{html.escape(brand[:10])}</span>'
+            f'<span class="seo-key-points-aside-placeholder-title">{short}</span>'
+        )
+        course_cls += " seo-key-points-aside-cover--placeholder"
+    url = product_affiliate_url(product)
+    cover = f'<span class="seo-key-points-aside-cover{course_cls}">{inner}</span>'
+    if is_affiliate_url(url):
         return (
-            f'<span class="seo-key-points-thumb seo-key-points-thumb--photo{course_cls}">'
-            f'<img src="{html.escape(src)}" alt="{alt}" width="72" height="100" loading="lazy" decoding="async">'
-            f"</span>"
+            f'<a class="seo-key-points-aside-link" href="{html.escape(url)}" '
+            f'target="_blank" rel="{EXTERNAL_REL}">{cover}</a>'
         )
-    brand = norm(
-        str(
-            product.get("provider")
-            or product.get("publisher")
-            or product.get("brand")
-            or ("講座" if offer_type == "course" else "書籍")
-        )
-    )
-    short = html.escape(name[:18] + ("…" if len(name) > 18 else ""))
-    return (
-        f'<span class="seo-key-points-thumb seo-key-points-thumb--placeholder{course_cls}" aria-hidden="true">'
-        f'<span class="seo-key-points-thumb-brand">{html.escape(brand[:12])}</span>'
-        f'<span class="seo-key-points-thumb-title">{short}</span>'
-        f"</span>"
-    )
+    return cover
 
 
 def affiliate_key_points_box_html(
     *,
     intro: str,
-    products: list[dict[str, Any]],
-    extras: list[str],
+    items: list[str],
+    highlight_product: dict[str, Any] | None,
     rel_path: Path,
     site_root: Path,
     brief: dict[str, Any] | None = None,
     title: str = "この記事の要点",
     heading_id: str = "key-points-title",
 ) -> str:
-    """商品比較アフィリエイト記事向け：要点ボックスに表紙サムネイルを差し込む。"""
+    """商品比較アフィリエイト記事向け：要点はテキストリスト、右端に代表表紙1枚。"""
     intro_text = intro.strip()
-    cleaned_extras = [item.strip() for item in extras if item and item.strip()]
-    if not products and not cleaned_extras and not intro_text:
+    cleaned_items = [item.strip() for item in items if item and item.strip()]
+    if not cleaned_items and not intro_text and not highlight_product:
         return ""
 
     intro_html = f"<p>{html.escape(intro_text)}</p>" if intro_text else ""
-    product_items: list[str] = []
-    for product in products[:3]:
-        name = norm(str(product.get("name") or ""))
-        if not name:
-            continue
-        url = product_affiliate_url(product)
-        thumb = key_points_thumb_html(product, rel_path, site_root=site_root, brief=brief)
-        name_html = html.escape(name)
-        if is_affiliate_url(url):
-            hit = (
-                f'<a class="seo-key-points-product-hit" href="{html.escape(url)}" '
-                f'target="_blank" rel="{EXTERNAL_REL}">'
-                f"{thumb}<span class=\"seo-key-points-product-name\">{name_html}</span></a>"
-            )
-        else:
-            hit = (
-                f'<span class="seo-key-points-product-hit seo-key-points-product-hit--static">'
-                f"{thumb}<span class=\"seo-key-points-product-name\">{name_html}</span></span>"
-            )
-        product_items.append(f"<li>{hit}</li>")
+    list_html = ""
+    if cleaned_items:
+        lis = "".join(f"<li>{html.escape(item)}</li>" for item in cleaned_items[:5])
+        list_html = f'<ul class="seo-key-points-list">{lis}</ul>'
 
-    product_grid = ""
-    if product_items:
-        product_grid = (
-            '<ul class="seo-key-points-product-list" aria-label="紹介商品">'
-            + "".join(product_items)
-            + "</ul>"
+    aside_html = ""
+    if highlight_product:
+        cover = key_points_aside_cover_html(
+            highlight_product, rel_path, site_root=site_root, brief=brief
         )
+        aside_html = f'<aside class="seo-key-points-aside" aria-label="代表商品">{cover}</aside>'
 
-    extras_html = ""
-    if cleaned_extras:
-        lis = "".join(f"<li>{html.escape(item)}</li>" for item in cleaned_extras[:5])
-        extras_html = f'<ul class="seo-key-points-list">{lis}</ul>'
-
-    modifier = " seo-key-points-box--affiliate" if product_items else ""
+    body_html = (
+        f'<div class="seo-key-points-body">{aside_html}'
+        f'<div class="seo-key-points-main">{intro_html}{list_html}</div></div>'
+    )
+    modifier = " seo-key-points-box--affiliate" if highlight_product else ""
     return (
         f'<section class="seo-key-points-box{modifier}" aria-labelledby="{html.escape(heading_id)}">'
         f'<h2 id="{html.escape(heading_id)}">{html.escape(title)}</h2>'
-        f"{intro_html}{product_grid}{extras_html}"
+        f"{body_html}"
         "</section>"
     )
 

@@ -318,13 +318,11 @@ def key_points_box_html(
     ):
         products = brief_products(affiliate_brief)[:3]
         if products:
-            product_names = {norm(str(p.get("name") or "")) for p in products}
             all_items = key_points_items(article, affiliate_brief=affiliate_brief)
-            extras = [x for x in all_items if x not in product_names]
             return affiliate_key_points_box_html(
                 intro=intro,
-                products=products,
-                extras=extras,
+                items=all_items,
+                highlight_product=products[0],
                 rel_path=rel_path,
                 site_root=site_root,
                 brief=affiliate_brief,

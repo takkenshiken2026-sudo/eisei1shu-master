@@ -431,61 +431,48 @@ body.seo-editorial-preview-page .seo-editorial .seo-article-section h2 .section-
   margin-bottom: 0;
 }
 
-/* アフィリエイト記事：要点ボックス内の商品サムネイル */
-.seo-editorial .seo-key-points-product-list {
-  list-style: none;
-  margin: 0.85rem 0 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.65rem;
+/* アフィリエイト記事：要点ボックス右端に代表表紙1枚 */
+.seo-editorial .seo-key-points-box--affiliate .seo-key-points-body {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  gap: 0.85rem;
+  margin-top: 0.35rem;
 }
 
-.seo-editorial .seo-key-points-product-hit {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.4rem;
-  text-align: center;
+.seo-editorial .seo-key-points-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.seo-editorial .seo-key-points-box--affiliate .seo-key-points-main p {
+  margin-top: 0;
+}
+
+.seo-editorial .seo-key-points-box--affiliate .seo-key-points-list {
+  margin-top: 0.65rem;
+}
+
+.seo-editorial .seo-key-points-aside {
+  flex-shrink: 0;
+  width: clamp(4.25rem, 16%, 5.5rem);
+  line-height: 0;
+}
+
+.seo-editorial .seo-key-points-aside-link {
+  display: block;
   text-decoration: none;
   color: inherit;
-  min-height: 100%;
 }
 
-.seo-editorial .seo-key-points-product-hit--static {
-  cursor: default;
-}
-
-.seo-editorial .seo-key-points-product-name {
+.seo-editorial .seo-key-points-aside-cover {
   display: block;
-  font-size: 0.8125rem;
-  line-height: 1.35;
-  color: var(--seo-text-body);
-  font-weight: var(--seo-font-weight-heading);
-}
-
-.seo-editorial a.seo-key-points-product-hit .seo-key-points-product-name {
-  text-decoration: underline;
-  text-decoration-thickness: 1.5px;
-  text-underline-offset: 0.15em;
-  text-decoration-color: color-mix(in srgb, var(--seo-link-inline) 45%, transparent);
-}
-
-.seo-editorial a.seo-key-points-product-hit:hover .seo-key-points-product-name {
-  color: var(--seo-accent);
-  text-decoration-color: var(--seo-accent);
-}
-
-.seo-editorial .seo-key-points-thumb {
-  display: block;
-  flex-shrink: 0;
-  width: clamp(3.25rem, 28%, 4.25rem);
   border-radius: 4px;
   overflow: hidden;
-  box-shadow: 0 1px 4px color-mix(in srgb, var(--seo-text-body) 12%, transparent);
+  box-shadow: 0 1px 5px color-mix(in srgb, var(--seo-text-body) 14%, transparent);
 }
 
-.seo-editorial .seo-key-points-thumb--photo img {
+.seo-editorial .seo-key-points-aside-cover img {
   display: block;
   width: 100%;
   height: auto;
@@ -493,60 +480,30 @@ body.seo-editorial-preview-page .seo-editorial .seo-article-section h2 .section-
   object-fit: cover;
 }
 
-.seo-editorial .seo-key-points-thumb--placeholder {
+.seo-editorial .seo-key-points-aside-cover--placeholder {
   aspect-ratio: 5 / 7;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.2rem;
-  padding: 0.35rem;
+  gap: 0.25rem;
+  padding: 0.4rem;
   background: color-mix(in srgb, var(--seo-callout-bg) 70%, #fff);
   border: 1px solid var(--seo-callout-border);
   font-size: 0.625rem;
   line-height: 1.25;
   color: var(--seo-text-muted);
+  text-align: center;
 }
 
-.seo-editorial .seo-key-points-thumb-brand {
+.seo-editorial .seo-key-points-aside-placeholder-brand {
   font-weight: var(--seo-font-weight-heading);
   color: var(--seo-callout-title);
 }
 
-.seo-editorial .seo-key-points-thumb-title {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-}
-
-.seo-editorial .seo-key-points-box--affiliate .seo-key-points-list {
-  margin-top: 0.75rem;
-  padding-top: 0.75rem;
-  border-top: 1px solid var(--seo-callout-border);
-}
-
 @media (max-width: 520px) {
-  .seo-editorial .seo-key-points-product-list {
-    grid-template-columns: 1fr;
-    gap: 0.55rem;
-  }
-
-  .seo-editorial .seo-key-points-product-hit {
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
-    gap: 0.65rem;
-  }
-
-  .seo-editorial .seo-key-points-thumb {
-    width: 3.25rem;
-  }
-
-  .seo-editorial .seo-key-points-product-name {
-    flex: 1;
-    font-size: 0.875rem;
+  .seo-editorial .seo-key-points-aside {
+    width: 3.75rem;
   }
 }
 
