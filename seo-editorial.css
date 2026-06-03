@@ -966,6 +966,57 @@ body.seo-editorial-preview-page .seo-editorial.seo-article-card .related-box-tit
   }
 }
 
+/* 書籍カード：縦1列。カード内は表紙左・本文右 */
+.seo-editorial.seo-article-card .affiliate-product-hub[data-comparison-kind="books"] .affiliate-product-grid {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.seo-editorial.seo-article-card .affiliate-product-hub[data-comparison-kind="books"] .affiliate-product-card-hit {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.seo-editorial.seo-article-card .affiliate-product-hub[data-comparison-kind="books"] .affiliate-product-card-rank {
+  flex: 0 0 100%;
+  width: 100%;
+}
+
+.seo-editorial.seo-article-card .affiliate-product-hub[data-comparison-kind="books"] .affiliate-product-cover {
+  width: 7.25rem;
+  max-width: 34%;
+  max-height: none;
+  margin: 0;
+  flex-shrink: 0;
+  border-right: 1px solid var(--seo-card-border);
+  border-bottom: none;
+}
+
+.seo-editorial.seo-article-card .affiliate-product-hub[data-comparison-kind="books"] .affiliate-product-card-body {
+  flex: 1;
+  min-width: 0;
+  padding: 0.85rem 1rem;
+}
+
+.seo-editorial.seo-article-card .affiliate-product-hub[data-comparison-kind="books"] .affiliate-product-card-body h3 {
+  font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+  .seo-editorial.seo-article-card .affiliate-product-hub[data-comparison-kind="books"] .affiliate-product-card-hit {
+    flex-direction: column;
+  }
+
+  .seo-editorial.seo-article-card .affiliate-product-hub[data-comparison-kind="books"] .affiliate-product-cover {
+    width: 100%;
+    max-width: none;
+    max-height: 168px;
+    border-right: none;
+    border-bottom: 1px solid var(--seo-card-border);
+  }
+}
+
 .seo-editorial.seo-article-card .affiliate-product-card {
   display: flex;
   flex-direction: column;
