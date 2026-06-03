@@ -158,17 +158,23 @@ def paragraphs(text: str) -> str:
     return seo_section_body_html(text, transform=apply_vars)
 
 
-def body_text_transform(affiliate_brief: dict | None = None):
-    """Apply site vars and optional affiliate product name → markdown links."""
-    from tools.affiliate_body_links import inject_affiliate_product_links  # noqa: E402
+def body_text_transform(affiliate_brief: dict | None = None, article: dict | None = None):
+    """Apply site vars, 「」括り、optional affiliate product name → markdown links."""
+    from tools.affiliate_body_links import prepare_affiliate_prose  # noqa: E402
     from tools.affiliate_brief import brief_has_product_comparison  # noqa: E402
+    from tools.affiliate_links import is_affiliate_article  # noqa: E402
 
     use_brief = brief_has_product_comparison(affiliate_brief) if affiliate_brief else False
 
     def transform(text: str) -> str:
         out = apply_vars(text)
-        if use_brief and affiliate_brief:
-            out = inject_affiliate_product_links(out, affiliate_brief, var_transform=apply_vars)
+        if article and is_affiliate_article(article):
+            out = prepare_affiliate_prose(
+                out,
+                brief=affiliate_brief if use_brief else None,
+                article=article,
+                apply_links=bool(use_brief and affiliate_brief),
+            )
         return out
 
     return transform
@@ -180,10 +186,11 @@ def list_or_paragraph(
     term_hrefs: dict[str, str] | None = None,
     linked_terms: set[str] | None = None,
     affiliate_brief: dict | None = None,
+    article: dict | None = None,
 ) -> str:
     return seo_section_body_html(
         text,
-        transform=body_text_transform(affiliate_brief),
+        transform=body_text_transform(affiliate_brief, article=article),
         term_hrefs=term_hrefs,
         linked_terms=linked_terms,
     )
@@ -233,7 +240,7 @@ def section_html(
     return (
         f'<section class="seo-article-section" aria-labelledby="{sid}">'
         f'<h2 id="{sid}"><span class="section-heading-num">{display_num}</span>{html.escape(heading)}</h2>'
-        f"{list_or_paragraph(body, term_hrefs=term_hrefs, linked_terms=linked_terms, affiliate_brief=affiliate_brief)}</section>"
+        f"{list_or_paragraph(body, term_hrefs=term_hrefs, linked_terms=linked_terms, affiliate_brief=affiliate_brief, article=article)}</section>"
     )
 
 
@@ -326,9 +333,16 @@ def key_points_box_html(
                 rel_path=rel_path,
                 site_root=site_root,
                 brief=affiliate_brief,
+                article=article,
             )
 
     items = key_points_items(article, affiliate_brief=affiliate_brief)
+    from tools.affiliate_body_links import affiliate_name_labels, wrap_affiliate_names_in_quotes  # noqa: E402
+    from tools.affiliate_links import is_affiliate_article  # noqa: E402
+
+    if is_affiliate_article(article):
+        labels = affiliate_name_labels(affiliate_brief, article)
+        items = [wrap_affiliate_names_in_quotes(item, labels) for item in items]
     return seo_key_points_box_html(items, intro=intro)
 
 
@@ -370,12 +384,19 @@ def toc_html(
     )
 
 
-def faq_items(article: dict[str, str]) -> list[dict[str, str]]:
+def faq_items(article: dict[str, str], *, brief: dict | None = None) -> list[dict[str, str]]:
+    from tools.affiliate_body_links import prepare_affiliate_prose  # noqa: E402
+    from tools.affiliate_links import is_affiliate_article  # noqa: E402
+
     items: list[dict[str, str]] = []
     slug = norm(article.get("slug"))
+    affiliate = is_affiliate_article(article)
     for idx in range(1, 4):
         q = apply_vars(article.get(f"faq_{idx}_question", ""))
         a = sanitize_guide_text(apply_vars(article.get(f"faq_{idx}_answer", "")), slug)
+        if affiliate:
+            q = prepare_affiliate_prose(q, brief=brief, article=article, apply_links=False)
+            a = prepare_affiliate_prose(a, brief=brief, article=article, apply_links=True)
         if q and a:
             items.append({"question": q, "answer": a})
     return items
@@ -554,7 +575,19 @@ def build_article_html(
     slug = article["slug"]
     rel_path = Path("articles") / slug / "index.html"
     title = apply_vars(article["title"])
+    from tools.affiliate_body_links import prepare_affiliate_prose  # noqa: E402
+    from tools.affiliate_brief import brief_has_product_comparison, load_affiliate_brief  # noqa: E402
+    from tools.affiliate_links import is_affiliate_article  # noqa: E402
+
+    brief = load_affiliate_brief(slug)
     lead_text = sanitize_guide_text(apply_vars(article.get("lead", "")), slug)
+    if is_affiliate_article(article):
+        lead_text = prepare_affiliate_prose(
+            lead_text,
+            brief=brief,
+            article=article,
+            apply_links=False,
+        )
     desc = meta_description(apply_vars(article.get("meta_description") or "") or lead_text or title)
     canonical = public_url(f"articles/{slug}/")
     updated = content_date_from_row(article)
@@ -562,10 +595,8 @@ def build_article_html(
     tags = split_semicolon(apply_vars(article.get("tags", "")))
     display_tags = public_display_tags(tags)
     linked_terms: set[str] = set()
-    from tools.affiliate_brief import brief_has_product_comparison, load_affiliate_brief  # noqa: E402
     from tools.affiliate_product_ui import affiliate_hub_toc_item, affiliate_product_hub_html  # noqa: E402
 
-    brief = load_affiliate_brief(slug)
     has_product_hub = brief_has_product_comparison(brief)
     affiliate_hub = ""
     toc_extra: dict[int, tuple[str, str]] | None = None
@@ -581,9 +612,9 @@ def build_article_html(
         linked_terms=linked_terms,
         affiliate_hub=affiliate_hub,
         affiliate_hub_after_section=hub_after_section,
-        affiliate_brief=brief if has_product_hub else None,
+        affiliate_brief=brief,
     )
-    faqs = faq_items(article)
+    faqs = faq_items(article, brief=brief)
     faq_section = faq_html(faqs, section_num=article_body_section_count(article) + 1) if faqs else ""
     toc = toc_html(
         article,

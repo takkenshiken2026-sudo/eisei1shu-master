@@ -375,12 +375,18 @@ def affiliate_key_points_box_html(
     rel_path: Path,
     site_root: Path,
     brief: dict[str, Any] | None = None,
+    article: dict[str, str] | None = None,
     title: str = "この記事の要点",
     heading_id: str = "key-points-title",
 ) -> str:
     """商品比較アフィリエイト記事向け：要点はテキストリスト、右端に代表表紙1枚。"""
     intro_text = intro.strip()
     cleaned_items = [item.strip() for item in items if item and item.strip()]
+    if article:
+        from tools.affiliate_body_links import affiliate_name_labels, wrap_affiliate_names_in_quotes
+
+        name_labels = affiliate_name_labels(brief, article)
+        cleaned_items = [wrap_affiliate_names_in_quotes(item, name_labels) for item in cleaned_items]
     if not cleaned_items and not intro_text and not highlight_product:
         return ""
 
