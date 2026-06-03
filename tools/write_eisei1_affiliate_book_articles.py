@@ -619,7 +619,7 @@ def patch_csv() -> None:
         row["user_intent"] = cfg["user_intent"]
         row["action_items"] = cfg["action_items"]
         row["revision_note"] = cfg["revision_note"]
-        row["fact_checked_at"] = "2026-06-02"
+        row["fact_checked_at"] = "2026-06-03"
         row["content_status"] = "published"
         row["related_links"] = cfg["related_links"]
         row["key_points"] = cfg["key_points"]
