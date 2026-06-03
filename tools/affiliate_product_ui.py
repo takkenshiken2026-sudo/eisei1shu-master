@@ -134,7 +134,7 @@ def meta_line(product: dict[str, Any], *, brief: dict[str, Any] | None = None) -
     if price:
         parts.append(f"<strong>{html.escape(price)}</strong>")
         note = norm(str(product.get("price_note") or ""))
-        if note:
+        if note and offer_type != "book":
             parts.append(f'<span class="affiliate-product-price-note">{html.escape(note)}</span>')
     if offer_type == "course":
         duration = norm(str(product.get("duration") or product.get("study_period") or ""))
@@ -147,17 +147,6 @@ def meta_line(product: dict[str, Any], *, brief: dict[str, Any] | None = None) -
         support = norm(str(product.get("support") or ""))
         if support:
             parts.append(html.escape(support))
-    else:
-        pages = norm(str(product.get("pages") or ""))
-        if pages:
-            pages_text = pages if pages.endswith("ページ") else f"{pages}ページ"
-            parts.append(html.escape(pages_text))
-        fmt = norm(str(product.get("format") or ""))
-        if fmt:
-            parts.append(html.escape(fmt))
-        edition = norm(str(product.get("edition") or ""))
-        if edition:
-            parts.append(html.escape(edition))
     if not parts:
         return ""
     return f'<p class="affiliate-product-meta">{" · ".join(parts)}</p>'
