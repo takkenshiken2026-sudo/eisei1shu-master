@@ -984,16 +984,16 @@ body.seo-editorial-preview-page .seo-editorial.seo-article-card .related-box-tit
 }
 
 .seo-editorial.seo-article-card .affiliate-product-hub[data-comparison-kind="books"] .affiliate-product-cover {
-  width: clamp(12rem, 44%, 17rem);
+  width: clamp(8.5rem, 26%, 10.5rem);
   max-width: none;
   max-height: none;
-  aspect-ratio: 2 / 3;
+  aspect-ratio: 3 / 4;
   margin: 0;
   flex-shrink: 0;
   align-self: stretch;
   border-right: 1px solid var(--seo-card-border);
   border-bottom: none;
-  padding: 0.65rem 0.75rem;
+  padding: 0.45rem 0.55rem;
 }
 
 .seo-editorial.seo-article-card .affiliate-product-hub[data-comparison-kind="books"] .affiliate-product-cover--photo img {
@@ -1020,9 +1020,9 @@ body.seo-editorial-preview-page .seo-editorial.seo-article-card .related-box-tit
   .seo-editorial.seo-article-card .affiliate-product-hub[data-comparison-kind="books"] .affiliate-product-cover {
     width: 100%;
     max-width: none;
-    aspect-ratio: 2 / 3;
-    max-height: 16.5rem;
-    padding: 0.75rem 1.25rem;
+    aspect-ratio: 3 / 4;
+    max-height: 11rem;
+    padding: 0.55rem 1rem;
     border-right: none;
     border-bottom: 1px solid var(--seo-card-border);
   }
