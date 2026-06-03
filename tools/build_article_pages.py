@@ -223,6 +223,10 @@ def section_html(
 ) -> str:
     heading = apply_vars(article.get(f"section_{idx}_heading", ""))
     body = resolve_guide_section_body(article, article.get(f"section_{idx}_body", ""))
+    from tools.affiliate_links import is_affiliate_skip_section
+
+    if is_affiliate_skip_section(article, heading):
+        return ""
     if not heading or not norm(body):
         return ""
     sid = f"article-sec-{idx}"
@@ -261,10 +265,25 @@ def sections_html(
     return "\n".join(sections)
 
 
-def key_points_items(article: dict[str, str]) -> list[str]:
+def key_points_items(
+    article: dict[str, str],
+    affiliate_brief: dict | None = None,
+) -> list[str]:
+    from tools.affiliate_brief import brief_has_product_comparison
+    from tools.affiliate_links import affiliate_product_key_points
+
+    if affiliate_brief and brief_has_product_comparison(affiliate_brief):
+        product_points = affiliate_product_key_points(affiliate_brief)
+        if product_points:
+            extras = split_semicolon(apply_vars(article.get("key_points", "")))
+            skip = {"この記事でわかること"}
+            extras = [x for x in extras if x and x not in skip and x not in product_points]
+            return (product_points + extras)[:5]
+
     explicit = split_semicolon(apply_vars(article.get("key_points", "")))
     if explicit:
-        return explicit[:5]
+        filtered = [x for x in explicit if x != "この記事でわかること"]
+        return (filtered or explicit)[:5]
     action = split_semicolon(apply_vars(article.get("action_items", "")))
     if action:
         return action[:5]
@@ -272,16 +291,46 @@ def key_points_items(article: dict[str, str]) -> list[str]:
     for idx in range(1, 9):
         heading = apply_vars(article.get(f"section_{idx}_heading", ""))
         body = norm(article.get(f"section_{idx}_body", ""))
-        if heading and body:
+        from tools.affiliate_links import is_affiliate_skip_section
+
+        if heading and body and not is_affiliate_skip_section(article, heading):
             from_headings.append(heading)
     return from_headings[:3]
 
 
-def key_points_box_html(article: dict[str, str]) -> str:
+def key_points_box_html(
+    article: dict[str, str],
+    *,
+    affiliate_brief: dict | None = None,
+    rel_path: Path | None = None,
+    site_root: Path | None = None,
+) -> str:
+    from tools.affiliate_brief import brief_has_product_comparison, brief_products
+    from tools.affiliate_product_ui import affiliate_key_points_box_html
     from tools.knowledge_hub_seo import seo_key_points_box_html
 
-    items = key_points_items(article)
     intro = apply_vars(article.get("user_intent", ""))
+    if (
+        affiliate_brief
+        and brief_has_product_comparison(affiliate_brief)
+        and rel_path is not None
+        and site_root is not None
+    ):
+        products = brief_products(affiliate_brief)[:3]
+        if products:
+            product_names = {norm(str(p.get("name") or "")) for p in products}
+            all_items = key_points_items(article, affiliate_brief=affiliate_brief)
+            extras = [x for x in all_items if x not in product_names]
+            return affiliate_key_points_box_html(
+                intro=intro,
+                products=products,
+                extras=extras,
+                rel_path=rel_path,
+                site_root=site_root,
+                brief=affiliate_brief,
+            )
+
+    items = key_points_items(article, affiliate_brief=affiliate_brief)
     return seo_key_points_box_html(items, intro=intro)
 
 
@@ -290,16 +339,21 @@ def toc_html(
     has_faq: bool,
     *,
     extra_after_section: dict[int, tuple[str, str]] | None = None,
+    affiliate_brief: dict | None = None,
 ) -> str:
+    from tools.affiliate_links import is_affiliate_skip_section
+
     items: list[tuple[str, str]] = []
-    if key_points_items(article) or norm(apply_vars(article.get("user_intent", ""))):
+    if key_points_items(article, affiliate_brief=affiliate_brief) or norm(
+        apply_vars(article.get("user_intent", ""))
+    ):
         items.append(("key-points-title", "この記事の要点"))
     items.append(("quality-panel-title", "この記事の信頼性について"))
     extras = extra_after_section or {}
     for idx in range(1, 9):
         heading = apply_vars(article.get(f"section_{idx}_heading", ""))
         body = norm(article.get(f"section_{idx}_body", ""))
-        if heading and body:
+        if heading and body and not is_affiliate_skip_section(article, heading):
             items.append((f"article-sec-{idx}", heading))
             extra = extras.get(idx)
             if extra:
@@ -336,11 +390,13 @@ def faq_html(items: list[dict[str, str]], *, section_num: int) -> str:
 
 
 def article_body_section_count(article: dict[str, str]) -> int:
+    from tools.affiliate_links import is_affiliate_skip_section
+
     count = 0
     for idx in range(1, 9):
         heading = apply_vars(article.get(f"section_{idx}_heading", ""))
         body = norm(article.get(f"section_{idx}_body", ""))
-        if heading and body:
+        if heading and body and not is_affiliate_skip_section(article, heading):
             count += 1
     return count
 
@@ -512,24 +568,37 @@ def build_article_html(
     from tools.affiliate_product_ui import affiliate_hub_toc_item, affiliate_product_hub_html  # noqa: E402
 
     brief = load_affiliate_brief(slug)
+    has_product_hub = brief_has_product_comparison(brief)
     affiliate_hub = ""
     toc_extra: dict[int, tuple[str, str]] | None = None
-    if brief_has_product_comparison(brief):
+    hub_after_section = 1 if has_product_hub else 2
+    if has_product_hub:
         affiliate_hub = affiliate_product_hub_html(brief, rel_path, site_root=ROOT)
         hub_toc = affiliate_hub_toc_item(brief)
         if hub_toc:
-            toc_extra = {2: hub_toc}
+            toc_extra = {hub_after_section: hub_toc}
     sections = sections_html(
         article,
         term_hrefs=term_hrefs,
         linked_terms=linked_terms,
         affiliate_hub=affiliate_hub,
-        affiliate_brief=brief if brief_has_product_comparison(brief) else None,
+        affiliate_hub_after_section=hub_after_section,
+        affiliate_brief=brief if has_product_hub else None,
     )
     faqs = faq_items(article)
     faq_section = faq_html(faqs, section_num=article_body_section_count(article) + 1) if faqs else ""
-    toc = toc_html(article, bool(faqs), extra_after_section=toc_extra)
-    key_points_box = key_points_box_html(article)
+    toc = toc_html(
+        article,
+        bool(faqs),
+        extra_after_section=toc_extra,
+        affiliate_brief=brief if has_product_hub else None,
+    )
+    key_points_box = key_points_box_html(
+        article,
+        affiliate_brief=brief if has_product_hub else None,
+        rel_path=rel_path,
+        site_root=ROOT,
+    )
     from tools.affiliate_links import affiliate_related_box_html, is_affiliate_article  # noqa: E402
     from tools.build_glossary_pages import field_hub_slug  # noqa: E402
     from tools.internal_links import (  # noqa: E402

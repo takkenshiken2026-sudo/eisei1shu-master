@@ -124,6 +124,28 @@ def affiliate_brief_has_links(config: dict[str, Any]) -> bool:
     return bool(affiliate_urls_in_brief(config))
 
 
+AFFILIATE_SKIP_SECTION_HEADINGS = frozenset({"この記事でわかること"})
+
+
+def is_affiliate_skip_section(article: dict[str, str], heading: str) -> bool:
+    if not is_affiliate_article(article):
+        return False
+    return norm(heading) in AFFILIATE_SKIP_SECTION_HEADINGS
+
+
+def affiliate_product_key_points(brief: dict[str, Any] | None, *, max_items: int = 5) -> list[str]:
+    if not brief:
+        return []
+    names: list[str] = []
+    for product in brief.get("products") or []:
+        if not isinstance(product, dict):
+            continue
+        name = norm(str(product.get("name") or ""))
+        if name:
+            names.append(name)
+    return names[:max_items]
+
+
 AFFILIATE_RELATED_MAX_TOTAL = 6
 AFFILIATE_RELATED_MAX_PER_KIND = 3
 
