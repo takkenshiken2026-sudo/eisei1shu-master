@@ -158,15 +158,32 @@ def paragraphs(text: str) -> str:
     return seo_section_body_html(text, transform=apply_vars)
 
 
+def body_text_transform(affiliate_brief: dict | None = None):
+    """Apply site vars and optional affiliate product name → markdown links."""
+    from tools.affiliate_body_links import inject_affiliate_product_links  # noqa: E402
+    from tools.affiliate_brief import brief_has_product_comparison  # noqa: E402
+
+    use_brief = brief_has_product_comparison(affiliate_brief) if affiliate_brief else False
+
+    def transform(text: str) -> str:
+        out = apply_vars(text)
+        if use_brief and affiliate_brief:
+            out = inject_affiliate_product_links(out, affiliate_brief, var_transform=apply_vars)
+        return out
+
+    return transform
+
+
 def list_or_paragraph(
     text: str,
     *,
     term_hrefs: dict[str, str] | None = None,
     linked_terms: set[str] | None = None,
+    affiliate_brief: dict | None = None,
 ) -> str:
     return seo_section_body_html(
         text,
-        transform=apply_vars,
+        transform=body_text_transform(affiliate_brief),
         term_hrefs=term_hrefs,
         linked_terms=linked_terms,
     )
@@ -202,6 +219,7 @@ def section_html(
     *,
     term_hrefs: dict[str, str] | None = None,
     linked_terms: set[str] | None = None,
+    affiliate_brief: dict | None = None,
 ) -> str:
     heading = apply_vars(article.get(f"section_{idx}_heading", ""))
     body = resolve_guide_section_body(article, article.get(f"section_{idx}_body", ""))
@@ -211,7 +229,7 @@ def section_html(
     return (
         f'<section class="seo-article-section" aria-labelledby="{sid}">'
         f'<h2 id="{sid}"><span class="section-heading-num">{display_num}</span>{html.escape(heading)}</h2>'
-        f"{list_or_paragraph(body, term_hrefs=term_hrefs, linked_terms=linked_terms)}</section>"
+        f"{list_or_paragraph(body, term_hrefs=term_hrefs, linked_terms=linked_terms, affiliate_brief=affiliate_brief)}</section>"
     )
 
 
@@ -220,6 +238,9 @@ def sections_html(
     *,
     term_hrefs: dict[str, str] | None = None,
     linked_terms: set[str] | None = None,
+    affiliate_hub: str = "",
+    affiliate_hub_after_section: int = 2,
+    affiliate_brief: dict | None = None,
 ) -> str:
     sections: list[str] = []
     display_num = 1
@@ -230,10 +251,13 @@ def sections_html(
             display_num,
             term_hrefs=term_hrefs,
             linked_terms=linked_terms,
+            affiliate_brief=affiliate_brief,
         )
         if html_text:
             sections.append(html_text)
             display_num += 1
+            if affiliate_hub and idx == affiliate_hub_after_section:
+                sections.append(affiliate_hub)
     return "\n".join(sections)
 
 
@@ -261,16 +285,25 @@ def key_points_box_html(article: dict[str, str]) -> str:
     return seo_key_points_box_html(items, intro=intro)
 
 
-def toc_html(article: dict[str, str], has_faq: bool) -> str:
+def toc_html(
+    article: dict[str, str],
+    has_faq: bool,
+    *,
+    extra_after_section: dict[int, tuple[str, str]] | None = None,
+) -> str:
     items: list[tuple[str, str]] = []
     if key_points_items(article) or norm(apply_vars(article.get("user_intent", ""))):
         items.append(("key-points-title", "この記事の要点"))
     items.append(("quality-panel-title", "この記事の信頼性について"))
+    extras = extra_after_section or {}
     for idx in range(1, 9):
         heading = apply_vars(article.get(f"section_{idx}_heading", ""))
         body = norm(article.get(f"section_{idx}_body", ""))
         if heading and body:
             items.append((f"article-sec-{idx}", heading))
+            extra = extras.get(idx)
+            if extra:
+                items.append(extra)
     if has_faq:
         items.append(("article-sec-faq", "よくある質問"))
     items.append(("article-info-title", "記事の基本情報"))
@@ -475,10 +508,27 @@ def build_article_html(
     tags = split_semicolon(apply_vars(article.get("tags", "")))
     display_tags = public_display_tags(tags)
     linked_terms: set[str] = set()
-    sections = sections_html(article, term_hrefs=term_hrefs, linked_terms=linked_terms)
+    from tools.affiliate_brief import brief_has_product_comparison, load_affiliate_brief  # noqa: E402
+    from tools.affiliate_product_ui import affiliate_hub_toc_item, affiliate_product_hub_html  # noqa: E402
+
+    brief = load_affiliate_brief(slug)
+    affiliate_hub = ""
+    toc_extra: dict[int, tuple[str, str]] | None = None
+    if brief_has_product_comparison(brief):
+        affiliate_hub = affiliate_product_hub_html(brief, rel_path, site_root=ROOT)
+        hub_toc = affiliate_hub_toc_item(brief)
+        if hub_toc:
+            toc_extra = {2: hub_toc}
+    sections = sections_html(
+        article,
+        term_hrefs=term_hrefs,
+        linked_terms=linked_terms,
+        affiliate_hub=affiliate_hub,
+        affiliate_brief=brief if brief_has_product_comparison(brief) else None,
+    )
     faqs = faq_items(article)
     faq_section = faq_html(faqs, section_num=article_body_section_count(article) + 1) if faqs else ""
-    toc = toc_html(article, bool(faqs))
+    toc = toc_html(article, bool(faqs), extra_after_section=toc_extra)
     key_points_box = key_points_box_html(article)
     from tools.build_glossary_pages import field_hub_slug  # noqa: E402
     from tools.internal_links import (  # noqa: E402

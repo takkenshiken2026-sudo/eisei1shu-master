@@ -8,16 +8,21 @@ import re
 
 
 def parse_related_link_token(item: str) -> tuple[str, str]:
-    """1件分を (target, label) に分解する。外部 URL は target=label=URL。"""
+    """1件分を (target, label) に分解する。"""
     text = (item or "").strip()
     if not text:
         return "", ""
     if re.match(r"https?://", text, re.I):
+        # https://example/path:表示ラベル（URL 内の : は除く）
+        for i in range(len(text) - 1, 8, -1):
+            if text[i] == ":":
+                url, label = text[:i].strip(), text[i + 1 :].strip()
+                if url.startswith(("http://", "https://")) and label:
+                    return url, label
         return text, text
     if ":" in text:
         target, label = text.split(":", 1)
         return target.strip(), label.strip()
-    # slug のみ → ラベル未指定（ビルド時に記事タイトルへ解決）
     return text, ""
 
 

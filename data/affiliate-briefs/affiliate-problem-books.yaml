@@ -1,0 +1,68 @@
+slug: affiliate-problem-books
+theme_key: problem-books
+search_intent: 第一種衛生管理者の過去問・問題集を比較して選びたい
+title: 第一種衛生管理者のおすすめ問題集3選【過去問・予想模試2026】
+layout: product-comparison
+asp_primary: amazon
+comparison_kind: books
+comparison_title: おすすめ問題集3選（比較）
+price_disclaimer: 価格・在庫は執筆時点（2026-06-03）のAmazon税込参考です。購入前に販売ページで最新版を確認してください。
+products:
+- rank: 1
+  offer_type: book
+  name: 2026年版 ユーキャンの第1種衛生管理者 重要過去問&予想模試
+  publisher: ユーキャン / 自由国民社
+  edition: 2026年度版
+  price_yen: 1980
+  price_note: Amazon税込参考・送料別
+  pages: 320
+  format: B5判
+  asin: '4426616565'
+  image_file: eisei1-book-4426616565.webp
+  amazon_url: https://www.amazon.co.jp/dp/4426616565/ref=nosim?tag=ue083093-22
+  for_who: 予想模試付きで演習量を一気に確保したい人
+  highlights:
+  - 重要過去問と予想模試を1冊で回しやすい
+  - ユーキャン系列で速習テキストとの併用がしやすい
+  - 直前期の総仕上げにも使える
+- rank: 2
+  offer_type: book
+  name: 詳解 第1種衛生管理者過去6回問題集 '26年版
+  publisher: 成美堂出版
+  edition: '''26年版'
+  price_yen: 1760
+  price_note: Amazon税込参考・送料別
+  pages: 288
+  format: B5判
+  asin: '4415240909'
+  image_file: eisei1-book-4415240909.webp
+  amazon_url: https://www.amazon.co.jp/dp/4415240909/ref=nosim?tag=ue083093-22
+  for_who: 直近の本試験形式で解きたい人
+  highlights:
+  - 過去6回分を解説付きで収録
+  - 本試験に近い形式で時間配分の練習に向く
+  - 成美堂の問題集ラインで他教材と組み合わせやすい
+- rank: 3
+  offer_type: book
+  name: 第一種衛生管理者試験問題集 2026年度版
+  publisher: 全国労働基準関係団体連合会
+  edition: 2026年度版
+  price_yen: 2200
+  price_note: Amazon税込参考・送料別
+  pages: 256
+  format: B5判
+  asin: '4867881007'
+  image_file: eisei1-book-4867881007.webp
+  amazon_url: https://www.amazon.co.jp/dp/4867881007/ref=nosim?tag=ue083093-22
+  for_who: 試験実施団体系の問題形式に慣れたい人
+  highlights:
+  - 労基団連発行で試験形式に近い演習ができる
+  - 足切り対策の演習量確保に向く
+  - 他社問題集との使い分けで弱点補強しやすい
+related_links:
+- kakomon-kakaikata:過去問の回し方
+- dokugaku-guide:独学合格ガイド
+- goukaku-kijun:合格基準
+- affiliate-textbooks-recommend:おすすめテキスト
+- affiliate-beginner-material-set:初学者向け教材セット
+operator_note: Amazon tag=ue083093-22。労基団連版は年度更新に注意。

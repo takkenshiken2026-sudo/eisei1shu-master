@@ -1,0 +1,68 @@
+slug: affiliate-beginner-material-set
+theme_key: beginner-material-set
+search_intent: 第一種衛生管理者を初学者が独学で始める教材セットを知りたい
+title: 第一種衛生管理者の初学者向け教材セット3選【速習・要点整理2026】
+layout: product-comparison
+asp_primary: amazon
+comparison_kind: books
+comparison_title: 初学者向け教材3選（比較）
+price_disclaimer: 価格は執筆時点（2026-06-03）のAmazon税込参考です。購入前に必ず販売ページでご確認ください。
+products:
+- rank: 1
+  offer_type: book
+  name: 2026年版 ユーキャンの第1種・第2種衛生管理者 速習レッスン
+  publisher: ユーキャン / 自由国民社
+  edition: 2026年度版
+  price_yen: 1650
+  price_note: Amazon税込参考・送料別
+  pages: 240
+  format: B5判
+  asin: '4426616557'
+  image_file: eisei1-book-4426616557.webp
+  amazon_url: https://www.amazon.co.jp/dp/4426616557/ref=nosim?tag=ue083093-22
+  for_who: 短期で全体像を先に掴みたい初学者
+  highlights:
+  - コンパクトな速習構成で全体像を短期把握
+  - 一種・二種共通部分の整理にも使える
+  - 本格的なテキスト購入前の予習に向く
+- rank: 2
+  offer_type: book
+  name: 第1種衛生管理者 集中レッスン '26年版
+  publisher: 成美堂出版
+  edition: '''26年版'
+  price_yen: 1540
+  price_note: Amazon税込参考・送料別
+  pages: 224
+  format: B5判
+  asin: '4415241050'
+  image_file: eisei1-book-4415241050.webp
+  amazon_url: https://www.amazon.co.jp/dp/4415241050/ref=nosim?tag=ue083093-22
+  for_who: 要点整理から演習に移りたい人
+  highlights:
+  - レッスン形式で論点を短時間復習
+  - 成美堂の問題集・攻略本へのステップアップがしやすい
+  - 仕事終わりの30分学習と相性がよい
+- rank: 3
+  offer_type: book
+  name: これだけ覚える 第1種・第2種衛生管理者 '26年版
+  publisher: 成美堂出版
+  edition: '''26年版'
+  price_yen: 1320
+  price_note: Amazon税込参考・送料別
+  pages: 192
+  format: B5判
+  asin: '4415241204'
+  image_file: eisei1-book-4415241204.webp
+  amazon_url: https://www.amazon.co.jp/dp/4415241204/ref=nosim?tag=ue083093-22
+  for_who: 一問一答・暗記帳として持ち歩きたい人
+  highlights:
+  - 覚えるべき論点をコンパクトに整理
+  - 通勤時間の暗記・確認に向く
+  - 本試験直前の最終確認にも使える
+related_links:
+- benkyou-junban:勉強の順番
+- study-plan-beginner:初学者向け学習計画
+- ichimon-ittou-guide:一問一答の使い方
+- affiliate-textbooks-recommend:おすすめテキスト
+- affiliate-problem-books:おすすめ問題集
+operator_note: Amazon tag=ue083093-22。速習系はテキスト本体の代替にならない点を本文で明記。
