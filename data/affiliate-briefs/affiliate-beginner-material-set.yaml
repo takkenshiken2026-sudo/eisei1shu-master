@@ -6,14 +6,14 @@ layout: product-comparison
 asp_primary: amazon
 comparison_kind: books
 comparison_title: 初学者向け教材3選（比較）
-price_disclaimer: 価格は執筆時点（2026-06-03）のAmazon税込参考です。購入前に必ず販売ページでご確認ください。
+price_disclaimer: 価格は執筆時点（2026-06-02）のAmazon税込参考です。購入前に必ず販売ページでご確認ください。
 products:
 - rank: 1
   offer_type: book
   name: 2026年版 ユーキャンの第1種・第2種衛生管理者 速習レッスン
   publisher: ユーキャン / 自由国民社
   edition: 2026年度版
-  price_yen: 1650
+  price_yen: 2420
   price_note: Amazon税込参考・送料別
   pages: 240
   format: B5判
@@ -47,7 +47,7 @@ products:
   name: これだけ覚える 第1種・第2種衛生管理者 '26年版
   publisher: 成美堂出版
   edition: '''26年版'
-  price_yen: 1320
+  price_yen: 1100
   price_note: Amazon税込参考・送料別
   pages: 192
   format: B5判

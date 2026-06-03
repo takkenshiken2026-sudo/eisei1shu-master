@@ -6,14 +6,14 @@ layout: product-comparison
 asp_primary: amazon
 comparison_kind: books
 comparison_title: おすすめテキスト3選（比較）
-price_disclaimer: 価格・在庫・版情報は執筆時点（2026-06-03）のAmazon税込参考です。購入前に必ず販売ページでご確認ください。
+price_disclaimer: 価格・在庫・版情報は執筆時点（2026-06-02）のAmazon税込参考です。購入前に必ず販売ページでご確認ください。
 products:
 - rank: 1
   offer_type: book
   name: 2026年度版 スッキリわかる 第1種衛生管理者 テキスト&問題集
   publisher: TAC出版
   edition: 2026年度版
-  price_yen: 3080
+  price_yen: 1870
   price_note: Amazon税込参考・送料別
   pages: 512
   format: B5判
@@ -30,7 +30,7 @@ products:
   name: 第1種衛生管理者 合格教本&問題集
   publisher: 技術評論社
   edition: 2026年度版
-  price_yen: 3520
+  price_yen: 1870
   price_note: Amazon税込参考・送料別
   pages: 560
   format: B5判
@@ -47,7 +47,7 @@ products:
   name: 改訂3版 この1冊で合格! 村中一英の第1種衛生管理者 テキスト&問題集
   publisher: KADOKAWA
   edition: 改訂3版
-  price_yen: 2860
+  price_yen: 1870
   price_note: Amazon税込参考・送料別
   pages: 480
   format: B5判
@@ -66,4 +66,4 @@ related_links:
 - affiliate-problem-books:おすすめ問題集
 - affiliate-beginner-material-set:初学者向け教材セット
 - affiliate-online-course-compare:オンライン講座比較
-operator_note: Amazon tag=ue083093-22。2026-06-03確認。
+operator_note: Amazon tag=ue083093-22。2026-06-02 Amazon販売ページで価格確認。

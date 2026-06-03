@@ -77,7 +77,7 @@ BRIEFS_DATA = {
                 "2026年度版 スッキリわかる 第1種衛生管理者 テキスト&問題集",
                 "TAC出版",
                 "4300121265",
-                price_yen=3080,
+                price_yen=1870,
                 pages=512,
                 for_who="初学者で図解と演習を1冊にまとめたい人",
                 highlights=[
@@ -91,7 +91,7 @@ BRIEFS_DATA = {
                 "第1種衛生管理者 合格教本&問題集",
                 "技術評論社",
                 "4297154978",
-                price_yen=3520,
+                price_yen=1870,
                 pages=560,
                 for_who="解説の厚みと演習量のバランスを重視する人",
                 highlights=[
@@ -106,7 +106,7 @@ BRIEFS_DATA = {
                 "KADOKAWA",
                 "4046077948",
                 edition="改訂3版",
-                price_yen=2860,
+                price_yen=1870,
                 pages=480,
                 for_who="著者の解説トーンで暗記→演習を進めたい人",
                 highlights=[
@@ -124,7 +124,7 @@ BRIEFS_DATA = {
             "affiliate-beginner-material-set:初学者向け教材セット",
             "affiliate-online-course-compare:オンライン講座比較",
         ],
-        "operator_note": "Amazon tag=ue083093-22。2026-06-03確認。",
+        "operator_note": "Amazon tag=ue083093-22。2026-06-03 Amazon販売ページで価格確認（各1,870円税込）。",
     },
     "affiliate-problem-books": {
         "slug": "affiliate-problem-books",
@@ -136,7 +136,7 @@ BRIEFS_DATA = {
         "comparison_kind": "books",
         "comparison_title": "おすすめ問題集3選（比較）",
         "price_disclaimer": (
-            "価格・在庫は執筆時点（2026-06-03）のAmazon税込参考です。"
+            "価格・在庫は執筆時点（2026-06-02）のAmazon税込参考です。"
             "購入前に販売ページで最新版を確認してください。"
         ),
         "products": [
@@ -145,7 +145,7 @@ BRIEFS_DATA = {
                 "2026年版 ユーキャンの第1種衛生管理者 重要過去問&予想模試",
                 "ユーキャン / 自由国民社",
                 "4426616565",
-                price_yen=1980,
+                price_yen=1760,
                 pages=320,
                 for_who="予想模試付きで演習量を一気に確保したい人",
                 highlights=[
@@ -160,7 +160,7 @@ BRIEFS_DATA = {
                 "成美堂出版",
                 "4415240909",
                 edition="'26年版",
-                price_yen=1760,
+                price_yen=1540,
                 pages=288,
                 for_who="直近の本試験形式で解きたい人",
                 highlights=[
@@ -174,7 +174,7 @@ BRIEFS_DATA = {
                 "第一種衛生管理者試験問題集 2026年度版",
                 "全国労働基準関係団体連合会",
                 "4867881007",
-                price_yen=2200,
+                price_yen=2420,
                 pages=256,
                 for_who="試験実施団体系の問題形式に慣れたい人",
                 highlights=[
@@ -204,7 +204,7 @@ BRIEFS_DATA = {
         "comparison_kind": "books",
         "comparison_title": "初学者向け教材3選（比較）",
         "price_disclaimer": (
-            "価格は執筆時点（2026-06-03）のAmazon税込参考です。"
+            "価格は執筆時点（2026-06-02）のAmazon税込参考です。"
             "購入前に必ず販売ページでご確認ください。"
         ),
         "products": [
@@ -213,7 +213,7 @@ BRIEFS_DATA = {
                 "2026年版 ユーキャンの第1種・第2種衛生管理者 速習レッスン",
                 "ユーキャン / 自由国民社",
                 "4426616557",
-                price_yen=1650,
+                price_yen=2420,
                 pages=240,
                 for_who="短期で全体像を先に掴みたい初学者",
                 highlights=[
@@ -243,7 +243,7 @@ BRIEFS_DATA = {
                 "成美堂出版",
                 "4415241204",
                 edition="'26年版",
-                price_yen=1320,
+                price_yen=1100,
                 pages=192,
                 for_who="一問一答・暗記帳として持ち歩きたい人",
                 highlights=[
@@ -283,44 +283,49 @@ CSV_ROWS = {
         "original_note": "Amazon Associates tag=ue083093-22。比較: 4300121265 / 4297154978 / 4046077948。",
         "user_intent": "独学で使う第一種衛生管理者のテキストを、解説の厚み・演習量・初学者向きで比較して1冊に絞りたい。",
         "action_items": "比較表で3冊の違いを確認する;自分の学習スタイルに合う1冊を選ぶ;一衛マスター過去問で弱点分野を把握する",
-        "revision_note": "2026-06-03: Amazonリンク付き書籍比較アフィリエイト記事として公開",
+        "revision_note": "2026-06-03: テンプレ構成に合わせて本文を全面リライト・Amazon価格再確認",
         "sections": [
             (
-                "テキスト選びの基準（5分野・足切りを意識）",
-                "選ぶ前に、安全衛生技術試験協会（公式）で出題範囲5分野と科目別合格基準（足切り）を確認してください。"
-                "テキストは「解説で理解する時間」と「章末・別冊で演習する時間」のバランスで選ぶと挫折しにくくなります。\n\n"
-                "社会人独学では、次の2点も判断材料になります。\n\n"
-                "- 通勤中に読める分量か\n"
-                "- 週末にまとめて演習できる問題量か\n\n"
-                "1冊に絞れない場合は、テキスト1冊＋過去問専門1冊の2冊構成も有効です（おすすめ問題集の記事も参照）。",
+                "テキスト選びの3つのポイント",
+                "第一種衛生管理者試験のテキスト選びでは、①安全衛生技術試験協会（公式）の出題範囲5分野と科目別合格基準（足切り40%）に目次が沿っているか、"
+                "②解説量が自分の前提知識に合うか、③章末演習や別冊問題集とセットで使えるかを確認します。\n\n"
+                "社会人独学では、通勤で読める分量と週末にまとめて演習できる問題量も判断材料になります。"
+                "1冊に絞れない場合は、テキスト1冊＋過去問専門1冊の2冊構成も有効です。",
             ),
             (
-                "3冊の選び方（タイプ別）",
-                "[[affiliate-hub-placeholder]]\n\n"
-                "上記3冊はいずれもテキストと演習がセットのALL-in-one型です。"
-                "初学者は図解の多い2026年度版 スッキリわかる 第1種衛生管理者 テキスト&問題集から入る選択が多く、"
-                "解説を厚く読みたい人は第1種衛生管理者 合格教本&問題集、"
-                "著者の語り口で進めたい人は改訂3版 この1冊で合格! 村中一英の第1種衛生管理者 テキスト&問題集が向きます。",
+                "おすすめテキスト比較の見方",
+                "比較では「図解で全体像を掴む」「解説を厚く読む」「著者の語り口で進める」の3タイプで見ます。"
+                "いずれもテキストと演習がセットのALL-in-one型です。"
+                "独学初期は理解用1冊に絞り、過去問演習が進んだ段階で問題集を追加する構成が扱いやすいです。"
+                "一衛マスターの過去問で分野別得点を確認し、足りない解説量を基準に選んでください。",
             ),
             (
                 "1位：スッキリわかるの特徴",
-                "2026年度版 スッキリわかる 第1種衛生管理者 テキスト&問題集（TAC出版）は、"
-                "イラストと要点整理で5分野の全体像をつかみやすい定番です。"
-                "初学者が最初の1冊に選びやすく、章末演習でテキストと問題の往復がしやすい構成です。\n\n"
+                "2026年度版 スッキリわかる 第1種衛生管理者 テキスト&問題集（TAC出版・1,870円税込参考・512ページ・B5判）は、"
+                "イラスト中心で5分野の全体像をつかみやすい定番です。"
+                "章末演習でテキストと問題の往復がしやすく、初学者が最初の1冊に選びやすい構成です。\n\n"
                 "向いている人：衛生管理者試験が初めてで、独学のロードマップと合わせて1冊で進めたい人。",
             ),
             (
-                "2位・3位の特徴",
-                "第1種衛生管理者 合格教本&問題集（技術評論社）は解説ボリュームと演習量のバランス型。"
-                "条文・数値の整理を丁寧に読みたい人向けです。\n\n"
-                "改訂3版 この1冊で合格! 村中一英の第1種衛生管理者 テキスト&問題集（KADOKAWA）は、"
-                "著者の解説で暗記→演習のリズムを作りやすい1冊です。"
+                "2位：合格教本&問題集の特徴",
+                "第1種衛生管理者 合格教本&問題集（技術評論社・1,870円税込参考・560ページ・B5判）は、"
+                "教本パートで論点を丁寧に整理し、問題集パートで演習量を確保しやすいバランス型です。"
+                "条文・数値の整理をじっくり読みたい人向けです。\n\n"
+                "向いている人：ある程度基礎があり、解説の厚みと演習量の両方を重視する人。",
+            ),
+            (
+                "3位：村中一英テキストの特徴",
+                "改訂3版 この1冊で合格! 村中一英の第1種衛生管理者 テキスト&問題集（KADOKAWA・1,870円税込参考・480ページ・B5判）は、"
+                "著者の語り口で暗記→演習のリズムを作りやすい1冊です。"
+                "改訂版で最新の出題傾向を反映しています。\n\n"
+                "向いている人：著者の解説トーンで条文・数値を整理したい人。"
                 "速習から入りたい場合は初学者向け教材の記事も参照してください。",
             ),
             (
                 "テキストと一衛マスター過去問の併用",
-                "テキストで論点を押さえたら、一衛マスターの過去問・一問一答で「本試験形式」の演習に移ります。"
-                "分野別得点を記録し、足切りライン（科目40%）に届いていない分野をテキスト該当章に戻って復習するサイクルが効率的です。\n\n"
+                "テキストで論点を押さえたら、一衛マスターの過去問・一問一答で本試験形式の演習に移ります。"
+                "分野別得点を記録し、足切りライン（科目40%）に届いていない分野をテキスト該当章に戻って復習するサイクルが効率的です。"
+                "テキストで理解→演習で確認→間違えた論点を用語解説で補強、の順で回してください。\n\n"
                 "演習だけでは理解が浅い分野があれば、通信講座の併用も選択肢です（オンライン講座比較の記事）。",
             ),
             (
@@ -380,7 +385,7 @@ CSV_ROWS = {
         "original_note": "Amazon tag=ue083093-22。4426616565 / 4415240909 / 4867881007。",
         "user_intent": "第一種衛生管理者の過去問・予想模試付き問題集を比較し、演習のメイン1冊を決めたい。",
         "action_items": "3冊の収録形式を比較する;演習計画に組み込む1冊を選ぶ;足切り分野を過去問で確認する",
-        "revision_note": "2026-06-03: Amazonリンク付き問題集比較アフィリエイト記事として公開",
+        "revision_note": "2026-06-02: Amazon価格を販売ページで再確認して更新",
         "sections": [
             (
                 "問題集選びの基準",
@@ -469,7 +474,7 @@ CSV_ROWS = {
         "original_note": "Amazon tag=ue083093-22。4426616557 / 4415241050 / 4415241204。",
         "user_intent": "初学者が第一種衛生管理者の学習を始めるとき、速習・要点整理系の1冊を選びたい。",
         "action_items": "3冊の分量と用途を比較する;速習1冊で全体像を掴む;テキスト本冊への移行時期を決める",
-        "revision_note": "2026-06-03: Amazonリンク付き初学者教材比較アフィリエイト記事として公開",
+        "revision_note": "2026-06-02: Amazon価格を販売ページで再確認して更新",
         "sections": [
             (
                 "速習・要点整理の位置づけ",
@@ -569,9 +574,7 @@ COURSE_AFFILIATE_RELATED: dict[str, str] = {
         "kakomon-kakaikata:過去問の回し方;"
         "affiliate-dokugaku-goukaku-hokan:独学合格と講座の併用;"
         "affiliate-textbooks-recommend:おすすめテキスト;"
-        "affiliate-problem-books:おすすめ問題集;"
-        "https://px.a8.net/svt/ejp?a8mat=4B3TF0+DUBVNM+4LOQ+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.joho-gakushu.or.jp%2Feiseikanrisya%2F%3Futm_source%3DAffi%26utm_medium%3Dlist%26utm_campaign%3D01:SMART合格講座（公式・A8）;"
-        "https://px.a8.net/svt/ejp?a8mat=4B3TF0+DUXB9E+408S+BW0YB&a8ejpredirect=https%3A%2F%2Fonsuku.jp%2Ftraining%2Feisei2:オンスク衛生管理者講座（公式・A8）"
+        "affiliate-problem-books:おすすめ問題集"
     ),
     "affiliate-dokugaku-goukaku-hokan": (
         "dokugaku-guide:独学合格ガイド;"
@@ -579,9 +582,7 @@ COURSE_AFFILIATE_RELATED: dict[str, str] = {
         "kakomon-kakaikata:過去問の回し方;"
         "affiliate-online-course-compare:オンライン講座比較;"
         "affiliate-textbooks-recommend:おすすめテキスト;"
-        "affiliate-problem-books:おすすめ問題集;"
-        "https://px.a8.net/svt/ejp?a8mat=4B3TF0+DUBVNM+4LOQ+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.joho-gakushu.or.jp%2Feiseikanrisya%2F%3Futm_source%3DAffi%26utm_medium%3Dlist%26utm_campaign%3D01:SMART合格講座（公式・A8）;"
-        "https://px.a8.net/svt/ejp?a8mat=4B3TF0+DUXB9E+408S+BW0YB&a8ejpredirect=https%3A%2F%2Fonsuku.jp%2Ftraining%2Feisei2:オンスク衛生管理者講座（公式・A8）"
+        "affiliate-problem-books:おすすめ問題集"
     ),
 }
 
@@ -618,6 +619,7 @@ def patch_csv() -> None:
         row["user_intent"] = cfg["user_intent"]
         row["action_items"] = cfg["action_items"]
         row["revision_note"] = cfg["revision_note"]
+        row["fact_checked_at"] = "2026-06-02"
         row["content_status"] = "published"
         row["related_links"] = cfg["related_links"]
         row["key_points"] = cfg["key_points"]
@@ -638,9 +640,8 @@ def patch_csv() -> None:
         if slug in COURSE_AFFILIATE_RELATED:
             row["related_links"] = COURSE_AFFILIATE_RELATED[slug]
             print(f"patched course related_links: {slug}")
-        if slug in COURSE_AFFILIATE_KEY_POINTS:
+        if slug in COURSE_AFFILIATE_KEY_POINTS and slug not in CSV_ROWS:
             row["key_points"] = COURSE_AFFILIATE_KEY_POINTS[slug]
-            print(f"patched course key_points: {slug}")
 
     with CSV_PATH.open("w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")

@@ -15,8 +15,9 @@ _MD_LINK = re.compile(r"\[[^\]]+\]\(https?://[^)\s]+\)")
 
 AFFILIATE_COURSE_NAMES: tuple[str, ...] = (
     "オンスク衛生管理者講座",
+    "オンスク.JP 衛生管理者オンライン通信講座",
+    "SMART合格講座（第一種衛生管理者）",
     "SMART合格講座",
-    "オンスク",
 )
 
 

@@ -6,14 +6,14 @@ layout: product-comparison
 asp_primary: amazon
 comparison_kind: books
 comparison_title: おすすめ問題集3選（比較）
-price_disclaimer: 価格・在庫は執筆時点（2026-06-03）のAmazon税込参考です。購入前に販売ページで最新版を確認してください。
+price_disclaimer: 価格・在庫は執筆時点（2026-06-02）のAmazon税込参考です。購入前に販売ページで最新版を確認してください。
 products:
 - rank: 1
   offer_type: book
   name: 2026年版 ユーキャンの第1種衛生管理者 重要過去問&予想模試
   publisher: ユーキャン / 自由国民社
   edition: 2026年度版
-  price_yen: 1980
+  price_yen: 1760
   price_note: Amazon税込参考・送料別
   pages: 320
   format: B5判
@@ -30,7 +30,7 @@ products:
   name: 詳解 第1種衛生管理者過去6回問題集 '26年版
   publisher: 成美堂出版
   edition: '''26年版'
-  price_yen: 1760
+  price_yen: 1540
   price_note: Amazon税込参考・送料別
   pages: 288
   format: B5判
@@ -47,7 +47,7 @@ products:
   name: 第一種衛生管理者試験問題集 2026年度版
   publisher: 全国労働基準関係団体連合会
   edition: 2026年度版
-  price_yen: 2200
+  price_yen: 2420
   price_note: Amazon税込参考・送料別
   pages: 256
   format: B5判
