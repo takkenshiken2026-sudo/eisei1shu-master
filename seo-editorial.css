@@ -431,17 +431,18 @@ body.seo-editorial-preview-page .seo-editorial .seo-article-section h2 .section-
   margin-bottom: 0;
 }
 
-/* アフィリエイト記事：要点ボックス右端に代表表紙1枚 */
+/* アフィリエイト記事：要点ボックス右下に代表表紙1枚 */
 .seo-editorial .seo-key-points-box--affiliate .seo-key-points-body {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(4.25rem, 16%, 5.5rem);
+  align-items: end;
   gap: 0.85rem;
   margin-top: 0.35rem;
 }
 
 .seo-editorial .seo-key-points-main {
-  flex: 1;
+  grid-column: 1;
+  grid-row: 1;
   min-width: 0;
 }
 
@@ -454,9 +455,10 @@ body.seo-editorial-preview-page .seo-editorial .seo-article-section h2 .section-
 }
 
 .seo-editorial .seo-key-points-aside {
-  flex-shrink: 0;
-  align-self: flex-end;
-  width: clamp(4.25rem, 16%, 5.5rem);
+  grid-column: 2;
+  grid-row: 1;
+  align-self: end;
+  width: 100%;
   line-height: 0;
 }
 
@@ -479,6 +481,11 @@ body.seo-editorial-preview-page .seo-editorial .seo-article-section h2 .section-
   height: auto;
   aspect-ratio: 5 / 7;
   object-fit: cover;
+}
+
+.seo-editorial .seo-key-points-aside-cover--course img,
+.seo-editorial .seo-key-points-aside-cover--course.seo-key-points-aside-cover--placeholder {
+  aspect-ratio: 16 / 9;
 }
 
 .seo-editorial .seo-key-points-aside-cover--placeholder {
@@ -956,6 +963,7 @@ body.seo-editorial-preview-page .seo-editorial.seo-article-card .related-box-tit
   margin: 0 0 1em;
   padding-left: 1.25em;
 }
+
 /* --- アフィリエイト商品比較（product-comparison brief） --- */
 .seo-editorial.seo-article-card .affiliate-product-hub {
   margin-top: 2rem;
@@ -1043,6 +1051,22 @@ body.seo-editorial-preview-page .seo-editorial.seo-article-card .related-box-tit
   }
 }
 
+/* 講座 hub：商品数に応じた列数（2件で3列空きを防ぐ） */
+.seo-editorial.seo-article-card .affiliate-product-hub[data-comparison-kind="courses"] .affiliate-product-grid[data-product-count="2"] {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.seo-editorial.seo-article-card .affiliate-product-hub[data-comparison-kind="courses"] .affiliate-product-grid[data-product-count="1"] {
+  grid-template-columns: minmax(0, 20rem);
+}
+
+@media (max-width: 760px) {
+  .seo-editorial.seo-article-card .affiliate-product-hub[data-comparison-kind="courses"] .affiliate-product-grid[data-product-count="2"],
+  .seo-editorial.seo-article-card .affiliate-product-hub[data-comparison-kind="courses"] .affiliate-product-grid[data-product-count="1"] {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* 書籍カード：縦1列。カード内は表紙左・本文右 */
 .seo-editorial.seo-article-card .affiliate-product-hub[data-comparison-kind="books"] .affiliate-product-grid {
   grid-template-columns: 1fr;
@@ -1061,13 +1085,13 @@ body.seo-editorial-preview-page .seo-editorial.seo-article-card .related-box-tit
 }
 
 .seo-editorial.seo-article-card .affiliate-product-hub[data-comparison-kind="books"] .affiliate-product-cover {
-  width: clamp(8.5rem, 26%, 10.5rem);
+  width: clamp(7.5rem, 22%, 9.5rem);
   max-width: none;
-  max-height: none;
+  max-height: 10.5rem;
   aspect-ratio: 3 / 4;
   margin: 0;
   flex-shrink: 0;
-  align-self: stretch;
+  align-self: flex-start;
   border-right: 1px solid var(--seo-card-border);
   border-bottom: none;
   padding: 0.45rem 0.55rem;
@@ -1080,9 +1104,15 @@ body.seo-editorial-preview-page .seo-editorial.seo-article-card .related-box-tit
 }
 
 .seo-editorial.seo-article-card .affiliate-product-hub[data-comparison-kind="books"] .affiliate-product-card-body {
+  display: flex;
+  flex-direction: column;
   flex: 1;
   min-width: 0;
   padding: 0.85rem 1rem 1rem;
+}
+
+.seo-editorial.seo-article-card .affiliate-product-hub[data-comparison-kind="books"] .affiliate-product-cta {
+  margin-top: auto;
 }
 
 .seo-editorial.seo-article-card .affiliate-product-hub[data-comparison-kind="books"] .affiliate-product-card-body h3 {
@@ -1219,6 +1249,10 @@ body.seo-editorial-preview-page .seo-editorial.seo-article-card .related-box-tit
   gap: 0.35rem;
 }
 
+.seo-editorial.seo-article-card .affiliate-product-card--course .affiliate-product-cta {
+  margin-top: auto;
+}
+
 .seo-editorial.seo-article-card .affiliate-product-card-body h3 {
   margin: 0;
   font-size: 0.9375rem;
@@ -1313,6 +1347,7 @@ body.seo-editorial-preview-page .seo-editorial.seo-article-card .related-box-tit
 .seo-editorial.seo-article-card .affiliate-product-cta {
   display: block;
   margin-top: 0.45rem;
+  align-self: stretch;
   padding: 0.55rem 0.75rem;
   text-align: center;
   font-size: 0.8125rem;

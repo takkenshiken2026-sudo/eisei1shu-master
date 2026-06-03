@@ -72,7 +72,9 @@ def image_href(rel_path: Path, image_file: str, *, site_root: Path) -> str | Non
         return None
     local = site_root / "images" / "affiliate" / name
     if local.is_file():
-        return f"/images/affiliate/{html.escape(name, quote=True)}"
+        depth = len(rel_path.parent.parts)
+        prefix = "/".join([".."] * depth) + "/" if depth else ""
+        return f"{prefix}images/affiliate/{html.escape(name, quote=True)}"
     image_url = norm(str(image_file))
     if image_url.lower().startswith(("http://", "https://")):
         return image_url
@@ -101,10 +103,11 @@ def cover_html(
     src = image_href(rel_path, image_file, site_root=site_root)
     course_cls = " affiliate-product-cover--course" if offer_type == "course" else ""
     alt = html.escape(f"{name} {'公式イメージ' if offer_type == 'course' else '表紙'}")
+    img_dims = ('width="320" height="180"' if offer_type == "course" else 'width="320" height="448"')
     if src:
         return (
             f'<div class="affiliate-product-cover affiliate-product-cover--photo{course_cls}">'
-            f'<img src="{html.escape(src)}" alt="{alt}" width="320" height="448" loading="lazy" decoding="async">'
+            f'<img src="{html.escape(src)}" alt="{alt}" {img_dims} loading="lazy" decoding="async">'
             f"</div>"
         )
     ed_html = f'<span class="affiliate-product-cover-edition">{html.escape(edition)}</span>' if edition else ""
@@ -312,7 +315,7 @@ def affiliate_product_hub_html(
         f'<h2 id="affiliate-products-title">{html.escape(title)}</h2>'
         f'<p class="affiliate-price-disclaimer">{html.escape(default_price_disclaimer(brief))}</p>'
         f"{table}"
-        f'<div class="affiliate-product-grid">{cards}</div>'
+        f'<div class="affiliate-product-grid" data-product-count="{len(products)}">{cards}</div>'
         "</section>"
     )
 
@@ -338,8 +341,9 @@ def key_points_aside_cover_html(
     course_cls = " seo-key-points-aside-cover--course" if offer_type == "course" else ""
     alt = html.escape(f"{name} {'公式イメージ' if offer_type == 'course' else '表紙'}")
     if src:
+        aside_dims = ('width="88" height="50"' if offer_type == "course" else 'width="88" height="124"')
         inner = (
-            f'<img src="{html.escape(src)}" alt="{alt}" width="88" height="124" '
+            f'<img src="{html.escape(src)}" alt="{alt}" {aside_dims} '
             f'loading="lazy" decoding="async">'
         )
     else:
