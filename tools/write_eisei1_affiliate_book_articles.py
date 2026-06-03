@@ -119,9 +119,10 @@ BRIEFS_DATA = {
         "related_links": [
             "benkyou-junban:勉強の順番",
             "dokugaku-guide:独学合格ガイド",
-            "benkyou-jikan:勉強時間の目安",
+            "kakomon-kakaikata:過去問の回し方",
             "affiliate-problem-books:おすすめ問題集",
             "affiliate-beginner-material-set:初学者向け教材セット",
+            "affiliate-online-course-compare:オンライン講座比較",
         ],
         "operator_note": "Amazon tag=ue083093-22。2026-06-03確認。",
     },
@@ -189,6 +190,7 @@ BRIEFS_DATA = {
             "goukaku-kijun:合格基準",
             "affiliate-textbooks-recommend:おすすめテキスト",
             "affiliate-beginner-material-set:初学者向け教材セット",
+            "affiliate-online-course-compare:オンライン講座比較",
         ],
         "operator_note": "Amazon tag=ue083093-22。労基団連版は年度更新に注意。",
     },
@@ -257,6 +259,7 @@ BRIEFS_DATA = {
             "ichimon-ittou-guide:一問一答の使い方",
             "affiliate-textbooks-recommend:おすすめテキスト",
             "affiliate-problem-books:おすすめ問題集",
+            "affiliate-online-course-compare:オンライン講座比較",
         ],
         "operator_note": "Amazon tag=ue083093-22。速習系はテキスト本体の代替にならない点を本文で明記。",
     },
@@ -359,14 +362,10 @@ CSV_ROWS = {
         "related_links": (
             "benkyou-junban:勉強の順番;"
             "dokugaku-guide:独学合格ガイド;"
-            "benkyou-jikan:勉強時間の目安;"
             "kakomon-kakaikata:過去問の回し方;"
             "affiliate-problem-books:おすすめ問題集;"
             "affiliate-beginner-material-set:初学者向け教材セット;"
-            "affiliate-online-course-compare:オンライン講座比較;"
-            f"{amazon('4300121265')}:スッキリわかる（Amazon）;"
-            f"{amazon('4297154978')}:合格教本&問題集（Amazon）;"
-            f"{amazon('4046077948')}:村中一英テキスト（Amazon）"
+            "affiliate-online-course-compare:オンライン講座比較"
         ),
         "key_points": "テキスト選びの基準;おすすめ3冊の比較;スッキリわかるの特徴;合格教本・村中テキストの違い;過去問との併用",
     },
@@ -454,10 +453,8 @@ CSV_ROWS = {
             "dokugaku-guide:独学合格ガイド;"
             "goukaku-kijun:合格基準;"
             "affiliate-textbooks-recommend:おすすめテキスト;"
-            "affiliate-beginner-material-set:初学者向け教材;"
-            f"{amazon('4426616565')}:ユーキャン過去問&予想模試（Amazon）;"
-            f"{amazon('4415240909')}:成美堂過去6回（Amazon）;"
-            f"{amazon('4867881007')}:労基団連問題集（Amazon）"
+            "affiliate-beginner-material-set:初学者向け教材セット;"
+            "affiliate-online-course-compare:オンライン講座比較"
         ),
         "key_points": "問題集選びの基準;3冊の比較;ユーキャン過去問の特徴;成美堂・労基団連の違い;過去問の回し方",
     },
@@ -546,12 +543,34 @@ CSV_ROWS = {
             "ichimon-ittou-guide:一問一答の使い方;"
             "affiliate-textbooks-recommend:おすすめテキスト;"
             "affiliate-problem-books:おすすめ問題集;"
-            f"{amazon('4426616557')}:ユーキャン速習レッスン（Amazon）;"
-            f"{amazon('4415241050')}:集中レッスン（Amazon）;"
-            f"{amazon('4415241204')}:これだけ覚える（Amazon）"
+            "affiliate-online-course-compare:オンライン講座比較"
         ),
         "key_points": "速習教材の位置づけ;3冊の比較;ユーキャン速習の特徴;集中レッスン・暗記帳;テキスト移行タイミング",
     },
+}
+
+
+COURSE_AFFILIATE_RELATED: dict[str, str] = {
+    "affiliate-online-course-compare": (
+        "dokugaku-guide:独学合格ガイド;"
+        "textbook-senmon:教材の選び方;"
+        "kakomon-kakaikata:過去問の回し方;"
+        "affiliate-dokugaku-goukaku-hokan:独学合格と講座の併用;"
+        "affiliate-textbooks-recommend:おすすめテキスト;"
+        "affiliate-problem-books:おすすめ問題集;"
+        "https://px.a8.net/svt/ejp?a8mat=4B3TF0+DUBVNM+4LOQ+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.joho-gakushu.or.jp%2Feiseikanrisya%2F%3Futm_source%3DAffi%26utm_medium%3Dlist%26utm_campaign%3D01:SMART合格講座（公式・A8）;"
+        "https://px.a8.net/svt/ejp?a8mat=4B3TF0+DUXB9E+408S+BW0YB&a8ejpredirect=https%3A%2F%2Fonsuku.jp%2Ftraining%2Feisei2:オンスク衛生管理者講座（公式・A8）"
+    ),
+    "affiliate-dokugaku-goukaku-hokan": (
+        "dokugaku-guide:独学合格ガイド;"
+        "benkyou-jikan:勉強時間;"
+        "kakomon-kakaikata:過去問の回し方;"
+        "affiliate-online-course-compare:オンライン講座比較;"
+        "affiliate-textbooks-recommend:おすすめテキスト;"
+        "affiliate-problem-books:おすすめ問題集;"
+        "https://px.a8.net/svt/ejp?a8mat=4B3TF0+DUBVNM+4LOQ+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.joho-gakushu.or.jp%2Feiseikanrisya%2F%3Futm_source%3DAffi%26utm_medium%3Dlist%26utm_campaign%3D01:SMART合格講座（公式・A8）;"
+        "https://px.a8.net/svt/ejp?a8mat=4B3TF0+DUXB9E+408S+BW0YB&a8ejpredirect=https%3A%2F%2Fonsuku.jp%2Ftraining%2Feisei2:オンスク衛生管理者講座（公式・A8）"
+    ),
 }
 
 
@@ -601,6 +620,12 @@ def patch_csv() -> None:
             row[f"faq_{i}_question"] = q
             row[f"faq_{i}_answer"] = a
         print(f"patched CSV row: {slug}")
+
+    for row in rows:
+        slug = row.get("slug", "")
+        if slug in COURSE_AFFILIATE_RELATED:
+            row["related_links"] = COURSE_AFFILIATE_RELATED[slug]
+            print(f"patched course related_links: {slug}")
 
     with CSV_PATH.open("w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")

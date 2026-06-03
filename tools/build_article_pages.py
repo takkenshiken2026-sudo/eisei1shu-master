@@ -530,6 +530,7 @@ def build_article_html(
     faq_section = faq_html(faqs, section_num=article_body_section_count(article) + 1) if faqs else ""
     toc = toc_html(article, bool(faqs), extra_after_section=toc_extra)
     key_points_box = key_points_box_html(article)
+    from tools.affiliate_links import affiliate_related_box_html, is_affiliate_article  # noqa: E402
     from tools.build_glossary_pages import field_hub_slug  # noqa: E402
     from tools.internal_links import (  # noqa: E402
         guide_knowledge_hub_link_items,
@@ -537,25 +538,33 @@ def build_article_html(
     )
     from tools.knowledge_hub_seo import field_hub_page_exists  # noqa: E402
 
-    article_links = parse_related_links(article.get("related_links", ""), by_slug, article)
-    hub_items = guide_knowledge_hub_link_items(
-        {
-            "genre": genre,
-            "tags": apply_vars(article.get("tags", "")),
-            "title": title,
-        },
-        categories=glossary_categories or [],
-        field_hub_slug_fn=field_hub_slug,
-        field_hub_exists_fn=field_hub_page_exists,
-    )
-    hub_box = (
-        '<div class="related-box" aria-labelledby="guide-hub-links-title">'
-        '<div id="guide-hub-links-title" class="related-box-title">知識ハブ</div>'
-        f'<div class="related-links">{"".join(hub_items)}</div></div>'
-        if hub_items
-        else ""
-    )
-    related = merge_related_boxes(article_links, hub_box)
+    if is_affiliate_article(article):
+        related = affiliate_related_box_html(
+            article.get("related_links", ""),
+            by_slug,
+            article,
+            label_fn=apply_vars,
+        )
+    else:
+        article_links = parse_related_links(article.get("related_links", ""), by_slug, article)
+        hub_items = guide_knowledge_hub_link_items(
+            {
+                "genre": genre,
+                "tags": apply_vars(article.get("tags", "")),
+                "title": title,
+            },
+            categories=glossary_categories or [],
+            field_hub_slug_fn=field_hub_slug,
+            field_hub_exists_fn=field_hub_page_exists,
+        )
+        hub_box = (
+            '<div class="related-box" aria-labelledby="guide-hub-links-title">'
+            '<div id="guide-hub-links-title" class="related-box-title">知識ハブ</div>'
+            f'<div class="related-links">{"".join(hub_items)}</div></div>'
+            if hub_items
+            else ""
+        )
+        related = merge_related_boxes(article_links, hub_box)
     quality_panel = quality_panel_html(article)
     author = apply_vars(article.get("author_name", ""))
     reviewer = apply_vars(article.get("reviewer_name", ""))
