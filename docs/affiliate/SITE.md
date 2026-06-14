@@ -181,5 +181,13 @@
 
 ### 次のアクション
 
-1. `git push` → CI 完了後に本番目視（比較記事·3ハブ·通常ガイド導線）
-2. 必要なら比較記事5本目以降を段階公開（通信講座比較 draft 等）
+1. リライト4本を `build_all.py` → push → 本番目視
+
+### アフィリエイト記事リライト進捗
+
+| slug | 状態 | 完了日 | 備考 |
+|------|------|--------|------|
+| `affiliate-textbooks-recommend` | **完了 v2** | 2026-06-12 | 定型パディング除去・商品別具体例・FAQ・価格再確認 |
+| `affiliate-online-course-compare` | **完了 v2** | 2026-06-12 | SMART/オンスク別具体例・併用プラン・FAQ・価格再確認 |
+| `affiliate-problem-books` | **完了 v2** | 2026-06-12 | 商品別具体例・616問併用・FAQ・価格再確認 |
+| `affiliate-dokugaku-goukaku-hokan` | **完了 v2** | 2026-06-12 | 独学判断フロー・講座3ケース・FAQ・SMART29,700円確認 |

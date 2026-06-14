@@ -6,7 +6,7 @@ layout: product-comparison
 asp_primary: a8
 comparison_kind: courses
 comparison_title: オンライン講座2選（比較）
-price_disclaimer: 料金・受講条件は執筆時点（2026-06-03）の各公式ページ参考です。申込前に必ず最新の料金・キャンペーンを確認してください。
+price_disclaimer: 料金・受講条件は執筆時点（2026-06-12）の各公式ページ参考です。申込前に必ず最新の料金・キャンペーンを確認してください。
 products:
 - rank: 1
   offer_type: course
@@ -40,4 +40,4 @@ products:
   duration: 月額または一括パック
   lecture_hours: 講義50回・約4.5時間
   support: 練習536問・進捗管理・復習機能
-operator_note: A8 SMART・オンスク。価格確認日 2026-06-03。
+operator_note: A8 SMART・オンスク。2026-06-12 SMART公式29,700円税込確認。オンスク月額は申込前LP再確認。

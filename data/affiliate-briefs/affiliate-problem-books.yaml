@@ -6,7 +6,7 @@ layout: product-comparison
 asp_primary: amazon
 comparison_kind: books
 comparison_title: おすすめ問題集3選（比較）
-price_disclaimer: 価格・在庫は執筆時点（2026-06-02）のAmazon税込参考です。購入前に販売ページで最新版を確認してください。
+price_disclaimer: 価格・在庫は執筆時点（2026-06-12）のAmazon税込参考です。購入前に販売ページで最新版を確認してください。
 products:
 - rank: 1
   offer_type: book
@@ -66,4 +66,4 @@ related_links:
 - affiliate-textbooks-recommend:おすすめテキスト
 - affiliate-beginner-material-set:初学者向け教材セット
 - affiliate-online-course-compare:オンライン講座比較
-operator_note: Amazon tag=ue083093-22。労基団連版は年度更新に注意。
+operator_note: Amazon tag=ue083093-22。2026-06-12 Amazon 1,760/1,540円確認。労基団連2,420円はJPページ再確認推奨。年度更新に注意。

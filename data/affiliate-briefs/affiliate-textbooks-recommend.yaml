@@ -6,7 +6,7 @@ layout: product-comparison
 asp_primary: amazon
 comparison_kind: books
 comparison_title: おすすめテキスト3選（比較）
-price_disclaimer: 価格・在庫・版情報は執筆時点（2026-06-03）のAmazon税込参考です。購入前に必ず販売ページでご確認ください。
+price_disclaimer: 価格・在庫・版情報は執筆時点（2026-06-12）のAmazon税込参考です。購入前に必ず販売ページでご確認ください。
 products:
 - rank: 1
   offer_type: book
@@ -66,4 +66,4 @@ related_links:
 - affiliate-problem-books:おすすめ問題集
 - affiliate-beginner-material-set:初学者向け教材セット
 - affiliate-online-course-compare:オンライン講座比較
-operator_note: Amazon tag=ue083093-22。2026-06-03 Amazon販売ページで価格確認（各1,870円税込）。
+operator_note: Amazon tag=ue083093-22。2026-06-12 Amazon販売ページで価格確認（各1,870円税込）。
