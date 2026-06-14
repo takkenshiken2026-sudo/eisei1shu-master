@@ -244,6 +244,48 @@
       ]
     }
   ],
+  "guideIndexPicks": {
+    "title": "おすすめの講座・教材",
+    "lead": "2026年度版の比較記事から、講座・テキスト・問題集の選び方へ。",
+    "leadsByHub": {
+      "articles": "2026年度版の比較記事から、講座・テキスト・問題集の選び方へ。",
+      "terms": "用語暗記と併用するテキスト・問題集・講座の比較記事へ。",
+      "q": "無料演習と併用する問題集・講座の比較記事へ。"
+    },
+    "layout": "grid-3",
+    "items": [
+      {
+        "kind": "course",
+        "kindLabel": "講座",
+        "title": "オンライン講座比較【SMART vs オンスク】",
+        "description": "買い切り29,700円のSMARTと月額制オンスクを比較。100問180分・5科目足切り前提の併用設計を解説します。",
+        "href": "affiliate-online-course-compare/",
+        "cta": "講座を比較する",
+        "image": "images/affiliate/eisei1-smart-goukaku.jpg",
+        "imageAlt": "SMART合格講座（第一種衛生管理者）"
+      },
+      {
+        "kind": "textbook",
+        "kindLabel": "テキスト",
+        "title": "おすすめテキスト3選【2026年度版】",
+        "description": "TACスッキリ・技評合格教本・村中改訂3版を比較。5科目の章立てと週次計画への組み込み方を解説します。",
+        "href": "affiliate-textbooks-recommend/",
+        "cta": "3冊を比較する",
+        "image": "images/affiliate/eisei1-book-4300121265.webp",
+        "imageAlt": "2026年度版 スッキリわかる 第1種衛生管理者 テキスト&問題集"
+      },
+      {
+        "kind": "problem-book",
+        "kindLabel": "問題集",
+        "title": "おすすめ問題集3選【2026年度版】",
+        "description": "ユーキャン・成美堂・労基団連の3冊を比較。テキスト読了後の演習1冊の選び方をまとめます。",
+        "href": "affiliate-problem-books/",
+        "cta": "3冊を比較する",
+        "image": "images/affiliate/eisei1-book-4426616565.webp",
+        "imageAlt": "2026年版 ユーキャンの第1種衛生管理者 重要過去問&予想模試"
+      }
+    ]
+  },
   "externalLinks": [
     {
       "url": "https://www.exam.or.jp/",
