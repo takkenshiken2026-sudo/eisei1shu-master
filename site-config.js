@@ -149,5 +149,13 @@ window.SITE_CONFIG = {
       ],
       "legacyGlossaryCat": "physio"
     }
-  ]
+  ],
+  "paidMockExam": {
+    "url": "https://note.com/shikaku_master/n/nacc6a5dab9f1",
+    "modeTitle": "本番想定模試",
+    "modePurpose": "本番前に44問×3回で実力確認したい",
+    "priceLabel": "¥590",
+    "scoreMeta": "PDF · 3回 · 44問",
+    "scoreLead": "本番想定模試（3回分）"
+  }
 };
