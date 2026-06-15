@@ -15,6 +15,8 @@ AFFILIATE_TITLES = {
     "affiliate-problem-books": "第一種衛生管理者のおすすめ問題集3選【過去問・予想模試2026】",
     "affiliate-online-course-compare": "第一種衛生管理者のオンライン講座比較【SMART合格講座 vs オンスク】独学との併用",
     "affiliate-dokugaku-goukaku-hokan": "第一種衛生管理者は独学で合格できる？勉強時間の目安と通信講座が効くケース",
+    "affiliate-mock-exam-materials": "第一種衛生管理者試験の模試・予想問題3選【100問本番形式2026】",
+    "affiliate-beginner-material-set": "第一種衛生管理者の初学者向け教材セット3選【速習・要点整理2026】",
 }
 
 BODY = {
@@ -30,6 +32,16 @@ BODY = {
     "affiliate-dokugaku-goukaku-hokan": (
         "独学で足りるか迷う場合は、affiliate-dokugaku-goukaku-hokan で勉強時間の目安と講座が効くケースを先に確認すると教材投資の判断がしやすいです。"
     ),
+    "affiliate-mock-exam-materials": (
+        "本番形式の模試1冊は、affiliate-mock-exam-materials でユーキャン予想模試·成美堂過去6回·"
+        "労基団連問題集の3冊を比較してから固定すると、"
+        "13:30開始·100問·180分の模試回数と使い分けが整理しやすくなります。"
+    ),
+    "affiliate-beginner-material-set": (
+        "初学者の第1冊は、affiliate-beginner-material-set でユーキャン速習·集中レッスン·これだけ覚えるの3冊を"
+        "学習フェーズ別に比較してから固定すると、"
+        "速習→本格テキストへの段階投入がぶれにくくなります。"
+    ),
 }
 
 # slug → (primary_affiliate, section_n)
@@ -37,14 +49,14 @@ GUIDE_AFFILIATE: dict[str, tuple[str, int]] = {
     # 独学対策
     "dokugaku-guide": ("affiliate-dokugaku-goukaku-hokan", 2),
     "benkyou-jikan": ("affiliate-dokugaku-goukaku-hokan", 2),
-    "benkyou-junban": ("affiliate-textbooks-recommend", 2),
+    "benkyou-junban": ("affiliate-beginner-material-set", 2),
     "textbook-selection": ("affiliate-textbooks-recommend", 2),
     "textbook-senmon": ("affiliate-textbooks-recommend", 2),
     "textbook-vs-past-questions": ("affiliate-textbooks-recommend", 2),
     "problem-book-selection": ("affiliate-problem-books", 2),
     "correspondence-course-guide": ("affiliate-online-course-compare", 2),
     "kakomon-kakaikata": ("affiliate-problem-books", 2),
-    "ichimon-ittou-guide": ("affiliate-problem-books", 2),
+    "ichimon-ittou-guide": ("affiliate-beginner-material-set", 2),
     "orig-mondai-guide": ("affiliate-problem-books", 2),
     "free-materials-online": ("affiliate-textbooks-recommend", 2),
     "material-update-cycle": ("affiliate-textbooks-recommend", 2),
@@ -64,8 +76,8 @@ GUIDE_AFFILIATE: dict[str, tuple[str, int]] = {
     "study-plan-6months": ("affiliate-textbooks-recommend", 2),
     "study-plan-1year": ("affiliate-textbooks-recommend", 2),
     "study-plan-working": ("affiliate-online-course-compare", 2),
-    "study-plan-beginner": ("affiliate-textbooks-recommend", 2),
-    "first-30-days-plan": ("affiliate-textbooks-recommend", 2),
+    "study-plan-beginner": ("affiliate-beginner-material-set", 2),
+    "first-30-days-plan": ("affiliate-beginner-material-set", 2),
     "balance-work-study": ("affiliate-online-course-compare", 2),
     "time-management": ("affiliate-online-course-compare", 2),
     # 過去問活用
@@ -77,11 +89,12 @@ GUIDE_AFFILIATE: dict[str, tuple[str, int]] = {
     "past-questions-wrong-reasons": ("affiliate-problem-books", 2),
     "past-questions-latest-year": ("affiliate-problem-books", 2),
     "bookmark-review-method": ("affiliate-problem-books", 2),
-    "mock-exam-how-to": ("affiliate-problem-books", 2),
+    "mock-exam-how-to": ("affiliate-mock-exam-materials", 3),
     "ichimon-practice": ("affiliate-problem-books", 2),
     "drill-volume-guide": ("affiliate-problem-books", 2),
-    "timed-practice": ("affiliate-problem-books", 2),
-    "simulation-exam-schedule": ("affiliate-problem-books", 2),
+    "timed-practice": ("affiliate-mock-exam-materials", 3),
+    "simulation-exam-schedule": ("affiliate-mock-exam-materials", 2),
+    "time-limit-strategy": ("affiliate-mock-exam-materials", 2),
     # 分野別（過去問フォーカス）
     "field-eisei-harm-past-question-focus": ("affiliate-problem-books", 2),
     "field-eisei-other-past-question-focus": ("affiliate-problem-books", 2),
@@ -89,7 +102,7 @@ GUIDE_AFFILIATE: dict[str, tuple[str, int]] = {
     "field-law-other-past-question-focus": ("affiliate-problem-books", 2),
     "field-physio-past-question-focus": ("affiliate-problem-books", 2),
     # 直前（模試・演習）
-    "final-mock-last-run": ("affiliate-problem-books", 2),
+    "final-mock-last-run": ("affiliate-mock-exam-materials", 2),
     "chokuzen-1kagetsu": ("affiliate-problem-books", 2),
     "chokuzen-1shukan": ("affiliate-problem-books", 2),
     # 復習
@@ -131,6 +144,10 @@ SECONDARY_AFFILIATE: dict[str, str] = {
     "study-plan-working": "affiliate-dokugaku-goukaku-hokan",
     "textbook-selection": "affiliate-problem-books",
     "problem-book-selection": "affiliate-textbooks-recommend",
+    "study-plan-beginner": "affiliate-textbooks-recommend",
+    "benkyou-junban": "affiliate-textbooks-recommend",
+    "mock-exam-how-to": "affiliate-problem-books",
+    "timed-practice": "affiliate-problem-books",
 }
 
 AFFILIATE_CROSS_LINKS: dict[str, list[str]] = {
@@ -139,6 +156,7 @@ AFFILIATE_CROSS_LINKS: dict[str, list[str]] = {
         "benkyou-junban:勉強の順番",
         "kakomon-kakaikata:過去問の回し方",
         "affiliate-problem-books:おすすめ問題集",
+        "affiliate-beginner-material-set:初学者向け教材セット",
         "affiliate-online-course-compare:オンライン講座比較",
         "affiliate-dokugaku-goukaku-hokan:独学合格と講座の併用",
     ],
@@ -147,6 +165,7 @@ AFFILIATE_CROSS_LINKS: dict[str, list[str]] = {
         "dokugaku-guide:独学合格ガイド",
         "goukaku-kijun:合格基準",
         "affiliate-textbooks-recommend:おすすめテキスト",
+        "affiliate-mock-exam-materials:模試・予想問題",
         "affiliate-online-course-compare:オンライン講座比較",
         "affiliate-dokugaku-goukaku-hokan:独学合格と講座の併用",
     ],
@@ -156,12 +175,30 @@ AFFILIATE_CROSS_LINKS: dict[str, list[str]] = {
         "benkyou-jikan:勉強時間",
         "affiliate-textbooks-recommend:おすすめテキスト",
         "affiliate-problem-books:おすすめ問題集",
+        "affiliate-beginner-material-set:初学者向け教材セット",
         "affiliate-dokugaku-goukaku-hokan:独学合格と講座の併用",
     ],
     "affiliate-dokugaku-goukaku-hokan": [
         "dokugaku-guide:独学合格ガイド",
         "benkyou-jikan:勉強時間",
         "kakomon-kakaikata:過去問の回し方",
+        "affiliate-textbooks-recommend:おすすめテキスト",
+        "affiliate-problem-books:おすすめ問題集",
+        "affiliate-beginner-material-set:初学者向け教材セット",
+        "affiliate-online-course-compare:オンライン講座比較",
+    ],
+    "affiliate-mock-exam-materials": [
+        "mock-exam-how-to:模試の活用法",
+        "timed-practice:時間を計った演習",
+        "kakomon-kakaikata:過去問の回し方",
+        "affiliate-problem-books:おすすめ問題集",
+        "affiliate-textbooks-recommend:おすすめテキスト",
+        "goukaku-kijun:合格基準",
+    ],
+    "affiliate-beginner-material-set": [
+        "benkyou-junban:勉強の順番",
+        "study-plan-beginner:初学者向け学習計画",
+        "ichimon-ittou-guide:一問一答の使い方",
         "affiliate-textbooks-recommend:おすすめテキスト",
         "affiliate-problem-books:おすすめ問題集",
         "affiliate-online-course-compare:オンライン講座比較",
@@ -251,7 +288,7 @@ def apply_affiliate_cross_links(rows: list[dict[str, str]]) -> int:
 
 
 def main() -> None:
-    with CSV_PATH.open(encoding="utf-8", newline="") as f:
+    with CSV_PATH.open(encoding="utf-8-sig", newline="") as f:
         reader = csv.DictReader(f)
         fieldnames = reader.fieldnames
         rows = list(reader)
@@ -261,7 +298,7 @@ def main() -> None:
     g = apply_guide_updates(rows)
     a = apply_affiliate_cross_links(rows)
 
-    with CSV_PATH.open("w", encoding="utf-8", newline="") as f:
+    with CSV_PATH.open("w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
