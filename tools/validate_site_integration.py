@@ -786,12 +786,10 @@ def _static_page_site_leaks(root: Path) -> list[Issue]:
     return issues
 
 
-
 def _guide_index_picks(root: Path) -> list[Issue]:
     from tools.validate_guide_index_picks import validate_guide_index_picks
 
     return validate_guide_index_picks(root)
-
 
 
 def main() -> int:

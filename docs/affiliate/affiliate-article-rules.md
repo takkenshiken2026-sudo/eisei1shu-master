@@ -45,7 +45,7 @@ ASP URL 確定 → 各商品ページで価格確認 → brief 記入
 → content_status=published → build → デプロイ
 ```
 
-**例外:** `affiliate-free-vs-paid-study` など **asp=internal**（収益リンクなし・内部導線のみ）と明示したテーマ。
+**ASP URL が1本もないテーマは CSV 行・公開 HTML を作らない**（`content_status=draft` のまま待機）。
 
 ---
 
@@ -480,7 +480,7 @@ past-question-strategy:過去問の回し方
 | テキスト・問題集 | Amazon | `comparison_kind: books` |
 | オンライン講座・通信・予備校 | A8 / afb | `comparison_kind: courses` |
 | 模試・直前 | Amazon + A8 | 混在可（要検索意図整理） |
-| 無料 vs 有料 | internal（収益リンクなし可） | — |
+| 無料 vs 有料 | A8 / afb / Amazon（URL 確定後） | brief 必須 |
 
 ---
 

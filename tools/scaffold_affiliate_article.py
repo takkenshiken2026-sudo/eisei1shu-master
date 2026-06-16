@@ -625,7 +625,6 @@ def main() -> int:
             parser.error(
                 "アフィリエイトリンク未設定のため guide_articles.csv に追記しません。"
                 " brief の products.*_url または related_links に ASP URL を入れてから --append してください。"
-                " （内部リンク中心の free-vs-paid-study のみ asp=internal で例外）"
             )
         append_row(row)
         write_brief(config, force=True)

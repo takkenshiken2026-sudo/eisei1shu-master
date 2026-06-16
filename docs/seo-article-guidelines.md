@@ -30,7 +30,6 @@
 - **Amazon / A8 / afb 等の ASP URL が確定していること**（`related_links` の `https://...:ラベル`、または brief の `products.*_url`、本文 CTA）
 - URL 未用意のテーマは **ブリーフ YAML のみ** 残してよいが、`guide_articles.csv` への追記と公開 HTML 生成は行わない
 - 行だけ先に存在する場合は **`content_status=draft`** とし、ASP URL 確定まで非公開のままにする
-- 例外: `affiliate-free-vs-paid-study` のように **asp=internal**（収益リンクなし・内部導線のみ）と明示したテーマのみ
 
 ### 識別ルール（CSV）
 

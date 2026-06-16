@@ -1,0 +1,56 @@
+slug: affiliate-retake-short-course
+theme_key: retake-short-course
+search_intent: 第一種衛生管理者の再受験者が弱点2科目を短期で補強する講座を比較したい
+title: 第一種衛生管理者試験の再受験向け短期講座比較【オンスク vs SMART】弱点2科目【2026年度版】
+genre: 学習計画
+layout: product-comparison
+asp_primary: a8
+comparison_kind: courses
+comparison_title: 再受験向け短期講座2選（比較）
+price_disclaimer: 料金·受講条件は執筆時点（2026-06-12）の各公式ページ参考です。申込前に必ず最新条件を確認してください。
+products:
+  - rank: 1
+    offer_type: course
+    name: オンスク.JP 衛生管理者オンライン通信講座
+    provider: オンスク.JP
+    plan_name: ウケホーダイ月額（第一種・第二種対応）
+    price_label: 月額1078〜1628円（税込）
+    billing_type: monthly
+    price_note: 1〜2ヶ月の短期利用向け·申込前LP再確認
+    duration: 月額（解約条件は公式参考）
+    lecture_hours: 講義50回·練習536問
+    support: スマホ視聴·倍速·進捗管理
+    image_file: eisei1-onsuku-eisei2.jpg
+    a8_url: https://px.a8.net/svt/ejp?a8mat=4B3TF0+DUXB9E+408S+BW0YB&a8ejpredirect=https%3A%2F%2Fonsuku.jp%2Ftraining%2Feisei2
+    for_who: 残り8〜10週·弱点科目の演習量を月額で増やしたい再受験者
+    highlights:
+      - 月額制で1〜2ヶ月だけ弱点補強に使える
+      - 練習536問で科目別20問サイクルを回しやすい
+      - スマホ·倍速で通勤時間に反復視聴
+  - rank: 2
+    offer_type: course
+    name: SMART合格講座（第一種衛生管理者）
+    provider: 情報学習支援協会
+    plan_name: 買い切り（視聴3年）
+    price_yen: 29700
+    billing_type: lump
+    price_note: 税込·有害業務動画約6時間含む
+    duration: 視聴3年間
+    lecture_hours: 約12時間40分
+    support: SMART答練·進捗管理
+    image_file: eisei1-smart-goukaku.jpg
+    a8_url: https://px.a8.net/svt/ejp?a8mat=4B3TF0+DUBVNM+4LOQ+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.joho-gakushu.or.jp%2Feiseikanrisya%2F%3Futm_source%3DAffi%26utm_medium%3Dlist%26utm_campaign%3D01
+    for_who: 法令（有害）·労働衛生（有害）·労働生理の弱点を動画で一気に更新したい再受験者
+    highlights:
+      - 買い切り2万9700円（税込）·視聴3年
+      - 有害業務を含む動画で弱点2科目を短期集中
+      - SMART答練で過去問·予想問題を動画解説
+related_links:
+  - saijuken-guide:再受験ガイド
+  - retake-strategy:再受験の戦略
+  - fail-retry-plan:不合格からの再受験計画
+  - affiliate-online-course-compare:オンライン講座比較
+  - affiliate-correspondence-course:通信講座比較
+operator_note: |
+  2026-06-12 v2公開。再受験向けにオンスク月額 vs SMART買い切りを比較。
+  A8 URLは affiliate-online-course-compare.yaml と同一。SMART2万9700円·オンスク月額は申込前LP再確認。

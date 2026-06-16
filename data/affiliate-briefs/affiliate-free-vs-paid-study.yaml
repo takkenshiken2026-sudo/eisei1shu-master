@@ -1,0 +1,25 @@
+slug: affiliate-free-vs-paid-study
+theme_key: free-vs-paid-study
+search_intent: 第一種衛生管理者試験で無料だけでどこまででき、有料教材はいつ必要か知りたい
+title: 第一種衛生管理者試験の無料と有料教材の使い分け【独学2026】
+genre: 独学対策
+layout: csv
+asp_primary: internal
+comparison_kind: none
+price_disclaimer: 有料教材の価格は執筆時点（2026-06-12）のAmazon税込参考です。購入前に各比較記事のリンク先で最新を確認してください。
+related_links:
+  - shiken-guide:試験ガイド
+  - dokugaku-guide:独学合格ガイド
+  - free-materials-online:無料教材の活用
+  - textbook-selection:テキストの選び方
+  - affiliate-textbooks-recommend:おすすめテキスト3選
+  - affiliate-problem-books:おすすめ問題集3選
+  - affiliate-mock-exam-materials:おすすめ模試・予想問題3選
+  - affiliate-beginner-material-set:初学者向け教材セット3選
+  - affiliate-online-course-compare:オンライン講座比較
+  - affiliate-correspondence-course:通信講座比較
+  - affiliate-cram-school:通学講座比較
+operator_note: |
+  2026-06-12 v2公開。内部導線記事（asp=internal）。本文は判断フロー中心。
+  related_linksにAmazon3本（4300121265 / 4426616565 / 4426616557）でビルドゲート通過。
+  講座比較3記事（online / correspondence / cram-school）への導線を section7·FAQ3 に追加。

@@ -1,0 +1,56 @@
+slug: affiliate-correspondence-course
+theme_key: correspondence-course
+search_intent: 第一種衛生管理者向け通信講座をTACとLECで比較して独学に組み込みたい
+title: 第一種衛生管理者試験の通信講座比較【TAC vs LEC】独学との併用【2026年度版】
+genre: 独学対策
+layout: product-comparison
+asp_primary: a8
+comparison_kind: courses
+comparison_title: おすすめ通信講座2選（比較）
+price_disclaimer: 料金·割引·受講期間は執筆時点（2026-06-12）の各公式ページ参考です。申込前に必ず最新条件を確認してください。
+products:
+  - rank: 1
+    offer_type: course
+    name: 資格の学校TAC 第1種衛生管理者対策講座
+    provider: 資格の学校TAC
+    plan_name: Web通信講座（2026年度合格目標）
+    price_yen: 23100
+    billing_type: lump
+    price_note: 税込·入会金不要·教材費込み
+    duration: 上期〜2026/11/30·下期〜2027/5/31（公式参考）
+    lecture_hours: 全6回（スッキリわかるテキスト連動）
+    support: 質問カード（4回まで）·紙·デジタル教材
+    image_file: eisei1-book-4300121265.webp
+    for_who: TACスッキリ系列で図解インプットを短く済ませたい人
+    highlights:
+      - Web通信2万3100円（税込）·入会金不要
+      - スッキリわかる第1種テキスト&問題集連動の全6回
+      - 質問カード4回·紙とデジタル教材同梱
+  - rank: 2
+    offer_type: course
+    name: LEC東京リーガルマインド 第1種衛生管理者講座
+    provider: LEC東京リーガルマインド
+    plan_name: 通信Web動画·音声DL·スマホ（2026年度版）
+    price_yen: 25460
+    billing_type: lump
+    price_note: 税込·テキスト代込み·入会金不要
+    duration: 2026/5/25〜2027/3/31（公式参考）
+    lecture_hours: 全15回（第2種10回+特例第1種5回）
+    support: 工藤講師オリジナル教材·協会問題集同梱
+    image_file: eisei1-book-4297154978.webp
+    for_who: 法令理解を厚くしたい·15回カリキュラムで週次を固定したい人
+    highlights:
+      - 通信Web2万5460円（税込）·15回（第2種+特例第1種）
+      - 工藤講師オリジナルテキスト+協会問題集同梱
+      - スマホ視聴·音声DL対応
+related_links:
+  - correspondence-course-guide:通信講座の選び方
+  - affiliate-textbooks-recommend:おすすめテキスト3選
+  - affiliate-problem-books:おすすめ問題集3選
+  - affiliate-online-course-compare:オンライン講座比較
+  - affiliate-dokugaku-goukaku-hokan:独学合格と講座の併用
+operator_note: |
+  2026-06-12 v2公開。TAC2万3100円は tac-school.co.jp/kouza_eiseikanri/eiseikanri_crs_type1.html で確認。
+  LEC2万5460円は lec-jp.com/eisei で確認。related_linksに公式直リンク。
+  講座LP画像未入手のため表紙proxy（eisei1-book-4300121265.webp / eisei1-book-4297154978.webp）。
+  A8 URL確定後: products[].a8_url を追記し related_links の公式URLを差し替え可。

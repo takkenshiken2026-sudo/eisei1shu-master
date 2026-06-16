@@ -94,14 +94,27 @@ python3 tools/build_article_pages.py
 
 ### 4.2 本文リンク（`section_*_body`）
 
-- 比較記事 slug を **1 文** で自然に挿入
+**通常ガイド → 比較記事**
+
+- 比較記事 slug を **1 文** で自然に挿入（1 記事あたり 1 箇所推奨）
 - ビルド時 `guide_slug_prose.resolve_slug_references` が内部 `<a class="related-link">` に変換
+- ラベルは `slug_link_label` で短縮（末尾 `【…】` は除去）
 - 記法例（CSV 本文）:
 
 ```text
 テキスト1冊は、affiliate-textbooks-recommend で出版社別の解説量を比較してから固定すると途中で変えずに済みます。
 ```
 
+**比較記事同士の相互リンク**
+
+- 段落中は **短い Markdown リンク** を使う（長いタイトル付きカード化を防ぐ）
+- 記法例:
+
+```text
+演習量が足りない場合は、[おすすめ問題集3選](../affiliate-problem-books/)を参照してください。
+```
+
+- 一括変換: `python3 tools/apply_affiliate_compare_short_links.py`（`section_*_body` のみ）
 - **禁止:** `https://amazon...` や A8 URL を通常ガイド本文に書く
 
 ### 4.3 送り先の選び方（検索意図マッチ）

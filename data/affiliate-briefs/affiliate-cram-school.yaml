@@ -1,0 +1,56 @@
+slug: affiliate-cram-school
+theme_key: cram-school
+search_intent: 第一種衛生管理者向け通学·校舎型講座を比較して独学に組み込みたい
+title: 第一種衛生管理者試験の通学講座比較【TAC教室 vs ビデオブース】独学との併用【2026年度版】
+genre: 独学対策
+layout: product-comparison
+asp_primary: a8
+comparison_kind: courses
+comparison_title: おすすめ通学型講座2選（比較）
+price_disclaimer: 料金·開講校舎·受講期間は執筆時点（2026-06-12）の各公式ページ参考です。申込前に必ず最新条件を確認してください。
+products:
+  - rank: 1
+    offer_type: course
+    name: 資格の学校TAC 教室講座＋Webフォロー
+    provider: 資格の学校TAC
+    plan_name: 第1種衛生管理者対策講座·教室+Web（テキスト付き）
+    price_yen: 18000
+    billing_type: lump
+    price_note: 税込·入会金不要·教材費込み
+    duration: 渋谷校8/22（土）〜順次（公式参考）
+    lecture_hours: 全5回（1回2.5時間）+Webフォロー
+    support: 対面授業·欠席時Web視聴·質問カード4回
+    image_file: eisei1-book-4300121265.webp
+    for_who: 渋谷校へ週1通学し対面で進めたい社会人
+    highlights:
+      - 教室+Web1万8000円（税込·テキスト付き）
+      - 渋谷校8/22（土）から順次開講
+      - 欠席時はWebフォローで復習可能
+  - rank: 2
+    offer_type: course
+    name: 資格の学校TAC ビデオブース講座＋Webフォロー
+    provider: 資格の学校TAC
+    plan_name: 第1種衛生管理者対策講座·ブース+Web（テキスト付き）
+    price_yen: 18000
+    billing_type: lump
+    price_note: 税込·入会金不要·全国19校舎
+    duration: 8/11（火）〜Web配信（公式参考）
+    lecture_hours: 全5回（1回2.5時間）+Webフォロー·4時間帯
+    support: 校舎個室視聴·Webフォロー·質問カード4回
+    image_file: eisei1-book-4300121265.webp
+    for_who: 全国のTAC校舎で個室視聴しつつWeb復習したい人
+    highlights:
+      - ビデオブース+Web1万8000円（税込·テキスト付き）
+      - 札幌〜福岡19校舎·4つの視聴時間帯
+      - スマホ·タブレットでもWebフォロー視聴可
+related_links:
+  - correspondence-course-guide:通信講座の選び方
+  - affiliate-correspondence-course:通信講座比較
+  - affiliate-online-course-compare:オンライン講座比較
+  - affiliate-textbooks-recommend:おすすめテキスト3選
+  - self-study-without-school:資格学校なし独学
+operator_note: |
+  2026-06-12 v2公開。LEC第1種は2026年度通信のみ（通学なし）のためTAC2形式を比較。
+  教室+Web·ビデオブース+Webとも1万8000円は tac-school.co.jp/kouza_eiseikanri/eiseikanri_crs_type1.html で確認。
+  講座LP画像未入手のため表紙proxy（eisei1-book-4300121265.webp）。
+  A8 URL確定後: products[].a8_url を追記可。
