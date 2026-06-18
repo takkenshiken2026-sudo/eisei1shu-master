@@ -46,6 +46,10 @@ class Issue:
 
 
 def _footer_past_href(cfg: dict) -> Issue | None:
+    from tools.site_config import past_enabled
+
+    if not past_enabled():
+        return None
     nav = cfg.get("navigation") or {}
     footer = nav.get("footer") if isinstance(nav, dict) else None
     if not isinstance(footer, list):
@@ -77,6 +81,8 @@ def _footer_past_href(cfg: dict) -> Issue | None:
 
 
 def _index_footer(index_path: Path) -> list[Issue]:
+    from tools.site_config import past_enabled
+
     if not index_path.is_file():
         return [Issue(f"{index_path.name} がありません（SPA フッター未検証）")]
     text = index_path.read_text(encoding="utf-8")
@@ -85,6 +91,8 @@ def _index_footer(index_path: Path) -> list[Issue]:
         issues.append(
             Issue(f"{index_path.name}: site-pages.css / site-theme.css が未リンク（apply_site_config を実行）")
         )
+    if not past_enabled():
+        return issues
     for m in re.finditer(
         r'<a\s+[^>]*href="([^"]+)"[^>]*>\s*過去問一覧\s*</a>',
         text,
@@ -109,6 +117,10 @@ def _index_footer(index_path: Path) -> list[Issue]:
 def _q_index(q_index: Path) -> list[Issue]:
     if not q_index.is_file():
         return [Issue("q/index.html がありません（build_past_question_pages を実行）")]
+    from tools.site_config import past_enabled
+
+    if not past_enabled() or _is_redirect_stub(q_index):
+        return []
     text = q_index.read_text(encoding="utf-8")
     issues: list[Issue] = []
     if "q-hub-links" not in text:
@@ -284,6 +296,11 @@ def _mode_index_counts(root: Path) -> list[Issue]:
         json_n = _q_index_data_count(index_path)
         if csv_n == 0:
             continue
+        if mode == "ichimon":
+            from tools.site_config import ichimon_enabled
+
+            if not ichimon_enabled():
+                continue
         if mode == "ichimon" and _is_redirect_stub(index_path):
             continue
         if mode == "practice" and _orig_practice_index_ok(index_path):
@@ -320,13 +337,33 @@ def _site_q_index_js(js_path: Path) -> list[Issue]:
 def _mode_index_hub_tabs(mode: str, index_path: Path) -> list[Issue]:
     if not index_path.is_file():
         return []
+    from tools.site_config import ichimon_enabled, past_enabled
+
     text = index_path.read_text(encoding="utf-8")
     issues: list[Issue] = []
     if "q-hub-links" not in text:
-        issues.append(Issue(f"q/{mode}/index.html: q_hub_links_html（3モードタブ）がありません"))
-    for href in ("/q/index.html", "/q/practice/index.html", "/q/ichimon/index.html"):
+        issues.append(Issue(f"q/{mode}/index.html: q_hub_links_html（モードタブ）がありません"))
+    required_hrefs: list[str] = ["/q/practice/index.html"]
+    if past_enabled():
+        required_hrefs.insert(0, "/q/index.html")
+    if ichimon_enabled():
+        required_hrefs.append("/q/ichimon/index.html")
+    for href in required_hrefs:
         if href not in text and href.replace("/q/", "") not in text:
             issues.append(Issue(f"q/{mode}/index.html: タブリンク {href} がありません"))
+    if not ichimon_enabled() and "/q/ichimon/index.html" in text and not _is_redirect_stub(index_path):
+        issues.append(
+            Issue(
+                f"q/{mode}/index.html: questionModes.hideIchimon 時は一問一答タブを出さないでください"
+            )
+        )
+    if not past_enabled() and "/q/index.html" in text and mode == "practice":
+        if 'href="/q/index.html"' in text or 'href="q/index.html"' in text:
+            issues.append(
+                Issue(
+                    f"q/{mode}/index.html: questionModes.hidePast 時は過去問タブを出さないでください"
+                )
+            )
     return issues
 
 
@@ -416,6 +453,8 @@ def _spa_home_url() -> str:
 
 def _header_learning_nav(root: Path) -> list[Issue]:
     """静的ページの学習ナビ href / q/index の active 状態（site-chrome.md §3, §7）。"""
+    from tools.site_config import ichimon_enabled, past_enabled
+
     spa_hash = _spa_nav_hash_hrefs()
     article_sample = root / "articles" / "field-law-basics" / "index.html"
     if not article_sample.is_file():
@@ -430,8 +469,22 @@ def _header_learning_nav(root: Path) -> list[Issue]:
     for label, path in samples:
         if not path.is_file():
             continue
+        if label == "q/index.html" and _is_redirect_stub(path):
+            continue
         text = path.read_text(encoding="utf-8")
         for nav_id, expected in spa_hash.items():
+            if nav_id == "tnav-ichimondou" and not ichimon_enabled():
+                if f'id="{nav_id}"' in text:
+                    issues.append(
+                        Issue(f"{label}: hideIchimon 時は {nav_id} をヘッダーに出さないでください")
+                    )
+                continue
+            if nav_id == "tnav-past" and not past_enabled():
+                if f'id="{nav_id}"' in text:
+                    issues.append(
+                        Issue(f"{label}: hidePast 時は {nav_id} をヘッダーに出さないでください")
+                    )
+                continue
             m = re.search(rf'id="{re.escape(nav_id)}"\s+href="([^"]+)"', text)
             if not m:
                 issues.append(Issue(f"{label}: {nav_id} がありません"))
@@ -451,7 +504,7 @@ def _header_learning_nav(root: Path) -> list[Issue]:
                 )
 
     q_index = root / "q" / "index.html"
-    if q_index.is_file():
+    if q_index.is_file() and not _is_redirect_stub(q_index):
         text = q_index.read_text(encoding="utf-8")
         if re.search(r'id="tnav-past"[^>]*\saria-current="page"', text) or 'class="topnav-link active" id="tnav-past"' in text:
             issues.append(
@@ -523,6 +576,8 @@ def _viewport_and_static_css(root: Path) -> list[Issue]:
         path = root / rel
         if not path.is_file():
             continue
+        if rel == "q/index.html" and _is_redirect_stub(path):
+            continue
         text = path.read_text(encoding="utf-8")
         if not VIEWPORT_META_RE.search(text):
             issues.append(
@@ -553,6 +608,19 @@ def _viewport_and_static_css(root: Path) -> list[Issue]:
             issues.append(Issue("index.html: og:title がありません（SNSカード用 SEO head 未適用）"))
         else:
             head = text.split("</head>", 1)[0]
+            if 'property="og:image"' not in head and 'name="twitter:image"' not in head:
+                issues.append(
+                    Issue(
+                        "index.html: og:image / twitter:image がありません"
+                        "（generate_brand_assets + inject_brand_head を実行）"
+                    )
+                )
+            elif 'summary_large_image' in head and 'property="og:image"' not in head:
+                issues.append(
+                    Issue(
+                        "index.html: twitter:card=summary_large_image なのに og:image がありません"
+                    )
+                )
             home_url = _spa_home_url()
             og_url_m = re.search(r'property="og:url"\s+content="([^"]+)"', head)
             if og_url_m and og_url_m.group(1).rstrip("/") != home_url:
@@ -729,6 +797,8 @@ def _static_chrome(root: Path) -> list[Issue]:
     ]
     for label, path, require_topnav in samples:
         if not path.is_file():
+            continue
+        if label == "q/index.html" and _is_redirect_stub(path):
             continue
         text = path.read_text(encoding="utf-8")
         if require_topnav and "topnav site-shell-header" not in text:

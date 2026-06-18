@@ -8,14 +8,23 @@
 <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/brand/favicon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/brand/apple-touch-icon.png">
+<meta name="theme-color" content="#2d5c45">
+<meta property="og:image" content="https://eisei1shu-master.jp/assets/brand/og-image.png">
+<meta property="og:image:secure_url" content="https://eisei1shu-master.jp/assets/brand/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/png">
+<meta name="twitter:image" content="https://eisei1shu-master.jp/assets/brand/og-image.png">
+<meta name="twitter:image:alt" content="一衛マスター｜第一種衛生管理者試験">
+
 <!--INDEX_SEO_HEAD-->
 <!--SITE_VERIFICATION_META_INJECT-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-<title>一衛マスター｜第一種衛生管理者試験 過去問・一問一答・用語解説で合格を目指す無料学習サイト</title>
+<title>一衛マスター｜第一種衛生管理者試験 過去問・実践演習・一問一答・用語解説で合格を目指す無料学習サイト</title>
 
 <!-- 基本SEO -->
 <meta name="description" content="第一種衛生管理者試験の合格を目指す無料学習プラットフォーム。過去問演習・実践演習・一問一答・重要用語解説を網羅。年度別・科目別（関係法令（有害業務）・関係法令（有害以外）・労働衛生（有害業務）・労働衛生（有害以外））に絞った効率的な学習が可能です。">
-<meta name="keywords" content="第一種衛生管理者試験,過去問,一問一答,用語集,資格学習,合格,関係法令（有害業務）,関係法令（有害以外）,労働衛生（有害業務）">
+<meta name="keywords" content="第一種衛生管理者試験,過去問,実践演習,一問一答,用語集,資格学習,合格,関係法令（有害業務）,関係法令（有害以外）,労働衛生（有害業務）">
 <meta name="robots" content="index, follow">
 <meta name="application-name" content="一衛マスター（第一種衛生管理者試験）">
 <link rel="canonical" href="https://eisei1shu-master.jp/" id="canonical-link">
@@ -107,7 +116,8 @@
   ]
 }
 </script>
-<!--/INDEX_SEO_HEAD--><meta name="format-detection" content="telephone=no">
+<!--/INDEX_SEO_HEAD-->
+<meta name="format-detection" content="telephone=no">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
@@ -3550,7 +3560,17 @@ function beginIchimondouSession() {
   showIchiQuestion();
 }
 
-function startIchimondou() {
+/*QUESTION_MODES_ICHIMON_GUARD*/
+function ichimonModeEnabled(){
+  var qm=(window.SITE_CONFIG&&window.SITE_CONFIG.questionModes)||{};
+  return !qm.hideIchimon;
+}
+function pastModeEnabled(){
+  var qm=(window.SITE_CONFIG&&window.SITE_CONFIG.questionModes)||{};
+  return !qm.hidePast;
+}
+function startIchimondou(){
+  if(!ichimonModeEnabled()){ gotoPage('quiz-start'); return; }
   ichiState.active = false;
   ichiState.sourcePool = [];
   ichiState.questions = [];
@@ -3561,6 +3581,7 @@ function startIchimondou() {
   gotoPage('ichimondou');
   syncIchiPageVisibility();
 }
+/*/QUESTION_MODES_ICHIMON_GUARD*/
 
 function formatIchiStatementLead(statement) {
   return (statement || '').trim();
@@ -3841,6 +3862,8 @@ function shareIchiResultToX(){
 }
 
 function gotoPage(id, opts){
+  if(typeof ichimonModeEnabled==='function' && !ichimonModeEnabled() && (id==='ichimondou'||id==='ichimondou-score')){ id='quiz-start'; }
+  if(typeof pastModeEnabled==='function' && !pastModeEnabled() && (id==='past-config'||(id==='quiz'&&quizState.mode==='past')||(id==='score'&&quizState.mode==='past'))){ id='orig'; }
   if(id==='ichimondou') syncIchiPageVisibility();
   if(id!=='quiz') showNextBtn(false, null);
   document.body.classList.toggle('is-solving', id==='quiz' || (id==='ichimondou' && ichiState.active));
