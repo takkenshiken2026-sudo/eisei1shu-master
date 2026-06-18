@@ -30,7 +30,7 @@ body.seo-editorial-preview-page {
   --seo-line-lead: 1.95;
   --seo-line-heading: 1.45;
   --seo-letter-body: 0.01em;
-  --seo-font-weight: 400;
+  --seo-font-weight: 450;
   --seo-font-weight-heading: 800;
   --seo-font-weight-strong: 600;
   --seo-font-weight-link: 600;
@@ -748,7 +748,7 @@ body.seo-editorial-preview-page .seo-editorial .seo-article-section h2 .section-
 }
 
 .seo-editorial.seo-article-card .seo-article-section table.seo-info-table thead th {
-  font-weight: var(--seo-font-weight-heading);
+  font-weight: var(--seo-font-weight);
   background: var(--seo-table-head-bg);
   color: var(--seo-table-head-text);
 }
