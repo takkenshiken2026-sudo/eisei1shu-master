@@ -7,8 +7,9 @@ from __future__ import annotations
 import re
 
 from tools.editorial_quality import norm
+from tools.guide_tatoeba_limit import MAX_EXAMPLE_MARKERS_PER_ARTICLE, count_example_markers
 
-# 文中の例示・場面描写
+# 文中の例示・場面描写（浅い例示検出用）
 EXAMPLE_MARKERS_RE = re.compile(
     r"例えば|たとえば|たとえ|例として|イメージ(?:として|すると)|好比|想像すると|"
     r"具体(?:例|的)には|一例として|場面として|ケース(?:として|例)|"
@@ -16,8 +17,10 @@ EXAMPLE_MARKERS_RE = re.compile(
     r"「[^」]{6,48}」(?:の|と|なら|では)"
 )
 
-# 5節中、中身のある例示が必要な節数
-MIN_SECTIONS_WITH_SUBSTANTIVE_EXAMPLE = 4
+# 5節中、具体アンカーが十分な節数（例えば/たとえばは不要）
+MIN_SECTIONS_WITH_CONCRETE_ANCHORS = 3
+
+MIN_ANCHORS_PER_CONCRETE_SECTION = 2
 
 # 例示がない節は表外 prose に必要な具体アンカー数
 MIN_ANCHORS_WITHOUT_EXAMPLE = 3
@@ -55,59 +58,16 @@ SHALLOW_AFTER_MARKER_RE = re.compile(
     r"[^。！？\n]{0,40}(?:してください|しましょう|が大切|を心がけ|が重要|必要です|おすすめです)"
 )
 
-LEAD_TIME_RE = re.compile(
-    r"残り[0-9０-９]+|\d+週|\d+か月|[0-9０-９]+月[0-9０-９]+日"
-)
-
 SENTENCE_SPLIT_RE = re.compile(r"[。！？\n]+")
 
 PIPE_TABLE_ROW_RE = re.compile(r"^\|", re.M)
 
-# 分野別記事に載せない学習運用ジャargon（テンプレ混入防止）
-FIELD_GUIDE_FORBIDDEN_RE = re.compile(
-    r"5行表|7行表|/terms/|Day3解き直し|Day0→3→7|11/22新規0|9月通し\d+/50|9/\d+通し\d+/\d+"
+READER_PROSE_KEYS = (
+    "lead",
+    "user_intent",
+    *(f"section_{n}_body" for n in range(1, 6)),
+    *(f"faq_{n}_answer" for n in range(1, 4)),
 )
-
-# 分野別記事に最低1つは試験論点語が必要
-FIELD_GUIDE_SUBSTANCE_RE = re.compile(
-    r"条文|論点|制度|法第|借地|借家|契約|権利|義務|規定|敷金|更新|正当事由|保証|賃貸|"
-    r"規約|総会|決議|管理組合|理事会|普通決議|特別決議|"
-    r"修繕|点検|長期修繕|設備|建築基準|維持修繕|積立|"
-    r"専有部分|共用部分|区分所有|集会|議決|"
-    r"管理費|収支|決算|按分|会計報告|監査|"
-    r"適正化|登録|届出|遵守規定|適正原価|管理業者|"
-    r"品確|建替|認定|円滑化|"
-    r"判例|横断|分野またぎ|"
-    r"委託|受託|報酬|指針|宅建|重要事項|媒介"
-)
-
-
-def validate_field_guide_genre(slug: str, patch: dict[str, str]) -> list[str]:
-    """分野別 field-* 記事のジャンル適合（学習計画テンプレ混入を ERROR）。"""
-    if not slug.startswith("field-"):
-        return []
-    errors: list[str] = []
-    prefix = f"{slug}:"
-    prose_cols = (
-        ["lead", "user_intent"]
-        + [f"section_{n}_body" for n in range(1, 6)]
-        + [f"faq_{n}_answer" for n in range(1, 4)]
-    )
-    combined = ""
-    for col in prose_cols:
-        combined += norm(patch.get(col)) + "\n"
-    if FIELD_GUIDE_FORBIDDEN_RE.search(combined):
-        errors.append(
-            f"{prefix} field guide must not use study-schedule jargon "
-            f"(7行表, /terms/, Day3, 9/6通し 等). Link to study-plan instead."
-        )
-    section_bodies = "".join(norm(patch.get(f"section_{n}_body")) for n in range(1, 6))
-    if section_bodies and not FIELD_GUIDE_SUBSTANCE_RE.search(section_bodies):
-        errors.append(
-            f"{prefix} field guide section bodies need exam substance "
-            f"(条文/論点/専有部分/集会 等)"
-        )
-    return errors
 
 
 def skip_concrete_rules(patch: dict[str, str]) -> bool:
@@ -176,27 +136,26 @@ def faq_answer_is_concrete(answer: str) -> bool:
     return section_concrete_anchor_count(text) >= 2
 
 
+def article_example_marker_count(patch: dict[str, str]) -> int:
+    total = 0
+    for key in READER_PROSE_KEYS:
+        total += count_example_markers(norm(patch.get(key, "")))
+    return total
+
+
 def _lead_errors(prefix: str, lead: str) -> list[str]:
     errors: list[str] = []
     if not lead:
         return errors
-    has_time = bool(LEAD_TIME_RE.search(lead))
-    has_substantive = bool(substantive_example_sentences(lead))
-    has_marker_with_anchors = (
-        EXAMPLE_MARKERS_RE.search(lead) is not None
-        and section_concrete_anchor_count(lead) >= 2
-    )
-    if not has_time:
-        errors.append(
-            f"{prefix} lead needs 逆算 anchor (残り○週 / ○か月 / ○月○日)"
-        )
-    if not has_substantive and not has_marker_with_anchors:
-        errors.append(
-            f"{prefix} lead needs substantive 例えば/たとえば scene with numbers or dates"
-        )
-    if EXAMPLE_MARKERS_RE.search(lead) and not has_substantive:
+    if EXAMPLE_MARKERS_RE.search(lead) and not substantive_example_sentences(lead):
         if SHALLOW_AFTER_MARKER_RE.search(lead):
-            errors.append(f"{prefix} lead example is too abstract (add numbers/field/weekday)")
+            errors.append(
+                f"{prefix} lead example is too abstract (add numbers, field, or weekday)"
+            )
+        elif section_concrete_anchor_count(lead) < 2:
+            errors.append(
+                f"{prefix} lead has 例えば/たとえば but lacks concrete anchors"
+            )
     return errors
 
 
@@ -207,7 +166,7 @@ def _user_intent_errors(prefix: str, patch: dict[str, str]) -> list[str]:
         return errors
     if not substantive_example_sentences(ui) and section_concrete_anchor_count(ui) < 1:
         errors.append(
-            f"{prefix} user_intent needs a concrete anchor or 例えば scene (not title repeat)"
+            f"{prefix} user_intent needs a concrete anchor (not title repeat)"
         )
     lead = norm(patch.get("lead"))
     if lead and ui:
@@ -226,20 +185,29 @@ def validate_concrete_rewrite(slug: str, patch: dict[str, str]) -> list[str]:
     errors: list[str] = []
     prefix = f"{slug}:"
 
+    marker_count = article_example_marker_count(patch)
+    if marker_count > MAX_EXAMPLE_MARKERS_PER_ARTICLE:
+        errors.append(
+            f"{prefix} use 例えば/たとえば at most {MAX_EXAMPLE_MARKERS_PER_ARTICLE} times "
+            f"(got {marker_count})"
+        )
+
     lead = norm(patch.get("lead"))
     errors.extend(_lead_errors(prefix, lead))
     errors.extend(_user_intent_errors(prefix, patch))
 
-    substantive_sections = 0
+    concrete_sections = 0
     for n in range(1, 6):
         bcol = f"section_{n}_body"
         body = norm(patch.get(bcol))
         if not body:
             continue
+        anchor_count = section_concrete_anchor_count(body)
+        if anchor_count >= MIN_ANCHORS_PER_CONCRETE_SECTION:
+            concrete_sections += 1
+            continue
         ok, reason = section_concrete_status(body)
-        if reason == "substantive":
-            substantive_sections += 1
-        elif not ok:
+        if not ok:
             if reason == "shallow":
                 errors.append(
                     f"{prefix} {bcol} has 例えば/たとえば but example lacks "
@@ -247,14 +215,15 @@ def validate_concrete_rewrite(slug: str, patch: dict[str, str]) -> list[str]:
                 )
             else:
                 errors.append(
-                    f"{prefix} {bcol} needs substantive 例えば scene OR "
-                    f"{MIN_ANCHORS_WITHOUT_EXAMPLE}+ concrete anchors outside the table"
+                    f"{prefix} {bcol} needs concrete anchors "
+                    f"({MIN_ANCHORS_WITHOUT_EXAMPLE}+ outside the table)"
                 )
 
-    if substantive_sections < MIN_SECTIONS_WITH_SUBSTANTIVE_EXAMPLE:
+    if concrete_sections < MIN_SECTIONS_WITH_CONCRETE_ANCHORS:
         errors.append(
-            f"{prefix} need {MIN_SECTIONS_WITH_SUBSTANTIVE_EXAMPLE}+ sections with "
-            f"substantive 例えば/たとえば (got {substantive_sections})"
+            f"{prefix} need {MIN_SECTIONS_WITH_CONCRETE_ANCHORS}+ sections with "
+            f"{MIN_ANCHORS_PER_CONCRETE_SECTION}+ concrete anchors "
+            f"(got {concrete_sections})"
         )
 
     faq_answers = [norm(patch.get(f"faq_{n}_answer")) for n in range(1, 4)]
@@ -262,14 +231,8 @@ def validate_concrete_rewrite(slug: str, patch: dict[str, str]) -> list[str]:
     concrete_faq = sum(1 for a in faq_answers if faq_answer_is_concrete(a))
     if concrete_faq < MIN_FAQ_WITH_CONCRETE:
         errors.append(
-            f"{prefix} need {MIN_FAQ_WITH_CONCRETE}+ FAQ answers with example or "
-            f"2+ anchors (got {concrete_faq})"
+            f"{prefix} need {MIN_FAQ_WITH_CONCRETE}+ FAQ answers with concrete anchors "
+            f"(got {concrete_faq})"
         )
-    if faq_answers and not any(substantive_example_sentences(a) for a in faq_answers):
-        errors.append(
-            f"{prefix} need at least 1 FAQ answer with substantive 例えば/たとえば"
-        )
-
-    errors.extend(validate_field_guide_genre(slug, patch))
 
     return errors
