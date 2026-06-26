@@ -7,6 +7,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 1,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における赤血球に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "赤血球はヘモグロビンを含み、主に酸素の運搬に関与する。",
@@ -24,6 +26,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 2,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における赤血球に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "吸気時には横隔膜が収縮して下がり、胸郭の容積が大きくなる。",
@@ -41,6 +45,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 3,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における赤血球に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "吸気時には横隔膜が弛緩して上がり、胸郭の容積が小さくなる。",
@@ -58,6 +64,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 4,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における赤血球に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "肺静脈には、肺で酸素を取り込んだ血液が流れる。",
@@ -75,6 +83,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 5,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における白血球に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "肺胞では、血液中の酸素が肺胞内へ移動し、肺胞内の二酸化炭素が血液中へ移動する。",
@@ -92,6 +102,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 6,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における白血球に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "左心室から送り出された血液は、大動脈を通って全身へ送られる。",
@@ -109,6 +121,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 7,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における白血球に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "白血球は、細菌などに対する生体防御に関与する。",
@@ -126,6 +140,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 8,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における白血球に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "自律神経系は、交感神経系と副交感神経系に大別される。",
@@ -143,6 +159,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 9,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における血小板に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "吸気時には横隔膜が弛緩して上がり、胸郭の容積が小さくなる。",
@@ -160,6 +178,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 10,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における血小板に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "血小板は酸素を全身に運搬する主要な血球である。",
@@ -177,6 +197,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 11,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における血小板に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "肺静脈には、全身から戻った酸素の少ない血液が流れる。",
@@ -194,6 +216,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 12,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における血小板に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "交感神経が優位になると、一般に心拍数は増加しやすい。",
@@ -211,6 +235,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 13,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における肺胞に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "右心室から送り出された血液は、大動脈を通って全身へ送られる。",
@@ -228,6 +254,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 14,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における肺胞に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "自律神経系は、交感神経系と副交感神経系に大別される。",
@@ -245,6 +273,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 15,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における肺胞に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "自律神経系は、大脳皮質と小脳だけから構成される。",
@@ -262,6 +292,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 16,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における肺胞に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "肺胞では、血液中の酸素が肺胞内へ移動し、肺胞内の二酸化炭素が血液中へ移動する。",
@@ -279,6 +311,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 17,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における横隔膜に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "肺静脈には、全身から戻った酸素の少ない血液が流れる。",
@@ -296,6 +330,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 18,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における横隔膜に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "交感神経が優位になると、一般に心拍数は増加しやすい。",
@@ -313,6 +349,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 19,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における横隔膜に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "交感神経が優位になると、一般に心拍数は大きく低下する。",
@@ -330,6 +368,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 20,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における横隔膜に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "肝臓は、胆汁の生成、解毒、グリコーゲンの貯蔵などに関与する。",
@@ -347,6 +387,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 21,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における心臓に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "左心室から送り出された血液は、大動脈を通って全身へ送られる。",
@@ -364,6 +406,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 22,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における心臓に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "副交感神経が優位になると、一般に消化管運動は促進されやすい。",
@@ -381,6 +425,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 23,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における心臓に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "副交感神経が優位になると、一般に消化管運動は停止する。",
@@ -398,6 +444,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 24,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における心臓に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "膵臓のランゲルハンス島から分泌されるインスリンは、血糖値を低下させる。",
@@ -415,6 +463,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 25,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における肺静脈に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "交感神経が優位になると、一般に心拍数は大きく低下する。",
@@ -432,6 +482,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 26,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における肺静脈に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "肝臓は、胆汁の生成、解毒、グリコーゲンの貯蔵などに関与する。",
@@ -449,6 +501,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 27,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における肺静脈に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "肺静脈には、肺で酸素を取り込んだ血液が流れる。",
@@ -466,6 +520,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 28,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における肺静脈に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "腎臓は、尿の生成を通じて老廃物の排泄や体液の調節に関与する。",
@@ -483,6 +539,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 29,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における自律神経に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "副交感神経が優位になると、一般に消化管運動は停止する。",
@@ -500,6 +558,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 30,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における自律神経に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "自律神経系は、大脳皮質と小脳だけから構成される。",
@@ -517,6 +577,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 31,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における自律神経に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "膵臓は尿素を生成してアンモニアを解毒する主な臓器である。",
@@ -534,6 +596,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 32,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における自律神経に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "骨格筋は随意筋であり、意思によって動かすことができる。",
@@ -551,6 +615,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 33,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における交感神経に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "肝臓はインスリンを分泌して血糖値を直接低下させる。",
@@ -568,6 +634,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 34,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における交感神経に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "腎臓は、尿の生成を通じて老廃物の排泄や体液の調節に関与する。",
@@ -585,6 +653,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 35,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における交感神経に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "腎臓は胆汁を生成して脂肪の消化を助ける。",
@@ -602,6 +672,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 36,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における交感神経に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "交感神経が優位になると、一般に心拍数は大きく低下する。",
@@ -619,6 +691,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 37,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における副交感神経に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "膵臓は尿素を生成してアンモニアを解毒する主な臓器である。",
@@ -636,6 +710,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 38,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における副交感神経に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "骨格筋は随意筋であり、意思によって動かすことができる。",
@@ -653,6 +729,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 39,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における副交感神経に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "骨格筋は不随意筋であり、意思によって全く動かせない。",
@@ -670,6 +748,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 40,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における副交感神経に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "暑熱時には、発汗や皮膚血管の拡張により体熱の放散が促進される。",
@@ -687,6 +767,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 41,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における肝臓に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "肝臓は、胆汁の生成、解毒、グリコーゲンの貯蔵などに関与する。",
@@ -704,6 +786,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 42,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における肝臓に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "心筋は不随意筋であり、規則的な拍動を行う。",
@@ -721,6 +805,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 43,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における肝臓に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "心筋は随意筋であり、意思によって拍動を停止できる。",
@@ -738,6 +824,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 44,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における肝臓に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "発汗が多い作業では、水分だけでなく塩分の補給も重要となる。",
@@ -755,6 +843,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 45,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における膵臓に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "骨格筋は不随意筋であり、意思によって全く動かせない。",
@@ -772,6 +862,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 46,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における膵臓に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "暑熱時には、発汗や皮膚血管の拡張により体熱の放散が促進される。",
@@ -789,6 +881,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 47,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における膵臓に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "膵臓のランゲルハンス島から分泌されるインスリンは、血糖値を低下させる。",
@@ -806,6 +900,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 48,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における膵臓に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "眼の水晶体は、厚さを変化させて焦点調節に関与する。",
@@ -823,6 +919,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 49,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における腎臓に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "心筋は随意筋であり、意思によって拍動を停止できる。",
@@ -840,6 +938,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 50,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における腎臓に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "腎臓は胆汁を生成して脂肪の消化を助ける。",
@@ -857,6 +957,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 51,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における腎臓に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "発汗が多い作業では、水分摂取を避けるほど熱中症を予防できる。",
@@ -874,6 +976,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 52,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における腎臓に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "内耳の蝸牛は、音の刺激を神経信号に変換する働きに関与する。",
@@ -891,6 +995,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 53,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における骨格筋に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "暑熱時には、皮膚血管が収縮して体熱の放散が促進される。",
@@ -908,6 +1014,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 54,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における骨格筋に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "眼の水晶体は、厚さを変化させて焦点調節に関与する。",
@@ -925,6 +1033,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 55,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における骨格筋に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "眼の水晶体は、音の振動を神経信号に変換する。",
@@ -942,6 +1052,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 56,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における骨格筋に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "骨格筋は不随意筋であり、意思によって全く動かせない。",
@@ -959,6 +1071,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 57,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における心筋に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "発汗が多い作業では、水分摂取を避けるほど熱中症を予防できる。",
@@ -976,6 +1090,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 58,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における心筋に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "内耳の蝸牛は、音の刺激を神経信号に変換する働きに関与する。",
@@ -993,6 +1109,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 59,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における心筋に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "内耳の蝸牛は、血液中の酸素を運搬する。",
@@ -1010,6 +1128,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 60,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における心筋に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "疲労は、作業能率の低下や注意力低下の要因となる。",
@@ -1027,6 +1147,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 61,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における体温調節に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "暑熱時には、発汗や皮膚血管の拡張により体熱の放散が促進される。",
@@ -1044,6 +1166,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 62,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における体温調節に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "睡眠不足は、注意力や判断力の低下につながることがある。",
@@ -1061,6 +1185,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 63,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における体温調節に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "睡眠不足は、注意力を常に高め、疲労を完全に防止する。",
@@ -1078,6 +1204,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 64,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における体温調節に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "ホルモンは内分泌腺から血液中に分泌され、標的器官に作用する。",
@@ -1095,6 +1223,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 65,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における水分代謝に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "内耳の蝸牛は、血液中の酸素を運搬する。",
@@ -1112,6 +1242,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 66,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における水分代謝に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "疲労は、作業能率の低下や注意力低下の要因となる。",
@@ -1129,6 +1261,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 67,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における水分代謝に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "発汗が多い作業では、水分だけでなく塩分の補給も重要となる。",
@@ -1146,6 +1280,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 68,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における水分代謝に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "消化酵素は、食物中の栄養素を吸収しやすい形に分解する。",
@@ -1163,6 +1299,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 69,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における視覚に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "睡眠不足は、注意力を常に高め、疲労を完全に防止する。",
@@ -1180,6 +1318,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 70,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における視覚に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "眼の水晶体は、音の振動を神経信号に変換する。",
@@ -1197,6 +1337,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 71,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における視覚に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "ホルモンは消化管内だけに分泌され、血液中には入らない。",
@@ -1214,6 +1356,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 72,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における視覚に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "小腸は、消化された栄養素の吸収に重要な役割を果たす。",
@@ -1231,6 +1375,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 73,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における聴覚に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "疲労は作業能率を必ず上昇させ、災害リスクを低下させる。",
@@ -1248,6 +1394,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 74,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における聴覚に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "消化酵素は、食物中の栄養素を吸収しやすい形に分解する。",
@@ -1265,6 +1413,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 75,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における聴覚に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "消化酵素は、肺胞で酸素と二酸化炭素を交換する。",
@@ -1282,6 +1432,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 76,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における聴覚に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "内耳の蝸牛は、血液中の酸素を運搬する。",
@@ -1299,6 +1451,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 77,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における睡眠に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "ホルモンは消化管内だけに分泌され、血液中には入らない。",
@@ -1316,6 +1470,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 78,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における睡眠に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "小腸は、消化された栄養素の吸収に重要な役割を果たす。",
@@ -1333,6 +1489,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 79,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における睡眠に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "小腸は尿を一時的に貯留する器官である。",
@@ -1350,6 +1508,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 80,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における睡眠に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "赤血球はヘモグロビンを含み、主に酸素の運搬に関与する。",
@@ -1367,6 +1527,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 81,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における疲労に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "疲労は、作業能率の低下や注意力低下の要因となる。",
@@ -1384,6 +1546,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 82,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における疲労に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "中枢神経系は、脳と脊髄から成る。",
@@ -1401,6 +1565,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 83,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における疲労に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "中枢神経系は、末梢の血管とリンパ管だけから成る。",
@@ -1418,6 +1584,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 84,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における疲労に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "白血球は、細菌などに対する生体防御に関与する。",
@@ -1435,6 +1603,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 85,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理におけるホルモンに関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "小腸は尿を一時的に貯留する器官である。",
@@ -1452,6 +1622,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 86,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理におけるホルモンに関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "赤血球はヘモグロビンを含み、主に酸素の運搬に関与する。",
@@ -1469,6 +1641,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 87,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理におけるホルモンに関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "ホルモンは内分泌腺から血液中に分泌され、標的器官に作用する。",
@@ -1486,6 +1660,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 88,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理におけるホルモンに関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "血小板は、出血時の止血や血液凝固に関与する。",
@@ -1503,6 +1679,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 89,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における消化酵素に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "中枢神経系は、末梢の血管とリンパ管だけから成る。",
@@ -1520,6 +1698,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 90,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における消化酵素に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "消化酵素は、肺胞で酸素と二酸化炭素を交換する。",
@@ -1537,6 +1717,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 91,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における消化酵素に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "白血球は血液凝固の主役であり、血栓を形成する。",
@@ -1554,6 +1736,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 92,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における消化酵素に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "肺胞では、肺胞内の酸素が血液中へ移動し、血液中の二酸化炭素が肺胞内へ移動する。",
@@ -1571,6 +1755,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 93,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における小腸に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "赤血球は抗体を産生して免疫反応の中心となる。",
@@ -1588,6 +1774,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 94,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における小腸に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "血小板は、出血時の止血や血液凝固に関与する。",
@@ -1605,6 +1793,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 95,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における小腸に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "血小板は酸素を全身に運搬する主要な血球である。",
@@ -1622,6 +1812,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 96,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における小腸に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "小腸は尿を一時的に貯留する器官である。",
@@ -1639,6 +1831,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 97,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における中枢神経に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "白血球は血液凝固の主役であり、血栓を形成する。",
@@ -1656,6 +1850,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 98,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における中枢神経に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "肺胞では、肺胞内の酸素が血液中へ移動し、血液中の二酸化炭素が肺胞内へ移動する。",
@@ -1673,6 +1869,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 99,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における中枢神経に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "肺胞では、血液中の酸素が肺胞内へ移動し、肺胞内の二酸化炭素が血液中へ移動する。",
@@ -1690,6 +1888,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 100,
       "field": "physio",
+      "qtype": "single",
+      "tags": "演習;労働生理",
       "text": "労働生理における中枢神経に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "左心室から送り出された血液は、大動脈を通って全身へ送られる。",
@@ -1707,6 +1907,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 101,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における有機溶剤に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "有機溶剤は、蒸気の吸入や皮膚吸収により体内に取り込まれることがある。",
@@ -1724,6 +1926,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 102,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における有機溶剤に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "一酸化炭素はヘモグロビンと強く結合し、酸素運搬を妨げる。",
@@ -1741,6 +1945,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 103,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における有機溶剤に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "一酸化炭素は酸素よりヘモグロビンと結合しにくく、中毒を起こさない。",
@@ -1758,6 +1964,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 104,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における有機溶剤に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "粉じんのうち肺胞まで到達しやすい微細な粒子は、じん肺の原因となることがある。",
@@ -1775,6 +1983,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 105,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における有機溶剤中毒に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "水銀は人体に必須であり、多量摂取ほど神経機能を高める。",
@@ -1792,6 +2002,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 106,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における有機溶剤中毒に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "硫化水素は高濃度で急速に重篤な中毒を起こす危険がある。",
@@ -1809,6 +2021,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 107,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における有機溶剤中毒に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "有機溶剤の急性中毒では、頭痛、めまい、意識障害などがみられることがある。",
@@ -1826,6 +2040,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 108,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における有機溶剤中毒に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "遊離けい酸を含む粉じんへの長期ばく露は、けい肺の原因となることがある。",
@@ -1843,6 +2059,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 109,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における鉛に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "一酸化炭素は酸素よりヘモグロビンと結合しにくく、中毒を起こさない。",
@@ -1860,6 +2078,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 110,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における鉛に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "鉛中毒では、肺胞で酸素が過剰に生成されることが主症状である。",
@@ -1877,6 +2097,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 111,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における鉛に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "粉じんは粒径が大きいほど肺胞の奥まで到達しやすい。",
@@ -1894,6 +2116,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 112,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における鉛に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "石綿ばく露は、肺がんや中皮腫などのリスクと関連する。",
@@ -1911,6 +2135,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 113,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における水銀に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "硫化水素は高濃度でも刺激性が弱く、健康障害を起こさない。",
@@ -1928,6 +2154,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 114,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における水銀に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "遊離けい酸を含む粉じんへの長期ばく露は、けい肺の原因となることがある。",
@@ -1945,6 +2173,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 115,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における水銀に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "けい肺は、湿度が低いだけで発症する感染症である。",
@@ -1962,6 +2192,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 116,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における水銀に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "水銀は人体に必須であり、多量摂取ほど神経機能を高める。",
@@ -1979,6 +2211,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 117,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における一酸化炭素に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "粉じんは粒径が大きいほど肺胞の奥まで到達しやすい。",
@@ -1996,6 +2230,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 118,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における一酸化炭素に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "石綿ばく露は、肺がんや中皮腫などのリスクと関連する。",
@@ -2013,6 +2249,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 119,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における一酸化炭素に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "石綿は人体に吸収されると、肺疾患のリスクを完全に低下させる。",
@@ -2030,6 +2268,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 120,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における一酸化炭素に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "手持ち振動工具の使用では、末梢循環障害や末梢神経障害に注意する。",
@@ -2047,6 +2287,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 121,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における硫化水素に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "硫化水素は高濃度で急速に重篤な中毒を起こす危険がある。",
@@ -2064,6 +2306,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 122,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における硫化水素に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "騒音性難聴では、初期に高音域の聴力低下がみられることがある。",
@@ -2081,6 +2325,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 123,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における硫化水素に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "騒音性難聴は、ばく露を続けるほど必ず短期間で完全回復する。",
@@ -2098,6 +2344,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 124,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における硫化水素に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "電離放射線へのばく露管理では、外部被ばくと内部被ばくの両方に注意する。",
@@ -2115,6 +2363,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 125,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における粉じんに関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "石綿は人体に吸収されると、肺疾患のリスクを完全に低下させる。",
@@ -2132,6 +2382,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 126,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における粉じんに関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "手持ち振動工具の使用では、末梢循環障害や末梢神経障害に注意する。",
@@ -2149,6 +2401,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 127,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における粉じんに関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "粉じんのうち肺胞まで到達しやすい微細な粒子は、じん肺の原因となることがある。",
@@ -2166,6 +2420,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 128,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における粉じんに関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "紫外線は、眼や皮膚に障害を起こすことがある。",
@@ -2183,6 +2439,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 129,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)におけるけい肺に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "騒音性難聴は、ばく露を続けるほど必ず短期間で完全回復する。",
@@ -2200,6 +2458,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 130,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)におけるけい肺に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "けい肺は、湿度が低いだけで発症する感染症である。",
@@ -2217,6 +2477,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 131,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)におけるけい肺に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "電離放射線では、内部被ばくは存在せず外部被ばくだけを考えればよい。",
@@ -2234,6 +2496,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 132,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)におけるけい肺に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "赤外線ばく露では、熱作用による眼や皮膚への影響に注意する。",
@@ -2251,6 +2515,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 133,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における石綿に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "振動障害では、手指の血流障害は問題にならない。",
@@ -2268,6 +2534,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 134,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における石綿に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "紫外線は、眼や皮膚に障害を起こすことがある。",
@@ -2285,6 +2553,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 135,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における石綿に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "紫外線は、眼や皮膚に全く影響を及ぼさない。",
@@ -2302,6 +2572,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 136,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における石綿に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "石綿は人体に吸収されると、肺疾患のリスクを完全に低下させる。",
@@ -2319,6 +2591,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 137,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における騒音に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "電離放射線では、内部被ばくは存在せず外部被ばくだけを考えればよい。",
@@ -2336,6 +2610,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 138,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における騒音に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "赤外線ばく露では、熱作用による眼や皮膚への影響に注意する。",
@@ -2353,6 +2629,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 139,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における騒音に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "赤外線は低温環境でのみ発生し、熱作用を持たない。",
@@ -2370,6 +2648,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 140,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における騒音に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "暑熱作業では、WBGT値などを参考に作業環境や作業負荷を管理する。",
@@ -2387,6 +2667,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 141,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における振動障害に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "手持ち振動工具の使用では、末梢循環障害や末梢神経障害に注意する。",
@@ -2404,6 +2686,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 142,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における振動障害に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "酸素欠乏危険場所では、作業前の酸素濃度測定や換気が重要である。",
@@ -2421,6 +2705,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 143,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における振動障害に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "酸素欠乏危険場所では、酸素濃度の測定を行う必要はない。",
@@ -2438,6 +2724,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 144,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における振動障害に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "有害物を発散する作業では、発散源に近い位置で捕集する局所排気装置が有効である。",
@@ -2455,6 +2743,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 145,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における電離放射線に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "赤外線は低温環境でのみ発生し、熱作用を持たない。",
@@ -2472,6 +2762,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 146,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における電離放射線に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "暑熱作業では、WBGT値などを参考に作業環境や作業負荷を管理する。",
@@ -2489,6 +2781,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 147,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における電離放射線に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "電離放射線へのばく露管理では、外部被ばくと内部被ばくの両方に注意する。",
@@ -2506,6 +2800,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 148,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における電離放射線に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "プッシュプル型換気装置は、吹出し気流と吸込み気流により有害物を制御する。",
@@ -2523,6 +2819,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 149,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における紫外線に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "酸素欠乏危険場所では、酸素濃度の測定を行う必要はない。",
@@ -2540,6 +2838,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 150,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における紫外線に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "紫外線は、眼や皮膚に全く影響を及ぼさない。",
@@ -2557,6 +2857,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 151,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における紫外線に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "局所排気装置は、有害物を作業者の呼吸域へ集めるための装置である。",
@@ -2574,6 +2876,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 152,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における紫外線に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "防毒マスクは、対象ガスに適した吸収缶を選定する必要がある。",
@@ -2591,6 +2895,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 153,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における赤外線に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "暑熱作業では、体調不良者にも休憩を取らせないことが最も重要である。",
@@ -2608,6 +2914,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 154,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における赤外線に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "プッシュプル型換気装置は、吹出し気流と吸込み気流により有害物を制御する。",
@@ -2625,6 +2933,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 155,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における赤外線に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "プッシュプル型換気装置は、気流を全く発生させない密閉容器である。",
@@ -2642,6 +2952,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 156,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における赤外線に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "赤外線は低温環境でのみ発生し、熱作用を持たない。",
@@ -2659,6 +2971,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 157,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における酸素欠乏に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "局所排気装置は、有害物を作業者の呼吸域へ集めるための装置である。",
@@ -2676,6 +2990,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 158,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における酸素欠乏に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "防毒マスクは、対象ガスに適した吸収缶を選定する必要がある。",
@@ -2693,6 +3009,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 159,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における酸素欠乏に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "防毒マスクは、酸素濃度が低い場所でも単独で常に使用できる。",
@@ -2710,6 +3028,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 160,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における酸素欠乏に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "作業環境測定は、作業場の有害因子の状態を把握し改善に役立てるために行う。",
@@ -2727,6 +3047,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 161,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における熱中症に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "暑熱作業では、WBGT値などを参考に作業環境や作業負荷を管理する。",
@@ -2744,6 +3066,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 162,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における熱中症に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "防じんマスクは、粉じんの種類や濃度に応じて適切な性能のものを選ぶ。",
@@ -2761,6 +3085,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 163,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における熱中症に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "防じんマスクは、どの粉じんにも布製の簡易マスクで十分である。",
@@ -2778,6 +3104,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 164,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における熱中症に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "生物学的モニタリングは、尿や血液中の物質などから体内取り込みを評価する方法である。",
@@ -2795,6 +3123,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 165,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における局所排気装置に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "防毒マスクは、酸素濃度が低い場所でも単独で常に使用できる。",
@@ -2812,6 +3142,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 166,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における局所排気装置に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "作業環境測定は、作業場の有害因子の状態を把握し改善に役立てるために行う。",
@@ -2829,6 +3161,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 167,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における局所排気装置に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "有害物を発散する作業では、発散源に近い位置で捕集する局所排気装置が有効である。",
@@ -2846,6 +3180,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 168,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における局所排気装置に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "有害物ばく露対策では、発散源の密閉化が有効な場合がある。",
@@ -2863,6 +3199,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 169,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)におけるプッシュプル型換気に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "防じんマスクは、どの粉じんにも布製の簡易マスクで十分である。",
@@ -2880,6 +3218,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 170,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)におけるプッシュプル型換気に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "プッシュプル型換気装置は、気流を全く発生させない密閉容器である。",
@@ -2897,6 +3237,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 171,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)におけるプッシュプル型換気に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "生物学的モニタリングは、作業場の照度だけを測る方法である。",
@@ -2914,6 +3256,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 172,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)におけるプッシュプル型換気に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "有害性の高い物質を有害性の低い物質へ代替することは、リスク低減策の一つである。",
@@ -2931,6 +3275,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 173,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における防毒マスクに関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "作業環境測定は、労働者の身長を測るためだけに行う。",
@@ -2948,6 +3294,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 174,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における防毒マスクに関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "有害物ばく露対策では、発散源の密閉化が有効な場合がある。",
@@ -2965,6 +3313,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 175,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における防毒マスクに関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "有害物ばく露対策では、発散源を開放するほどばく露は低下する。",
@@ -2982,6 +3332,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 176,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における防毒マスクに関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "防毒マスクは、酸素濃度が低い場所でも単独で常に使用できる。",
@@ -2999,6 +3351,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 177,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における防じんマスクに関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "生物学的モニタリングは、作業場の照度だけを測る方法である。",
@@ -3016,6 +3370,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 178,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における防じんマスクに関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "有害性の高い物質を有害性の低い物質へ代替することは、リスク低減策の一つである。",
@@ -3033,6 +3389,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 179,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における防じんマスクに関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "有害性の低い物質への代替は、リスク低減とは無関係である。",
@@ -3050,6 +3408,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 180,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における防じんマスクに関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "有機溶剤は、蒸気の吸入や皮膚吸収により体内に取り込まれることがある。",
@@ -3067,6 +3427,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 181,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における作業環境測定に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "作業環境測定は、作業場の有害因子の状態を把握し改善に役立てるために行う。",
@@ -3084,6 +3446,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 182,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における作業環境測定に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "有害業務に従事する労働者には、業務に応じた特殊健康診断が必要となる場合がある。",
@@ -3101,6 +3465,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 183,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における作業環境測定に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "有害業務に従事する労働者には、いかなる場合も健康診断は不要である。",
@@ -3118,6 +3484,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 184,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における作業環境測定に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "有機溶剤の急性中毒では、頭痛、めまい、意識障害などがみられることがある。",
@@ -3135,6 +3503,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 185,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における生物学的モニタリングに関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "有害性の低い物質への代替は、リスク低減とは無関係である。",
@@ -3152,6 +3522,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 186,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における生物学的モニタリングに関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "有機溶剤は、蒸気の吸入や皮膚吸収により体内に取り込まれることがある。",
@@ -3169,6 +3541,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 187,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における生物学的モニタリングに関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "生物学的モニタリングは、尿や血液中の物質などから体内取り込みを評価する方法である。",
@@ -3186,6 +3560,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 188,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における生物学的モニタリングに関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "鉛による健康障害では、貧血、腹部症状、末梢神経障害などが問題となる。",
@@ -3203,6 +3579,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 189,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における密閉化に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "有害業務に従事する労働者には、いかなる場合も健康診断は不要である。",
@@ -3220,6 +3598,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 190,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における密閉化に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "有害物ばく露対策では、発散源を開放するほどばく露は低下する。",
@@ -3237,6 +3617,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 191,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における密閉化に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "有機溶剤の急性中毒では、中枢神経症状は全くみられない。",
@@ -3254,6 +3636,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 192,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における密閉化に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "水銀による健康障害では、神経症状や口腔内症状などが問題となる。",
@@ -3271,6 +3655,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 193,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における代替化に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "有機溶剤による健康障害は、経口摂取の場合に限られる。",
@@ -3288,6 +3674,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 194,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における代替化に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "鉛による健康障害では、貧血、腹部症状、末梢神経障害などが問題となる。",
@@ -3305,6 +3693,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 195,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における代替化に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "鉛中毒では、肺胞で酸素が過剰に生成されることが主症状である。",
@@ -3322,6 +3712,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 196,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における代替化に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "有害性の低い物質への代替は、リスク低減とは無関係である。",
@@ -3339,6 +3731,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 197,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における特殊健康診断に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "有機溶剤の急性中毒では、中枢神経症状は全くみられない。",
@@ -3356,6 +3750,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 198,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における特殊健康診断に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "水銀による健康障害では、神経症状や口腔内症状などが問題となる。",
@@ -3373,6 +3769,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 199,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における特殊健康診断に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "水銀は人体に必須であり、多量摂取ほど神経機能を高める。",
@@ -3390,6 +3788,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 200,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの)における特殊健康診断に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "硫化水素は高濃度で急速に重篤な中毒を起こす危険がある。",
@@ -3407,6 +3807,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 201,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における温熱条件に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "温熱条件には、気温、湿度、気流、ふく射熱などが関係する。",
@@ -3424,6 +3826,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 202,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における温熱条件に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "重量物取扱いでは、作業姿勢、重量、作業頻度などを考慮して腰部負担を減らす。",
@@ -3441,6 +3845,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 203,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における温熱条件に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "重量物取扱いでは、腰を大きくひねった姿勢を維持するほど腰痛を予防できる。",
@@ -3458,6 +3864,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 204,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における温熱条件に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "ストレスチェックは、労働者自身のストレスへの気付きを促す目的も持つ。",
@@ -3475,6 +3883,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 205,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における換気に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "VDT作業では、画面への強い映り込みを増やすほど眼の負担が減る。",
@@ -3492,6 +3902,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 206,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における換気に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "職場のメンタルヘルス対策では、一次予防、早期発見、職場復帰支援などが重要である。",
@@ -3509,6 +3921,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 207,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における換気に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "換気は、室内の汚染空気を排出し、新鮮な空気を取り入れるために行う。",
@@ -3526,6 +3940,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 208,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における換気に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "受動喫煙対策は、職場の空気環境管理における重要な課題である。",
@@ -3543,6 +3959,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 209,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における照明に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "重量物取扱いでは、腰を大きくひねった姿勢を維持するほど腰痛を予防できる。",
@@ -3560,6 +3978,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 210,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における照明に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "精密作業では、照度をできるだけ低くするほど作業しやすい。",
@@ -3577,6 +3997,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 211,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における照明に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "ストレスチェックは、労働者の視力だけを測定する制度である。",
@@ -3594,6 +4016,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 212,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における照明に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "職場の感染症対策では、手洗い、換気、体調不良時の対応などが重要である。",
@@ -3611,6 +4035,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 213,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)におけるVDT作業に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "メンタルヘルス対策は、職場環境の改善とは全く関係がない。",
@@ -3628,6 +4054,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 214,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)におけるVDT作業に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "受動喫煙対策は、職場の空気環境管理における重要な課題である。",
@@ -3645,6 +4073,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 215,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)におけるVDT作業に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "受動喫煙は、喫煙者以外の健康には全く影響しない。",
@@ -3662,6 +4092,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 216,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)におけるVDT作業に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "VDT作業では、画面への強い映り込みを増やすほど眼の負担が減る。",
@@ -3679,6 +4111,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 217,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における腰痛予防に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "ストレスチェックは、労働者の視力だけを測定する制度である。",
@@ -3696,6 +4130,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 218,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における腰痛予防に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "職場の感染症対策では、手洗い、換気、体調不良時の対応などが重要である。",
@@ -3713,6 +4149,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 219,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における腰痛予防に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "感染症対策では、換気や手指衛生は不要である。",
@@ -3730,6 +4168,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 220,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における腰痛予防に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "健康診断の結果に異常所見がある場合、必要に応じて就業上の措置を検討する。",
@@ -3747,6 +4187,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 221,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)におけるメンタルヘルスに関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "職場のメンタルヘルス対策では、一次予防、早期発見、職場復帰支援などが重要である。",
@@ -3764,6 +4206,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 222,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)におけるメンタルヘルスに関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "定期健康診断は、労働者の健康状態を継続的に把握するために行われる。",
@@ -3781,6 +4225,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 223,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)におけるメンタルヘルスに関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "定期健康診断は、作業場の照度を測定するためだけに行われる。",
@@ -3798,6 +4244,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 224,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)におけるメンタルヘルスに関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "作業管理では、作業方法や作業時間などを見直して労働者の負担を減らす。",
@@ -3815,6 +4263,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 225,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)におけるストレスチェックに関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "感染症対策では、換気や手指衛生は不要である。",
@@ -3832,6 +4282,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 226,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)におけるストレスチェックに関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "健康診断の結果に異常所見がある場合、必要に応じて就業上の措置を検討する。",
@@ -3849,6 +4301,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 227,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)におけるストレスチェックに関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "ストレスチェックは、労働者自身のストレスへの気付きを促す目的も持つ。",
@@ -3866,6 +4320,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 228,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)におけるストレスチェックに関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "作業環境管理では、作業場の物理的・化学的環境を改善する。",
@@ -3883,6 +4339,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 229,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における受動喫煙に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "定期健康診断は、作業場の照度を測定するためだけに行われる。",
@@ -3900,6 +4358,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 230,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における受動喫煙に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "受動喫煙は、喫煙者以外の健康には全く影響しない。",
@@ -3917,6 +4377,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 231,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における受動喫煙に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "作業管理とは、作業者の健康状態を無視して作業量を増やすことである。",
@@ -3934,6 +4396,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 232,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における受動喫煙に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "健康管理では、健康診断や保健指導などにより労働者の健康保持を図る。",
@@ -3951,6 +4415,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 233,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における感染症対策に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "健康診断の結果は、異常所見があっても一切確認してはならない。",
@@ -3968,6 +4434,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 234,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における感染症対策に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "作業環境管理では、作業場の物理的・化学的環境を改善する。",
@@ -3985,6 +4453,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 235,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における感染症対策に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "作業環境管理では、作業場の環境を把握せずに放置する。",
@@ -4002,6 +4472,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 236,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における感染症対策に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "感染症対策では、換気や手指衛生は不要である。",
@@ -4019,6 +4491,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 237,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における健康診断に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "作業管理とは、作業者の健康状態を無視して作業量を増やすことである。",
@@ -4036,6 +4510,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 238,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における健康診断に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "健康管理では、健康診断や保健指導などにより労働者の健康保持を図る。",
@@ -4053,6 +4529,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 239,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における健康診断に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "健康管理では、健康診断結果を一切活用しない。",
@@ -4070,6 +4548,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 240,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における健康診断に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "適切な休養は、疲労の回復や作業能率の維持に役立つ。",
@@ -4087,6 +4567,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 241,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における事後措置に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "健康診断の結果に異常所見がある場合、必要に応じて就業上の措置を検討する。",
@@ -4104,6 +4586,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 242,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における事後措置に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "整理、整頓、清掃、清潔、しつけは、職場環境の維持に役立つ。",
@@ -4121,6 +4605,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 243,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における事後措置に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "5Sは、職場を散らかすことを目的とした活動である。",
@@ -4138,6 +4624,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 244,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における事後措置に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "適度な運動は、生活習慣病予防や体力維持に役立つ。",
@@ -4155,6 +4643,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 245,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における作業管理に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "健康管理では、健康診断結果を一切活用しない。",
@@ -4172,6 +4662,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 246,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における作業管理に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "適切な休養は、疲労の回復や作業能率の維持に役立つ。",
@@ -4189,6 +4681,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 247,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における作業管理に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "作業管理では、作業方法や作業時間などを見直して労働者の負担を減らす。",
@@ -4206,6 +4700,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 248,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における作業管理に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "栄養管理では、エネルギー摂取量と栄養バランスを考慮する。",
@@ -4223,6 +4719,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 249,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における作業環境管理に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "5Sは、職場を散らかすことを目的とした活動である。",
@@ -4240,6 +4738,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 250,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における作業環境管理に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "作業環境管理では、作業場の環境を把握せずに放置する。",
@@ -4257,6 +4757,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 251,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における作業環境管理に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "運動は健康保持に全く関係せず、常に有害である。",
@@ -4274,6 +4776,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 252,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における作業環境管理に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "睡眠衛生では、規則的な生活リズムや睡眠環境の整備が重要である。",
@@ -4291,6 +4795,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 253,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における健康管理に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "休養を全く取らないほど、疲労は必ず回復する。",
@@ -4308,6 +4814,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 254,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における健康管理に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "栄養管理では、エネルギー摂取量と栄養バランスを考慮する。",
@@ -4325,6 +4833,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 255,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における健康管理に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "栄養管理では、特定の栄養素だけを無制限に摂取すればよい。",
@@ -4342,6 +4852,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 256,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における健康管理に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "健康管理では、健康診断結果を一切活用しない。",
@@ -4359,6 +4871,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 257,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における5Sに関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "運動は健康保持に全く関係せず、常に有害である。",
@@ -4376,6 +4890,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 258,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における5Sに関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "睡眠衛生では、規則的な生活リズムや睡眠環境の整備が重要である。",
@@ -4393,6 +4909,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 259,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における5Sに関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "睡眠衛生では、睡眠時間を常にゼロにすることが推奨される。",
@@ -4410,6 +4928,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 260,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における5Sに関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "人間工学は、作業を人の特性に合わせて設計する考え方である。",
@@ -4427,6 +4947,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 261,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における休養に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "適切な休養は、疲労の回復や作業能率の維持に役立つ。",
@@ -4444,6 +4966,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 262,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における休養に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "快適な職場環境づくりは、作業環境や作業方法の改善と関係する。",
@@ -4461,6 +4985,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 263,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における休養に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "快適職場づくりは、労働衛生とは全く関係がない。",
@@ -4478,6 +5004,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 264,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における休養に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "同一姿勢が長時間続く作業では、姿勢変化や休憩を取り入れることが望ましい。",
@@ -4495,6 +5023,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 265,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における運動に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "睡眠衛生では、睡眠時間を常にゼロにすることが推奨される。",
@@ -4512,6 +5042,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 266,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における運動に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "人間工学は、作業を人の特性に合わせて設計する考え方である。",
@@ -4529,6 +5061,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 267,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における運動に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "適度な運動は、生活習慣病予防や体力維持に役立つ。",
@@ -4546,6 +5080,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 268,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における運動に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "事務所では、空気環境、照明、温熱条件などを適切に管理することが必要である。",
@@ -4563,6 +5099,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 269,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における栄養に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "快適職場づくりは、労働衛生とは全く関係がない。",
@@ -4580,6 +5118,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 270,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における栄養に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "栄養管理では、特定の栄養素だけを無制限に摂取すればよい。",
@@ -4597,6 +5137,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 271,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における栄養に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "同一姿勢を長時間続けるほど、筋骨格系の負担は常にゼロになる。",
@@ -4614,6 +5156,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 272,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における栄養に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "職場巡視は、作業環境や作業方法の問題点を把握する機会となる。",
@@ -4631,6 +5175,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 273,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における睡眠衛生に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "人間工学は、人の特性を無視して機械に合わせることだけを目的とする。",
@@ -4648,6 +5194,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 274,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における睡眠衛生に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "事務所では、空気環境、照明、温熱条件などを適切に管理することが必要である。",
@@ -4665,6 +5213,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 275,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における睡眠衛生に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "事務所では、空気環境や照明を管理する必要は全くない。",
@@ -4682,6 +5232,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 276,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における睡眠衛生に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "睡眠衛生では、睡眠時間を常にゼロにすることが推奨される。",
@@ -4699,6 +5251,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 277,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における快適職場に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "同一姿勢を長時間続けるほど、筋骨格系の負担は常にゼロになる。",
@@ -4716,6 +5270,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 278,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における快適職場に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "職場巡視は、作業環境や作業方法の問題点を把握する機会となる。",
@@ -4733,6 +5289,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 279,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における快適職場に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "職場巡視は、衛生管理上の問題を見つけないために行う。",
@@ -4750,6 +5308,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 280,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における快適職場に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "温熱条件には、気温、湿度、気流、ふく射熱などが関係する。",
@@ -4767,6 +5327,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 281,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における人間工学に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "人間工学は、作業を人の特性に合わせて設計する考え方である。",
@@ -4784,6 +5346,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 282,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における人間工学に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "保健指導は、健康診断結果などに基づき生活習慣の改善を支援する。",
@@ -4801,6 +5365,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 283,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における人間工学に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "保健指導は、労働者の健康保持や生活習慣の改善支援とは全く関係がない。",
@@ -4818,6 +5384,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 284,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における人間工学に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "換気は、室内の汚染空気を排出し、新鮮な空気を取り入れるために行う。",
@@ -4835,6 +5403,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 285,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における作業姿勢に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "職場巡視は、衛生管理上の問題を見つけないために行う。",
@@ -4852,6 +5422,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 286,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における作業姿勢に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "温熱条件には、気温、湿度、気流、ふく射熱などが関係する。",
@@ -4869,6 +5441,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 287,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における作業姿勢に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "同一姿勢が長時間続く作業では、姿勢変化や休憩を取り入れることが望ましい。",
@@ -4886,6 +5460,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 288,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における作業姿勢に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "作業に適した照度を確保することは、眼の疲労や作業ミスの防止に役立つ。",
@@ -4903,6 +5479,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 289,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における事務所衛生に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "保健指導は、労働者の健康保持や生活習慣の改善支援とは全く関係がない。",
@@ -4920,6 +5498,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 290,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における事務所衛生に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "事務所では、空気環境や照明を管理する必要は全くない。",
@@ -4937,6 +5517,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 291,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における事務所衛生に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "換気は、室内の汚染物質濃度を常に上昇させるために行う。",
@@ -4954,6 +5536,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 292,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における事務所衛生に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "VDT作業では、画面の映り込みを防ぎ、自然な姿勢で作業できる配置が望ましい。",
@@ -4971,6 +5555,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 293,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における職場巡視に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "温熱条件は、気温だけで決まり、湿度や気流は関係しない。",
@@ -4988,6 +5574,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 294,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における職場巡視に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "作業に適した照度を確保することは、眼の疲労や作業ミスの防止に役立つ。",
@@ -5005,6 +5593,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 295,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における職場巡視に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "精密作業では、照度をできるだけ低くするほど作業しやすい。",
@@ -5022,6 +5612,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 296,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における職場巡視に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "職場巡視は、衛生管理上の問題を見つけないために行う。",
@@ -5039,6 +5631,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 297,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における保健指導に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "換気は、室内の汚染物質濃度を常に上昇させるために行う。",
@@ -5056,6 +5650,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 298,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における保健指導に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "VDT作業では、画面の映り込みを防ぎ、自然な姿勢で作業できる配置が望ましい。",
@@ -5073,6 +5669,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 299,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における保健指導に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "VDT作業では、画面への強い映り込みを増やすほど眼の負担が減る。",
@@ -5090,6 +5688,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 300,
       "field": "eisei-harm",
+      "qtype": "single",
+      "tags": "演習;労働衛生",
       "text": "労働衛生(有害業務に係るもの以外のもの)における保健指導に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "職場のメンタルヘルス対策では、一次予防、早期発見、職場復帰支援などが重要である。",
@@ -5107,6 +5707,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 301,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における特殊健康診断に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "有害業務では、法令に基づき特殊健康診断の実施が義務付けられる場合がある。",
@@ -5124,6 +5726,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 302,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における特殊健康診断に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "鉛業務では、作業環境管理、作業管理、健康診断などが法令で定められている。",
@@ -5141,6 +5745,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 303,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における特殊健康診断に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "鉛業務では、鉛の有害性を考慮した法令上の管理は不要である。",
@@ -5158,6 +5764,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 304,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における特殊健康診断に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "石綿等を取り扱う作業では、飛散防止やばく露防止の措置が重要である。",
@@ -5175,6 +5783,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 305,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における作業主任者に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "特定化学物質は、すべて食品添加物として無規制に扱える。",
@@ -5192,6 +5802,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 306,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における作業主任者に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "粉じん作業では、じん肺予防のため粉じん発散の抑制や呼吸用保護具の使用が重要である。",
@@ -5209,6 +5821,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 307,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における作業主任者に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "一定の有害作業では、作業主任者を選任し作業方法の決定等を行わせる必要がある。",
@@ -5226,6 +5840,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 308,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における作業主任者に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "酸素欠乏危険作業では、作業前の測定、換気、監視などが重要である。",
@@ -5243,6 +5859,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 309,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における有機溶剤業務に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "鉛業務では、鉛の有害性を考慮した法令上の管理は不要である。",
@@ -5260,6 +5878,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 310,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における有機溶剤業務に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "有機溶剤業務では、換気設備や保護具に関する規制は存在しない。",
@@ -5277,6 +5897,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 311,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における有機溶剤業務に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "石綿等を取り扱う作業では、飛散防止措置を行ってはならない。",
@@ -5294,6 +5916,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 312,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における有機溶剤業務に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "一定の有害業務を行う屋内作業場では、法令に基づく作業環境測定が必要となる場合がある。",
@@ -5311,6 +5935,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 313,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における特定化学物質に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "粉じん作業では、粉じん発散を増やすことが法令上の目的である。",
@@ -5328,6 +5954,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 314,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における特定化学物質に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "酸素欠乏危険作業では、作業前の測定、換気、監視などが重要である。",
@@ -5345,6 +5973,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 315,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における特定化学物質に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "酸素欠乏危険作業では、酸素濃度を確認しないことが義務付けられている。",
@@ -5362,6 +5992,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 316,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における特定化学物質に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "特定化学物質は、すべて食品添加物として無規制に扱える。",
@@ -5379,6 +6011,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 317,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における鉛業務に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "石綿等を取り扱う作業では、飛散防止措置を行ってはならない。",
@@ -5396,6 +6030,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 318,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における鉛業務に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "一定の有害業務を行う屋内作業場では、法令に基づく作業環境測定が必要となる場合がある。",
@@ -5413,6 +6049,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 319,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における鉛業務に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "有害業務を行う屋内作業場では、作業環境測定が常に禁止されている。",
@@ -5430,6 +6068,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 320,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における鉛業務に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "有害物質のばく露防止では、作業内容に応じた呼吸用保護具を選定する必要がある。",
@@ -5447,6 +6087,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 321,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における粉じん作業に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "粉じん作業では、じん肺予防のため粉じん発散の抑制や呼吸用保護具の使用が重要である。",
@@ -5464,6 +6106,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 322,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における粉じん作業に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "局所排気装置を設置した場合、性能を維持するための点検や管理が重要である。",
@@ -5481,6 +6125,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 323,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における粉じん作業に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "局所排気装置は、一度設置すれば点検や管理を一切行ってはならない。",
@@ -5498,6 +6144,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 324,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における粉じん作業に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "有害業務では、作業場に有害性や注意事項等を掲示することが求められる場合がある。",
@@ -5515,6 +6163,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 325,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における石綿作業に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "有害業務を行う屋内作業場では、作業環境測定が常に禁止されている。",
@@ -5532,6 +6182,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 326,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における石綿作業に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "有害物質のばく露防止では、作業内容に応じた呼吸用保護具を選定する必要がある。",
@@ -5549,6 +6201,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 327,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における石綿作業に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "石綿等を取り扱う作業では、飛散防止やばく露防止の措置が重要である。",
@@ -5566,6 +6220,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 328,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における石綿作業に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "保護具は、常時有効かつ清潔に保持するよう管理することが必要である。",
@@ -5583,6 +6239,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 329,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における酸素欠乏危険作業に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "局所排気装置は、一度設置すれば点検や管理を一切行ってはならない。",
@@ -5600,6 +6258,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 330,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における酸素欠乏危険作業に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "酸素欠乏危険作業では、酸素濃度を確認しないことが義務付けられている。",
@@ -5617,6 +6277,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 331,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における酸素欠乏危険作業に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "有害業務では、労働者に注意事項を知らせる掲示を常に禁止する。",
@@ -5634,6 +6296,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 332,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における酸素欠乏危険作業に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "一定の危険有害業務に労働者を就かせるときは、特別教育が必要となる場合がある。",
@@ -5651,6 +6315,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 333,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における作業環境測定に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "呼吸用保護具は、種類にかかわらず全て酸素欠乏場所で単独使用できる。",
@@ -5668,6 +6334,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 334,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における作業環境測定に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "保護具は、常時有効かつ清潔に保持するよう管理することが必要である。",
@@ -5685,6 +6353,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 335,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における作業環境測定に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "保護具は、破損していても点検せずに使用させることが望ましい。",
@@ -5702,6 +6372,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 336,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における作業環境測定に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "有害業務を行う屋内作業場では、作業環境測定が常に禁止されている。",
@@ -5719,6 +6391,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 337,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における局所排気装置に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "有害業務では、労働者に注意事項を知らせる掲示を常に禁止する。",
@@ -5736,6 +6410,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 338,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における局所排気装置に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "一定の危険有害業務に労働者を就かせるときは、特別教育が必要となる場合がある。",
@@ -5753,6 +6429,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 339,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における局所排気装置に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "特別教育は、危険有害業務に就かせる前には一切行ってはならない。",
@@ -5770,6 +6448,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 340,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における局所排気装置に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "放射線業務では、被ばく線量の測定や管理が重要である。",
@@ -5787,6 +6467,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 341,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における呼吸用保護具に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "有害物質のばく露防止では、作業内容に応じた呼吸用保護具を選定する必要がある。",
@@ -5804,6 +6486,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 342,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における呼吸用保護具に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "妊産婦等については、有害業務への就業制限が定められている場合がある。",
@@ -5821,6 +6505,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 343,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における呼吸用保護具に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "妊産婦等には、すべての有害業務への就業を必ず強制しなければならない。",
@@ -5838,6 +6524,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 344,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における呼吸用保護具に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "高圧室内作業では、減圧や作業時間などに関する管理が重要である。",
@@ -5855,6 +6543,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 345,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における掲示に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "特別教育は、危険有害業務に就かせる前には一切行ってはならない。",
@@ -5872,6 +6562,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 346,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における掲示に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "放射線業務では、被ばく線量の測定や管理が重要である。",
@@ -5889,6 +6581,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 347,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における掲示に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "有害業務では、作業場に有害性や注意事項等を掲示することが求められる場合がある。",
@@ -5906,6 +6600,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 348,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における掲示に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "潜水作業では、送気、浮上、減圧などに関する安全衛生管理が重要である。",
@@ -5923,6 +6619,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 349,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における保護具管理に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "妊産婦等には、すべての有害業務への就業を必ず強制しなければならない。",
@@ -5940,6 +6638,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 350,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における保護具管理に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "保護具は、破損していても点検せずに使用させることが望ましい。",
@@ -5957,6 +6657,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 351,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における保護具管理に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "高圧室内作業では、減圧に関する管理は不要である。",
@@ -5974,6 +6676,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 352,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における保護具管理に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "著しい騒音を発する作業場では、騒音ばく露低減や聴力管理が重要である。",
@@ -5991,6 +6695,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 353,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における特別教育に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "放射線業務では、被ばく線量の把握をしてはならない。",
@@ -6008,6 +6714,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 354,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における特別教育に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "潜水作業では、送気、浮上、減圧などに関する安全衛生管理が重要である。",
@@ -6025,6 +6733,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 355,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における特別教育に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "潜水作業では、送気や浮上速度を管理しないことが安全である。",
@@ -6042,6 +6752,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 356,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における特別教育に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "特別教育は、危険有害業務に就かせる前には一切行ってはならない。",
@@ -6059,6 +6771,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 357,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における女性労働基準に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "高圧室内作業では、減圧に関する管理は不要である。",
@@ -6076,6 +6790,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 358,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における女性労働基準に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "著しい騒音を発する作業場では、騒音ばく露低減や聴力管理が重要である。",
@@ -6093,6 +6809,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 359,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における女性労働基準に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "騒音作業では、耳栓等の使用や騒音低減策は一切不要である。",
@@ -6110,6 +6828,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 360,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における女性労働基準に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "作業環境測定結果の評価では、管理濃度が用いられる物質がある。",
@@ -6127,6 +6847,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 361,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における放射線業務に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "放射線業務では、被ばく線量の測定や管理が重要である。",
@@ -6144,6 +6866,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 362,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における放射線業務に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "振動工具取扱いでは、作業時間管理や工具の点検整備が障害予防に役立つ。",
@@ -6161,6 +6885,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 363,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における放射線業務に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "振動工具は、使用時間が長いほど必ず健康障害のリスクが下がる。",
@@ -6178,6 +6904,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 364,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における放射線業務に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "化学物質の容器等には、危険有害性に関する表示が求められる場合がある。",
@@ -6195,6 +6923,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 365,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における高圧室内作業に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "騒音作業では、耳栓等の使用や騒音低減策は一切不要である。",
@@ -6212,6 +6942,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 366,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における高圧室内作業に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "作業環境測定結果の評価では、管理濃度が用いられる物質がある。",
@@ -6229,6 +6961,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 367,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における高圧室内作業に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "高圧室内作業では、減圧や作業時間などに関する管理が重要である。",
@@ -6246,6 +6980,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 368,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における高圧室内作業に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "SDSは、化学物質の危険有害性や取扱い上の注意を伝える文書である。",
@@ -6263,6 +6999,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 369,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における潜水作業に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "振動工具は、使用時間が長いほど必ず健康障害のリスクが下がる。",
@@ -6280,6 +7018,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 370,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における潜水作業に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "潜水作業では、送気や浮上速度を管理しないことが安全である。",
@@ -6297,6 +7037,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 371,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における潜水作業に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "化学物質の容器には、危険有害性の表示をしてはならない。",
@@ -6314,6 +7056,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 372,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における潜水作業に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "化学物質管理では、危険有害性を把握しリスク低減措置を検討することが重要である。",
@@ -6331,6 +7075,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 373,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における騒音作業に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "管理濃度は、労働衛生管理には全く用いられない概念である。",
@@ -6348,6 +7094,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 374,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における騒音作業に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "SDSは、化学物質の危険有害性や取扱い上の注意を伝える文書である。",
@@ -6365,6 +7113,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 375,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における騒音作業に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "SDSは、労働者の身長だけを記録するための文書である。",
@@ -6382,6 +7132,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 376,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における騒音作業に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "騒音作業では、耳栓等の使用や騒音低減策は一切不要である。",
@@ -6399,6 +7151,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 377,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における振動工具に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "化学物質の容器には、危険有害性の表示をしてはならない。",
@@ -6416,6 +7170,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 378,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における振動工具に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "化学物質管理では、危険有害性を把握しリスク低減措置を検討することが重要である。",
@@ -6433,6 +7189,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 379,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における振動工具に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "化学物質管理では、危険有害性を把握しないことが最も重要である。",
@@ -6450,6 +7208,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 380,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における振動工具に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "有害業務では、法令に基づき特殊健康診断の実施が義務付けられる場合がある。",
@@ -6467,6 +7227,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 381,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における管理濃度に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "作業環境測定結果の評価では、管理濃度が用いられる物質がある。",
@@ -6484,6 +7246,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 382,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における管理濃度に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "有害業務に関する測定や健康診断の記録は、法令に基づき保存が必要となる場合がある。",
@@ -6501,6 +7265,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 383,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における管理濃度に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "有害業務の測定や健康診断の記録は、作成直後に必ず廃棄しなければならない。",
@@ -6518,6 +7284,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 384,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における管理濃度に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "一定の有害作業では、作業主任者を選任し作業方法の決定等を行わせる必要がある。",
@@ -6535,6 +7303,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 385,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における容器表示に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "化学物質管理では、危険有害性を把握しないことが最も重要である。",
@@ -6552,6 +7322,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 386,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における容器表示に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "有害業務では、法令に基づき特殊健康診断の実施が義務付けられる場合がある。",
@@ -6569,6 +7341,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 387,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における容器表示に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "化学物質の容器等には、危険有害性に関する表示が求められる場合がある。",
@@ -6586,6 +7360,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 388,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における容器表示に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "有機溶剤業務では、有機溶剤の区分や作業内容に応じた換気設備等が求められる。",
@@ -6603,6 +7379,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 389,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)におけるSDSに関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "有害業務の測定や健康診断の記録は、作成直後に必ず廃棄しなければならない。",
@@ -6620,6 +7398,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 390,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)におけるSDSに関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "SDSは、労働者の身長だけを記録するための文書である。",
@@ -6637,6 +7417,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 391,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)におけるSDSに関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "作業主任者は、有害作業では一切選任してはならない。",
@@ -6654,6 +7436,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 392,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)におけるSDSに関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "特定化学物質を取り扱う作業では、物質の区分に応じたばく露防止措置が必要となる。",
@@ -6671,6 +7455,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 393,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)におけるリスクアセスメントに関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "有害業務では、特殊健康診断が法令上必要となることはない。",
@@ -6688,6 +7474,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 394,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)におけるリスクアセスメントに関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "有機溶剤業務では、有機溶剤の区分や作業内容に応じた換気設備等が求められる。",
@@ -6705,6 +7493,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 395,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)におけるリスクアセスメントに関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "有機溶剤業務では、換気設備や保護具に関する規制は存在しない。",
@@ -6722,6 +7512,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 396,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)におけるリスクアセスメントに関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "化学物質管理では、危険有害性を把握しないことが最も重要である。",
@@ -6739,6 +7531,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 397,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における記録保存に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "作業主任者は、有害作業では一切選任してはならない。",
@@ -6756,6 +7550,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 398,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における記録保存に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "特定化学物質を取り扱う作業では、物質の区分に応じたばく露防止措置が必要となる。",
@@ -6773,6 +7569,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 399,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における記録保存に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "特定化学物質は、すべて食品添加物として無規制に扱える。",
@@ -6790,6 +7588,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 400,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの)における記録保存に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "粉じん作業では、じん肺予防のため粉じん発散の抑制や呼吸用保護具の使用が重要である。",
@@ -6807,6 +7607,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 401,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における衛生管理者に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "常時一定数以上の労働者を使用する事業場では、衛生管理者の選任が必要となる。",
@@ -6824,6 +7626,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 402,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における衛生管理者に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "事業者は、労働者に対して法令に基づく健康診断を実施する必要がある。",
@@ -6841,6 +7645,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 403,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における衛生管理者に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "健康診断は、労働者の希望があっても法令上すべて禁止される。",
@@ -6858,6 +7664,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 404,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における衛生管理者に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "常時使用する労働者には、原則として定期健康診断を行う必要がある。",
@@ -6875,6 +7683,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 405,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における産業医に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "総括安全衛生管理者は、衛生管理者の職務を妨害するためだけに選任される。",
@@ -6892,6 +7702,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 406,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における産業医に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "労働者を雇い入れる際には、原則として雇入時の健康診断が必要である。",
@@ -6909,6 +7721,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 407,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における産業医に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "一定規模以上の事業場では、産業医を選任する必要がある。",
@@ -6926,6 +7740,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 408,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における産業医に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "長時間労働者には、要件に該当する場合、医師による面接指導が必要となる。",
@@ -6943,6 +7759,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 409,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における衛生委員会に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "健康診断は、労働者の希望があっても法令上すべて禁止される。",
@@ -6960,6 +7778,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 410,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における衛生委員会に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "衛生委員会は、労働衛生に関する事項を調査審議してはならない。",
@@ -6977,6 +7797,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 411,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における衛生委員会に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "定期健康診断は、常時使用する労働者には一切実施してはならない。",
@@ -6994,6 +7816,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 412,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における衛生委員会に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "一定規模以上の事業場では、ストレスチェック制度の実施が求められる。",
@@ -7011,6 +7835,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 413,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における総括安全衛生管理者に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "雇入時には、健康診断を行うことが常に禁止されている。",
@@ -7028,6 +7854,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 414,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における総括安全衛生管理者に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "長時間労働者には、要件に該当する場合、医師による面接指導が必要となる。",
@@ -7045,6 +7873,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 415,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における総括安全衛生管理者に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "長時間労働者には、健康確保措置を一切講じてはならない。",
@@ -7062,6 +7892,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 416,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における総括安全衛生管理者に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "総括安全衛生管理者は、衛生管理者の職務を妨害するためだけに選任される。",
@@ -7079,6 +7911,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 417,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における健康診断に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "定期健康診断は、常時使用する労働者には一切実施してはならない。",
@@ -7096,6 +7930,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 418,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における健康診断に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "一定規模以上の事業場では、ストレスチェック制度の実施が求められる。",
@@ -7113,6 +7949,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 419,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における健康診断に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "ストレスチェック制度は、労働者の心理的負担の把握とは無関係である。",
@@ -7130,6 +7968,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 420,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における健康診断に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "作業内容を変更したときには、必要な安全衛生教育を行う。",
@@ -7147,6 +7987,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 421,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における雇入時健康診断に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "労働者を雇い入れる際には、原則として雇入時の健康診断が必要である。",
@@ -7164,6 +8006,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 422,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における雇入時健康診断に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "労働者を雇い入れたときなどには、安全衛生教育を行う必要がある。",
@@ -7181,6 +8025,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 423,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における雇入時健康診断に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "安全衛生教育は、労働者を雇い入れたときには実施してはならない。",
@@ -7198,6 +8044,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 424,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における雇入時健康診断に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "衛生管理者は、職場を巡視し、設備や作業方法等を点検する職務を持つ。",
@@ -7215,6 +8063,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 425,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における定期健康診断に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "ストレスチェック制度は、労働者の心理的負担の把握とは無関係である。",
@@ -7232,6 +8082,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 426,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における定期健康診断に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "作業内容を変更したときには、必要な安全衛生教育を行う。",
@@ -7249,6 +8101,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 427,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における定期健康診断に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "常時使用する労働者には、原則として定期健康診断を行う必要がある。",
@@ -7266,6 +8120,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 428,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における定期健康診断に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "労働基準法では、労働時間、休憩、休日などに関する規制が定められている。",
@@ -7283,6 +8139,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 429,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における長時間労働面接指導に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "安全衛生教育は、労働者を雇い入れたときには実施してはならない。",
@@ -7300,6 +8158,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 430,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における長時間労働面接指導に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "長時間労働者には、健康確保措置を一切講じてはならない。",
@@ -7317,6 +8177,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 431,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における長時間労働面接指導に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "衛生管理者は、職場巡視をしてはならない。",
@@ -7334,6 +8196,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 432,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における長時間労働面接指導に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "労働時間が一定時間を超える場合、使用者は休憩時間を与える必要がある。",
@@ -7351,6 +8215,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 433,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)におけるストレスチェックに関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "作業内容を変更したときは、教育を行わないことが義務である。",
@@ -7368,6 +8234,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 434,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)におけるストレスチェックに関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "労働基準法では、労働時間、休憩、休日などに関する規制が定められている。",
@@ -7385,6 +8253,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 435,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)におけるストレスチェックに関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "労働基準法には、労働時間や休憩に関する規制は存在しない。",
@@ -7402,6 +8272,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 436,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)におけるストレスチェックに関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "ストレスチェック制度は、労働者の心理的負担の把握とは無関係である。",
@@ -7419,6 +8291,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 437,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における安全衛生教育に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "衛生管理者は、職場巡視をしてはならない。",
@@ -7436,6 +8310,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 438,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における安全衛生教育に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "労働時間が一定時間を超える場合、使用者は休憩時間を与える必要がある。",
@@ -7453,6 +8329,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 439,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における安全衛生教育に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "休憩時間は、どれだけ長時間労働しても一切与えてはならない。",
@@ -7470,6 +8348,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 440,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における安全衛生教育に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "一定の要件を満たす労働者には、年次有給休暇が付与される。",
@@ -7487,6 +8367,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 441,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における作業内容変更時教育に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "作業内容を変更したときには、必要な安全衛生教育を行う。",
@@ -7504,6 +8386,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 442,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における作業内容変更時教育に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "使用者は、法令に基づき労働者に休日を与える必要がある。",
@@ -7521,6 +8405,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 443,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における作業内容変更時教育に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "休日は、労働基準法上いかなる場合も与えてはならない。",
@@ -7538,6 +8424,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 444,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における作業内容変更時教育に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "妊産婦については、労働基準法等により就業制限や保護規定が設けられている。",
@@ -7555,6 +8443,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 445,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における職場巡視に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "休憩時間は、どれだけ長時間労働しても一切与えてはならない。",
@@ -7572,6 +8462,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 446,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における職場巡視に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "一定の要件を満たす労働者には、年次有給休暇が付与される。",
@@ -7589,6 +8481,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 447,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における職場巡視に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "衛生管理者は、職場を巡視し、設備や作業方法等を点検する職務を持つ。",
@@ -7606,6 +8500,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 448,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における職場巡視に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "常時一定数以上の労働者を使用する使用者は、就業規則の作成・届出が必要となる。",
@@ -7623,6 +8519,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 449,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における労働時間に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "休日は、労働基準法上いかなる場合も与えてはならない。",
@@ -7640,6 +8538,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 450,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における労働時間に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "労働基準法には、労働時間や休憩に関する規制は存在しない。",
@@ -7657,6 +8557,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 451,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における労働時間に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "妊産婦には、保護規定が一切存在せず、危険有害業務を必ず命じなければならない。",
@@ -7674,6 +8576,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 452,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における労働時間に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "衛生管理体制は、事業場の規模や業種に応じて整備する必要がある。",
@@ -7691,6 +8595,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 453,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における休憩に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "年次有給休暇は、労働者に一切付与してはならない制度である。",
@@ -7708,6 +8614,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 454,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における休憩に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "常時一定数以上の労働者を使用する使用者は、就業規則の作成・届出が必要となる。",
@@ -7725,6 +8633,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 455,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における休憩に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "就業規則は、労働者数にかかわらず作成が常に禁止される。",
@@ -7742,6 +8652,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 456,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における休憩に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "休憩時間は、どれだけ長時間労働しても一切与えてはならない。",
@@ -7759,6 +8671,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 457,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における休日に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "妊産婦には、保護規定が一切存在せず、危険有害業務を必ず命じなければならない。",
@@ -7776,6 +8690,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 458,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における休日に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "衛生管理体制は、事業場の規模や業種に応じて整備する必要がある。",
@@ -7793,6 +8709,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 459,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における休日に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "衛生管理体制は、事業場の規模や業種と全く関係なく常に不要である。",
@@ -7810,6 +8728,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 460,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における休日に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "労働者も、事業者が講ずる安全衛生措置に協力することが求められる。",
@@ -7827,6 +8747,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 461,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における年次有給休暇に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "一定の要件を満たす労働者には、年次有給休暇が付与される。",
@@ -7844,6 +8766,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 462,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における年次有給休暇に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "事業者は、労働者の安全と健康を確保するよう必要な措置を講じる責務を負う。",
@@ -7861,6 +8785,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 463,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における年次有給休暇に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "事業者には、労働者の安全と健康に配慮する責務は全くない。",
@@ -7878,6 +8804,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 464,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における年次有給休暇に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "事業者は、健康診断の結果を労働者に通知する必要がある。",
@@ -7895,6 +8823,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 465,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における妊産婦に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "衛生管理体制は、事業場の規模や業種と全く関係なく常に不要である。",
@@ -7912,6 +8842,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 466,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における妊産婦に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "労働者も、事業者が講ずる安全衛生措置に協力することが求められる。",
@@ -7929,6 +8861,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 467,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における妊産婦に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "妊産婦については、労働基準法等により就業制限や保護規定が設けられている。",
@@ -7946,6 +8880,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 468,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における妊産婦に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "健康診断で異常所見がある労働者について、必要に応じて医師等の意見を聴く。",
@@ -7963,6 +8899,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 469,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における就業規則に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "事業者には、労働者の安全と健康に配慮する責務は全くない。",
@@ -7980,6 +8918,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 470,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における就業規則に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "就業規則は、労働者数にかかわらず作成が常に禁止される。",
@@ -7997,6 +8937,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 471,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における就業規則に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "健康診断の結果は、労働者本人に一切知らせてはならない。",
@@ -8014,6 +8956,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 472,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における就業規則に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "健康診断個人票などの記録は、法令に基づき保存する必要がある。",
@@ -8031,6 +8975,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 473,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における衛生管理体制に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "労働者は、安全衛生措置に協力してはならない。",
@@ -8048,6 +8994,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 474,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における衛生管理体制に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "健康診断で異常所見がある労働者について、必要に応じて医師等の意見を聴く。",
@@ -8065,6 +9013,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 475,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における衛生管理体制に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "異常所見がある場合でも、医師等の意見を聴くことは常に禁止される。",
@@ -8082,6 +9032,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 476,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における衛生管理体制に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "衛生管理体制は、事業場の規模や業種と全く関係なく常に不要である。",
@@ -8099,6 +9051,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 477,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における事業者責務に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "健康診断の結果は、労働者本人に一切知らせてはならない。",
@@ -8116,6 +9070,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 478,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における事業者責務に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "健康診断個人票などの記録は、法令に基づき保存する必要がある。",
@@ -8133,6 +9089,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 479,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における事業者責務に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "健康診断の記録は、作成直後に必ず廃棄しなければならない。",
@@ -8150,6 +9108,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 480,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における事業者責務に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "常時一定数以上の労働者を使用する事業場では、衛生管理者の選任が必要となる。",
@@ -8167,6 +9127,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 481,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における労働者責務に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "労働者も、事業者が講ずる安全衛生措置に協力することが求められる。",
@@ -8184,6 +9146,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 482,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における労働者責務に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "第一種衛生管理者免許は、有害業務を含む幅広い業種で衛生管理者となる資格である。",
@@ -8201,6 +9165,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 483,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における労働者責務に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "第一種衛生管理者免許では、有害業務を行う業種の衛生管理者には絶対になれない。",
@@ -8218,6 +9184,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 484,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における労働者責務に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "一定規模以上の事業場では、産業医を選任する必要がある。",
@@ -8235,6 +9203,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 485,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における健康診断結果の通知に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "健康診断の記録は、作成直後に必ず廃棄しなければならない。",
@@ -8252,6 +9222,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 486,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における健康診断結果の通知に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "常時一定数以上の労働者を使用する事業場では、衛生管理者の選任が必要となる。",
@@ -8269,6 +9241,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 487,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における健康診断結果の通知に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "事業者は、健康診断の結果を労働者に通知する必要がある。",
@@ -8286,6 +9260,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 488,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における健康診断結果の通知に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "一定規模以上の事業場では、衛生委員会を設ける必要がある。",
@@ -8303,6 +9279,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 489,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における医師等の意見聴取に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "第一種衛生管理者免許では、有害業務を行う業種の衛生管理者には絶対になれない。",
@@ -8320,6 +9298,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 490,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における医師等の意見聴取に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "異常所見がある場合でも、医師等の意見を聴くことは常に禁止される。",
@@ -8337,6 +9317,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 491,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における医師等の意見聴取に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "産業医は、事業場の規模にかかわらず法令上選任が禁止されている。",
@@ -8354,6 +9336,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 492,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における医師等の意見聴取に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "一定の業種・規模の事業場では、総括安全衛生管理者の選任が必要となる。",
@@ -8371,6 +9355,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 493,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における記録保存に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "衛生管理者は、労働者数にかかわらず全ての事業場で選任してはならない。",
@@ -8388,6 +9374,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 494,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における記録保存に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "一定規模以上の事業場では、衛生委員会を設ける必要がある。",
@@ -8405,6 +9393,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 495,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における記録保存に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "衛生委員会は、労働衛生に関する事項を調査審議してはならない。",
@@ -8422,6 +9412,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 496,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における記録保存に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "健康診断の記録は、作成直後に必ず廃棄しなければならない。",
@@ -8439,6 +9431,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 497,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における衛生管理者免許に関する次の記述のうち、正しいものはどれか。",
       "opts": [
         "産業医は、事業場の規模にかかわらず法令上選任が禁止されている。",
@@ -8456,6 +9450,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 498,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における衛生管理者免許に関する次の記述のうち、誤っているものはどれか。",
       "opts": [
         "一定の業種・規模の事業場では、総括安全衛生管理者の選任が必要となる。",
@@ -8473,6 +9469,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 499,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における衛生管理者免許に関する次の記述のうち、適切なものはどれか。",
       "opts": [
         "総括安全衛生管理者は、衛生管理者の職務を妨害するためだけに選任される。",
@@ -8490,6 +9488,8 @@ const PRACTICE_QUESTIONS = {
       "year": "orig",
       "num": 500,
       "field": "law-harm",
+      "qtype": "single",
+      "tags": "演習;関係法令",
       "text": "関係法令(有害業務に係るもの以外のもの)における衛生管理者免許に関する次の記述のうち、不適切なものはどれか。",
       "opts": [
         "労働者を雇い入れる際には、原則として雇入時の健康診断が必要である。",

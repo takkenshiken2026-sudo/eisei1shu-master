@@ -150,6 +150,11 @@ window.SITE_CONFIG = {
       "legacyGlossaryCat": "physio"
     }
   ],
+  "questionModes": {
+    "practiceFormats": [],
+    "practicePreset": {},
+    "practiceTiers": []
+  },
   "paidMockExam": {
     "url": "https://note.com/shikaku_master/n/nacc6a5dab9f1",
     "modeTitle": "本番想定模試",

@@ -41,12 +41,25 @@ def published_affiliate_slugs(root: Path) -> set[str]:
             if (
                 is_affiliate_article(row)
                 and (row.get("content_status") or "").strip() == "published"
-                and affiliate_article_is_buildable(row)
+                and affiliate_article_is_buildable(row, site_root=root)
             ):
                 slug = (row.get("slug") or "").strip()
                 if slug:
                     slugs.add(slug)
     return slugs
+
+
+def _course_pick_items(picks: dict) -> list[dict]:
+    items = picks.get("items")
+    if not isinstance(items, list):
+        return []
+    out: list[dict] = []
+    for item in items:
+        if not isinstance(item, dict):
+            continue
+        if str(item.get("kind") or "").strip() == "course":
+            out.append(item)
+    return out
 
 
 def validate_guide_index_picks(root: Path) -> list[Issue]:
@@ -71,13 +84,12 @@ def validate_guide_index_picks(root: Path) -> list[Issue]:
         )
         return issues
 
-    items = picks.get("items")
-    if not isinstance(items, list) or not items:
-        issues.append(Issue("guideIndexPicks.items が空です。公開済み affiliate-* を最大3枚設定してください。"))
+    course_items = _course_pick_items(picks)
+    if not course_items:
         return issues
 
     pick_slugs: list[str] = []
-    for idx, item in enumerate(items[:3], start=1):
+    for idx, item in enumerate(course_items[:3], start=1):
         if not isinstance(item, dict):
             issues.append(Issue(f"guideIndexPicks.items[{idx}] がオブジェクトではありません"))
             continue

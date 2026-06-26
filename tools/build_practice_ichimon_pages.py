@@ -78,7 +78,7 @@ from tools.q_page_seo import (
     question_meta_description,
     study_modes_note_html,
 )
-from tools.site_config import brand_name, category_order, clean_origin, exam_name
+from tools.site_config import brand_name, category_order, clean_origin, exam_name, ichimon_enabled
 from tools.seo_editorial_chrome import seo_brand_asset_tags
 
 PRACTICE_CSV = ROOT / "data" / "practice_questions.csv"
@@ -177,12 +177,12 @@ def load_ichimon_rows() -> list[dict]:
 def practice_page_dict(row: dict, line_no: int) -> dict:
     if norm(row.get("is_invalidated", "")).upper() == "TRUE":
         raise ValueError(f"practice line {line_no}: 無効行はスキップ対象")
-    from tools.correct_answer_format import collect_choice_texts
+    from tools.correct_answer_format import collect_choice_texts, practice_min_choice_count
     from tools.site_config import extended_correct_answers
 
     qno = int(row["question_no"])
     opts = collect_choice_texts(row)
-    min_choices = 2 if extended_correct_answers() else 4
+    min_choices = practice_min_choice_count(row)
     if len(opts) < min_choices:
         raise ValueError(f"practice line {line_no}: 選択肢欠け no={qno}")
     cor = parse_correct(row.get("correct"), max_choice=len(opts))
@@ -980,6 +980,26 @@ def _patch_index_rows_for_practice(pages: list[dict]) -> None:
         pg["app_id"] = PRACTICE_ID_BASE + pg["qno"]
 
 
+def build_ichimon_redirect_index(*, base_url: str) -> str:
+    """hideIchimon 時: 旧一問一答一覧 URL を実践演習へ転送。"""
+    dest = "../practice/index.html"
+    title = html.escape(f"実践演習一覧｜{brand_name()}")
+    return f"""<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="0;url={html.escape(dest)}">
+<meta name="robots" content="noindex, follow">
+<title>{title}</title>
+<link rel="canonical" href="{html.escape(public_url(base_url, "q/practice/index.html"))}">
+</head>
+<body>
+<p><a href="{html.escape(dest)}">実践演習一覧へ移動</a></p>
+</body>
+</html>
+"""
+
+
 def main() -> int:
     import argparse
 
@@ -1027,59 +1047,64 @@ def main() -> int:
             encoding="utf-8",
         )
 
-    if practice_pages:
-        idx = Q_ROOT / "practice" / "index.html"
-        idx.parent.mkdir(parents=True, exist_ok=True)
-        idx.write_text(
-            build_mode_index(
-                mode="practice",
-                pages=practice_pages,
-                base_url=base,
-                rel_path=Path("q/practice/index.html"),
-            ),
-            encoding="utf-8",
-        )
+    idx = Q_ROOT / "practice" / "index.html"
+    idx.parent.mkdir(parents=True, exist_ok=True)
+    idx.write_text(
+        build_mode_index(
+            mode="practice",
+            pages=practice_pages,
+            base_url=base,
+            rel_path=Path("q/practice/index.html"),
+        ),
+        encoding="utf-8",
+    )
 
     ichimon_rows = load_ichimon_rows()
-    set_ichimon_primary_ids(build_ichimon_primary_ids(ichimon_rows))
-    ichimon_pairs: list[tuple[dict, dict]] = []
-    for i, row in enumerate(ichimon_rows, start=2):
-        ichimon_pairs.append((ichimon_page_dict(row, i), row))
-    ichimon_pairs.sort(key=lambda pr: (category_rank(pr[0]["category"]), pr[0]["id"]))
-    ichimon_pages = [p for p, _ in ichimon_pairs]
-    ichimon_rows = [r for _, r in ichimon_pairs]
-    _patch_index_rows_for_ichimon(ichimon_pages)
+    if ichimon_enabled():
+        set_ichimon_primary_ids(build_ichimon_primary_ids(ichimon_rows))
+        ichimon_pairs: list[tuple[dict, dict]] = []
+        for i, row in enumerate(ichimon_rows, start=2):
+            ichimon_pairs.append((ichimon_page_dict(row, i), row))
+        ichimon_pairs.sort(key=lambda pr: (category_rank(pr[0]["category"]), pr[0]["id"]))
+        ichimon_pages = [p for p, _ in ichimon_pairs]
+        ichimon_rows = [r for _, r in ichimon_pairs]
+        _patch_index_rows_for_ichimon(ichimon_pages)
 
-    for p, row in zip(ichimon_pages, ichimon_rows):
-        rel = Path(p["rel_path"])
-        out = ROOT / rel
-        out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(
-            build_ichimon_question_html(
-                p,
-                row,
-                out.relative_to(ROOT),
-                base,
-                all_pages=ichimon_pages,
-                glossary_lookup=glossary_lookup,
-                guides=guides,
-                question_catalog=question_catalog,
-            ),
-            encoding="utf-8",
-        )
+        for p, row in zip(ichimon_pages, ichimon_rows):
+            rel = Path(p["rel_path"])
+            out = ROOT / rel
+            out.parent.mkdir(parents=True, exist_ok=True)
+            out.write_text(
+                build_ichimon_question_html(
+                    p,
+                    row,
+                    out.relative_to(ROOT),
+                    base,
+                    all_pages=ichimon_pages,
+                    glossary_lookup=glossary_lookup,
+                    guides=guides,
+                    question_catalog=question_catalog,
+                ),
+                encoding="utf-8",
+            )
 
-    if ichimon_pages:
+        if ichimon_pages:
+            idx = Q_ROOT / "ichimon" / "index.html"
+            idx.parent.mkdir(parents=True, exist_ok=True)
+            idx.write_text(
+                build_mode_index(
+                    mode="ichimon",
+                    pages=ichimon_pages,
+                    base_url=base,
+                    rel_path=Path("q/ichimon/index.html"),
+                ),
+                encoding="utf-8",
+            )
+    else:
+        ichimon_pages = []
         idx = Q_ROOT / "ichimon" / "index.html"
         idx.parent.mkdir(parents=True, exist_ok=True)
-        idx.write_text(
-            build_mode_index(
-                mode="ichimon",
-                pages=ichimon_pages,
-                base_url=base,
-                rel_path=Path("q/ichimon/index.html"),
-            ),
-            encoding="utf-8",
-        )
+        idx.write_text(build_ichimon_redirect_index(base_url=base), encoding="utf-8")
 
     print(
         f"Wrote practice: {len(practice_pages)} pages"

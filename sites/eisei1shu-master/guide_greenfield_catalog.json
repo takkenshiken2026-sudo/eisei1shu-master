@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "site_id": "eisei1shu-master",
+  "description": "一衛ガイドのゼロから作り直し用カタログ。keep は guide-seo-candidates の auto_decision=keep に promote_keep を加える。",
+  "promote_keep": [
+    "study-plan-working"
+  ],
+  "title_fixes": {
+    "exam-format-overview": "第一種衛生管理者試験の形式【44問·五肢択一·180分·400点満点】",
+    "exam-scope-overview": "第一種衛生管理者試験の出題範囲の概要【5出題範囲·44問の地図】",
+    "subject-breakdown": "第一種衛生管理者試験の配点と出題範囲【44問·5範囲·各40％足切り】",
+    "time-limit-strategy": "第一種衛生管理者·時間配分の戦略【180分·44問·約4分/問】",
+    "pass-score": "第一種衛生管理者の目標得点【総合240点·各出題範囲40％ライン】",
+    "goukaku-kijun": "第一種衛生管理者の合格点·合格基準【240点·各出題範囲40％足切り】",
+    "pass-announcement-guide": "第一種衛生管理者試験の合格発表の確認方法【Web·郵送】",
+    "exam-day-flow": "第一種衛生管理者試験の当日の流れ【受付〜終了·44問180分】",
+    "retake-strategy": "第一種衛生管理者試験の再受験の戦略【足切り攻略·44問180分】",
+    "past-questions-by-field": "第一種衛生管理者試験の分野別過去問の解き方【5出題範囲】",
+    "field-law-harm-basics": "第一種衛生管理者·関係法令（有害）基礎【10問·許容濃度】",
+    "field-law-other-basics": "第一種衛生管理者·関係法令（有害以外）基礎【7問·安衛法骨格】",
+    "field-eisei-harm-basics": "第一種衛生管理者·労働衛生（有害）基礎【10問·化学管理】",
+    "field-eisei-other-basics": "第一種衛生管理者·労働衛生（有害以外）基礎【7問·管理体制】",
+    "field-physio-basics": "第一種衛生管理者·労働生理基礎【10問·WBGT·足切り】",
+    "affiliate-mock-exam-materials": "第一種衛生管理者試験の模試·予想問題3選【44問本番形式2026】",
+    "study-plan-working": "第一種衛生管理者試験の社会人向け学習計画【平日60分·土日集中·7か月】"
+  },
+  "section_headings": {
+    "study-plan-working": [
+      "勉強時間の目安（社会人·週8時間）",
+      "7か月計画が向く人·向かない人",
+      "受験日から逆算した全体スケジュール",
+      "月次の到達目標とチェック項目",
+      "平日60分の使い方",
+      "土日のまとめ学習",
+      "過去問·演習の回数と正答率·遅延時の修正"
+    ],
+    "exam-format-overview": [
+      "本試験の基本形式（44問·180分）",
+      "5出題範囲と配点",
+      "合格基準（総合60％·各範囲40％）",
+      "マークシートの解答方法",
+      "当サイト演習バンクとの違い",
+      "次に読むページ"
+    ],
+    "goukaku-kijun": [
+      "合格点の全体像（240点/400点）",
+      "各出題範囲の足切りライン",
+      "演習での目標正答率の置き方",
+      "足切りで落ちる典型パターン",
+      "公式要項の確認手順",
+      "関連ガイド"
+    ]
+  },
+  "write_priority": [
+    "exam-format-overview",
+    "goukaku-kijun",
+    "pass-score",
+    "exam-scope-overview",
+    "subject-breakdown",
+    "study-plan-working",
+    "past-questions-by-field",
+    "textbook-selection"
+  ]
+}

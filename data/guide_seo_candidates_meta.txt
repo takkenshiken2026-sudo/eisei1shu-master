@@ -1,0 +1,6 @@
+generated: 2026-06-18
+site: eisei1shu-master
+published: 51
+target: 50
+decisions: {'keep': 50, 'merge': 1}
+edit: guide_seo_candidates.csv の manual_decision 列（keep|merge|retire）

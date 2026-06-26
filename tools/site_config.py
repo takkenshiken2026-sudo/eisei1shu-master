@@ -159,6 +159,94 @@ def learning_nav_label(nav_id: str, default: str) -> str:
     return learning_nav_label_overrides().get(nav_id, default)
 
 
+def learning_nav_extras() -> list[dict[str, str]]:
+    """SPA 学習ナビに追加するサイト固有リンク（例: 乙4の試験日検索）。"""
+    raw = CONFIG.get("learningNavExtras") or []
+    if not isinstance(raw, list):
+        return []
+    out: list[dict[str, str]] = []
+    for item in raw:
+        if not isinstance(item, dict):
+            continue
+        nav_id = str(item.get("id") or "").strip()
+        label = str(item.get("label") or "").strip()
+        href = str(item.get("href") or "").strip()
+        if not nav_id or not label or not href:
+            continue
+        out.append(
+            {
+                "id": nav_id,
+                "label": label,
+                "href": href,
+                "after": str(item.get("after") or "tnav-glossary").strip(),
+                "icon": str(item.get("icon") or "calendar").strip(),
+                "pageCurrent": str(item.get("pageCurrent") or "").strip(),
+            }
+        )
+    return out
+
+
+def question_modes() -> dict[str, Any]:
+    """実践演習内の出題形式など（サイトごとに一問一答タブの有無を切替）。"""
+    raw = CONFIG.get("questionModes") or {}
+    if not isinstance(raw, dict):
+        return {}
+    return raw
+
+
+def practice_formats() -> list[str]:
+    raw = question_modes().get("practiceFormats")
+    if not isinstance(raw, list):
+        return []
+    return [str(x).strip() for x in raw if str(x).strip()]
+
+
+def practice_preset() -> dict[str, object]:
+    tiers = practice_tiers()
+    if tiers:
+        return tiers[0]
+    raw = question_modes().get("practicePreset")
+    if not isinstance(raw, dict):
+        return {}
+    return raw
+
+
+def practice_tiers() -> list[dict[str, object]]:
+    raw = question_modes().get("practiceTiers")
+    if not isinstance(raw, list):
+        return []
+    out: list[dict[str, object]] = []
+    for item in raw:
+        if isinstance(item, dict) and str(item.get("id") or "").strip():
+            out.append(item)
+    return out
+
+
+def ichimon_enabled() -> bool:
+    """一問一答モード（独立タブ・一覧）を表示するか。hideIchimon=true で非表示。"""
+    return not bool(question_modes().get("hideIchimon"))
+
+
+def past_enabled() -> bool:
+    """過去問モード（独立タブ・一覧）を表示するか。hidePast=true で非表示。"""
+    return not bool(question_modes().get("hidePast"))
+
+
+def study_modes_label() -> str:
+    seo = CONFIG.get("seoCopy") or {}
+    if isinstance(seo, dict):
+        configured = str(seo.get("studyModes") or "").strip()
+        if configured:
+            return configured
+    parts: list[str] = []
+    if past_enabled():
+        parts.append("過去問")
+    parts.append("実践演習")
+    if ichimon_enabled():
+        parts.append("一問一答")
+    return "・".join(parts)
+
+
 def official_organization() -> str:
     return str(CONFIG.get("officialOrganization") or "試験実施団体")
 
@@ -225,6 +313,8 @@ def navigation_items(section: str) -> list[tuple[str, str, str]]:
         key = str(item.get("key") or "").strip()
         if href == "__CONTACT__":
             href = contact_url()
+        if not past_enabled() and key == "q":
+            continue
         if label and href:
             out.append((label, href, key or label))
     return out
@@ -413,6 +503,9 @@ GUIDE_INDEX_PICK_KIND_LABELS: dict[str, str] = {
     "mock": "模試",
 }
 
+# 一覧 index 上部（guideIndexPicks）に出す種別。講座のみ（テキスト·問題集は記事内導線に限定）
+GUIDE_INDEX_PICK_TOP_KINDS = frozenset({"course"})
+
 GUIDE_INDEX_PICK_LAYOUTS = frozenset({"grid-3", "grid-2", "strip", "compact", "text"})
 
 
@@ -429,7 +522,7 @@ def guide_index_picks() -> dict[str, Any] | None:
         layout = "grid-3"
     max_items = 4 if layout == "grid-2" else 3
     items: list[dict[str, str]] = []
-    for item in items_raw[:max_items]:
+    for item in items_raw:
         if not isinstance(item, dict):
             continue
         title = str(item.get("title") or "").strip()
@@ -437,6 +530,8 @@ def guide_index_picks() -> dict[str, Any] | None:
         if not title or not href:
             continue
         kind = str(item.get("kind") or "textbook").strip() or "textbook"
+        if kind not in GUIDE_INDEX_PICK_TOP_KINDS:
+            continue
         kind_label = str(item.get("kindLabel") or "").strip() or GUIDE_INDEX_PICK_KIND_LABELS.get(kind, "教材")
         description = str(item.get("description") or "").strip()
         cta = str(item.get("cta") or "記事を読む").strip() or "記事を読む"
@@ -455,6 +550,8 @@ def guide_index_picks() -> dict[str, Any] | None:
         if image_alt:
             pick["imageAlt"] = image_alt
         items.append(pick)
+        if len(items) >= max_items:
+            break
     if not items:
         return None
     leads_by_hub_raw = raw.get("leadsByHub")
@@ -471,6 +568,29 @@ def guide_index_picks() -> dict[str, Any] | None:
         "layout": layout,
         "items": items,
     }
+
+
+def course_promo() -> dict[str, str] | None:
+    raw = CONFIG.get("coursePromo")
+    if not isinstance(raw, dict):
+        return None
+    url = str(raw.get("url") or "").strip()
+    if not url:
+        return None
+    out: dict[str, str] = {"url": url}
+    for key in (
+        "modeTitle",
+        "modePurpose",
+        "priceLabel",
+        "tagLabel",
+        "footnote",
+        "lpUrl",
+        "afbLeadUrl",
+    ):
+        val = raw.get(key)
+        if val is not None and str(val).strip():
+            out[key] = str(val).strip()
+    return out
 
 
 def paid_mock_exam() -> dict[str, str] | None:
@@ -522,10 +642,19 @@ def write_site_config_js() -> None:
             }
             for f in fields()
         ],
+        "questionModes": {
+            **question_modes(),
+            "practiceFormats": practice_formats(),
+            "practicePreset": practice_preset(),
+            "practiceTiers": practice_tiers(),
+        },
     }
     pm = paid_mock_exam()
     if pm:
         payload["paidMockExam"] = pm
+    cp = course_promo()
+    if cp:
+        payload["coursePromo"] = cp
     (ROOT / "site-config.js").write_text(
         "window.SITE_CONFIG = "
         + json.dumps(payload, ensure_ascii=False, indent=2)
