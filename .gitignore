@@ -8,3 +8,7 @@
 /public_site/
 
 .DS_Store
+
+# Python キャッシュ
+__pycache__/
+*.pyc

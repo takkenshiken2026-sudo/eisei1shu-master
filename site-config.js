@@ -162,5 +162,29 @@ window.SITE_CONFIG = {
     "priceLabel": "¥590",
     "scoreMeta": "PDF · 3回 · 44問",
     "scoreLead": "本番想定模試（3回分）"
+  },
+  "quizStartAffiliatePicks": {
+    "items": [
+      {
+        "href": "https://px.a8.net/svt/ejp?a8mat=4B3TF0+DUXB9E+408S+BW0YB&a8ejpredirect=https%3A%2F%2Fonsuku.jp%2Ftraining%2Feisei2",
+        "title": "オンスク.JP 衛生管理者オンライン通信講座",
+        "purpose": "スマホのスキマ時間で細切れ動画学習したい",
+        "priceLabel": "1,078円〜",
+        "external": "1"
+      },
+      {
+        "href": "articles/affiliate-textbooks-recommend/",
+        "title": "おすすめテキスト3選【2026年度版】",
+        "purpose": "テキスト1冊で学習計画を組みたい",
+        "priceLabel": "1,870円〜"
+      },
+      {
+        "href": "articles/affiliate-problem-books/",
+        "title": "おすすめ問題集3選【2026年度版】",
+        "purpose": "演習量を確保する問題集を選びたい",
+        "priceLabel": "1,540円〜"
+      }
+    ],
+    "disclaimer": "※ オンスク.JP公式サイト等へ移動します。料金・受講条件は申込前に各ページでご確認ください。"
   }
 };
