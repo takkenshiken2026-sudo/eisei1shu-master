@@ -161,10 +161,11 @@ window.SITE_CONFIG = {
   "quizStartAffiliatePicks": {
     "items": [
       {
-        "href": "articles/affiliate-online-course-compare/",
-        "title": "オンライン講座比較【SMART vs オンスク】",
-        "purpose": "動画講座で5科目を一気に押さえたい",
-        "priceLabel": "29,700円〜"
+        "href": "https://px.a8.net/svt/ejp?a8mat=4B3TF0+DUXB9E+408S+BW0YB&a8ejpredirect=https%3A%2F%2Fonsuku.jp%2Ftraining%2Feisei2",
+        "title": "オンスク.JP 衛生管理者オンライン通信講座",
+        "purpose": "スマホのスキマ時間で細切れ動画学習したい",
+        "priceLabel": "1,078円〜",
+        "external": "1"
       },
       {
         "href": "articles/affiliate-textbooks-recommend/",
@@ -179,6 +180,6 @@ window.SITE_CONFIG = {
         "priceLabel": "1,540円〜"
       }
     ],
-    "disclaimer": "※ 比較記事から各公式サイト・Amazon等へ移動します。料金・受講条件は申込前に各ページでご確認ください。"
+    "disclaimer": "※ オンスク.JP公式サイト等へ移動します。料金・受講条件は申込前に各ページでご確認ください。"
   }
 };
