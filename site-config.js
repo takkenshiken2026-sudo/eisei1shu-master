@@ -157,5 +157,28 @@ window.SITE_CONFIG = {
     "priceLabel": "¥590",
     "scoreMeta": "PDF · 3回 · 44問",
     "scoreLead": "本番想定模試（3回分）"
+  },
+  "quizStartAffiliatePicks": {
+    "items": [
+      {
+        "href": "articles/affiliate-online-course-compare/",
+        "title": "オンライン講座比較【SMART vs オンスク】",
+        "purpose": "動画講座で5科目を一気に押さえたい",
+        "priceLabel": "29,700円〜"
+      },
+      {
+        "href": "articles/affiliate-textbooks-recommend/",
+        "title": "おすすめテキスト3選【2026年度版】",
+        "purpose": "テキスト1冊で学習計画を組みたい",
+        "priceLabel": "1,870円〜"
+      },
+      {
+        "href": "articles/affiliate-problem-books/",
+        "title": "おすすめ問題集3選【2026年度版】",
+        "purpose": "演習量を確保する問題集を選びたい",
+        "priceLabel": "1,540円〜"
+      }
+    ],
+    "disclaimer": "※ 比較記事から各公式サイト・Amazon等へ移動します。料金・受講条件は申込前に各ページでご確認ください。"
   }
 };

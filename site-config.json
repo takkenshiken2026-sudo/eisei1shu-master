@@ -294,6 +294,29 @@
     "scoreMeta": "PDF · 3回 · 44問",
     "scoreLead": "本番想定模試（3回分）"
   },
+  "quizStartAffiliatePicks": {
+    "disclaimer": "※ 比較記事から各公式サイト・Amazon等へ移動します。料金・受講条件は申込前に各ページでご確認ください。",
+    "items": [
+      {
+        "purpose": "動画講座で5科目を一気に押さえたい",
+        "title": "オンライン講座比較【SMART vs オンスク】",
+        "href": "articles/affiliate-online-course-compare/",
+        "priceLabel": "29,700円〜"
+      },
+      {
+        "purpose": "テキスト1冊で学習計画を組みたい",
+        "title": "おすすめテキスト3選【2026年度版】",
+        "href": "articles/affiliate-textbooks-recommend/",
+        "priceLabel": "1,870円〜"
+      },
+      {
+        "purpose": "演習量を確保する問題集を選びたい",
+        "title": "おすすめ問題集3選【2026年度版】",
+        "href": "articles/affiliate-problem-books/",
+        "priceLabel": "1,540円〜"
+      }
+    ]
+  },
   "externalLinks": [
     {
       "url": "https://www.exam.or.jp/",

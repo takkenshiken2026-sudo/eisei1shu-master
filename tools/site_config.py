@@ -473,6 +473,39 @@ def guide_index_picks() -> dict[str, Any] | None:
     }
 
 
+def quiz_start_affiliate_picks() -> dict[str, object] | None:
+    raw = CONFIG.get("quizStartAffiliatePicks")
+    if not isinstance(raw, dict):
+        return None
+    items_raw = raw.get("items")
+    if not isinstance(items_raw, list):
+        return None
+    items: list[dict[str, str]] = []
+    for entry in items_raw:
+        if not isinstance(entry, dict):
+            continue
+        href = str(entry.get("href") or "").strip()
+        title = str(entry.get("title") or "").strip()
+        if not href or not title:
+            continue
+        item: dict[str, str] = {
+            "href": href,
+            "title": title,
+            "purpose": str(entry.get("purpose") or "").strip(),
+            "priceLabel": str(entry.get("priceLabel") or "").strip(),
+        }
+        if entry.get("external"):
+            item["external"] = "1"
+        items.append(item)
+    if not items:
+        return None
+    out: dict[str, object] = {"items": items}
+    disclaimer = str(raw.get("disclaimer") or "").strip()
+    if disclaimer:
+        out["disclaimer"] = disclaimer
+    return out
+
+
 def paid_mock_exam() -> dict[str, str] | None:
     raw = CONFIG.get("paidMockExam")
     if not isinstance(raw, dict):
@@ -526,6 +559,9 @@ def write_site_config_js() -> None:
     pm = paid_mock_exam()
     if pm:
         payload["paidMockExam"] = pm
+    qap = quiz_start_affiliate_picks()
+    if qap:
+        payload["quizStartAffiliatePicks"] = qap
     (ROOT / "site-config.js").write_text(
         "window.SITE_CONFIG = "
         + json.dumps(payload, ensure_ascii=False, indent=2)
