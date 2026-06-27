@@ -656,6 +656,18 @@ details.rich-detail summary{display:none}
 .score-paid-mock-strip-title{display:block;font-size:var(--fs-body);font-weight:700;color:var(--text);margin-bottom:2px;line-height:1.35}
 .score-paid-mock-strip-meta{font-size:var(--fs-caption);color:var(--text2)}
 .score-paid-mock-strip-cta{font-size:var(--fs-sub);font-weight:700;color:var(--paid-mock-accent);flex-shrink:0;white-space:nowrap}
+.score-course-promo-wrap{margin-top:24px;padding-top:20px;border-top:1px solid var(--border)}
+.ichi-score-course-promo-wrap{text-align:left;max-width:480px;margin:24px auto 0}
+.score-course-promo-lead{font-size:var(--fs-sub);color:var(--text);margin-bottom:14px;line-height:1.65;font-weight:500}
+.score-course-promo-lead strong{color:var(--text);font-weight:700}
+.score-course-promo-strip{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:14px 18px;border:1px solid color-mix(in srgb,var(--accent) 26%,#ffffff);border-radius:var(--r2);background:color-mix(in srgb,var(--accent) 11%,#ffffff);text-decoration:none;color:inherit;box-shadow:0 2px 10px color-mix(in srgb,var(--accent) 12%,transparent);transition:border-color .15s,box-shadow .15s,transform .15s}
+.score-course-promo-strip:hover{border-color:var(--accent);box-shadow:0 4px 14px color-mix(in srgb,var(--accent) 16%,transparent);transform:translateY(-1px)}
+.score-course-promo-strip-tag{font-size:var(--fs-tiny);font-weight:700;background:var(--accent);color:var(--accent-text);padding:3px 8px;border-radius:4px;flex-shrink:0;letter-spacing:.04em}
+.score-course-promo-strip-body{flex:1;min-width:180px}
+.score-course-promo-strip-title{display:block;font-size:var(--fs-body);font-weight:700;color:var(--text);margin-bottom:2px;line-height:1.35}
+.score-course-promo-strip-meta{font-size:var(--fs-caption);color:var(--text2)}
+.score-course-promo-strip-cta{font-size:var(--fs-sub);font-weight:700;color:var(--accent);flex-shrink:0;white-space:nowrap}
+.score-course-promo-footnote{font-size:11px;color:var(--text3);margin-top:8px;padding-left:2px;line-height:1.55;max-width:720px}
 
 /* ===== DASHBOARD ===== */
 .stat-row{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-bottom:18px}
@@ -1653,6 +1665,7 @@ body.is-solving .site-footer{display:none!important}
           <button class="btn-ghost" onclick="shareIchiResultToX()" style="font-size:15px;padding:13px">Xに投稿する</button>
           <button class="btn-ghost" onclick="gotoPage('quiz-start')" style="font-size:15px;padding:13px">他の問題を解く</button>
         </div>
+        <div id="ichi-score-course-wrap" class="score-course-promo-wrap ichi-score-course-promo-wrap" hidden></div>
         <div id="ichi-score-paid-mock-wrap" class="score-paid-mock-wrap ichi-score-paid-mock-wrap" hidden></div>
       </div>
     </div>
@@ -1712,6 +1725,7 @@ body.is-solving .site-footer{display:none!important}
           <button class="btn-ghost"   onclick="gotoPage('quiz-start')">他の問題を解く</button>
           <button class="btn-primary" onclick="beginQuiz()">もう1セット</button>
         </div>
+        <div id="score-course-wrap" class="score-course-promo-wrap" hidden></div>
         <div id="score-paid-mock-wrap" class="score-paid-mock-wrap" hidden></div>
       </div>
     </div>
@@ -3858,6 +3872,7 @@ function showIchiScore() {
   const ratio = att > 0 ? s / att : 0;
   const li = Math.min(Math.floor(ratio * (labels.length - 0.001)), labels.length - 1);
   document.getElementById('ichi-score-label').textContent = labels[Math.max(0, li)];
+  renderScoreCoursePromo({ wrapId: 'ichi-score-course-wrap', variant: 'ichi' });
   renderScorePaidMockPromo({ wrapId: 'ichi-score-paid-mock-wrap', variant: 'ichi' });
 }
 function shareIchiResultToX(){
@@ -7332,6 +7347,88 @@ function injectPaidMockExamCard(modeList){
   modeList.appendChild(wrapper);
 }
 
+function getCoursePromoConfig(){
+  const cfg=(window.SITE_CONFIG&&window.SITE_CONFIG.coursePromo)||{};
+  if(!cfg.url) return {url:''};
+  const modeTitle=String(cfg.modeTitle||'オンライン講座').trim();
+  return {
+    url: String(cfg.url).trim(),
+    modeTitle,
+    modePurpose: String(cfg.modePurpose||'動画講座で学習計画を立てたい').trim(),
+    priceLabel: String(cfg.priceLabel||'').trim(),
+    tagLabel: String(cfg.tagLabel||'PR').trim(),
+    footnote: String(cfg.footnote||'').trim(),
+    afbLeadUrl: String(cfg.afbLeadUrl||'').trim(),
+    scoreMeta: String(cfg.scoreMeta||'').trim(),
+    scoreLead: String(cfg.scoreLead||modeTitle||'オンライン講座').trim(),
+  };
+}
+
+function resolveCoursePromoHref(url){
+  const raw=String(url||'').trim();
+  if(!raw) return '';
+  if(raw.startsWith('http://')||raw.startsWith('https://')||raw.startsWith('/')) return raw;
+  const slug=raw.replace(/^articles\//,'').replace(/^\/+/,'').replace(/\/+$/,'');
+  return slug?'articles/'+slug+'/':raw;
+}
+
+function coursePromoLinkAttrs(href){
+  const external=href.startsWith('http://')||href.startsWith('https://');
+  if(external) return {target:' target="_blank"',rel:' rel="noopener noreferrer nofollow sponsored"',ext:true};
+  return {target:'',rel:' rel="nofollow sponsored"',ext:false};
+}
+
+function scoreCourseLeadHtml(c, variant){
+  if(variant==='ichi'){
+    return `知識の定着後は、<strong>${escapeAttr(c.scoreLead)}</strong>で苦手分野を体系的に学習しませんか？`;
+  }
+  return `演習の次は、<strong>${escapeAttr(c.scoreLead)}</strong>で学習計画を立てませんか？`;
+}
+
+function renderScoreCoursePromo(opts){
+  opts=opts||{};
+  const wrapId=opts.wrapId||'score-course-wrap';
+  const wrap=document.getElementById(wrapId);
+  if(!wrap) return;
+  const c=getCoursePromoConfig();
+  if(!c.url){
+    wrap.hidden=true;
+    wrap.innerHTML='';
+    return;
+  }
+  const href=resolveCoursePromoHref(c.url);
+  const attrs=coursePromoLinkAttrs(href);
+  const label=`${c.modeTitle}（${c.tagLabel}）`;
+  const leadHtml=opts.leadHtml!=null?opts.leadHtml:scoreCourseLeadHtml(c,opts.variant);
+  const metaParts=[c.scoreMeta,c.priceLabel,c.modePurpose].filter(Boolean);
+  const metaHtml=escapeAttr(metaParts.join(' · '));
+  const footnoteHtml=c.footnote?`<p class="score-course-promo-footnote">${escapeAttr(c.footnote)}</p>`:'';
+  const ctaArrow=attrs.ext?'詳細 ↗':'比較記事を読む ›';
+  wrap.hidden=false;
+  wrap.innerHTML=`
+    <p class="score-course-promo-lead">${leadHtml}</p>
+    <a class="score-course-promo-strip" href="${escapeAttr(href)}"${attrs.target}${attrs.rel} aria-label="${escapeAttr(label)}">
+      <span class="score-course-promo-strip-tag">${escapeAttr(c.tagLabel)}</span>
+      <span class="score-course-promo-strip-body">
+        <span class="score-course-promo-strip-title">${escapeAttr(c.modeTitle)}</span>
+        <span class="score-course-promo-strip-meta">${metaHtml}</span>
+      </span>
+      <span class="score-course-promo-strip-cta">${ctaArrow}</span>
+    </a>
+    ${footnoteHtml}`;
+  if(c.afbLeadUrl){
+    const px=document.createElement('img');
+    px.src=c.afbLeadUrl;
+    px.width=1;
+    px.height=1;
+    px.alt='';
+    px.decoding='async';
+    px.style.cssText='border:none;width:1px;height:1px;position:absolute;opacity:0;pointer-events:none';
+    wrap.appendChild(px);
+  }
+}
+window.renderScoreCoursePromo=renderScoreCoursePromo;
+
 function scorePaidMockLeadHtml(m, variant){
   if(variant==='ichi'){
     return `一問一答の次は、<strong>${escapeAttr(m.scoreLead)}</strong>で本番形式を試しませんか？`;
@@ -7423,6 +7520,7 @@ window.gotoPage=function(id){
 const _origShowScore2=window.showScore;
 window.showScore=function(){
   if(_origShowScore2) _origShowScore2.apply(this,arguments);
+  renderScoreCoursePromo();
   renderScorePaidMockPromo();
 };
 

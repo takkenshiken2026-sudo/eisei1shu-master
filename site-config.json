@@ -274,6 +274,16 @@
     "scoreMeta": "PDF · 3回 · 44問",
     "scoreLead": "本番想定模試（3回分）"
   },
+  "coursePromo": {
+    "url": "affiliate-online-course-compare/",
+    "modeTitle": "オンライン講座比較【SMART vs オンスク】",
+    "modePurpose": "100問180分・5科目足切り前提で講座を比較したい",
+    "priceLabel": "29,700円〜",
+    "tagLabel": "PR",
+    "scoreMeta": "SMART vs オンスク",
+    "scoreLead": "オンライン講座比較",
+    "footnote": "※ 比較記事内の各講座公式サイトへ移動します。料金·受講条件は申込前にご確認ください。"
+  },
   "quizStartAffiliatePicks": {
     "disclaimer": "※ オンスク.JP公式サイト等へ移動します。料金・受講条件は申込前に各ページでご確認ください。",
     "items": [
