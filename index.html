@@ -411,6 +411,12 @@ h2.section-label .tip-icon{width:13px;height:13px;font-size:9px}
 .mode-card-v2--affiliate:hover{border-color:var(--text2);box-shadow:var(--sh2);transform:translateY(-1px);background:var(--bg3)}
 .mode-purpose-v2--affiliate{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
 .mode-pr-tag{font-size:10px;font-weight:700;background:#2c4471;color:#fff;padding:1px 7px;border-radius:999px;letter-spacing:.04em;line-height:1.5;flex-shrink:0}
+.mode-purpose-v2--course{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.mode-card-v2--course{text-decoration:none;color:inherit;border-color:var(--border2);background:#fff}
+.mode-card-v2--course:hover{border-color:var(--text2);background:var(--bg3);box-shadow:var(--sh2);transform:translateY(-1px)}
+.mode-course-tag{font-size:10px;font-weight:700;background:var(--accent);color:var(--accent-text);padding:1px 7px;border-radius:999px;letter-spacing:.04em;line-height:1.5;flex-shrink:0}
+.mode-course-tag--muted{background:var(--bg3);color:var(--text2);border:1px solid var(--border2)}
+.mode-course-footnote{font-size:11px;color:var(--text3);margin-top:6px;padding-left:36px;line-height:1.55;max-width:720px}
 .mode-price-tag{font-size:10px;font-weight:600;background:#f0f0f0;color:#333;padding:1px 7px;border-radius:999px;line-height:1.5;flex-shrink:0}
 .mode-affiliate-disclaimer{font-size:11px;color:var(--text3);line-height:1.55;margin:-4px 0 16px;padding:0 2px}
 .mode-card{background:#fff;border:1.5px solid var(--border2);border-radius:var(--r2);padding:18px;cursor:pointer;transition:all .18s;box-shadow:var(--sh);position:relative;display:flex;flex-direction:column}
@@ -7266,54 +7272,13 @@ function injectQuizStartEnhancements(){
   if(!startEl.querySelector('#paid-mock-inject')){
     injectPaidMockExamCard(modeList);
   }
-  if(!startEl.querySelector('#affiliate-picks-inject')){
-    injectQuizStartAffiliatePicks(modeList);
+  if(!startEl.querySelector('#course-promo-inject')){
+    injectCoursePromoCard(modeList);
   }
 }
 
-function getQuizStartAffiliatePicksConfig(){
-  const raw=(window.SITE_CONFIG&&window.SITE_CONFIG.quizStartAffiliatePicks)||{};
-  const items=Array.isArray(raw.items)?raw.items:[];
-  return {
-    disclaimer:String(raw.disclaimer||'').trim(),
-    items:items.map(function(it){
-      return {
-        purpose:String(it.purpose||'').trim(),
-        title:String(it.title||'').trim(),
-        href:String(it.href||'').trim(),
-        priceLabel:String(it.priceLabel||'').trim(),
-        external:!!it.external||String(it.external||'')==='1',
-      };
-    }).filter(function(it){ return it.href&&it.title; }),
-  };
-}
-
-function injectQuizStartAffiliatePicks(modeList){
-  const cfg=getQuizStartAffiliatePicksConfig();
-  if(!cfg.items.length) return;
-  const baseNum=modeList.querySelectorAll('.mode-card-v2').length;
-  const wrapper=document.createElement('div');
-  wrapper.id='affiliate-picks-inject';
-  const cards=cfg.items.map(function(it,idx){
-    const num=String(baseNum+idx+1).padStart(2,'0');
-    const href=it.href.startsWith('http')?it.href:(it.href.startsWith('/')?it.href:'/'+it.href);
-    const label=it.title+(it.priceLabel?' · '+it.priceLabel:'');
-    const extAttrs=it.external?' target="_blank" rel="noopener noreferrer sponsored"' : '';
-    const priceHtml=it.priceLabel?`<span class="mode-price-tag">${escapeAttr(it.priceLabel)}</span>`:'';
-    const purposeHtml=it.purpose?escapeAttr(it.purpose):'';
-    return `
-    <a class="mode-card-v2 mode-card-v2--affiliate" href="${escapeAttr(href)}"${extAttrs} aria-label="${escapeAttr(label)}">
-      <div class="mode-num-v2">${num}</div>
-      <div class="mode-body-v2">
-        <div class="mode-purpose-v2 mode-purpose-v2--affiliate">${purposeHtml} <span class="mode-pr-tag">PR</span>${priceHtml}</div>
-        <div class="mode-title-v2">${escapeAttr(it.title)}</div>
-      </div>
-      <div class="mode-arrow-v2 mode-arrow-v2--ext" aria-hidden="true">↗</div>
-    </a>`;
-  }).join('');
-  const noteHtml=cfg.disclaimer?`<p class="mode-affiliate-disclaimer">${escapeAttr(cfg.disclaimer)}</p>`:'';
-  wrapper.innerHTML=cards+noteHtml;
-  modeList.appendChild(wrapper);
+function nextModeCardNum(modeList){
+  return String(modeList.querySelectorAll('.mode-num-v2').length+1).padStart(2,'0');
 }
 
 function getPaidMockExamConfig(){
@@ -7376,6 +7341,40 @@ function coursePromoLinkAttrs(href){
   const external=href.startsWith('http://')||href.startsWith('https://');
   if(external) return {target:' target="_blank"',rel:' rel="noopener noreferrer nofollow sponsored"',ext:true};
   return {target:'',rel:' rel="nofollow sponsored"',ext:false};
+}
+
+function injectCoursePromoCard(modeList){
+  const c=getCoursePromoConfig();
+  if(!c.url) return;
+  const href=resolveCoursePromoHref(c.url);
+  const attrs=coursePromoLinkAttrs(href);
+  const num=nextModeCardNum(modeList);
+  const wrapper=document.createElement('div');
+  wrapper.id='course-promo-inject';
+  const priceTag=c.priceLabel?`<span class="mode-course-tag mode-course-tag--muted">${escapeAttr(c.priceLabel)}</span>`:'';
+  const label=`${c.modeTitle}（${c.tagLabel}）`;
+  const arrow=attrs.ext?'↗':'›';
+  wrapper.innerHTML=`
+    <a class="mode-card-v2 mode-card-v2--course" href="${escapeAttr(href)}"${attrs.target}${attrs.rel} aria-label="${escapeAttr(label)}">
+      <div class="mode-num-v2">${num}</div>
+      <div class="mode-body-v2">
+        <div class="mode-purpose-v2 mode-purpose-v2--course">${escapeAttr(c.modePurpose)} <span class="mode-course-tag">${escapeAttr(c.tagLabel)}</span>${priceTag}</div>
+        <div class="mode-title-v2">${escapeAttr(c.modeTitle)}</div>
+      </div>
+      <div class="mode-arrow-v2${attrs.ext?' mode-arrow-v2--ext':''}" aria-hidden="true">${arrow}</div>
+    </a>
+    ${c.footnote?`<p class="mode-course-footnote">${escapeAttr(c.footnote)}</p>`:''}`;
+  if(c.afbLeadUrl){
+    const px=document.createElement('img');
+    px.src=c.afbLeadUrl;
+    px.width=1;
+    px.height=1;
+    px.alt='';
+    px.decoding='async';
+    px.style.cssText='border:none;width:1px;height:1px;position:absolute;opacity:0;pointer-events:none';
+    wrapper.appendChild(px);
+  }
+  modeList.appendChild(wrapper);
 }
 
 function scoreCourseLeadHtml(c, variant){
