@@ -8,7 +8,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PARTS = (
     "eisei1-data-glossary.js",
-    "eisei1-data-original.js",
     "eisei1-master-data.js",
     "eisei1-data-ichimon.js",
 )

@@ -12,3 +12,6 @@
 # Python キャッシュ
 __pycache__/
 *.pyc
+
+# 生成されるハブ検証エラーログ
+_hub_errors.txt
