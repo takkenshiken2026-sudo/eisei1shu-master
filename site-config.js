@@ -164,13 +164,13 @@ window.SITE_CONFIG = {
     "scoreLead": "本番想定模試（3回分）"
   },
   "coursePromo": {
-    "url": "affiliate-online-course-compare/",
-    "modeTitle": "オンライン講座比較【SMART vs オンスク】",
-    "modePurpose": "100問180分・5科目足切り前提で講座を比較したい",
-    "priceLabel": "29,700円〜",
+    "url": "https://px.a8.net/svt/ejp?a8mat=4B3TF0+DUXB9E+408S+BW0YB&a8ejpredirect=https%3A%2F%2Fonsuku.jp%2Ftraining%2Feisei2",
+    "modeTitle": "オンスク.JP 衛生管理者オンライン通信講座",
+    "modePurpose": "スマホのスキマ時間で細切れ動画学習したい",
+    "priceLabel": "1,078円〜",
     "tagLabel": "PR",
-    "footnote": "※ 比較記事内の各講座公式サイトへ移動します。料金·受講条件は申込前にご確認ください。",
-    "scoreLead": "オンライン講座比較",
-    "scoreMeta": "SMART vs オンスク"
+    "footnote": "※ オンスク.JP公式サイトへ移動します。料金·受講条件は申込前にご確認ください。",
+    "scoreLead": "オンスク.JPオンライン通信講座",
+    "scoreMeta": "月額ウケホーダイ"
   }
 };
