@@ -5,6 +5,7 @@ window.SITE_CONFIG = {
   "siteOrigin": "https://eisei1shu-master.jp",
   "contactUrl": "https://forms.gle/3pD7fZ8TdppzAWR37",
   "ga4MeasurementId": "G-2WG5ES7LVQ",
+  "adsenseClientId": "ca-pub-7927260139193410",
   "theme": {
     "accent": "#2d5c45",
     "accentText": "#ffffff",

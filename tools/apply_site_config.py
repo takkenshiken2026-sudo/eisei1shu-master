@@ -46,6 +46,7 @@ from tools.html_footer import (
     site_shell_footer,
 )
 from tools.brand_assets import inject_brand_head
+from tools.html_footer import inject_adsense_head
 from tools.build_index_faq_ldjson import inject_index_faq_ldjson
 from tools.index_seo_head import (
     INDEX_SEO_MARKER_END,
@@ -699,6 +700,7 @@ def main() -> int:
         rel = path.relative_to(ROOT)
         if path.suffix == ".html":
             new = inject_brand_head(new, rel, site_root=ROOT)
+            new = inject_adsense_head(new)
         if path == ROOT / "index.html":
             new = ensure_site_config_before_fields(new)
             new = inject_index_seo_head(new)

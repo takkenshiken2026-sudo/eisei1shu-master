@@ -18,6 +18,7 @@ fi
 "$PY" tools/build_glossary_pages.py
 "$PY" tools/build_hub_retire_redirects.py
 "$PY" tools/build_sitemap.py
+"$PY" tools/inject_adsense_head.py
 "$PY" tools/validate_guide_index_picks.py
 "$PY" tools/validate_internal_links.py
 "$PY" tools/validate_site_integration.py
