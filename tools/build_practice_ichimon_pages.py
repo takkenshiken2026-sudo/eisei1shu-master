@@ -357,10 +357,10 @@ def build_practice_question_html(
     heading = question_h1(
         "practice", qno=page["qno"], category=page["category"]
     )
-    title = question_page_title(
-        "practice", qno=page["qno"], category=page["category"]
-    )
     stem = page.get("stem_plain") or ""
+    title = question_page_title(
+        "practice", qno=page["qno"], category=page["category"], stem=stem
+    )
     desc = question_meta_description(
         "practice",
         headline=question_meta_headline("practice", qno=page["qno"]),
@@ -508,10 +508,10 @@ def build_ichimon_question_html(
     heading = question_h1(
         "ichimon", question_id=page["id"], category=page["category"]
     )
-    title = question_page_title(
-        "ichimon", question_id=page["id"], category=page["category"]
-    )
     stmt = page.get("statement") or ""
+    title = question_page_title(
+        "ichimon", question_id=page["id"], category=page["category"], stem=stmt
+    )
     ans = marubatsu_label(page["correct_answer"])
     desc = question_meta_description(
         "ichimon",

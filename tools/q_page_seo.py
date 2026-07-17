@@ -199,12 +199,17 @@ def question_page_title(
     question_id: str = "",
     category: str = "",
     year_label: str = "",
+    stem: str = "",
 ) -> str:
-    """各問ページの <title>。"""
-    return (
+    """各問ページの <title>。stem があれば主題語を冒頭に前置して検索一致度を高める。"""
+    base = (
         f"{question_h1(mode, year=year, qno=qno, question_id=question_id, category=category, year_label=year_label)}"
         f"｜{brand_name()}"
     )
+    topic = stem_topic(stem) if stem else ""
+    if topic:
+        return f"{topic}｜{base}"
+    return base
 
 
 # 設問文（stem）から、検索クエリと一致しやすい「主題（トピック）」を取り出す境界。
@@ -236,6 +241,17 @@ def stem_topic(stem: str, *, maxlen: int = 26) -> str:
         if 0 < idx < cut:
             cut = idx
     topic = s[:cut]
+    # 「◯◯における△△」型（分野名などの前置き）は、後段の主題語△△を優先する。
+    # ただし括弧の内側で切ると壊れるため、前置き部分の括弧が閉じている場合のみ適用。
+    idx = topic.find("における")
+    if 2 <= idx <= 30:
+        prefix, tail = topic[:idx], topic[idx + len("における"):]
+        balanced = all(
+            prefix.count(o) == prefix.count(c)
+            for o, c in (("「", "」"), ("（", "）"), ("(", ")"))
+        )
+        if balanced and len(tail) >= 2:
+            topic = tail
 
     def _strip_dangling_brackets(text: str) -> str:
         # 開き括弧だけが残る中途半端な切れ方を避ける。
