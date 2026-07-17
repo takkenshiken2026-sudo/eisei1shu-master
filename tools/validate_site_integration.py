@@ -32,6 +32,7 @@ from tools.index_spa_patch import (  # noqa: E402
 )
 from tools.site_config import (  # noqa: E402
     adsense_client_id,
+    adsense_publisher_id,
     base_path,
     clean_origin,
     exam_name,
@@ -831,6 +832,21 @@ def _adsense_tracking(root: Path) -> list[Issue]:
     return issues
 
 
+def _ads_txt(root: Path) -> list[Issue]:
+    """AdSense 利用時はルート ads.txt に publisher ID が必要。"""
+    pub = adsense_publisher_id()
+    if not pub:
+        return []
+    path = root / "ads.txt"
+    if not path.is_file():
+        return [Issue("ads.txt がありません（AdSense 所有者確認用。apply_site_config / write_ads_txt を実行）")]
+    text = path.read_text(encoding="utf-8")
+    expected = f"google.com, {pub}, DIRECT,"
+    if expected not in text:
+        return [Issue(f"ads.txt: Google 行が不正です（期待に {pub!r} を含む DIRECT 行）")]
+    return []
+
+
 def _static_chrome(root: Path) -> list[Issue]:
     """docs/site-chrome.md — ヘッダー topnav 統一・旧 q-static-header 禁止。"""
     issues: list[Issue] = []
@@ -947,6 +963,7 @@ def main() -> int:
     issues.extend(_viewport_and_static_css(root))
     issues.extend(_ga4_tracking(root))
     issues.extend(_adsense_tracking(root))
+    issues.extend(_ads_txt(root))
     issues.extend(_static_page_site_leaks(root))
     issues.extend(_guide_index_picks(root))
 
