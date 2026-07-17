@@ -161,14 +161,14 @@ def page_context_line(page: dict) -> str:
 
 
 def page_title_seo(page: dict) -> str:
-    from tools.q_page_seo import question_page_title
+    from tools.q_page_seo import past_question_page_title
 
-    return question_page_title(
-        "past",
+    return past_question_page_title(
         year=page["year"],
         qno=page["qno"],
         category=page["category"],
         year_label=past_year_label(page),
+        stem=norm(page.get("stem_plain")),
     )
 
 

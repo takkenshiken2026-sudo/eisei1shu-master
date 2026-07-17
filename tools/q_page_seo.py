@@ -207,6 +207,71 @@ def question_page_title(
     )
 
 
+# 設問文（stem）から、検索クエリと一致しやすい「主題（トピック）」を取り出す境界。
+# 「◯◯に関する次の記述のうち…」の ◯◯ 部分を主題として拾う。
+_STEM_TOPIC_BOUNDARIES: tuple[str, ...] = (
+    "に関する",
+    "に定める",
+    "に基づく",
+    "に基づき",
+    "について",
+)
+_STEM_TOPIC_LEAD_RE = re.compile(r"^(?:次の|以下の|下記の|上記の)")
+_STEM_TOPIC_TRAIL = "、,。．・のがはを　 "
+
+
+def stem_topic(stem: str, *, maxlen: int = 26) -> str:
+    """設問文の先頭から主題語（検索意図に一致するキーワード）を抽出する。
+
+    各問ページの <title> 冒頭に置くことで、同一プレフィックスで始まる
+    量産型タイトルを避け、検索クエリとの一致度（＝CTR）を高める狙い。
+    """
+    s = re.sub(r"\s+", "", stem or "").strip()
+    if not s:
+        return ""
+    s = _STEM_TOPIC_LEAD_RE.sub("", s)
+    cut = len(s)
+    for boundary in _STEM_TOPIC_BOUNDARIES:
+        idx = s.find(boundary)
+        if 0 < idx < cut:
+            cut = idx
+    topic = s[:cut]
+
+    def _strip_dangling_brackets(text: str) -> str:
+        # 開き括弧だけが残る中途半端な切れ方を避ける。
+        for open_br, close_br in (("「", "」"), ("（", "）"), ("(", ")")):
+            if open_br in text and close_br not in text:
+                text = text[: text.index(open_br)]
+        return text
+
+    topic = _strip_dangling_brackets(topic).rstrip(_STEM_TOPIC_TRAIL)
+    # 主題が拾えなかった場合は、最初の読点／句点までを主題とみなす。
+    if len(topic) < 2:
+        topic = re.split(r"[、。]", s, maxsplit=1)[0]
+    if len(topic) > maxlen:
+        truncated = _strip_dangling_brackets(topic[:maxlen])
+        topic = truncated.rstrip(_STEM_TOPIC_TRAIL) + "…"
+    return topic
+
+
+def past_question_page_title(
+    *,
+    year: int = 0,
+    qno: int = 0,
+    category: str = "",
+    year_label: str = "",
+    stem: str = "",
+) -> str:
+    """過去問各問ページの <title>。主題語を冒頭に置いて検索一致度を高める。"""
+    yl = (year_label or "").strip() or past_year_display(year)
+    base = f"{exam_name()} 過去問 {yl} 第{qno}問"
+    topic = stem_topic(stem)
+    if topic:
+        return f"{topic}｜{base}｜{brand_name()}"
+    label = f"（{category}）" if category else ""
+    return f"{base}{label}｜{brand_name()}"
+
+
 def question_meta_headline(
     mode: str,
     *,
