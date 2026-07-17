@@ -751,6 +751,47 @@ def peer_comparison_table_html(
     )
 
 
+# 用語名の括弧内別称のうち、検索価値のない説明語（タイトルに載せない）。
+_ALIAS_STOP_SUBSTR = (
+    "概念", "比較", "病態", "症状", "分類", "種類", "定義",
+    "概要", "一覧", "まとめ", "位置づけ", "イメージ", "全体像",
+)
+
+
+def title_term_with_alias(term: str) -> str:
+    """`基本語（別称）` の用語名で、別称が検索キーワードとして有効なら title 用に保持する。
+
+    「産業医の権限（事業者への勧告権）」のように、括弧内に検索クエリと一致する別称を持つ用語で、
+    <title> から別称が抜け落ちて検索意図と噛み合わない問題を補正する。
+    説明的な語（概念・症状 等）や過度に長い別称は載せない。
+    """
+    m = re.match(r"^(.+?)（(.+?)）$", term or "")
+    if not m:
+        return term
+    base, alias = m.group(1).strip(), m.group(2).strip()
+    if len(alias) < 2:
+        return base
+    if any(s in alias for s in _ALIAS_STOP_SUBSTR):
+        return base
+    if len(base) + len(alias) > 28:
+        return base
+    return f"{base}（{alias}）"
+
+
+def augment_article_title(article_title: str, term: str) -> str:
+    """`article_title` に用語名の有効な別称が抜けていれば補って返す（検索意図一致のため）。"""
+    if not article_title:
+        return article_title
+    title_term = title_term_with_alias(term)
+    if "（" not in title_term:
+        return article_title
+    base, alias = title_term.split("（", 1)
+    alias = alias.rstrip("）")
+    if alias in article_title or not article_title.startswith(base):
+        return article_title
+    return article_title.replace(base, title_term, 1)
+
+
 def build_term_html(
     entry: dict,
     rel_path: Path,
@@ -780,7 +821,12 @@ def build_term_html(
     example_question = norm(entry.get("example_question"))
     example_answer = norm(entry.get("example_answer"))
 
-    title = f"{article_title or term + 'とは？意味・根拠・試験ポイント'}｜{brand_name()}"
+    display_title = (
+        augment_article_title(article_title, term)
+        if article_title
+        else term + "とは？意味・根拠・試験ポイント"
+    )
+    title = f"{display_title}｜{brand_name()}"
     desc = meta_description(
         f"{term}の意味、法令・根拠、試験で押さえるポイントを{exam_name()}向けに整理。{short_def or definition}"
     )

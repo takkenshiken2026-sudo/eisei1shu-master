@@ -107,9 +107,13 @@ def question_meta_description(
     body: str = "",
     answer_tail: str = "",
 ) -> str:
-    """各問ページの meta description（問題文抜粋＋正答＋モード横断の一言）。"""
+    """各問ページの meta description。
+
+    検索スニペットで最初に見える語を検索クエリへ近づけるため、問題文（body）を先頭へ置き、
+    識別子（第N問・分野）や定型の学習導線は後段へ回す（＝主題語のフロントロード）。
+    """
     c = seo_copy()
-    prefix = f"{headline}・{category}。"
+    meta_tag = f"{headline}・{category}。"
     if mode == "past":
         tail = f"{c['mockExam']}対策や{c['studyModes']}と併用して学習できます。"
     elif mode == "practice":
@@ -121,16 +125,19 @@ def question_meta_description(
         tail = f"{c['mockExam']}前の確認に。{c['studyModes']}と併用できます。正誤と解説を掲載。"
     ans = (answer_tail or "").strip()
     ans_part = f" 正答: {ans}。" if ans else ""
-    core = body.strip() if body.strip() else tail
-    if body.strip():
-        combo = prefix + core + ans_part
-        if len(combo) + len(tail) <= 140:
-            return meta_description(combo + tail, 155)
-        if len(combo) <= 150:
-            return meta_description(combo, 155)
-        return meta_description(prefix + core[: max(40, 120 - len(prefix) - len(ans_part))] + ans_part, 155)
-    combo = prefix + ans_part + tail if ans_part else prefix + tail
-    return meta_description(combo, 155)
+    body = body.strip()
+    if not body:
+        return meta_description(meta_tag + ans_part + tail, 155)
+    lead = f"{body}{ans_part}"
+    combo = f"{lead} {meta_tag}"
+    if len(combo) + len(tail) <= 150:
+        return meta_description(f"{combo}{tail}", 155)
+    if len(combo) <= 152:
+        return meta_description(combo, 155)
+    # 問題文が長い場合も、先頭は問題文のまま末尾（識別子）を圧縮する。
+    budget = max(40, 150 - len(ans_part) - len(meta_tag))
+    trimmed = body[:budget].rstrip("、。・ 　")
+    return meta_description(f"{trimmed}…{ans_part} {meta_tag}", 155)
 
 
 def index_search_placeholder(mode: str) -> str:
