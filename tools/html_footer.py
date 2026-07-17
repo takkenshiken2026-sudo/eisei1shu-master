@@ -11,9 +11,11 @@
 from __future__ import annotations
 
 import html
+import re
 from pathlib import Path
 
 from tools.site_config import (
+    adsense_client_id,
     base_path,
     brand_logo_lines,
     brand_logo_size_class,
@@ -267,6 +269,40 @@ def ga4_head_snippet() -> str:
         f'gtag("config", "{mid}");\n'
         "</script>"
     )
+
+
+ADSENSE_HEAD_MARKER = "<!--ADSENSE_HEAD-->"
+
+_ADSENSE_SCRIPT_RE = re.compile(
+    r"(?:<!--ADSENSE_HEAD-->\s*)?"
+    r"<script\s+async\s+src=\"https://pagead2\.googlesyndication\.com/pagead/js/adsbygoogle\.js\?client=[^\"]+\""
+    r"\s+crossorigin=\"anonymous\"></script>\s*",
+    re.I,
+)
+
+
+def adsense_head_snippet() -> str:
+    """Google AdSense 自動広告用スクリプト（<head> 内）。未設定なら空文字。"""
+    client = adsense_client_id()
+    if not client:
+        return ""
+    client_esc = html.escape(client, quote=True)
+    return (
+        f"{ADSENSE_HEAD_MARKER}\n"
+        f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={client_esc}"\n'
+        f'     crossorigin="anonymous"></script>'
+    )
+
+
+def inject_adsense_head(html_text: str) -> str:
+    """HTML の <head> に AdSense スクリプトを冪等に挿入（または未設定時は除去）。"""
+    text = _ADSENSE_SCRIPT_RE.sub("", html_text)
+    snippet = adsense_head_snippet()
+    if not snippet:
+        return text
+    if not re.search(r"</head>", text, re.I):
+        return text
+    return re.sub(r"</head>", snippet + "\n</head>", text, count=1, flags=re.I)
 
 
 def analytics_snippet(rel_path: Path) -> str:

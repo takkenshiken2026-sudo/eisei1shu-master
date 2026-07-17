@@ -31,6 +31,7 @@ from tools.index_spa_patch import (  # noqa: E402
     INDEX_NOSCRIPT_MARKER_START,
 )
 from tools.site_config import (  # noqa: E402
+    adsense_client_id,
     base_path,
     clean_origin,
     exam_name,
@@ -786,6 +787,50 @@ def _ga4_tracking(root: Path) -> list[Issue]:
     return issues
 
 
+_ADSENSE_CLIENT_RE = re.compile(
+    r"pagead2\.googlesyndication\.com/pagead/js/adsbygoogle\.js\?client=(ca-pub-[0-9]+)",
+    re.I,
+)
+
+
+def _adsense_page_issues(root: Path, rel: str) -> list[Issue]:
+    path = root / rel
+    if not path.is_file():
+        return []
+    text = path.read_text(encoding="utf-8")
+    if "http-equiv=\"refresh\"" in text.lower() or "http-equiv='refresh'" in text.lower():
+        return []
+    expected = adsense_client_id()
+    if not expected:
+        return []
+    issues: list[Issue] = []
+    m = _ADSENSE_CLIENT_RE.search(text)
+    if not m:
+        issues.append(Issue(f"{rel}: AdSense スクリプトがありません（期待 client={expected!r}）"))
+    elif m.group(1) != expected:
+        issues.append(
+            Issue(f"{rel}: AdSense client 不一致（期待 {expected!r}、実際 {m.group(1)!r}）")
+        )
+    elif "</head>" in text:
+        head = text.split("</head>", 1)[0]
+        if "adsbygoogle.js" not in head:
+            issues.append(Issue(f"{rel}: AdSense スクリプトが <head> 外にあります"))
+    return issues
+
+
+def _adsense_tracking(root: Path) -> list[Issue]:
+    """site-config adsenseClientId があるとき、主要ページの <head> 設置を検証。"""
+    if not adsense_client_id():
+        return []
+    issues: list[Issue] = []
+    for rel in ("index.html", "about.html", "privacy.html", "related-sites.html", "articles/index.html"):
+        issues.extend(_adsense_page_issues(root, rel))
+    for pattern in ("articles/*/index.html", "terms/*.html", "q/practice/*/index.html"):
+        for path in sorted(root.glob(pattern))[:1]:
+            issues.extend(_adsense_page_issues(root, str(path.relative_to(root))))
+    return issues
+
+
 def _static_chrome(root: Path) -> list[Issue]:
     """docs/site-chrome.md — ヘッダー topnav 統一・旧 q-static-header 禁止。"""
     issues: list[Issue] = []
@@ -901,6 +946,7 @@ def main() -> int:
     issues.extend(_responsive_css_source(root))
     issues.extend(_viewport_and_static_css(root))
     issues.extend(_ga4_tracking(root))
+    issues.extend(_adsense_tracking(root))
     issues.extend(_static_page_site_leaks(root))
     issues.extend(_guide_index_picks(root))
 
