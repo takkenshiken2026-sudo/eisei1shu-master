@@ -294,11 +294,33 @@ def adsense_head_snippet() -> str:
     )
 
 
+# 本文を持たないリダイレクト/退避ページ（meta refresh による自動転送）を検出する。
+# こうしたページは AdSense の「コンテンツのないページに広告を表示しない」方針の対象になるため、
+# 広告スクリプトを注入しない（審査時に本文のない画面で広告コードが読み込まれるのを避ける）。
+# 注: location.replace() は SPA（index.html 等）のルーティングでも使うため判定に含めない。
+# meta http-equiv="refresh" は退避 stub 専用の確実なシグナル。
+_CONTENTLESS_REDIRECT_RE = re.compile(
+    r"<meta[^>]+http-equiv=\"refresh\"",
+    re.I,
+)
+
+
+def is_contentless_redirect(html_text: str) -> bool:
+    """meta refresh による中身のない自動転送ページか（SPA の location.replace は除外）。"""
+    return bool(_CONTENTLESS_REDIRECT_RE.search(html_text))
+
+
 def inject_adsense_head(html_text: str) -> str:
-    """HTML の <head> に AdSense スクリプトを冪等に挿入（または未設定時は除去）。"""
+    """HTML の <head> に AdSense スクリプトを冪等に挿入（または未設定時は除去）。
+
+    本文のないリダイレクトページ（noindex 退避ページ等）には注入せず、
+    既存の AdSense タグがあれば除去する（AdSense ポリシー配慮）。
+    """
     text = _ADSENSE_SCRIPT_RE.sub("", html_text)
     snippet = adsense_head_snippet()
     if not snippet:
+        return text
+    if is_contentless_redirect(text):
         return text
     if not re.search(r"</head>", text, re.I):
         return text

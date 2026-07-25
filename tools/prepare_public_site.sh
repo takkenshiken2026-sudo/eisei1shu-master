@@ -55,9 +55,17 @@ done
 if [[ -f "$ROOT/privacy-terms.html" ]]; then
   cp "$ROOT/privacy-terms.html" "$OUT/"
 fi
-# Google AdSense 所有者確認用（ルート /ads.txt）
-if [[ -f "$ROOT/ads.txt" ]]; then
-  cp "$ROOT/ads.txt" "$OUT/"
+# Google AdSense 所有者確認用（ルート /ads.txt）— 必須。
+# AdSense の ads.txt ステータスが「不明」のままにならないよう、
+# デプロイ成果物に必ず含め、内容も検証してからビルドを続行する。
+if [[ ! -f "$ROOT/ads.txt" ]]; then
+  echo "prepare_public_site.sh: 必須ファイルがありません: ads.txt（AdSense 所有者確認用）" >&2
+  exit 1
+fi
+cp "$ROOT/ads.txt" "$OUT/"
+if ! grep -Eq '^google\.com,[[:space:]]*pub-[0-9]+,[[:space:]]*DIRECT,[[:space:]]*[0-9a-fA-F]+' "$OUT/ads.txt"; then
+  echo "prepare_public_site.sh: ads.txt の形式が不正です（google.com, pub-XXXX, DIRECT, XXXX の行が必要）。" >&2
+  exit 1
 fi
 # SPA トップ（index.html）用。CSS/JS を index から分離したサイト向け。
 for f in site-spa.css site-spa-fields.js site-app.css; do
