@@ -67,8 +67,81 @@ from tools.seo_editorial_chrome import (  # noqa: E402
     seo_editorial_stylesheet_links,
 )
 from tools.editorial_quality import is_glossary_expert_pass  # noqa: E402
+from tools.guide_exam_facts import load_exam_facts  # noqa: E402
 
 GLOSSARY_PREPARING_LABEL = "準備中"
+
+# 分野ハブ（用語一覧）ページに載せる各出題範囲の概要。
+# 「用語リンクの羅列」だけの薄いページにならないよう、分野ごとの独自解説を添える。
+# 出題数・配点・足切りは sites/<id>/guide_exam_facts.json（正本）から自動で埋める。
+FIELD_OVERVIEW: dict[str, dict[str, str]] = {
+    "law-harm": {
+        "summary": (
+            "有害な業務に関わる労働安全衛生法と関係省令（有機溶剤中毒予防規則・特定化学物質障害予防規則・"
+            "粉じん障害防止規則・石綿障害予防規則・電離放射線障害防止規則・酸素欠乏症等防止規則など）が中心の範囲です。"
+            "作業主任者の選任、特殊健康診断、局所排気装置の定期自主検査、製造等の禁止・許可物質、譲渡等の制限、"
+            "有害物のばく露防止措置といった「有害業務への規制」が繰り返し問われます。"
+        ),
+        "study": (
+            "「どの業務に・どの規則が・どの措置を求めるか」を表で結び付けて覚えるのが近道です。"
+            "作業主任者・特殊健康診断・定期自主検査は、対象業務と実施頻度・数値までセットで押さえましょう。"
+        ),
+    },
+    "law-other": {
+        "summary": (
+            "有害業務以外の一般的な労働安全衛生法令と労働基準法を扱う範囲です。"
+            "安全衛生管理体制（総括安全衛生管理者・衛生管理者・産業医・衛生委員会）、一般健康診断、"
+            "事業場の規模ごとの選任義務、労働時間・休憩・休日・年次有給休暇、年少者・妊産婦の保護、"
+            "就業規則などが問われます。"
+        ),
+        "study": (
+            "事業場の規模（労働者数）ごとの選任義務と必要人数を軸に整理すると混乱しにくくなります。"
+            "労働基準法は「日数・時間・割合」の数値を正確に覚えることが得点に直結します。"
+        ),
+    },
+    "eisei-harm": {
+        "summary": (
+            "有害物・粉じん・有機溶剤・特定化学物質・金属・ガスなどによる健康障害と、その予防を扱う範囲です。"
+            "作業環境測定と評価（管理区分I〜III）、局所排気・全体換気、保護具（防毒・防じんマスク等）、"
+            "じん肺・中毒・熱中症・電離放射線障害といった職業性疾病が中心テーマになります。"
+        ),
+        "study": (
+            "「有害要因 → 健康影響 → 予防措置（作業環境管理・作業管理・健康管理の3管理）」の流れで整理しましょう。"
+            "管理区分の考え方と許容濃度・作業環境測定はとくに出題されやすいポイントです。"
+        ),
+    },
+    "eisei-other": {
+        "summary": (
+            "有害業務以外の一般的な労働衛生を扱う範囲です。"
+            "温熱・採光・照明・換気などの作業環境、事務所衛生基準、健康保持増進（THP）、メンタルヘルスケア、"
+            "労働衛生教育、救急処置（一次救命処置・出血・熱傷）、腰痛予防対策、情報機器作業のガイドラインなどが問われます。"
+        ),
+        "study": (
+            "照度・気積・換気量・温湿度といった数値基準と、救急処置の手順を具体的に覚えるのが得点源です。"
+            "健康保持増進（THP）やメンタルヘルスの「4つのケア」も頻出なので体系で押さえましょう。"
+        ),
+    },
+    "physio": {
+        "summary": (
+            "人体のしくみを扱う範囲です。"
+            "循環器・呼吸器・消化器・神経系・腎臓泌尿器・内分泌・感覚器といった各器官系、血液の成分と働き、"
+            "エネルギー代謝・基礎代謝、体温調節、疲労・睡眠・ストレス、恒常性（ホメオスタシス）が問われます。"
+        ),
+        "study": (
+            "各器官について「構造 → 働き → 試験に出る正常値・調節ホルモン」をセットで覚えると定着します。"
+            "配点が大きい範囲なので、確実な得点源に育てておくと合否で有利になります。"
+        ),
+    },
+}
+
+# guide_exam_facts.json（正本）を一度だけ読み込む。無い環境ではハブ概要の数値を省く。
+try:
+    _EXAM_FACTS: dict = load_exam_facts(ROOT)
+except (FileNotFoundError, ValueError, OSError):
+    _EXAM_FACTS = {}
+_EXAM_RANGE_BY_ID: dict[str, dict] = {
+    str(r.get("id")): r for r in (_EXAM_FACTS.get("ranges") or [])
+}
 
 PRESERVED_TERM_SUBDIRS = frozenset({"compare", "numbers", "mistakes", "priority", "samples", "diagram-samples"})
 PRESERVED_TERM_HTML = frozenset({"index.html", "g-writing-sample.html", "g-diagram-sample.html"})
@@ -1196,6 +1269,69 @@ def build_term_html(
 
 
 
+def field_hub_overview_html(field_slug: str, category: str, term_count: int) -> str:
+    """分野ハブ（用語一覧）に載せる独自の概要解説セクション。
+
+    出題数・配点・足切りは guide_exam_facts.json（正本）から埋め、
+    分野ごとの解説・学習ポイントは FIELD_OVERVIEW から取る。
+    薄いリンク一覧ページを、その分野を理解できる読みごたえのある入口に変える狙い。
+    """
+    fid = glossary_field_id(category) or field_slug.replace("field-", "", 1)
+    ov = FIELD_OVERVIEW.get(fid)
+    if not ov:
+        return ""
+
+    rng = _EXAM_RANGE_BY_ID.get(fid) or {}
+    fmt = _EXAM_FACTS.get("exam_format") or {}
+    organizer = html.escape(str(_EXAM_FACTS.get("organizer") or ""))
+    organizer_url = html.escape(str(_EXAM_FACTS.get("organizer_url") or ""), quote=True)
+
+    facts_bits: list[str] = []
+    if rng.get("questions"):
+        facts_bits.append(f"出題数 約<strong>{int(rng['questions'])}問</strong>")
+    if rng.get("points"):
+        facts_bits.append(f"配点 <strong>{int(rng['points'])}点</strong>")
+    if rng.get("pass_points") and fmt.get("pass_per_range_percent"):
+        facts_bits.append(
+            f"各出題範囲 <strong>{int(fmt['pass_per_range_percent'])}％</strong>"
+            f"（{int(rng['pass_points'])}点）以上で足切り回避"
+        )
+    facts_line = (
+        f'<p class="terms-idx-field-facts">この分野の目安：{" ／ ".join(facts_bits)}。</p>'
+        if facts_bits
+        else ""
+    )
+
+    # 対応する分野別ガイド記事（基礎・過去問攻略）への内部リンク
+    basics_href = f"../../articles/{field_slug}-basics/index.html"
+    past_href = f"../../articles/{field_slug}-past-question-focus/index.html"
+    related_links = (
+        '<p class="terms-idx-field-links">'
+        f'あわせて読みたい：<a href="{html.escape(basics_href)}">{html.escape(category)}の基礎</a>'
+        f' ・ <a href="{html.escape(past_href)}">{html.escape(category)}の過去問攻略</a>'
+        "</p>"
+    )
+
+    disclaimer = ""
+    if organizer and organizer_url:
+        disclaimer = (
+            '<p class="terms-idx-field-note">出題数・配点・合格基準は年度により変わる場合があります。'
+            f'最新の内容は<a href="{organizer_url}" target="_blank" rel="noopener noreferrer nofollow">'
+            f"{organizer}</a>の試験要項でご確認ください。</p>"
+        )
+
+    return f"""  <section class="site-page-section terms-idx-field-overview" aria-label="{html.escape(category)}分野の概要">
+    <h2 class="terms-idx-field-h2">{html.escape(category)}とは（出題範囲の概要）</h2>
+    {facts_line}
+    <p class="terms-idx-field-summary">{html.escape(ov["summary"])}</p>
+    <h3 class="terms-idx-field-h3">学習のポイント</h3>
+    <p class="terms-idx-field-study">{html.escape(ov["study"])}</p>
+    <p class="terms-idx-field-count">このページでは{html.escape(category)}分野の用語を{int(term_count)}語まとめています。各リンクから意味・試験ポイント・関連用語を確認できます。</p>
+    {related_links}
+    {disclaimer}
+  </section>"""
+
+
 def build_field_hub_html(
     category: str,
     field_slug: str,
@@ -1278,6 +1414,7 @@ def build_field_hub_html(
   {hub_tabs}
   <h1 class="terms-idx-page-title">{html.escape(category)}の用語一覧</h1>
   <p class="terms-idx-lead">{html.escape(exam_name())}の{html.escape(category)}分野で押さえたい用語をまとめています。各リンクから用語の意味・試験ポイント・関連用語を確認できます。</p>
+{field_hub_overview_html(field_slug, category, len(cat_entries))}
   <p class="terms-idx-lead"><a href="../index.html">用語解説一覧（全分野）</a>へ戻る</p>
   <section class="terms-idx-panel" aria-label="{html.escape(category)}の用語一覧">
     <ul class="terms-idx-list">
