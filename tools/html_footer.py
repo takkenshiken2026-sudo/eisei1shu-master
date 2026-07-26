@@ -273,8 +273,15 @@ def ga4_head_snippet() -> str:
 
 ADSENSE_HEAD_MARKER = "<!--ADSENSE_HEAD-->"
 
+# AdSense 所有権確認用の meta タグ（サイト単位の確認方式）。冪等な差し替えのため単独でも除去できるようにする。
+_ADSENSE_META_RE = re.compile(
+    r"<meta\s+name=\"google-adsense-account\"\s+content=\"[^\"]*\"\s*/?>\s*",
+    re.I,
+)
+
 _ADSENSE_SCRIPT_RE = re.compile(
     r"(?:<!--ADSENSE_HEAD-->\s*)?"
+    r"(?:<meta\s+name=\"google-adsense-account\"\s+content=\"[^\"]*\"\s*/?>\s*)?"
     r"<script\s+async\s+src=\"https://pagead2\.googlesyndication\.com/pagead/js/adsbygoogle\.js\?client=[^\"]+\""
     r"\s+crossorigin=\"anonymous\"></script>\s*",
     re.I,
@@ -282,13 +289,14 @@ _ADSENSE_SCRIPT_RE = re.compile(
 
 
 def adsense_head_snippet() -> str:
-    """Google AdSense 自動広告用スクリプト（<head> 内）。未設定なら空文字。"""
+    """Google AdSense の <head> スニペット（所有権確認 meta ＋ 広告スクリプト）。未設定なら空文字。"""
     client = adsense_client_id()
     if not client:
         return ""
     client_esc = html.escape(client, quote=True)
     return (
         f"{ADSENSE_HEAD_MARKER}\n"
+        f'<meta name="google-adsense-account" content="{client_esc}">\n'
         f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={client_esc}"\n'
         f'     crossorigin="anonymous"></script>'
     )
@@ -317,6 +325,8 @@ def inject_adsense_head(html_text: str) -> str:
     既存の AdSense タグがあれば除去する（AdSense ポリシー配慮）。
     """
     text = _ADSENSE_SCRIPT_RE.sub("", html_text)
+    # marker+script と別置きになっている単独の確認 meta も除去（冪等化）
+    text = _ADSENSE_META_RE.sub("", text)
     snippet = adsense_head_snippet()
     if not snippet:
         return text
