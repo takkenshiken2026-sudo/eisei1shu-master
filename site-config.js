@@ -173,11 +173,8 @@ window.SITE_CONFIG = {
     "modePurpose": "スマホのスキマ時間で細切れ動画学習したい",
     "priceLabel": "1,078円〜",
     "tagLabel": "PR",
-    "ctaLabel": "講座を見てみる",
     "footnote": "※ オンスク.JP公式サイトへ移動します。料金·受講条件は申込前にご確認ください。",
     "scoreLead": "オンスク.JPオンライン通信講座",
-    "scoreMeta": "月額ウケホーダイ",
-    "bannerImage": "images/affiliate/eisei1-course-onsuku-banner.webp",
-    "bannerAlt": "オンスク.JP 第一種衛生管理者試験 通信講座｜スマホでスキマ学習｜講座を見てみる"
+    "scoreMeta": "月額ウケホーダイ"
   }
 };
