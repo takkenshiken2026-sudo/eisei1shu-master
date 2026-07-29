@@ -394,7 +394,7 @@ h2.section-label .tip-icon{width:13px;height:13px;font-size:9px}
 .ichi-score-summary{display:flex;justify-content:center;gap:28px;margin-bottom:24px;flex-wrap:wrap;font-size:14px;color:var(--text2)}
 .ichi-score-summary strong{font-family:var(--mono);font-size:18px;color:var(--text);margin-left:6px}
 .ichi-score-btns{display:flex;flex-direction:column;gap:10px}
-.ichi-score-paid-mock-wrap{text-align:left;max-width:480px;margin:24px auto 0}
+.ichi-score-paid-mock-wrap{text-align:left;max-width:none;margin:24px auto 0}
 .mode-card-v2{background:#fff;border:1.5px solid var(--border2);border-radius:var(--r2);padding:16px 20px;cursor:pointer;display:flex;align-items:center;gap:16px;box-shadow:var(--sh);transition:all .18s}
 .mode-card-v2:hover{box-shadow:var(--sh2);border-color:var(--text2);transform:translateY(-1px);background:var(--bg3)}
 .mode-num-v2{font-size:12px;font-family:var(--mono);color:var(--text3);flex-shrink:0;width:20px;text-align:center}
@@ -667,6 +667,15 @@ details.rich-detail summary{display:none}
 .score-paid-mock-strip-title{display:block;font-size:var(--fs-body);font-weight:700;color:var(--text);margin-bottom:2px;line-height:1.35}
 .score-paid-mock-strip-meta{font-size:var(--fs-caption);color:var(--text2)}
 .score-paid-mock-strip-cta{font-size:var(--fs-sub);font-weight:700;color:var(--paid-mock-accent);flex-shrink:0;white-space:nowrap}
+.promo-banners-row{display:grid;grid-template-columns:1fr;gap:12px;align-items:start;margin:8px 0 14px;max-width:560px}
+.paid-mock-banner{margin:0;display:block;max-width:none;width:100%;min-width:0}
+.paid-mock-banner__link{display:block;border-radius:var(--r2);overflow:hidden;border:1px solid var(--border);box-shadow:var(--sh);text-decoration:none;transition:box-shadow .15s,transform .15s,border-color .15s}
+.paid-mock-banner__link:hover{box-shadow:var(--sh2);border-color:var(--text2);transform:translateY(-1px)}
+.paid-mock-banner__link img{display:block;width:100%;height:auto;aspect-ratio:1024/576;object-fit:contain;background:#fff}
+.paid-mock-banner__foot{margin:8px 0 0;font-size:11px;color:var(--text3);line-height:1.55;text-align:center}
+.score-paid-mock-banner{display:block;max-width:560px;width:100%;margin:0;border-radius:var(--r2);overflow:hidden;border:1px solid var(--paid-mock-accent-border);box-shadow:0 2px 10px var(--paid-mock-accent-shadow);text-decoration:none;transition:border-color .15s,box-shadow .15s,transform .15s}
+.score-paid-mock-banner:hover{border-color:var(--paid-mock-accent);box-shadow:0 4px 14px var(--paid-mock-accent-shadow);transform:translateY(-1px)}
+.score-paid-mock-banner img{display:block;width:100%;height:auto;aspect-ratio:1024/576;object-fit:contain;background:#fff}
 .score-course-promo-wrap{margin-top:24px;padding-top:20px;border-top:1px solid var(--border)}
 .ichi-score-course-promo-wrap{text-align:left;max-width:480px;margin:24px auto 0}
 .score-course-promo-lead{font-size:var(--fs-sub);color:var(--text);margin-bottom:14px;line-height:1.65;font-weight:500}
@@ -936,6 +945,8 @@ details.rich-detail summary{display:none}
   .mode-purpose-v2{font-size:11px;margin-bottom:2px;line-height:1.4}
   .mode-title-v2{font-size:15px;line-height:1.35}
   .mode-arrow-v2{font-size:14px}
+  .promo-banners-row,.score-paid-mock-banner{max-width:360px;margin-left:auto;margin-right:auto}
+  .paid-mock-banner{max-width:360px;margin-left:auto;margin-right:auto}
   #page-quiz-start .page-title{font-size:16px}
   #page-quiz-start .page-sub{font-size:12px}
   .count-btn{min-height:44px;height:auto;padding:10px 14px;font-size:13px;line-height:1.3}
@@ -7411,8 +7422,8 @@ function injectQuizStartEnhancements(){
   }
   modeList.appendChild(weakCard);
 
-  if(!startEl.querySelector('#paid-mock-inject')){
-    injectPaidMockExamCard(modeList);
+  if(!startEl.querySelector('#promo-banners-row') && !startEl.querySelector('#paid-mock-inject')){
+    injectPaidMockExamPromo(startEl, modeList);
   }
   if(!startEl.querySelector('#course-promo-inject')){
     injectCoursePromoCard(modeList);
@@ -7433,12 +7444,58 @@ function getPaidMockExamConfig(){
     priceLabel: String(cfg.priceLabel||'¥590').trim(),
     scoreMeta: String(cfg.scoreMeta||'PDF').trim(),
     scoreLead: String(cfg.scoreLead||'本番形式の予想模試').trim(),
+    bannerImage: String(cfg.bannerImage||'').trim(),
+    bannerAlt: String(cfg.bannerAlt||cfg.modeTitle||'').trim(),
+    footnote: String(cfg.footnote||'').trim(),
   };
+}
+
+function ensurePromoBannersRow(startEl, modeList){
+  let row=startEl.querySelector('#promo-banners-row');
+  if(row) return row;
+  row=document.createElement('div');
+  row.id='promo-banners-row';
+  row.className='promo-banners-row';
+  const daily=startEl.querySelector('#daily-status-wrap');
+  if(daily){
+    startEl.insertBefore(row, daily);
+  }else if(modeList&&modeList.parentNode){
+    modeList.parentNode.insertBefore(row, modeList.nextSibling);
+  }else{
+    startEl.appendChild(row);
+  }
+  return row;
+}
+
+function buildPaidMockBannerEl(){
+  const m=getPaidMockExamConfig();
+  if(!m.url||!m.bannerImage) return null;
+  const label=m.bannerAlt||`${m.modeTitle}（有料・note・${m.priceLabel}）`;
+  const wrapper=document.createElement('div');
+  wrapper.id='paid-mock-inject';
+  wrapper.className='paid-mock-banner';
+  wrapper.innerHTML=`
+    <a class="paid-mock-banner__link" href="${escapeAttr(m.url)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeAttr(label)}">
+      <img src="${escapeAttr(m.bannerImage)}" alt="${escapeAttr(m.bannerAlt||m.modeTitle)}" width="1024" height="576" loading="lazy" decoding="async">
+    </a>
+    ${m.footnote?`<p class="paid-mock-banner__foot">${escapeAttr(m.footnote)}</p>`:''}`;
+  return wrapper;
+}
+
+function injectPaidMockExamPromo(startEl, modeList){
+  const paid=buildPaidMockBannerEl();
+  if(paid){
+    const row=ensurePromoBannersRow(startEl, modeList);
+    row.replaceChildren();
+    row.appendChild(paid);
+    return;
+  }
+  injectPaidMockExamCard(modeList);
 }
 
 function injectPaidMockExamCard(modeList){
   const m=getPaidMockExamConfig();
-  if(!m.url) return;
+  if(!m.url||m.bannerImage) return;
   const wrapper=document.createElement('div');
   wrapper.id='paid-mock-inject';
   const label=`${m.modeTitle}（有料・note・${m.priceLabel}）`;
@@ -7450,7 +7507,8 @@ function injectPaidMockExamCard(modeList){
         <div class="mode-title-v2">${escapeAttr(m.modeTitle)}</div>
       </div>
       <div class="mode-arrow-v2 mode-arrow-v2--ext" aria-hidden="true">↗</div>
-    </a>`;
+    </a>
+    ${m.footnote?`<p class="mode-course-footnote">${escapeAttr(m.footnote)}</p>`:''}`;
   modeList.appendChild(wrapper);
 }
 
@@ -7588,9 +7646,18 @@ function renderScorePaidMockPromo(opts){
     wrap.innerHTML='';
     return;
   }
-  const label=`${m.modeTitle}（有料・note・${m.priceLabel}）`;
+  const label=m.bannerAlt||`${m.modeTitle}（有料・note・${m.priceLabel}）`;
   const leadHtml=opts.leadHtml!=null?opts.leadHtml:scorePaidMockLeadHtml(m,opts.variant);
   wrap.hidden=false;
+  if(m.bannerImage){
+    wrap.innerHTML=`
+      <p class="score-paid-mock-lead">${leadHtml}</p>
+      <a class="score-paid-mock-banner" href="${escapeAttr(m.url)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeAttr(label)}">
+        <img src="${escapeAttr(m.bannerImage)}" alt="${escapeAttr(m.bannerAlt||m.modeTitle)}" width="1024" height="576" loading="lazy" decoding="async">
+      </a>
+      ${m.footnote?`<p class="score-course-promo-footnote">${escapeAttr(m.footnote)}</p>`:''}`;
+    return;
+  }
   wrap.innerHTML=`
     <p class="score-paid-mock-lead">${leadHtml}</p>
     <a class="score-paid-mock-strip" href="${escapeAttr(m.url)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeAttr(label)}">
@@ -7638,8 +7705,12 @@ window.gotoPage=function(id){
       // 弱点カードが既にある場合は解放状態が変わっていれば再描画
       const existingWeak=document.getElementById('weak-mode-inject');
       if(existingWeak) existingWeak.remove();
+      const existingPromoRow=document.getElementById('promo-banners-row');
+      if(existingPromoRow) existingPromoRow.remove();
       const existingPaid=document.getElementById('paid-mock-inject');
       if(existingPaid) existingPaid.remove();
+      const existingCourse=document.getElementById('course-promo-inject');
+      if(existingCourse) existingCourse.remove();
       const existingAffiliate=document.getElementById('affiliate-picks-inject');
       if(existingAffiliate) existingAffiliate.remove();
       injectQuizStartEnhancements();

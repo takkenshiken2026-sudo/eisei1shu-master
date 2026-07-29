@@ -273,7 +273,10 @@
     "modePurpose": "本番前に44問×3回で実力確認したい",
     "priceLabel": "¥590",
     "scoreMeta": "PDF · 3回 · 44問",
-    "scoreLead": "本番想定模試（3回分）"
+    "scoreLead": "本番想定模試（3回分）",
+    "bannerImage": "images/affiliate/eisei1-paid-mock-note-banner.webp",
+    "bannerAlt": "第一種衛生管理者試験 2026年版 有料模試｜590円｜PDF・3回分入り｜noteで購入する",
+    "footnote": "※ note で販売する有料コンテンツ（¥590・3回分）です。サイト内の無料演習とは別商品です。"
   },
   "coursePromo": {
     "url": "https://px.a8.net/svt/ejp?a8mat=4B3TF0+DUXB9E+408S+BW0YB&a8ejpredirect=https%3A%2F%2Fonsuku.jp%2Ftraining%2Feisei2",
