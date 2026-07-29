@@ -163,7 +163,7 @@ window.SITE_CONFIG = {
     "priceLabel": "¥590",
     "scoreMeta": "PDF · 3回 · 44問",
     "scoreLead": "本番想定模試（3回分）",
-    "bannerImage": "images/affiliate/eisei1-paid-mock-note-banner.webp",
+    "bannerImage": "images/affiliate/eisei-kanrisha-1shu-mock-exam-2026.webp",
     "bannerAlt": "第一種衛生管理者試験 2026年版 本番想定模試｜590円｜PDF・3回分入り｜noteで購入する",
     "footnote": "※ note で販売する有料コンテンツ（¥590・3回分）です。サイト内の無料演習とは別商品です。"
   },

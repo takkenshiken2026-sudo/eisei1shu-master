@@ -20,7 +20,7 @@ globs:
 ## 設定
 
 `modeTitle` / `modePurpose` / `priceLabel` / `footnote` 必須。`scoreMeta`・`scoreLead` で結果画面文言をサイト別に。
-画像バナーがある場合は `bannerImage`（例: `images/affiliate/eisei1-paid-mock-note-banner.webp`）と `bannerAlt` を追加。設定時は 05番テキストカードの代わりに画像バナーを表示する。
+画像バナーがある場合は `bannerImage`（例: `images/affiliate/eisei-kanrisha-1shu-mock-exam-2026.webp`）と `bannerAlt` を追加。設定時は 05番テキストカードの代わりに画像バナーを表示する。
 
 ## 作業フロー
 
