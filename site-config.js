@@ -175,6 +175,8 @@ window.SITE_CONFIG = {
     "tagLabel": "PR",
     "footnote": "※ オンスク.JP公式サイトへ移動します。料金·受講条件は申込前にご確認ください。",
     "scoreLead": "オンスク.JPオンライン通信講座",
-    "scoreMeta": "月額ウケホーダイ"
+    "scoreMeta": "月額ウケホーダイ",
+    "bannerImage": "images/affiliate/eiseikanrisha1shu-onsuku.webp",
+    "bannerAlt": "オンスク.JP｜第一種衛生管理者試験｜スマホで最短合格を目指す｜無料で講座を見る"
   }
 };
