@@ -37,11 +37,6 @@ window.SITE_CONFIG = {
         "key": "q"
       },
       {
-        "label": "用語解説",
-        "href": "terms/index.html",
-        "key": "terms"
-      },
-      {
         "label": "試験ガイド",
         "href": "articles/index.html",
         "key": "articles"
@@ -72,11 +67,6 @@ window.SITE_CONFIG = {
         "label": "過去問一覧",
         "href": "q/index.html",
         "key": "q"
-      },
-      {
-        "label": "用語解説",
-        "href": "terms/index.html",
-        "key": "terms"
       },
       {
         "label": "試験ガイド",

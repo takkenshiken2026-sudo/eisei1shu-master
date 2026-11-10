@@ -28,7 +28,7 @@ INDEX_SEO_MARKER_END = "<!--/INDEX_SEO_HEAD-->"
 
 def index_home_title() -> str:
     modes = study_modes_label()
-    return f"{brand_name()}｜{exam_name()} {modes}・用語解説で合格を目指す無料学習サイト"
+    return f"{brand_name()}｜{exam_name()} {modes}で合格を目指す無料学習サイト"
 
 
 def index_og_title() -> str:
@@ -63,7 +63,6 @@ def index_study_features_phrase() -> str:
     parts.append("実践演習")
     if ichimon_enabled():
         parts.append("一問一答")
-    parts.append("重要用語解説")
     return "・".join(parts)
 
 
@@ -88,7 +87,7 @@ def index_description_long() -> str:
 
 
 def index_keywords() -> str:
-    parts = [exam_name(), "用語集", "資格学習", "合格"]
+    parts = [exam_name(), "資格学習", "合格"]
     if past_enabled():
         parts.insert(1, "過去問")
     parts.insert(2 if past_enabled() else 1, "実践演習")
@@ -107,7 +106,7 @@ def index_json_ld_graph() -> list[dict]:
     alt = f"{exam_name()}対策サイト"
     modes = study_modes_label()
     platform_desc = (
-        f"{exam_name()}の{modes}・用語解説を"
+        f"{exam_name()}の{modes}を"
         "網羅した無料学習プラットフォーム"
     )
     return [
@@ -148,7 +147,6 @@ def index_json_ld_graph() -> list[dict]:
                 {"@type": "ListItem", "position": 1, "name": "トップ", "item": home_url},
                 {"@type": "ListItem", "position": 2, "name": "過去問", "item": index_spa_hash_url("#past")},
                 {"@type": "ListItem", "position": 3, "name": "実践演習", "item": index_spa_hash_url("#orig")},
-                {"@type": "ListItem", "position": 4, "name": "用語解説", "item": public_url("terms/")},
             ],
         },
     ]
