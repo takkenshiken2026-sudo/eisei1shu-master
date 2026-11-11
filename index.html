@@ -4299,7 +4299,18 @@ function buildYearGrid(){
 function getPastOnlyYearsSorted(){
   const origSet=(typeof CSV_IMPORTED_PRACTICE_POOL_YEARS!=='undefined'&&Array.isArray(CSV_IMPORTED_PRACTICE_POOL_YEARS))
     ? new Set(CSV_IMPORTED_PRACTICE_POOL_YEARS):new Set();
-  return [...new Set(QUESTIONS.map(q=>q.year).filter(y=>y!=null&&!origSet.has(y)))].sort((a,b)=>b-a);
+  // exam_year は試験回の内部ID（連番）で暦年ではないため、年ラベル（和暦）から
+  // 実施日を求めて新しい順に並べる。解析不能時は内部IDで代替。
+  const L=(typeof CSV_IMPORTED_YEAR_LABELS!=='undefined'&&CSV_IMPORTED_YEAR_LABELS)?CSV_IMPORTED_YEAR_LABELS:null;
+  const warekiKey=(y)=>{
+    const lbl=(L&&L[y]!=null)?String(L[y]):'';
+    const m=/(令和|平成|昭和)\s*(\d+)\s*年\s*(\d+)\s*月/.exec(lbl);
+    if(!m)return 0;
+    const base={'令和':2018,'平成':1988,'昭和':1925}[m[1]];
+    return (base+parseInt(m[2],10))*100+parseInt(m[3],10);
+  };
+  return [...new Set(QUESTIONS.map(q=>q.year).filter(y=>y!=null&&!origSet.has(y)))]
+    .sort((a,b)=>{const d=warekiKey(b)-warekiKey(a);return d!==0?d:b-a;});
 }
 function toggleYear(y){
   const idx=quizState.years.indexOf(y);

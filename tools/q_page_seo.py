@@ -178,6 +178,21 @@ def past_year_display(year: int, wareki: str = "") -> str:
     return f"{year}年"
 
 
+_WAREKI_RE = re.compile(r"(令和|平成|昭和)\s*(\d+)\s*年\s*(\d+)\s*月")
+_WAREKI_BASE = {"令和": 2018, "平成": 1988, "昭和": 1925}
+
+
+def wareki_sort_key(wareki: str) -> int:
+    """和暦ラベル（例: 令和4年4月）→ 並び替え用の数値（西暦*100+月）。
+    exam_year は暦年ではなく試験回の内部IDのため、実施日順の並び替えに使う。
+    解析できない場合は 0（末尾側）。"""
+    m = _WAREKI_RE.search(wareki or "")
+    if not m:
+        return 0
+    era, yr, mo = m.group(1), int(m.group(2)), int(m.group(3))
+    return (_WAREKI_BASE[era] + yr) * 100 + mo
+
+
 def question_h1(
     mode: str,
     *,

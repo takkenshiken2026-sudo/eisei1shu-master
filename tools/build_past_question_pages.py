@@ -810,7 +810,14 @@ def build_q_index(pages: list[dict], base_url: str) -> str:
     for y in by_year:
         by_year[y].sort(key=lambda x: x["qno"])
 
-    sorted_years = sorted(by_year.keys(), reverse=True)
+    # exam_year は試験回の内部ID（連番）で暦年ではないため、exam_wareki から
+    # 実施日（西暦*100+月）を求めて新しい順に並べる。解析不能時は内部IDで代替。
+    from tools.q_page_seo import wareki_sort_key
+
+    def _year_order(y: int) -> tuple[int, int]:
+        return (wareki_sort_key(by_year[y][0].get("wareki", "")), y)
+
+    sorted_years = sorted(by_year.keys(), key=_year_order, reverse=True)
     open_years = set(sorted_years[:2])
 
     year_blocks = []
