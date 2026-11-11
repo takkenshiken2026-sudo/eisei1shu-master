@@ -236,24 +236,24 @@
     }
   ],
   "guideIndexPicks": {
-    "title": "おすすめの講座",
-    "lead": "2026年度版の比較記事から、オンライン講座の選び方へ。",
+    "title": "本番前の仕上げに",
+    "lead": "2026年版の本番想定模試で、本番形式の最終チェックを。",
     "leadsByHub": {
-      "articles": "2026年度版の比較記事から、オンライン講座の選び方へ。",
-      "terms": "用語暗記と併用するオンライン講座の比較記事へ。",
-      "q": "無料演習と併用するオンライン講座の比較記事へ。"
+      "articles": "2026年版の本番想定模試で、本番形式の最終チェックを。",
+      "terms": "用語暗記の仕上げに、2026年版の本番想定模試で本番形式の最終チェックを。",
+      "q": "演習の仕上げに、2026年版の本番想定模試で本番形式の最終チェックを。"
     },
     "layout": "grid-3",
     "items": [
       {
         "kind": "course",
-        "kindLabel": "講座",
-        "title": "オンライン講座比較【SMART vs オンスク】",
-        "description": "買い切り29,700円のSMARTと月額制オンスクを比較。100問180分・5科目足切り前提の併用設計を解説します。",
-        "href": "affiliate-online-course-compare/",
-        "cta": "講座を比較する",
-        "image": "images/affiliate/eisei1-smart-goukaku.jpg",
-        "imageAlt": "SMART合格講座（第一種衛生管理者）"
+        "kindLabel": "模試",
+        "title": "本番想定模試【2026年版・3回分】",
+        "description": "本番形式44問×3回のPDF模試。時間配分と弱点の最終確認に。¥590（note）。",
+        "href": "https://note.com/shikaku_master/n/nacc6a5dab9f1",
+        "cta": "noteで購入する",
+        "image": "images/affiliate/eisei-kanrisha-1shu-mock-exam-2026.webp",
+        "imageAlt": "第一種衛生管理者試験 2026年版 本番想定模試"
       }
     ]
   },

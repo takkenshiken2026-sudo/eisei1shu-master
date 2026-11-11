@@ -94,18 +94,25 @@ def validate_guide_index_picks(root: Path) -> list[Issue]:
             issues.append(Issue(f"guideIndexPicks.items[{idx}] がオブジェクトではありません"))
             continue
         href = str(item.get("href") or "").strip()
-        slug = _slug_from_href(href)
-        if not slug:
+        if not href:
             issues.append(Issue(f"guideIndexPicks.items[{idx}] の href が空です"))
             continue
-        pick_slugs.append(slug)
-        if slug not in pub:
-            issues.append(
-                Issue(
-                    f"guideIndexPicks.items[{idx}] の href={slug!r} は"
-                    f" 公開済みアフィリエイトではありません（公開: {sorted(pub)!r}）"
+        if href.startswith(("http://", "https://")):
+            # 外部URL（note の模試等）への直接導線は、公開アフィリエイト記事の照合対象外
+            pick_slugs.append("__external__")
+        else:
+            slug = _slug_from_href(href)
+            if not slug:
+                issues.append(Issue(f"guideIndexPicks.items[{idx}] の href が空です"))
+                continue
+            pick_slugs.append(slug)
+            if slug not in pub:
+                issues.append(
+                    Issue(
+                        f"guideIndexPicks.items[{idx}] の href={slug!r} は"
+                        f" 公開済みアフィリエイトではありません（公開: {sorted(pub)!r}）"
+                    )
                 )
-            )
         image = str(item.get("image") or "").strip()
         if image:
             img_path = root / image.lstrip("/")
