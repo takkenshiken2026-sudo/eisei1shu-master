@@ -818,13 +818,12 @@ def build_q_index(pages: list[dict], base_url: str) -> str:
     for y in sorted_years:
         rows_html = "".join(build_index_table_row(pg) for pg in by_year[y])
         sample = by_year[y][0]
+        # exam_year は試験回の内部ユニークID（連番）で暦年ではないため、
+        # 表示は exam_wareki（例: 令和4年4月）を優先し、内部IDを「◯年」として見せない。
+        wareki = norm(sample.get("wareki") or "")
         year_label = norm(sample.get("year_label") or "")
-        heading = year_label or (
-            sample["wareki"]
-            if y > 9999
-            else f"{y}年（{sample['wareki']}）"
-        )
-        jump_label = year_label or (f"{y}年" if y <= 9999 else sample["wareki"])
+        heading = wareki or year_label or f"{y}年"
+        jump_label = wareki or year_label or f"{y}年"
         expanded = "true" if y in open_years else "false"
         collapsed = "" if y in open_years else " is-collapsed"
         year_jump_links.append(

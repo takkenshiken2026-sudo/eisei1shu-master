@@ -196,7 +196,9 @@ def main() -> int:
         y = o["year"]
         wl = norm(row.get("exam_wareki"))
         if y not in year_labels:
-            year_labels[y] = f"{y}年"
+            # exam_year は試験回の内部ユニークID（連番）で暦年ではないため、
+            # 表示は exam_wareki（例: 令和4年4月）を優先する。
+            year_labels[y] = wl or f"{y}年"
 
     practice_objs = load_practice_questions()
     write_practice_js(practice_objs)

@@ -6029,6 +6029,8 @@ html.question-modes--no-past .past-chrome {
 .q-index-page .q-year-table-cat {
   color: var(--text2);
   font-size: var(--fs-caption);
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 .q-index-page .q-year-table-desc {
   color: var(--text2);
