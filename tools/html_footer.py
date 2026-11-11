@@ -638,9 +638,6 @@ def q_hub_links_html(rel_path: Path, *, current: str) -> str:
     items: list[tuple[str, str, str]] = []
     if past_enabled():
         items.append(("past", "過去問", "q/index.html"))
-    items.append(("practice", "実践演習", "q/practice/index.html"))
-    if ichimon_enabled():
-        items.append(("ichimon", "一問一答", "q/ichimon/index.html"))
     lis: list[str] = []
     for key, label, target in items:
         if key == current:

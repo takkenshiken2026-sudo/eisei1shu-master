@@ -93,9 +93,6 @@ def index_noscript_inner() -> str:
     if not practice_names:
         practice_names = "主要分野"
     subject_lines = "\n".join(_field_noscript_line(f) for f in field_rows) or "          <li>主要科目</li>"
-    ichimon_footer_link = (
-        ' ・ <a href="q/ichimon/index.html">一問一答一覧</a>' if ichimon_enabled() else ""
-    )
     past_footer_link = (
         ' ・ <a href="q/index.html">過去問一覧</a>' if past_enabled() else ""
     )
@@ -117,7 +114,7 @@ def index_noscript_inner() -> str:
         <ul>
 {subject_lines}
         </ul>
-        <p style="margin-top:24px;font-size:14px;line-height:2"><a href="about.html">このサイトについて</a>{past_footer_link} ・ <a href="q/practice/index.html">実践演習一覧</a>{ichimon_footer_link} ・ <a href="articles/index.html">試験ガイド</a> ・<a href="related-sites.html">関連リンク</a> ・ <a href="privacy.html">プライバシー</a> ・ <a href="{contact}" target="_blank" rel="noopener noreferrer">お問い合わせ</a></p>
+        <p style="margin-top:24px;font-size:14px;line-height:2"><a href="about.html">このサイトについて</a>{past_footer_link} ・ <a href="articles/index.html">試験ガイド</a> ・<a href="related-sites.html">関連リンク</a> ・ <a href="privacy.html">プライバシー</a> ・ <a href="{contact}" target="_blank" rel="noopener noreferrer">お問い合わせ</a></p>
       </div>
     </noscript>"""
 

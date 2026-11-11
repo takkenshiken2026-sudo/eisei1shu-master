@@ -129,12 +129,6 @@ def _q_index(q_index: Path) -> list[Issue]:
         issues.append(Issue("q/index.html: q_hub_links_html（3モードタブ）がありません"))
     if 'aria-current="page">過去問</span>' not in text and "is-current" not in text:
         issues.append(Issue("q/index.html: 過去問タブの current 表示がありません"))
-    if (
-        "/q/orig/index.html" not in text
-        and "/q/practice/index.html" not in text
-        and 'href="practice/index.html"' not in text
-    ):
-        issues.append(Issue("q/index.html: 実践演習タブへのリンクがありません"))
     return issues
 
 
@@ -294,6 +288,10 @@ def _mode_index_counts(root: Path) -> list[Issue]:
         ("ichimon", root / "data" / "ichimon_questions.csv", root / "q" / "ichimon" / "index.html", False),
     ]
     for mode, csv_path, index_path, skip_invalid in checks:
+        # 実践演習・一問一答の静的 SEO ページは廃止（アプリモードは継続）。
+        # 静的インデックスが無いモードは検証対象外。
+        if not index_path.is_file():
+            continue
         csv_n = _csv_row_count(csv_path, skip_invalid=skip_invalid)
         json_n = _q_index_data_count(index_path)
         if csv_n == 0:

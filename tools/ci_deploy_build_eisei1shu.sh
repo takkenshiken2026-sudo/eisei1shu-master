@@ -12,7 +12,6 @@ fi
 "$PY" tools/csv_to_exam_site_past_js.py
 "$PY" tools/csv_to_exam_site_ichimondou_js.py
 "$PY" tools/build_past_question_pages.py
-"$PY" tools/build_practice_ichimon_pages.py
 "$PY" tools/build_article_pages.py
 "$PY" tools/build_guide_retire_redirects.py
 "$PY" tools/build_sitemap.py
